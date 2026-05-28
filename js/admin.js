@@ -601,6 +601,10 @@ const Admin = {
     `).join("");
 
     const isEditing = this.editingProduct !== null;
+    const specialOfferType = isEditing ? (this.editingProduct.specialOfferType || "seasonal") : "seasonal";
+    const specialOfferText = isEditing ? (this.editingProduct.specialOfferText || "") : "";
+    const showSpecialFields = isEditing && this.editingProduct.isSpecial;
+    const showCustomSpecialText = showSpecialFields && specialOfferType === "other";
 
     return `
       <div class="admin-header-row">
@@ -663,12 +667,30 @@ const Admin = {
             <input type="text" id="prod-tags" class="form-control" value="${isEditing ? this.editingProduct.tags.join(", ") : ''}" placeholder="гумен маркуч, маркуч за въздух, компресор">
           </div>
 
-          <!-- SPECIAL SEASONAL OFFER CHECKBOX -->
-          <div class="form-group" style="background-color: #fffbeb; padding: 12px 15px; border-radius: 8px; border: 1px solid #fef3c7; display: flex; align-items: center; gap: 10px; margin-top: 15px; margin-bottom: 20px;">
-            <input type="checkbox" id="prod-is-special" ${isEditing && this.editingProduct.isSpecial ? 'checked' : ''} style="width: 20px; height: 20px; cursor: pointer;">
-            <label for="prod-is-special" style="margin: 0; font-weight: 700; color: #b45309; cursor: pointer; display: flex; align-items: center; gap: 6px;">
-              🔥 Маркирай като специално предложение (Сезонно намаление / Гореща оферта)
-            </label>
+          <!-- SPECIAL OFFER SETTINGS -->
+          <div class="form-group" style="background-color: #fffbeb; padding: 12px 15px; border-radius: 8px; border: 1px solid #fef3c7; margin-top: 15px; margin-bottom: 20px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <input type="checkbox" id="prod-is-special" onchange="Admin.toggleSpecialOfferFields()" ${isEditing && this.editingProduct.isSpecial ? 'checked' : ''} style="width: 20px; height: 20px; cursor: pointer;">
+              <label for="prod-is-special" style="margin: 0; font-weight: 700; color: #b45309; cursor: pointer; display: flex; align-items: center; gap: 6px;">
+                🔥 Маркирай като специално предложение
+              </label>
+            </div>
+            <div id="prod-special-fields" style="display: ${showSpecialFields ? 'block' : 'none'}; margin-top: 12px;">
+              <div class="form-grid-2">
+                <div class="form-group" style="margin-bottom: 0;">
+                  <label>Тип предложение</label>
+                  <select id="prod-special-type" class="form-control" onchange="Admin.toggleSpecialOfferFields()">
+                    <option value="seasonal" ${specialOfferType === 'seasonal' ? 'selected' : ''}>Сезонно намаление</option>
+                    <option value="hot" ${specialOfferType === 'hot' ? 'selected' : ''}>Гореща оферта</option>
+                    <option value="other" ${specialOfferType === 'other' ? 'selected' : ''}>Друго</option>
+                  </select>
+                </div>
+                <div class="form-group" id="prod-special-text-group" style="display: ${showCustomSpecialText ? 'block' : 'none'}; margin-bottom: 0;">
+                  <label>Текст за предложението</label>
+                  <input type="text" id="prod-special-text" class="form-control" value="${this.escapeAttr(specialOfferText)}" placeholder="напр. Промо пакет">
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- Product Specs Section -->
@@ -977,6 +999,26 @@ const Admin = {
     const activeVariants = this.collectVariantsFromDOM();
     this.templatesPanelOpen = !this.templatesPanelOpen;
     this.refreshVariantsTable(activeVariants);
+  },
+
+  toggleSpecialOfferFields() {
+    const checkbox = document.getElementById("prod-is-special");
+    const fields = document.getElementById("prod-special-fields");
+    const typeSelect = document.getElementById("prod-special-type");
+    const textGroup = document.getElementById("prod-special-text-group");
+
+    if (fields && checkbox) {
+      fields.style.display = checkbox.checked ? "block" : "none";
+    }
+    if (textGroup && typeSelect) {
+      textGroup.style.display = checkbox && checkbox.checked && typeSelect.value === "other" ? "block" : "none";
+    }
+  },
+
+  getSpecialOfferLabel(type, customText = "") {
+    if (type === "hot") return "ГОРЕЩА ОФЕРТА";
+    if (type === "other") return customText.trim();
+    return "СЕЗОННО НАМАЛЕНИЕ";
   },
 
   collectVariantsFromDOM() {
@@ -1307,7 +1349,9 @@ const Admin = {
       this.editingProduct = prod;
       this.uploadedImages = [...prod.images]; // Load existing images
       this.currentColumns = prod.columns ? [...prod.columns] : null; // Load product columns
+      this.tempVariants = prod.variants ? prod.variants.map(v => ({ ...v })) : null;
       this.render();
+      this.tempVariants = null;
       window.scrollTo({ top: 150, behavior: "smooth" });
     }
   },
@@ -1364,6 +1408,16 @@ const Admin = {
     const description = document.getElementById("prod-description").value.trim();
     const tagsInput = document.getElementById("prod-tags").value;
     const isSpecial = document.getElementById("prod-is-special").checked;
+    const specialOfferType = isSpecial ? document.getElementById("prod-special-type").value : "";
+    const specialOfferText = isSpecial && specialOfferType === "other"
+      ? document.getElementById("prod-special-text").value.trim()
+      : "";
+
+    if (isSpecial && specialOfferType === "other" && !specialOfferText) {
+      alert("Моля въведете текст за специалното предложение!");
+      document.getElementById("prod-special-text").focus();
+      return;
+    }
 
     const tags = tagsInput ? tagsInput.split(",").map(t => t.trim()) : [];
     
@@ -1405,6 +1459,9 @@ const Admin = {
           target.description = description;
           target.tags = tags;
           target.isSpecial = isSpecial;
+          target.specialOfferType = specialOfferType;
+          target.specialOfferText = specialOfferText;
+          target.specialOfferLabel = isSpecial ? this.getSpecialOfferLabel(specialOfferType, specialOfferText) : "";
           target.images = images;
           target.specs = specs;
           target.columns = this.currentColumns; // Save columns schema
@@ -1444,6 +1501,9 @@ const Admin = {
         views: 12,
         inStock: true,
         isSpecial,
+        specialOfferType,
+        specialOfferText,
+        specialOfferLabel: isSpecial ? this.getSpecialOfferLabel(specialOfferType, specialOfferText) : "",
         tags,
         description,
         specs,

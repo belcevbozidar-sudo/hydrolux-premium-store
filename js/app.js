@@ -51,10 +51,11 @@ const App = {
             ? `от ${minPrice.toFixed(2)} € до ${maxPrice.toFixed(2)} €`
             : `${minPrice.toFixed(2)} €`;
           const coverImg = p.images[0] || "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop";
+          const specialLabel = this.getSpecialOfferLabel(p);
 
           return `
             <div class="product-card card special-promo-card" onclick="Catalog.openProductDetails('${p.id}')" style="border: 1.5px solid #ea580c; box-shadow: 0 4px 20px rgba(234, 88, 12, 0.08);">
-              <div class="product-badge" style="background-color: #ea580c; color: white;">🔥 СЕЗОННО НАМАЛЕНИЕ</div>
+              <div class="product-badge" style="background-color: #ea580c; color: white;">🔥 ${specialLabel}</div>
               <div class="product-card-img-wrapper">
                 <img src="${coverImg}" alt="${p.name}" class="product-card-img" onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop'">
               </div>
@@ -119,6 +120,13 @@ const App = {
         </div>
       `;
     }).join("");
+  },
+
+  getSpecialOfferLabel(product) {
+    if (product.specialOfferLabel) return product.specialOfferLabel;
+    if (product.specialOfferType === "hot") return "ГОРЕЩА ОФЕРТА";
+    if (product.specialOfferType === "other" && product.specialOfferText) return product.specialOfferText;
+    return "СЕЗОННО НАМАЛЕНИЕ";
   },
 
   renderQuickCategories() {
