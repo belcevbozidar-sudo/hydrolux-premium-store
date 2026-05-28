@@ -394,3 +394,56 @@ function formatPrice(eur) {
     bgnRaw: eur
   };
 }
+
+// Load dynamic state if present in localStorage to support admin dashboard updates in real-time
+if (localStorage.getItem("hydrolux_products")) {
+  try {
+    CONFIG.products = JSON.parse(localStorage.getItem("hydrolux_products"));
+  } catch (e) {
+    console.error("Error parsing products from localStorage", e);
+  }
+} else {
+  localStorage.setItem("hydrolux_products", JSON.stringify(CONFIG.products));
+}
+
+if (localStorage.getItem("hydrolux_categories")) {
+  try {
+    CONFIG.categories = JSON.parse(localStorage.getItem("hydrolux_categories"));
+  } catch (e) {
+    console.error("Error parsing categories from localStorage", e);
+  }
+} else {
+  localStorage.setItem("hydrolux_categories", JSON.stringify(CONFIG.categories));
+}
+
+// Global API to save state
+CONFIG.saveState = function() {
+  localStorage.setItem("hydrolux_products", JSON.stringify(CONFIG.products));
+  localStorage.setItem("hydrolux_categories", JSON.stringify(CONFIG.categories));
+};
+
+CONFIG.addProduct = function(p) {
+  CONFIG.products.push(p);
+  CONFIG.saveState();
+};
+
+CONFIG.deleteProduct = function(productId) {
+  CONFIG.products = CONFIG.products.filter(p => p.id !== productId);
+  CONFIG.saveState();
+};
+
+CONFIG.addCategory = function(c) {
+  CONFIG.categories.push(c);
+  CONFIG.saveState();
+};
+
+CONFIG.deleteCategory = function(categoryId) {
+  CONFIG.categories = CONFIG.categories.filter(c => c.id !== categoryId);
+  CONFIG.saveState();
+};
+
+CONFIG.resetToDefaults = function() {
+  localStorage.removeItem("hydrolux_products");
+  localStorage.removeItem("hydrolux_categories");
+  window.location.reload();
+};

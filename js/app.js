@@ -6,7 +6,11 @@ const App = {
     // 1. Initialize Components
     Cart.init();
     
-    // 2. Setup Global Search Input
+    // 2. Render dynamic components based on the localStorage state
+    this.renderQuickCategories();
+    this.renderSearchCategories();
+    
+    // 3. Setup Global Search Input
     const searchInput = document.getElementById("search-input-blue");
     if (searchInput) {
       searchInput.addEventListener("input", (e) => {
@@ -18,18 +22,18 @@ const App = {
       });
     }
 
-    // 3. Render Catalog Sidebar on startup
+    // 4. Render Catalog Sidebar on startup
     Catalog.renderSidebar();
     Catalog.applyFiltersAndRender();
     
-    // 4. Populate Homepage Featured Products Grid
+    // 5. Populate Homepage Featured Products Grid
     this.renderFeaturedProductsHome();
 
-    // 5. Default View routing
+    // 6. Default View routing
     this.route();
     window.addEventListener("hashchange", () => this.route());
     
-    // 6. Hero Stats
+    // 7. Hero Stats
     this.updateHeroStats();
   },
 
@@ -70,6 +74,31 @@ const App = {
         </div>
       `;
     }).join("");
+  },
+
+  renderQuickCategories() {
+    const grid = document.querySelector(".quick-categories-grid");
+    if (!grid) return;
+    
+    // Display the first 8 main categories or all of them
+    const categories = CONFIG.categories.slice(0, 8);
+    grid.innerHTML = categories.map(c => `
+      <div class="category-card card" onclick="Catalog.selectCategory('${c.id}'); App.navigate('catalog')">
+        <span class="cat-icon">${c.icon || '📦'}</span>
+        <h4>${c.name}</h4>
+      </div>
+    `).join("");
+  },
+
+  renderSearchCategories() {
+    const select = document.getElementById("search-category-dropdown");
+    if (!select) return;
+    
+    let html = '<option value="">Всички категории</option>';
+    CONFIG.categories.forEach(c => {
+      html += `<option value="${c.id}">${c.name}</option>`;
+    });
+    select.innerHTML = html;
   },
 
   // Switch SPA views smoothly
@@ -115,6 +144,8 @@ const App = {
       // Run view-specific inits
       if (mainView === "builder") {
         HoseBuilder.render();
+      } else if (mainView === "admin") {
+        Admin.init();
       }
     } else {
       // Fallback

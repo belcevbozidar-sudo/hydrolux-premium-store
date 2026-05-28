@@ -41,6 +41,7 @@
           <li><a class="nav-link" onclick="document.getElementById('about-us-anchor').scrollIntoView({ behavior: 'smooth' })">ЗА НАС</a></li>
           <li><a class="nav-link" onclick="Cart.showToast('Очаквайте скоро нашия блог за хидравлика!')">БЛОГ</a></li>
           <li><a class="nav-link" onclick="App.navigate('services')">КОНТАКТИ</a></li>
+          <li><a class="nav-link" onclick="App.navigate('admin')">АДМИН</a></li>
         </ul>
       </nav>
 
@@ -487,6 +488,11 @@
         </div>
       </div>
     </section>
+
+    <!-- 6. ADMIN VIEW -->
+    <section id="admin-view" class="spa-view">
+      <div id="admin-view-content"></div>
+    </section>
   </main>
 
   <!-- ==========================================================================
@@ -688,6 +694,7 @@
             <li><a onclick="App.navigate('catalog')">Продуктов Каталог</a></li>
             <li><a onclick="App.navigate('builder')">Конфигуратор на маркучи</a></li>
             <li><a onclick="App.navigate('services')">Консултация & Услуги</a></li>
+            <li><a onclick="App.navigate('admin')" style="color: var(--accent); font-weight: bold;">🛠️ Админ Панел</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -715,6 +722,7 @@
   <script src="js/components/builder.js"></script>
   <script src="js/components/cart.js"></script>
   <script src="js/catalog.js"></script>
+  <script src="js/admin.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
