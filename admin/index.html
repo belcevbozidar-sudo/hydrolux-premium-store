@@ -1,13 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="bg">
 <head>
-  <meta http-equiv="refresh" content="0; url=../#admin" />
-  <title>Пренасочване - Админ Панел</title>
-  <script>
-    window.location.replace("../#admin");
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Администраторски Панел | Хидролукс Груп</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    body {
+      background-color: #f8fafc;
+    }
+    .admin-page-header {
+      background: linear-gradient(135deg, hsl(205, 85%, 46%), hsl(205, 85%, 36%));
+      color: white;
+      padding: 14px 0;
+      box-shadow: 0 2px 12px rgba(13, 110, 210, 0.18);
+    }
+    .admin-page-header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      overflow-x: visible;
+    }
+    .admin-logo-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .admin-logo-row img {
+      height: 40px;
+      width: auto;
+    }
+    .admin-logo-row span {
+      font-size: 1.1rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+    .admin-header-badge {
+      background-color: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: white;
+      font-weight: 700;
+      font-size: 0.78rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+    }
+    .admin-back-link {
+      color: rgba(255,255,255,0.85);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: color 0.2s ease;
+    }
+    .admin-back-link:hover {
+      color: white;
+    }
+    #admin-standalone-content {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 24px 20px 60px;
+      overflow-x: hidden;
+    }
+  </style>
 </head>
 <body>
-  Пренасочване към админския панел на Хидролукс Груп...
+
+  <!-- Admin Page Top Bar -->
+  <div class="admin-page-header">
+    <div class="container" style="overflow-x: visible;">
+      <div class="admin-logo-row">
+        <img src="../assets/logo.png" alt="Хидролукс Груп" onerror="this.style.display='none'">
+        <span>Хидролукс Груп</span>
+        <span class="admin-header-badge">🛠️ ADMIN ПАНЕЛ</span>
+      </div>
+      <a href="../" class="admin-back-link">← Към магазина</a>
+    </div>
+  </div>
+
+  <!-- Admin Content Mount Point -->
+  <div id="admin-standalone-content">
+    <div id="admin-view-content">
+      <div style="text-align: center; padding: 60px 20px; color: #64748b;">
+        <div style="font-size: 2rem; margin-bottom: 12px;">⚙️</div>
+        <p style="font-weight: 700;">Зареждане на администраторския панел...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Load all JS modules -->
+  <script src="../js/config.js"></script>
+  <script src="../js/admin.js"></script>
+  <script>
+    // Initialize the Admin panel directly (no routing needed)
+    document.addEventListener("DOMContentLoaded", function() {
+      Admin.init();
+    });
+  </script>
+
 </body>
 </html>

@@ -418,7 +418,7 @@ const Admin = {
         }
 
         /* Variant editing grid on mobile */
-        #prod-variants-tbody {
+        #admin-variants-tbody {
           display: flex;
           flex-direction: column;
           gap: 12px;
@@ -897,7 +897,7 @@ const Admin = {
                 <th style="padding: 8px; width: 60px; text-align: center;">Действие</th>
               </tr>
             </thead>
-            <tbody id="prod-variants-tbody">
+            <tbody id="admin-variants-tbody">
               ${rowsHTML}
             </tbody>
           </table>
@@ -907,7 +907,8 @@ const Admin = {
   },
 
   collectVariantsFromDOM() {
-    const tbody = document.getElementById("prod-variants-tbody");
+    // Use admin-specific ID to avoid conflict with catalog's #prod-variants-tbody
+    const tbody = document.getElementById("admin-variants-tbody");
     if (!tbody) return null;
     
     const variants = [];
@@ -1018,7 +1019,7 @@ const Admin = {
     this.renderImagePreviews();
 
     // Populate template variant row if empty
-    const tbody = document.getElementById("prod-variants-tbody");
+    const tbody = document.getElementById("admin-variants-tbody");
     if (tbody && tbody.children.length === 0) {
       this.addNewVariantRow();
     }
@@ -1441,12 +1442,17 @@ const Admin = {
   },
 
   // Propagates active memory/localStorage state to all visible SPA views instantly
+  // Safe to call from both the SPA (#admin) and standalone (/admin) page
   propagateStateChanges() {
-    App.renderQuickCategories();
-    App.renderSearchCategories();
-    App.renderFeaturedProductsHome();
-    Catalog.renderSidebar();
-    Catalog.applyFiltersAndRender();
+    if (typeof App !== 'undefined') {
+      if (typeof App.renderQuickCategories === 'function') App.renderQuickCategories();
+      if (typeof App.renderSearchCategories === 'function') App.renderSearchCategories();
+      if (typeof App.renderFeaturedProductsHome === 'function') App.renderFeaturedProductsHome();
+    }
+    if (typeof Catalog !== 'undefined') {
+      if (typeof Catalog.renderSidebar === 'function') Catalog.renderSidebar();
+      if (typeof Catalog.applyFiltersAndRender === 'function') Catalog.applyFiltersAndRender();
+    }
   },
 
   loadTemplates() {
