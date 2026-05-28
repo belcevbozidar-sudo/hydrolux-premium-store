@@ -412,6 +412,14 @@ const Admin = {
             <input type="text" id="prod-tags" class="form-control" placeholder="гумен маркуч, маркуч за въздух, компресор">
           </div>
 
+          <!-- SPECIAL SEASONAL OFFER CHECKBOX -->
+          <div class="form-group" style="background-color: #fffbeb; padding: 12px 15px; border-radius: 8px; border: 1px solid #fef3c7; display: flex; align-items: center; gap: 10px; margin-top: 15px; margin-bottom: 20px;">
+            <input type="checkbox" id="prod-is-special" style="width: 20px; height: 20px; cursor: pointer;">
+            <label for="prod-is-special" style="margin: 0; font-weight: 700; color: #b45309; cursor: pointer; display: flex; align-items: center; gap: 6px;">
+              🔥 Маркирай като специално предложение (Сезонно намаление / Гореща оферта)
+            </label>
+          </div>
+
           <!-- Product Specs Section -->
           <div class="form-group">
             <label style="font-weight: 800;">🛠️ Технически характеристики</label>
@@ -628,6 +636,8 @@ const Admin = {
         return idx > -1 ? lat[idx] : m;
       });
 
+    const isSpecial = document.getElementById("prod-is-special").checked;
+
     const newProduct = {
       id,
       code,
@@ -638,6 +648,7 @@ const Admin = {
       reviewsCount: 1,
       views: 10,
       inStock: true,
+      isSpecial: isSpecial,
       tags,
       description,
       specs,

@@ -35,6 +35,7 @@ const CONFIG = {
     {
       id: "semperit-plw-20",
       code: "PLW20",
+      isSpecial: true,
       name: "Маркуч за въздух и вода SEMPERIT - PLW 20",
       category: "air-hoses",
       brand: "Semperit",
@@ -66,6 +67,7 @@ const CONFIG = {
     {
       id: "water-flat-flatline",
       code: "FLAT-HP",
+      isSpecial: true,
       name: "Плосък маркуч за вода Layflat - Flatline Premium",
       category: "water-hoses",
       brand: "Hydrolux OEM",

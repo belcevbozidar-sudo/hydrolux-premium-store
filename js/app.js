@@ -30,9 +30,58 @@ const App = {
 
   renderFeaturedProductsHome() {
     const grid = document.getElementById("home-featured-products-grid");
+    const specialGrid = document.getElementById("home-special-products-grid");
+    const specialHeader = document.getElementById("home-special-section-header");
     if (!grid) return;
-    // Render first 4 premium seeded products on homepage
-    const featured = CONFIG.products.slice(0, 4);
+
+    // 1. Filter Special Seasonal Products
+    const specialProducts = CONFIG.products.filter(p => p.isSpecial === true);
+    
+    if (specialGrid && specialHeader) {
+      if (specialProducts.length > 0) {
+        specialGrid.innerHTML = specialProducts.map(p => {
+          const prices = p.variants.map(v => v.priceEur);
+          const minPrice = Math.min(...prices);
+          const maxPrice = Math.max(...prices);
+          const priceText = prices.length > 1
+            ? `от ${minPrice.toFixed(2)} € до ${maxPrice.toFixed(2)} €`
+            : `${minPrice.toFixed(2)} €`;
+          const coverImg = p.images[0] || "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop";
+
+          return `
+            <div class="product-card card special-promo-card" onclick="Catalog.openProductDetails('${p.id}')" style="border: 1.5px solid #ea580c; box-shadow: 0 4px 20px rgba(234, 88, 12, 0.08);">
+              <div class="product-badge" style="background-color: #ea580c; color: white;">🔥 СЕЗОННО НАМАЛЕНИЕ</div>
+              <div class="product-card-img-wrapper">
+                <img src="${coverImg}" alt="${p.name}" class="product-card-img" onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop'">
+              </div>
+              <div class="product-card-body">
+                <div class="product-card-brand">${p.brand}</div>
+                <h4 class="product-card-title">${p.name}</h4>
+                <div class="product-card-rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-val">${p.rating.toFixed(1)}</span>
+                </div>
+                
+                <div class="product-card-bottom">
+                  <div class="product-card-price">
+                    <span class="price-bgn font-medium text-accent font-bold" style="color: #ea580c;">${priceText}</span>
+                  </div>
+                  <button class="btn btn-accent btn-icon" onclick="event.stopPropagation(); Catalog.openProductDetails('${p.id}')" style="background-color: #ea580c;">➔</button>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join("");
+        specialGrid.style.display = "grid";
+        specialHeader.style.display = "flex";
+      } else {
+        specialGrid.style.display = "none";
+        specialHeader.style.display = "none";
+      }
+    }
+
+    // 2. Render first 4 standard featured products
+    const featured = CONFIG.products.filter(p => !p.isSpecial).slice(0, 4);
     grid.innerHTML = featured.map(p => {
       const prices = p.variants.map(v => v.priceEur);
       const minPrice = Math.min(...prices);
@@ -40,12 +89,13 @@ const App = {
       const priceText = prices.length > 1
         ? `от ${minPrice.toFixed(2)} € до ${maxPrice.toFixed(2)} €`
         : `${minPrice.toFixed(2)} €`;
+      const coverImg = p.images[0] || "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop";
 
       return `
         <div class="product-card card" onclick="Catalog.openProductDetails('${p.id}')">
           <div class="product-badge">${p.inStock ? 'В наличност' : 'По поръчка'}</div>
           <div class="product-card-img-wrapper">
-            <img src="${p.images[0]}" alt="${p.name}" class="product-card-img" onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop'">
+            <img src="${coverImg}" alt="${p.name}" class="product-card-img" onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop'">
           </div>
           <div class="product-card-body">
             <div class="product-card-brand">${p.brand}</div>
