@@ -276,12 +276,18 @@ function saveLocalState() {
   localStorage.setItem("hydrolux_categories", JSON.stringify(CONFIG.categories));
 }
 
-function syncStateToConvex(values) {
-  if (typeof HydroluxBackend === "undefined") return;
+function mergeById(remoteItems, localItems) {
+  const merged = Array.isArray(remoteItems) ? [...remoteItems] : [];
+  const seen = new Set(merged.map(item => item && item.id).filter(Boolean));
 
-  HydroluxBackend.saveState(values).catch(err => {
-    console.warn("Convex state sync failed", err);
+  (Array.isArray(localItems) ? localItems : []).forEach(item => {
+    if (item && item.id && !seen.has(item.id)) {
+      merged.push(item);
+      seen.add(item.id);
+    }
   });
+
+  return merged;
 }
 
 // Load dynamic state if present in localStorage to support admin dashboard updates in real-time
@@ -309,24 +315,32 @@ CONFIG.ready = (async () => {
   if (typeof HydroluxBackend === "undefined") return;
 
   try {
+    const localProducts = JSON.parse(localStorage.getItem("hydrolux_products") || "[]");
+    const localCategories = JSON.parse(localStorage.getItem("hydrolux_categories") || "[]");
+    const localTemplates = JSON.parse(localStorage.getItem("hydrolux_table_templates") || "[]");
     const state = await HydroluxBackend.getState();
     const hasRemoteProducts = Array.isArray(state.products) && state.products.length > 0;
     const hasRemoteCategories = Array.isArray(state.categories) && state.categories.length > 0;
     const hasRemoteTemplates = Array.isArray(state.tableTemplates);
+    let shouldSyncMergedState = false;
 
     if (hasRemoteProducts) {
-      CONFIG.products = state.products;
+      CONFIG.products = mergeById(state.products, localProducts);
+      shouldSyncMergedState = CONFIG.products.length !== state.products.length;
     }
     if (hasRemoteCategories) {
-      CONFIG.categories = state.categories;
+      CONFIG.categories = mergeById(state.categories, localCategories);
+      shouldSyncMergedState = shouldSyncMergedState || CONFIG.categories.length !== state.categories.length;
     }
     if (hasRemoteTemplates) {
-      localStorage.setItem("hydrolux_table_templates", JSON.stringify(state.tableTemplates));
+      const tableTemplates = mergeById(state.tableTemplates, localTemplates);
+      localStorage.setItem("hydrolux_table_templates", JSON.stringify(tableTemplates));
+      shouldSyncMergedState = shouldSyncMergedState || tableTemplates.length !== state.tableTemplates.length;
     }
 
     saveLocalState();
 
-    if (!hasRemoteProducts || !hasRemoteCategories) {
+    if (!hasRemoteProducts || !hasRemoteCategories || shouldSyncMergedState) {
       await HydroluxBackend.saveState({
         products: CONFIG.products,
         categories: CONFIG.categories,
@@ -341,11 +355,17 @@ CONFIG.ready = (async () => {
 // Global API to save state
 CONFIG.saveState = function() {
   saveLocalState();
-  syncStateToConvex({
+  const values = {
     products: CONFIG.products,
     categories: CONFIG.categories,
     tableTemplates: JSON.parse(localStorage.getItem("hydrolux_table_templates") || "null"),
-  });
+  };
+
+  if (typeof HydroluxBackend === "undefined") {
+    return Promise.resolve({ ok: true, localOnly: true });
+  }
+
+  return HydroluxBackend.saveState(values);
 };
 
 CONFIG.addProduct = function(p) {

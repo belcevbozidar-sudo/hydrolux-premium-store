@@ -1363,13 +1363,13 @@ const Admin = {
     this.render();
   },
 
-  persistProductChanges(changeFn) {
+  async persistProductChanges(changeFn) {
     const previousProducts = JSON.stringify(CONFIG.products);
     const previousCategories = JSON.stringify(CONFIG.categories);
 
     try {
       changeFn();
-      CONFIG.saveState();
+      await CONFIG.saveState();
       return true;
     } catch (err) {
       try {
@@ -1382,12 +1382,12 @@ const Admin = {
       }
 
       console.error("Could not save product changes", err);
-      alert("Продуктът не беше записан, защото паметта на браузъра е запълнена. Снимките вече се намаляват автоматично; ако проблемът остане, премахнете част от старите снимки или добавете по-малко снимки наведнъж.");
+      alert("Продуктът не беше записан в Convex. Моля проверете интернет връзката и опитайте отново.");
       return false;
     }
   },
 
-  handleProductSubmit(event) {
+  async handleProductSubmit(event) {
     event.preventDefault();
 
     if (this.isProcessingImages) {
@@ -1449,7 +1449,7 @@ const Admin = {
 
     if (this.editingProduct) {
       // EDIT MODE
-      const saved = this.persistProductChanges(() => {
+      const saved = await this.persistProductChanges(() => {
         const target = CONFIG.products.find(p => p.id === this.editingProduct.id);
         if (target) {
           target.name = name;
@@ -1512,7 +1512,7 @@ const Admin = {
         variants
       };
 
-      const saved = this.persistProductChanges(() => {
+      const saved = await this.persistProductChanges(() => {
         CONFIG.products.push(newProduct);
       });
       if (!saved) return;
