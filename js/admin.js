@@ -5,6 +5,8 @@ const Admin = {
   editingCategory: null, // Category currently being edited
   editingProduct: null, // Product currently being edited
   uploadedImages: [], // Temporary Base64 strings or existing URLs of uploaded files
+  isProcessingImages: false,
+  templatesPanelOpen: false,
 
   init() {
     this.loadTemplates();
@@ -195,6 +197,12 @@ const Admin = {
         grid-template-columns: 1fr 1fr auto;
         gap: 10px;
         margin-bottom: 8px;
+        align-items: center;
+      }
+      .admin-template-row {
+        display: grid;
+        grid-template-columns: minmax(180px, 1fr) auto auto auto auto;
+        gap: 8px;
         align-items: center;
       }
       .btn-icon-danger {
@@ -471,6 +479,12 @@ const Admin = {
           width: 100% !important;
           height: 34px;
         }
+        .admin-template-row {
+          grid-template-columns: 1fr !important;
+        }
+        .admin-template-row button {
+          width: 100%;
+        }
       }
     `;
     document.head.appendChild(style);
@@ -607,6 +621,7 @@ const Admin = {
           <div class="form-group" style="background-color: var(--primary-light); padding: 15px; border-radius: 8px; border: 1.5px dashed var(--primary); margin-bottom: 20px;">
             <label style="font-weight: 800; color: var(--primary); display: block; margin-bottom: 5px;">📷 Снимки от устройството <span class="text-accent">*</span></label>
             <input type="file" id="prod-images-upload" class="form-control" multiple accept="image/*" style="padding: 6px; border: 1px solid var(--border-light); font-weight: bold; background-color: white;">
+            <div id="prod-images-status" class="font-xs text-muted" style="margin-top: 8px;"></div>
             
             <!-- Image Previews Container with Drag and Drop Support -->
             <div id="prod-images-preview" style="display: flex; gap: 12px; margin-top: 15px; flex-wrap: wrap;"></div>
@@ -684,7 +699,7 @@ const Admin = {
 
           <div class="divider"></div>
           <div style="display: flex; gap: 10px;">
-            <button type="submit" class="btn btn-accent btn-large" style="min-width: 200px;">💾 ${isEditing ? 'Запази промените' : 'Запази Продукта'}</button>
+            <button type="submit" id="admin-product-submit-btn" class="btn btn-accent btn-large" style="min-width: 200px;">💾 ${isEditing ? 'Запази промените' : 'Запази Продукта'}</button>
             ${isEditing ? `
               <button type="button" class="btn btn-secondary btn-large" onclick="Admin.cancelProductEdit()">Отказ</button>
             ` : ''}
@@ -818,14 +833,17 @@ const Admin = {
       }
     }
 
-    const activeVariants = this.tempVariants || this.collectVariantsFromDOM() || (isEditing ? this.editingProduct.variants : []);
+    let activeVariants = this.tempVariants || this.collectVariantsFromDOM() || (isEditing ? this.editingProduct.variants : []);
+    if (!Array.isArray(activeVariants) || activeVariants.length === 0) {
+      const newRow = {};
+      this.currentColumns.forEach(c => {
+        newRow[c.key] = "";
+      });
+      activeVariants = [newRow];
+    }
 
     // Load saved templates for selection
     this.loadTemplates();
-    const templateOptions = this.savedTemplates.map(t => `
-      <option value="${t.id}">${t.name}</option>
-    `).join("");
-
     const headersHTML = this.currentColumns.map(c => `
       <th style="padding: 8px; min-width: 110px; position: relative; text-align: center;">
         <div style="display: flex; flex-direction: column; gap: 4px; align-items: center;">
@@ -864,25 +882,7 @@ const Admin = {
         <label style="font-weight: 800; display: block; border-bottom: 1px solid var(--border-light); padding-bottom: 8px; color: var(--primary);">📏 Таблица с размери, цени и детайли (Еднакви с продуктовата таблица)</label>
         <p class="text-muted font-xs" style="margin-bottom: 15px;">Всички полета и колони са изцяло редактируеми. Можете да променяте имената на колоните, да добавяте нови или да ги изтривате.</p>
         
-        <!-- Table Column Templates Selection Bar -->
-        <div style="background-color: #f8fafc; padding: 15px; border-radius: 8px; border: 1px solid var(--border-light); margin-bottom: 20px;">
-          <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
-            <div>
-              <label style="font-weight: 700; font-size: 0.8rem; color: #475569; display: block; margin-bottom: 5px;">📋 Бърз шаблон на колоните:</label>
-              <select class="form-control" onchange="Admin.loadTemplateById(this.value)" style="width: 250px; padding: 6px; font-weight: 700; height: 36px;">
-                <option value="">-- Изберете готов шаблон --</option>
-                ${templateOptions}
-              </select>
-            </div>
-            <div>
-              <label style="font-weight: 700; font-size: 0.8rem; color: #475569; display: block; margin-bottom: 5px;">💾 Запази текущите колони като шаблон:</label>
-              <div style="display: flex; gap: 8px;">
-                <input type="text" id="new-template-name" class="form-control" placeholder="напр. Шаблон за Въздух" style="width: 220px; padding: 6px; height: 36px;">
-                <button type="button" class="btn btn-secondary" onclick="Admin.saveTemplate(document.getElementById('new-template-name').value)" style="height: 36px; padding: 0 15px;">Запази</button>
-              </div>
-            </div>
-          </div>
-        </div>
+        ${this.renderTemplatesManager()}
 
         <div style="display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;">
           <button type="button" class="btn btn-secondary btn-small" onclick="Admin.addColumn()">➕ Добави Нова Колона</button>
@@ -906,6 +906,79 @@ const Admin = {
     `;
   },
 
+  renderTemplatesManager() {
+    this.loadTemplates();
+    const templateOptions = this.savedTemplates.map(t => `
+      <option value="${this.escapeAttr(t.id)}">${this.escapeHtml(t.name)}</option>
+    `).join("");
+    const savedTemplateRows = this.savedTemplates.length > 0 ? this.savedTemplates.map(t => {
+      const safeId = this.escapeAttr(t.id);
+      const safeName = this.escapeAttr(t.name);
+      return `
+        <div class="admin-template-row" style="padding: 10px; border: 1px solid var(--border-light); border-radius: 6px; background: white;">
+          <input type="text" id="template-name-${safeId}" class="form-control" value="${safeName}" style="height: 34px; padding: 6px; font-weight: 700;">
+          <button type="button" class="btn btn-secondary btn-small" onclick="Admin.loadTemplateById('${safeId}')">Зареди</button>
+          <button type="button" class="btn btn-secondary btn-small" onclick="Admin.renameTemplate('${safeId}', document.getElementById('template-name-${safeId}').value)">Преименувай</button>
+          <button type="button" class="btn btn-secondary btn-small" onclick="Admin.updateTemplateFromCurrentColumns('${safeId}')">Обнови</button>
+          <button type="button" class="btn-admin-action btn-admin-danger" onclick="Admin.deleteTemplate('${safeId}')">Изтрий</button>
+        </div>
+      `;
+    }).join("") : `
+      <div class="text-muted font-xs" style="padding: 10px;">Няма запазени шаблони.</div>
+    `;
+
+    return `
+      <div style="margin-bottom: 20px;">
+        <button type="button" class="btn btn-secondary btn-small" onclick="Admin.toggleTemplatesPanel()" style="margin-bottom: ${this.templatesPanelOpen ? '12px' : '0'};">
+          ${this.templatesPanelOpen ? 'Скрий шаблоните' : 'Покажи запазени таблици'}
+        </button>
+        ${this.templatesPanelOpen ? `
+          <div style="background-color: #f8fafc; padding: 15px; border-radius: 8px; border: 1px solid var(--border-light);">
+            <div style="display: flex; gap: 20px; align-items: end; flex-wrap: wrap; margin-bottom: 15px;">
+              <div>
+                <label style="font-weight: 700; font-size: 0.8rem; color: #475569; display: block; margin-bottom: 5px;">📋 Избери запазена таблица:</label>
+                <select id="template-select" class="form-control" style="width: 250px; padding: 6px; font-weight: 700; height: 36px;">
+                  <option value="">-- Изберете шаблон --</option>
+                  ${templateOptions}
+                </select>
+              </div>
+              <button type="button" class="btn btn-secondary" onclick="Admin.loadTemplateById(document.getElementById('template-select').value)" style="height: 36px; padding: 0 15px;">Зареди</button>
+              <div>
+                <label style="font-weight: 700; font-size: 0.8rem; color: #475569; display: block; margin-bottom: 5px;">💾 Запази текущата таблица:</label>
+                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                  <input type="text" id="new-template-name" class="form-control" placeholder="напр. Шаблон за Въздух" style="width: 220px; padding: 6px; height: 36px;">
+                  <button type="button" class="btn btn-secondary" onclick="Admin.saveTemplate(document.getElementById('new-template-name').value)" style="height: 36px; padding: 0 15px;">Запази</button>
+                </div>
+              </div>
+            </div>
+            <div style="display: grid; gap: 8px;">
+              ${savedTemplateRows}
+            </div>
+          </div>
+        ` : ''}
+      </div>
+    `;
+  },
+
+  escapeHtml(value) {
+    return String(value ?? "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  },
+
+  escapeAttr(value) {
+    return this.escapeHtml(value);
+  },
+
+  toggleTemplatesPanel() {
+    const activeVariants = this.collectVariantsFromDOM();
+    this.templatesPanelOpen = !this.templatesPanelOpen;
+    this.refreshVariantsTable(activeVariants);
+  },
+
   collectVariantsFromDOM() {
     // Use admin-specific ID to avoid conflict with catalog's #prod-variants-tbody
     const tbody = document.getElementById("admin-variants-tbody");
@@ -914,16 +987,20 @@ const Admin = {
     const variants = [];
     tbody.querySelectorAll(".admin-variant-tr").forEach(row => {
       const v = {};
+      let hasValue = false;
       row.querySelectorAll(".var-cell").forEach(input => {
         const key = input.getAttribute("data-key");
         const val = input.value.trim();
+        if (val !== "") {
+          hasValue = true;
+        }
         if (key === 'code' || key === 'inch') {
           v[key] = val;
         } else {
           v[key] = isNaN(parseFloat(val)) || val === '' ? val : parseFloat(val);
         }
       });
-      if (Object.keys(v).length > 0) {
+      if (hasValue) {
         variants.push(v);
       }
     });
@@ -995,34 +1072,101 @@ const Admin = {
     // Register file input listener
     const fileInput = document.getElementById("prod-images-upload");
     if (fileInput) {
-      fileInput.addEventListener("change", (e) => {
+      fileInput.addEventListener("change", async (e) => {
         const files = Array.from(e.target.files);
-        let filesLoaded = 0;
+        if (files.length === 0) return;
 
-        files.forEach((file) => {
-          const reader = new FileReader();
-          reader.onload = (event) => {
-            const base64String = event.target.result;
-            Admin.uploadedImages.push(base64String);
-            filesLoaded++;
-            
-            if (filesLoaded === files.length) {
-              Admin.renderImagePreviews();
-            }
-          };
-          reader.readAsDataURL(file);
-        });
+        Admin.isProcessingImages = true;
+        Admin.updateImageUploadStatus(`Обработват се ${files.length} снимки...`);
+
+        try {
+          const processedImages = await Promise.all(files.map(file => Admin.compressImageFile(file)));
+          Admin.uploadedImages.push(...processedImages.filter(Boolean));
+          Admin.renderImagePreviews();
+          Admin.updateImageUploadStatus("Снимките са готови за запис.");
+        } catch (err) {
+          console.error("Image upload failed", err);
+          alert("Не успяхме да обработим снимките. Моля опитайте с по-малки JPG/PNG файлове.");
+        } finally {
+          Admin.isProcessingImages = false;
+          Admin.updateProductSubmitState();
+          fileInput.value = "";
+        }
       });
     }
 
     // Populate thumbnails preview
     this.renderImagePreviews();
+    this.updateProductSubmitState();
 
     // Populate template variant row if empty
     const tbody = document.getElementById("admin-variants-tbody");
     if (tbody && tbody.children.length === 0) {
       this.addNewVariantRow();
     }
+  },
+
+  compressImageFile(file) {
+    return new Promise((resolve, reject) => {
+      if (!file || !file.type.startsWith("image/")) {
+        resolve(null);
+        return;
+      }
+
+      const reader = new FileReader();
+      reader.onload = event => {
+        const originalDataUrl = event.target.result;
+
+        if (file.type === "image/svg+xml") {
+          resolve(originalDataUrl);
+          return;
+        }
+
+        const img = new Image();
+        img.onload = () => {
+          const maxSide = 1200;
+          const ratio = Math.min(1, maxSide / img.naturalWidth, maxSide / img.naturalHeight);
+          const width = Math.max(1, Math.round(img.naturalWidth * ratio));
+          const height = Math.max(1, Math.round(img.naturalHeight * ratio));
+          const canvas = document.createElement("canvas");
+          canvas.width = width;
+          canvas.height = height;
+          const ctx = canvas.getContext("2d");
+
+          if (!ctx) {
+            resolve(originalDataUrl);
+            return;
+          }
+
+          ctx.fillStyle = "#ffffff";
+          ctx.fillRect(0, 0, width, height);
+          ctx.drawImage(img, 0, 0, width, height);
+          const compressedDataUrl = canvas.toDataURL("image/jpeg", 0.82);
+          resolve(compressedDataUrl.length < originalDataUrl.length ? compressedDataUrl : originalDataUrl);
+        };
+        img.onerror = () => resolve(originalDataUrl);
+        img.src = originalDataUrl;
+      };
+      reader.onerror = () => reject(reader.error);
+      reader.readAsDataURL(file);
+    });
+  },
+
+  updateImageUploadStatus(message = "") {
+    const status = document.getElementById("prod-images-status");
+    if (status) {
+      status.textContent = message;
+    }
+    this.updateProductSubmitState();
+  },
+
+  updateProductSubmitState() {
+    const button = document.getElementById("admin-product-submit-btn");
+    if (!button) return;
+
+    button.disabled = this.isProcessingImages;
+    button.style.opacity = this.isProcessingImages ? "0.65" : "";
+    button.style.cursor = this.isProcessingImages ? "not-allowed" : "";
   },
 
   renderImagePreviews() {
@@ -1175,8 +1319,37 @@ const Admin = {
     this.render();
   },
 
+  persistProductChanges(changeFn) {
+    const previousProducts = JSON.stringify(CONFIG.products);
+    const previousCategories = JSON.stringify(CONFIG.categories);
+
+    try {
+      changeFn();
+      CONFIG.saveState();
+      return true;
+    } catch (err) {
+      try {
+        CONFIG.products = JSON.parse(previousProducts);
+        CONFIG.categories = JSON.parse(previousCategories);
+        localStorage.setItem("hydrolux_products", previousProducts);
+        localStorage.setItem("hydrolux_categories", previousCategories);
+      } catch (restoreErr) {
+        console.error("Could not restore previous admin state", restoreErr);
+      }
+
+      console.error("Could not save product changes", err);
+      alert("Продуктът не беше записан, защото паметта на браузъра е запълнена. Снимките вече се намаляват автоматично; ако проблемът остане, премахнете част от старите снимки или добавете по-малко снимки наведнъж.");
+      return false;
+    }
+  },
+
   handleProductSubmit(event) {
     event.preventDefault();
+
+    if (this.isProcessingImages) {
+      alert("Моля изчакайте снимките да се обработят и опитайте отново.");
+      return;
+    }
 
     const name = document.getElementById("prod-name").value.trim();
     const code = document.getElementById("prod-code").value.trim();
@@ -1222,21 +1395,23 @@ const Admin = {
 
     if (this.editingProduct) {
       // EDIT MODE
-      const target = CONFIG.products.find(p => p.id === this.editingProduct.id);
-      if (target) {
-        target.name = name;
-        target.code = code;
-        target.category = category;
-        target.brand = brand;
-        target.description = description;
-        target.tags = tags;
-        target.isSpecial = isSpecial;
-        target.images = images;
-        target.specs = specs;
-        target.columns = this.currentColumns; // Save columns schema
-        target.variants = variants;
-      }
-      CONFIG.saveState();
+      const saved = this.persistProductChanges(() => {
+        const target = CONFIG.products.find(p => p.id === this.editingProduct.id);
+        if (target) {
+          target.name = name;
+          target.code = code;
+          target.category = category;
+          target.brand = brand;
+          target.description = description;
+          target.tags = tags;
+          target.isSpecial = isSpecial;
+          target.images = images;
+          target.specs = specs;
+          target.columns = this.currentColumns; // Save columns schema
+          target.variants = variants;
+        }
+      });
+      if (!saved) return;
       this.editingProduct = null;
       this.uploadedImages = [];
       this.currentColumns = null;
@@ -1277,7 +1452,11 @@ const Admin = {
         variants
       };
 
-      CONFIG.addProduct(newProduct);
+      const saved = this.persistProductChanges(() => {
+        CONFIG.products.push(newProduct);
+      });
+      if (!saved) return;
+      this.uploadedImages = [];
       this.currentColumns = null;
       alert("Продуктът е успешно добавен!");
     }
@@ -1460,6 +1639,9 @@ const Admin = {
     if (raw) {
       try {
         this.savedTemplates = JSON.parse(raw);
+        if (!Array.isArray(this.savedTemplates)) {
+          this.savedTemplates = [];
+        }
       } catch (e) {
         this.savedTemplates = [];
       }
@@ -1485,20 +1667,83 @@ const Admin = {
     }
   },
 
+  saveTemplates() {
+    localStorage.setItem("hydrolux_table_templates", JSON.stringify(this.savedTemplates));
+  },
+
+  cloneColumns(columns) {
+    return (columns || []).map(c => ({ ...c }));
+  },
+
   saveTemplate(name) {
     if (!name || !name.trim()) {
       alert("Моля въведете име на шаблона!");
       return;
     }
     this.loadTemplates();
+    if (!this.currentColumns || this.currentColumns.length === 0) {
+      alert("Няма колони за запазване!");
+      return;
+    }
     const id = "tpl_" + Date.now();
     this.savedTemplates.push({
       id,
       name: name.trim(),
-      columns: [...this.currentColumns]
+      columns: this.cloneColumns(this.currentColumns)
     });
-    localStorage.setItem("hydrolux_table_templates", JSON.stringify(this.savedTemplates));
+    this.saveTemplates();
+    this.templatesPanelOpen = true;
     alert(`Шаблонът "${name}" е запазен успешно!`);
+    this.refreshVariantsTable();
+  },
+
+  renameTemplate(id, name) {
+    const nextName = name ? name.trim() : "";
+    if (!nextName) {
+      alert("Моля въведете име на шаблона!");
+      return;
+    }
+
+    this.loadTemplates();
+    const tpl = this.savedTemplates.find(t => t.id === id);
+    if (!tpl) return;
+
+    tpl.name = nextName;
+    this.saveTemplates();
+    this.templatesPanelOpen = true;
+    alert("Името на шаблона е обновено!");
+    this.refreshVariantsTable();
+  },
+
+  updateTemplateFromCurrentColumns(id) {
+    if (!this.currentColumns || this.currentColumns.length === 0) {
+      alert("Няма колони за обновяване на шаблона!");
+      return;
+    }
+
+    this.loadTemplates();
+    const tpl = this.savedTemplates.find(t => t.id === id);
+    if (!tpl) return;
+
+    tpl.columns = this.cloneColumns(this.currentColumns);
+    this.saveTemplates();
+    this.templatesPanelOpen = true;
+    alert(`Шаблонът "${tpl.name}" е обновен с текущите колони!`);
+    this.refreshVariantsTable();
+  },
+
+  deleteTemplate(id) {
+    this.loadTemplates();
+    const tpl = this.savedTemplates.find(t => t.id === id);
+    if (!tpl) return;
+
+    if (!confirm(`Сигурни ли сте, че искате да изтриете шаблона "${tpl.name}"?`)) {
+      return;
+    }
+
+    this.savedTemplates = this.savedTemplates.filter(t => t.id !== id);
+    this.saveTemplates();
+    this.templatesPanelOpen = true;
     this.refreshVariantsTable();
   },
 
@@ -1507,7 +1752,7 @@ const Admin = {
     this.loadTemplates();
     const tpl = this.savedTemplates.find(t => t.id === id);
     if (tpl) {
-      this.currentColumns = [...tpl.columns];
+      this.currentColumns = this.cloneColumns(tpl.columns);
       const activeVariants = this.collectVariantsFromDOM() || [];
       if (activeVariants.length === 0) {
         const newRow = {};
@@ -1516,6 +1761,7 @@ const Admin = {
         });
         activeVariants.push(newRow);
       }
+      this.templatesPanelOpen = true;
       this.refreshVariantsTable(activeVariants);
     }
   }
