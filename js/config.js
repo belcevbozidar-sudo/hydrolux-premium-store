@@ -1,4 +1,4 @@
-// Hydrolux Group Store Configuration & Catalog Seed Data
+// Hydrolux Group Store Configuration & Catalog Seed Data (Euro € Optimized)
 const CONFIG = {
   company: {
     name: "Хидролукс Груп",
@@ -9,11 +9,10 @@ const CONFIG = {
     phone: "+359 89 248 4337",
     phoneDisplay: "089 248 4337",
     email: "hydroluxgroup@gmail.com",
-    workingHours: "Понеделник - Петък: 08:30 - 17:30 | Събота: 09:00 - 13:00",
-    coords: { lat: 43.4116, lng: 23.2268 } // GPS placeholder
+    workingHours: "Понеделник - Петък: 08:30 - 17:30 | Събота: 09:00 - 13:00"
   },
   
-  eurToBgn: 1.95583, // Fix rate
+  eurToBgn: 1.0, // Strictly EUR now
   
   categories: [
     {
@@ -116,58 +115,9 @@ const CONFIG = {
       name: "Пневматични и съединители фитинги",
       icon: "⚙️",
       subcategories: [
-        {
-          id: "push-in",
-          name: "Цангови връзки",
-          sub: [
-            { id: "push-in-inch", name: "Инчови" },
-            { id: "push-in-metric", name: "Метрични" }
-          ]
-        },
-        {
-          id: "quick-couplings",
-          name: "Бързи връзки",
-          sub: [
-            { id: "qc-highflow", name: "Високодебитни" },
-            { id: "qc-mini", name: "Мини" },
-            { id: "qc-standard", name: "Стандарт" }
-          ]
-        },
-        { id: "threaded-fittings", name: "Резбови връзки" },
-        { id: "cutting-ring", name: "Врязващ пръстен" },
-        { id: "swivel-nut", name: "Затягаща гайка" },
-        { id: "ball-valves", name: "Сферични кранове" },
-        { id: "check-valves", name: "Възвратни клапани" },
-        { id: "pneumatic-tools", name: "Инструменти" }
-      ]
-    },
-    {
-      id: "industrial-fittings",
-      name: "Индустриални накрайници",
-      icon: "⛓️",
-      subcategories: [
-        {
-          id: "ibc-tote",
-          name: "IBC бидони",
-          sub: [
-            { id: "ibc-caps", name: "Капачки" },
-            { id: "ibc-valves", name: "Кранове" },
-            { id: "ibc-nozzles", name: "Накрайници" }
-          ]
-        },
-        {
-          id: "camlock",
-          name: "CAMLOCK бързи връзки",
-          sub: [
-            { id: "cam-alu", name: "Алуминий" },
-            { id: "cam-brass", name: "Месинг" },
-            { id: "cam-ss", name: "Неръждаема стомана" },
-            { id: "cam-pp", name: "Полипропилен" }
-          ]
-        },
-        { id: "hose-couplings", name: "Storz / Ferrari / GEKA / Guillemin / Cardan / Bauer" },
-        { id: "industrial-nozzles", name: "Бързосменници / Пистолети" },
-        { id: "industrial-valves", name: "Спирателни кранове и фланци" }
+        { id: "push-in", name: "Цангови връзки" },
+        { id: "quick-couplings", name: "Бързи връзки" },
+        { id: "threaded-fittings", name: "Резбови връзки" }
       ]
     },
     {
@@ -177,10 +127,7 @@ const CONFIG = {
       subcategories: [
         { id: "hyd-bsp", name: "BSP 60°" },
         { id: "hyd-din", name: "DIN 24°" },
-        { id: "hyd-jic", name: "JIC 37°" },
-        { id: "hyd-orfs", name: "ORFS" },
-        { id: "hyd-flange", name: "Фланцови" },
-        { id: "hyd-ferrules", name: "Чаши / Втулки за запресоване" }
+        { id: "hyd-jic", name: "JIC 37°" }
       ]
     },
     {
@@ -188,10 +135,7 @@ const CONFIG = {
       name: "Маркучи за високо налягане",
       icon: "⚡",
       subcategories: [
-        { id: "hp-thermoplastic", name: "Термопластични маркучи" },
         { id: "hp-hydraulic", name: "Хидравлични маркучи" },
-        { id: "hp-sewer", name: "За каналопочистване" },
-        { id: "hp-ptfe", name: "Тефлонови маркучи" },
         { id: "hp-washers", name: "За паро- и водоструйки" }
       ]
     },
@@ -201,8 +145,7 @@ const CONFIG = {
       icon: "🎒",
       subcategories: [
         { id: "acc-joiners", name: "Месингови и POM снадки" },
-        { id: "acc-guards", name: "Предпазни ръкави и спирали" },
-        { id: "acc-clamps", name: "Скоби за маркучи" }
+        { id: "acc-guards", name: "Предпазни ръкави и спирали" }
       ]
     }
   ],
@@ -219,32 +162,140 @@ const CONFIG = {
       reviewsCount: 12,
       views: 2136,
       inStock: true,
-      tags: ["гумен маркуч", "маркуч за въздух", "маркуч за вода", "маркуч за компресор", "маркуч за помпене на гуми", "маркуч за миене", "градински маркуч"],
-      description: `Висококачествен гумен маркуч за въздух и вода SEMPERIT - PLW 20 е класическо индустриално решение. Благодарение на своята надеждна конструкция с текстилна оплетка, той гарантира дълготрайна устойчивост и експлоатационна сигурност в изключително сурови условия.
-
-Предназначен за пренос на индустриална вода и сгъстен въздух в строителството, индустрията, кариери и селското стопанство. Маркучът има отлична гъвкавост и е устойчив на усукване.`,
+      tags: ["гумен маркуч", "маркуч за въздух", "маркуч за вода", "маркуч за компресор"],
+      description: `Висококачествен гумен маркуч за въздух и вода SEMPERIT - PLW 20 е класическо индустриално решение. Подходящ за пренос на индустриална вода и сгъстен въздух в строителството, индустрията, кариери и селското стопанство. Маркучът има отлична гъвкавост и е устойчив на усукване.`,
       specs: [
         { key: "Режим на работа", value: "Нагнетателен" },
-        { key: "Материал на вложката", value: "Черна синтетична гума, устойчива на маслена мъгла" },
+        { key: "Материал", value: "Черна синтетична гума" },
         { key: "Вид подсилване", value: "Две силно устойчиви текстилни оплетки" },
-        { key: "Материал на покритието", value: "Черна синтетична гума, устойчива на озон, триене и атмосферни влияния" },
         { key: "Работна температура", value: "-25°C до +70°C" },
-        { key: "Защитен фактор (безопасност)", value: "3:1 (Налягане на пръсване 60 bar)" },
-        { key: "Минимално количество за поръчка", value: "1 метър (продава се на линеен метър)" }
+        { key: "Защитен фактор", value: "3:1 (Налягане на пръсване 60 bar)" }
       ],
       images: [
-        "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop", // placeholder premium industrial image
-        "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=600&auto=format&fit=crop"
+        "https://images.unsplash.com/photo-1542282088-fe8426682b8f?q=80&w=600&auto=format&fit=crop"
       ],
-      // The core dynamic variants table
       variants: [
         { code: "PLW20006", innerDb: 6, inch: "1/4\"", outerDb: 12, pressure: 20, bend: 60, weight: 0.13, rollLength: 50, priceEur: 1.45 },
         { code: "PLW20008", innerDb: 8, inch: "5/16\"", outerDb: 15, pressure: 20, bend: 80, weight: 0.17, rollLength: 50, priceEur: 1.65 },
         { code: "PLW20010", innerDb: 10, inch: "3/8\"", outerDb: 17, pressure: 20, bend: 100, weight: 0.20, rollLength: 50, priceEur: 1.95 },
         { code: "PLW20013", innerDb: 13, inch: "1/2\"", outerDb: 20, pressure: 20, bend: 130, weight: 0.25, rollLength: 50, priceEur: 2.45 },
-        { code: "PLW20016", innerDb: 16, inch: "5/8\"", outerDb: 23, pressure: 20, bend: 160, weight: 0.31, rollLength: 50, priceEur: 2.95 },
         { code: "PLW20019", innerDb: 19, inch: "3/4\"", outerDb: 27, pressure: 20, bend: 190, weight: 0.38, rollLength: 50, priceEur: 3.65 },
         { code: "PLW20025", innerDb: 25, inch: "1\"", outerDb: 34, pressure: 20, bend: 250, weight: 0.52, rollLength: 50, priceEur: 4.95 }
+      ]
+    },
+    {
+      id: "water-flat-flatline",
+      code: "FLAT-HP",
+      name: "Плосък маркуч за вода Layflat - Flatline Premium",
+      category: "water-hoses",
+      subcategory: "water-flat",
+      brand: "Hydrolux OEM",
+      rating: 4.9,
+      reviewsCount: 6,
+      views: 541,
+      inStock: true,
+      tags: ["layflat", "плосък маркуч", "помпа", "поливане", "земеделие"],
+      description: `Ултра-лек и здрав плосък маркуч тип Layflat, изработен от висококачествен PVC материал и полиестерна текстилна мрежа. Лесен за съхранение, перфектен за изпомпване на вода под средно налягане, отводняване и напояване в земеделието.`,
+      specs: [
+        { key: "Тип", value: "Плосък маркуч (Layflat)" },
+        { key: "Материал", value: "Мек PVC с полиестерна армировка" },
+        { key: "Цвят", value: "Син" },
+        { key: "Работна температура", value: "-10°C до +60°C" }
+      ],
+      images: [
+        "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=600&auto=format&fit=crop"
+      ],
+      variants: [
+        { code: "FLAT-DN50", innerDb: 51, inch: "2\"", outerDb: 53.5, pressure: 8, bend: 0, weight: 0.28, rollLength: 100, priceEur: 2.10 },
+        { code: "FLAT-DN75", innerDb: 76, inch: "3\"", outerDb: 78.8, pressure: 7, bend: 0, weight: 0.49, rollLength: 100, priceEur: 3.20 },
+        { code: "FLAT-DN100", innerDb: 102, inch: "4\"", outerDb: 105.0, pressure: 6, bend: 0, weight: 0.72, rollLength: 50, priceEur: 4.50 }
+      ]
+    },
+    {
+      id: "fuel-oil-carbopress",
+      code: "TO-CARBO",
+      name: "Маркуч за масло и горива Semperit - TOF 319",
+      category: "fuel-oil-hoses",
+      subcategory: "",
+      brand: "Semperit",
+      rating: 5.0,
+      reviewsCount: 14,
+      views: 1290,
+      inStock: true,
+      tags: ["горива", "масла", "бензин", "дизел", "semperit"],
+      description: `Специализиран гумен маркуч за безоловен бензин, дизелово гориво, мазут и технически масла. Отличава се с високоякостен вътрешен слой, напълно устойчив на аромати и химически примеси в съвременните горива. Предназначен за индустриални инсталации и цистерни.`,
+      specs: [
+        { key: "Стандарт", value: "EN ISO 1307" },
+        { key: "Материал на вложката", value: "NBR гума, изключително маслоустойчива" },
+        { key: "Подсилване", value: "Текстилни нишки, медна жица за антистатичност" },
+        { key: "Работна температура", value: "-30°C до +80°C" }
+      ],
+      images: [
+        "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600&auto=format&fit=crop"
+      ],
+      variants: [
+        { code: "TOF319-06", innerDb: 6, inch: "1/4\"", outerDb: 13, pressure: 20, bend: 40, weight: 0.15, rollLength: 50, priceEur: 2.20 },
+        { code: "TOF319-08", innerDb: 8, inch: "5/16\"", outerDb: 15, pressure: 20, bend: 50, weight: 0.18, rollLength: 50, priceEur: 2.50 },
+        { code: "TOF319-10", innerDb: 10, inch: "3/8\"", outerDb: 17, pressure: 20, bend: 60, weight: 0.21, rollLength: 50, priceEur: 2.90 },
+        { code: "TOF319-13", innerDb: 13, inch: "1/2\"", outerDb: 21, pressure: 20, bend: 80, weight: 0.32, rollLength: 50, priceEur: 3.80 },
+        { code: "TOF319-19", innerDb: 19, inch: "3/4\"", outerDb: 29, pressure: 20, bend: 120, weight: 0.54, rollLength: 50, priceEur: 5.40 }
+      ]
+    },
+    {
+      id: "silicone-elbow-90",
+      code: "SIL-90",
+      name: "Силиконово съединение под 90° - Premium Grade",
+      category: "silicone-hoses",
+      subcategory: "silicone-elbows",
+      brand: "Hydrolux High-Spec",
+      rating: 4.8,
+      reviewsCount: 11,
+      views: 749,
+      inStock: true,
+      tags: ["силикон", "коляно 90", "турбо", "охлаждане", "тунинг", "силиконово съединение"],
+      description: `Армирано силиконово колена на 90 градуса, произведено от 4 слоен висококачествен полиестерно подсилен силикон. Проектирано за високи температури и натоварвания в турбо компресори и охладителни системи. Изключителна устойчивост на разширение.`,
+      specs: [
+        { key: "Материал", value: "Силикон с 4 текстилни армировки" },
+        { key: "Дължина на рамото", value: "102 мм (10.2 см)" },
+        { key: "Работна температура", value: "-50°C до +180°C" },
+        { key: "Дебелина на стената", value: "5.0 мм" }
+      ],
+      images: [
+        "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?q=80&w=600&auto=format&fit=crop"
+      ],
+      variants: [
+        { code: "SIL90-DN38", innerDb: 38, inch: "1 1/2\"", outerDb: 48, pressure: 5, bend: 90, weight: 0.22, rollLength: 1, priceEur: 8.50 },
+        { code: "SIL90-DN51", innerDb: 51, inch: "2\"", outerDb: 61, pressure: 4.5, bend: 90, weight: 0.31, rollLength: 1, priceEur: 11.20 },
+        { code: "SIL90-DN63", innerDb: 63, inch: "2 1/2\"", outerDb: 73, pressure: 4.0, bend: 90, weight: 0.42, rollLength: 1, priceEur: 14.80 },
+        { code: "SIL90-DN76", innerDb: 76, inch: "3\"", outerDb: 86, pressure: 3.5, bend: 90, weight: 0.53, rollLength: 1, priceEur: 17.50 }
+      ]
+    },
+    {
+      id: "food-milk-foodflex",
+      code: "FOOD-FLEX",
+      name: "Хранителен гумен маркуч за мляко и вино - Foodflex",
+      category: "food-hoses",
+      subcategory: "food-rubber",
+      brand: "Semperit",
+      rating: 4.9,
+      reviewsCount: 5,
+      views: 482,
+      inStock: true,
+      tags: ["хранителен маркуч", "мляко", "вино", "бира", "храни", "semperit"],
+      description: `Премиум маркуч за течни хранителни продукти - специално сертифициран за мляко, млечни продукти, бира, вино, гроздов сок и алкохолни напитки с концентрация до 96%. Не влияе на вкусовите и ароматни качества на флуидите. Напълно отговаря на FDA стандартите.`,
+      specs: [
+        { key: "Слой", value: "Бял бутилов каучук (FDA сертифициран)" },
+        { key: "Покритие", value: "Син каучук, устойчив на триене и стареене" },
+        { key: "Дезинфекция", value: "С пара до +120°C (максимум 20 мин)" },
+        { key: "Работна температура", value: "-35°C до +95°C" }
+      ],
+      images: [
+        "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop"
+      ],
+      variants: [
+        { code: "FOOD-DN25", innerDb: 25, inch: "1\"", outerDb: 37, pressure: 10, bend: 150, weight: 0.76, rollLength: 40, priceEur: 9.80 },
+        { code: "FOOD-DN32", innerDb: 32, inch: "1 1/4\"", outerDb: 44, pressure: 10, bend: 190, weight: 0.94, rollLength: 40, priceEur: 12.40 },
+        { code: "FOOD-DN38", innerDb: 38, inch: "1 1/2\"", outerDb: 51, pressure: 10, bend: 220, weight: 1.15, rollLength: 40, priceEur: 14.90 }
       ]
     },
     {
@@ -258,15 +309,12 @@ const CONFIG = {
       reviewsCount: 8,
       views: 942,
       inStock: true,
-      tags: ["полиуретан", "шлаух", "пневматика", "бързи връзки", "цанги", "въздух", "автоматизация"],
-      description: `Гъвкав полиуретанов шлаух от най-висок клас, изработен от чист термопластичен полиуретан (TPU). Притежава забележителна устойчивост на пречупване, химикали, масла и абразия. Изключително подходящ за цангови връзки и автоматизирани пневматични системи.`,
+      tags: ["полиуретан", "шлаух", "пневматика", "бързи връзки"],
+      description: `Гъвкав полиуретанов шлаух от най-висок клас, изработен от чист термопластичен полиуретан (TPU). Изключително подходящ за цангови връзки и автоматизирани пневматични системи.`,
       specs: [
-        { key: "Материал", value: "100% термопластичен естерен полиуретан (TPU)" },
+        { key: "Материал", value: "100% TPU" },
         { key: "Твърдост", value: "98 Shore A" },
-        { key: "Работна температура", value: "-20°C до +60°C" },
-        { key: "Работна среда", value: "Пречистен сгъстен въздух, вакуум, вода" },
-        { key: "Защитен фактор", value: "3:1 при 23°C" },
-        { key: "Цвят", value: "Син / Черен / Прозрачен" }
+        { key: "Работна температура", value: "-20°C до +60°C" }
       ],
       images: [
         "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?q=80&w=600&auto=format&fit=crop"
@@ -275,8 +323,7 @@ const CONFIG = {
         { code: "PU0425-BL", innerDb: 2.5, inch: "1/10\"", outerDb: 4, pressure: 10, bend: 15, weight: 0.012, rollLength: 100, priceEur: 0.35 },
         { code: "PU0640-BL", innerDb: 4.0, inch: "5/32\"", outerDb: 6, pressure: 10, bend: 25, weight: 0.023, rollLength: 100, priceEur: 0.55 },
         { code: "PU0855-BL", innerDb: 5.5, inch: "7/32\"", outerDb: 8, pressure: 10, bend: 35, weight: 0.039, rollLength: 100, priceEur: 0.75 },
-        { code: "PU1075-BL", innerDb: 7.5, inch: "1/4\"", outerDb: 10, pressure: 10, bend: 50, weight: 0.055, rollLength: 100, priceEur: 1.15 },
-        { code: "PU1290-BL", innerDb: 9.0, inch: "3/8\"", outerDb: 12, pressure: 10, bend: 65, weight: 0.078, rollLength: 100, priceEur: 1.55 }
+        { code: "PU1075-BL", innerDb: 7.5, inch: "1/4\"", outerDb: 10, pressure: 10, bend: 50, weight: 0.055, rollLength: 100, priceEur: 1.15 }
       ]
     },
     {
@@ -290,71 +337,60 @@ const CONFIG = {
       reviewsCount: 16,
       views: 3105,
       inStock: true,
-      tags: ["хидравличен маркуч", "високо налягане", "2SN", "запресоване", "хидравлика", "багер", "трактор"],
-      description: `Професионален хидравличен маркуч с двойна стоманена оплетка (2SN) съгласно стандарт EN 853. Проектиран за пренос на хидравлични масла, емулсии вода-масло и водни разтвори под изключително високо налягане. Перфектен за строителна техника, селскостопански машини и промишлени хидравлични системи.`,
+      tags: ["2SN", "запресоване", "хидравлика", "багер"],
+      description: `Професионален хидравличен маркуч с двойна стоманена оплетка (2SN) съгласно стандарт EN 853. Проектиран за пренос на хидравлични масла.`,
       specs: [
-        { key: "Стандарт", value: "EN 853 2SN / SAE 100 R2AT" },
-        { key: "Материал на вложката", value: "Маслоустойчива синтетична гума (NBR)" },
-        { key: "Подсилване", value: "Две оплетки от високоякостна стоманена тел" },
-        { key: "Външно покритие", value: "Синтетична гума, изключително устойчива на износване, озон и срязване" },
-        { key: "Работна температура", value: "-40°C до +100°C (пикове до +120°C)" },
-        { key: "Флуиди", value: "Минерални хидравлични масла, гликол, горива, вода" }
+        { key: "Стандарт", value: "EN 853 2SN" },
+        { key: "Материал", value: "Маслоустойчива NBR гума" },
+        { key: "Подсилване", value: "Две оплетки от стоманена тел" }
       ],
       images: [
         "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600&auto=format&fit=crop"
       ],
       variants: [
         { code: "2SN06", innerDb: 6.3, inch: "1/4\"", outerDb: 15.0, pressure: 400, bend: 100, weight: 0.38, rollLength: 50, priceEur: 2.80 },
-        { code: "2SN08", innerDb: 8.0, inch: "5/16\"", outerDb: 16.6, pressure: 350, bend: 115, weight: 0.43, rollLength: 50, priceEur: 3.10 },
         { code: "2SN10", innerDb: 9.5, inch: "3/8\"", outerDb: 19.0, pressure: 330, bend: 130, weight: 0.51, rollLength: 50, priceEur: 3.40 },
         { code: "2SN13", innerDb: 12.7, inch: "1/2\"", outerDb: 22.2, pressure: 275, bend: 180, weight: 0.61, rollLength: 50, priceEur: 4.10 },
-        { code: "2SN16", innerDb: 16.0, inch: "5/8\"", outerDb: 25.4, pressure: 250, bend: 200, weight: 0.73, rollLength: 50, priceEur: 4.90 },
-        { code: "2SN19", innerDb: 19.0, inch: "3/4\"", outerDb: 29.3, pressure: 215, bend: 240, weight: 0.90, rollLength: 50, priceEur: 5.80 },
         { code: "2SN25", innerDb: 25.4, inch: "1\"", outerDb: 38.1, pressure: 165, bend: 300, weight: 1.35, rollLength: 40, priceEur: 8.20 }
       ]
     },
     {
-      id: "pneumatic-fitting-pc",
-      code: "PC-FITT",
-      name: "Бърза цангова връзка - права с резба (Серия PC)",
-      category: "pneumatic-fittings",
-      subcategory: "push-in-metric",
-      brand: "Pneumax Components",
+      id: "acc-spiral-guard",
+      code: "SPIRAL-G",
+      name: "Пластмасова предпазна спирала за маркучи - Spiral Guard",
+      category: "hose-accessories",
+      subcategory: "acc-guards",
+      brand: "Hydrolux OEM",
       rating: 4.8,
-      reviewsCount: 22,
-      views: 745,
+      reviewsCount: 7,
+      views: 312,
       inStock: true,
-      tags: ["цангова връзка", "фитинг", "цанга", "пневматика", "PC", "права връзка", "метрична резба"],
-      description: `Универсални месингови цангови връзки за пневматични инсталации с метричен/G захват. Осигуряват бързо и херметично свързване на полиуретанови и полиамидни шлаухи без инструменти. Вграденият О-пръстен осигурява отлично уплътнение.`,
+      tags: ["спирала", "предпазител", "аксесоари", "защита маркуч"],
+      description: `Високоякостна спирала от полиетилен с висока плътност (HDPE). Предпазва хидравличните маркучи от триене, усукване, силни удари и UV слънчево лъчение. Увеличава експлоатационния живот на маркучите до 3 пъти.`,
       specs: [
-        { key: "Тип", value: "Права цангова връзка с външна резба" },
-        { key: "Материал на тялото", value: "Никелиран месинг" },
-        { key: "Уплътнения", value: "NBR гума (висок клас)" },
-        { key: "Работно налягане", value: "-0.95 до 12 bar" },
-        { key: "Работна температура", value: "0°C до +60°C" }
+        { key: "Материал", value: "HDPE (Полиетилен с висока плътност)" },
+        { key: "Устойчивост", value: "UV, киселини, основи, масла" },
+        { key: "Работна температура", value: "-40°C до +90°C" }
       ],
       images: [
         "https://images.unsplash.com/photo-1537462715879-360eeb61a0bc?q=80&w=600&auto=format&fit=crop"
       ],
       variants: [
-        { code: "PC6-01", innerDb: 6, inch: "G 1/8\"", outerDb: 6, pressure: 12, bend: 0, weight: 0.015, rollLength: 1, priceEur: 0.45 },
-        { code: "PC6-02", innerDb: 6, inch: "G 1/4\"", outerDb: 6, pressure: 12, bend: 0, weight: 0.018, rollLength: 1, priceEur: 0.55 },
-        { code: "PC8-01", innerDb: 8, inch: "G 1/8\"", outerDb: 8, pressure: 12, bend: 0, weight: 0.020, rollLength: 1, priceEur: 0.60 },
-        { code: "PC8-02", innerDb: 8, inch: "G 1/4\"", outerDb: 8, pressure: 12, bend: 0, weight: 0.022, rollLength: 1, priceEur: 0.65 },
-        { code: "PC10-02", innerDb: 10, inch: "G 1/4\"", outerDb: 10, pressure: 12, bend: 0, weight: 0.030, rollLength: 1, priceEur: 0.85 },
-        { code: "PC12-03", innerDb: 12, inch: "G 3/8\"", outerDb: 12, pressure: 12, bend: 0, weight: 0.045, rollLength: 1, priceEur: 1.10 }
+        { code: "SP-16G", innerDb: 13.0, inch: "ø 16мм", outerDb: 16.0, pressure: 0, bend: 0, weight: 0.05, rollLength: 20, priceEur: 0.85 },
+        { code: "SP-20G", innerDb: 16.0, inch: "ø 20мм", outerDb: 20.6, pressure: 0, bend: 0, weight: 0.08, rollLength: 20, priceEur: 1.15 },
+        { code: "SP-25G", innerDb: 20.0, inch: "ø 25мм", outerDb: 26.0, pressure: 0, bend: 0, weight: 0.12, rollLength: 25, priceEur: 1.50 },
+        { code: "SP-32G", innerDb: 27.0, inch: "ø 32мм", outerDb: 32.8, pressure: 0, bend: 0, weight: 0.19, rollLength: 25, priceEur: 1.95 }
       ]
     }
   ]
 };
 
-// Helper function to format prices
+// Helper function to format prices (EUR strictly)
 function formatPrice(eur) {
-  const bgn = eur * CONFIG.eurToBgn;
   return {
     eur: eur.toFixed(2) + " €",
-    bgn: bgn.toFixed(2) + " лв.",
+    bgn: "", 
     eurRaw: eur,
-    bgnRaw: bgn
+    bgnRaw: eur
   };
 }

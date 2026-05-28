@@ -1,6 +1,5 @@
-// Hose Builder (Интерактивен Конфигуратор на Маркучи)
+// Hose Configurator Component (Euro € Optimized)
 const HoseBuilder = {
-  // Config options and base prices
   options: {
     hoseTypes: [
       { id: "hp-2sn", name: "Хидравличен маркуч 2SN (Двуоплетен)", basePriceEurPerMeter: 3.50, pressures: { "1/4\"": 400, "3/8\"": 330, "1/2\"": 275, "3/4\"": 215, "1\"": 165 } },
@@ -31,7 +30,6 @@ const HoseBuilder = {
     ]
   },
 
-  // Current builder state
   state: {
     hoseTypeId: "hp-2sn",
     sizeId: "3/8",
@@ -41,7 +39,6 @@ const HoseBuilder = {
     lengthMeters: 1.5
   },
 
-  // Calculate pricing based on current selections
   calculatePrice() {
     const hose = this.options.hoseTypes.find(h => h.id === this.state.hoseTypeId);
     const size = this.options.sizes.find(s => s.id === this.state.sizeId);
@@ -49,7 +46,7 @@ const HoseBuilder = {
     const fitR = this.options.fittings.find(f => f.id === this.state.fittingRightId);
     const sleeve = this.options.sleeves.find(sl => sl.id === this.state.sleeveId);
 
-    if (!hose || !size || !fitL || !fitR || !sleeve) return { eur: 0, bgn: 0 };
+    if (!hose || !size || !fitL || !fitR || !sleeve) return { eur: 0 };
 
     const baseHosePrice = hose.basePriceEurPerMeter * size.factor;
     const hoseCost = baseHosePrice * this.state.lengthMeters;
@@ -57,11 +54,9 @@ const HoseBuilder = {
     const fittingsCost = fitL.priceEur + fitR.priceEur;
 
     const totalEur = hoseCost + sleeveCost + fittingsCost;
-    const totalBgn = totalEur * CONFIG.eurToBgn;
 
     return {
       eur: totalEur,
-      bgn: totalBgn,
       details: {
         hoseCost,
         sleeveCost,
@@ -70,7 +65,6 @@ const HoseBuilder = {
     };
   },
 
-  // Set builder value
   set(key, value) {
     if (key === "lengthMeters") {
       this.state[key] = Math.max(0.1, parseFloat(value) || 1.0);
@@ -80,7 +74,6 @@ const HoseBuilder = {
     this.render();
   },
 
-  // Render the interface in the #hose-builder container
   render() {
     const container = document.getElementById("hose-builder-container");
     if (!container) return;
@@ -103,7 +96,7 @@ const HoseBuilder = {
                 <div class="grid-option ${this.state.hoseTypeId === h.id ? 'active' : ''}" 
                      onclick="HoseBuilder.set('hoseTypeId', '${h.id}')">
                   <div class="option-name">${h.name}</div>
-                  <div class="option-sub">Базова цена: ${formatPrice(h.basePriceEurPerMeter).bgn}/м</div>
+                  <div class="option-sub">Базова цена: ${formatPrice(h.basePriceEurPerMeter).eur}/м</div>
                 </div>
               `).join("")}
             </div>
@@ -128,7 +121,7 @@ const HoseBuilder = {
               <select class="form-control" onchange="HoseBuilder.set('fittingLeftId', this.value)">
                 ${this.options.fittings.map(f => `
                   <option value="${f.id}" ${this.state.fittingLeftId === f.id ? 'selected' : ''}>
-                    ${f.icon} ${f.name} (+${formatPrice(f.priceEur).bgn})
+                    ${f.icon} ${f.name} (+${formatPrice(f.priceEur).eur})
                   </option>
                 `).join("")}
               </select>
@@ -139,7 +132,7 @@ const HoseBuilder = {
               <select class="form-control" onchange="HoseBuilder.set('fittingRightId', this.value)">
                 ${this.options.fittings.map(f => `
                   <option value="${f.id}" ${this.state.fittingRightId === f.id ? 'selected' : ''}>
-                    ${f.icon} ${f.name} (+${formatPrice(f.priceEur).bgn})
+                    ${f.icon} ${f.name} (+${formatPrice(f.priceEur).eur})
                   </option>
                 `).join("")}
               </select>
@@ -151,7 +144,7 @@ const HoseBuilder = {
             <select class="form-control" onchange="HoseBuilder.set('sleeveId', this.value)">
               ${this.options.sleeves.map(sl => `
                 <option value="${sl.id}" ${this.state.sleeveId === sl.id ? 'selected' : ''}>
-                  ${sl.name} ${sl.priceEurPerMeter > 0 ? `(+${formatPrice(sl.priceEurPerMeter).bgn}/м)` : ''}
+                  ${sl.name} ${sl.priceEurPerMeter > 0 ? `(+${formatPrice(sl.priceEurPerMeter).eur}/м)` : ''}
                 </option>
               `).join("")}
             </select>
@@ -205,13 +198,12 @@ const HoseBuilder = {
 
             <div class="pricing-panel">
               <div class="pricing-label">ПРОГНОЗНА ЦЕНА (С ДДС)</div>
-              <div class="price-bgn font-huge text-primary">${price.bgn.toFixed(2)} лв.</div>
-              <div class="price-eur font-medium text-muted">${price.eur.toFixed(2)} €</div>
+              <div class="price-bgn font-huge text-primary">${price.eur.toFixed(2)} €</div>
               
               <div class="price-breakdown font-small text-muted">
-                <span>Маркуч: ${formatPrice(price.details.hoseCost).bgn}</span> | 
-                <span>Накрайници: ${formatPrice(price.details.fittingsCost).bgn}</span>
-                ${price.details.sleeveCost > 0 ? `| <span>Ръкав: ${formatPrice(price.details.sleeveCost).bgn}</span>` : ""}
+                <span>Маркуч: ${formatPrice(price.details.hoseCost).eur}</span> | 
+                <span>Накрайници: ${formatPrice(price.details.fittingsCost).eur}</span>
+                ${price.details.sleeveCost > 0 ? `| <span>Ръкав: ${formatPrice(price.details.sleeveCost).eur}</span>` : ""}
               </div>
             </div>
 
@@ -227,12 +219,10 @@ const HoseBuilder = {
     `;
   },
 
-  // Helper to increment/decrement length
   adjustLength(diff) {
     this.set("lengthMeters", (this.state.lengthMeters + diff).toFixed(1));
   },
 
-  // Add customized hose assembly to shopping cart
   addToCart() {
     const hose = this.options.hoseTypes.find(h => h.id === this.state.hoseTypeId);
     const size = this.options.sizes.find(s => s.id === this.state.sizeId);
@@ -260,8 +250,6 @@ const HoseBuilder = {
     };
 
     Cart.addItem(customHoseProduct, "CUSTOM-SPEC", 1);
-    
-    // Jump to cart
     Cart.openDrawer();
   }
 };

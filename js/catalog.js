@@ -1,87 +1,76 @@
-// Catalog Filtering & Details Controller
+// Catalog Filtering, Dropdowns & Details Controller (Euro € Optimized)
 const Catalog = {
   activeCategory: null,
   activeSubcategory: null,
   searchQuery: "",
-  priceFilterMax: 10, // Default slider max
-  pressureFilterMax: 400,
 
-  // Render product categories in the sidebar (multi-level tree)
+  // Render product categories inside the top collapsible dropdown menu
   renderSidebar() {
-    const sidebar = document.getElementById("catalog-sidebar-categories");
-    if (!sidebar) return;
+    const menu = document.getElementById("catalog-cat-dropdown-menu");
+    if (!menu) return;
 
-    sidebar.innerHTML = CONFIG.categories.map(cat => {
-      const hasSubs = cat.subcategories && cat.subcategories.length > 0;
-      const isCatActive = this.activeCategory === cat.id;
-
-      return `
-        <div class="sidebar-cat-group ${isCatActive ? 'expanded' : ''}">
-          <div class="sidebar-cat-header ${isCatActive ? 'active' : ''}" 
-               onclick="Catalog.selectCategory('${cat.id}')">
-            <span class="cat-icon">${cat.icon}</span>
-            <span class="cat-name">${cat.name}</span>
-            ${hasSubs ? `<span class="cat-toggle-arrow">▼</span>` : ""}
-          </div>
-          
-          ${hasSubs ? `
-            <div class="sidebar-cat-subs">
-              ${cat.subcategories.map(sub => {
-                const isSubActive = this.activeSubcategory === sub.id;
-                const hasThirdLevel = sub.sub && sub.sub.length > 0;
-                
-                return `
-                  <div class="sidebar-sub-group ${isSubActive ? 'expanded' : ''}">
-                    <div class="sidebar-sub-header ${isSubActive ? 'active' : ''}" 
-                         onclick="event.stopPropagation(); Catalog.selectSubcategory('${cat.id}', '${sub.id}')">
-                      <span>${sub.name}</span>
-                      ${hasThirdLevel ? `<span class="sub-toggle-arrow">▼</span>` : ""}
-                    </div>
-                    
-                    ${hasThirdLevel ? `
-                      <div class="sidebar-sub-third">
-                        ${sub.sub.map(third => `
-                          <div class="sidebar-third-item" 
-                               onclick="event.stopPropagation(); Catalog.selectThirdCategory('${cat.id}', '${sub.id}', '${third.id}')">
-                            • ${third.name}
-                          </div>
-                        `).join("")}
-                      </div>
-                    ` : ""}
-                  </div>
-                `;
-              }).join("")}
+    menu.innerHTML = `
+      <div class="dropdown-all-item" onclick="Catalog.selectCategory(''); Catalog.toggleCategoriesDropdown()">
+        📂 Всички Продукти (Всички Категории)
+      </div>
+      ${CONFIG.categories.map(cat => {
+        const hasSubs = cat.subcategories && cat.subcategories.length > 0;
+        return `
+          <div class="dropdown-col">
+            <div class="dropdown-col-title" onclick="Catalog.selectCategory('${cat.id}'); Catalog.toggleCategoriesDropdown()">
+              ${cat.icon} ${cat.name}
             </div>
-          ` : ""}
-        </div>
-      `;
-    }).join("");
+            ${hasSubs ? `
+              <div class="dropdown-sub-list">
+                ${cat.subcategories.map(sub => `
+                  <span class="dropdown-sub-item" onclick="Catalog.selectSubcategory('${cat.id}', '${sub.id}'); Catalog.toggleCategoriesDropdown()">
+                    • ${sub.name}
+                  </span>
+                `).join("")}
+              </div>
+            ` : ""}
+          </div>
+        `;
+      }).join("")}
+    `;
+  },
+
+  toggleCategoriesDropdown() {
+    const menu = document.getElementById("catalog-cat-dropdown-menu");
+    if (menu) {
+      menu.classList.toggle("hidden");
+    }
   },
 
   selectCategory(catId) {
-    if (this.activeCategory === catId && !this.activeSubcategory) {
-      // Toggle off if clicked again
+    const btn = document.getElementById("catalog-cat-dropdown-btn");
+    
+    if (!catId) {
       this.activeCategory = null;
+      this.activeSubcategory = null;
+      if (btn) btn.textContent = "📂 Изберете Категория (Всички Категории) ▾";
     } else {
       this.activeCategory = catId;
       this.activeSubcategory = null;
+      const cat = CONFIG.categories.find(c => c.id === catId);
+      if (btn && cat) btn.textContent = `📂 Категория: ${cat.name} ▾`;
     }
-    this.renderSidebar();
+    
     this.applyFiltersAndRender();
   },
 
   selectSubcategory(catId, subId) {
     this.activeCategory = catId;
-    this.activeSubcategory = this.activeSubcategory === subId ? null : subId;
-    this.renderSidebar();
-    this.applyFiltersAndRender();
-  },
-
-  selectThirdCategory(catId, subId, thirdId) {
-    this.activeCategory = catId;
     this.activeSubcategory = subId;
-    // Show quick filter toast for advanced categories
-    Cart.showToast(`Избрана подкатегория: ${thirdId}`);
+    
+    const cat = CONFIG.categories.find(c => c.id === catId);
+    const sub = cat.subcategories.find(s => s.id === subId);
+    
+    const btn = document.getElementById("catalog-cat-dropdown-btn");
+    if (btn && cat && sub) {
+      btn.textContent = `📂 ${cat.name} › ${sub.name} ▾`;
+    }
+    
     this.applyFiltersAndRender();
   },
 
@@ -89,8 +78,13 @@ const Catalog = {
     this.activeCategory = null;
     this.activeSubcategory = null;
     this.searchQuery = "";
-    document.getElementById("search-input-blue").value = "";
-    this.renderSidebar();
+    
+    const btn = document.getElementById("catalog-cat-dropdown-btn");
+    if (btn) btn.textContent = "📂 Изберете Категория (Всички Категории) ▾";
+    
+    const searchInput = document.getElementById("search-input-blue");
+    if (searchInput) searchInput.value = "";
+    
     this.applyFiltersAndRender();
   },
 
@@ -119,6 +113,9 @@ const Catalog = {
 
     // Update active filters title
     const titleEl = document.getElementById("catalog-active-title");
+    const countEl = document.getElementById("catalog-count");
+    if (countEl) countEl.textContent = filtered.length;
+
     if (titleEl) {
       if (this.activeCategory) {
         const cat = CONFIG.categories.find(c => c.id === this.activeCategory);
@@ -148,13 +145,12 @@ const Catalog = {
     }
 
     grid.innerHTML = filtered.map(p => {
-      // Find range of prices
       const prices = p.variants.map(v => v.priceEur);
       const minPrice = Math.min(...prices);
       const maxPrice = Math.max(...prices);
       const priceText = prices.length > 1
-        ? `от ${formatPrice(minPrice).bgn} до ${formatPrice(maxPrice).bgn}`
-        : `${formatPrice(minPrice).bgn}`;
+        ? `от ${minPrice.toFixed(2)} € до ${maxPrice.toFixed(2)} €`
+        : `${minPrice.toFixed(2)} €`;
 
       return `
         <div class="product-card card" onclick="Catalog.openProductDetails('${p.id}')">
@@ -183,7 +179,6 @@ const Catalog = {
     }).join("");
   },
 
-  // Open details view and inject values
   openProductDetails(productId) {
     const product = CONFIG.products.find(p => p.id === productId);
     if (!product) return;
@@ -241,7 +236,7 @@ const Catalog = {
            onclick="Catalog.changeMainImage('${img}', this)">
     `).join("");
 
-    // 🔥 Key Component: Dynamic Variants Table
+    // 🔥 Variants Table strictly in EUR €
     const tableBody = document.getElementById("prod-variants-tbody");
     tableBody.innerHTML = product.variants.map(v => `
       <tr>
@@ -254,8 +249,7 @@ const Catalog = {
         <td class="text-muted font-xs">${v.weight} кг/м</td>
         <td>${v.rollLength} м</td>
         <td>
-          <div class="table-price-bgn">${formatPrice(v.priceEur).bgn}</div>
-          <div class="table-price-eur text-muted font-xs">${formatPrice(v.priceEur).eur}</div>
+          <div class="table-price-bgn">${formatPrice(v.priceEur).eur}</div>
         </td>
         <td>
           <div class="quantity-input-wrapper small">
@@ -328,7 +322,6 @@ const Catalog = {
     if (modal) {
       modal.classList.add("open");
       document.body.classList.add("no-scroll");
-      // Pre-fill subject
       const prodTitle = document.getElementById("prod-title").textContent;
       const sku = document.getElementById("prod-sku").textContent;
       document.getElementById("inquiry-subject").value = `Запитване относно: ${prodTitle} (SKU: ${sku})`;
@@ -346,6 +339,6 @@ const Catalog = {
   submitInquiry(event) {
     event.preventDefault();
     this.closeInquiryModal();
-    Cart.showToast("Благодарим Ви! Запитването е изпратено. Ще се свържем с Вас до 2 часа.");
+    Cart.showToast("Благодарим Ви! Запитването е изпратено успешно.");
   }
 };

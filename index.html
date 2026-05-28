@@ -10,7 +10,7 @@
 <body>
 
   <!-- ==========================================================================
-       HEADER TOP BAR (Продажби, Влез, Валута)
+       HEADER TOP BAR (Optimized & Clean)
        ========================================================================== -->
   <div class="header-top">
     <div class="container">
@@ -18,10 +18,7 @@
         <span>Продажби: <a href="tel:+359892484337">+359 89 248 4337</a></span>
       </div>
       <div class="header-top-right">
-        <span class="login-link">🔒 Влез / Регистрирайте се</span>
-        <div class="currency-dropdown">
-          <span>€ EURO ▾</span>
-        </div>
+        <span>📍 гр. Монтана, ул. „Индустриална“ 32г</span>
       </div>
     </div>
   </div>
@@ -31,7 +28,7 @@
        ========================================================================== -->
   <header class="header-main">
     <div class="container">
-      <!-- High-Fidelity SVG Brand Logo -->
+      <!-- High-Fidelity SVG Brand Logo matching attached image precisely -->
       <a onclick="App.navigate('home')" class="logo-link" title="Хидролукс Груп">
         <svg width="220" height="65" viewBox="0 0 220 65" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
           <!-- Official Hydrolux Group circular overlapping S-curve hydraulic hose -->
@@ -72,12 +69,12 @@
           <button class="meta-icon-btn" onclick="Cart.showToast('Списъкът с любими е празен')" title="Любими">♡</button>
         </div>
 
-        <!-- Double Currency Shopping Cart Button -->
+        <!-- Double Currency Shopping Cart Button (strict Euros now) -->
         <button class="btn btn-cart-trigger" onclick="Cart.openDrawer()">
           <span class="cart-icon-visual">🛍️</span>
           <!-- Dynamic Currency display matching the screenshot -->
           <span class="cart-text-desktop">
-            (<span class="cart-count-badge-inline">0</span>) - <strong id="cart-display-eur">0.00€</strong> (<span id="cart-display-bgn">0.00лв.</span>)
+            (<span class="cart-count-badge-inline">0</span>) - <strong id="cart-display-eur">0.00 €</strong>
           </span>
           <span class="cart-text-mobile">(<span class="cart-count-badge-inline">0</span>)</span>
         </button>
@@ -219,6 +216,19 @@
         </div>
       </div>
 
+      <!-- 🔥 NEW: Featured Products Section directly on Home page -->
+      <div class="section-header mt-40">
+        <div>
+          <span class="text-accent font-bold font-xs text-uppercase">ПРЕПОРЪЧАНИ ПРОДУКТИ</span>
+          <h2>Избрано за Вашата индустрия</h2>
+        </div>
+        <a class="text-primary font-bold" onclick="App.navigate('catalog')">Към пълния каталог ➔</a>
+      </div>
+
+      <div class="products-grid" id="home-featured-products-grid">
+        <!-- Dynamically populated in js/app.js -->
+      </div>
+
       <!-- Interactive Hose Assembly Banner Callout -->
       <div class="promo-banner mt-40">
         <div class="promo-text">
@@ -247,39 +257,81 @@
         </div>
       </div>
 
-      <!-- About Us Section -->
-      <div class="card p-40 mt-40" id="about-us-anchor">
-        <h3 class="font-large text-primary mb-15">За Хидролукс Груп Монтана</h3>
-        <p>
-          Разположен на ключовия булевард на индустриалната зона в град Монтана, <strong>„Хидролукс Груп“</strong> е доказан лидер и надежден B2B/B2C партньор в областта на индустриалната хидравлика и пневматика. От основаването си през 2019 година, компанията се развива активно, разширявайки продуктовата си гама с цел да задоволи комплексно нуждите на леката, тежката промишленост, селското стопанство и транспортния сектор в региона.
-        </p>
-        <p>
-          Основният ни фокус е предоставянето на **затворен цикъл от услуги** – не просто продажба, а пълна инженерна експертиза: проектиране на хидравлични линии, доставка на детайли, запресоване под строго контролирано налягане, сервизно обслужване и доставка на аксесоари. Това спестява огромно количество време и предотвратява скъпи престои на Вашата техника.
-        </p>
+      <!-- 🔥 REDESIGNED HIGH-END "ABOUT US" SECTION -->
+      <div class="about-us-container mt-40" id="about-us-anchor">
+        <div class="about-us-grid">
+          
+          <div class="about-us-left card">
+            <span class="text-accent font-bold font-xs text-uppercase">КОИ СМЕ НИЕ</span>
+            <h3 class="font-large text-primary mb-15">Хидролукс Груп — Професионализъм и прецизност</h3>
+            <p class="text-muted font-small">
+              Разположен на ул. "Индустриална" 32г в гр. Монтана, <strong>„Хидролукс Груп“</strong> предлага широк спектър от услуги в областта на хидравликата и пневматиката. С дългогодишен опит в производството и поддръжката, компанията осигурява надеждни решения за тежка и лека промишленост.
+            </p>
+            <p class="text-muted font-small">
+              От 2019 година Хидролукс Груп се развива активно, увеличавайки асортимента си, за да отговори на нуждите на клиентите. Компанията поставя акцент на индивидуалните решения, които включват не само продажба, но и пълен цикъл от услуги – проектиране, изграждане и поддръжка.
+            </p>
+            <div class="about-checklist">
+              <div class="check-item"><span class="check-icon">✓</span> <span>Специализация в производството на индустриални и хидравлични маркучи</span></div>
+              <div class="check-item"><span class="check-icon">✓</span> <span>Компоненти за високо налягане, фитинги, уплътнители и цилиндри</span></div>
+              <div class="check-item"><span class="check-icon">✓</span> <span>Професионализъм на екипа и изключително внимание към детайла</span></div>
+            </div>
+          </div>
+
+          <div class="about-us-right">
+            <div class="stats-metric-grid">
+              <div class="metric-card card">
+                <div class="metric-num text-primary">2019</div>
+                <div class="metric-label font-xs text-muted">ГОДИНА НА СТАРТ</div>
+              </div>
+              <div class="metric-card card">
+                <div class="metric-num text-accent">5+</div>
+                <div class="metric-label font-xs text-muted">ГОДИНИ ОПИТ</div>
+              </div>
+              <div class="metric-card card">
+                <div class="metric-num text-primary">10K+</div>
+                <div class="metric-label font-xs text-muted">КЛИЕНТСКИ РЕШЕНИЯ</div>
+              </div>
+              <div class="metric-card card">
+                <div class="metric-num text-accent">100%</div>
+                <div class="metric-label font-xs text-muted">КОНТРОЛ НА КАЧЕСТВОТО</div>
+              </div>
+            </div>
+            <div class="quality-badge-panel card text-center mt-20">
+              <div class="quality-badge-icon">🏆</div>
+              <h4>Надежден партньор в индустриалния сектор</h4>
+              <p class="text-muted font-xs">Вниманието към детайла гарантира, че всеки проект се изпълнява с абсолютна точност. Свържете се с нас в Монтана за професионални услуги.</p>
+            </div>
+          </div>
+          
+        </div>
       </div>
     </section>
 
-    <!-- 2. CATALOG VIEW -->
+    <!-- 2. CATALOG VIEW (Collapsible Dropdown categories - Wide Products) -->
     <section id="catalog-view" class="spa-view">
-      <div class="catalog-layout">
-        <!-- Sidebar Categories -->
-        <aside class="card">
-          <h3 class="section-title">📂 Категории</h3>
-          <div class="divider"></div>
-          <div id="catalog-sidebar-categories">
-            <!-- Dynamically Rendered Category Tree -->
+      <div class="catalog-wide-layout">
+        
+        <!-- 🔥 NEW: Top Collapsible Dropdown Categories Selector -->
+        <div class="catalog-filters-bar card mb-20">
+          <div class="categories-dropdown-container">
+            <button class="btn btn-primary btn-large" id="catalog-cat-dropdown-btn" onclick="Catalog.toggleCategoriesDropdown()">
+              📂 Изберете Категория (Всички Категории) ▾
+            </button>
+            
+            <div class="categories-dropdown-menu hidden" id="catalog-cat-dropdown-menu">
+              <!-- Dynamically populated options by catalog.js -->
+            </div>
           </div>
-          <div class="divider"></div>
-          <button class="btn btn-secondary btn-block small" onclick="Catalog.resetFilters()">Изчисти Филтрите</button>
-        </aside>
+          <button class="btn btn-secondary" onclick="Catalog.resetFilters()">Изчисти Филтрите</button>
+        </div>
 
-        <!-- Product Grid Column -->
+        <!-- Full width Products Grid -->
         <div class="catalog-main">
           <div class="catalog-content-header">
             <h2 id="catalog-active-title">Всички продукти</h2>
-            <div class="text-muted font-small">Намерени решения: <strong class="text-dark" id="catalog-count">4</strong></div>
+            <div class="text-muted font-small">Намерени решения: <strong class="text-dark" id="catalog-count">8</strong></div>
           </div>
-          <div class="products-grid" id="products-grid">
+          <div class="products-grid full-width" id="products-grid">
             <!-- Dynamically Rendered Products -->
           </div>
         </div>
@@ -352,7 +404,7 @@
       <!-- Dynamic Variants Table Area -->
       <div class="variants-panel card">
         <h3 class="section-title">📏 Изберете размер и заявете количество</h3>
-        <p class="text-muted font-small">Всички размери се поддържат в наличност. Цените са с включен ДДС за линеен метър или брой.</p>
+        <p class="text-muted font-small">Всички размери се поддържат в наличност. Цените са за линеен метър или брой.</p>
         <div class="divider"></div>
 
         <div class="table-responsive">
@@ -367,7 +419,7 @@
                 <th>Радиус огъване</th>
                 <th>Тегло кг/м</th>
                 <th>Дълж. ролка</th>
-                <th>Цена (с ДДС)</th>
+                <th>Цена</th>
                 <th>Количество (м)</th>
                 <th>Действие</th>
               </tr>
@@ -471,8 +523,7 @@
       <div class="cart-total-row">
         <span class="font-medium">ОБЩО:</span>
         <div class="text-right">
-          <div class="font-large text-primary font-bold" id="cart-total-bgn">0.00 лв.</div>
-          <div class="text-muted font-xs" id="cart-total-eur">0.00 €</div>
+          <div class="font-large text-primary font-bold" id="cart-total-bgn">0.00 €</div>
         </div>
       </div>
       <div class="divider"></div>

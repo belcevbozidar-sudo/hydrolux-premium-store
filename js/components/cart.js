@@ -1,8 +1,7 @@
-// Shopping Cart & Checkout System
+// Shopping Cart & B2B/B2C Checkout Manager (Euro € Optimized)
 const Cart = {
   items: [],
 
-  // Load cart from localStorage on init
   init() {
     const saved = localStorage.getItem("hydrolux_cart");
     if (saved) {
@@ -20,7 +19,6 @@ const Cart = {
     this.updateCartBadge();
   },
 
-  // Add item with variant details
   addItem(product, variantCode, quantity) {
     if (quantity <= 0) return;
 
@@ -33,8 +31,8 @@ const Cart = {
       const variant = product.variants.find(v => v.code === variantCode);
       if (variant) {
         priceEur = variant.priceEur;
-        variantName = `Код: ${variant.code} (ø ${variant.innerDb}мм - ${variant.inch})`;
-        specsText = `Налягане: ${variant.pressure} Bar | Ролка: ${variant.rollLength}м`;
+        variantName = `Размер: ø ${variant.innerDb}мм (${variant.inch})`;
+        specsText = `Работно налягане: ${variant.pressure} Bar | Дължина на ролката: ${variant.rollLength}м`;
       }
     } else if (product.isCustomHose) {
       variantName = `Конфигуриран маркуч (${product.specsSummary.size})`;
@@ -63,7 +61,7 @@ const Cart = {
 
     this.save();
     this.renderDrawer();
-    this.showToast(`Успешно добавено в количката!`);
+    this.showToast(`Добавено в количката!`);
   },
 
   removeItem(cartKey) {
@@ -94,14 +92,13 @@ const Cart = {
     });
     return {
       eur: totalEur,
-      bgn: totalEur * CONFIG.eurToBgn
+      bgn: totalEur
     };
   },
 
   updateCartBadge() {
     const inlineBadges = document.querySelectorAll(".cart-count-badge-inline");
     const displayEur = document.getElementById("cart-display-eur");
-    const displayBgn = document.getElementById("cart-display-bgn");
 
     let totalItems = 0;
     this.items.forEach(item => {
@@ -113,10 +110,9 @@ const Cart = {
     });
 
     const totals = this.getTotal();
-    if (displayEur) displayEur.textContent = totals.eur.toFixed(2) + "€";
-    if (displayBgn) displayBgn.textContent = totals.bgn.toFixed(2) + "лв.";
+    if (displayEur) displayEur.textContent = totals.eur.toFixed(2) + " €";
 
-    // Pulse the cart button to show interactivity
+    // Pulse the cart button
     const cartBtn = document.querySelector(".btn-cart-trigger");
     if (cartBtn) {
       cartBtn.classList.add("pulse");
@@ -124,7 +120,6 @@ const Cart = {
     }
   },
 
-  // Open the cart slide-out drawer
   openDrawer() {
     const drawer = document.getElementById("cart-drawer");
     if (drawer) {
@@ -142,7 +137,6 @@ const Cart = {
     }
   },
 
-  // Render items inside the drawer
   renderDrawer() {
     const container = document.getElementById("cart-items-container");
     if (!container) return;
@@ -170,7 +164,7 @@ const Cart = {
           ${item.variantName ? `<div class="cart-item-variant">${item.variantName}</div>` : ""}
           ${item.specsText ? `<div class="cart-item-specs font-xs text-muted">${item.specsText}</div>` : ""}
           <div class="cart-item-pricing font-small">
-            <span class="text-primary font-bold">${formatPrice(item.priceEur).bgn}</span> (${formatPrice(item.priceEur).eur})
+            <span class="text-primary font-bold">${formatPrice(item.priceEur).eur}</span>
           </div>
         </div>
         <div class="cart-item-actions">
@@ -185,12 +179,10 @@ const Cart = {
       </div>
     `).join("");
 
-    // Update prices in footer panel
-    document.getElementById("cart-total-bgn").textContent = totals.bgn.toFixed(2) + " лв.";
-    document.getElementById("cart-total-eur").textContent = totals.eur.toFixed(2) + " €";
+    // Update prices in footer panel strictly in EUR
+    document.getElementById("cart-total-bgn").textContent = totals.eur.toFixed(2) + " €";
   },
 
-  // Open professional checkout modal
   openCheckout() {
     this.closeDrawer();
     const modal = document.getElementById("checkout-modal");
@@ -215,7 +207,6 @@ const Cart = {
     if (!b2bFields) return;
     if (type === "b2b") {
       b2bFields.classList.remove("hidden");
-      // Add required
       b2bFields.querySelectorAll("input").forEach(i => i.setAttribute("required", "true"));
     } else {
       b2bFields.classList.add("hidden");
@@ -238,30 +229,25 @@ const Cart = {
                 <strong>${item.name}</strong> x ${item.quantity}
                 ${item.variantName ? `<div class="text-muted font-xs">${item.variantName}</div>` : ""}
               </div>
-              <div class="text-right">${formatPrice(item.priceEur * item.quantity).bgn}</div>
+              <div class="text-right">${formatPrice(item.priceEur * item.quantity).eur}</div>
             </div>
           `).join("")}
         </div>
         <div class="divider"></div>
         <div class="checkout-summary-totals">
           <div class="row">
-            <span>Общо в лева (с ДДС):</span>
-            <strong class="font-large text-primary">${totals.bgn.toFixed(2)} лв.</strong>
-          </div>
-          <div class="row">
-            <span>Общо в евро:</span>
-            <span class="text-muted">${totals.eur.toFixed(2)} €</span>
+            <span>Общо в евро (с ДДС):</span>
+            <strong class="font-large text-primary">${totals.eur.toFixed(2)} €</strong>
           </div>
           <div class="row font-xs text-muted mt-5">
             <span>* Включено ДДС (20%):</span>
-            <span>${(totals.bgn * 0.2).toFixed(2)} лв.</span>
+            <span>${(totals.eur * 0.2).toFixed(2)} €</span>
           </div>
         </div>
       </div>
     `;
   },
 
-  // Complete Order
   submitOrder(event) {
     event.preventDefault();
     const form = event.target;
@@ -306,7 +292,7 @@ const Cart = {
         </div>
         
         <div class="invoice-box card mt-20 font-small">
-          <div class="invoice-title">📝 ДЕТАЙЛИ НА ПОРЪЧКАТА / ПРОФОРМА ФАКТУРА</div>
+          <div class="invoice-title">📝 ДЕТАЙЛИ НА ПОРЪЧКАТА / ПРОФОРМА ФАКТУРА (В ЕВРО)</div>
           <div class="divider"></div>
           
           <div class="invoice-grid">
@@ -339,8 +325,8 @@ const Cart = {
             ${orderedItems.map((item, idx) => `
               <div class="invoice-item-row">
                 <span>${idx + 1}. ${item.name} ${item.variantName ? `(${item.variantName})` : ''}</span>
-                <span>${item.quantity} x ${formatPrice(item.priceEur).bgn}</span>
-                <span class="text-right font-bold">${formatPrice(item.priceEur * item.quantity).bgn}</span>
+                <span>${item.quantity} x ${formatPrice(item.priceEur).eur}</span>
+                <span class="text-right font-bold">${formatPrice(item.priceEur * item.quantity).eur}</span>
               </div>
             `).join("")}
           </div>
@@ -350,18 +336,14 @@ const Cart = {
           <div class="invoice-footer-totals">
             <div class="row">
               <span>Междинна сума:</span>
-              <span>${(totals.bgn / 1.2).toFixed(2)} лв.</span>
+              <span>${(totals.eur / 1.2).toFixed(2)} €</span>
             </div>
             <div class="row">
               <span>ДДС (20%):</span>
-              <span>${(totals.bgn - (totals.bgn / 1.2)).toFixed(2)} лв.</span>
+              <span>${(totals.eur - (totals.eur / 1.2)).toFixed(2)} €</span>
             </div>
             <div class="row font-large text-primary font-bold">
               <span>ОБЩО С ДДС:</span>
-              <span>${totals.bgn.toFixed(2)} лв.</span>
-            </div>
-            <div class="row font-small text-muted">
-              <span>Общо в евро:</span>
               <span>${totals.eur.toFixed(2)} €</span>
             </div>
           </div>
@@ -369,7 +351,6 @@ const Cart = {
       `;
     }
 
-    // Reset cart
     this.clear();
   },
 
@@ -382,17 +363,14 @@ const Cart = {
     }
   },
 
-  // Elegant floating notification helper
   showToast(message) {
     const toast = document.createElement("div");
     toast.className = "toast-notification";
     toast.textContent = message;
     document.body.appendChild(toast);
     
-    // Add active class after short delay for transition
     setTimeout(() => toast.classList.add("show"), 10);
     
-    // Destroy after 3 seconds
     setTimeout(() => {
       toast.classList.remove("show");
       setTimeout(() => toast.remove(), 300);
