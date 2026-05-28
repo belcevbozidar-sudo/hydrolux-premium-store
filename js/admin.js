@@ -7,6 +7,7 @@ const Admin = {
   uploadedImages: [], // Temporary Base64 strings or existing URLs of uploaded files
 
   init() {
+    this.loadTemplates();
     this.injectStyles();
     this.render();
   },
@@ -19,9 +20,11 @@ const Admin = {
       .admin-container {
         display: grid;
         grid-template-columns: 240px 1fr;
-        gap: 30px;
+        gap: 24px;
         margin-top: 20px;
         min-height: 600px;
+        max-width: 100%;
+        overflow: hidden;
       }
       .admin-sidebar {
         background-color: var(--bg-pure);
@@ -30,11 +33,12 @@ const Admin = {
         padding: 20px;
         box-shadow: var(--shadow-sm);
         height: fit-content;
+        flex-shrink: 0;
       }
       .admin-sidebar h3 {
         margin-bottom: 20px;
         font-weight: 800;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: #1e293b;
         display: flex;
         align-items: center;
@@ -48,13 +52,13 @@ const Admin = {
         margin: 0;
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 6px;
       }
       .admin-menu-item {
-        padding: 12px 15px;
+        padding: 10px 14px;
         border-radius: 8px;
         font-weight: 700;
-        font-size: 0.9rem;
+        font-size: 0.88rem;
         cursor: pointer;
         transition: all 0.2s ease;
         display: flex;
@@ -74,8 +78,11 @@ const Admin = {
         background-color: var(--bg-pure);
         border: 1px solid var(--border-light);
         border-radius: 12px;
-        padding: 30px;
+        padding: 28px;
         box-shadow: var(--shadow-sm);
+        min-width: 0;
+        max-width: 100%;
+        overflow: hidden;
       }
       .admin-header-row {
         display: flex;
@@ -108,18 +115,28 @@ const Admin = {
         background-color: #f8fafc;
         font-weight: 700;
         color: #475569;
+        white-space: nowrap;
       }
       .admin-table tbody tr:hover {
         background-color: #f8fafc;
       }
       .btn-admin-action {
-        padding: 6px 12px;
+        padding: 6px 14px;
         border-radius: 6px;
         font-weight: 700;
         font-size: 0.8rem;
         cursor: pointer;
         border: none;
         transition: all 0.2s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+      }
+      .admin-actions-cell {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        flex-wrap: nowrap;
       }
       .btn-admin-danger {
         background-color: #fee2e2;
@@ -132,7 +149,6 @@ const Admin = {
       .btn-admin-edit {
         background-color: #e0f2fe;
         color: var(--primary);
-        margin-right: 5px;
       }
       .btn-admin-edit:hover {
         background-color: var(--primary);
@@ -140,7 +156,7 @@ const Admin = {
       }
       .admin-badge {
         display: inline-block;
-        padding: 3px 8px;
+        padding: 3px 10px;
         border-radius: 12px;
         font-size: 0.75rem;
         font-weight: 700;
@@ -377,8 +393,12 @@ const Admin = {
         .admin-table td:last-child {
           border-bottom: 0;
           justify-content: center;
-          gap: 12px;
           padding-top: 12px;
+        }
+        .admin-table td:last-child .admin-actions-cell {
+          justify-content: center;
+          gap: 10px;
+          flex-wrap: wrap;
         }
         .admin-table td::before {
           content: attr(data-label);
@@ -391,6 +411,10 @@ const Admin = {
         .admin-table td > span,
         .admin-table td > strong {
           text-align: right;
+        }
+        /* Override: actions cell should not be right-aligned */
+        .admin-table td > .admin-actions-cell {
+          text-align: left;
         }
 
         /* Variant editing grid on mobile */
@@ -539,15 +563,17 @@ const Admin = {
             <span class="admin-badge admin-badge-success">${p.variants ? p.variants.length : 0} размери</span>
           </td>
           <td data-label="Действия">
-            <button class="btn-admin-action btn-admin-edit" onclick="Admin.startEditProduct('${p.id}')" style="margin-right: 8px;">✏️ Редактирай</button>
-            <button class="btn-admin-action btn-admin-danger" onclick="Admin.deleteProduct('${p.id}')">✕ Изтрий</button>
+            <div class="admin-actions-cell">
+              <button class="btn-admin-action btn-admin-edit" onclick="Admin.startEditProduct('${p.id}')">✏️ Редактирай</button>
+              <button class="btn-admin-action btn-admin-danger" onclick="Admin.deleteProduct('${p.id}')">✕ Изтрий</button>
+            </div>
           </td>
         </tr>
       `;
     }).join("");
 
     if (products.length === 0) {
-      productRows = `<tr><td colspan="5" class="text-center text-muted">Няма добавени продукти в тази категория.</td></tr>`;
+      productRows = `<tr><td colspan="5" class="text-center text-muted" style="padding: 30px; color: #94a3b8;">Няма добавени продукти в тази категория.</td></tr>`;
     }
 
     // Generate categories options for product creation
@@ -567,12 +593,7 @@ const Admin = {
         <div>
           <h2>Управление на Продукти</h2>
         </div>
-        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
-          <span class="text-muted font-bold font-xs">Филтър по категория:</span>
-          <select id="prod-filter-category" class="form-control" onchange="Admin.filterProductsList(this.value)" style="width: 220px; font-weight: 700; height: 38px; padding: 6px;">
-            <option value="">Всички категории</option>
-            ${filterOptions}
-          </select>
+        <div>
           <span class="admin-badge admin-badge-success">${products.length} Продукта</span>
         </div>
       </div>
@@ -671,10 +692,21 @@ const Admin = {
         </form>
       </div>
 
+      <!-- Current Products Table Header with Category Filter directly below the form -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 40px; margin-bottom: 15px; flex-wrap: wrap; gap: 15px; border-bottom: 2px solid var(--border-light); padding-bottom: 12px;">
+        <h3 style="font-weight: 800; font-size: 1.3rem; color: #1e293b; margin: 0;">Списък с продукти</h3>
+        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+          <span class="text-muted font-bold font-xs" style="text-transform: uppercase; letter-spacing: 0.5px;">Филтриране:</span>
+          <select id="prod-filter-category" class="form-control" onchange="Admin.filterProductsList(this.value)" style="width: 240px; font-weight: 700; height: 38px; padding: 6px; border: 1.5px solid var(--primary); border-radius: 6px; color: var(--primary); background-color: white;">
+            <option value="">Всички категории</option>
+            ${filterOptions}
+          </select>
+        </div>
+      </div>
+
       <!-- Current Products Table -->
-      <h3 style="font-weight: 800; font-size: 1.2rem; margin-top: 35px; margin-bottom: 15px; color: #1e293b;">Списък с продукти</h3>
-      <div style="overflow-x: auto;">
-        <table class="admin-table" id="admin-products-list-table">
+      <div style="overflow-x: auto; width: 100%; border: 1px solid var(--border-light); border-radius: 8px;">
+        <table class="admin-table" id="admin-products-list-table" style="width: 100%; min-width: 800px; margin-top: 0;">
           <thead>
             <tr>
               <th>Продукт</th>
@@ -730,19 +762,22 @@ const Admin = {
             <span class="admin-badge admin-badge-success">${p.variants ? p.variants.length : 0} размери</span>
           </td>
           <td data-label="Действия">
-            <button class="btn-admin-action btn-admin-edit" type="button" onclick="Admin.startEditProduct('${p.id}')" style="margin-right: 8px;">✏️ Редактирай</button>
-            <button class="btn-admin-action btn-admin-danger" type="button" onclick="Admin.deleteProduct('${p.id}')">✕ Изтрий</button>
+            <div class="admin-actions-cell">
+              <button class="btn-admin-action btn-admin-edit" type="button" onclick="Admin.startEditProduct('${p.id}')">✏️ Редактирай</button>
+              <button class="btn-admin-action btn-admin-danger" type="button" onclick="Admin.deleteProduct('${p.id}')">✕ Изтрий</button>
+            </div>
           </td>
         </tr>
       `;
     }).join("");
 
     if (products.length === 0) {
-      productRows = `<tr><td colspan="5" class="text-center text-muted">Няма добавени продукти в тази категория.</td></tr>`;
+      productRows = `<tr><td colspan="5" class="text-center text-muted" style="padding: 30px; color: #94a3b8;">Няма добавени продукти в тази категория.</td></tr>`;
     }
     
     tbody.innerHTML = productRows;
     
+    // Update count badge in the header above the products list
     const badge = document.querySelector(".admin-header-row .admin-badge-success");
     if (badge) {
       badge.textContent = `${products.length} Продукта`;
@@ -785,6 +820,12 @@ const Admin = {
 
     const activeVariants = this.tempVariants || this.collectVariantsFromDOM() || (isEditing ? this.editingProduct.variants : []);
 
+    // Load saved templates for selection
+    this.loadTemplates();
+    const templateOptions = this.savedTemplates.map(t => `
+      <option value="${t.id}">${t.name}</option>
+    `).join("");
+
     const headersHTML = this.currentColumns.map(c => `
       <th style="padding: 8px; min-width: 110px; position: relative; text-align: center;">
         <div style="display: flex; flex-direction: column; gap: 4px; align-items: center;">
@@ -808,8 +849,7 @@ const Admin = {
                      class="form-control var-cell" 
                      data-key="${c.key}" 
                      value="${val}" 
-                     style="padding: 6px; font-size: 0.8rem; ${isPrice ? 'font-weight: 700; border-color: var(--accent);' : ''}" 
-                     required>
+                     style="padding: 6px; font-size: 0.8rem; ${isPrice ? 'font-weight: 700; border-color: var(--accent);' : ''}">
             </td>
           `;
         }).join("")}
@@ -822,15 +862,35 @@ const Admin = {
     return `
       <div class="form-group mt-20">
         <label style="font-weight: 800; display: block; border-bottom: 1px solid var(--border-light); padding-bottom: 8px; color: var(--primary);">📏 Таблица с размери, цени и детайли (Еднакви с продуктовата таблица)</label>
-        <p class="text-muted font-xs" style="margin-bottom: 10px;">Всички полета и колони са изцяло редактируеми. Можете да променяте имената на колоните, да добавяте нови или да ги изтривате.</p>
+        <p class="text-muted font-xs" style="margin-bottom: 15px;">Всички полета и колони са изцяло редактируеми. Можете да променяте имената на колоните, да добавяте нови или да ги изтривате.</p>
         
+        <!-- Table Column Templates Selection Bar -->
+        <div style="background-color: #f8fafc; padding: 15px; border-radius: 8px; border: 1px solid var(--border-light); margin-bottom: 20px;">
+          <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+            <div>
+              <label style="font-weight: 700; font-size: 0.8rem; color: #475569; display: block; margin-bottom: 5px;">📋 Бърз шаблон на колоните:</label>
+              <select class="form-control" onchange="Admin.loadTemplateById(this.value)" style="width: 250px; padding: 6px; font-weight: 700; height: 36px;">
+                <option value="">-- Изберете готов шаблон --</option>
+                ${templateOptions}
+              </select>
+            </div>
+            <div>
+              <label style="font-weight: 700; font-size: 0.8rem; color: #475569; display: block; margin-bottom: 5px;">💾 Запази текущите колони като шаблон:</label>
+              <div style="display: flex; gap: 8px;">
+                <input type="text" id="new-template-name" class="form-control" placeholder="напр. Шаблон за Въздух" style="width: 220px; padding: 6px; height: 36px;">
+                <button type="button" class="btn btn-secondary" onclick="Admin.saveTemplate(document.getElementById('new-template-name').value)" style="height: 36px; padding: 0 15px;">Запази</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div style="display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;">
           <button type="button" class="btn btn-secondary btn-small" onclick="Admin.addColumn()">➕ Добави Нова Колона</button>
           <button type="button" class="btn btn-secondary btn-small" onclick="Admin.addNewVariantRow()">➕ Добави Нов Размер (Ред)</button>
         </div>
 
-        <div style="overflow-x: auto;">
-          <table class="admin-table" style="min-width: 900px; font-size: 0.85rem; margin-top: 5px; border: 1px solid var(--border-light);">
+        <div class="admin-table-responsive" style="max-width: 100%; overflow-x: auto; border-radius: 8px; border: 1px solid var(--border-light);">
+          <table class="admin-table" style="min-width: 900px; font-size: 0.85rem; border-collapse: collapse;">
             <thead>
               <tr style="background-color: #f1f5f9;">
                 ${headersHTML}
@@ -1121,6 +1181,12 @@ const Admin = {
     const code = document.getElementById("prod-code").value.trim();
     const category = document.getElementById("prod-category").value;
     const brand = document.getElementById("prod-brand").value.trim();
+
+    // JS-based validation for required core fields (replaces silent HTML5 blocks)
+    if (!name) { alert("Моля въведете Име на продукта!"); document.getElementById("prod-name").focus(); return; }
+    if (!code) { alert("Моля въведете Код / Артикулен номер!"); document.getElementById("prod-code").focus(); return; }
+    if (!category) { alert("Моля изберете Категория!"); document.getElementById("prod-category").focus(); return; }
+    if (!brand) { alert("Моля въведете Марка!"); document.getElementById("prod-brand").focus(); return; }
     const description = document.getElementById("prod-description").value.trim();
     const tagsInput = document.getElementById("prod-tags").value;
     const isSpecial = document.getElementById("prod-is-special").checked;
@@ -1237,19 +1303,21 @@ const Admin = {
       const productCount = CONFIG.products.filter(p => p.category === c.id).length;
       return `
         <tr class="admin-table-row">
-          <td data-label="Икона"><span style="font-size: 1.4rem; margin-right: 8px;">${c.icon || '📦'}</span></td>
+          <td data-label="Икона"><span style="font-size: 1.4rem;">${c.icon || '📦'}</span></td>
           <td data-label="Име"><strong>${c.name}</strong></td>
           <td data-label="Брой продукти"><span class="admin-badge admin-badge-success">${productCount} продукта</span></td>
           <td data-label="Действия">
-            <button class="btn-admin-action btn-admin-edit" onclick="Admin.startEditCategory('${c.id}')">✏️ Редактирай</button>
-            <button class="btn-admin-action btn-admin-danger" onclick="Admin.deleteCategory('${c.id}')">✕ Изтрий</button>
+            <div class="admin-actions-cell">
+              <button class="btn-admin-action btn-admin-edit" onclick="Admin.startEditCategory('${c.id}')">✏️ Редактирай</button>
+              <button class="btn-admin-action btn-admin-danger" onclick="Admin.deleteCategory('${c.id}')">✕ Изтрий</button>
+            </div>
           </td>
         </tr>
       `;
     }).join("");
 
     if (categories.length === 0) {
-      categoryRows = `<tr><td colspan="4" class="text-center text-muted">Няма въведени категории.</td></tr>`;
+      categoryRows = `<tr><td colspan="4" class="text-center text-muted" style="padding: 30px; color: #94a3b8;">Няма въведени категории.</td></tr>`;
     }
 
     const isEditing = this.editingCategory !== null;
@@ -1379,5 +1447,70 @@ const Admin = {
     App.renderFeaturedProductsHome();
     Catalog.renderSidebar();
     Catalog.applyFiltersAndRender();
+  },
+
+  loadTemplates() {
+    const raw = localStorage.getItem("hydrolux_table_templates");
+    if (raw) {
+      try {
+        this.savedTemplates = JSON.parse(raw);
+      } catch (e) {
+        this.savedTemplates = [];
+      }
+    } else {
+      this.savedTemplates = [
+        {
+          id: "standard",
+          name: "Стандартен (Маркучи)",
+          columns: [
+            { key: "code", label: "Код на размер" },
+            { key: "innerDb", label: "Вътр. ø (мм)" },
+            { key: "inch", label: "Инч" },
+            { key: "outerDb", label: "Външ. ø (мм)" },
+            { key: "pressure", label: "Работно нал.(Bar)" },
+            { key: "bend", label: "Радиус огъване(мм)" },
+            { key: "weight", label: "Тегло кг/м" },
+            { key: "rollLength", label: "Дълж. ролка(м)" },
+            { key: "priceEur", label: "Цена EUR (€)" }
+          ]
+        }
+      ];
+      localStorage.setItem("hydrolux_table_templates", JSON.stringify(this.savedTemplates));
+    }
+  },
+
+  saveTemplate(name) {
+    if (!name || !name.trim()) {
+      alert("Моля въведете име на шаблона!");
+      return;
+    }
+    this.loadTemplates();
+    const id = "tpl_" + Date.now();
+    this.savedTemplates.push({
+      id,
+      name: name.trim(),
+      columns: [...this.currentColumns]
+    });
+    localStorage.setItem("hydrolux_table_templates", JSON.stringify(this.savedTemplates));
+    alert(`Шаблонът "${name}" е запазен успешно!`);
+    this.refreshVariantsTable();
+  },
+
+  loadTemplateById(id) {
+    if (!id) return;
+    this.loadTemplates();
+    const tpl = this.savedTemplates.find(t => t.id === id);
+    if (tpl) {
+      this.currentColumns = [...tpl.columns];
+      const activeVariants = this.collectVariantsFromDOM() || [];
+      if (activeVariants.length === 0) {
+        const newRow = {};
+        this.currentColumns.forEach(c => {
+          newRow[c.key] = "";
+        });
+        activeVariants.push(newRow);
+      }
+      this.refreshVariantsTable(activeVariants);
+    }
   }
 };

@@ -27,6 +27,7 @@
   --bg-pure: #ffffff;
   --bg-subtle: #f8fafc;
   --border-color: #e2e8f0;
+  --border-light: #e2e8f0; /* Alias for admin panel components */
   
   --text-dark: #1e293b;
   --text-muted: #64748b;
@@ -111,6 +112,8 @@ p {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .card {
@@ -2328,3 +2331,38 @@ footer {
   text-align: center;
 }
 
+/* ==========================================================================
+   ADMIN VIEW - Prevent horizontal page overflow
+   ========================================================================== */
+#admin-view {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+#admin-view-content {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Ensure admin container never causes horizontal page scroll */
+.admin-container {
+  box-sizing: border-box;
+}
+
+/* Admin form controls sizing fix */
+.admin-content .form-control {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Admin table — internal scroll wrapper */
+.admin-table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Category action buttons in the list */
+td .admin-actions-cell {
+  white-space: nowrap;
+}
