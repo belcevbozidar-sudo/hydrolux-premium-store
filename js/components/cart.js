@@ -17,6 +17,11 @@ const Cart = {
   save() {
     localStorage.setItem("hydrolux_cart", JSON.stringify(this.items));
     this.updateCartBadge();
+    if (typeof HydroluxBackend !== "undefined") {
+      HydroluxBackend.saveCart(this.items).catch(err => {
+        console.warn("Convex cart sync failed", err);
+      });
+    }
   },
 
   getVariantCode(product, variant, index = 0) {
@@ -281,7 +286,7 @@ const Cart = {
     `;
   },
 
-  submitOrder(event) {
+  async submitOrder(event) {
     event.preventDefault();
     const form = event.target;
     
@@ -307,6 +312,31 @@ const Cart = {
     const orderNumber = "HL-" + Math.floor(100000 + Math.random() * 900000);
     const totals = this.getTotal();
     const orderedItems = [...this.items];
+    const order = {
+      orderNumber,
+      customer: { name, phone, email },
+      items: orderedItems,
+      totals,
+      delivery,
+      address,
+      notes,
+      clientType,
+      b2bDetails,
+      status: "new",
+      createdAt: Date.now(),
+    };
+
+    try {
+      if (typeof HydroluxBackend !== "undefined") {
+        await HydroluxBackend.saveOrder(order);
+      }
+    } catch (err) {
+      console.warn("Convex order save failed", err);
+      const pendingOrders = JSON.parse(localStorage.getItem("hydrolux_pending_orders") || "[]");
+      pendingOrders.push(order);
+      localStorage.setItem("hydrolux_pending_orders", JSON.stringify(pendingOrders));
+      alert("Поръчката е приета локално, но не успяхме да я запишем в Convex. Проверете връзката и синхронизирайте отново.");
+    }
 
     // Show success dialog
     this.closeCheckout();

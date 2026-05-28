@@ -98,11 +98,15 @@
   </div>
 
   <!-- Load all JS modules -->
+  <script src="../js/backend.js"></script>
   <script src="../js/config.js"></script>
   <script src="../js/admin.js"></script>
   <script>
     // Initialize the Admin panel directly (no routing needed)
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", async function() {
+      if (CONFIG.ready) {
+        await CONFIG.ready;
+      }
       Admin.init();
     });
   </script>

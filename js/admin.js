@@ -1669,6 +1669,11 @@ const Admin = {
 
   saveTemplates() {
     localStorage.setItem("hydrolux_table_templates", JSON.stringify(this.savedTemplates));
+    if (typeof HydroluxBackend !== "undefined") {
+      HydroluxBackend.saveStateValue("tableTemplates", this.savedTemplates).catch(err => {
+        console.warn("Convex template sync failed", err);
+      });
+    }
   },
 
   cloneColumns(columns) {

@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "convex:dev": "convex dev --once",
+    "convex:deploy": "convex deploy"
+  },
+  "dependencies": {
+    "convex": "^1.39.1"
+  },
+  "devDependencies": {}
+}

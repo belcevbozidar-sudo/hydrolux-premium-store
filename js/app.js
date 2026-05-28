@@ -2,7 +2,11 @@
 const App = {
   currentView: "home",
 
-  init() {
+  async init() {
+    if (CONFIG.ready) {
+      await CONFIG.ready;
+    }
+
     // 1. Initialize Components
     Cart.init();
     

@@ -262,12 +262,26 @@ const CONFIG = {
 
 // Helper function to format prices (EUR strictly)
 function formatPrice(eur) {
+  eur = parseFloat(eur) || 0;
   return {
     eur: eur.toFixed(2) + " €",
-    bgn: "", 
+    bgn: "",
     eurRaw: eur,
     bgnRaw: eur
   };
+}
+
+function saveLocalState() {
+  localStorage.setItem("hydrolux_products", JSON.stringify(CONFIG.products));
+  localStorage.setItem("hydrolux_categories", JSON.stringify(CONFIG.categories));
+}
+
+function syncStateToConvex(values) {
+  if (typeof HydroluxBackend === "undefined") return;
+
+  HydroluxBackend.saveState(values).catch(err => {
+    console.warn("Convex state sync failed", err);
+  });
 }
 
 // Load dynamic state if present in localStorage to support admin dashboard updates in real-time
@@ -278,7 +292,7 @@ if (localStorage.getItem("hydrolux_products")) {
     console.error("Error parsing products from localStorage", e);
   }
 } else {
-  localStorage.setItem("hydrolux_products", JSON.stringify(CONFIG.products));
+  saveLocalState();
 }
 
 if (localStorage.getItem("hydrolux_categories")) {
@@ -288,13 +302,50 @@ if (localStorage.getItem("hydrolux_categories")) {
     console.error("Error parsing categories from localStorage", e);
   }
 } else {
-  localStorage.setItem("hydrolux_categories", JSON.stringify(CONFIG.categories));
+  saveLocalState();
 }
+
+CONFIG.ready = (async () => {
+  if (typeof HydroluxBackend === "undefined") return;
+
+  try {
+    const state = await HydroluxBackend.getState();
+    const hasRemoteProducts = Array.isArray(state.products) && state.products.length > 0;
+    const hasRemoteCategories = Array.isArray(state.categories) && state.categories.length > 0;
+    const hasRemoteTemplates = Array.isArray(state.tableTemplates);
+
+    if (hasRemoteProducts) {
+      CONFIG.products = state.products;
+    }
+    if (hasRemoteCategories) {
+      CONFIG.categories = state.categories;
+    }
+    if (hasRemoteTemplates) {
+      localStorage.setItem("hydrolux_table_templates", JSON.stringify(state.tableTemplates));
+    }
+
+    saveLocalState();
+
+    if (!hasRemoteProducts || !hasRemoteCategories) {
+      await HydroluxBackend.saveState({
+        products: CONFIG.products,
+        categories: CONFIG.categories,
+        tableTemplates: JSON.parse(localStorage.getItem("hydrolux_table_templates") || "null"),
+      });
+    }
+  } catch (err) {
+    console.warn("Convex state load failed; using browser fallback", err);
+  }
+})();
 
 // Global API to save state
 CONFIG.saveState = function() {
-  localStorage.setItem("hydrolux_products", JSON.stringify(CONFIG.products));
-  localStorage.setItem("hydrolux_categories", JSON.stringify(CONFIG.categories));
+  saveLocalState();
+  syncStateToConvex({
+    products: CONFIG.products,
+    categories: CONFIG.categories,
+    tableTemplates: JSON.parse(localStorage.getItem("hydrolux_table_templates") || "null"),
+  });
 };
 
 CONFIG.addProduct = function(p) {
