@@ -368,8 +368,11 @@ p {
   align-items: center;
 }
 
-.brand-logo-svg {
+.brand-logo-img {
   display: block;
+  height: 52px;
+  width: auto;
+  object-fit: contain;
 }
 
 /* Navigation Links (Desktop) */
@@ -1926,10 +1929,8 @@ footer {
     padding: 8px 15px;
   }
 
-  .brand-logo-svg {
-    transform: scale(0.9);
-    transform-origin: left center;
-    width: 190px;
+  .brand-logo-img {
+    height: 42px;
   }
 
   .desktop-meta-actions {
