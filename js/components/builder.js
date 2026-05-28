@@ -207,8 +207,11 @@ const HoseBuilder = {
               </div>
             </div>
 
-            <button class="btn btn-primary btn-block btn-large mt-20" onclick="HoseBuilder.addToCart()">
-              📥 Добави в количката
+            <a href="tel:+359892484337" class="btn btn-accent btn-block btn-large mt-20 text-center" style="display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; font-weight: 800; background-color: var(--accent); color: #1f2421;">
+              📞 Поръчай по телефон: 089 248 4337
+            </a>
+            <button class="btn btn-primary btn-block btn-large mt-10" onclick="HoseBuilder.openQuickInquiryForm()">
+              ✉️ Изпрати запитване за тази сглобка
             </button>
             <p class="font-xs text-muted mt-10">
               * Запресоването се извършва на професионална холандска преса на място в гр. Монтана. Гаранция за херметичност 100%.
@@ -223,7 +226,7 @@ const HoseBuilder = {
     this.set("lengthMeters", (this.state.lengthMeters + diff).toFixed(1));
   },
 
-  addToCart() {
+  openQuickInquiryForm() {
     const hose = this.options.hoseTypes.find(h => h.id === this.state.hoseTypeId);
     const size = this.options.sizes.find(s => s.id === this.state.sizeId);
     const fitL = this.options.fittings.find(f => f.id === this.state.fittingLeftId);
@@ -231,25 +234,27 @@ const HoseBuilder = {
     const sleeve = this.options.sleeves.find(sl => sl.id === this.state.sleeveId);
     const price = this.calculatePrice();
 
-    const uniqueId = `custom-hose-${Date.now()}`;
-    const customHoseProduct = {
-      id: uniqueId,
-      code: "CUSTOM-HOSE",
-      name: `Индивидуален маркуч ${size.name} (${this.state.lengthMeters}м)`,
-      brand: "Хидролукс Груп",
-      isCustomHose: true,
-      specsSummary: {
-        hoseType: hose.name,
-        size: size.name,
-        fittingL: fitL.name,
-        fittingR: fitR.name,
-        sleeve: sleeve.name,
-        length: `${this.state.lengthMeters}м`
-      },
-      priceEur: price.eur
-    };
+    const specText = `Здравейте, желая да направя запитване за следната сглобка:
+- Тип маркуч: ${hose.name}
+- Диаметър: ${size.name}
+- Дължина: ${this.state.lengthMeters} метра
+- Ляв накрайник: ${fitL.name}
+- Десен накрайник: ${fitR.name}
+- Предпазен ръкав: ${sleeve.name}
+- Прогнозна цена: ${price.eur.toFixed(2)} €`;
 
-    Cart.addItem(customHoseProduct, "CUSTOM-SPEC", 1);
-    Cart.openDrawer();
+    // Navigate to services/contacts SPA view
+    App.navigate("services");
+
+    // Wait a brief moment for DOM to mount and pre-fill the textarea
+    setTimeout(() => {
+      const textarea = document.querySelector("#services-view textarea");
+      if (textarea) {
+        textarea.value = specText;
+        textarea.focus();
+        // Scroll into view smoothly
+        textarea.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    }, 150);
   }
 };

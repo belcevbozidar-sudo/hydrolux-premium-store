@@ -1926,6 +1926,11 @@ footer {
     display: none; /* Hide Sales telephone on mobile top bar */
   }
 
+  .header-main {
+    position: relative;
+    z-index: 1000;
+  }
+
   .header-main .container {
     padding: 8px 15px;
   }
@@ -1958,9 +1963,10 @@ footer {
     padding: 15px;
     box-shadow: var(--shadow-md);
     gap: 8px;
+    z-index: 1100;
   }
   
-  .nav-links-list.open {
+  #main-nav-links.open .nav-links-list {
     display: flex;
   }
   

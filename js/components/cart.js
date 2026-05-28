@@ -185,21 +185,11 @@ const Cart = {
 
   openCheckout() {
     this.closeDrawer();
-    const modal = document.getElementById("checkout-modal");
-    if (modal) {
-      modal.classList.add("open");
-      document.body.classList.add("no-scroll");
-      this.renderCheckoutSummary();
+    App.navigate('checkout');
+    this.renderCheckoutSummary();
+    setTimeout(() => {
       this.toggleInvoiceFields("b2c"); // default B2C
-    }
-  },
-
-  closeCheckout() {
-    const modal = document.getElementById("checkout-modal");
-    if (modal) {
-      modal.classList.remove("open");
-      document.body.classList.remove("no-scroll");
-    }
+    }, 50);
   },
 
   toggleInvoiceFields(type) {

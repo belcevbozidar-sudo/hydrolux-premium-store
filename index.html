@@ -506,46 +506,12 @@
     <section id="admin-view" class="spa-view">
       <div id="admin-view-content"></div>
     </section>
-  </main>
 
-  <!-- ==========================================================================
-       CART SLIDE-OUT DRAWER PANEL
-       ========================================================================== -->
-  <div class="cart-drawer" id="cart-drawer">
-    <div class="cart-header">
-      <h3>🛒 Вашата Количка</h3>
-      <button class="btn-close-drawer" onclick="Cart.closeDrawer()">×</button>
-    </div>
-    
-    <div class="cart-items-list" id="cart-items-container">
-      <!-- Added items populated by cart.js -->
-    </div>
-    
-    <div class="cart-footer" id="cart-footer-panel">
-      <div class="cart-total-row">
-        <span class="font-medium">ОБЩО:</span>
-        <div class="text-right">
-          <div class="font-large text-primary font-bold" id="cart-total-bgn">0.00 €</div>
-        </div>
-      </div>
-      <div class="divider"></div>
-      <button class="btn btn-accent btn-block btn-large" onclick="Cart.openCheckout()">➔ Към Поръчка (Чекаут)</button>
-    </div>
-  </div>
-  <div class="cart-drawer-backdrop" onclick="Cart.closeDrawer()"></div>
-
-  <!-- ==========================================================================
-       MODALS
-       ========================================================================== -->
-
-  <!-- 1. CHECKOUT MODAL -->
-  <div class="modal-overlay" id="checkout-modal">
-    <div class="modal-window">
-      <div class="modal-header">
-        <h3>🛒 Финализиране на поръчката</h3>
-        <button class="modal-close" onclick="Cart.closeCheckout()">×</button>
-      </div>
-      <div class="modal-body">
+    <!-- 7. CHECKOUT VIEW -->
+    <section id="checkout-view" class="spa-view">
+      <div class="card p-30">
+        <h3 class="section-title">🛒 Финализиране на поръчката</h3>
+        <div class="divider"></div>
         <form id="checkout-form" onsubmit="Cart.submitOrder(event)">
           <div class="checkout-grid">
             <!-- Form Fields -->
@@ -630,8 +596,39 @@
           </div>
         </form>
       </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       CART SLIDE-OUT DRAWER PANEL
+       ========================================================================== -->
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h3>🛒 Вашата Количка</h3>
+      <button class="btn-close-drawer" onclick="Cart.closeDrawer()">×</button>
+    </div>
+    
+    <div class="cart-items-list" id="cart-items-container">
+      <!-- Added items populated by cart.js -->
+    </div>
+    
+    <div class="cart-footer" id="cart-footer-panel">
+      <div class="cart-total-row">
+        <span class="font-medium">ОБЩО:</span>
+        <div class="text-right">
+          <div class="font-large text-primary font-bold" id="cart-total-bgn">0.00 €</div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <button class="btn btn-accent btn-block btn-large" onclick="Cart.openCheckout()">➔ Към Поръчка (Чекаут)</button>
     </div>
   </div>
+  <div class="cart-drawer-backdrop" onclick="Cart.closeDrawer()"></div>
+
+  <!-- ==========================================================================
+       MODALS
+       ========================================================================== -->
+
 
   <!-- 2. SUCCESS ORDER MODAL -->
   <div class="modal-overlay" id="success-modal">

@@ -319,6 +319,8 @@ const App = {
         HoseBuilder.render();
       } else if (mainView === "admin") {
         Admin.init();
+      } else if (mainView === "checkout") {
+        Cart.renderCheckoutSummary();
       }
     } else {
       // Fallback

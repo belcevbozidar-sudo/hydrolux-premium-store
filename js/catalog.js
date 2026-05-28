@@ -41,6 +41,10 @@ const Catalog = {
       if (btn && cat) btn.textContent = `📂 Категория: ${cat.name} ▾`;
     }
     
+    if (App.currentView !== "catalog") {
+      App.navigate("catalog");
+    }
+    
     this.applyFiltersAndRender();
   },
 
