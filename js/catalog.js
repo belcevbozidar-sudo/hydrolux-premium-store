@@ -228,9 +228,10 @@ const Catalog = {
             </tr>
           </thead>
           <tbody id="prod-variants-tbody">
-            ${product.variants.map(v => {
+            ${product.variants.map((v, idx) => {
               const priceVal = parseFloat(v.priceEur) || 0;
-              const vCode = v.code || v[cols[0].key] || '';
+              const vCode = this.getVariantCode(product, v, idx);
+              const qtyId = this.getVariantQtyInputId(idx);
               return `
                 <tr>
                   ${cols.map(c => {
@@ -249,13 +250,13 @@ const Catalog = {
                   }).join("")}
                   <td>
                     <div class="quantity-input-wrapper small">
-                      <button class="btn btn-secondary btn-icon small" onclick="Catalog.adjustVariantQty('${vCode}', -1)">-</button>
-                      <input type="number" id="qty-${vCode}" class="form-control text-center small qty-input" value="1" min="1">
-                      <button class="btn btn-secondary btn-icon small" onclick="Catalog.adjustVariantQty('${vCode}', 1)">+</button>
+                      <button class="btn btn-secondary btn-icon small" onclick="Catalog.adjustVariantQtyByIndex(${idx}, -1)">-</button>
+                      <input type="number" id="${qtyId}" class="form-control text-center small qty-input" value="1" min="1">
+                      <button class="btn btn-secondary btn-icon small" onclick="Catalog.adjustVariantQtyByIndex(${idx}, 1)">+</button>
                     </div>
                   </td>
                   <td>
-                    <button class="btn btn-primary small btn-buy-variant" onclick="Catalog.buyVariant('${product.id}', '${vCode}')">
+                    <button class="btn btn-primary small btn-buy-variant" onclick="Catalog.buyVariantByIndex('${product.id}', ${idx})">
                       Купи
                     </button>
                   </td>
@@ -271,11 +272,11 @@ const Catalog = {
     const bulkBtn = document.getElementById("prod-bulk-add-btn");
     bulkBtn.onclick = () => {
       let addedAny = false;
-      product.variants.forEach(v => {
-        const input = document.getElementById(`qty-${v.code}`);
+      product.variants.forEach((v, idx) => {
+        const input = document.getElementById(this.getVariantQtyInputId(idx));
         const qty = parseInt(input.value) || 0;
         if (qty > 0) {
-          Cart.addItem(product, v.code, qty);
+          Cart.addItem(product, this.getVariantCode(product, v, idx), qty);
           addedAny = true;
         }
       });
@@ -285,6 +286,17 @@ const Catalog = {
         Cart.showToast("Моля, задайте количество за поне един вариант.");
       }
     };
+  },
+
+  getVariantCode(product, variant, index = 0) {
+    if (typeof Cart !== "undefined" && typeof Cart.getVariantCode === "function") {
+      return Cart.getVariantCode(product, variant, index);
+    }
+    return variant.code || `${product.code || product.id || "product"}-${index + 1}`;
+  },
+
+  getVariantQtyInputId(index) {
+    return `qty-variant-${index}`;
   },
 
   changeMainImage(src, thumbEl) {
@@ -300,6 +312,13 @@ const Catalog = {
     }
   },
 
+  adjustVariantQtyByIndex(index, diff) {
+    const input = document.getElementById(this.getVariantQtyInputId(index));
+    if (input) {
+      input.value = Math.max(1, (parseInt(input.value) || 1) + diff);
+    }
+  },
+
   buyVariant(productId, code) {
     const product = CONFIG.products.find(p => p.id === productId);
     const input = document.getElementById(`qty-${code}`);
@@ -308,6 +327,17 @@ const Catalog = {
       Cart.addItem(product, code, qty);
       Cart.openDrawer();
     }
+  },
+
+  buyVariantByIndex(productId, index) {
+    const product = CONFIG.products.find(p => p.id === productId);
+    if (!product || !product.variants || !product.variants[index]) return;
+
+    const input = document.getElementById(this.getVariantQtyInputId(index));
+    const qty = parseInt(input ? input.value : 1) || 1;
+    const variantCode = this.getVariantCode(product, product.variants[index], index);
+    Cart.addItem(product, variantCode, qty);
+    Cart.openDrawer();
   },
 
   triggerTagSearch(tag) {

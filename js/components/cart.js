@@ -19,20 +19,60 @@ const Cart = {
     this.updateCartBadge();
   },
 
+  getVariantCode(product, variant, index = 0) {
+    if (!variant) return "CUSTOM-SPEC";
+
+    const preferredKeys = ["code", "sku", "article", "id"];
+    for (const key of preferredKeys) {
+      if (variant[key] !== undefined && String(variant[key]).trim() !== "") {
+        return String(variant[key]).trim();
+      }
+    }
+
+    const firstFilledValue = Object.values(variant).find(value => String(value ?? "").trim() !== "");
+    if (firstFilledValue !== undefined) {
+      return String(firstFilledValue).trim();
+    }
+
+    return `${product.code || product.id || "product"}-${index + 1}`;
+  },
+
+  findVariant(product, variantCode) {
+    if (!product.variants || variantCode === "CUSTOM-SPEC") return null;
+    return product.variants.find((variant, index) => this.getVariantCode(product, variant, index) === variantCode) || null;
+  },
+
+  escapeJsString(value) {
+    return String(value ?? "")
+      .replace(/\\/g, "\\\\")
+      .replace(/'/g, "\\'")
+      .replace(/\n/g, "\\n")
+      .replace(/\r/g, "\\r")
+      .replace(/&/g, "&amp;")
+      .replace(/"/g, "&quot;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+  },
+
   addItem(product, variantCode, quantity) {
     if (quantity <= 0) return;
 
-    let priceEur = product.priceEur;
+    let priceEur = parseFloat(product.priceEur) || 0;
     let variantName = "";
     let specsText = "";
 
     // If it's a product variant
     if (product.variants && variantCode !== "CUSTOM-SPEC") {
-      const variant = product.variants.find(v => v.code === variantCode);
+      const variant = this.findVariant(product, variantCode);
       if (variant) {
-        priceEur = variant.priceEur;
-        variantName = `Размер: ø ${variant.innerDb}мм (${variant.inch})`;
-        specsText = `Работно налягане: ${variant.pressure} Bar | Дължина на ролката: ${variant.rollLength}м`;
+        priceEur = parseFloat(variant.priceEur) || 0;
+        const diameter = variant.innerDb !== undefined && variant.innerDb !== "" ? `ø ${variant.innerDb}мм` : variantCode;
+        const inch = variant.inch ? ` (${variant.inch})` : "";
+        variantName = `Размер: ${diameter}${inch}`;
+        const specs = [];
+        if (variant.pressure !== undefined && variant.pressure !== "") specs.push(`Работно налягане: ${variant.pressure} Bar`);
+        if (variant.rollLength !== undefined && variant.rollLength !== "") specs.push(`Дължина на ролката: ${variant.rollLength}м`);
+        specsText = specs.join(" | ");
       }
     } else if (product.isCustomHose) {
       variantName = `Конфигуриран маркуч (${product.specsSummary.size})`;
@@ -88,7 +128,7 @@ const Cart = {
   getTotal() {
     let totalEur = 0;
     this.items.forEach(item => {
-      totalEur += item.priceEur * item.quantity;
+      totalEur += (parseFloat(item.priceEur) || 0) * (parseInt(item.quantity) || 0);
     });
     return {
       eur: totalEur,
@@ -157,27 +197,30 @@ const Cart = {
     document.getElementById("cart-footer-panel").style.display = "block";
     const totals = this.getTotal();
 
-    container.innerHTML = this.items.map(item => `
-      <div class="cart-item">
-        <div class="cart-item-info">
-          <div class="cart-item-title">${item.name}</div>
-          ${item.variantName ? `<div class="cart-item-variant">${item.variantName}</div>` : ""}
-          ${item.specsText ? `<div class="cart-item-specs font-xs text-muted">${item.specsText}</div>` : ""}
-          <div class="cart-item-pricing font-small">
-            <span class="text-primary font-bold">${formatPrice(item.priceEur).eur}</span>
+    container.innerHTML = this.items.map(item => {
+      const cartKey = this.escapeJsString(item.cartKey);
+      return `
+        <div class="cart-item">
+          <div class="cart-item-info">
+            <div class="cart-item-title">${item.name}</div>
+            ${item.variantName ? `<div class="cart-item-variant">${item.variantName}</div>` : ""}
+            ${item.specsText ? `<div class="cart-item-specs font-xs text-muted">${item.specsText}</div>` : ""}
+            <div class="cart-item-pricing font-small">
+              <span class="text-primary font-bold">${formatPrice(item.priceEur).eur}</span>
+            </div>
+          </div>
+          <div class="cart-item-actions">
+            <div class="quantity-input-wrapper small">
+              <button class="btn btn-secondary btn-icon small" onclick="Cart.updateQuantity('${cartKey}', ${item.quantity - 1})">-</button>
+              <input type="number" class="form-control text-center small qty-input" value="${item.quantity}"
+                     onchange="Cart.updateQuantity('${cartKey}', this.value)">
+              <button class="btn btn-secondary btn-icon small" onclick="Cart.updateQuantity('${cartKey}', ${item.quantity + 1})">+</button>
+            </div>
+            <button class="btn-delete" onclick="Cart.removeItem('${cartKey}')" title="Премахни">🗑️</button>
           </div>
         </div>
-        <div class="cart-item-actions">
-          <div class="quantity-input-wrapper small">
-            <button class="btn btn-secondary btn-icon small" onclick="Cart.updateQuantity('${item.cartKey}', ${item.quantity - 1})">-</button>
-            <input type="number" class="form-control text-center small qty-input" value="${item.quantity}" 
-                   onchange="Cart.updateQuantity('${item.cartKey}', this.value)">
-            <button class="btn btn-secondary btn-icon small" onclick="Cart.updateQuantity('${item.cartKey}', ${item.quantity + 1})">+</button>
-          </div>
-          <button class="btn-delete" onclick="Cart.removeItem('${item.cartKey}')" title="Премахни">🗑️</button>
-        </div>
-      </div>
-    `).join("");
+      `;
+    }).join("");
 
     // Update prices in footer panel strictly in EUR
     document.getElementById("cart-total-bgn").textContent = totals.eur.toFixed(2) + " €";
