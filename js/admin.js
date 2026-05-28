@@ -539,7 +539,7 @@ const Admin = {
             <span class="admin-badge admin-badge-success">${p.variants ? p.variants.length : 0} размери</span>
           </td>
           <td data-label="Действия">
-            <button class="btn-admin-action btn-admin-edit" onclick="Admin.startEditProduct('${p.id}')">✏️ Редактирай</button>
+            <button class="btn-admin-action btn-admin-edit" onclick="Admin.startEditProduct('${p.id}')" style="margin-right: 8px;">✏️ Редактирай</button>
             <button class="btn-admin-action btn-admin-danger" onclick="Admin.deleteProduct('${p.id}')">✕ Изтрий</button>
           </td>
         </tr>
@@ -657,45 +657,8 @@ const Admin = {
           </div>
 
           <!-- Product Variants Table (Customizable and Operational) -->
-          <div class="form-group mt-20">
-            <label style="font-weight: 800; display: block; border-bottom: 1px solid var(--border-light); padding-bottom: 8px;">📏 Таблица с размери, цени и детайли (Еднакви с продуктовата таблица)</label>
-            <p class="text-muted font-xs" style="margin-bottom: 10px;">Всички полета са изцяло редактируеми. Попълнете размерите, които ще се покажат в таблицата на сайта.</p>
-            
-            <div style="overflow-x: auto;">
-              <table class="admin-table" style="min-width: 900px; font-size: 0.8rem; margin-top: 5px;">
-                <thead>
-                  <tr style="background-color: #f1f5f9;">
-                    <th style="padding: 8px;">Код на размер</th>
-                    <th style="padding: 8px; width: 100px;">Вътр. ø (мм)</th>
-                    <th style="padding: 8px; width: 80px;">Инч</th>
-                    <th style="padding: 8px; width: 100px;">Външ. ø (мм)</th>
-                    <th style="padding: 8px; width: 110px;">Работно нал.(Bar)</th>
-                    <th style="padding: 8px; width: 110px;">Радиус огъване(мм)</th>
-                    <th style="padding: 8px; width: 100px;">Тегло кг/м</th>
-                    <th style="padding: 8px; width: 100px;">Дълж. ролка(м)</th>
-                    <th style="padding: 8px; width: 110px;">Цена EUR (€)</th>
-                    <th style="padding: 8px; width: 40px;"></th>
-                  </tr>
-                </thead>
-                <tbody id="prod-variants-tbody">
-                  ${isEditing && this.editingProduct.variants ? this.editingProduct.variants.map(v => `
-                    <tr class="admin-variant-tr">
-                      <td data-label="Код на размер" style="padding: 5px;"><input type="text" class="form-control var-code" value="${v.code}" style="padding: 6px; font-size:0.8rem;" required></td>
-                      <td data-label="Вътр. ø (мм)" style="padding: 5px;"><input type="number" step="any" class="form-control var-inner" value="${v.innerDb}" style="padding: 6px; font-size:0.8rem;" required></td>
-                      <td data-label="Инч" style="padding: 5px;"><input type="text" class="form-control var-inch" value="${v.inch}" style="padding: 6px; font-size:0.8rem;" required></td>
-                      <td data-label="Външ. ø (мм)" style="padding: 5px;"><input type="number" step="any" class="form-control var-outer" value="${v.outerDb}" style="padding: 6px; font-size:0.8rem;" required></td>
-                      <td data-label="Работно нал.(Bar)" style="padding: 5px;"><input type="number" step="any" class="form-control var-pressure" value="${v.pressure}" style="padding: 6px; font-size:0.8rem;" required></td>
-                      <td data-label="Радиус огъване(мм)" style="padding: 5px;"><input type="number" step="any" class="form-control var-bend" value="${v.bend}" style="padding: 6px; font-size:0.8rem;" required></td>
-                      <td data-label="Тегло кг/м" style="padding: 5px;"><input type="number" step="any" class="form-control var-weight" value="${v.weight}" style="padding: 6px; font-size:0.8rem;" required></td>
-                      <td data-label="Дълж. ролка(м)" style="padding: 5px;"><input type="number" step="any" class="form-control var-roll" value="${v.rollLength}" style="padding: 6px; font-size:0.8rem;" required></td>
-                      <td data-label="Цена EUR (€)" style="padding: 5px;"><input type="number" step="any" class="form-control var-price" value="${v.priceEur}" style="padding: 6px; font-size:0.8rem; font-weight:700;" required></td>
-                      <td data-label="Действия" style="padding: 5px;"><button type="button" class="btn-icon-danger" style="width:30px; height:30px; font-size:0.8rem;" onclick="this.parentElement.parentElement.remove()">×</button></td>
-                    </tr>
-                  `).join("") : ''}
-                </tbody>
-              </table>
-            </div>
-            <button type="button" class="btn btn-secondary mt-10" onclick="Admin.addNewVariantRow()">+ Добави нов размер (Ред в таблицата)</button>
+          <div id="variants-table-container">
+            ${this.renderVariantsTable()}
           </div>
 
           <div class="divider"></div>
@@ -711,7 +674,7 @@ const Admin = {
       <!-- Current Products Table -->
       <h3 style="font-weight: 800; font-size: 1.2rem; margin-top: 35px; margin-bottom: 15px; color: #1e293b;">Списък с продукти</h3>
       <div style="overflow-x: auto;">
-        <table class="admin-table">
+        <table class="admin-table" id="admin-products-list-table">
           <thead>
             <tr>
               <th>Продукт</th>
@@ -732,7 +695,7 @@ const Admin = {
   filterProductsList(catId) {
     this.filterCategory = catId;
     
-    const tbody = document.querySelector(".admin-table tbody");
+    const tbody = document.querySelector("#admin-products-list-table tbody");
     if (!tbody) return;
     
     let products = CONFIG.products;
@@ -767,7 +730,7 @@ const Admin = {
             <span class="admin-badge admin-badge-success">${p.variants ? p.variants.length : 0} размери</span>
           </td>
           <td data-label="Действия">
-            <button class="btn-admin-action btn-admin-edit" type="button" onclick="Admin.startEditProduct('${p.id}')">✏️ Редактирай</button>
+            <button class="btn-admin-action btn-admin-edit" type="button" onclick="Admin.startEditProduct('${p.id}')" style="margin-right: 8px;">✏️ Редактирай</button>
             <button class="btn-admin-action btn-admin-danger" type="button" onclick="Admin.deleteProduct('${p.id}')">✕ Изтрий</button>
           </td>
         </tr>
@@ -799,24 +762,172 @@ const Admin = {
     container.appendChild(div);
   },
 
-  addNewVariantRow() {
-    const tbody = document.getElementById("prod-variants-tbody");
-    if (!tbody) return;
-    const tr = document.createElement("tr");
-    tr.className = "admin-variant-tr";
-    tr.innerHTML = `
-      <td data-label="Код на размер" style="padding: 5px;"><input type="text" class="form-control var-code" placeholder="напр. PLW20006" style="padding: 6px; font-size:0.8rem;" required></td>
-      <td data-label="Вътр. ø (мм)" style="padding: 5px;"><input type="number" step="any" class="form-control var-inner" placeholder="напр. 6" style="padding: 6px; font-size:0.8rem;" required></td>
-      <td data-label="Инч" style="padding: 5px;"><input type="text" class="form-control var-inch" placeholder="напр. 1/4\\"" style="padding: 6px; font-size:0.8rem;" required></td>
-      <td data-label="Външ. ø (мм)" style="padding: 5px;"><input type="number" step="any" class="form-control var-outer" placeholder="напр. 12" style="padding: 6px; font-size:0.8rem;" required></td>
-      <td data-label="Работно нал.(Bar)" style="padding: 5px;"><input type="number" step="any" class="form-control var-pressure" placeholder="напр. 20" style="padding: 6px; font-size:0.8rem;" required></td>
-      <td data-label="Радиус огъване(мм)" style="padding: 5px;"><input type="number" step="any" class="form-control var-bend" placeholder="напр. 60" style="padding: 6px; font-size:0.8rem;" required></td>
-      <td data-label="Тегло кг/м" style="padding: 5px;"><input type="number" step="any" class="form-control var-weight" placeholder="напр. 0.13" style="padding: 6px; font-size:0.8rem;" required></td>
-      <td data-label="Дълж. ролка(м)" style="padding: 5px;"><input type="number" step="any" class="form-control var-roll" placeholder="напр. 50" style="padding: 6px; font-size:0.8rem;" required></td>
-      <td data-label="Цена EUR (€)" style="padding: 5px;"><input type="number" step="any" class="form-control var-price" placeholder="напр. 1.45" style="padding: 6px; font-size:0.8rem; font-weight:700;" required></td>
-      <td data-label="Действия" style="padding: 5px;"><button type="button" class="btn-icon-danger" style="width:30px; height:30px; font-size:0.8rem;" onclick="this.parentElement.parentElement.remove()">×</button></td>
+  renderVariantsTable() {
+    const isEditing = this.editingProduct !== null;
+    
+    if (!this.currentColumns || this.currentColumns.length === 0) {
+      if (isEditing && this.editingProduct.columns) {
+        this.currentColumns = [...this.editingProduct.columns];
+      } else {
+        this.currentColumns = [
+          { key: "code", label: "Код на размер" },
+          { key: "innerDb", label: "Вътр. ø (мм)" },
+          { key: "inch", label: "Инч" },
+          { key: "outerDb", label: "Външ. ø (мм)" },
+          { key: "pressure", label: "Работно нал.(Bar)" },
+          { key: "bend", label: "Радиус огъване(мм)" },
+          { key: "weight", label: "Тегло кг/м" },
+          { key: "rollLength", label: "Дълж. ролка(м)" },
+          { key: "priceEur", label: "Цена EUR (€)" }
+        ];
+      }
+    }
+
+    const activeVariants = this.tempVariants || this.collectVariantsFromDOM() || (isEditing ? this.editingProduct.variants : []);
+
+    const headersHTML = this.currentColumns.map(c => `
+      <th style="padding: 8px; min-width: 110px; position: relative; text-align: center;">
+        <div style="display: flex; flex-direction: column; gap: 4px; align-items: center;">
+          <input type="text" class="form-control text-center" value="${c.label}" 
+                 onchange="Admin.renameColumn('${c.key}', this.value)" 
+                 style="font-size: 0.75rem; font-weight: 800; padding: 4px; border: 1.5px dashed var(--primary); background: #f8fafc; border-radius: 4px;">
+          <button type="button" class="btn-icon-danger" onclick="Admin.deleteColumn('${c.key}')" 
+                  style="width: 20px; height: 20px; font-size: 0.7rem; border-radius: 4px; margin-top: 2px;" title="Изтрий колоната">✕</button>
+        </div>
+      </th>
+    `).join("");
+
+    const rowsHTML = activeVariants.map((v, rIdx) => `
+      <tr class="admin-variant-tr">
+        ${this.currentColumns.map(c => {
+          const val = v[c.key] !== undefined ? v[c.key] : '';
+          const isPrice = c.key === 'priceEur';
+          return `
+            <td data-label="${c.label}" style="padding: 5px;">
+              <input type="text" 
+                     class="form-control var-cell" 
+                     data-key="${c.key}" 
+                     value="${val}" 
+                     style="padding: 6px; font-size: 0.8rem; ${isPrice ? 'font-weight: 700; border-color: var(--accent);' : ''}" 
+                     required>
+            </td>
+          `;
+        }).join("")}
+        <td data-label="Действия" style="padding: 5px; text-align: center;">
+          <button type="button" class="btn-icon-danger" style="width: 32px; height: 32px; font-size: 0.9rem;" onclick="this.parentElement.parentElement.remove()">×</button>
+        </td>
+      </tr>
+    `).join("");
+
+    return `
+      <div class="form-group mt-20">
+        <label style="font-weight: 800; display: block; border-bottom: 1px solid var(--border-light); padding-bottom: 8px; color: var(--primary);">📏 Таблица с размери, цени и детайли (Еднакви с продуктовата таблица)</label>
+        <p class="text-muted font-xs" style="margin-bottom: 10px;">Всички полета и колони са изцяло редактируеми. Можете да променяте имената на колоните, да добавяте нови или да ги изтривате.</p>
+        
+        <div style="display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;">
+          <button type="button" class="btn btn-secondary btn-small" onclick="Admin.addColumn()">➕ Добави Нова Колона</button>
+          <button type="button" class="btn btn-secondary btn-small" onclick="Admin.addNewVariantRow()">➕ Добави Нов Размер (Ред)</button>
+        </div>
+
+        <div style="overflow-x: auto;">
+          <table class="admin-table" style="min-width: 900px; font-size: 0.85rem; margin-top: 5px; border: 1px solid var(--border-light);">
+            <thead>
+              <tr style="background-color: #f1f5f9;">
+                ${headersHTML}
+                <th style="padding: 8px; width: 60px; text-align: center;">Действие</th>
+              </tr>
+            </thead>
+            <tbody id="prod-variants-tbody">
+              ${rowsHTML}
+            </tbody>
+          </table>
+        </div>
+      </div>
     `;
-    tbody.appendChild(tr);
+  },
+
+  collectVariantsFromDOM() {
+    const tbody = document.getElementById("prod-variants-tbody");
+    if (!tbody) return null;
+    
+    const variants = [];
+    tbody.querySelectorAll(".admin-variant-tr").forEach(row => {
+      const v = {};
+      row.querySelectorAll(".var-cell").forEach(input => {
+        const key = input.getAttribute("data-key");
+        const val = input.value.trim();
+        if (key === 'code' || key === 'inch') {
+          v[key] = val;
+        } else {
+          v[key] = isNaN(parseFloat(val)) || val === '' ? val : parseFloat(val);
+        }
+      });
+      if (Object.keys(v).length > 0) {
+        variants.push(v);
+      }
+    });
+    return variants;
+  },
+
+  renameColumn(key, newLabel) {
+    if (!this.currentColumns) return;
+    const col = this.currentColumns.find(c => c.key === key);
+    if (col) {
+      col.label = newLabel.trim();
+    }
+    const activeVariants = this.collectVariantsFromDOM();
+    this.refreshVariantsTable(activeVariants);
+  },
+
+  deleteColumn(key) {
+    if (confirm("Сигурни ли сте, че искате да изтриете тази колона? Данните в нея ще бъдат премахнати.")) {
+      const activeVariants = this.collectVariantsFromDOM();
+      if (activeVariants) {
+        activeVariants.forEach(v => {
+          delete v[key];
+        });
+      }
+      this.currentColumns = this.currentColumns.filter(c => c.key !== key);
+      this.refreshVariantsTable(activeVariants);
+    }
+  },
+
+  addColumn() {
+    const label = prompt("Въведете име на новата колона (напр. Работна температура):");
+    if (label && label.trim()) {
+      const key = "col_" + Date.now();
+      const activeVariants = this.collectVariantsFromDOM();
+      if (activeVariants) {
+        activeVariants.forEach(v => {
+          v[key] = "";
+        });
+      }
+      if (!this.currentColumns) this.currentColumns = [];
+      this.currentColumns.push({ key, label: label.trim() });
+      this.refreshVariantsTable(activeVariants);
+    }
+  },
+
+  addNewVariantRow() {
+    const activeVariants = this.collectVariantsFromDOM() || [];
+    const newRow = {};
+    if (!this.currentColumns) return;
+    this.currentColumns.forEach(c => {
+      newRow[c.key] = "";
+    });
+    activeVariants.push(newRow);
+    this.refreshVariantsTable(activeVariants);
+  },
+
+  refreshVariantsTable(variants = null) {
+    const container = document.getElementById("variants-table-container");
+    if (container) {
+      if (variants) {
+        this.tempVariants = variants;
+      }
+      container.innerHTML = this.renderVariantsTable();
+      this.tempVariants = null;
+    }
   },
 
   initProductFormHandlers() {
@@ -990,6 +1101,7 @@ const Admin = {
     if (prod) {
       this.editingProduct = prod;
       this.uploadedImages = [...prod.images]; // Load existing images
+      this.currentColumns = prod.columns ? [...prod.columns] : null; // Load product columns
       this.render();
       window.scrollTo({ top: 150, behavior: "smooth" });
     }
@@ -998,6 +1110,7 @@ const Admin = {
   cancelProductEdit() {
     this.editingProduct = null;
     this.uploadedImages = [];
+    this.currentColumns = null; // Clear columns
     this.render();
   },
 
@@ -1032,35 +1145,10 @@ const Admin = {
       }
     });
 
-    // 2. Collect size/variant columns
-    const variants = [];
-    document.querySelectorAll(".admin-variant-tr").forEach((row) => {
-      const vCode = row.querySelector(".var-code").value.trim();
-      const inner = parseFloat(row.querySelector(".var-inner").value) || 0;
-      const inch = row.querySelector(".var-inch").value.trim();
-      const outer = parseFloat(row.querySelector(".var-outer").value) || 0;
-      const pressure = parseFloat(row.querySelector(".var-pressure").value) || 0;
-      const bend = parseFloat(row.querySelector(".var-bend").value) || 0;
-      const weight = parseFloat(row.querySelector(".var-weight").value) || 0;
-      const roll = parseFloat(row.querySelector(".var-roll").value) || 0;
-      const price = parseFloat(row.querySelector(".var-price").value) || 0;
+    // 2. Collect dynamic size/variant columns using our DOM collector
+    const variants = this.collectVariantsFromDOM();
 
-      if (vCode && !isNaN(price)) {
-        variants.push({
-          code: vCode,
-          innerDb: inner,
-          inch: inch,
-          outerDb: outer,
-          pressure: pressure,
-          bend: bend,
-          weight: weight,
-          rollLength: roll,
-          priceEur: price
-        });
-      }
-    });
-
-    if (variants.length === 0) {
+    if (!variants || variants.length === 0) {
       alert("Моля добавете поне един размер в таблицата!");
       return;
     }
@@ -1078,11 +1166,13 @@ const Admin = {
         target.isSpecial = isSpecial;
         target.images = images;
         target.specs = specs;
+        target.columns = this.currentColumns; // Save columns schema
         target.variants = variants;
       }
       CONFIG.saveState();
       this.editingProduct = null;
       this.uploadedImages = [];
+      this.currentColumns = null;
       alert("Продуктът е успешно редактиран и обновен на сайта!");
     } else {
       // CREATE MODE
@@ -1116,10 +1206,12 @@ const Admin = {
         description,
         specs,
         images,
+        columns: this.currentColumns, // Save columns schema
         variants
       };
 
       CONFIG.addProduct(newProduct);
+      this.currentColumns = null;
       alert("Продуктът е успешно добавен!");
     }
 

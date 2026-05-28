@@ -203,35 +203,69 @@ const Catalog = {
            onclick="Catalog.changeMainImage('${img}', this)">
     `).join("");
 
-    // 🔥 Variants Table strictly in EUR €
-    const tableBody = document.getElementById("prod-variants-tbody");
-    tableBody.innerHTML = product.variants.map(v => `
-      <tr>
-        <td class="font-bold text-primary font-xs">${v.code}</td>
-        <td><strong>${v.innerDb}</strong> мм</td>
-        <td class="text-muted font-xs">${v.inch}</td>
-        <td>${v.outerDb} мм</td>
-        <td><span class="badge badge-warning">${v.pressure} Bar</span></td>
-        <td class="text-muted font-xs">${v.bend} мм</td>
-        <td class="text-muted font-xs">${v.weight} кг/м</td>
-        <td>${v.rollLength} м</td>
-        <td>
-          <div class="table-price-bgn">${formatPrice(v.priceEur).eur}</div>
-        </td>
-        <td>
-          <div class="quantity-input-wrapper small">
-            <button class="btn btn-secondary btn-icon small" onclick="Catalog.adjustVariantQty('${v.code}', -1)">-</button>
-            <input type="number" id="qty-${v.code}" class="form-control text-center small qty-input" value="1" min="1">
-            <button class="btn btn-secondary btn-icon small" onclick="Catalog.adjustVariantQty('${v.code}', 1)">+</button>
-          </div>
-        </td>
-        <td>
-          <button class="btn btn-primary small btn-buy-variant" onclick="Catalog.buyVariant('${product.id}', '${v.code}')">
-            Купи
-          </button>
-        </td>
-      </tr>
-    `).join("");
+    // 🔥 Dynamic Variants Table strictly in EUR €
+    const tableContainer = document.querySelector(".table-responsive");
+    if (tableContainer) {
+      const cols = product.columns || [
+        { key: "code", label: "Код на размер" },
+        { key: "innerDb", label: "Вътр. ø (мм)", suffix: " мм" },
+        { key: "inch", label: "Инч" },
+        { key: "outerDb", label: "Външ. ø (мм)", suffix: " мм" },
+        { key: "pressure", label: "Работно нал.", suffix: " Bar" },
+        { key: "bend", label: "Радиус огъване", suffix: " мм" },
+        { key: "weight", label: "Тегло", suffix: " кг/м" },
+        { key: "rollLength", label: "Дълж. ролка", suffix: " м" },
+        { key: "priceEur", label: "Цена" }
+      ];
+
+      tableContainer.innerHTML = `
+        <table class="table">
+          <thead>
+            <tr>
+              ${cols.map(c => `<th>${c.label}</th>`).join("")}
+              <th>Количество</th>
+              <th>Действие</th>
+            </tr>
+          </thead>
+          <tbody id="prod-variants-tbody">
+            ${product.variants.map(v => {
+              const priceVal = parseFloat(v.priceEur) || 0;
+              const vCode = v.code || v[cols[0].key] || '';
+              return `
+                <tr>
+                  ${cols.map(c => {
+                    const val = v[c.key] !== undefined ? v[c.key] : '';
+                    if (c.key === 'priceEur') {
+                      return `<td><div class="table-price-bgn">${formatPrice(priceVal).eur}</div></td>`;
+                    }
+                    if (c.key === 'code') {
+                      return `<td class="font-bold text-primary font-xs">${val}</td>`;
+                    }
+                    if (c.key === 'pressure') {
+                      return `<td><span class="badge badge-warning">${val} Bar</span></td>`;
+                    }
+                    const suffix = c.suffix || '';
+                    return `<td>${val}${suffix}</td>`;
+                  }).join("")}
+                  <td>
+                    <div class="quantity-input-wrapper small">
+                      <button class="btn btn-secondary btn-icon small" onclick="Catalog.adjustVariantQty('${vCode}', -1)">-</button>
+                      <input type="number" id="qty-${vCode}" class="form-control text-center small qty-input" value="1" min="1">
+                      <button class="btn btn-secondary btn-icon small" onclick="Catalog.adjustVariantQty('${vCode}', 1)">+</button>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="btn btn-primary small btn-buy-variant" onclick="Catalog.buyVariant('${product.id}', '${vCode}')">
+                      Купи
+                    </button>
+                  </td>
+                </tr>
+              `;
+            }).join("")}
+          </tbody>
+        </table>
+      `;
+    }
 
     // Set grand "Buy Selected" actions
     const bulkBtn = document.getElementById("prod-bulk-add-btn");
