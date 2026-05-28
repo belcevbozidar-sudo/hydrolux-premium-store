@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Хидролукс Груп | Онлайн магазин за Хидравлични и Пневматични решения Монтана</title>
+  <meta name="description" content="Хидролукс Груп предлага производство на маркучи за високо налягане, хидравлика, пневматика, фитинги, уплътнители и накрайници в град Монтана. Професионално качество от 2019 г.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER TOP BAR (Продажби, Влез, Валута)
+       ========================================================================== -->
+  <div class="header-top">
+    <div class="container">
+      <div class="header-top-left">
+        <span>Продажби: <a href="tel:+359892484337">+359 89 248 4337</a></span>
+      </div>
+      <div class="header-top-right">
+        <span class="login-link">🔒 Влез / Регистрирайте се</span>
+        <div class="currency-dropdown">
+          <span>€ EURO ▾</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MAIN MIDDLE HEADER (Logo, Navigation Links, Comparative/Wishlist, Cart)
+       ========================================================================== -->
+  <header class="header-main">
+    <div class="container">
+      <!-- High-Fidelity SVG Brand Logo -->
+      <a onclick="App.navigate('home')" class="logo-link" title="Хидролукс Груп">
+        <svg width="220" height="65" viewBox="0 0 220 65" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <!-- Official Hydrolux Group circular overlapping S-curve hydraulic hose -->
+          <path d="M 22 58 C 45 58, 62 58, 65 48 C 68 38, 68 18, 48 10 C 28 2, 8 18, 8 36 C 8 54, 25 66, 45 66 C 65 66, 80 50, 85 36 C 87 26, 95 18, 105 18" fill="none" stroke="#000000" stroke-width="7" stroke-linecap="square" />
+          
+          <!-- Bottom-left metallic fitting pointing left -->
+          <rect x="12" y="54" width="10" height="8" rx="1" fill="#b0b7bd" stroke="#1f2421" stroke-width="1"/>
+          <rect x="7" y="55" width="5" height="6" fill="#686e72" />
+          <line x1="7" y1="58" x2="3" y2="58" stroke="#1f2421" stroke-width="2" />
+          
+          <!-- Top-right metallic fitting pointing right -->
+          <rect x="105" y="14" width="10" height="8" rx="1" fill="#b0b7bd" stroke="#1f2421" stroke-width="1"/>
+          <rect x="115" y="15" width="5" height="6" fill="#686e72" />
+          <line x1="120" y1="18" x2="124" y2="18" stroke="#1f2421" stroke-width="2" />
+
+          <!-- "HYDROLUX" and "GROUP" typography in exact brand layout -->
+          <text x="50" y="36" font-family="'Outfit', 'Impact', sans-serif" font-size="28" font-weight="900" font-style="italic" fill="#0090ff" letter-spacing="-0.5">HYDROLUX</text>
+          <text x="145" y="53" font-family="'Outfit', 'Arial Black', sans-serif" font-size="15" font-weight="900" fill="#000000" letter-spacing="1">GROUP</text>
+        </svg>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav id="main-nav-links">
+        <ul class="nav-links-list">
+          <li><a class="nav-link active" onclick="App.navigate('home')">НАЧАЛО</a></li>
+          <li><a class="nav-link" onclick="App.navigate('catalog')">ПРОДУКТИ</a></li>
+          <li><a class="nav-link" onclick="document.getElementById('about-us-anchor').scrollIntoView({ behavior: 'smooth' })">ЗА НАС</a></li>
+          <li><a class="nav-link" onclick="Cart.showToast('Очаквайте скоро нашия блог за хидравлика!')">БЛОГ</a></li>
+          <li><a class="nav-link" onclick="App.navigate('services')">КОНТАКТИ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop & Mobile Header Actions -->
+      <div class="header-actions">
+        <!-- Wishlist & Compare Icons (Desktop only) -->
+        <div class="desktop-meta-actions">
+          <button class="meta-icon-btn" onclick="Cart.showToast('Няма добавени продукти за сравнение')" title="Сравнение">🔄</button>
+          <button class="meta-icon-btn" onclick="Cart.showToast('Списъкът с любими е празен')" title="Любими">♡</button>
+        </div>
+
+        <!-- Double Currency Shopping Cart Button -->
+        <button class="btn btn-cart-trigger" onclick="Cart.openDrawer()">
+          <span class="cart-icon-visual">🛍️</span>
+          <!-- Dynamic Currency display matching the screenshot -->
+          <span class="cart-text-desktop">
+            (<span class="cart-count-badge-inline">0</span>) - <strong id="cart-display-eur">0.00€</strong> (<span id="cart-display-bgn">0.00лв.</span>)
+          </span>
+          <span class="cart-text-mobile">(<span class="cart-count-badge-inline">0</span>)</span>
+        </button>
+        
+        <!-- Mobile hamburger menu toggle -->
+        <button class="mobile-menu-btn" onclick="App.toggleMobileMenu()">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SUB-HEADER BLUE BAR (Categories Selector and Rounded Search Box)
+       ========================================================================== -->
+  <div class="header-blue-bar">
+    <div class="container">
+      <!-- Categories dropdown trigger -->
+      <div class="categories-trigger-wrapper" onclick="App.navigate('catalog')">
+        <span class="hamburger-white">☰</span>
+        <span class="categories-label">КАТЕГОРИИ</span>
+      </div>
+
+      <!-- Advanced search panel -->
+      <div class="search-bar-wrapper">
+        <input type="text" id="search-input-blue" class="search-field" placeholder="Ключова дума..." oninput="Catalog.searchQuery = this.value; if(App.currentView !== 'catalog') App.navigate('catalog'); Catalog.applyFiltersAndRender()">
+        <div class="search-select-wrapper">
+          <select id="search-category-dropdown" onchange="Catalog.selectCategory(this.value); if(App.currentView !== 'catalog') App.navigate('catalog');">
+            <option value="">Всички категории</option>
+            <option value="air-hoses">Маркучи за въздух</option>
+            <option value="water-hoses">Маркучи за вода</option>
+            <option value="fuel-oil-hoses">Маркучи за гориво и масло</option>
+            <option value="coolant-hoses">Маркучи за охлаждаща течност</option>
+            <option value="silicone-hoses">Силиконови маркучи</option>
+            <option value="pneumatic-tubes">Пневматични шлаухи</option>
+            <option value="high-pressure-hoses">Маркучи високо налягане</option>
+          </select>
+        </div>
+        <button class="search-submit-btn" onclick="if(App.currentView !== 'catalog') App.navigate('catalog'); Catalog.applyFiltersAndRender();">
+          🔍
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MAIN CONTENT (SPA RENDERED VIEWS)
+       ========================================================================== -->
+  <main class="container mt-20">
+
+    <!-- 1. HOME VIEW (Matches Screenshot Layout) -->
+    <section id="home-view" class="spa-view active">
+      <!-- Premium Hero Banners Grid -->
+      <div class="hero-banners-grid">
+        
+        <!-- Large Left Banner (Semperit/Main Promo) -->
+        <div class="banner-main card">
+          <div class="banner-content">
+            <h2 class="banner-brand-title">HYDROLUX <span class="text-muted">GROUP</span></h2>
+            <h3 class="banner-subtitle">ВАШИЯТ ДОВЕРЕН ПАРТНЬОР В ИЗБОРА НА МАРКУЧИ</h3>
+            <button class="btn btn-dark-rect" onclick="document.getElementById('about-us-anchor').scrollIntoView({ behavior: 'smooth' })">ЗА НАС</button>
+          </div>
+          <!-- Simulated graphic hose drawing representing the image in the screenshot -->
+          <div class="banner-hose-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?q=80&w=800&auto=format&fit=crop" class="banner-hose-img" alt="Hydrolux Hoses" onerror="this.style.display='none'">
+            <div class="fallback-hose-graphic">
+              <!-- Elegant double-walled rubber hose design with red line -->
+              <div class="graphic-rubber-hose">
+                <div class="hose-red-stripe"></div>
+                <div class="hose-white-clamp"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Pagination dots slider indicator -->
+          <div class="banner-dots">
+            <span class="dot active">●</span>
+          </div>
+        </div>
+
+        <!-- Right stacked banners column -->
+        <div class="banner-right-column">
+          
+          <!-- Top Right Banner (Oil & Fuel) -->
+          <div class="banner-sub banner-oil-fuel card">
+            <div class="banner-sub-content">
+              <h3>МАРКУЧИ <br><span class="text-primary-dark">ЗА МАСЛО И ГОРИВО</span></h3>
+            </div>
+            <div class="banner-sub-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=400&auto=format&fit=crop" class="banner-sub-img" alt="Маркучи за масло">
+              <div class="fallback-sub-graphic oil-graphic"></div>
+            </div>
+          </div>
+
+          <!-- Bottom Right Banner (Air) -->
+          <div class="banner-sub banner-air card">
+            <div class="banner-sub-content">
+              <h3>МАРКУЧИ <br><span class="text-muted-dark">ЗА ВЪЗДУХ</span></h3>
+            </div>
+            <div class="banner-sub-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?q=80&w=400&auto=format&fit=crop" class="banner-sub-img" alt="Маркучи за въздух">
+              <div class="fallback-sub-graphic air-graphic"></div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Quick Category Grid -->
+      <div class="section-header mt-40">
+        <div>
+          <span class="text-accent font-bold font-xs text-uppercase">БЪРЗ ДОСТЪП</span>
+          <h2>Разгледайте Нашите Категории</h2>
+        </div>
+        <a class="text-primary font-bold" onclick="App.navigate('catalog')">Виж всички ➔</a>
+      </div>
+
+      <div class="quick-categories-grid">
+        <div class="category-card card" onclick="Catalog.selectCategory('air-hoses'); App.navigate('catalog')">
+          <span class="cat-icon">💨</span>
+          <h4>Маркучи за въздух</h4>
+        </div>
+        <div class="category-card card" onclick="Catalog.selectCategory('water-hoses'); App.navigate('catalog')">
+          <span class="cat-icon">💧</span>
+          <h4>Маркучи за вода</h4>
+        </div>
+        <div class="category-card card" onclick="Catalog.selectCategory('fuel-oil-hoses'); App.navigate('catalog')">
+          <span class="cat-icon">🛢️</span>
+          <h4>Маркучи за гориво и масло</h4>
+        </div>
+        <div class="category-card card" onclick="Catalog.selectCategory('pneumatic-tubes'); App.navigate('catalog')">
+          <span class="cat-icon">🧵</span>
+          <h4>Пневматични шлаухи</h4>
+        </div>
+        <div class="category-card card" onclick="Catalog.selectCategory('pneumatic-fittings'); App.navigate('catalog')">
+          <span class="cat-icon">⚙️</span>
+          <h4>Фитинги & Връзки</h4>
+        </div>
+        <div class="category-card card" onclick="Catalog.selectCategory('hose-accessories'); App.navigate('catalog')">
+          <span class="cat-icon">🎒</span>
+          <h4>Аксесоари</h4>
+        </div>
+      </div>
+
+      <!-- Interactive Hose Assembly Banner Callout -->
+      <div class="promo-banner mt-40">
+        <div class="promo-text">
+          <h3>🔧 Нуждаете се от индивидуален запресован маркуч?</h3>
+          <p>Използвайте нашия интерактивен онлайн конфигуратор, за да сглобите маркуч с накрайници по поръчка.</p>
+        </div>
+        <button class="btn btn-accent btn-large" onclick="App.navigate('builder')">Стартирай Конфигуратора ➔</button>
+      </div>
+
+      <!-- Features Grid -->
+      <div class="features-grid mt-40">
+        <div class="feature-card card">
+          <span class="feature-icon">🛡️</span>
+          <h3>Гаранция за Качество</h3>
+          <p>Всички материали са от водещи европейски производители като Semperit, гарантиращи безопасност и надеждност.</p>
+        </div>
+        <div class="feature-card card">
+          <span class="feature-icon">⚡</span>
+          <h3>Експресна Изработка</h3>
+          <p>Запресоване и изработка на хидравлични маркучи на място в рамките на 10 до 20 минути с висок клас машини.</p>
+        </div>
+        <div class="feature-card card">
+          <span class="feature-icon">📐</span>
+          <h3>Индивидуален Подход</h3>
+          <p>Проектиране по чертеж или мостра на клиента. Спестяваме Вашето време и ресурси с правилни съвети.</p>
+        </div>
+      </div>
+
+      <!-- About Us Section -->
+      <div class="card p-40 mt-40" id="about-us-anchor">
+        <h3 class="font-large text-primary mb-15">За Хидролукс Груп Монтана</h3>
+        <p>
+          Разположен на ключовия булевард на индустриалната зона в град Монтана, <strong>„Хидролукс Груп“</strong> е доказан лидер и надежден B2B/B2C партньор в областта на индустриалната хидравлика и пневматика. От основаването си през 2019 година, компанията се развива активно, разширявайки продуктовата си гама с цел да задоволи комплексно нуждите на леката, тежката промишленост, селското стопанство и транспортния сектор в региона.
+        </p>
+        <p>
+          Основният ни фокус е предоставянето на **затворен цикъл от услуги** – не просто продажба, а пълна инженерна експертиза: проектиране на хидравлични линии, доставка на детайли, запресоване под строго контролирано налягане, сервизно обслужване и доставка на аксесоари. Това спестява огромно количество време и предотвратява скъпи престои на Вашата техника.
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. CATALOG VIEW -->
+    <section id="catalog-view" class="spa-view">
+      <div class="catalog-layout">
+        <!-- Sidebar Categories -->
+        <aside class="card">
+          <h3 class="section-title">📂 Категории</h3>
+          <div class="divider"></div>
+          <div id="catalog-sidebar-categories">
+            <!-- Dynamically Rendered Category Tree -->
+          </div>
+          <div class="divider"></div>
+          <button class="btn btn-secondary btn-block small" onclick="Catalog.resetFilters()">Изчисти Филтрите</button>
+        </aside>
+
+        <!-- Product Grid Column -->
+        <div class="catalog-main">
+          <div class="catalog-content-header">
+            <h2 id="catalog-active-title">Всички продукти</h2>
+            <div class="text-muted font-small">Намерени решения: <strong class="text-dark" id="catalog-count">4</strong></div>
+          </div>
+          <div class="products-grid" id="products-grid">
+            <!-- Dynamically Rendered Products -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PRODUCT DETAIL VIEW -->
+    <section id="product-detail-view" class="spa-view">
+      <div class="breadcrumb" id="product-detail-breadcrumb">
+        <!-- Breadcrumbs -->
+      </div>
+
+      <div class="product-detail-layout">
+        <!-- Product Images Gallery -->
+        <div class="gallery-panel">
+          <div class="main-image-wrapper">
+            <img src="" id="prod-main-image" alt="Product Image">
+          </div>
+          <div class="thumbnails-list" id="prod-thumbnails">
+            <!-- Dynamically populated thumbs -->
+          </div>
+        </div>
+
+        <!-- Product Core Info -->
+        <div class="product-info-panel">
+          <span class="text-accent font-bold font-xs text-uppercase" id="prod-brand">Semperit</span>
+          <h2 id="prod-title">Маркуч за въздух и вода SEMPERIT - PLW 20</h2>
+          
+          <div class="meta-stats">
+            <div>Артикулен код: <strong id="prod-sku">PLW20</strong></div>
+            <div>|</div>
+            <div id="prod-stock" class="stock-badge in-stock">В наличност</div>
+            <div>|</div>
+            <div>Видян: <strong id="prod-views">2136</strong> пъти</div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Description and Specs Tabs -->
+          <div class="tabs-navigation">
+            <button class="tab-btn active" onclick="document.getElementById('prod-desc-panel').classList.remove('hidden'); document.getElementById('prod-specs-panel').classList.add('hidden'); document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active')); this.classList.add('active')">Описание</button>
+            <button class="tab-btn" onclick="document.getElementById('prod-desc-panel').classList.add('hidden'); document.getElementById('prod-specs-panel').classList.remove('hidden'); document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active')); this.classList.add('active')">Характеристики</button>
+          </div>
+
+          <div id="prod-desc-panel" class="tab-panel">
+            <p id="prod-desc-text" class="text-muted font-small">Описание...</p>
+          </div>
+
+          <div id="prod-specs-panel" class="tab-panel hidden">
+            <div class="specs-list" id="prod-specs-list">
+              <!-- Technical key-value spec rows -->
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="action-buttons-row">
+            <button class="btn btn-secondary" onclick="Catalog.openInquiryModal()">❓ Задай Въпрос за продукта</button>
+          </div>
+
+          <div class="tags-section">
+            <div class="font-xs font-bold text-muted mb-10">Етикети:</div>
+            <div class="tags-list" id="prod-tags-container">
+              <!-- Clickable Search Tags -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dynamic Variants Table Area -->
+      <div class="variants-panel card">
+        <h3 class="section-title">📏 Изберете размер и заявете количество</h3>
+        <p class="text-muted font-small">Всички размери се поддържат в наличност. Цените са с включен ДДС за линеен метър или брой.</p>
+        <div class="divider"></div>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Код на раздав</th>
+                <th>Вътр. ø (мм)</th>
+                <th>Инч</th>
+                <th>Външ. ø (мм)</th>
+                <th>Работно нал.</th>
+                <th>Радиус огъване</th>
+                <th>Тегло кг/м</th>
+                <th>Дълж. ролка</th>
+                <th>Цена (с ДДС)</th>
+                <th>Количество (м)</th>
+                <th>Действие</th>
+              </tr>
+            </thead>
+            <tbody id="prod-variants-tbody">
+              <!-- Dynamically rendered variant rows with inline qty selectors -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="variants-actions-bar">
+          <div class="font-small text-muted text-left">
+            💡 Можете да поръчате <strong>различни размери едновременно</strong>, като попълните количествата на съответните редове и натиснете бутона вдясно.
+          </div>
+          <button class="btn btn-primary btn-large" id="prod-bulk-add-btn">📥 Добави избраните размери в количката</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. HOSE BUILDER VIEW -->
+    <section id="builder-view" class="spa-view">
+      <div class="text-center mb-30">
+        <span class="hero-tag">ПРОФЕСИОНАЛНО ЗАПРЕСОВАНЕ</span>
+        <h2>Интерактивен Конфигуратор на Маркучи</h2>
+        <p class="text-muted max-w-600">
+          Сглобете собствен маркуч по индивидуални размери с бързи изчисления и изберете накрайници с резби за Вашата инсталация.
+        </p>
+      </div>
+      <div id="hose-builder-container">
+        <!-- Renders automatically from components/builder.js -->
+      </div>
+    </section>
+
+    <!-- 5. SERVICES & CONTACT VIEW -->
+    <section id="services-view" class="spa-view">
+      <div class="catalog-layout">
+        <!-- Direct Form Column -->
+        <div class="card">
+          <h3 class="section-title">✉️ Бърза връзка и Консултация</h3>
+          <p class="text-muted font-small">Попълнете формата и наш инженер ще се свърже с вас за безплатна техническа консултация.</p>
+          <div class="divider"></div>
+
+          <form onsubmit="Catalog.submitInquiry(event)">
+            <div class="form-group">
+              <label>Вашето Име</label>
+              <input type="text" class="form-control" required placeholder="Иван Иванов">
+            </div>
+            <div class="form-group">
+              <label>Телефон за връзка</label>
+              <input type="tel" class="form-control" required placeholder="+359 888 888 888">
+            </div>
+            <div class="form-group">
+              <label>Имейл адрес</label>
+              <input type="email" class="form-control" required placeholder="example@gmail.com">
+            </div>
+            <div class="form-group">
+              <label>Вашето съобщение / Спецификация</label>
+              <textarea class="form-control" rows="4" required placeholder="Опишете каква машина обслужвате, диаметър на маркуча или накрайниците..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Изпрати Запитване</button>
+          </form>
+        </div>
+
+        <!-- Info Services Column -->
+        <div class="card p-30">
+          <h3 class="section-title">🔩 Пълна Сервизна Дейност</h3>
+          <p class="text-muted font-small">Нашият сервиз е разположен в гр. Монтана на ул. „Индустриална“ 32г и разполага с най-ново поколение оборудване.</p>
+          <div class="divider"></div>
+
+          <div class="info-item mt-10">
+            <span>⚙️</span> <span><strong>Запресоване на маркучи за високо налягане</strong>: За всякакъв вид строителна, селскостопанска и горска техника (трактори, багери, комбайни).</span>
+          </div>
+          <div class="info-item mt-10">
+            <span>⚙️</span> <span><strong>Ремонт и изработка на хидравлични цилиндри</strong>: Смяна на уплътнения, бутални пръти и тръби.</span>
+          </div>
+          <div class="info-item mt-10">
+            <span>⚙️</span> <span><strong>Пневматични системи</strong>: Консултации, изграждане, доставка на шлаухи, цанги, регулатори и пневмоподготвящи групи.</span>
+          </div>
+          <div class="info-item mt-10">
+            <span>⚙️</span> <span><strong>B2B Договори</strong>: Специални ценови условия и експресно обслужване с предимство за корпоративни клиенти в област Монтана.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       CART SLIDE-OUT DRAWER PANEL
+       ========================================================================== -->
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h3>🛒 Вашата Количка</h3>
+      <button class="btn-close-drawer" onclick="Cart.closeDrawer()">×</button>
+    </div>
+    
+    <div class="cart-items-list" id="cart-items-container">
+      <!-- Added items populated by cart.js -->
+    </div>
+    
+    <div class="cart-footer" id="cart-footer-panel">
+      <div class="cart-total-row">
+        <span class="font-medium">ОБЩО:</span>
+        <div class="text-right">
+          <div class="font-large text-primary font-bold" id="cart-total-bgn">0.00 лв.</div>
+          <div class="text-muted font-xs" id="cart-total-eur">0.00 €</div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <button class="btn btn-accent btn-block btn-large" onclick="Cart.openCheckout()">➔ Към Поръчка (Чекаут)</button>
+    </div>
+  </div>
+  <div class="cart-drawer-backdrop" onclick="Cart.closeDrawer()"></div>
+
+  <!-- ==========================================================================
+       MODALS
+       ========================================================================== -->
+
+  <!-- 1. CHECKOUT MODAL -->
+  <div class="modal-overlay" id="checkout-modal">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3>🛒 Финализиране на поръчката</h3>
+        <button class="modal-close" onclick="Cart.closeCheckout()">×</button>
+      </div>
+      <div class="modal-body">
+        <form id="checkout-form" onsubmit="Cart.submitOrder(event)">
+          <div class="checkout-grid">
+            <!-- Form Fields -->
+            <div>
+              <div class="form-group">
+                <label>Тип на поръчката</label>
+                <div class="client-type-selector">
+                  <div class="client-type-option">
+                    <input type="radio" name="client_type" id="type-b2c" value="b2c" checked onchange="Cart.toggleInvoiceFields('b2c')">
+                    <label for="type-b2c">Частно лице</label>
+                  </div>
+                  <div class="client-type-option">
+                    <input type="radio" name="client_type" id="type-b2b" value="b2b" onchange="Cart.toggleInvoiceFields('b2b')">
+                    <label for="type-b2b">Фирма / B2B</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- General client info -->
+              <div class="form-group">
+                <label>Име и Фамилия</label>
+                <input type="text" name="client_name" class="form-control" required placeholder="Георги Георгиев">
+              </div>
+              <div class="form-group-split">
+                <div class="form-group">
+                  <label>Телефон</label>
+                  <input type="tel" name="client_phone" class="form-control" required placeholder="+359 89...">
+                </div>
+                <div class="form-group">
+                  <label>Е-мейл</label>
+                  <input type="email" name="client_email" class="form-control" required placeholder="georgi@gmail.com">
+                </div>
+              </div>
+
+              <!-- B2B fields -->
+              <div id="b2b-invoice-fields" class="hidden">
+                <div class="form-group">
+                  <label>Име на фирмата</label>
+                  <input type="text" name="company_name" class="form-control" placeholder="Фирма ЕООД">
+                </div>
+                <div class="form-group-split">
+                  <div class="form-group">
+                    <label>ЕИК/Булстат</label>
+                    <input type="text" name="company_vat" class="form-control" placeholder="BG123456789">
+                  </div>
+                  <div class="form-group">
+                    <label>МОЛ</label>
+                    <input type="text" name="company_mol" class="form-control" placeholder="Иван Иванов">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Адрес на регистрация</label>
+                  <input type="text" name="company_address" class="form-control" placeholder="Монтана, ул. Централна 1">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Начин на получаване</label>
+                <select name="delivery_method" class="form-control" onchange="document.getElementById('checkout-delivery-group').style.display = this.value === 'shop' ? 'none' : 'block'">
+                  <option value="courier">Доставка с Еконт / Спиди</option>
+                  <option value="shop">Вземане от магазина в гр. Монтана (ул. Индустриална 32г)</option>
+                </select>
+              </div>
+
+              <div class="form-group" id="checkout-delivery-group">
+                <label>Адрес за доставка или офис на Еконт/Спиди</label>
+                <input type="text" name="delivery_address" class="form-control" placeholder="гр. София, Офис Еконт - Младост">
+              </div>
+
+              <div class="form-group">
+                <label>Бележка към поръчката</label>
+                <textarea name="order_notes" class="form-control" rows="2" placeholder="Напишете допълнителни инструкции (напр. дължина на срязване)..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-accent btn-block btn-large mt-20">🚀 Завърши поръчката</button>
+            </div>
+
+            <!-- Summary Column -->
+            <div id="checkout-summary-container">
+              <!-- Summary cards populated dynamically -->
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. SUCCESS ORDER MODAL -->
+  <div class="modal-overlay" id="success-modal">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3>🎉 Успешна Поръчка</h3>
+        <button class="modal-close" onclick="Cart.closeSuccess()">×</button>
+      </div>
+      <div class="modal-body">
+        <div id="success-details-container">
+          <!-- Populated from cart.js with proforma HTML invoice -->
+        </div>
+        <button class="btn btn-primary btn-block btn-large mt-20" onclick="Cart.closeSuccess()">Затвори и се върни в магазина</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. PRODUCT INQUIRY MODAL (ЗАДАЙ ВЪПРОС) -->
+  <div class="modal-overlay" id="inquiry-modal">
+    <div class="modal-window" style="max-width: 500px;">
+      <div class="modal-header">
+        <h3>❓ Задай въпрос за продукта</h3>
+        <button class="modal-close" onclick="Catalog.closeInquiryModal()">×</button>
+      </div>
+      <div class="modal-body">
+        <form onsubmit="Catalog.submitInquiry(event)">
+          <div class="form-group">
+            <label>Тема</label>
+            <input type="text" id="inquiry-subject" class="form-control" readonly>
+          </div>
+          <div class="form-group">
+            <label>Вашето Име</label>
+            <input type="text" class="form-control" required placeholder="Димитър Петров">
+          </div>
+          <div class="form-group">
+            <label>Телефон</label>
+            <input type="tel" class="form-control" required placeholder="+359 ...">
+          </div>
+          <div class="form-group">
+            <label>Въпрос / Запитване</label>
+            <textarea class="form-control" rows="4" required placeholder="Желая бързо запитване относно наличност и опции за сглобяване..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Изпрати Запитване</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       ✉️ FLOATING QUICK INQUIRY BAR (Остави съобщение)
+       ========================================================================== -->
+  <div class="floating-chat-btn" onclick="Catalog.openInquiryModal()">
+    <span class="chat-btn-icon">✉️</span>
+    <span class="chat-btn-text">Остави съобщение</span>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Хидролукс Груп</h4>
+          <p>
+            Надеждни индустриални хидравлични и пневматични решения в град Монтана. Професионално запресоване под високо налягане от 2019 г.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Полезни връзки</h4>
+          <ul class="footer-links">
+            <li><a onclick="App.navigate('home')">Начало</a></li>
+            <li><a onclick="App.navigate('catalog')">Продуктов Каталог</a></li>
+            <li><a onclick="App.navigate('builder')">Конфигуратор на маркучи</a></li>
+            <li><a onclick="App.navigate('services')">Консултация & Услуги</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Продукти</h4>
+          <ul class="footer-links">
+            <li><a onclick="Catalog.selectCategory('air-hoses'); App.navigate('catalog')">Маркучи за въздух</a></li>
+            <li><a onclick="Catalog.selectCategory('water-hoses'); App.navigate('catalog')">Маркучи за вода</a></li>
+            <li><a onclick="Catalog.selectCategory('high-pressure-hoses'); App.navigate('catalog')">Маркучи високо налягане</a></li>
+            <li><a onclick="Catalog.selectCategory('pneumatic-tubes'); App.navigate('catalog')">Пневматични шлаухи</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="footer-current-year">2026</span> Хидролукс Груп ЕООД. Всички права запазени.</p>
+        <p>Разработка: Antigravity AI Codebase</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       JAVASCRIPT MODULES IMPORT
+       ========================================================================== -->
+  <script src="js/config.js"></script>
+  <script src="js/components/builder.js"></script>
+  <script src="js/components/cart.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
