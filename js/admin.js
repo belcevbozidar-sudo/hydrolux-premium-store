@@ -1,6 +1,9 @@
-// Hydrolux Premium Store - Admin Dashboard Module
+// Hydrolux Premium Store - Admin Dashboard Module (Vercel Offline Upload Ready)
 const Admin = {
-  activeTab: "products", // "products" or "categories" or "system"
+  activeTab: "products", // "products" or "categories"
+  filterCategory: "", // Current category filter in products list
+  editingCategory: null, // Category currently being edited
+  uploadedImages: [], // Temporary Base64 strings of uploaded files
 
   init() {
     this.injectStyles();
@@ -103,6 +106,7 @@ const Admin = {
         padding: 12px 15px;
         text-align: left;
         border-bottom: 1px solid var(--border-light);
+        vertical-align: middle;
       }
       .admin-table th {
         background-color: #f8fafc;
@@ -127,6 +131,15 @@ const Admin = {
       }
       .btn-admin-danger:hover {
         background-color: #ef4444;
+        color: white;
+      }
+      .btn-admin-edit {
+        background-color: #e0f2fe;
+        color: var(--primary);
+        margin-right: 5px;
+      }
+      .btn-admin-edit:hover {
+        background-color: var(--primary);
         color: white;
       }
       .admin-badge {
@@ -160,7 +173,7 @@ const Admin = {
         background-color: #f8fafc;
         border: 1px dashed var(--border-light);
         border-radius: 8px;
-        padding: 20px;
+        padding: 25px;
         margin-bottom: 25px;
       }
       .admin-form-card h4 {
@@ -195,6 +208,37 @@ const Admin = {
         background-color: #ef4444;
         color: white;
       }
+      
+      /* Visual Image Upload Preview Elements */
+      .image-preview-thumbnail {
+        width: 60px;
+        height: 60px;
+        border-radius: 8px;
+        object-fit: cover;
+        border: 1.5px solid var(--border-light);
+        position: relative;
+      }
+      .image-preview-wrapper {
+        position: relative;
+        display: inline-block;
+      }
+      .image-preview-delete {
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        background-color: #ef4444;
+        color: white;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        font-size: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: 1.5px solid white;
+        font-weight: bold;
+      }
     `;
     document.head.appendChild(style);
   },
@@ -220,9 +264,6 @@ const Admin = {
             <li class="admin-menu-item ${this.activeTab === 'categories' ? 'active' : ''}" onclick="Admin.switchTab('categories')">
               📁 Категории
             </li>
-            <li class="admin-menu-item ${this.activeTab === 'system' ? 'active' : ''}" onclick="Admin.switchTab('system')">
-              ⚙️ Настройки & Тест
-            </li>
           </ul>
         </aside>
 
@@ -233,7 +274,7 @@ const Admin = {
       </div>
     `;
 
-    // Initialize custom interactive listeners (like dynamic specs or variants)
+    // Initialize custom interactive handlers (like dynamic specs, files or variants)
     if (this.activeTab === "products") {
       this.initProductFormHandlers();
     }
@@ -245,8 +286,6 @@ const Admin = {
         return this.renderProductsWorkspace();
       case "categories":
         return this.renderCategoriesWorkspace();
-      case "system":
-        return this.renderSystemWorkspace();
       default:
         return "Няма намерен работен панел.";
     }
@@ -256,18 +295,28 @@ const Admin = {
   // PRODUCTS WORKSPACE
   // ==========================================================================
   renderProductsWorkspace() {
-    const products = CONFIG.products;
+    // Filter products list based on selected category filter
+    let products = CONFIG.products;
+    if (this.filterCategory) {
+      products = products.filter(p => p.category === this.filterCategory);
+    }
 
     let productRows = products.map(p => {
-      const minPrice = Math.min(...p.variants.map(v => v.priceEur));
+      const minPrice = p.variants.length > 0 ? Math.min(...p.variants.map(v => v.priceEur)) : 0;
       const catObj = CONFIG.categories.find(c => c.id === p.category);
       const catName = catObj ? catObj.name : p.category;
+      const thumb = p.images && p.images[0] ? p.images[0] : "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop";
 
       return `
         <tr>
           <td>
-            <strong>${p.name}</strong><br>
-            <span class="text-muted font-xs">Код: ${p.code} | Марка: ${p.brand}</span>
+            <div style="display: flex; align-items: center;">
+              <img src="${thumb}" style="width: 50px; height: 50px; object-fit: cover; border-radius: 6px; border: 1px solid var(--border-light); margin-right: 12px;" onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop'">
+              <div>
+                <strong>${p.name}</strong><br>
+                <span class="text-muted font-xs">Код: ${p.code} | Марка: ${p.brand}</span>
+              </div>
+            </div>
           </td>
           <td>
             <span class="admin-badge admin-badge-category">${catName}</span>
@@ -286,7 +335,7 @@ const Admin = {
     }).join("");
 
     if (products.length === 0) {
-      productRows = `<tr><td colspan="5" class="text-center text-muted">Няма добавени продукти. Добавете нов чрез формата по-долу!</td></tr>`;
+      productRows = `<tr><td colspan="5" class="text-center text-muted">Няма добавени продукти в тази категория.</td></tr>`;
     }
 
     // Generate categories options for product creation
@@ -294,24 +343,49 @@ const Admin = {
       <option value="${c.id}">${c.name}</option>
     `).join("");
 
+    // Generate categories options for list filtering
+    const filterOptions = CONFIG.categories.map(c => `
+      <option value="${c.id}" ${this.filterCategory === c.id ? 'selected' : ''}>${c.name}</option>
+    `).join("");
+
     return `
       <div class="admin-header-row">
-        <h2>Управление на Продукти</h2>
-        <span class="admin-badge admin-badge-success">${products.length} Продукта общо</span>
+        <div>
+          <h2>Управление на Продукти</h2>
+        </div>
+        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+          <span class="text-muted font-bold font-xs">Филтър:</span>
+          <select id="prod-filter-category" class="form-control" onchange="Admin.filterCategory = this.value; Admin.render();" style="width: 220px; font-weight: 700; height: 38px;">
+            <option value="">Всички категории</option>
+            ${filterOptions}
+          </select>
+          <span class="admin-badge admin-badge-success">${products.length} Продукта</span>
+        </div>
       </div>
 
       <!-- Add New Product Form Card -->
       <div class="admin-form-card">
         <h4>➕ Добавяне на нов продукт</h4>
         <form id="admin-add-product-form" onsubmit="Admin.handleProductSubmit(event)">
+          
+          <!-- IMAGE UPLOAD FIELD AT THE VERY TOP -->
+          <div class="form-group" style="background-color: var(--primary-light); padding: 15px; border-radius: 8px; border: 1.5px dashed var(--primary); margin-bottom: 20px;">
+            <label style="font-weight: 800; color: var(--primary);">📷 Качване на Снимки от устройството <span class="text-accent">*</span></label>
+            <p class="text-muted font-xs" style="margin-bottom: 10px;">Първата избрана снимка ще бъде главното лице на продукта. Може да изберете множество снимки.</p>
+            <input type="file" id="prod-images-upload" class="form-control" multiple accept="image/*" style="padding: 6px; border: 1px solid var(--border-light); font-weight: bold; background-color: white;" required>
+            
+            <!-- Image Previews Container -->
+            <div id="prod-images-preview" style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;"></div>
+          </div>
+
           <div class="form-grid-2">
             <div class="form-group">
               <label>Име на продукта <span class="text-accent">*</span></label>
-              <input type="text" id="prod-name" class="form-control" placeholder="напр. Маркуч за гореща вода SEMPERIT FKS" required>
+              <input type="text" id="prod-name" class="form-control" placeholder="напр. Маркуч за сгъстен въздух PLW 20" required>
             </div>
             <div class="form-group">
               <label>Код / Артикулен номер <span class="text-accent">*</span></label>
-              <input type="text" id="prod-code" class="form-control" placeholder="напр. FKS15" required>
+              <input type="text" id="prod-code" class="form-control" placeholder="напр. PLW20" required>
             </div>
           </div>
 
@@ -333,44 +407,51 @@ const Admin = {
             <textarea id="prod-description" class="form-control" rows="3" placeholder="Кратко описание на предназначението, гъвкавостта и материалите..."></textarea>
           </div>
 
-          <div class="form-grid-2">
-            <div class="form-group">
-              <label>Етикети (разделени със запетая)</label>
-              <input type="text" id="prod-tags" class="form-control" placeholder="гумен маркуч, гореща вода, semperit">
-            </div>
-            <div class="form-group">
-              <label>Линк към снимка (Unsplash или локален)</label>
-              <input type="url" id="prod-image" class="form-control" placeholder="https://images.unsplash.com/photo-...">
-            </div>
+          <div class="form-group">
+            <label>Етикети (разделени със запетая)</label>
+            <input type="text" id="prod-tags" class="form-control" placeholder="гумен маркуч, маркуч за въздух, компресор">
           </div>
 
           <!-- Product Specs Section -->
           <div class="form-group">
-            <label style="font-weight: 800;">⚙️ Технически характеристики</label>
+            <label style="font-weight: 800;">🛠️ Технически характеристики</label>
             <div id="prod-specs-container">
               <div class="admin-spec-row">
-                <input type="text" class="form-control spec-key" placeholder="напр. Работно налягане">
-                <input type="text" class="form-control spec-val" placeholder="напр. 20 bar">
+                <input type="text" class="form-control spec-key" placeholder="напр. Работна температура">
+                <input type="text" class="form-control spec-val" placeholder="напр. -25°C до +70°C">
                 <button type="button" class="btn-icon-danger" onclick="this.parentElement.remove()">×</button>
               </div>
             </div>
             <button type="button" class="btn btn-secondary mt-10" onclick="Admin.addNewSpecRow()">+ Добави Характеристика</button>
           </div>
 
-          <!-- Product Variants (Sizes/Prices) Section -->
+          <!-- Product Variants (Customizable Table of Sizes & Prices) -->
           <div class="form-group mt-20">
-            <label style="font-weight: 800; display: block; border-bottom: 1px solid var(--border-light); padding-bottom: 8px;">📏 Размери и Цени в EUR (Въведете поне един ред)</label>
-            <div id="prod-variants-container">
-              <div class="admin-variant-row" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr auto; gap: 8px; margin-bottom: 8px; align-items: center;">
-                <input type="number" step="any" class="form-control var-inner" placeholder="Вътр. ø (DN)" required>
-                <input type="text" class="form-control var-inch" placeholder="Размер (инч)" required>
-                <input type="number" step="any" class="form-control var-outer" placeholder="Външ. ø (мм)" required>
-                <input type="number" step="any" class="form-control var-pressure" placeholder="Наляг. (bar)" required>
-                <input type="number" step="any" class="form-control var-price" placeholder="Цена в EUR (€)" required>
-                <button type="button" class="btn-icon-danger" onclick="this.parentElement.remove()">×</button>
-              </div>
+            <label style="font-weight: 800; display: block; border-bottom: 1px solid var(--border-light); padding-bottom: 8px;">📏 Таблица с размери, цени и детайли (Еднакви с продуктовата таблица)</label>
+            <p class="text-muted font-xs" style="margin-bottom: 10px;">Всички полета са изцяло редактируеми. Попълнете данните, които ще се покажат в продуктовата таблица на сайта.</p>
+            
+            <div style="overflow-x: auto;">
+              <table class="admin-table" style="min-width: 900px; font-size: 0.8rem; margin-top: 5px;">
+                <thead>
+                  <tr style="background-color: #f1f5f9;">
+                    <th style="padding: 8px;">Код на раздав</th>
+                    <th style="padding: 8px; width: 100px;">Вътр. ø (мм)</th>
+                    <th style="padding: 8px; width: 80px;">Инч</th>
+                    <th style="padding: 8px; width: 100px;">Външ. ø (мм)</th>
+                    <th style="padding: 8px; width: 110px;">Работно нал.(Bar)</th>
+                    <th style="padding: 8px; width: 110px;">Радиус огъване(мм)</th>
+                    <th style="padding: 8px; width: 100px;">Тегло кг/м</th>
+                    <th style="padding: 8px; width: 100px;">Дълж. ролка(м)</th>
+                    <th style="padding: 8px; width: 110px;">Цена EUR (€)</th>
+                    <th style="padding: 8px; width: 40px;"></th>
+                  </tr>
+                </thead>
+                <tbody id="prod-variants-tbody">
+                  <!-- Appended rows -->
+                </tbody>
+              </table>
             </div>
-            <button type="button" class="btn btn-secondary mt-10" onclick="Admin.addNewVariantRow()">+ Добави нов размер (Вариант)</button>
+            <button type="button" class="btn btn-secondary mt-10" onclick="Admin.addNewVariantRow()">+ Добави нов размер (Ред в таблицата)</button>
           </div>
 
           <div class="divider"></div>
@@ -379,7 +460,7 @@ const Admin = {
       </div>
 
       <!-- Current Products Table -->
-      <h3 style="font-weight: 800; font-size: 1.2rem; margin-top: 35px; margin-bottom: 15px; color: #1e293b;">Списък с налични продукти</h3>
+      <h3 style="font-weight: 800; font-size: 1.2rem; margin-top: 35px; margin-bottom: 15px; color: #1e293b;">Списък с продукти</h3>
       <div style="overflow-x: auto;">
         <table class="admin-table">
           <thead>
@@ -413,28 +494,65 @@ const Admin = {
   },
 
   addNewVariantRow() {
-    const container = document.getElementById("prod-variants-container");
-    if (!container) return;
-    const div = document.createElement("div");
-    div.className = "admin-variant-row";
-    div.style = "display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr auto; gap: 8px; margin-bottom: 8px; align-items: center;";
-    div.innerHTML = `
-      <input type="number" step="any" class="form-control var-inner" placeholder="Вътр. ø (DN)" required>
-      <input type="text" class="form-control var-inch" placeholder="Размер (инч)" required>
-      <input type="number" step="any" class="form-control var-outer" placeholder="Външ. ø (мм)" required>
-      <input type="number" step="any" class="form-control var-pressure" placeholder="Наляг. (bar)" required>
-      <input type="number" step="any" class="form-control var-price" placeholder="Цена в EUR (€)" required>
-      <button type="button" class="btn-icon-danger" onclick="this.parentElement.remove()">×</button>
+    const tbody = document.getElementById("prod-variants-tbody");
+    if (!tbody) return;
+    const tr = document.createElement("tr");
+    tr.className = "admin-variant-tr";
+    tr.innerHTML = `
+      <td style="padding: 5px;"><input type="text" class="form-control var-code" placeholder="напр. PLW20006" style="padding: 6px; font-size:0.8rem;" required></td>
+      <td style="padding: 5px;"><input type="number" step="any" class="form-control var-inner" placeholder="напр. 6" style="padding: 6px; font-size:0.8rem;" required></td>
+      <td style="padding: 5px;"><input type="text" class="form-control var-inch" placeholder="напр. 1/4\\"" style="padding: 6px; font-size:0.8rem;" required></td>
+      <td style="padding: 5px;"><input type="number" step="any" class="form-control var-outer" placeholder="напр. 12" style="padding: 6px; font-size:0.8rem;" required></td>
+      <td style="padding: 5px;"><input type="number" step="any" class="form-control var-pressure" placeholder="напр. 20" style="padding: 6px; font-size:0.8rem;" required></td>
+      <td style="padding: 5px;"><input type="number" step="any" class="form-control var-bend" placeholder="напр. 60" style="padding: 6px; font-size:0.8rem;" required></td>
+      <td style="padding: 5px;"><input type="number" step="any" class="form-control var-weight" placeholder="напр. 0.13" style="padding: 6px; font-size:0.8rem;" required></td>
+      <td style="padding: 5px;"><input type="number" step="any" class="form-control var-roll" placeholder="напр. 50" style="padding: 6px; font-size:0.8rem;" required></td>
+      <td style="padding: 5px;"><input type="number" step="any" class="form-control var-price" placeholder="напр. 1.45" style="padding: 6px; font-size:0.8rem; font-weight:700;" required></td>
+      <td style="padding: 5px;"><button type="button" class="btn-icon-danger" style="width:30px; height:30px; font-size:0.8rem;" onclick="this.parentElement.parentElement.remove()">×</button></td>
     `;
-    container.appendChild(div);
+    tbody.appendChild(tr);
   },
 
   initProductFormHandlers() {
-    // Add default behavior if containers are empty to populate at least one variant template row
-    const varsContainer = document.getElementById("prod-variants-container");
-    if (varsContainer && varsContainer.children.length === 0) {
+    this.uploadedImages = [];
+    
+    // Add dynamic listeners to file input
+    const fileInput = document.getElementById("prod-images-upload");
+    const previewContainer = document.getElementById("prod-images-preview");
+    
+    if (fileInput && previewContainer) {
+      fileInput.addEventListener("change", (e) => {
+        const files = Array.from(e.target.files);
+        
+        files.forEach((file, index) => {
+          const reader = new FileReader();
+          reader.onload = (event) => {
+            const base64String = event.target.result;
+            Admin.uploadedImages.push(base64String);
+            
+            // Render a small thumbnail preview
+            const wrapper = document.createElement("div");
+            wrapper.className = "image-preview-wrapper";
+            wrapper.innerHTML = `
+              <img src="${base64String}" class="image-preview-thumbnail">
+              <div class="image-preview-delete" onclick="Admin.removeUploadedImage(${Admin.uploadedImages.length - 1}, this.parentElement)">×</div>
+            `;
+            previewContainer.appendChild(wrapper);
+          };
+          reader.readAsDataURL(file);
+        });
+      });
+    }
+
+    const tbody = document.getElementById("prod-variants-tbody");
+    if (tbody && tbody.children.length === 0) {
       this.addNewVariantRow();
     }
+  },
+
+  removeUploadedImage(index, element) {
+    this.uploadedImages[index] = null; // Mark as deleted
+    element.remove();
   },
 
   handleProductSubmit(event) {
@@ -446,10 +564,16 @@ const Admin = {
     const brand = document.getElementById("prod-brand").value;
     const description = document.getElementById("prod-description").value;
     const tagsInput = document.getElementById("prod-tags").value;
-    const imageInput = document.getElementById("prod-image").value;
 
     const tags = tagsInput ? tagsInput.split(",").map(t => t.trim()) : [];
-    const imageUrl = imageInput || "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop";
+    
+    // Filter deleted items out of Base64 images
+    const images = this.uploadedImages.filter(img => img !== null);
+
+    if (images.length === 0) {
+      alert("Моля изберете поне една снимка от устройството за вашия продукт!");
+      return;
+    }
 
     // 1. Parse specifications
     const specs = [];
@@ -461,62 +585,70 @@ const Admin = {
       }
     });
 
-    // 2. Parse variants
+    // 2. Parse variations
     const variants = [];
-    document.querySelectorAll(".admin-variant-row").forEach((row, index) => {
-      const inner = parseFloat(row.querySelector(".var-inner").value);
+    document.querySelectorAll(".admin-variant-tr").forEach((row) => {
+      const vCode = row.querySelector(".var-code").value.trim();
+      const inner = parseFloat(row.querySelector(".var-inner").value) || 0;
       const inch = row.querySelector(".var-inch").value.trim();
-      const outer = parseFloat(row.querySelector(".var-outer").value);
-      const pressure = parseFloat(row.querySelector(".var-pressure").value);
-      const price = parseFloat(row.querySelector(".var-price").value);
+      const outer = parseFloat(row.querySelector(".var-outer").value) || 0;
+      const pressure = parseFloat(row.querySelector(".var-pressure").value) || 0;
+      const bend = parseFloat(row.querySelector(".var-bend").value) || 0;
+      const weight = parseFloat(row.querySelector(".var-weight").value) || 0;
+      const roll = parseFloat(row.querySelector(".var-roll").value) || 0;
+      const price = parseFloat(row.querySelector(".var-price").value) || 0;
 
-      if (!isNaN(price)) {
+      if (vCode && !isNaN(price)) {
         variants.push({
-          code: `${code}-${index + 1}`,
+          code: vCode,
           innerDb: inner,
           inch: inch,
           outerDb: outer,
           pressure: pressure,
-          bend: 0,
-          weight: 0.1,
-          rollLength: 50,
+          bend: bend,
+          weight: weight,
+          rollLength: roll,
           priceEur: price
         });
       }
     });
 
     if (variants.length === 0) {
-      alert("Моля въведете поне един размер с валидна цена в евро!");
+      alert("Моля въведете поне един размер в таблицата с валидна цена!");
       return;
     }
 
-    const id = name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+    const id = name.toLowerCase()
+      .replace(/[^а-яa-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "")
+      .replace(/[а-я]/g, m => {
+        const cyr = "абвгдежзийклмнопрстуфхцчшщъьюя";
+        const lat = ["a","b","v","g","d","e","zh","z","i","y","k","l","m","n","o","p","r","s","t","u","f","h","ts","ch","sh","sht","a","y","yu","ya"];
+        const idx = cyr.indexOf(m);
+        return idx > -1 ? lat[idx] : m;
+      });
 
     const newProduct = {
       id,
       code,
       name,
       category,
-      subcategory: "",
       brand,
       rating: 5.0,
       reviewsCount: 1,
-      views: 12,
+      views: 10,
       inStock: true,
       tags,
       description,
       specs,
-      images: [imageUrl],
+      images: images,
       variants
     };
 
-    // Add product to memory/local storage state
     CONFIG.addProduct(newProduct);
-
-    // Dynamic rendering propagation across all screens instantly
     this.propagateStateChanges();
     
-    alert("Продуктът е успешно записан и се вижда в реално време!");
+    alert("Продуктът е успешно записан в базата и се вижда в реално време!");
     this.render();
   },
 
@@ -540,9 +672,9 @@ const Admin = {
         <tr>
           <td><span style="font-size: 1.4rem; margin-right: 8px;">${c.icon || '📦'}</span></td>
           <td><strong>${c.name}</strong></td>
-          <td><code>${c.id}</code></td>
           <td><span class="admin-badge admin-badge-success">${productCount} продукта</span></td>
           <td>
+            <button class="btn-admin-action btn-admin-edit" onclick="Admin.startEditCategory('${c.id}')">✏️ Редактирай</button>
             <button class="btn-admin-action btn-admin-danger" onclick="Admin.deleteCategory('${c.id}')">✕ Изтрий</button>
           </td>
         </tr>
@@ -550,8 +682,10 @@ const Admin = {
     }).join("");
 
     if (categories.length === 0) {
-      categoryRows = `<tr><td colspan="5" class="text-center text-muted">Няма въведени категории.</td></tr>`;
+      categoryRows = `<tr><td colspan="4" class="text-center text-muted">Няма въведени категории.</td></tr>`;
     }
+
+    const isEditing = this.editingCategory !== null;
 
     return `
       <div class="admin-header-row">
@@ -559,25 +693,31 @@ const Admin = {
         <span class="admin-badge admin-badge-category">${categories.length} Категории</span>
       </div>
 
-      <!-- Add New Category Form -->
+      <!-- Add or Edit Category Form -->
       <div class="admin-form-card">
-        <h4>📁 Добавяне на нова категория</h4>
+        <h4>${isEditing ? `✏️ Редактиране на категория: "${this.editingCategory.name}"` : '📁 Добавяне на нова категория'}</h4>
         <form onsubmit="Admin.handleCategorySubmit(event)">
           <div class="form-grid-2">
             <div class="form-group">
               <label>Име на категорията <span class="text-accent">*</span></label>
-              <input type="text" id="cat-name" class="form-control" placeholder="напр. Маркучи за пара" required>
+              <input type="text" id="cat-name" class="form-control" value="${isEditing ? this.editingCategory.name : ''}" placeholder="напр. Маркучи за пара" required>
             </div>
             <div class="form-group">
-              <label>Икона / Емоджи <span class="text-accent">*</span></label>
-              <input type="text" id="cat-icon" class="form-control" placeholder="напр. 💨 или 🌡️" required>
+              <label>Икона / Емоджи (не е задължително)</label>
+              <input type="text" id="cat-icon" class="form-control" value="${isEditing ? this.editingCategory.icon : ''}" placeholder="напр. 🌡️ (по подразбиране е 📦)">
             </div>
           </div>
-          <button type="submit" class="btn btn-accent mt-10">💾 Запази Категорията</button>
+          
+          <div style="margin-top: 15px; display: flex; gap: 10px;">
+            <button type="submit" class="btn btn-accent">💾 ${isEditing ? 'Запази промените' : 'Запази Категорията'}</button>
+            ${isEditing ? `
+              <button type="button" class="btn btn-secondary" onclick="Admin.cancelCategoryEdit()">Отказ</button>
+            ` : ''}
+          </div>
         </form>
       </div>
 
-      <!-- Current Categories Table -->
+      <!-- Current Categories Table (No ID column, clean design) -->
       <h3 style="font-weight: 800; font-size: 1.2rem; margin-top: 35px; margin-bottom: 15px; color: #1e293b;">Налични категории</h3>
       <div style="overflow-x: auto;">
         <table class="admin-table">
@@ -585,9 +725,8 @@ const Admin = {
             <tr>
               <th width="40">Икона</th>
               <th>Име</th>
-              <th>Системен ID</th>
               <th>Брой продукти</th>
-              <th>Действие</th>
+              <th>Действия</th>
             </tr>
           </thead>
           <tbody>
@@ -598,33 +737,64 @@ const Admin = {
     `;
   },
 
+  startEditCategory(catId) {
+    const cat = CONFIG.categories.find(c => c.id === catId);
+    if (cat) {
+      this.editingCategory = cat;
+      this.render();
+    }
+  },
+
+  cancelCategoryEdit() {
+    this.editingCategory = null;
+    this.render();
+  },
+
   handleCategorySubmit(event) {
     event.preventDefault();
 
-    const name = document.getElementById("cat-name").value;
-    const icon = document.getElementById("cat-icon").value;
-    const id = name.toLowerCase()
-      .replace(/[^а-яa-z0-9]+/g, "-")
-      .replace(/(^-|-$)/g, "")
-      .replace(/[а-я]/g, m => {
-        // Simple cyrillic-to-latin transliteration for URL compatibility
-        const cyr = "абвгдежзийклмнопрстуфхцчшщъьюя";
-        const lat = ["a","b","v","g","d","e","zh","z","i","y","k","l","m","n","o","p","r","s","t","u","f","h","ts","ch","sh","sht","a","y","yu","ya"];
-        const idx = cyr.indexOf(m);
-        return idx > -1 ? lat[idx] : m;
-      });
+    const name = document.getElementById("cat-name").value.trim();
+    const icon = document.getElementById("cat-icon").value.trim() || "📦";
 
-    const newCategory = {
-      id,
-      name,
-      icon,
-      subcategories: []
-    };
+    if (this.editingCategory) {
+      // 1. We are editing an existing category
+      const target = CONFIG.categories.find(c => c.id === this.editingCategory.id);
+      if (target) {
+        target.name = name;
+        target.icon = icon;
+      }
+      CONFIG.saveState();
+      this.editingCategory = null;
+      alert("Категорията е успешно актуализирана!");
+    } else {
+      // 2. Creating a new category
+      const id = name.toLowerCase()
+        .replace(/[^а-яa-z0-9]+/g, "-")
+        .replace(/(^-|-$)/g, "")
+        .replace(/[а-я]/g, m => {
+          const cyr = "абвгдежзийклмнопрстуфхцчшщъьюя";
+          const lat = ["a","b","v","g","d","e","zh","z","i","y","k","l","m","n","o","p","r","s","t","u","f","h","ts","ch","sh","sht","a","y","yu","ya"];
+          const idx = cyr.indexOf(m);
+          return idx > -1 ? lat[idx] : m;
+        });
 
-    CONFIG.addCategory(newCategory);
+      // Avoid duplication
+      if (CONFIG.categories.some(c => c.id === id)) {
+        alert("Категория с това име вече съществува!");
+        return;
+      }
+
+      const newCategory = {
+        id,
+        name,
+        icon
+      };
+
+      CONFIG.addCategory(newCategory);
+      alert("Категорията е успешно създадена!");
+    }
+
     this.propagateStateChanges();
-
-    alert("Категорията е успешно създадена и добавена!");
     this.render();
   },
 
@@ -636,48 +806,11 @@ const Admin = {
     }
   },
 
-  // ==========================================================================
-  // SYSTEM SETUP WORKSPACE (RESET & UTILITIES)
-  // ==========================================================================
-  renderSystemWorkspace() {
-    return `
-      <div class="admin-header-row">
-        <h2>Системни Настройки</h2>
-      </div>
-
-      <div class="card p-30 text-center" style="border: 1px dashed var(--border-light); background-color: #f8fafc;">
-        <span style="font-size: 3rem; display: block; margin-bottom: 15px;">🔄</span>
-        <h4 style="font-weight: 800; font-size: 1.2rem; color: #1e293b; margin-bottom: 10px;">Връщане на фабрични данни</h4>
-        <p class="text-muted font-small" style="max-width: 500px; margin: 0 auto 20px;">
-          Тази операция ще изтрие всички продукти и категории, които сте добавили или изтрили в админ панела, и ще възстанови пълния асортимент на "Хидролукс Груп" с 8-те премиум индустриални продукта по подразбиране.
-        </p>
-        <button class="btn btn-accent btn-large" onclick="CONFIG.resetToDefaults()">Възстанови Спецификации по подразбиране</button>
-      </div>
-
-      <div class="card p-30 mt-30">
-        <h4 style="font-weight: 800; color: #1e293b; margin-bottom: 15px; border-left: 3px solid var(--primary); padding-left: 8px;">📊 Информационно табло за данни</h4>
-        <div class="form-grid-2" style="margin-top: 15px;">
-          <div style="background-color: var(--primary-light); padding: 15px; border-radius: 8px;">
-            <span class="text-muted font-xs font-bold text-uppercase">Продукти в паметта</span>
-            <h3 style="font-size: 2rem; font-weight: 900; color: var(--primary); margin-top: 5px;">${CONFIG.products.length}</h3>
-          </div>
-          <div style="background-color: #fef3c7; padding: 15px; border-radius: 8px;">
-            <span style="color: #d97706;" class="font-xs font-bold text-uppercase">Категории в паметта</span>
-            <h3 style="font-size: 2rem; font-weight: 900; color: #d97706; margin-top: 5px;">${CONFIG.categories.length}</h3>
-          </div>
-        </div>
-      </div>
-    `;
-  },
-
   // Propagates active memory/localStorage state to all visible SPA views instantly
   propagateStateChanges() {
-    // 1. Re-render UI components on main page
     App.renderQuickCategories();
     App.renderSearchCategories();
     App.renderFeaturedProductsHome();
-    
-    // 2. Re-render catalog view
     Catalog.renderSidebar();
     Catalog.applyFiltersAndRender();
   }

@@ -1,7 +1,6 @@
 // Catalog Filtering, Dropdowns & Details Controller (Euro € Optimized)
 const Catalog = {
   activeCategory: null,
-  activeSubcategory: null,
   searchQuery: "",
 
   // Render product categories inside the top collapsible dropdown menu
@@ -13,25 +12,13 @@ const Catalog = {
       <div class="dropdown-all-item" onclick="Catalog.selectCategory(''); Catalog.toggleCategoriesDropdown()">
         📂 Всички Продукти (Всички Категории)
       </div>
-      ${CONFIG.categories.map(cat => {
-        const hasSubs = cat.subcategories && cat.subcategories.length > 0;
-        return `
-          <div class="dropdown-col">
-            <div class="dropdown-col-title" onclick="Catalog.selectCategory('${cat.id}'); Catalog.toggleCategoriesDropdown()">
-              ${cat.icon} ${cat.name}
-            </div>
-            ${hasSubs ? `
-              <div class="dropdown-sub-list">
-                ${cat.subcategories.map(sub => `
-                  <span class="dropdown-sub-item" onclick="Catalog.selectSubcategory('${cat.id}', '${sub.id}'); Catalog.toggleCategoriesDropdown()">
-                    • ${sub.name}
-                  </span>
-                `).join("")}
-              </div>
-            ` : ""}
+      ${CONFIG.categories.map(cat => `
+        <div class="dropdown-col">
+          <div class="dropdown-col-title" onclick="Catalog.selectCategory('${cat.id}'); Catalog.toggleCategoriesDropdown()">
+            ${cat.icon || '📦'} ${cat.name}
           </div>
-        `;
-      }).join("")}
+        </div>
+      `).join("")}
     `;
   },
 
@@ -47,11 +34,9 @@ const Catalog = {
     
     if (!catId) {
       this.activeCategory = null;
-      this.activeSubcategory = null;
       if (btn) btn.textContent = "📂 Изберете Категория (Всички Категории) ▾";
     } else {
       this.activeCategory = catId;
-      this.activeSubcategory = null;
       const cat = CONFIG.categories.find(c => c.id === catId);
       if (btn && cat) btn.textContent = `📂 Категория: ${cat.name} ▾`;
     }
@@ -59,24 +44,8 @@ const Catalog = {
     this.applyFiltersAndRender();
   },
 
-  selectSubcategory(catId, subId) {
-    this.activeCategory = catId;
-    this.activeSubcategory = subId;
-    
-    const cat = CONFIG.categories.find(c => c.id === catId);
-    const sub = cat.subcategories.find(s => s.id === subId);
-    
-    const btn = document.getElementById("catalog-cat-dropdown-btn");
-    if (btn && cat && sub) {
-      btn.textContent = `📂 ${cat.name} › ${sub.name} ▾`;
-    }
-    
-    this.applyFiltersAndRender();
-  },
-
   resetFilters() {
     this.activeCategory = null;
-    this.activeSubcategory = null;
     this.searchQuery = "";
     
     const btn = document.getElementById("catalog-cat-dropdown-btn");
@@ -96,7 +65,6 @@ const Catalog = {
     let filtered = products.filter(p => {
       // 1. Category check
       if (this.activeCategory && p.category !== this.activeCategory) return false;
-      if (this.activeSubcategory && p.subcategory !== this.activeSubcategory) return false;
 
       // 2. Search check
       if (this.searchQuery) {
@@ -119,12 +87,7 @@ const Catalog = {
     if (titleEl) {
       if (this.activeCategory) {
         const cat = CONFIG.categories.find(c => c.id === this.activeCategory);
-        let title = cat.name;
-        if (this.activeSubcategory) {
-          const sub = cat.subcategories.find(s => s.id === this.activeSubcategory);
-          title += ` › ${sub.name}`;
-        }
-        titleEl.textContent = title;
+        titleEl.textContent = cat ? cat.name : "Всички продукти";
       } else if (this.searchQuery) {
         titleEl.textContent = `Резултати за "${this.searchQuery}"`;
       } else {

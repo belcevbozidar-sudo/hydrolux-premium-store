@@ -10,17 +10,8 @@ const App = {
     this.renderQuickCategories();
     this.renderSearchCategories();
     
-    // 3. Setup Global Search Input
-    const searchInput = document.getElementById("search-input-blue");
-    if (searchInput) {
-      searchInput.addEventListener("input", (e) => {
-        Catalog.searchQuery = e.target.value;
-        if (this.currentView !== "catalog") {
-          this.navigate("catalog");
-        }
-        Catalog.applyFiltersAndRender();
-      });
-    }
+    // 3. Setup Smart Search Suggestions and Input
+    this.setupSearchSuggestions();
 
     // 4. Render Catalog Sidebar on startup
     Catalog.renderSidebar();
@@ -99,6 +90,138 @@ const App = {
       html += `<option value="${c.id}">${c.name}</option>`;
     });
     select.innerHTML = html;
+  },
+
+  setupSearchSuggestions() {
+    const searchInput = document.getElementById("search-input-blue");
+    const wrapper = document.querySelector(".search-bar-wrapper");
+    if (!searchInput || !wrapper) return;
+
+    // Create suggestions dropdown element dynamically if it doesn't exist
+    let dropdown = document.getElementById("search-suggestions-dropdown");
+    if (!dropdown) {
+      dropdown = document.createElement("div");
+      dropdown.id = "search-suggestions-dropdown";
+      dropdown.className = "search-suggestions-dropdown";
+      wrapper.appendChild(dropdown);
+    }
+
+    // Input event for real-time autocomplete
+    searchInput.addEventListener("input", (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      
+      // Keep main Catalog search query in sync
+      Catalog.searchQuery = e.target.value;
+      if (this.currentView === "catalog") {
+        Catalog.applyFiltersAndRender();
+      }
+
+      if (query.length < 2) {
+        dropdown.style.display = "none";
+        return;
+      }
+
+      // Filter Categories
+      const matchingCats = CONFIG.categories.filter(c => 
+        c.name.toLowerCase().includes(query)
+      );
+
+      // Filter Products (including name, brand, code, tags, and variant codes!)
+      const matchingProds = CONFIG.products.filter(p => 
+        p.name.toLowerCase().includes(query) ||
+        p.brand.toLowerCase().includes(query) ||
+        p.code.toLowerCase().includes(query) ||
+        p.tags.some(t => t.toLowerCase().includes(query)) ||
+        p.variants.some(v => v.code.toLowerCase().includes(query))
+      );
+
+      if (matchingCats.length === 0 && matchingProds.length === 0) {
+        dropdown.innerHTML = `<div class="search-no-suggestions">Няма намерени съвпадения за "${e.target.value}"</div>`;
+        dropdown.style.display = "block";
+        return;
+      }
+
+      let html = "";
+
+      // 1. Categories Section
+      if (matchingCats.length > 0) {
+        html += `
+          <div class="search-suggestions-section">
+            <div class="search-suggestions-section-title">Категории</div>
+            ${matchingCats.map(c => `
+              <div class="search-suggestion-item" onclick="App.handleCategorySuggestionClick('${c.id}')">
+                <span style="font-size: 1.2rem;">${c.icon || '📦'}</span>
+                <div class="search-suggestion-info">
+                  <span class="search-suggestion-name">${c.name}</span>
+                </div>
+              </div>
+            `).join("")}
+          </div>
+        `;
+      }
+
+      // 2. Products Section
+      if (matchingProds.length > 0) {
+        html += `
+          <div class="search-suggestions-section">
+            <div class="search-suggestions-section-title">Продукти</div>
+            ${matchingProds.map(p => {
+              const prices = p.variants.map(v => v.priceEur);
+              const minPrice = Math.min(...prices);
+              const coverImg = p.images[0] || "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop";
+              
+              // Find if a specific variant code matched
+              const matchedVar = p.variants.find(v => v.code.toLowerCase().includes(query));
+              const subText = matchedVar 
+                ? `Код размер: ${matchedVar.code} (${matchedVar.inch})` 
+                : `Код продукт: ${p.code} | Марка: ${p.brand}`;
+
+              return `
+                <div class="search-suggestion-item" onclick="App.handleProductSuggestionClick('${p.id}')">
+                  <img src="${coverImg}" class="search-suggestion-img" onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop'">
+                  <div class="search-suggestion-info">
+                    <span class="search-suggestion-name">${p.name}</span>
+                    <span class="search-suggestion-meta">${subText}</span>
+                  </div>
+                  <div class="search-suggestion-price">${minPrice.toFixed(2)} €</div>
+                </div>
+              `;
+            }).join("")}
+          </div>
+        `;
+      }
+
+      dropdown.innerHTML = html;
+      dropdown.style.display = "block";
+    });
+
+    // Close suggestions dropdown on click outside
+    document.addEventListener("click", (e) => {
+      if (!wrapper.contains(e.target)) {
+        dropdown.style.display = "none";
+      }
+    });
+
+    // Re-open on focus if query is already present
+    searchInput.addEventListener("focus", (e) => {
+      if (e.target.value.trim().length >= 2) {
+        dropdown.style.display = "block";
+      }
+    });
+  },
+
+  handleCategorySuggestionClick(catId) {
+    Catalog.selectCategory(catId);
+    this.navigate("catalog");
+    const dropdown = document.getElementById("search-suggestions-dropdown");
+    if (dropdown) dropdown.style.display = "none";
+  },
+
+  handleProductSuggestionClick(prodId) {
+    Catalog.openProductDetails(prodId);
+    this.navigate("product-detail");
+    const dropdown = document.getElementById("search-suggestions-dropdown");
+    if (dropdown) dropdown.style.display = "none";
   },
 
   // Switch SPA views smoothly

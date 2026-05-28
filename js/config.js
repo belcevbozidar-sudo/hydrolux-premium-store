@@ -15,139 +15,20 @@ const CONFIG = {
   eurToBgn: 1.0, // Strictly EUR now
   
   categories: [
-    {
-      id: "air-hoses",
-      name: "Маркучи за въздух",
-      icon: "💨",
-      subcategories: [
-        { id: "air-polyurethane", name: "Полиуретанови" },
-        { id: "air-pvc", name: "PVC" },
-        { id: "air-rubber", name: "Гумени" }
-      ]
-    },
-    {
-      id: "water-hoses",
-      name: "Маркучи за вода",
-      icon: "💧",
-      subcategories: [
-        { id: "water-rubber", name: "Гумени" },
-        { id: "water-flat", name: "Плоски (Layflat)" },
-        { id: "water-pvc", name: "PVC" },
-        { id: "water-sewer", name: "За каналопочистване" }
-      ]
-    },
-    {
-      id: "fuel-oil-hoses",
-      name: "Маркучи за гориво и масло",
-      icon: "🛢️",
-      subcategories: []
-    },
-    {
-      id: "coolant-hoses",
-      name: "Маркучи за охлаждаща течност",
-      icon: "❄️",
-      subcategories: [
-        { id: "coolant-silicone", name: "Силиконови" },
-        { id: "coolant-rubber", name: "Гумени" }
-      ]
-    },
-    {
-      id: "silicone-hoses",
-      name: "Силиконови маркучи и съединения",
-      icon: "🧪",
-      subcategories: [
-        { id: "silicone-tubing", name: "Силиконови маркучи" },
-        { id: "silicone-elbows", name: "Силиконови съединения" }
-      ]
-    },
-    {
-      id: "gas-hoses",
-      name: "Маркучи за технически газове",
-      icon: "🔥",
-      subcategories: []
-    },
-    {
-      id: "polyurethane-hoses",
-      name: "Полиуретанови маркучи",
-      icon: "🌀",
-      subcategories: [
-        { id: "pu-fittings", name: "Съединения за PU маркучи" }
-      ]
-    },
-    {
-      id: "pvc-hoses",
-      name: "PVC Маркучи",
-      icon: "📏",
-      subcategories: [
-        { id: "pvc-abrasion", name: "За абразия" },
-        { id: "pvc-water", name: "За вода" },
-        { id: "pvc-air", name: "За въздух" },
-        { id: "pvc-fuel", name: "За гориво" },
-        { id: "pvc-pesticides", name: "За пестициди" },
-        { id: "pvc-food", name: "За храни" }
-      ]
-    },
-    {
-      id: "food-hoses",
-      name: "Маркучи за храни",
-      icon: "🍎",
-      subcategories: [
-        { id: "food-pvc", name: "PVC" },
-        { id: "food-silicone", name: "Силиконови" },
-        { id: "food-rubber", name: "Гумени" }
-      ]
-    },
-    {
-      id: "pneumatic-tubes",
-      name: "Пневматични шлаухи",
-      icon: "🧵",
-      subcategories: [
-        { id: "pneumatic-pa12", name: "PA 12 (Polyamide)" },
-        { id: "pneumatic-nylon", name: "Nylon" },
-        { id: "pneumatic-coils", name: "Спирални шлаухи" },
-        { id: "pneumatic-pe", name: "Полиетиленови (PE)" },
-        { id: "pneumatic-pu", name: "Полиуретанови (PU)" },
-        { id: "pneumatic-ptfe", name: "Тефлонови (PTFE)" }
-      ]
-    },
-    {
-      id: "pneumatic-fittings",
-      name: "Пневматични и съединители фитинги",
-      icon: "⚙️",
-      subcategories: [
-        { id: "push-in", name: "Цангови връзки" },
-        { id: "quick-couplings", name: "Бързи връзки" },
-        { id: "threaded-fittings", name: "Резбови връзки" }
-      ]
-    },
-    {
-      id: "hydraulic-fittings",
-      name: "Хидравлични накрайници",
-      icon: "🔩",
-      subcategories: [
-        { id: "hyd-bsp", name: "BSP 60°" },
-        { id: "hyd-din", name: "DIN 24°" },
-        { id: "hyd-jic", name: "JIC 37°" }
-      ]
-    },
-    {
-      id: "high-pressure-hoses",
-      name: "Маркучи за високо налягане",
-      icon: "⚡",
-      subcategories: [
-        { id: "hp-hydraulic", name: "Хидравлични маркучи" },
-        { id: "hp-washers", name: "За паро- и водоструйки" }
-      ]
-    },
-    {
-      id: "hose-accessories",
-      name: "Аксесоари за маркучи",
-      icon: "🎒",
-      subcategories: [
-        { id: "acc-joiners", name: "Месингови и POM снадки" },
-        { id: "acc-guards", name: "Предпазни ръкави и спирали" }
-      ]
-    }
+    { id: "air-hoses", name: "Маркучи за въздух", icon: "💨" },
+    { id: "water-hoses", name: "Маркучи за вода", icon: "💧" },
+    { id: "fuel-oil-hoses", name: "Маркучи за гориво и масло", icon: "🛢️" },
+    { id: "coolant-hoses", name: "Маркучи за охлаждаща течност", icon: "❄️" },
+    { id: "silicone-hoses", name: "Силиконови маркучи и съединения", icon: "🧪" },
+    { id: "gas-hoses", name: "Маркучи за технически газове", icon: "🔥" },
+    { id: "polyurethane-hoses", name: "Полиуретанови маркучи", icon: "🌀" },
+    { id: "pvc-hoses", name: "PVC Маркучи", icon: "📏" },
+    { id: "food-hoses", name: "Маркучи за храни", icon: "🍎" },
+    { id: "pneumatic-tubes", name: "Пневматични шлаухи", icon: "🧵" },
+    { id: "pneumatic-fittings", name: "Пневматични и съединители фитинги", icon: "⚙️" },
+    { id: "hydraulic-fittings", name: "Хидравлични накрайници", icon: "🔩" },
+    { id: "high-pressure-hoses", name: "Маркучи за високо налягане", icon: "⚡" },
+    { id: "hose-accessories", name: "Аксесоари за маркучи", icon: "🎒" }
   ],
 
   products: [
@@ -156,7 +37,6 @@ const CONFIG = {
       code: "PLW20",
       name: "Маркуч за въздух и вода SEMPERIT - PLW 20",
       category: "air-hoses",
-      subcategory: "air-rubber",
       brand: "Semperit",
       rating: 5.0,
       reviewsCount: 12,
@@ -188,7 +68,6 @@ const CONFIG = {
       code: "FLAT-HP",
       name: "Плосък маркуч за вода Layflat - Flatline Premium",
       category: "water-hoses",
-      subcategory: "water-flat",
       brand: "Hydrolux OEM",
       rating: 4.9,
       reviewsCount: 6,
@@ -216,7 +95,6 @@ const CONFIG = {
       code: "TO-CARBO",
       name: "Маркуч за масло и горива Semperit - TOF 319",
       category: "fuel-oil-hoses",
-      subcategory: "",
       brand: "Semperit",
       rating: 5.0,
       reviewsCount: 14,
@@ -246,7 +124,6 @@ const CONFIG = {
       code: "SIL-90",
       name: "Силиконово съединение под 90° - Premium Grade",
       category: "silicone-hoses",
-      subcategory: "silicone-elbows",
       brand: "Hydrolux High-Spec",
       rating: 4.8,
       reviewsCount: 11,
@@ -275,7 +152,6 @@ const CONFIG = {
       code: "FOOD-FLEX",
       name: "Хранителен гумен маркуч за мляко и вино - Foodflex",
       category: "food-hoses",
-      subcategory: "food-rubber",
       brand: "Semperit",
       rating: 4.9,
       reviewsCount: 5,
@@ -303,7 +179,6 @@ const CONFIG = {
       code: "PU-PREM",
       name: "Полиуретанов пневматичен шлаух - PU Premium",
       category: "pneumatic-tubes",
-      subcategory: "pneumatic-pu",
       brand: "Hydrolux OEM",
       rating: 4.9,
       reviewsCount: 8,
@@ -331,7 +206,6 @@ const CONFIG = {
       code: "2SN-HP",
       name: "Хидравличен маркуч за високо налягане 2SN - EN 853",
       category: "high-pressure-hoses",
-      subcategory: "hp-hydraulic",
       brand: "Hydrolux High-Spec",
       rating: 5.0,
       reviewsCount: 16,
@@ -359,7 +233,6 @@ const CONFIG = {
       code: "SPIRAL-G",
       name: "Пластмасова предпазна спирала за маркучи - Spiral Guard",
       category: "hose-accessories",
-      subcategory: "acc-guards",
       brand: "Hydrolux OEM",
       rating: 4.8,
       reviewsCount: 7,
