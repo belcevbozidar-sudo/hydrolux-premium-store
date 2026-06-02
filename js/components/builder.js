@@ -85,139 +85,174 @@ const HoseBuilder = {
 
     container.innerHTML = `
       <div class="builder-layout">
-        <!-- Selection Column -->
-        <div class="builder-inputs card">
-          <h3 class="section-title">🔩 Параметри на запресоване</h3>
+        
+        <!-- Left Column: Realistic 3D Cutaway Diagram with pointer labels -->
+        <div class="builder-graphic-column">
+          <div class="hose-cutaway-container">
+            <img src="assets/hose_cutaway.png" alt="Hydraulic Hose Cutaway" class="hose-cutaway-img">
+            
+            <!-- Interactive glowing hot spots and pointer labels -->
+            <div class="pointer-label label-inner" style="top: 45%; left: 8%;">
+              <span class="label-text">ВЪТРЕШЕН СЛОЙ</span>
+              <div class="pointer-line" style="height: 25px; transform: rotate(45deg); margin-left: 20px;"></div>
+              <div class="pointer-dot" style="margin-left: 38px;"></div>
+            </div>
+            
+            <div class="pointer-label label-braid" style="top: 25%; left: 32%;">
+              <span class="label-text">АРМИРОВКА</span>
+              <div class="pointer-line" style="height: 35px; transform: rotate(20deg); margin-left: 10px;"></div>
+              <div class="pointer-dot" style="margin-left: 20px;"></div>
+            </div>
+            
+            <div class="pointer-label label-outer" style="top: 50%; left: 70%;">
+              <span class="label-text">ВЪНШЕН СЛОЙ</span>
+              <div class="pointer-line" style="height: 20px; transform: rotate(-35deg); margin-right: 15px; float: right;"></div>
+              <div class="pointer-dot" style="margin-right: 25px; clear: both; float: right; margin-top: 5px;"></div>
+            </div>
+            
+            <div class="pointer-label label-flex" style="top: 76%; left: 38%;">
+              <div class="pointer-dot" style="margin-bottom: 5px; margin-left: 12px;"></div>
+              <span class="label-text">360° ГЪВКАВОСТ</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Parameters, specs, selectors & CTA buttons -->
+        <div class="builder-specs-column">
+          <h2 class="config-title">${hose.name}</h2>
           
-          <div class="form-group">
-            <label>1. Тип на маркуча</label>
-            <div class="builder-grid-options">
-              ${this.options.hoseTypes.map(h => `
-                <div class="grid-option ${this.state.hoseTypeId === h.id ? 'active' : ''}" 
-                     onclick="HoseBuilder.set('hoseTypeId', '${h.id}')">
-                  <div class="option-name">${h.name}</div>
-                  <div class="option-sub">Базова цена: ${formatPrice(h.basePriceEurPerMeter).eur}/м</div>
-                </div>
-              `).join("")}
-            </div>
+          <!-- Parameters Specs Table -->
+          <div class="specs-table-container">
+            <table class="specs-data-table">
+              <thead>
+                <tr>
+                  <th>Параметри</th>
+                  ${this.options.sizes.map(s => `
+                    <th class="${this.state.sizeId === s.id ? 'active-spec-col' : ''}" style="${this.state.sizeId === s.id ? 'background-color: rgba(0, 187, 255, 0.3); color: #ffffff;' : ''}">
+                      ${s.name.split(" ")[0]}
+                    </th>
+                  `).join("")}
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Коефициент</td>
+                  ${this.options.sizes.map(s => `
+                    <td style="${this.state.sizeId === s.id ? 'background-color: rgba(0, 187, 255, 0.1); font-weight: bold;' : ''}">
+                      x${s.factor.toFixed(2)}
+                    </td>
+                  `).join("")}
+                </tr>
+                <tr>
+                  <td>Работно налягане</td>
+                  ${this.options.sizes.map(s => {
+                    const press = hose.pressures[s.name.split(" ")[0]] || "N/A";
+                    return `
+                      <td style="${this.state.sizeId === s.id ? 'background-color: rgba(0, 187, 255, 0.1); font-weight: bold; color: #2be885;' : ''}">
+                        ${press} Bar
+                      </td>
+                    `;
+                  }).join("")}
+                </tr>
+              </tbody>
+            </table>
           </div>
 
-          <div class="form-group">
-            <label>2. Работен диаметър (DN)</label>
-            <div class="builder-grid-options grid-3">
-              ${this.options.sizes.map(s => `
-                <div class="grid-option ${this.state.sizeId === s.id ? 'active' : ''}" 
-                     onclick="HoseBuilder.set('sizeId', '${s.id}')">
-                  <div class="option-name font-large">${s.name}</div>
-                  <div class="option-sub">Коеф: x${s.factor}</div>
-                </div>
-              `).join("")}
-            </div>
-          </div>
-
-          <div class="form-group-split">
+          <!-- Configuration Selectors Dropdowns Grid -->
+          <div class="config-selectors-grid">
             <div class="form-group">
-              <label>3. Ляв Накрайник (А)</label>
-              <select class="form-control" onchange="HoseBuilder.set('fittingLeftId', this.value)">
+              <label class="form-group label" style="color: rgba(255,255,255,0.7); font-size: 0.8rem; margin-bottom: 5px; display: block;">1. Тип маркуч</label>
+              <select class="form-control config-select" onchange="HoseBuilder.set('hoseTypeId', this.value)">
+                ${this.options.hoseTypes.map(h => `
+                  <option value="${h.id}" ${this.state.hoseTypeId === h.id ? 'selected' : ''}>
+                    ${h.name}
+                  </option>
+                `).join("")}
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-group label" style="color: rgba(255,255,255,0.7); font-size: 0.8rem; margin-bottom: 5px; display: block;">2. Диаметър (DN)</label>
+              <select class="form-control config-select" onchange="HoseBuilder.set('sizeId', this.value)">
+                ${this.options.sizes.map(s => `
+                  <option value="${s.id}" ${this.state.sizeId === s.id ? 'selected' : ''}>
+                    ${s.name}
+                  </option>
+                `).join("")}
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-group label" style="color: rgba(255,255,255,0.7); font-size: 0.8rem; margin-bottom: 5px; display: block;">3. Дължина (м)</label>
+              <select class="form-control config-select" onchange="HoseBuilder.set('lengthMeters', this.value)">
+                <option value="0.5" ${this.state.lengthMeters === 0.5 ? 'selected' : ''}>0.5 м</option>
+                <option value="1.0" ${this.state.lengthMeters === 1.0 ? 'selected' : ''}>1.0 м</option>
+                <option value="1.5" ${this.state.lengthMeters === 1.5 ? 'selected' : ''}>1.5 м</option>
+                <option value="2.0" ${this.state.lengthMeters === 2.0 ? 'selected' : ''}>2.0 м</option>
+                <option value="3.0" ${this.state.lengthMeters === 3.0 ? 'selected' : ''}>3.0 м</option>
+                <option value="5.0" ${this.state.lengthMeters === 5.0 ? 'selected' : ''}>5.0 м</option>
+                <option value="10.0" ${this.state.lengthMeters === 10.0 ? 'selected' : ''}>10.0 м</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-group label" style="color: rgba(255,255,255,0.7); font-size: 0.8rem; margin-bottom: 5px; display: block;">4. Тип накрайник (Ляв)</label>
+              <select class="form-control config-select" onchange="HoseBuilder.set('fittingLeftId', this.value)">
                 ${this.options.fittings.map(f => `
                   <option value="${f.id}" ${this.state.fittingLeftId === f.id ? 'selected' : ''}>
-                    ${f.icon} ${f.name} (+${formatPrice(f.priceEur).eur})
+                    ${f.name}
                   </option>
                 `).join("")}
               </select>
             </div>
 
             <div class="form-group">
-              <label>4. Десен Накрайник (Б)</label>
-              <select class="form-control" onchange="HoseBuilder.set('fittingRightId', this.value)">
+              <label class="form-group label" style="color: rgba(255,255,255,0.7); font-size: 0.8rem; margin-bottom: 5px; display: block;">5. Тип накрайник (Десен)</label>
+              <select class="form-control config-select" onchange="HoseBuilder.set('fittingRightId', this.value)">
                 ${this.options.fittings.map(f => `
                   <option value="${f.id}" ${this.state.fittingRightId === f.id ? 'selected' : ''}>
-                    ${f.icon} ${f.name} (+${formatPrice(f.priceEur).eur})
+                    ${f.name}
+                  </option>
+                `).join("")}
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-group label" style="color: rgba(255,255,255,0.7); font-size: 0.8rem; margin-bottom: 5px; display: block;">6. Допълнителен ръкав</label>
+              <select class="form-control config-select" onchange="HoseBuilder.set('sleeveId', this.value)">
+                ${this.options.sleeves.map(sl => `
+                  <option value="${sl.id}" ${this.state.sleeveId === sl.id ? 'selected' : ''}>
+                    ${sl.name}
                   </option>
                 `).join("")}
               </select>
             </div>
           </div>
 
-          <div class="form-group">
-            <label>5. Допълнителен предпазен ръкав</label>
-            <select class="form-control" onchange="HoseBuilder.set('sleeveId', this.value)">
-              ${this.options.sleeves.map(sl => `
-                <option value="${sl.id}" ${this.state.sleeveId === sl.id ? 'selected' : ''}>
-                  ${sl.name} ${sl.priceEurPerMeter > 0 ? `(+${formatPrice(sl.priceEurPerMeter).eur}/м)` : ''}
-                </option>
-              `).join("")}
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label>6. Дължина на маркуча (метри)</label>
-            <div class="length-input-wrapper">
-              <button class="btn btn-secondary btn-icon" onclick="HoseBuilder.adjustLength(-0.1)">-</button>
-              <input type="number" step="0.1" min="0.1" max="100" class="form-control length-input text-center" 
-                     value="${this.state.lengthMeters.toFixed(1)}" 
-                     onchange="HoseBuilder.set('lengthMeters', this.value)">
-              <button class="btn btn-secondary btn-icon" onclick="HoseBuilder.adjustLength(0.1)">+</button>
-              <span class="length-unit">метра</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Live Preview / Pricing Column -->
-        <div class="builder-preview-panel">
-          <div class="preview-card card text-center">
-            <h3>🎨 Визуален Конфигуратор</h3>
-            <div class="hose-schematic">
-              <div class="fitting-graphic left-fitting ${this.state.fittingLeftId !== 'none' ? 'has-fitting' : ''}">
-                <div class="fitting-label">А</div>
-              </div>
-              <div class="hose-graphic ${this.state.sleeveId !== 'none' ? 'sleeved' : ''}">
-                <span class="hose-length-tag">${this.state.lengthMeters.toFixed(1)} м</span>
-              </div>
-              <div class="fitting-graphic right-fitting ${this.state.fittingRightId !== 'none' ? 'has-fitting' : ''}">
-                <div class="fitting-label">Б</div>
-              </div>
-            </div>
-
-            <div class="specs-summary">
-              <div class="spec-badge">
-                <span class="label">Диаметър</span>
-                <span class="val">${size.name}</span>
-              </div>
-              <div class="spec-badge badge-warning">
-                <span class="label">Раб. налягане</span>
-                <span class="val">${currentPressure} Bar</span>
-              </div>
-              <div class="spec-badge">
-                <span class="label">Защита</span>
-                <span class="val">${this.options.sleeves.find(sl => sl.id === this.state.sleeveId).name}</span>
-              </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="pricing-panel">
-              <div class="pricing-label">ПРОГНОЗНА ЦЕНА (С ДДС)</div>
-              <div class="price-bgn font-huge text-primary">${price.eur.toFixed(2)} €</div>
-              
-              <div class="price-breakdown font-small text-muted">
-                <span>Маркуч: ${formatPrice(price.details.hoseCost).eur}</span> | 
-                <span>Накрайници: ${formatPrice(price.details.fittingsCost).eur}</span>
-                ${price.details.sleeveCost > 0 ? `| <span>Ръкав: ${formatPrice(price.details.sleeveCost).eur}</span>` : ""}
-              </div>
-            </div>
-
-            <a href="tel:+359892484337" class="btn btn-accent btn-block btn-large mt-20 text-center" style="display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; font-weight: 800; background-color: var(--accent); color: #1f2421;">
-              📞 Поръчай по телефон: 089 248 4337
-            </a>
-            <button class="btn btn-primary btn-block btn-large mt-10" onclick="HoseBuilder.openQuickInquiryForm()">
-              ✉️ Изпрати запитване за тази сглобка
+          <!-- Add to Cart and Availability panel -->
+          <div class="config-actions-row">
+            <button class="btn btn-config-cyan" onclick="HoseBuilder.addToCart()">
+              ДОБАВИ В КОЛИЧКАТА
             </button>
-            <p class="font-xs text-muted mt-10">
-              * Запресоването се извършва на професионална холандска преса на място в гр. Монтана. Гаранция за херметичност 100%.
-            </p>
+            
+            <div class="availability-badge">
+              <span class="check-circle-icon">✓</span>
+              <span class="avail-text">НАЛИЧНОСТ: <strong class="text-green">НА СКЛАД</strong></span>
+            </div>
+          </div>
+
+          <!-- Inquiry Button -->
+          <div class="inquiry-button-row">
+            <button class="btn-config-outline" onclick="HoseBuilder.openQuickInquiryForm()">
+              ЗАПИТВАНЕ ЗА ПРОДУКТ
+            </button>
+          </div>
+
+          <div class="pricing-summary-bar font-small text-muted mt-20" style="border-top: 1px solid rgba(0, 187, 255, 0.15); padding-top: 15px;">
+            <span>Спецификация: ${size.name} маркуч, прогнозна цена: <strong style="color: #00bbff; font-size: 1.1rem;">${price.eur.toFixed(2)} €</strong> с ДДС.</span>
           </div>
         </div>
+
       </div>
     `;
   },

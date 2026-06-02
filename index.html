@@ -105,65 +105,98 @@
   <!-- ==========================================================================
        MAIN CONTENT (SPA RENDERED VIEWS)
        ========================================================================== -->
-  <main class="container mt-20" style="overflow-x: hidden;">
+  <main style="overflow-x: hidden;">
 
     <!-- 1. HOME VIEW (Matches Screenshot Layout) -->
     <section id="home-view" class="spa-view active">
-      <!-- Premium Hero Banners Grid -->
-      <div class="hero-banners-grid">
+      <!-- Modernized Industrial Hero Section (Matches Attached Image 1:1) -->
+      <div class="modern-hero-section">
+        <div class="hero-bg-overlay"></div>
         
-        <!-- Large Left Banner (Semperit/Main Promo) -->
-        <div class="banner-main card">
-          <div class="banner-content">
-            <h2 class="banner-brand-title">HYDROLUX <span class="text-muted">GROUP</span></h2>
-            <h3 class="banner-subtitle">ВАШИЯТ ДОВЕРЕН ПАРТНЬОР В ИЗБОРА НА МАРКУЧИ</h3>
-            <button class="btn btn-dark-rect" onclick="document.getElementById('about-us-anchor').scrollIntoView({ behavior: 'smooth' })">ЗА НАС</button>
+        <!-- Inner Hero Content Container -->
+        <div class="hero-container">
+          <div class="hero-main-content">
+            <h1 class="hero-title">ЛИДЕР В ИНДУСТРИАЛНИТЕ МАРКУЧИ И РЕШЕНИЯ</h1>
+            <p class="hero-subtitle">
+              <span class="text-neon-blue">ИНОВАЦИИ, ИЗДРЪЖЛИВОСТ И НАДЕЖДНОСТ</span> ЗА ВСИЧКИ ИНДУСТРИИ. БЪРЗА ДОСТАВКА И ЕКСПЕРТНА КОНСУЛТАЦИЯ.
+            </p>
+            <div class="hero-button-wrapper">
+              <button class="btn btn-hero-cyan" onclick="App.navigate('catalog')">КЪМ КАТАЛОГА</button>
+            </div>
           </div>
-          <!-- Simulated graphic hose drawing representing the image in the screenshot -->
-          <div class="banner-hose-image-wrapper">
-            <img src="assets/hero_hoses.png" class="banner-hose-img" alt="Hydrolux Hoses">
-            <div class="fallback-hose-graphic">
-              <!-- Elegant double-walled rubber hose design with red line -->
-              <div class="graphic-rubber-hose">
-                <div class="hose-red-stripe"></div>
-                <div class="hose-white-clamp"></div>
+
+          <!-- Bottom Cards Row with navigation arrows -->
+          <div class="hero-cards-section">
+            <button class="slider-arrow arrow-left" onclick="Cart.showToast('Предишна категория')">
+              <span>‹</span>
+            </button>
+            
+            <div class="hero-cards-grid">
+              <!-- Card 1: Hoses -->
+              <div class="hero-card" onclick="Catalog.selectCategory('high-pressure-hoses'); App.navigate('catalog')">
+                <div class="hero-card-left">
+                  <div class="hero-card-icon spiral-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2a10 10 0 1 0 10 10H12v-2h8a8 8 0 1 1-8-8v2h6a6 6 0 1 0-6 6h4a4 4 0 1 1-4-4v2h2a2 2 0 1 0-2-2"></path>
+                    </svg>
+                  </div>
+                  <div class="hero-card-text">
+                    <h3>ИНДУСТРИАЛНИ МАРКУЧИ:</h3>
+                    <p>Разнообразие и Мощ</p>
+                  </div>
+                </div>
+                <div class="hero-card-right">
+                  <img src="assets/card_hoses.png" alt="Индустриални маркучи">
+                </div>
+              </div>
+
+              <!-- Card 2: Fittings -->
+              <div class="hero-card" onclick="Catalog.selectCategory('pneumatic-fittings'); App.navigate('catalog')">
+                <div class="hero-card-left">
+                  <div class="hero-card-icon nozzle-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="3"></circle>
+                      <path d="M3 16h3v-8h-3zM21 8h-3v8h3zM12 3v3M12 18v3"></path>
+                    </svg>
+                  </div>
+                  <div class="hero-card-text">
+                    <h3>НАКРАЙНИЦИ:</h3>
+                    <p>Безопасно и Надеждно Свързване</p>
+                  </div>
+                </div>
+                <div class="hero-card-right">
+                  <img src="assets/card_fittings.png" alt="Накрайници">
+                </div>
+              </div>
+
+              <!-- Card 3: Accessories -->
+              <div class="hero-card" onclick="Catalog.selectCategory('hose-accessories'); App.navigate('catalog')">
+                <div class="hero-card-left">
+                  <div class="hero-card-icon shield-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                      <polyline points="9 11 11 13 15 9"></polyline>
+                    </svg>
+                  </div>
+                  <div class="hero-card-text">
+                    <h3>АКСЕСОАРИ:</h3>
+                    <p>Максимална Защита в Тежки Условия</p>
+                  </div>
+                </div>
+                <div class="hero-card-right">
+                  <img src="assets/card_accessories.png" alt="Аксесоари">
+                </div>
               </div>
             </div>
-          </div>
-          <!-- Pagination dots slider indicator -->
-          <div class="banner-dots">
-            <span class="dot active">●</span>
-          </div>
-        </div>
 
-        <!-- Right stacked banners column -->
-        <div class="banner-right-column">
-          
-          <!-- Top Right Banner (Oil & Fuel) -->
-          <div class="banner-sub banner-oil-fuel card">
-            <div class="banner-sub-content">
-              <h3>МАРКУЧИ <br><span class="text-primary-dark">ЗА МАСЛО И ГОРИВО</span></h3>
-            </div>
-            <div class="banner-sub-image-wrapper">
-              <img src="assets/fuel_hoses.png" class="banner-sub-img" alt="Маркучи за масло">
-              <div class="fallback-sub-graphic oil-graphic"></div>
-            </div>
+            <button class="slider-arrow arrow-right" onclick="Cart.showToast('Следваща категория')">
+              <span>›</span>
+            </button>
           </div>
-
-          <!-- Bottom Right Banner (Air) -->
-          <div class="banner-sub banner-air card">
-            <div class="banner-sub-content">
-              <h3>МАРКУЧИ <br><span class="text-muted-dark">ЗА ВЪЗДУХ</span></h3>
-            </div>
-            <div class="banner-sub-image-wrapper">
-              <img src="assets/air_hoses.png" class="banner-sub-img" alt="Маркучи за въздух">
-              <div class="fallback-sub-graphic air-graphic"></div>
-            </div>
-          </div>
-          
         </div>
       </div>
 
+      <div class="container mt-20">
       <!-- Quick Category Grid -->
       <div class="section-header mt-40">
         <div>
@@ -302,10 +335,11 @@
           
         </div>
       </div>
+      </div> <!-- end of container -->
     </section>
 
     <!-- 2. CATALOG VIEW (Collapsible Dropdown categories - Wide Products) -->
-    <section id="catalog-view" class="spa-view">
+    <section id="catalog-view" class="spa-view container mt-20">
       <div class="catalog-wide-layout">
         
         <!-- 🔥 NEW: Top Collapsible Dropdown Categories Selector -->
@@ -336,7 +370,7 @@
     </section>
 
     <!-- 3. PRODUCT DETAIL VIEW -->
-    <section id="product-detail-view" class="spa-view">
+    <section id="product-detail-view" class="spa-view container mt-20">
       <div class="breadcrumb" id="product-detail-breadcrumb">
         <!-- Breadcrumbs -->
       </div>
@@ -437,7 +471,7 @@
     </section>
 
     <!-- 4. HOSE BUILDER VIEW -->
-    <section id="builder-view" class="spa-view">
+    <section id="builder-view" class="spa-view container mt-20">
       <div class="text-center mb-30">
         <span class="hero-tag">ПРОФЕСИОНАЛНО ЗАПРЕСОВАНЕ</span>
         <h2>Интерактивен Конфигуратор на Маркучи</h2>
@@ -451,7 +485,7 @@
     </section>
 
     <!-- 5. SERVICES & CONTACT VIEW -->
-    <section id="services-view" class="spa-view">
+    <section id="services-view" class="spa-view container mt-20">
       <div class="catalog-layout">
         <!-- Direct Form Column -->
         <div class="card">
@@ -503,12 +537,12 @@
     </section>
 
     <!-- 6. ADMIN VIEW -->
-    <section id="admin-view" class="spa-view">
+    <section id="admin-view" class="spa-view container mt-20">
       <div id="admin-view-content"></div>
     </section>
 
     <!-- 7. CHECKOUT VIEW -->
-    <section id="checkout-view" class="spa-view">
+    <section id="checkout-view" class="spa-view container mt-20">
       <div class="card p-30">
         <h3 class="section-title">🛒 Финализиране на поръчката</h3>
         <div class="divider"></div>
