@@ -641,9 +641,23 @@ const Admin = {
   },
 
   formatDoc(cmd, val = null) {
-    document.execCommand(cmd, false, val);
+    const sel = window.getSelection();
+    if (!sel || sel.rangeCount === 0) return;
+    
+    const range = sel.getRangeAt(0);
+    if (range.collapsed) return;
+
     const editor = document.getElementById("prod-description-editor");
-    if (editor) editor.focus();
+    if (!editor) return;
+
+    let node = range.commonAncestorContainer;
+    if (node.nodeType === 3) {
+      node = node.parentNode;
+    }
+    if (!editor.contains(node)) return;
+
+    document.execCommand(cmd, false, val);
+    editor.focus();
   },
 
   formatColor(color) {
