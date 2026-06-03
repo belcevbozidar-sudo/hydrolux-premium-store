@@ -564,80 +564,6 @@ const Admin = {
         .admin-template-row button {
           width: 100%;
         }
-        .rich-text-editor-container {
-          border: 1.5px solid #cbd5e1;
-          border-radius: 8px;
-          background-color: #ffffff;
-          overflow: hidden;
-          margin-top: 5px;
-          box-shadow: var(--shadow-sm);
-        }
-        .editor-toolbar {
-          background-color: #f8fafc;
-          border-bottom: 1.5px solid #e2e8f0;
-          padding: 8px 12px;
-          display: flex;
-          gap: 8px;
-          align-items: center;
-          flex-wrap: wrap;
-        }
-        .editor-btn {
-          width: 34px;
-          height: 34px;
-          border: 1.5px solid #cbd5e1;
-          border-radius: 6px;
-          background-color: #ffffff;
-          cursor: pointer;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-family: inherit;
-          font-size: 0.95rem;
-          font-weight: 800;
-          color: #475569;
-          transition: all 0.15s ease;
-          padding: 0;
-        }
-        .editor-btn:hover {
-          background-color: #f1f5f9;
-          border-color: #94a3b8;
-          color: #0f172a;
-        }
-        .editor-btn:active {
-          transform: scale(0.95);
-        }
-        .editor-select {
-          height: 34px;
-          padding: 4px 8px;
-          border: 1.5px solid #cbd5e1;
-          border-radius: 6px;
-          background-color: #ffffff;
-          cursor: pointer;
-          font-size: 0.85rem;
-          font-weight: 700;
-          color: #475569;
-          font-family: inherit;
-          outline: none;
-        }
-        .editor-select:focus {
-          border-color: var(--accent);
-        }
-        .editor-content {
-          min-height: 160px;
-          max-height: 400px;
-          overflow-y: auto;
-          padding: 14px;
-          outline: none;
-          line-height: 1.6;
-          font-size: 0.95rem;
-          color: #334155;
-          background-color: #ffffff;
-        }
-        .editor-content[placeholder]:empty:before {
-          content: attr(placeholder);
-          color: #94a3b8;
-          cursor: text;
-        }
       }
     `;
     document.head.appendChild(style);
@@ -661,12 +587,6 @@ const Admin = {
 
     document.execCommand(cmd, false, val);
     editor.focus();
-  },
-
-  formatColor(color) {
-    if (color) {
-      this.formatDoc("foreColor", color);
-    }
   },
 
   switchTab(tabId) {
@@ -892,15 +812,6 @@ const Admin = {
                 <button type="button" class="editor-btn" onclick="Admin.formatDoc('bold')" title="Удебелен">B</button>
                 <button type="button" class="editor-btn" onclick="Admin.formatDoc('italic')" title="Курсив" style="font-style: italic;">I</button>
                 <button type="button" class="editor-btn" onclick="Admin.formatDoc('underline')" title="Подчертан" style="text-decoration: underline;">U</button>
-                <select class="editor-select" onchange="Admin.formatColor(this.value); this.selectedIndex = 0;">
-                  <option value="">Избери цвят...</option>
-                  <option value="#3b82f6" style="color: #3b82f6; font-weight: bold;">Син</option>
-                  <option value="#ef4444" style="color: #ef4444; font-weight: bold;">Червен</option>
-                  <option value="#eab308" style="color: #eab308; font-weight: bold;">Жълт</option>
-                  <option value="#22c55e" style="color: #22c55e; font-weight: bold;">Зелен</option>
-                  <option value="#f97316" style="color: #f97316; font-weight: bold;">Оранжев</option>
-                  <option value="#334155" style="color: #334155;">По подразбиране</option>
-                </select>
               </div>
               <div id="prod-description-editor" class="editor-content" contenteditable="true" placeholder="Кратко описание на предназначението, гъвкавостта и материалите...">${isEditing ? this.editingProduct.description : ''}</div>
             </div>

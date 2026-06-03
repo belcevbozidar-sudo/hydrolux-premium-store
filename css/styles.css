@@ -4202,3 +4202,73 @@ td .admin-actions-cell {
     margin-top: -45px !important; /* Overlap transition overlay on mobile */
   }
 }
+
+/* Rich text editor styling for admin panel product descriptions */
+.rich-text-editor-container {
+  border: 1.5px solid #cbd5e1 !important;
+  border-radius: 8px !important;
+  background-color: #ffffff !important;
+  overflow: hidden !important;
+  margin-top: 5px !important;
+  box-shadow: var(--shadow-sm) !important;
+  display: block !important;
+  width: 100% !important;
+}
+.editor-toolbar {
+  background-color: #f8fafc !important;
+  border-bottom: 1.5px solid #e2e8f0 !important;
+  padding: 8px 12px !important;
+  display: flex !important;
+  gap: 8px !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+.editor-btn {
+  width: 34px !important;
+  height: 34px !important;
+  border: 1.5px solid #cbd5e1 !important;
+  border-radius: 6px !important;
+  background-color: #ffffff !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: inherit !important;
+  font-size: 0.95rem !important;
+  font-weight: 800 !important;
+  color: #475569 !important;
+  transition: all 0.15s ease !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.editor-btn:hover {
+  background-color: #f1f5f9 !important;
+  border-color: #94a3b8 !important;
+  color: #0f172a !important;
+}
+.editor-btn:active {
+  transform: scale(0.95) !important;
+}
+.editor-content {
+  min-height: 160px !important;
+  max-height: 400px !important;
+  overflow-y: auto !important;
+  padding: 14px !important;
+  outline: none !important;
+  line-height: 1.6 !important;
+  font-size: 0.95rem !important;
+  color: #334155 !important;
+  background-color: #ffffff !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  text-align: left !important;
+}
+.editor-content[placeholder]:empty:before {
+  content: attr(placeholder) !important;
+  color: #94a3b8 !important;
+  cursor: text !important;
+  display: block !important;
+}
