@@ -24,14 +24,38 @@ const Auth = {
   initGoogleClient() {
     // If real Google Client ID is configured, initialize the GIS SDK
     if (this.googleClientId && this.googleClientId !== "YOUR_GOOGLE_CLIENT_ID") {
-      window.addEventListener("load", () => {
-        if (typeof google !== "undefined") {
-          google.accounts.id.initialize({
-            client_id: this.googleClientId,
-            callback: this.handleGoogleCredentialResponse.bind(this)
-          });
+      const initializeSDK = () => {
+        if (typeof google !== "undefined" && google.accounts && google.accounts.id) {
+          try {
+            google.accounts.id.initialize({
+              client_id: this.googleClientId,
+              callback: this.handleGoogleCredentialResponse.bind(this)
+            });
+            console.log("Google GIS initialized successfully.");
+            return true;
+          } catch (e) {
+            console.error("Error during Google GIS initialization:", e);
+          }
         }
+        return false;
+      };
+
+      // 1. Try immediately (in case SDK is already loaded)
+      if (initializeSDK()) return;
+
+      // 2. Try on window load event
+      window.addEventListener("load", () => {
+        initializeSDK();
       });
+
+      // 3. Keep checking every 300ms up to 15 times (backup loop)
+      let attempts = 0;
+      const interval = setInterval(() => {
+        attempts++;
+        if (initializeSDK() || attempts >= 15) {
+          clearInterval(interval);
+        }
+      }, 300);
     }
   },
 
@@ -150,15 +174,6 @@ const Auth = {
             </div>
             <button type="submit" class="btn btn-accent auth-submit-btn">Влез в профила</button>
           </form>
-          
-          <div class="auth-divider"><span>или</span></div>
-          
-          <div id="google-btn-login-container" style="display: flex; justify-content: center; min-height: 44px;">
-            <button class="btn btn-google" onclick="Auth.triggerGoogleLogin()" style="width: 100%;">
-              <img src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=40&auto=format&fit=crop" class="google-logo-icon" alt="Google">
-              Вход с Google
-            </button>
-          </div>
         </div>
 
         <!-- Register Panel -->
@@ -178,15 +193,16 @@ const Auth = {
             </div>
             <button type="submit" class="btn btn-accent auth-submit-btn">Създай акаунт</button>
           </form>
+        </div>
 
-          <div class="auth-divider"><span>или</span></div>
-          
-          <div id="google-btn-register-container" style="display: flex; justify-content: center; min-height: 44px;">
-            <button class="btn btn-google" onclick="Auth.triggerGoogleLogin()" style="width: 100%;">
-              <img src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=40&auto=format&fit=crop" class="google-logo-icon" alt="Google">
-              Регистрация с Google
-            </button>
-          </div>
+        <!-- Shared Google Button (Always Visible, Never Hidden by Tabs) -->
+        <div class="auth-divider"><span>или</span></div>
+        
+        <div id="google-btn-shared-container" style="display: flex; justify-content: center; min-height: 44px;">
+          <button class="btn btn-google" onclick="Auth.triggerGoogleLogin()" style="width: 100%;">
+            <img src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=40&auto=format&fit=crop" class="google-logo-icon" alt="Google">
+            Вход с Google
+          </button>
         </div>
       </div>
     `;
@@ -194,24 +210,24 @@ const Auth = {
     document.body.appendChild(overlay);
     document.body.classList.add("no-scroll");
 
-    // Render native Google Sign-In buttons if googleClientId is configured and SDK is loaded
+    // Render native Google Sign-In button if googleClientId is configured and SDK is loaded
     if (this.googleClientId && this.googleClientId !== "YOUR_GOOGLE_CLIENT_ID") {
       setTimeout(() => {
         if (typeof google !== "undefined" && google.accounts && google.accounts.id) {
-          const containerLogin = document.getElementById("google-btn-login-container");
-          if (containerLogin) {
-            containerLogin.innerHTML = ""; // Clear fallback custom button
-            google.accounts.id.renderButton(
-              containerLogin,
-              { theme: "outline", size: "large", width: 356, text: "signin_with", logo_alignment: "left" }
-            );
+          try {
+            google.accounts.id.initialize({
+              client_id: this.googleClientId,
+              callback: this.handleGoogleCredentialResponse.bind(this)
+            });
+          } catch (e) {
+            // Already initialized or other error
           }
-          const containerRegister = document.getElementById("google-btn-register-container");
-          if (containerRegister) {
-            containerRegister.innerHTML = ""; // Clear fallback custom button
+          const container = document.getElementById("google-btn-shared-container");
+          if (container) {
+            container.innerHTML = ""; // Clear fallback custom button
             google.accounts.id.renderButton(
-              containerRegister,
-              { theme: "outline", size: "large", width: 356, text: "signup_with", logo_alignment: "left" }
+              container,
+              { theme: "outline", size: "large", width: 356, text: "continue_with", logo_alignment: "left" }
             );
           }
         }
