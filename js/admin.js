@@ -2,6 +2,7 @@
 const Admin = {
   activeTab: "products", // "products" or "categories"
   filterCategory: "", // Current category filter in products list
+  productSearchQuery: "", // Search query in products list
   editingCategory: null, // Category currently being edited
   editingProduct: null, // Product currently being edited
   uploadedImages: [], // Temporary Base64 strings or existing URLs of uploaded files
@@ -622,10 +623,28 @@ const Admin = {
   // PRODUCTS WORKSPACE
   // ==========================================================================
   renderProductsWorkspace() {
-    // Filter products list based on selected category filter
+    // Collect unique brands from existing products for the datalist autocomplete
+    const existingBrands = [...new Set(CONFIG.products.map(p => p.brand).filter(Boolean))].sort();
+
+    // Filter products list based on selected category filter and search query
     let products = CONFIG.products;
     if (this.filterCategory) {
       products = products.filter(p => p.category === this.filterCategory);
+    }
+    const query = this.productSearchQuery ? this.productSearchQuery.toLowerCase().trim() : "";
+    if (query) {
+      products = products.filter(p => {
+        const matchesName = p.name.toLowerCase().includes(query);
+        const matchesCode = p.code.toLowerCase().includes(query);
+        const matchesBrand = p.brand.toLowerCase().includes(query);
+        const matchesDesc = (p.description || "").toLowerCase().includes(query);
+        const matchesTags = (p.tags || []).some(t => t.toLowerCase().includes(query));
+        const matchesSpecs = (p.specs || []).some(s => s.key.toLowerCase().includes(query) || s.value.toLowerCase().includes(query));
+        const matchesVariants = (p.variants || []).some(v => 
+          Object.values(v).some(val => String(val).toLowerCase().includes(query))
+        );
+        return matchesName || matchesCode || matchesBrand || matchesDesc || matchesTags || matchesSpecs || matchesVariants;
+      });
     }
 
     let productRows = products.map(p => {
@@ -647,7 +666,7 @@ const Admin = {
               <img src="${thumb}" style="width: 50px; height: 50px; object-fit: cover; border-radius: 6px; border: 1px solid var(--border-light); margin-right: 12px;" onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop'">
               <div>
                 <strong>${p.name}</strong><br>
-                <span class="text-muted font-xs">Код: ${p.code} | Марка: ${p.brand}</span>
+                <span class="text-muted font-xs">Код: ${p.code} | <strong>Марка:</strong> ${p.brand}</span>
               </div>
             </div>
           </td>
@@ -671,7 +690,7 @@ const Admin = {
     }).join("");
 
     if (products.length === 0) {
-      productRows = `<tr><td colspan="5" class="text-center text-muted" style="padding: 30px; color: #94a3b8;">Няма добавени продукти в тази категория.</td></tr>`;
+      productRows = `<tr><td colspan="5" class="text-center text-muted" style="padding: 30px; color: #94a3b8;">Няма добавени продукти в тази категория или търсене.</td></tr>`;
     }
 
     // Generate categories options for product creation
@@ -744,7 +763,10 @@ const Admin = {
             </div>
             <div class="form-group">
               <label>Марка <span class="text-accent">*</span></label>
-              <input type="text" id="prod-brand" class="form-control" value="${isEditing ? this.editingProduct.brand : ''}" placeholder="напр. Semperit" required>
+              <input type="text" id="prod-brand" class="form-control" list="existing-brands-datalist" value="${isEditing ? this.editingProduct.brand : ''}" placeholder="напр. Semperit" required autocomplete="off">
+              <datalist id="existing-brands-datalist">
+                ${existingBrands.map(b => `<option value="${this.escapeAttr(b)}"></option>`).join("")}
+              </datalist>
             </div>
           </div>
 
@@ -820,12 +842,13 @@ const Admin = {
         </form>
       </div>
 
-      <!-- Current Products Table Header with Category Filter directly below the form -->
+      <!-- Current Products Table Header with Category Filter and Smart Search Input -->
       <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 40px; margin-bottom: 15px; flex-wrap: wrap; gap: 15px; border-bottom: 2px solid var(--border-light); padding-bottom: 12px;">
         <h3 style="font-weight: 800; font-size: 1.3rem; color: #1e293b; margin: 0;">Списък с продукти</h3>
-        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+        <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+          <input type="text" id="prod-search-input" class="form-control" oninput="Admin.filterProductsList()" placeholder="🔍 Търси по име, код, марка, описание..." value="${this.productSearchQuery || ''}" style="width: 280px; height: 38px; padding: 6px 12px; border: 1.5px solid var(--primary); border-radius: 6px;">
           <span class="text-muted font-bold font-xs" style="text-transform: uppercase; letter-spacing: 0.5px;">Филтриране:</span>
-          <select id="prod-filter-category" class="form-control" onchange="Admin.filterProductsList(this.value)" style="width: 240px; font-weight: 700; height: 38px; padding: 6px; border: 1.5px solid var(--primary); border-radius: 6px; color: var(--primary); background-color: white;">
+          <select id="prod-filter-category" class="form-control" onchange="Admin.filterProductsList()" style="width: 240px; font-weight: 700; height: 38px; padding: 6px; border: 1.5px solid var(--primary); border-radius: 6px; color: var(--primary); background-color: white;">
             <option value="">Всички категории</option>
             ${filterOptions}
           </select>
@@ -852,15 +875,33 @@ const Admin = {
     `;
   },
 
-  filterProductsList(catId) {
-    this.filterCategory = catId;
+  filterProductsList() {
+    const catId = document.getElementById("prod-filter-category") ? document.getElementById("prod-filter-category").value : this.filterCategory;
+    const query = document.getElementById("prod-search-input") ? document.getElementById("prod-search-input").value.toLowerCase().trim() : "";
     
+    this.filterCategory = catId;
+    this.productSearchQuery = query;
+
     const tbody = document.querySelector("#admin-products-list-table tbody");
     if (!tbody) return;
     
     let products = CONFIG.products;
     if (catId) {
       products = products.filter(p => p.category === catId);
+    }
+    if (query) {
+      products = products.filter(p => {
+        const matchesName = p.name.toLowerCase().includes(query);
+        const matchesCode = p.code.toLowerCase().includes(query);
+        const matchesBrand = p.brand.toLowerCase().includes(query);
+        const matchesDesc = (p.description || "").toLowerCase().includes(query);
+        const matchesTags = (p.tags || []).some(t => t.toLowerCase().includes(query));
+        const matchesSpecs = (p.specs || []).some(s => s.key.toLowerCase().includes(query) || s.value.toLowerCase().includes(query));
+        const matchesVariants = (p.variants || []).some(v => 
+          Object.values(v).some(val => String(val).toLowerCase().includes(query))
+        );
+        return matchesName || matchesCode || matchesBrand || matchesDesc || matchesTags || matchesSpecs || matchesVariants;
+      });
     }
     
     let productRows = products.map(p => {
@@ -882,7 +923,7 @@ const Admin = {
               <img src="${thumb}" style="width: 50px; height: 50px; object-fit: cover; border-radius: 6px; border: 1px solid var(--border-light); margin-right: 12px;" onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop'">
               <div>
                 <strong>${p.name}</strong><br>
-                <span class="text-muted font-xs">Код: ${p.code} | Марка: ${p.brand}</span>
+                <span class="text-muted font-xs">Код: ${p.code} | <strong>Марка:</strong> ${p.brand}</span>
               </div>
             </div>
           </td>
@@ -906,7 +947,7 @@ const Admin = {
     }).join("");
 
     if (products.length === 0) {
-      productRows = `<tr><td colspan="5" class="text-center text-muted" style="padding: 30px; color: #94a3b8;">Няма добавени продукти в тази категория.</td></tr>`;
+      productRows = `<tr><td colspan="5" class="text-center text-muted" style="padding: 30px; color: #94a3b8;">Няма намерени продукти.</td></tr>`;
     }
     
     tbody.innerHTML = productRows;

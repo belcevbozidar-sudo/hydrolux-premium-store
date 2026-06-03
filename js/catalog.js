@@ -1,7 +1,12 @@
 // Catalog Filtering, Dropdowns & Details Controller (Euro € Optimized)
 const Catalog = {
   activeCategory: null,
+  activeSubcategory: null,
   searchQuery: "",
+  filterBrand: "",
+  filterSize: "",
+  filterPressure: "",
+  filterTemp: "",
 
   // Render product categories inside the top collapsible dropdown menu
   renderSidebar() {
@@ -45,6 +50,67 @@ const Catalog = {
     }
 
     container.innerHTML = catHtml + subHtml;
+    this.renderSpecsFilters();
+  },
+
+  renderSpecsFilters() {
+    const container = document.getElementById("catalog-specs-filters");
+    if (!container) return;
+
+    // Filter available option options to match the selected category & subcategory
+    let scopeProducts = CONFIG.products;
+    if (this.activeCategory) {
+      scopeProducts = scopeProducts.filter(p => p.category === this.activeCategory);
+    }
+    if (this.activeSubcategory) {
+      scopeProducts = scopeProducts.filter(p => p.subcategory === this.activeSubcategory);
+    }
+
+    // 1. Brands
+    const brands = [...new Set(scopeProducts.map(p => p.brand).filter(Boolean))].sort();
+
+    // 2. Sizes (innerDb)
+    const sizes = [...new Set(scopeProducts.flatMap(p => (p.variants || []).map(v => v.innerDb)).filter(Boolean))].sort((a, b) => parseFloat(a) - parseFloat(b));
+
+    // 3. Pressures
+    const pressures = [...new Set(scopeProducts.flatMap(p => (p.variants || []).map(v => v.pressure)).filter(Boolean))].sort((a, b) => parseFloat(a) - parseFloat(b));
+
+    // 4. Temps (specs containing "температура")
+    const temps = [...new Set(scopeProducts.flatMap(p => (p.specs || []).filter(s => s.key.toLowerCase().includes("температура")).map(s => s.value)).filter(Boolean))].sort();
+
+    container.innerHTML = `
+      <div class="filter-group-item" style="flex: 1; min-width: 140px;">
+        <label style="display: block; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #64748b; margin-bottom: 5px;">Марка</label>
+        <select class="form-control" onchange="Catalog.filterBrand = this.value; Catalog.applyFiltersAndRender();" style="height: 38px; padding: 6px 12px; font-size: 0.85rem; border: 1px solid #cbd5e1; border-radius: 6px; width: 100%;">
+          <option value="">Всички</option>
+          ${brands.map(b => `<option value="${b}" ${this.filterBrand === b ? 'selected' : ''}>${b}</option>`).join("")}
+        </select>
+      </div>
+
+      <div class="filter-group-item" style="flex: 1; min-width: 140px;">
+        <label style="display: block; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #64748b; margin-bottom: 5px;">Размер (ø вътр.)</label>
+        <select class="form-control" onchange="Catalog.filterSize = this.value; Catalog.applyFiltersAndRender();" style="height: 38px; padding: 6px 12px; font-size: 0.85rem; border: 1px solid #cbd5e1; border-radius: 6px; width: 100%;">
+          <option value="">Всички</option>
+          ${sizes.map(s => `<option value="${s}" ${this.filterSize === s ? 'selected' : ''}>${s} мм</option>`).join("")}
+        </select>
+      </div>
+
+      <div class="filter-group-item" style="flex: 1; min-width: 140px;">
+        <label style="display: block; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #64748b; margin-bottom: 5px;">Налягане (Bar)</label>
+        <select class="form-control" onchange="Catalog.filterPressure = this.value; Catalog.applyFiltersAndRender();" style="height: 38px; padding: 6px 12px; font-size: 0.85rem; border: 1px solid #cbd5e1; border-radius: 6px; width: 100%;">
+          <option value="">Всички</option>
+          ${pressures.map(p => `<option value="${p}" ${this.filterPressure === p ? 'selected' : ''}>${p} Bar</option>`).join("")}
+        </select>
+      </div>
+
+      <div class="filter-group-item" style="flex: 1; min-width: 140px;">
+        <label style="display: block; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #64748b; margin-bottom: 5px;">Работна темп.</label>
+        <select class="form-control" onchange="Catalog.filterTemp = this.value; Catalog.applyFiltersAndRender();" style="height: 38px; padding: 6px 12px; font-size: 0.85rem; border: 1px solid #cbd5e1; border-radius: 6px; width: 100%;">
+          <option value="">Всички</option>
+          ${temps.map(t => `<option value="${t}" ${this.filterTemp === t ? 'selected' : ''}>${t}</option>`).join("")}
+        </select>
+      </div>
+    `;
   },
 
   toggleCategoriesDropdown() {
@@ -76,6 +142,10 @@ const Catalog = {
     this.activeCategory = null;
     this.activeSubcategory = null;
     this.searchQuery = "";
+    this.filterBrand = "";
+    this.filterSize = "";
+    this.filterPressure = "";
+    this.filterTemp = "";
     
     const searchInput = document.getElementById("search-input-blue");
     if (searchInput) searchInput.value = "";
@@ -105,6 +175,19 @@ const Catalog = {
         const matchesTags = p.tags.some(t => t.toLowerCase().includes(query));
         if (!matchesName && !matchesBrand && !matchesCode && !matchesTags) return false;
       }
+
+      // 4. Spec Filters
+      // 4.1 Brand
+      if (this.filterBrand && p.brand !== this.filterBrand) return false;
+
+      // 4.2 Size (innerDb from variants)
+      if (this.filterSize && !(p.variants || []).some(v => String(v.innerDb) === this.filterSize)) return false;
+
+      // 4.3 Pressure (pressure from variants)
+      if (this.filterPressure && !(p.variants || []).some(v => String(v.pressure) === this.filterPressure)) return false;
+
+      // 4.4 Temp (specs key temperature value)
+      if (this.filterTemp && !(p.specs || []).some(s => s.key.toLowerCase().includes("температура") && s.value === this.filterTemp)) return false;
 
       return true;
     });

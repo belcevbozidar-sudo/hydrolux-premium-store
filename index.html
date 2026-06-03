@@ -504,11 +504,14 @@
       <div class="catalog-wide-layout">
         
         <!-- 🔥 NEW: Top Collapsible Dropdown Categories Selector -->
-        <div class="catalog-filters-bar card mb-20">
+        <div class="catalog-filters-bar card mb-20" style="display: flex; flex-direction: column; gap: 15px;">
           <div class="catalog-categories-tags-list" id="catalog-categories-tags-list">
             <!-- Dynamically populated options by catalog.js -->
           </div>
-          <button class="btn btn-secondary" onclick="Catalog.resetFilters()">Изчисти Филтрите</button>
+          <div class="catalog-specs-filters" id="catalog-specs-filters" style="display: flex; gap: 15px; flex-wrap: wrap; border-top: 1px dashed #cbd5e1; padding-top: 15px; width: 100%;">
+            <!-- Dynamically populated spec filters -->
+          </div>
+          <button class="btn btn-secondary" onclick="Catalog.resetFilters()" style="width: fit-content; align-self: flex-end;">Изчисти Филтрите</button>
         </div>
 
         <!-- Full width Products Grid -->
