@@ -159,12 +159,12 @@ const App = {
     if (!menu) return;
 
     menu.innerHTML = `
-      <a class="nav-dropdown-item" onclick="Catalog.selectCategory(''); App.navigate('catalog')">
-        📂 Всички категории
+      <a class="nav-dropdown-item" onclick="Catalog.selectCategory(''); App.navigate('catalog')" style="grid-column: span 3; font-weight: 800; border-bottom: 1px dashed #cbd5e1; padding-bottom: 8px; margin-bottom: 4px;">
+        Всички категории
       </a>
       ${CONFIG.categories.map(cat => `
         <a class="nav-dropdown-item" onclick="Catalog.selectCategory('${cat.id}'); App.navigate('catalog')">
-          ${cat.icon || '📦'} ${cat.name}
+          ${cat.name}
         </a>
       `).join("")}
     `;

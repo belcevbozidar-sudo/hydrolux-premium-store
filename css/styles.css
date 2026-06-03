@@ -4053,30 +4053,35 @@ td .admin-actions-cell {
   background-color: #ffffff;
   border: 1px solid #cbd5e1;
   border-radius: 8px;
-  width: 280px;
+  width: 760px; /* Wide for horizontal megamenu layout */
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
   display: none;
-  padding: 8px 0;
+  padding: 18px;
   margin-top: 5px;
   z-index: 1100;
+  
+  /* Grid configuration for horizontal items layout */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px 16px;
 }
 
 @media (min-width: 769px) {
   .categories-nav-wrapper:hover .categories-nav-dropdown-menu {
-    display: block !important;
+    display: grid !important; /* Display as grid on hover */
   }
 }
 
 .nav-dropdown-item {
   display: block;
-  padding: 10px 16px;
+  padding: 8px 12px;
   color: #1e293b;
   font-weight: 700;
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 0.8rem; /* Compact size */
   transition: all 0.2s ease;
   cursor: pointer;
   text-align: left;
+  border-radius: 6px;
 }
 
 .nav-dropdown-item:hover {
@@ -4107,22 +4112,22 @@ td .admin-actions-cell {
   width: 100%;
 }
 
-/* Rectangular category buttons overrides */
+/* Compact rectangular category buttons overrides */
 .category-tag-btn {
   background-color: #ffffff !important;
   color: #0f172a !important;
   border: 1.5px solid #e2e8f0 !important;
-  border-radius: 8px !important;
-  padding: 12px 18px !important;
-  font-size: 0.88rem !important;
+  border-radius: 6px !important;
+  padding: 8px 14px !important; /* Compact padding */
+  font-size: 0.8rem !important; /* Compact font-size */
   font-weight: 700 !important;
   cursor: pointer;
   transition: all 0.2s ease;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 8px !important;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.02) !important;
+  gap: 6px !important;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02) !important;
 }
 
 .category-tag-btn:hover {
@@ -4135,7 +4140,7 @@ td .admin-actions-cell {
   background-color: #ea580c !important;
   color: #ffffff !important;
   border-color: #ea580c !important;
-  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.25) !important;
+  box-shadow: 0 4px 10px rgba(234, 88, 12, 0.22) !important;
 }
 
 /* Subcategory tag buttons layout */
@@ -4144,15 +4149,15 @@ td .admin-actions-cell {
   color: #475569;
   border: 1.5px solid #e2e8f0;
   border-radius: 6px;
-  padding: 8px 14px;
-  font-size: 0.82rem;
+  padding: 6px 12px; /* Compact padding */
+  font-size: 0.76rem; /* Compact font-size */
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 4px;
 }
 
 .subcategory-tag-btn:hover {
@@ -4170,4 +4175,28 @@ td .admin-actions-cell {
 .admin-badge-category {
   background-color: #e0f2fe !important;
   color: #0369a1 !important;
+}
+
+/* Custom bottom fade gradient overlay for the hero section background */
+.modern-hero-section::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 120px; /* Tall smooth fade transition */
+  background: linear-gradient(180deg, rgba(6, 28, 54, 0) 0%, #ffffff 100%);
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Shift category cards grid margin to sit higher overlapping the transition overlay */
+.home-categories-grid-6 {
+  margin-top: -65px !important; /* Overlap transition overlay on desktop */
+}
+
+@media (max-width: 768px) {
+  .home-categories-grid-6 {
+    margin-top: -45px !important; /* Overlap transition overlay on mobile */
+  }
 }

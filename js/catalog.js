@@ -11,11 +11,11 @@ const Catalog = {
     const catHtml = `
       <div class="catalog-categories-grid">
         <button class="category-tag-btn ${!this.activeCategory ? 'active' : ''}" id="cat-tag-all" onclick="Catalog.selectCategory('')">
-          📂 Всички
+          Всички
         </button>
         ${CONFIG.categories.map(cat => `
           <button class="category-tag-btn ${this.activeCategory === cat.id ? 'active' : ''}" id="cat-tag-${cat.id}" onclick="Catalog.selectCategory('${cat.id}')">
-            ${cat.icon || '📦'} ${cat.name}
+            ${cat.name}
           </button>
         `).join("")}
       </div>
@@ -31,11 +31,11 @@ const Catalog = {
             <div style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; color: #64748b; letter-spacing: 0.5px; margin-bottom: 10px;">Подкатегории:</div>
             <div class="catalog-subcategories-grid">
               <button class="subcategory-tag-btn ${!this.activeSubcategory ? 'active' : ''}" onclick="Catalog.selectSubcategory('')">
-                📁 Всички подкатегории
+                Всички подкатегории
               </button>
               ${activeCatObj.subcategories.map(sub => `
                 <button class="subcategory-tag-btn ${this.activeSubcategory === sub.id ? 'active' : ''}" onclick="Catalog.selectSubcategory('${sub.id}')">
-                  🏷️ ${sub.name}
+                  ${sub.name}
                 </button>
               `).join("")}
             </div>
