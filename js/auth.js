@@ -1,7 +1,7 @@
 // Hydrolux Premium Store - Authentication & User Profile Controller
 const Auth = {
   currentUser: null,
-  googleClientId: "", // User can replace this with their Google Client ID
+  googleClientId: "319386067027-lvi2v05qt8sca7ppr3s8ukqk8oak530q.apps.googleusercontent.com",
 
   init() {
     this.loadSession();
@@ -153,10 +153,12 @@ const Auth = {
           
           <div class="auth-divider"><span>или</span></div>
           
-          <button class="btn btn-google" onclick="Auth.triggerGoogleLogin()">
-            <img src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=40&auto=format&fit=crop" class="google-logo-icon" alt="Google">
-            Вход с Google
-          </button>
+          <div id="google-btn-login-container" style="display: flex; justify-content: center; min-height: 44px;">
+            <button class="btn btn-google" onclick="Auth.triggerGoogleLogin()" style="width: 100%;">
+              <img src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=40&auto=format&fit=crop" class="google-logo-icon" alt="Google">
+              Вход с Google
+            </button>
+          </div>
         </div>
 
         <!-- Register Panel -->
@@ -179,16 +181,42 @@ const Auth = {
 
           <div class="auth-divider"><span>или</span></div>
           
-          <button class="btn btn-google" onclick="Auth.triggerGoogleLogin()">
-            <img src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=40&auto=format&fit=crop" class="google-logo-icon" alt="Google">
-            Регистрация с Google
-          </button>
+          <div id="google-btn-register-container" style="display: flex; justify-content: center; min-height: 44px;">
+            <button class="btn btn-google" onclick="Auth.triggerGoogleLogin()" style="width: 100%;">
+              <img src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=40&auto=format&fit=crop" class="google-logo-icon" alt="Google">
+              Регистрация с Google
+            </button>
+          </div>
         </div>
       </div>
     `;
 
     document.body.appendChild(overlay);
     document.body.classList.add("no-scroll");
+
+    // Render native Google Sign-In buttons if googleClientId is configured and SDK is loaded
+    if (this.googleClientId && this.googleClientId !== "YOUR_GOOGLE_CLIENT_ID") {
+      setTimeout(() => {
+        if (typeof google !== "undefined" && google.accounts && google.accounts.id) {
+          const containerLogin = document.getElementById("google-btn-login-container");
+          if (containerLogin) {
+            containerLogin.innerHTML = ""; // Clear fallback custom button
+            google.accounts.id.renderButton(
+              containerLogin,
+              { theme: "outline", size: "large", width: 356, text: "signin_with", logo_alignment: "left" }
+            );
+          }
+          const containerRegister = document.getElementById("google-btn-register-container");
+          if (containerRegister) {
+            containerRegister.innerHTML = ""; // Clear fallback custom button
+            google.accounts.id.renderButton(
+              containerRegister,
+              { theme: "outline", size: "large", width: 356, text: "signup_with", logo_alignment: "left" }
+            );
+          }
+        }
+      }, 150);
+    }
   },
 
   closeAuthModal() {
