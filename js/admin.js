@@ -8,11 +8,24 @@ const Admin = {
   uploadedImages: [], // Temporary Base64 strings or existing URLs of uploaded files
   isProcessingImages: false,
   templatesPanelOpen: false,
+  savedRange: null,
 
   init() {
     this.loadTemplates();
     this.injectStyles();
     this.render();
+
+    // Register global selection tracker
+    document.addEventListener("selectionchange", () => {
+      const sel = window.getSelection();
+      if (sel && sel.rangeCount > 0) {
+        const range = sel.getRangeAt(0);
+        const editor = document.getElementById("prod-description-editor");
+        if (editor && editor.contains(range.commonAncestorContainer)) {
+          Admin.savedRange = range;
+        }
+      }
+    });
   },
 
   injectStyles() {
@@ -569,7 +582,28 @@ const Admin = {
     document.head.appendChild(style);
   },
 
+  saveSelection() {
+    const sel = window.getSelection();
+    if (sel && sel.rangeCount > 0) {
+      const range = sel.getRangeAt(0);
+      const editor = document.getElementById("prod-description-editor");
+      if (editor && editor.contains(range.commonAncestorContainer)) {
+        this.savedRange = range;
+      }
+    }
+  },
+
+  restoreSelection() {
+    if (this.savedRange) {
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(this.savedRange);
+    }
+  },
+
   formatDoc(cmd, val = null) {
+    this.restoreSelection();
+
     const sel = window.getSelection();
     if (!sel || sel.rangeCount === 0) return;
     
@@ -587,6 +621,15 @@ const Admin = {
 
     document.execCommand(cmd, false, val);
     editor.focus();
+    this.saveSelection();
+  },
+
+  changeTextColor(color) {
+    const indicator = document.getElementById("editor-color-indicator");
+    if (indicator) {
+      indicator.style.backgroundColor = color;
+    }
+    this.formatDoc("foreColor", color);
   },
 
   switchTab(tabId) {
@@ -812,6 +855,13 @@ const Admin = {
                 <button type="button" class="editor-btn" onclick="Admin.formatDoc('bold')" title="Удебелен">B</button>
                 <button type="button" class="editor-btn" onclick="Admin.formatDoc('italic')" title="Курсив" style="font-style: italic;">I</button>
                 <button type="button" class="editor-btn" onclick="Admin.formatDoc('underline')" title="Подчертан" style="text-decoration: underline;">U</button>
+                <div class="editor-color-wrapper" style="position: relative; display: inline-block;">
+                  <button type="button" class="editor-btn" title="Цвят на текста" onclick="document.getElementById('editor-color-input').click()" style="display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;">
+                    <span style="font-size: 0.75rem; line-height: 1; font-weight: 900; color: #1e293b;">A</span>
+                    <div id="editor-color-indicator" style="width: 14px; height: 3px; background-color: #000000; margin-top: 1px; border-radius: 1px;"></div>
+                  </button>
+                  <input type="color" id="editor-color-input" oninput="Admin.changeTextColor(this.value)" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; border: none; padding: 0;">
+                </div>
               </div>
               <div id="prod-description-editor" class="editor-content" contenteditable="true" placeholder="Кратко описание на предназначението, гъвкавостта и материалите...">${isEditing ? this.editingProduct.description : ''}</div>
             </div>
@@ -1349,6 +1399,14 @@ const Admin = {
     const tbody = document.getElementById("admin-variants-tbody");
     if (tbody && tbody.children.length === 0) {
       this.addNewVariantRow();
+    }
+
+    // Register event listeners on the description editor to save its text selection
+    const editor = document.getElementById("prod-description-editor");
+    if (editor) {
+      editor.addEventListener("mouseup", () => Admin.saveSelection());
+      editor.addEventListener("keyup", () => Admin.saveSelection());
+      editor.addEventListener("blur", () => Admin.saveSelection());
     }
   },
 
