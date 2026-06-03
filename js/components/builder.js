@@ -249,7 +249,7 @@ const HoseBuilder = {
           </div>
 
           <div class="pricing-summary-bar font-small text-muted mt-20" style="border-top: 1px solid rgba(0, 187, 255, 0.15); padding-top: 15px;">
-            <span>Спецификация: ${size.name} маркуч, прогнозна цена: <strong style="color: #00bbff; font-size: 1.1rem;">${price.eur.toFixed(2)} €</strong> с ДДС.</span>
+            <span>Спецификация: ${size.name} маркуч, прогнозна цена: <strong style="color: #00bbff; font-size: 1.1rem;">${price.eur.toFixed(2)} лв.</strong> с ДДС.</span>
           </div>
         </div>
 
@@ -259,6 +259,32 @@ const HoseBuilder = {
 
   adjustLength(diff) {
     this.set("lengthMeters", (this.state.lengthMeters + diff).toFixed(1));
+  },
+
+  addToCart() {
+    const hose = this.options.hoseTypes.find(h => h.id === this.state.hoseTypeId);
+    const size = this.options.sizes.find(s => s.id === this.state.sizeId);
+    const fitL = this.options.fittings.find(f => f.id === this.state.fittingLeftId);
+    const fitR = this.options.fittings.find(f => f.id === this.state.fittingRightId);
+    const sleeve = this.options.sleeves.find(sl => sl.id === this.state.sleeveId);
+    const price = this.calculatePrice();
+
+    const customProduct = {
+      id: `custom-hose-${Date.now()}`,
+      name: "Персонализиран маркуч",
+      isCustomHose: true,
+      priceEur: price.eur,
+      specsSummary: {
+        hoseType: hose.name,
+        size: size.name,
+        fittingL: fitL.name,
+        fittingR: fitR.name,
+        sleeve: sleeve.name
+      }
+    };
+
+    Cart.addItem(customProduct, "CUSTOM-SPEC", 1);
+    Cart.openDrawer();
   },
 
   openQuickInquiryForm() {
@@ -276,7 +302,7 @@ const HoseBuilder = {
 - Ляв накрайник: ${fitL.name}
 - Десен накрайник: ${fitR.name}
 - Предпазен ръкав: ${sleeve.name}
-- Прогнозна цена: ${price.eur.toFixed(2)} €`;
+- Прогнозна цена: ${price.eur.toFixed(2)} лв.`;
 
     // Navigate to services/contacts SPA view
     App.navigate("services");

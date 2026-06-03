@@ -155,7 +155,7 @@ const Cart = {
     });
 
     const totals = this.getTotal();
-    if (displayEur) displayEur.textContent = totals.eur.toFixed(2) + " €";
+    if (displayEur) displayEur.textContent = totals.eur.toFixed(2) + " лв.";
 
     // Pulse the cart button
     const cartBtn = document.querySelector(".btn-cart-trigger");
@@ -227,8 +227,8 @@ const Cart = {
       `;
     }).join("");
 
-    // Update prices in footer panel strictly in EUR
-    document.getElementById("cart-total-bgn").textContent = totals.eur.toFixed(2) + " €";
+    // Update prices in footer panel strictly in BGN
+    document.getElementById("cart-total-bgn").textContent = totals.eur.toFixed(2) + " лв.";
   },
 
   openCheckout() {
@@ -274,12 +274,12 @@ const Cart = {
         <div class="divider"></div>
         <div class="checkout-summary-totals">
           <div class="row">
-            <span>Общо в евро (с ДДС):</span>
-            <strong class="font-large text-primary">${totals.eur.toFixed(2)} €</strong>
+            <span>Общо (с ДДС):</span>
+            <strong class="font-large text-primary">${totals.eur.toFixed(2)} лв.</strong>
           </div>
           <div class="row font-xs text-muted mt-5">
             <span>* Включено ДДС (20%):</span>
-            <span>${(totals.eur * 0.2).toFixed(2)} €</span>
+            <span>${(totals.eur * 0.2).toFixed(2)} лв.</span>
           </div>
         </div>
       </div>
@@ -399,15 +399,15 @@ const Cart = {
           <div class="invoice-footer-totals">
             <div class="row">
               <span>Междинна сума:</span>
-              <span>${(totals.eur / 1.2).toFixed(2)} €</span>
+              <span>${(totals.eur / 1.2).toFixed(2)} лв.</span>
             </div>
             <div class="row">
               <span>ДДС (20%):</span>
-              <span>${(totals.eur - (totals.eur / 1.2)).toFixed(2)} €</span>
+              <span>${(totals.eur - (totals.eur / 1.2)).toFixed(2)} лв.</span>
             </div>
             <div class="row font-large text-primary font-bold">
               <span>ОБЩО С ДДС:</span>
-              <span>${totals.eur.toFixed(2)} €</span>
+              <span>${totals.eur.toFixed(2)} лв.</span>
             </div>
           </div>
         </div>

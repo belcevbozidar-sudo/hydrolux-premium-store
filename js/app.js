@@ -38,88 +38,85 @@ const App = {
     const specialHeader = document.getElementById("home-special-section-header");
     if (!grid) return;
 
-    // 1. Filter Special Seasonal Products
-    const specialProducts = CONFIG.products.filter(p => p.isSpecial === true);
-    
-    if (specialGrid && specialHeader) {
-      if (specialProducts.length > 0) {
-        specialGrid.innerHTML = specialProducts.map(p => {
-          const prices = p.variants.map(v => v.priceEur);
-          const minPrice = Math.min(...prices);
-          const maxPrice = Math.max(...prices);
-          const priceText = prices.length > 1
-            ? `от ${minPrice.toFixed(2)} € до ${maxPrice.toFixed(2)} €`
-            : `${minPrice.toFixed(2)} €`;
-          const coverImg = p.images[0] || "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop";
-          const specialLabel = this.getSpecialOfferLabel(p);
+    // We will render exactly the 4 popular products specified in the mockup layout
+    const popularProductIds = [
+      "hydraulic-hose-2sn",
+      "fitting-90-bsp",
+      "pu-spiral-hose",
+      "quick-coupling-isoa"
+    ];
+    const featured = popularProductIds.map(id => CONFIG.products.find(p => p.id === id)).filter(Boolean);
 
-          return `
-            <div class="product-card card special-promo-card" onclick="Catalog.openProductDetails('${p.id}')" style="border: 1.5px solid #ea580c; box-shadow: 0 4px 20px rgba(234, 88, 12, 0.08);">
-              <div class="product-badge" style="background-color: #ea580c; color: white;">🔥 ${specialLabel}</div>
-              <div class="product-card-img-wrapper">
-                <img src="${coverImg}" alt="${p.name}" class="product-card-img" onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop'">
-              </div>
-              <div class="product-card-body">
-                <div class="product-card-brand">${p.brand}</div>
-                <h4 class="product-card-title">${p.name}</h4>
-                <div class="product-card-rating">
-                  <span class="stars">★★★★★</span>
-                  <span class="rating-val">${p.rating.toFixed(1)}</span>
-                </div>
-                
-                <div class="product-card-bottom">
-                  <div class="product-card-price">
-                    <span class="price-bgn font-medium text-accent font-bold" style="color: #ea580c;">${priceText}</span>
-                  </div>
-                  <button class="btn btn-accent btn-icon" onclick="event.stopPropagation(); Catalog.openProductDetails('${p.id}')" style="background-color: #ea580c;">➔</button>
-                </div>
-              </div>
-            </div>
-          `;
-        }).join("");
-        specialGrid.style.display = "grid";
-        specialHeader.style.display = "flex";
-      } else {
-        specialGrid.style.display = "none";
-        specialHeader.style.display = "none";
-      }
-    }
-
-    // 2. Render first 4 standard featured products
-    const featured = CONFIG.products.filter(p => !p.isSpecial).slice(0, 4);
     grid.innerHTML = featured.map(p => {
-      const prices = p.variants.map(v => v.priceEur);
-      const minPrice = Math.min(...prices);
-      const maxPrice = Math.max(...prices);
-      const priceText = prices.length > 1
-        ? `от ${minPrice.toFixed(2)} € до ${maxPrice.toFixed(2)} €`
-        : `${minPrice.toFixed(2)} €`;
-      const coverImg = p.images[0] || "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop";
+      const minPrice = p.variants && p.variants.length > 0 ? Math.min(...p.variants.map(v => v.priceEur)) : 0;
+      const isTopSale = p.id === "pu-spiral-hose";
+      const badgeText = isTopSale ? "Топ продажба" : "В наличност";
+      const badgeClass = isTopSale ? "badge-orange" : "badge-green";
 
       return `
         <div class="product-card card" onclick="Catalog.openProductDetails('${p.id}')">
-          <div class="product-badge">${p.inStock ? 'В наличност' : 'По поръчка'}</div>
+          <div class="product-badge ${badgeClass}">${badgeText}</div>
+          
+          <button class="wishlist-btn" onclick="event.stopPropagation(); App.toggleFavorite('${p.id}', this)" title="Любими">
+            <svg class="heart-icon" viewBox="0 0 24 24" width="18" height="18">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </button>
+
           <div class="product-card-img-wrapper">
-            <img src="${coverImg}" alt="${p.name}" class="product-card-img" onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop'">
+            <img src="${p.images[0]}" alt="${p.name}" class="product-card-img" onerror="this.src='assets/air_hoses.png'">
           </div>
           <div class="product-card-body">
-            <div class="product-card-brand">${p.brand}</div>
             <h4 class="product-card-title">${p.name}</h4>
-            <div class="product-card-rating">
-              <span class="stars">★★★★★</span>
-              <span class="rating-val">${p.rating.toFixed(1)}</span>
+            
+            <div class="product-card-specs">
+              ${(p.homeSpecs || []).map(spec => `
+                <div class="spec-item">
+                  <span class="spec-checkmark">✓</span>
+                  <span class="spec-label">${spec.key}:</span>
+                  <span class="spec-value">${spec.value}</span>
+                </div>
+              `).join("")}
             </div>
             
-            <div class="product-card-bottom">
-              <div class="product-card-price">
-                <span class="price-bgn font-medium text-primary font-bold">${priceText}</span>
-              </div>
-              <button class="btn btn-secondary btn-icon" onclick="event.stopPropagation(); Catalog.openProductDetails('${p.id}')">➔</button>
+            <div class="product-card-price-row">
+              <span class="price-bgn font-medium text-primary font-bold">
+                ${formatPrice(minPrice, p.unit === "м").eur}
+              </span>
             </div>
+            
+            <button class="btn-buy-now btn-accent mt-15" onclick="event.stopPropagation(); App.buyProductDirect('${p.id}')">
+              <svg class="cart-icon" viewBox="0 0 24 24" width="16" height="16">
+                <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" fill="currentColor"/>
+              </svg>
+              Добави в количка
+            </button>
           </div>
         </div>
       `;
     }).join("");
+
+    // Hide old special grids to clean up design
+    if (specialGrid) specialGrid.style.display = "none";
+    if (specialHeader) specialHeader.style.display = "none";
+  },
+
+  toggleFavorite(productId, btn) {
+    btn.classList.toggle("active");
+    const isActive = btn.classList.contains("active");
+    if (isActive) {
+      Cart.showToast("Добавено в любими");
+    } else {
+      Cart.showToast("Премахнато от любими");
+    }
+  },
+
+  buyProductDirect(productId) {
+    const product = CONFIG.products.find(p => p.id === productId);
+    if (product && product.variants && product.variants.length > 0) {
+      Cart.addItem(product, product.variants[0].code, 1);
+      Cart.openDrawer();
+    }
   },
 
   getSpecialOfferLabel(product) {
@@ -244,8 +241,7 @@ const App = {
                   <div class="search-suggestion-info">
                     <span class="search-suggestion-name">${p.name}</span>
                     <span class="search-suggestion-meta">${subText}</span>
-                  </div>
-                  <div class="search-suggestion-price">${minPrice.toFixed(2)} €</div>
+                  <div class="search-suggestion-price">${formatPrice(minPrice, p.unit === "м").eur}</div>
                 </div>
               `;
             }).join("")}

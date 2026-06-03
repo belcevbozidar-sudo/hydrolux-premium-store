@@ -116,8 +116,8 @@ const Catalog = {
       const minPrice = Math.min(...prices);
       const maxPrice = Math.max(...prices);
       const priceText = prices.length > 1
-        ? `от ${minPrice.toFixed(2)} € до ${maxPrice.toFixed(2)} €`
-        : `${minPrice.toFixed(2)} €`;
+        ? `от ${formatPrice(minPrice, p.unit === 'м').eur} до ${formatPrice(maxPrice, p.unit === 'м').eur}`
+        : `${formatPrice(minPrice, p.unit === 'м').eur}`;
 
       return `
         <div class="product-card card" onclick="Catalog.openProductDetails('${p.id}')">
@@ -237,7 +237,7 @@ const Catalog = {
                   ${cols.map(c => {
                     const val = v[c.key] !== undefined ? v[c.key] : '';
                     if (c.key === 'priceEur') {
-                      return `<td><div class="table-price-bgn">${formatPrice(priceVal).eur}</div></td>`;
+                      return `<td><div class="table-price-bgn">${formatPrice(priceVal, product.unit === 'м').eur}</div></td>`;
                     }
                     if (c.key === 'code') {
                       return `<td class="font-bold text-primary font-xs">${val}</td>`;
