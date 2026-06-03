@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Хидролукс Груп | Онлайн магазин за Хидравлични и Пневматични решения Монтана</title>
   <meta name="description" content="Хидролукс Груп предлага производство на маркучи за високо налягане, хидравлика, пневматика, фитинги, уплътнители и накрайници в град Монтана. Професионално качество от 2019 г.">
-  <link rel="stylesheet" href="css/styles.css?v=3">
+  <link rel="stylesheet" href="css/styles.css?v=5">
 </head>
 <body>
 
@@ -113,7 +113,7 @@
           <li><a class="nav-link" onclick="App.navigate('builder')">Кримпване</a></li>
           <li><a class="nav-link" onclick="App.navigate('services')">Услуги</a></li>
           <li><a class="nav-link" onclick="Cart.showToast('Изборът на марки ще бъде достъпен скоро!')">Марки</a></li>
-          <li><a class="nav-link" onclick="App.navigate('home'); setTimeout(() => { const el = document.getElementById('about-us-anchor'); if(el) el.scrollIntoView({ behavior: 'smooth' }); }, 150)">За нас</a></li>
+          <li><a class="nav-link" onclick="App.navigate('services')">За нас</a></li>
           <li><a class="nav-link" onclick="App.navigate('services')">Контакти</a></li>
         </ul>
       </nav>
@@ -300,21 +300,35 @@
           <!-- Item 1: Stock -->
           <div class="feature-bar-item-5">
             <div class="feature-bar-icon-5">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none">
+                <rect x="3" y="3" width="2" height="18" fill="#1e293b"/>
+                <rect x="19" y="3" width="2" height="18" fill="#1e293b"/>
+                <rect x="5" y="11" width="14" height="2" fill="#1e293b"/>
+                <rect x="5" y="19" width="14" height="2" fill="#1e293b"/>
+                <rect x="6" y="6" width="5" height="5" rx="1" fill="#ea580c"/>
+                <rect x="13" y="6" width="5" height="5" rx="1" fill="#ea580c"/>
+                <rect x="7" y="14" width="10" height="5" rx="1" fill="#ea580c"/>
+              </svg>
             </div>
             <div class="feature-bar-content-5">
               <h4 class="feature-bar-title-5">Голяма складова наличност</h4>
-              <span class="feature-bar-desc-5">Всичко налично и готово за доставка</span>
+              <span class="feature-bar-desc-5">Готови налични продукти за доставка</span>
             </div>
           </div>
 
           <!-- Item 2: Custom Crimping -->
           <div class="feature-bar-item-5" onclick="App.navigate('builder')" style="cursor: pointer;">
             <div class="feature-bar-icon-5">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none">
+                <circle cx="12" cy="11" r="7" stroke="#1e293b" stroke-width="2.5"/>
+                <path d="M12 4v3M12 18v-3M5 11h3M19 11h-3M7 6l2 2M17 16l-2-2M17 6l-2 2M7 16l2-2" stroke="#ea580c" stroke-width="2" stroke-linecap="round"/>
+                <rect x="8" y="9.5" width="8" height="3" rx="1" fill="#1e293b"/>
+                <path d="M12 18v3" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M9 21h6" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
             </div>
             <div class="feature-bar-content-5">
-              <h4 class="feature-bar-title-5">Кримпване по размер</h4>
+              <h4 class="feature-bar-title-5">Кримпване по поръчка</h4>
               <span class="feature-bar-desc-5">Хидравлични маркучи до DN51 (2")</span>
             </div>
           </div>
@@ -322,7 +336,13 @@
           <!-- Item 3: Fast Shipping -->
           <div class="feature-bar-item-5">
             <div class="feature-bar-icon-5">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none">
+                <path d="M2 7h5M1 11h4M3 15h3" stroke="#ea580c" stroke-width="2" stroke-linecap="round"/>
+                <rect x="8" y="5" width="10" height="11" rx="1" fill="#ea580c"/>
+                <path d="M18 8h3l2 3v5h-5V8z" fill="#1e293b"/>
+                <circle cx="10.5" cy="18.5" r="2.5" fill="#1e293b" stroke="#ffffff" stroke-width="1.5"/>
+                <circle cx="19.5" cy="18.5" r="2.5" fill="#1e293b" stroke="#ffffff" stroke-width="1.5"/>
+              </svg>
             </div>
             <div class="feature-bar-content-5">
               <h4 class="feature-bar-title-5">Бърза доставка</h4>
@@ -333,7 +353,14 @@
           <!-- Item 4: Consulting -->
           <div class="feature-bar-item-5" onclick="App.navigate('services')" style="cursor: pointer;">
             <div class="feature-bar-icon-5">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none">
+                <path d="M16 14a4 4 0 0 1-8 0v-2a4 4 0 0 1 8 0v2z" fill="#1e293b"/>
+                <path d="M6 20a6 6 0 0 1 12 0" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M7 13a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2" stroke="#ea580c" stroke-width="2" fill="none"/>
+                <rect x="5" y="11" width="3" height="4" rx="1" fill="#ea580c"/>
+                <rect x="16" y="11" width="3" height="4" rx="1" fill="#ea580c"/>
+                <path d="M17 14c0 1.5-1.5 2-2.5 2" stroke="#ea580c" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              </svg>
             </div>
             <div class="feature-bar-content-5">
               <h4 class="feature-bar-title-5">Техническа консултация</h4>
@@ -344,7 +371,12 @@
           <!-- Item 5: B2B -->
           <div class="feature-bar-item-5" onclick="App.navigate('services')" style="cursor: pointer;">
             <div class="feature-bar-icon-5">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none">
+                <circle cx="8" cy="8" r="3.5" fill="#1e293b"/>
+                <path d="M2 18a6 6 0 0 1 11.5 -2" stroke="#ffffff" stroke-width="1.5" fill="#1e293b"/>
+                <circle cx="16" cy="8" r="3.5" fill="#ea580c"/>
+                <path d="M10.5 16A6 6 0 0 1 22 18h-11.5z" fill="#ea580c"/>
+              </svg>
             </div>
             <div class="feature-bar-content-5">
               <h4 class="feature-bar-title-5">В2В условия</h4>
@@ -499,54 +531,7 @@
 
       <!-- Old features grid removed as it is replaced by the new 5-item features bar -->
 
-      <!-- 🔥 REDESIGNED HIGH-END "ABOUT US" SECTION -->
-      <div class="about-us-container mt-40" id="about-us-anchor">
-        <div class="about-us-grid">
-          
-          <div class="about-us-left card">
-            <span class="text-accent font-bold font-xs text-uppercase">КОИ СМЕ НИЕ</span>
-            <h3 class="font-large text-primary mb-15">Хидролукс Груп — Професионализъм и прецизност</h3>
-            <p class="text-muted font-small">
-              Разположен на ул. "Индустриална" 32г в гр. Монтана, <strong>„Хидролукс Груп“</strong> предлага широк спектър от услуги в областта на хидравликата и пневматиката. С дългогодишен опит в производството и поддръжката, компанията осигурява надеждни решения за тежка и лека промишленост.
-            </p>
-            <p class="text-muted font-small">
-              От 2019 година Хидролукс Груп се развива активно, увеличавайки асортимента си, за да отговори на нуждите на клиентите. Компанията поставя акцент на индивидуалните решения, които включват не само продажба, но и пълен цикъл от услуги – проектиране, изграждане и поддръжка.
-            </p>
-            <div class="about-checklist">
-              <div class="check-item"><span class="check-icon">✓</span> <span>Специализация в производството на индустриални и хидравлични маркучи</span></div>
-              <div class="check-item"><span class="check-icon">✓</span> <span>Компоненти за високо налягане, фитинги, уплътнители и цилиндри</span></div>
-              <div class="check-item"><span class="check-icon">✓</span> <span>Професионализъм на екипа и изключително внимание към детайла</span></div>
-            </div>
-          </div>
-
-          <div class="about-us-right">
-            <div class="stats-metric-grid">
-              <div class="metric-card card">
-                <div class="metric-num text-primary">2019</div>
-                <div class="metric-label font-xs text-muted">ГОДИНА НА СТАРТ</div>
-              </div>
-              <div class="metric-card card">
-                <div class="metric-num text-accent">5+</div>
-                <div class="metric-label font-xs text-muted">ГОДИНИ ОПИТ</div>
-              </div>
-              <div class="metric-card card">
-                <div class="metric-num text-primary">10K+</div>
-                <div class="metric-label font-xs text-muted">КЛИЕНТСКИ РЕШЕНИЯ</div>
-              </div>
-              <div class="metric-card card">
-                <div class="metric-num text-accent">100%</div>
-                <div class="metric-label font-xs text-muted">КОНТРОЛ НА КАЧЕСТВОТО</div>
-              </div>
-            </div>
-            <div class="quality-badge-panel card text-center mt-20">
-              <div class="quality-badge-icon">🏆</div>
-              <h4>Надежден партньор в индустриалния сектор</h4>
-              <p class="text-muted font-xs">Вниманието към детайла гарантира, че всеки проект се изпълнява с абсолютна точност. Свържете се с нас в Монтана за професионални услуги.</p>
-            </div>
-          </div>
-          
-        </div>
-      </div>
+      <!-- REDESIGNED HIGH-END "ABOUT US" SECTION REMOVED -->
       </div> <!-- end of container -->
     </section>
 
