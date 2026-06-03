@@ -655,6 +655,12 @@ const Admin = {
         const subObj = catObj.subcategories.find(s => s.id === p.subcategory);
         if (subObj) {
           catDisplay += ` / ${subObj.name}`;
+          if (p.subsubcategory && subObj.subcategories) {
+            const subsubObj = subObj.subcategories.find(ss => ss.id === p.subsubcategory);
+            if (subsubObj) {
+              catDisplay += ` / ${subsubObj.name}`;
+            }
+          }
         }
       }
       const thumb = p.images && p.images[0] ? p.images[0] : "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop";
@@ -758,6 +764,12 @@ const Admin = {
             <div class="form-group" id="prod-subcategory-group" style="display: none;">
               <label>Подкатегория</label>
               <select id="prod-subcategory" class="form-control">
+                <!-- Populated dynamically -->
+              </select>
+            </div>
+            <div class="form-group" id="prod-subsubcategory-group" style="display: none;">
+              <label>Под-подкатегория</label>
+              <select id="prod-subsubcategory" class="form-control">
                 <!-- Populated dynamically -->
               </select>
             </div>
@@ -912,6 +924,12 @@ const Admin = {
         const subObj = catObj.subcategories.find(s => s.id === p.subcategory);
         if (subObj) {
           catDisplay += ` / ${subObj.name}`;
+          if (p.subsubcategory && subObj.subcategories) {
+            const subsubObj = subObj.subcategories.find(ss => ss.id === p.subsubcategory);
+            if (subsubObj) {
+              catDisplay += ` / ${subsubObj.name}`;
+            }
+          }
         }
       }
       const thumb = p.images && p.images[0] ? p.images[0] : "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop";
@@ -1275,15 +1293,21 @@ const Admin = {
       });
     }
 
-    // Populate Category + Subcategory selectors
+    // Populate Category + Subcategory + Sub-subcategory selectors
     const catSelect = document.getElementById("prod-category");
-    if (catSelect) {
+    const subSelect = document.getElementById("prod-subcategory");
+    if (catSelect && subSelect) {
       const isEditing = this.editingProduct !== null;
       const initialSubId = isEditing ? this.editingProduct.subcategory : null;
-      this.handleProductCategoryChange(catSelect.value, initialSubId);
+      const initialSubSubId = isEditing ? this.editingProduct.subsubcategory : null;
+      this.handleProductCategoryChange(catSelect.value, initialSubId, initialSubSubId);
       
       catSelect.addEventListener("change", (e) => {
         this.handleProductCategoryChange(e.target.value);
+      });
+
+      subSelect.addEventListener("change", (e) => {
+        this.handleProductSubcategoryChange(catSelect.value, e.target.value);
       });
     }
 
@@ -1549,6 +1573,7 @@ const Admin = {
     const code = document.getElementById("prod-code").value.trim();
     const category = document.getElementById("prod-category").value;
     const subcategory = document.getElementById("prod-subcategory") ? document.getElementById("prod-subcategory").value : "";
+    const subsubcategory = document.getElementById("prod-subsubcategory") ? document.getElementById("prod-subsubcategory").value : "";
     const brand = document.getElementById("prod-brand").value.trim();
 
     // JS-based validation for required core fields (replaces silent HTML5 blocks)
@@ -1607,6 +1632,7 @@ const Admin = {
           target.code = code;
           target.category = category;
           target.subcategory = subcategory;
+          target.subsubcategory = subsubcategory;
           target.brand = brand;
           target.description = description;
           target.tags = tags;
@@ -1648,6 +1674,7 @@ const Admin = {
         name,
         category,
         subcategory,
+        subsubcategory,
         brand,
         rating: 5.0,
         reviewsCount: 1,
@@ -1781,7 +1808,10 @@ const Admin = {
     const cat = CONFIG.categories.find(c => c.id === catId);
     if (cat) {
       this.editingCategory = cat;
-      this.tempSubcategories = cat.subcategories ? cat.subcategories.map(s => ({ ...s })) : [];
+      this.tempSubcategories = cat.subcategories ? cat.subcategories.map(s => ({
+        ...s,
+        subcategories: s.subcategories ? s.subcategories.map(ss => ({ ...ss })) : []
+      })) : [];
       this.render();
       window.scrollTo({ top: 150, behavior: "smooth" });
     }
@@ -2004,7 +2034,7 @@ const Admin = {
     }
   },
 
-  handleProductCategoryChange(catId, selectedSubId = null) {
+  handleProductCategoryChange(catId, selectedSubId = null, selectedSubSubId = null) {
     const subGroup = document.getElementById("prod-subcategory-group");
     const subSelect = document.getElementById("prod-subcategory");
     if (!subGroup || !subSelect) return;
@@ -2018,10 +2048,41 @@ const Admin = {
           <option value="${sub.id}" ${selectedSubId === sub.id ? 'selected' : ''}>${sub.name}</option>
         `).join("")}
       `;
+      this.handleProductSubcategoryChange(catId, selectedSubId || subSelect.value, selectedSubSubId);
     } else {
       subGroup.style.display = "none";
       subSelect.innerHTML = "";
+      this.handleProductSubcategoryChange(catId, "", null);
     }
+  },
+
+  handleProductSubcategoryChange(catId, subId, selectedSubSubId = null) {
+    const subsubGroup = document.getElementById("prod-subsubcategory-group");
+    const subsubSelect = document.getElementById("prod-subsubcategory");
+    if (!subsubGroup || !subsubSelect) return;
+
+    if (!catId || !subId) {
+      subsubGroup.style.display = "none";
+      subsubSelect.innerHTML = "";
+      return;
+    }
+
+    const cat = CONFIG.categories.find(c => c.id === catId);
+    if (cat && cat.subcategories) {
+      const sub = cat.subcategories.find(s => s.id === subId);
+      if (sub && sub.subcategories && sub.subcategories.length > 0) {
+        subsubGroup.style.display = "block";
+        subsubSelect.innerHTML = `
+          <option value="">-- Изберете под-подкатегория (по избор) --</option>
+          ${sub.subcategories.map(subsub => `
+            <option value="${subsub.id}" ${selectedSubSubId === subsub.id ? 'selected' : ''}>${subsub.name}</option>
+          `).join("")}
+        `;
+        return;
+      }
+    }
+    subsubGroup.style.display = "none";
+    subsubSelect.innerHTML = "";
   },
 
   renderSubcategoriesList() {
@@ -2033,12 +2094,35 @@ const Admin = {
       return;
     }
 
-    listContainer.innerHTML = this.tempSubcategories.map(sub => `
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 12px; background-color: #f1f5f9; border-radius: 6px; font-size: 0.85rem; margin-bottom: 5px;">
-        <span><strong>${sub.name}</strong></span>
-        <button type="button" class="btn-icon-danger" onclick="Admin.deleteSubcategory('${sub.id}')" style="width: 24px; height: 24px; font-size: 0.8rem; line-height: 1; padding: 0;">✕</button>
-      </div>
-    `).join("");
+    listContainer.innerHTML = this.tempSubcategories.map(sub => {
+      const nestedList = (sub.subcategories || []).map(ss => `
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 4px 8px; background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 0.8rem; margin-bottom: 4px;">
+          <span>📄 ${ss.name}</span>
+          <button type="button" class="btn-icon-danger" onclick="Admin.deleteSubSubcategory('${sub.id}', '${ss.id}')" style="width: 20px; height: 20px; font-size: 0.75rem; line-height: 1; padding: 0; display: flex; align-items: center; justify-content: center;">✕</button>
+        </div>
+      `).join("");
+
+      return `
+        <div style="background-color: #f1f5f9; border-radius: 8px; padding: 12px; margin-bottom: 10px; border: 1px solid #cbd5e1;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <span style="font-weight: 700; font-size: 0.9rem; color: var(--primary);">📂 ${sub.name}</span>
+            <button type="button" class="btn-admin-action btn-admin-danger" onclick="Admin.deleteSubcategory('${sub.id}')" style="padding: 4px 8px; font-size: 0.75rem; border-radius: 6px;">✕ Изтрий</button>
+          </div>
+          
+          <!-- Nested Sub-subcategories list -->
+          <div style="padding-left: 15px; border-left: 2px solid var(--accent); margin-bottom: 8px;">
+            <div style="font-size: 0.75rem; font-weight: bold; text-transform: uppercase; color: #64748b; margin-bottom: 6px;">Под-подкатегории:</div>
+            ${nestedList || `<span class="text-muted font-xs" style="font-style: italic; display: block; margin-bottom: 4px;">Няма въведени под-подкатегории.</span>`}
+          </div>
+
+          <!-- Add Nested Sub-subcategory form -->
+          <div style="display: flex; gap: 8px; align-items: center; padding-left: 15px;">
+            <input type="text" id="new-subsubcategory-name-${sub.id}" class="form-control" placeholder="Име на под-подкатегория" style="height: 30px; font-size: 0.8rem; padding: 4px 8px; margin: 0;">
+            <button type="button" class="btn btn-secondary btn-small" onclick="Admin.addSubSubcategory('${sub.id}')" style="white-space: nowrap; height: 30px; font-size: 0.75rem; padding: 0 12px;">+ Добави</button>
+          </div>
+        </div>
+      `;
+    }).join("");
   },
 
   addSubcategory() {
@@ -2059,7 +2143,7 @@ const Admin = {
       }) + "-" + Math.floor(1000 + Math.random() * 9000);
 
     if (!this.tempSubcategories) this.tempSubcategories = [];
-    this.tempSubcategories.push({ id: subId, name });
+    this.tempSubcategories.push({ id: subId, name, subcategories: [] });
     input.value = "";
     this.renderSubcategoriesList();
   },
@@ -2067,6 +2151,41 @@ const Admin = {
   deleteSubcategory(subId) {
     if (this.tempSubcategories) {
       this.tempSubcategories = this.tempSubcategories.filter(s => s.id !== subId);
+      this.renderSubcategoriesList();
+    }
+  },
+
+  addSubSubcategory(subId) {
+    const input = document.getElementById(`new-subsubcategory-name-${subId}`);
+    if (!input) return;
+    const name = input.value.trim();
+    if (!name) return;
+
+    // Find the subcategory
+    const sub = this.tempSubcategories.find(s => s.id === subId);
+    if (!sub) return;
+
+    // Generate unique ID for sub-subcategory
+    const subsubId = "subsub-" + name.toLowerCase()
+      .replace(/[^а-яa-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "")
+      .replace(/[а-я]/g, m => {
+        const cyr = "абвгдежзийклмнопрстуфхцчшщъьюя";
+        const lat = ["a","b","v","g","d","e","zh","z","i","y","k","l","m","n","o","p","r","s","t","u","f","h","ts","ch","sh","sht","a","y","yu","ya"];
+        const idx = cyr.indexOf(m);
+        return idx > -1 ? lat[idx] : m;
+      }) + "-" + Math.floor(1000 + Math.random() * 9000);
+
+    if (!sub.subcategories) sub.subcategories = [];
+    sub.subcategories.push({ id: subsubId, name });
+    input.value = "";
+    this.renderSubcategoriesList();
+  },
+
+  deleteSubSubcategory(subId, subsubId) {
+    const sub = this.tempSubcategories.find(s => s.id === subId);
+    if (sub && sub.subcategories) {
+      sub.subcategories = sub.subcategories.filter(ss => ss.id !== subsubId);
       this.renderSubcategoriesList();
     }
   }

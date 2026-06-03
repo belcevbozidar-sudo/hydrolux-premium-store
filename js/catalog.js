@@ -2,6 +2,7 @@
 const Catalog = {
   activeCategory: null,
   activeSubcategory: null,
+  activeSubSubcategory: null,
   searchQuery: "",
   filterBrand: "",
   filterSize: "",
@@ -28,6 +29,7 @@ const Catalog = {
 
     // Render subcategories grid below main grid if selected category has any subcategories
     let subHtml = "";
+    let subsubHtml = "";
     if (this.activeCategory) {
       const activeCatObj = CONFIG.categories.find(c => c.id === this.activeCategory);
       if (activeCatObj && activeCatObj.subcategories && activeCatObj.subcategories.length > 0) {
@@ -46,10 +48,31 @@ const Catalog = {
             </div>
           </div>
         `;
+
+        if (this.activeSubcategory) {
+          const activeSubObj = activeCatObj.subcategories.find(s => s.id === this.activeSubcategory);
+          if (activeSubObj && activeSubObj.subcategories && activeSubObj.subcategories.length > 0) {
+            subsubHtml = `
+              <div class="catalog-subcategories-bar animate-fade-in" style="margin-top: 15px; border-top: 1px dashed #cbd5e1; padding-top: 15px; width: 100%;">
+                <div style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; color: #64748b; letter-spacing: 0.5px; margin-bottom: 10px;">Под-подкатегории:</div>
+                <div class="catalog-subcategories-grid">
+                  <button class="subcategory-tag-btn ${!this.activeSubSubcategory ? 'active' : ''}" onclick="Catalog.selectSubSubcategory('')">
+                    Всички под-подкатегории
+                  </button>
+                  ${activeSubObj.subcategories.map(subsub => `
+                    <button class="subcategory-tag-btn ${this.activeSubSubcategory === subsub.id ? 'active' : ''}" onclick="Catalog.selectSubSubcategory('${subsub.id}')">
+                      ${subsub.name}
+                    </button>
+                  `).join("")}
+                </div>
+              </div>
+            `;
+          }
+        }
       }
     }
 
-    container.innerHTML = catHtml + subHtml;
+    container.innerHTML = catHtml + subHtml + subsubHtml;
     this.renderSpecsFilters();
   },
 
@@ -123,6 +146,7 @@ const Catalog = {
   selectCategory(catId) {
     this.activeCategory = catId || null;
     this.activeSubcategory = null; // Clear subcategory filter when changing category
+    this.activeSubSubcategory = null; // Clear sub-subcategory filter when changing category
     
     if (App.currentView !== "catalog") {
       App.navigate("catalog");
@@ -134,6 +158,13 @@ const Catalog = {
 
   selectSubcategory(subId) {
     this.activeSubcategory = subId || null;
+    this.activeSubSubcategory = null; // Clear sub-subcategory filter when changing subcategory
+    this.renderSidebar();
+    this.applyFiltersAndRender();
+  },
+
+  selectSubSubcategory(subsubId) {
+    this.activeSubSubcategory = subsubId || null;
     this.renderSidebar();
     this.applyFiltersAndRender();
   },
@@ -141,6 +172,7 @@ const Catalog = {
   resetFilters() {
     this.activeCategory = null;
     this.activeSubcategory = null;
+    this.activeSubSubcategory = null;
     this.searchQuery = "";
     this.filterBrand = "";
     this.filterSize = "";
@@ -165,6 +197,9 @@ const Catalog = {
 
       // 2. Subcategory check
       if (this.activeSubcategory && p.subcategory !== this.activeSubcategory) return false;
+
+      // 2.5. Sub-subcategory check
+      if (this.activeSubSubcategory && p.subsubcategory !== this.activeSubSubcategory) return false;
 
       // 3. Search check
       if (this.searchQuery) {
@@ -266,11 +301,24 @@ const Catalog = {
     const breadcrumb = document.getElementById("product-detail-breadcrumb");
     if (breadcrumb) {
       const cat = CONFIG.categories.find(c => c.id === product.category);
-      breadcrumb.innerHTML = `
-        <a onclick="App.navigate('home')">Начало</a> › 
-        <a onclick="Catalog.selectCategory('${cat.id}'); App.navigate('catalog')">${cat.name}</a> › 
-        <span class="text-muted">${product.name}</span>
-      `;
+      let breadcrumbHtml = `<a onclick="App.navigate('home')">Начало</a>`;
+      if (cat) {
+        breadcrumbHtml += ` › <a onclick="Catalog.selectCategory('${cat.id}'); App.navigate('catalog')">${cat.name}</a>`;
+        if (product.subcategory && cat.subcategories) {
+          const subObj = cat.subcategories.find(s => s.id === product.subcategory);
+          if (subObj) {
+            breadcrumbHtml += ` › <a onclick="Catalog.selectCategory('${cat.id}'); Catalog.selectSubcategory('${subObj.id}'); App.navigate('catalog')">${subObj.name}</a>`;
+            if (product.subsubcategory && subObj.subcategories) {
+              const subsubObj = subObj.subcategories.find(ss => ss.id === product.subsubcategory);
+              if (subsubObj) {
+                breadcrumbHtml += ` › <a onclick="Catalog.selectCategory('${cat.id}'); Catalog.selectSubcategory('${subObj.id}'); Catalog.selectSubSubcategory('${subsubObj.id}'); App.navigate('catalog')">${subsubObj.name}</a>`;
+              }
+            }
+          }
+        }
+      }
+      breadcrumbHtml += ` › <span class="text-muted">${product.name}</span>`;
+      breadcrumb.innerHTML = breadcrumbHtml;
     }
 
     // Set title and brand
