@@ -90,30 +90,6 @@ const HoseBuilder = {
         <div class="builder-graphic-column">
           <div class="hose-cutaway-container">
             <img src="assets/hose_cutaway.png" alt="Hydraulic Hose Cutaway" class="hose-cutaway-img">
-            
-            <!-- Interactive glowing hot spots and pointer labels -->
-            <div class="pointer-label label-inner" style="top: 45%; left: 8%;">
-              <span class="label-text">ВЪТРЕШЕН СЛОЙ</span>
-              <div class="pointer-line" style="height: 25px; transform: rotate(45deg); margin-left: 20px;"></div>
-              <div class="pointer-dot" style="margin-left: 38px;"></div>
-            </div>
-            
-            <div class="pointer-label label-braid" style="top: 25%; left: 32%;">
-              <span class="label-text">АРМИРОВКА</span>
-              <div class="pointer-line" style="height: 35px; transform: rotate(20deg); margin-left: 10px;"></div>
-              <div class="pointer-dot" style="margin-left: 20px;"></div>
-            </div>
-            
-            <div class="pointer-label label-outer" style="top: 50%; left: 70%;">
-              <span class="label-text">ВЪНШЕН СЛОЙ</span>
-              <div class="pointer-line" style="height: 20px; transform: rotate(-35deg); margin-right: 15px; float: right;"></div>
-              <div class="pointer-dot" style="margin-right: 25px; clear: both; float: right; margin-top: 5px;"></div>
-            </div>
-            
-            <div class="pointer-label label-flex" style="top: 76%; left: 38%;">
-              <div class="pointer-dot" style="margin-bottom: 5px; margin-left: 12px;"></div>
-              <span class="label-text">360° ГЪВКАВОСТ</span>
-            </div>
           </div>
         </div>
 
