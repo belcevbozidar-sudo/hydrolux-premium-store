@@ -17,7 +17,8 @@
       <div class="header-top-left">
         <div class="header-top-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
-          <span>Бърза доставка в цяла България</span>
+          <span class="desktop-only">Бърза доставка в цяла България</span>
+          <span class="mobile-only">Бърза доставка до 24 часа</span>
         </div>
         <span class="header-top-divider">|</span>
         <div class="header-top-item">
@@ -31,9 +32,13 @@
         </div>
       </div>
       <div class="header-top-right">
-        <a href="tel:+359892484337">
+        <a href="tel:+359892484337" class="desktop-only">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
           <span>0892 484 337</span>
+        </a>
+        <a href="tel:0888123456" class="mobile-only">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>0888 123 456</span>
         </a>
         <span class="header-top-divider">|</span>
         <a href="mailto:hydroluxgroup@gmail.com">
@@ -152,7 +157,7 @@
                 </div>
                 <div class="benefit-item">
                   <span class="benefit-icon">✓</span>
-                  <span>Доставка до 48 часа</span>
+                  <span>Доставка до 24 часа</span>
                 </div>
                 <div class="benefit-item">
                   <span class="benefit-icon">✓</span>
@@ -200,6 +205,9 @@
           <div class="category-card-6" onclick="Catalog.selectCategory('high-pressure-hoses'); App.navigate('catalog')">
             <div class="category-card-6-img-wrapper">
               <img src="assets/card_hydraulic_hoses.png?v=4" alt="Хидравлични маркучи">
+              <div class="category-card-6-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              </div>
             </div>
             <div class="category-card-6-body">
               <h3 class="category-card-6-title">Хидравлични маркучи</h3>
@@ -213,6 +221,9 @@
           <div class="category-card-6" onclick="Catalog.selectCategory('air-hoses'); App.navigate('catalog')">
             <div class="category-card-6-img-wrapper">
               <img src="assets/card_industrial_hoses.png?v=4" alt="Индустриални маркучи">
+              <div class="category-card-6-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path><path d="M12 12L16 8"></path></svg>
+              </div>
             </div>
             <div class="category-card-6-body">
               <h3 class="category-card-6-title">Индустриални маркучи</h3>
@@ -226,6 +237,9 @@
           <div class="category-card-6" onclick="Catalog.selectCategory('pneumatic-tubes'); App.navigate('catalog')">
             <div class="category-card-6-img-wrapper">
               <img src="assets/card_pneumatic_systems.png?v=4" alt="Пневматични системи">
+              <div class="category-card-6-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
+              </div>
             </div>
             <div class="category-card-6-body">
               <h3 class="category-card-6-title">Пневматични системи</h3>
@@ -239,6 +253,9 @@
           <div class="category-card-6" onclick="Catalog.selectCategory('pneumatic-fittings'); App.navigate('catalog')">
             <div class="category-card-6-img-wrapper">
               <img src="assets/card_fittings_adapters.png?v=4" alt="Фитинги и адаптери">
+              <div class="category-card-6-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8.66 5v10L12 22l-8.66-5V7z"></path><circle cx="12" cy="12" r="5"></circle></svg>
+              </div>
             </div>
             <div class="category-card-6-body">
               <h3 class="category-card-6-title">Фитинги и адаптери</h3>
@@ -252,6 +269,9 @@
           <div class="category-card-6" onclick="Catalog.selectCategory('pneumatic-fittings'); App.navigate('catalog')">
             <div class="category-card-6-img-wrapper">
               <img src="assets/card_quick_couplings.png?v=4" alt="Бързи връзки и съединения">
+              <div class="category-card-6-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              </div>
             </div>
             <div class="category-card-6-body">
               <h3 class="category-card-6-title">Бързи връзки и съединения</h3>
@@ -265,6 +285,9 @@
           <div class="category-card-6" onclick="Catalog.selectCategory('fuel-oil-hoses'); App.navigate('catalog')">
             <div class="category-card-6-img-wrapper">
               <img src="assets/card_hoses_by_application.png?v=4" alt="Маркучи по приложение">
+              <div class="category-card-6-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><path d="M9 3v18"></path><path d="M15 3v18"></path><path d="M3 9h18"></path><path d="M3 15h18"></path></svg>
+              </div>
             </div>
             <div class="category-card-6-body">
               <h3 class="category-card-6-title">Маркучи по приложение</h3>
@@ -294,7 +317,7 @@
             </div>
             <div class="feature-bar-content-5">
               <h4 class="feature-bar-title-5">Голяма складова наличност</h4>
-              <span class="feature-bar-desc-5">Готови налични продукти за доставка</span>
+              <span class="feature-bar-desc-5">Всички налични продукти са на склад</span>
             </div>
           </div>
 
@@ -328,7 +351,7 @@
             </div>
             <div class="feature-bar-content-5">
               <h4 class="feature-bar-title-5">Бърза доставка</h4>
-              <span class="feature-bar-desc-5">До 48 часа в цялата страна</span>
+              <span class="feature-bar-desc-5">До 24 часа в цялата страна</span>
             </div>
           </div>
 
@@ -346,7 +369,7 @@
             </div>
             <div class="feature-bar-content-5">
               <h4 class="feature-bar-title-5">Техническа консултация</h4>
-              <span class="feature-bar-desc-5">Експертна помощ при избор</span>
+              <span class="feature-bar-desc-5">Експертна помощ при избор и приложение</span>
             </div>
           </div>
 
@@ -374,7 +397,7 @@
       <div class="popular-section mt-40">
         <div class="section-header-popular">
           <h2>Популярни продукти</h2>
-          <a class="view-all-link" onclick="Catalog.selectCategory(''); App.navigate('catalog')">Виж всички продукти ➔</a>
+          <a class="view-all-link" onclick="Catalog.selectCategory(''); App.navigate('catalog')"><span class="desktop-only">Виж всички продукти ➔</span><span class="mobile-only">Виж всички ➔</span></a>
         </div>
         
         <div class="popular-layout">
@@ -502,7 +525,13 @@
             </svg>
             Изпрати запитване
           </button>
-          <a href="tel:0892484337" class="btn btn-cta-solid">
+          <a href="tel:0892484337" class="btn btn-cta-solid desktop-only">
+            <svg viewBox="0 0 24 24" width="18" height="18" class="cta-icon">
+              <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4.01c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.59c0-.55-.45-1-1-1z" fill="currentColor"/>
+            </svg>
+            Свържи се с нас
+          </a>
+          <a href="tel:0888123456" class="btn btn-cta-solid mobile-only">
             <svg viewBox="0 0 24 24" width="18" height="18" class="cta-icon">
               <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4.01c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.59c0-.55-.45-1-1-1z" fill="currentColor"/>
             </svg>

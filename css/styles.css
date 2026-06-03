@@ -3593,3 +3593,312 @@ td .admin-actions-cell {
     gap: 10px;
   }
 }
+
+
+/* ==========================================================================
+   MOBILE HOMEPAGE STYLE ALIGNMENT OVERRIDES (Mockup Matches 1:1)
+   ========================================================================== */
+
+/* Utility classes for responsive text switching */
+.mobile-only {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+  .mobile-only {
+    display: inline-block !important;
+  }
+  
+  /* Header Top Bar Mobile Styles */
+  .header-top {
+    display: block !important;
+    padding: 6px 0 !important;
+    background-color: #061c36 !important;
+  }
+  .header-top .container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0 15px !important;
+  }
+  .header-top-left {
+    display: flex !important;
+    gap: 0 !important;
+  }
+  .header-top-left .header-top-item:not(:first-child),
+  .header-top-left .header-top-divider {
+    display: none !important;
+  }
+  .header-top-right {
+    display: flex !important;
+    justify-content: flex-end !important;
+    width: auto !important;
+    gap: 0 !important;
+  }
+  .header-top-right a:not(.mobile-only),
+  .header-top-right .header-top-divider {
+    display: none !important;
+  }
+  .header-top-right a.mobile-only {
+    display: flex !important;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    gap: 6px;
+  }
+
+  /* Header main button overrides */
+  .header-actions .header-action-btn:nth-child(2) {
+    display: none !important; /* Hide Wishlist on mobile */
+  }
+  
+  /* Categories list bar overrides */
+  .categories-nav-trigger {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    background-color: #f8fafc !important;
+    border: 1.5px solid #cbd5e1 !important;
+    padding: 12px 16px !important;
+    border-radius: 8px !important;
+    font-size: 0.9rem !important;
+  }
+  .categories-nav-trigger .caret-down {
+    margin-left: auto !important;
+  }
+  .mobile-menu-btn {
+    display: none !important; /* Hide hamburger menu icon as per mockup */
+  }
+
+  /* Hero Section card formatting */
+  .modern-hero-section {
+    width: calc(100% - 20px) !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    left: 0 !important;
+    right: 0 !important;
+    border-radius: 16px !important;
+    padding: 30px 20px !important;
+    min-height: auto !important;
+    background-position: 80% center !important;
+  }
+  .hero-bg-overlay {
+    background: linear-gradient(90deg, rgba(6, 28, 54, 0.96) 0%, rgba(6, 28, 54, 0.85) 50%, rgba(6, 28, 54, 0.4) 100%) !important;
+    border-radius: 16px !important;
+  }
+  .hero-container {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  .hero-left {
+    align-items: flex-start !important;
+    text-align: left !important;
+    max-width: 100% !important;
+  }
+  .hero-title {
+    font-size: 1.6rem !important;
+    text-align: left !important;
+  }
+  .hero-subtitle {
+    font-size: 0.85rem !important;
+    text-align: left !important;
+    line-height: 1.4 !important;
+  }
+  .hero-benefits-grid {
+    grid-template-columns: 1fr !important;
+    justify-items: start !important;
+    gap: 8px !important;
+  }
+  .hero-buttons {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 10px !important;
+    padding: 0 !important;
+  }
+  .hero-buttons .btn {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  .hero-right {
+    display: none !important; /* Hide badge on mobile */
+  }
+
+  /* 6 Categories Grid mobile alignment */
+  .home-categories-grid-6 {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    margin-top: -20px !important;
+    margin-bottom: 25px !important;
+    padding: 0 10px !important;
+  }
+  
+  /* Category card overlays style reinstatement */
+  .category-card-6-icon {
+    display: flex !important;
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #081c36;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 5;
+  }
+  .category-card-6-icon svg {
+    width: 12px;
+    height: 12px;
+    stroke: #ffffff;
+    stroke-width: 2.5;
+    fill: none;
+    display: block;
+  }
+  .category-card-6-body {
+    padding: 10px 8px 6px 8px !important;
+  }
+  .category-card-6-title {
+    font-size: 0.82rem !important;
+    font-weight: 700 !important;
+    height: 32px !important;
+    line-height: 1.2 !important;
+  }
+  .category-card-6-footer {
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+
+  /* Features vertical list overrides */
+  .home-features-bar-5 {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+    padding: 0 10px !important;
+    border-top: 1px solid #f1f5f9;
+  }
+  .feature-bar-item-5 {
+    border: none !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 14px 0 !important;
+    background-color: transparent !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 15px !important;
+  }
+  .feature-bar-item-5:last-child {
+    border-bottom: none !important;
+  }
+  .feature-bar-icon-5 {
+    background: none !important;
+    border: none !important;
+    width: 32px !important;
+    height: 32px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .feature-bar-icon-5 svg {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .feature-bar-title-5 {
+    font-size: 0.88rem !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+  }
+  .feature-bar-desc-5 {
+    font-size: 0.78rem !important;
+    color: #64748b !important;
+  }
+
+  /* Popular Products 2-Column Grid on Mobile */
+  .popular-layout .products-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    padding: 0 !important;
+  }
+  .popular-layout .product-card {
+    padding: 10px !important;
+    border-radius: 8px !important;
+  }
+  .popular-layout .product-card-img-wrapper {
+    height: 120px !important;
+    margin-bottom: 8px !important;
+  }
+  .popular-layout .product-card-title {
+    font-size: 0.82rem !important;
+    height: 34px !important;
+    line-height: 1.25 !important;
+    margin-bottom: 8px !important;
+  }
+  .spec-item {
+    font-size: 0.72rem !important;
+    gap: 4px !important;
+  }
+  .spec-checkmark {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 6px !important;
+    height: 6px !important;
+    border: 1.5px solid #ea580c !important;
+    border-radius: 50% !important;
+    color: transparent !important;
+    font-size: 0 !important;
+    margin-right: 6px !important;
+    flex-shrink: 0 !important;
+  }
+  .spec-label {
+    margin-right: 2px !important;
+  }
+  .btn-buy-now {
+    padding: 8px 10px !important;
+    font-size: 0.78rem !important;
+    margin-top: 10px !important;
+    gap: 4px !important;
+  }
+  
+  /* CTA Banner Style overrides */
+  .cta-banner {
+    padding: 24px 20px !important;
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+  .cta-banner-content {
+    text-align: left !important;
+    max-width: 100% !important;
+  }
+  .cta-banner-content h3 {
+    font-size: 1.35rem !important;
+    text-align: left !important;
+  }
+  .cta-banner-content p {
+    font-size: 0.85rem !important;
+    text-align: left !important;
+  }
+  .cta-banner-buttons {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100% !important;
+    gap: 10px !important;
+    margin-top: 15px !important;
+  }
+  .cta-banner-buttons .btn {
+    flex: 1 !important;
+    width: 50% !important;
+    padding: 10px 8px !important;
+    font-size: 0.76rem !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+  }
+}
