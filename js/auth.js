@@ -68,6 +68,11 @@ const Auth = {
       localStorage.removeItem("hydrolux_user");
     }
     this.updateHeaderUI();
+
+    // If currently on checkout page, re-render the summary to update the optional login prompt
+    if (typeof Cart !== "undefined" && typeof App !== "undefined" && App.currentView === "checkout") {
+      Cart.renderCheckoutSummary();
+    }
   },
 
   updateHeaderUI() {

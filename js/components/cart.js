@@ -257,6 +257,24 @@ const Cart = {
     if (!container) return;
 
     const totals = this.getTotal();
+    const isUserLoggedIn = typeof Auth !== "undefined" && Auth.currentUser;
+
+    let authPromptHtml = "";
+    if (!isUserLoggedIn) {
+      authPromptHtml = `
+        <div class="checkout-auth-prompt mt-20" style="padding: 16px; background-color: #f8fafc; border: 1.5px dashed #cbd5e1; border-radius: 8px; text-align: center;">
+          <p class="font-small text-muted-dark mb-10" style="font-weight: 500; line-height: 1.4;">
+            Имате акаунт? Влезте в него за по-лесно проследяване на поръчките си.
+          </p>
+          <div style="display: flex; gap: 8px; justify-content: center;">
+            <button type="button" class="btn btn-secondary font-small" onclick="Auth.showAuthModal('login')" style="padding: 6px 12px; font-size: 0.82rem; font-weight: 700;">Вход</button>
+            <button type="button" class="btn btn-primary font-small" onclick="Auth.showAuthModal('register')" style="padding: 6px 12px; font-size: 0.82rem; font-weight: 700; background-color: var(--accent);">Регистрация</button>
+          </div>
+          <p class="font-xs text-muted mt-10" style="margin-bottom: 0;">* Влизането не е задължително за завършване на поръчката</p>
+        </div>
+      `;
+    }
+
     container.innerHTML = `
       <div class="checkout-summary-card">
         <h4>📦 Обобщение на поръчката</h4>
@@ -282,6 +300,7 @@ const Cart = {
             <span>${(totals.eur * 0.2).toFixed(2)} € (${(totals.eur * 0.2 * 1.95583).toFixed(2)} лв.)</span>
           </div>
         </div>
+        ${authPromptHtml}
       </div>
     `;
   },

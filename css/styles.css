@@ -376,9 +376,10 @@ p {
 .header-main {
   background-color: #ffffff;
   padding: 10px 0;
-  z-index: 100;
+  z-index: 1200; /* Increased to ensure it layers above all page elements */
   position: relative;
   border-bottom: 1px solid #f1f5f9;
+  overflow: visible !important;
 }
 
 .header-main .container {
@@ -386,6 +387,7 @@ p {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  overflow: visible !important;
 }
 
 .logo-link {
