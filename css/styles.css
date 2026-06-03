@@ -312,8 +312,8 @@ p {
    ========================================================================== */
 .header-top {
   background-color: #081c36;
-  font-size: 0.76rem;
-  padding: 6px 0;
+  font-size: 0.72rem;
+  padding: 4px 0;
   color: #ffffff;
   border-bottom: none;
 }
@@ -355,6 +355,11 @@ p {
   display: flex;
   align-items: center;
   gap: 6px;
+  white-space: nowrap;
+}
+.header-top-right a[href^="tel"] {
+  font-size: 0.7rem;
+  font-weight: 600;
 }
 
 .header-top-right a:hover {
@@ -644,7 +649,7 @@ p {
   position: relative;
   min-height: 420px;
   padding: 35px 0;
-  background-image: url('../assets/hero_hoses.png');
+  background-image: url('../assets/hero_bg.png');
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
@@ -1056,6 +1061,10 @@ p {
   .modern-hero-section {
     min-height: auto;
     padding: 40px 0;
+    background-position: 70% center;
+  }
+  .hero-bg-overlay {
+    background: linear-gradient(180deg, rgba(6, 28, 54, 0.95) 0%, rgba(6, 28, 54, 0.85) 60%, rgba(6, 28, 54, 0.7) 100%) !important;
   }
   .hero-benefits-grid {
     justify-content: center;
@@ -2284,7 +2293,16 @@ footer {
 
 @media (max-width: 768px) {
   .header-top {
-    display: none; /* Hide top bar on mobile for cleaner spacing */
+    display: block !important;
+    padding: 4px 0 !important;
+  }
+  .header-top-left {
+    display: none !important;
+  }
+  .header-top-right {
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
   }
 
   .header-main {
@@ -2382,8 +2400,8 @@ footer {
   }
 
   .header-top {
-    padding: 3px 0 !important;
-    font-size: 0.7rem !important;
+    padding: 4px 0 !important;
+    font-size: 0.68rem !important;
   }
 }
 
