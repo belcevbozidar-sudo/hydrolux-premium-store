@@ -16,9 +16,12 @@ const Admin = {
   },
 
   injectStyles() {
-    if (document.getElementById("admin-custom-styles")) return;
-    const style = document.createElement("style");
-    style.id = "admin-custom-styles";
+    let style = document.getElementById("admin-custom-styles");
+    if (!style) {
+      style = document.createElement("style");
+      style.id = "admin-custom-styles";
+      document.head.appendChild(style);
+    }
     style.innerHTML = `
       .admin-container {
         display: grid;
