@@ -671,7 +671,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(6, 28, 54, 0.96) 0%, rgba(6, 28, 54, 0.9) 45%, rgba(6, 28, 54, 0.45) 75%, rgba(6, 28, 54, 0.05) 100%);
+  background: linear-gradient(90deg, rgba(6, 28, 54, 0.97) 0%, rgba(6, 28, 54, 0.85) 35%, rgba(6, 28, 54, 0.3) 60%, rgba(6, 28, 54, 0) 80%);
   z-index: 1;
 }
 
@@ -881,7 +881,7 @@ p {
   aspect-ratio: 1.1 / 1;
   height: auto;
   overflow: hidden;
-  background-color: #f8fafc;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -891,7 +891,8 @@ p {
 .category-card-6-img-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 12px;
   transition: var(--transition);
 }
 
@@ -1064,7 +1065,7 @@ p {
     background-position: 70% center;
   }
   .hero-bg-overlay {
-    background: linear-gradient(180deg, rgba(6, 28, 54, 0.95) 0%, rgba(6, 28, 54, 0.85) 60%, rgba(6, 28, 54, 0.7) 100%) !important;
+    background: linear-gradient(180deg, rgba(6, 28, 54, 0.95) 0%, rgba(6, 28, 54, 0.7) 50%, rgba(6, 28, 54, 0.2) 100%) !important;
   }
   .hero-benefits-grid {
     justify-content: center;
