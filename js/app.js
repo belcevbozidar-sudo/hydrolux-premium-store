@@ -13,6 +13,7 @@ const App = {
     // 2. Render dynamic components based on the localStorage state
     this.renderQuickCategories();
     this.renderSearchCategories();
+    this.renderHeaderNavDropdown();
     
     // 3. Setup Smart Search Suggestions and Input
     this.setupSearchSuggestions();
@@ -151,6 +152,22 @@ const App = {
       html += `<option value="${c.id}">${c.name}</option>`;
     });
     select.innerHTML = html;
+  },
+
+  renderHeaderNavDropdown() {
+    const menu = document.getElementById("categories-nav-dropdown-menu");
+    if (!menu) return;
+
+    menu.innerHTML = `
+      <a class="nav-dropdown-item" onclick="Catalog.selectCategory(''); App.navigate('catalog')">
+        📂 Всички категории
+      </a>
+      ${CONFIG.categories.map(cat => `
+        <a class="nav-dropdown-item" onclick="Catalog.selectCategory('${cat.id}'); App.navigate('catalog')">
+          ${cat.icon || '📦'} ${cat.name}
+        </a>
+      `).join("")}
+    `;
   },
 
   setupSearchSuggestions() {

@@ -8,16 +8,43 @@ const Catalog = {
     const container = document.getElementById("catalog-categories-tags-list");
     if (!container) return;
 
-    container.innerHTML = `
-      <button class="category-tag-btn active" id="cat-tag-all" onclick="Catalog.selectCategory('')">
-        📂 Всички
-      </button>
-      ${CONFIG.categories.map(cat => `
-        <button class="category-tag-btn" id="cat-tag-${cat.id}" onclick="Catalog.selectCategory('${cat.id}')">
-          ${cat.icon || '📦'} ${cat.name}
+    const catHtml = `
+      <div class="catalog-categories-grid">
+        <button class="category-tag-btn ${!this.activeCategory ? 'active' : ''}" id="cat-tag-all" onclick="Catalog.selectCategory('')">
+          📂 Всички
         </button>
-      `).join("")}
+        ${CONFIG.categories.map(cat => `
+          <button class="category-tag-btn ${this.activeCategory === cat.id ? 'active' : ''}" id="cat-tag-${cat.id}" onclick="Catalog.selectCategory('${cat.id}')">
+            ${cat.icon || '📦'} ${cat.name}
+          </button>
+        `).join("")}
+      </div>
     `;
+
+    // Render subcategories grid below main grid if selected category has any subcategories
+    let subHtml = "";
+    if (this.activeCategory) {
+      const activeCatObj = CONFIG.categories.find(c => c.id === this.activeCategory);
+      if (activeCatObj && activeCatObj.subcategories && activeCatObj.subcategories.length > 0) {
+        subHtml = `
+          <div class="catalog-subcategories-bar animate-fade-in" style="margin-top: 15px; border-top: 1px dashed #cbd5e1; padding-top: 15px; width: 100%;">
+            <div style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; color: #64748b; letter-spacing: 0.5px; margin-bottom: 10px;">Подкатегории:</div>
+            <div class="catalog-subcategories-grid">
+              <button class="subcategory-tag-btn ${!this.activeSubcategory ? 'active' : ''}" onclick="Catalog.selectSubcategory('')">
+                📁 Всички подкатегории
+              </button>
+              ${activeCatObj.subcategories.map(sub => `
+                <button class="subcategory-tag-btn ${this.activeSubcategory === sub.id ? 'active' : ''}" onclick="Catalog.selectSubcategory('${sub.id}')">
+                  🏷️ ${sub.name}
+                </button>
+              `).join("")}
+            </div>
+          </div>
+        `;
+      }
+    }
+
+    container.innerHTML = catHtml + subHtml;
   },
 
   toggleCategoriesDropdown() {
@@ -28,40 +55,32 @@ const Catalog = {
   },
 
   selectCategory(catId) {
-    document.querySelectorAll(".category-tag-btn").forEach(btn => {
-      btn.classList.remove("active");
-    });
-    
-    if (!catId) {
-      this.activeCategory = null;
-      const tagAll = document.getElementById("cat-tag-all");
-      if (tagAll) tagAll.classList.add("active");
-    } else {
-      this.activeCategory = catId;
-      const tag = document.getElementById(`cat-tag-${catId}`);
-      if (tag) tag.classList.add("active");
-    }
+    this.activeCategory = catId || null;
+    this.activeSubcategory = null; // Clear subcategory filter when changing category
     
     if (App.currentView !== "catalog") {
       App.navigate("catalog");
     }
     
+    this.renderSidebar();
+    this.applyFiltersAndRender();
+  },
+
+  selectSubcategory(subId) {
+    this.activeSubcategory = subId || null;
+    this.renderSidebar();
     this.applyFiltersAndRender();
   },
 
   resetFilters() {
     this.activeCategory = null;
+    this.activeSubcategory = null;
     this.searchQuery = "";
-    
-    document.querySelectorAll(".category-tag-btn").forEach(btn => {
-      btn.classList.remove("active");
-    });
-    const tagAll = document.getElementById("cat-tag-all");
-    if (tagAll) tagAll.classList.add("active");
     
     const searchInput = document.getElementById("search-input-blue");
     if (searchInput) searchInput.value = "";
     
+    this.renderSidebar();
     this.applyFiltersAndRender();
   },
 
@@ -74,7 +93,10 @@ const Catalog = {
       // 1. Category check
       if (this.activeCategory && p.category !== this.activeCategory) return false;
 
-      // 2. Search check
+      // 2. Subcategory check
+      if (this.activeSubcategory && p.subcategory !== this.activeSubcategory) return false;
+
+      // 3. Search check
       if (this.searchQuery) {
         const query = this.searchQuery.toLowerCase();
         const matchesName = p.name.toLowerCase().includes(query);

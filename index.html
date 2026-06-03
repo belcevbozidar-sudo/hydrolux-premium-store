@@ -103,11 +103,14 @@
        ========================================================================== -->
   <div class="header-nav-row">
     <div class="container">
-      <!-- Categories Trigger -->
-      <div class="categories-nav-trigger" onclick="App.navigate('catalog')">
-        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-        <span>Всички категории</span>
-        <span class="caret-down">▼</span>
+      <!-- Categories Wrapper with dropdown -->
+      <div class="categories-nav-wrapper">
+        <div class="categories-nav-trigger" onclick="App.navigate('catalog')">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          <span>Всички категории</span>
+          <span class="caret-down">▼</span>
+        </div>
+        <div class="categories-nav-dropdown-menu" id="categories-nav-dropdown-menu"></div>
       </div>
 
       <!-- Navigation Links -->
@@ -155,10 +158,10 @@
                   <span class="benefit-icon">✓</span>
                   <span>Над 5000 продукта на склад</span>
                 </div>
-                <div class="benefit-item">
-                  <span class="benefit-icon">✓</span>
-                  <span>Доставка до 24 часа</span>
-                </div>
+                 <div class="benefit-item">
+                   <span class="benefit-icon">✓</span>
+                   <span>Доставка до 48 часа</span>
+                 </div>
                 <div class="benefit-item">
                   <span class="benefit-icon">✓</span>
                   <span>Кримпване до DN51 – 2"</span>
@@ -349,10 +352,10 @@
                 <circle cx="19.5" cy="18.5" r="2.5" fill="#1e293b" stroke="#ffffff" stroke-width="1.5"/>
               </svg>
             </div>
-            <div class="feature-bar-content-5">
-              <h4 class="feature-bar-title-5">Бърза доставка</h4>
-              <span class="feature-bar-desc-5">До 24 часа в цялата страна</span>
-            </div>
+             <div class="feature-bar-content-5">
+               <h4 class="feature-bar-title-5">Бърза доставка</h4>
+               <span class="feature-bar-desc-5">До 48 часа в цялата страна</span>
+             </div>
           </div>
 
           <!-- Item 4: Consulting -->
@@ -400,48 +403,7 @@
           <a class="view-all-link" onclick="Catalog.selectCategory(''); App.navigate('catalog')"><span class="desktop-only">Виж всички продукти ➔</span><span class="mobile-only">Виж всички ➔</span></a>
         </div>
         
-        <!-- Mobile Filter Toggle Button -->
-        <button class="btn btn-secondary mobile-only" id="mobile-filter-toggle-btn" onclick="Catalog.toggleMobileFilters()" style="margin-bottom: 15px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px;">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-            <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/>
-          </svg>
-          <span>Покажи Филтри</span>
-        </button>
-        
         <div class="popular-layout">
-          <!-- Sidebar Filters -->
-          <div class="popular-sidebar card">
-            <h3 class="sidebar-title">Филтри</h3>
-            
-            <div class="filter-group">
-              <div class="filter-group-header">Тип продукт <span class="chevron">▼</span></div>
-            </div>
-            <div class="filter-group">
-              <div class="filter-group-header">Вътрешен диаметър <span class="chevron">▼</span></div>
-            </div>
-            <div class="filter-group">
-              <div class="filter-group-header">Работно налягане (bar) <span class="chevron">▼</span></div>
-            </div>
-            <div class="filter-group">
-              <div class="filter-group-header">Стандарт <span class="chevron">▼</span></div>
-            </div>
-            <div class="filter-group">
-              <div class="filter-group-header">Производител <span class="chevron">▼</span></div>
-            </div>
-            <div class="filter-group">
-              <div class="filter-group-header">Материал <span class="chevron">▼</span></div>
-            </div>
-            <div class="filter-group">
-              <div class="filter-group-header">Температура (°C) <span class="chevron">▼</span></div>
-            </div>
-            
-            <button class="btn btn-accent btn-filter-submit mt-15" onclick="App.navigate('catalog')">
-              <svg viewBox="0 0 24 24" width="16" height="16" class="filter-btn-icon">
-                <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z" fill="currentColor"/>
-              </svg>
-              Филтрирай
-            </button>
-          </div>
           
           <!-- Products Grid -->
           <div class="products-grid" id="home-featured-products-grid">

@@ -527,6 +527,9 @@ const Admin = {
     if (this.activeTab === "products") {
       this.initProductFormHandlers();
     }
+    if (this.activeTab === "categories") {
+      this.renderSubcategoriesList();
+    }
   },
 
   renderActiveWorkspace() {
@@ -553,7 +556,13 @@ const Admin = {
     let productRows = products.map(p => {
       const minPrice = p.variants && p.variants.length > 0 ? Math.min(...p.variants.map(v => v.priceEur)) : 0;
       const catObj = CONFIG.categories.find(c => c.id === p.category);
-      const catName = catObj ? catObj.name : p.category;
+      let catDisplay = catObj ? catObj.name : p.category;
+      if (p.subcategory && catObj && catObj.subcategories) {
+        const subObj = catObj.subcategories.find(s => s.id === p.subcategory);
+        if (subObj) {
+          catDisplay += ` / ${subObj.name}`;
+        }
+      }
       const thumb = p.images && p.images[0] ? p.images[0] : "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop";
 
       return `
@@ -568,7 +577,7 @@ const Admin = {
             </div>
           </td>
           <td data-label="Категория">
-            <span class="admin-badge admin-badge-category">${catName}</span>
+            <span class="admin-badge admin-badge-category">${catDisplay}</span>
           </td>
           <td data-label="Цена EUR">
             <strong class="text-primary">${minPrice.toFixed(2)} €</strong>
@@ -646,9 +655,16 @@ const Admin = {
             <div class="form-group">
               <label>Категория <span class="text-accent">*</span></label>
               <select id="prod-category" class="form-control" required>
+                <option value="">-- Изберете категория --</option>
                 ${CONFIG.categories.map(c => `
                   <option value="${c.id}" ${isEditing && this.editingProduct.category === c.id ? 'selected' : ''}>${c.name}</option>
                 `).join("")}
+              </select>
+            </div>
+            <div class="form-group" id="prod-subcategory-group" style="display: none;">
+              <label>Подкатегория</label>
+              <select id="prod-subcategory" class="form-control">
+                <!-- Populated dynamically -->
               </select>
             </div>
             <div class="form-group">
@@ -775,7 +791,13 @@ const Admin = {
     let productRows = products.map(p => {
       const minPrice = p.variants && p.variants.length > 0 ? Math.min(...p.variants.map(v => v.priceEur)) : 0;
       const catObj = CONFIG.categories.find(c => c.id === p.category);
-      const catName = catObj ? catObj.name : p.category;
+      let catDisplay = catObj ? catObj.name : p.category;
+      if (p.subcategory && catObj && catObj.subcategories) {
+        const subObj = catObj.subcategories.find(s => s.id === p.subcategory);
+        if (subObj) {
+          catDisplay += ` / ${subObj.name}`;
+        }
+      }
       const thumb = p.images && p.images[0] ? p.images[0] : "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop";
 
       return `
@@ -790,7 +812,7 @@ const Admin = {
             </div>
           </td>
           <td data-label="Категория">
-            <span class="admin-badge admin-badge-category">${catName}</span>
+            <span class="admin-badge admin-badge-category">${catDisplay}</span>
           </td>
           <td data-label="Цена EUR">
             <strong class="text-primary">${minPrice.toFixed(2)} €</strong>
@@ -1137,6 +1159,18 @@ const Admin = {
       });
     }
 
+    // Populate Category + Subcategory selectors
+    const catSelect = document.getElementById("prod-category");
+    if (catSelect) {
+      const isEditing = this.editingProduct !== null;
+      const initialSubId = isEditing ? this.editingProduct.subcategory : null;
+      this.handleProductCategoryChange(catSelect.value, initialSubId);
+      
+      catSelect.addEventListener("change", (e) => {
+        this.handleProductCategoryChange(e.target.value);
+      });
+    }
+
     // Populate thumbnails preview
     this.renderImagePreviews();
     this.updateProductSubmitState();
@@ -1398,6 +1432,7 @@ const Admin = {
     const name = document.getElementById("prod-name").value.trim();
     const code = document.getElementById("prod-code").value.trim();
     const category = document.getElementById("prod-category").value;
+    const subcategory = document.getElementById("prod-subcategory") ? document.getElementById("prod-subcategory").value : "";
     const brand = document.getElementById("prod-brand").value.trim();
 
     // JS-based validation for required core fields (replaces silent HTML5 blocks)
@@ -1455,6 +1490,7 @@ const Admin = {
           target.name = name;
           target.code = code;
           target.category = category;
+          target.subcategory = subcategory;
           target.brand = brand;
           target.description = description;
           target.tags = tags;
@@ -1495,6 +1531,7 @@ const Admin = {
         code,
         name,
         category,
+        subcategory,
         brand,
         rating: 5.0,
         reviewsCount: 1,
@@ -1583,6 +1620,18 @@ const Admin = {
             </div>
           </div>
           
+          <!-- SUB-CATEGORIES SECTION -->
+          <div class="form-group" style="margin-top: 15px; border-top: 1px dashed var(--border-light); padding-top: 15px;">
+            <label style="font-weight: 800; color: var(--primary); display: block; margin-bottom: 8px;">🏷️ Подкатегории</label>
+            <div id="admin-subcategories-list" style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px;">
+              <!-- Populated dynamically -->
+            </div>
+            <div style="display: flex; gap: 8px; align-items: center; max-width: 500px;">
+              <input type="text" id="new-subcategory-name" class="form-control" placeholder="Име на подкатегория (напр. 1SN / 2SN маркучи)">
+              <button type="button" class="btn btn-secondary" onclick="Admin.addSubcategory()" style="white-space: nowrap;">Добави</button>
+            </div>
+          </div>
+
           <div style="margin-top: 15px; display: flex; gap: 10px;">
             <button type="submit" class="btn btn-accent">💾 ${isEditing ? 'Запази промените' : 'Запази Категорията'}</button>
             ${isEditing ? `
@@ -1616,12 +1665,14 @@ const Admin = {
     const cat = CONFIG.categories.find(c => c.id === catId);
     if (cat) {
       this.editingCategory = cat;
+      this.tempSubcategories = cat.subcategories ? cat.subcategories.map(s => ({ ...s })) : [];
       this.render();
     }
   },
 
   cancelCategoryEdit() {
     this.editingCategory = null;
+    this.tempSubcategories = [];
     this.render();
   },
 
@@ -1637,9 +1688,11 @@ const Admin = {
       if (target) {
         target.name = name;
         target.icon = icon;
+        target.subcategories = this.tempSubcategories || [];
       }
       CONFIG.saveState();
       this.editingCategory = null;
+      this.tempSubcategories = [];
       alert("Категорията е успешно актуализирана!");
     } else {
       // CREATE MODE
@@ -1661,10 +1714,12 @@ const Admin = {
       const newCategory = {
         id,
         name,
-        icon
+        icon,
+        subcategories: this.tempSubcategories || []
       };
 
       CONFIG.addCategory(newCategory);
+      this.tempSubcategories = [];
       alert("Категорията е успешно създадена!");
     }
 
@@ -1687,6 +1742,7 @@ const Admin = {
       if (typeof App.renderQuickCategories === 'function') App.renderQuickCategories();
       if (typeof App.renderSearchCategories === 'function') App.renderSearchCategories();
       if (typeof App.renderFeaturedProductsHome === 'function') App.renderFeaturedProductsHome();
+      if (typeof App.renderHeaderNavDropdown === 'function') App.renderHeaderNavDropdown();
     }
     if (typeof Catalog !== 'undefined') {
       if (typeof Catalog.renderSidebar === 'function') Catalog.renderSidebar();
@@ -1828,6 +1884,73 @@ const Admin = {
       }
       this.templatesPanelOpen = true;
       this.refreshVariantsTable(activeVariants);
+    }
+  },
+
+  handleProductCategoryChange(catId, selectedSubId = null) {
+    const subGroup = document.getElementById("prod-subcategory-group");
+    const subSelect = document.getElementById("prod-subcategory");
+    if (!subGroup || !subSelect) return;
+
+    const cat = CONFIG.categories.find(c => c.id === catId);
+    if (cat && cat.subcategories && cat.subcategories.length > 0) {
+      subGroup.style.display = "block";
+      subSelect.innerHTML = `
+        <option value="">-- Изберете подкатегория (по избор) --</option>
+        ${cat.subcategories.map(sub => `
+          <option value="${sub.id}" ${selectedSubId === sub.id ? 'selected' : ''}>${sub.name}</option>
+        `).join("")}
+      `;
+    } else {
+      subGroup.style.display = "none";
+      subSelect.innerHTML = "";
+    }
+  },
+
+  renderSubcategoriesList() {
+    const listContainer = document.getElementById("admin-subcategories-list");
+    if (!listContainer) return;
+
+    if (!this.tempSubcategories || this.tempSubcategories.length === 0) {
+      listContainer.innerHTML = `<span class="text-muted font-xs">Няма въведени подкатегории.</span>`;
+      return;
+    }
+
+    listContainer.innerHTML = this.tempSubcategories.map(sub => `
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 12px; background-color: #f1f5f9; border-radius: 6px; font-size: 0.85rem; margin-bottom: 5px;">
+        <span><strong>${sub.name}</strong></span>
+        <button type="button" class="btn-icon-danger" onclick="Admin.deleteSubcategory('${sub.id}')" style="width: 24px; height: 24px; font-size: 0.8rem; line-height: 1; padding: 0;">✕</button>
+      </div>
+    `).join("");
+  },
+
+  addSubcategory() {
+    const input = document.getElementById("new-subcategory-name");
+    if (!input) return;
+    const name = input.value.trim();
+    if (!name) return;
+    
+    // Generate a unique ID
+    const subId = "sub-" + name.toLowerCase()
+      .replace(/[^а-яa-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "")
+      .replace(/[а-я]/g, m => {
+        const cyr = "абвгдежзийклмнопрстуфхцчшщъьюя";
+        const lat = ["a","b","v","g","d","e","zh","z","i","y","k","l","m","n","o","p","r","s","t","u","f","h","ts","ch","sh","sht","a","y","yu","ya"];
+        const idx = cyr.indexOf(m);
+        return idx > -1 ? lat[idx] : m;
+      }) + "-" + Math.floor(1000 + Math.random() * 9000);
+
+    if (!this.tempSubcategories) this.tempSubcategories = [];
+    this.tempSubcategories.push({ id: subId, name });
+    input.value = "";
+    this.renderSubcategoriesList();
+  },
+
+  deleteSubcategory(subId) {
+    if (this.tempSubcategories) {
+      this.tempSubcategories = this.tempSubcategories.filter(s => s.id !== subId);
+      this.renderSubcategoriesList();
     }
   }
 };

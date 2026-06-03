@@ -412,16 +412,18 @@ const CONFIG = {
   ]
 };
 
-// Helper function to format prices (BGN formatted)
+// Helper function to format prices (EUR + BGN Dual Currency)
 function formatPrice(price, isPerMeter = false) {
   price = parseFloat(price) || 0;
-  const suffix = isPerMeter ? " лв./м" : " лв.";
-  const formatted = price.toFixed(2) + suffix;
+  const bgnPrice = price * 1.95583;
+  const suffixEur = isPerMeter ? " €/м" : " €";
+  const suffixBgn = isPerMeter ? " лв./м" : " лв.";
+  const formatted = price.toFixed(2) + suffixEur + " (" + bgnPrice.toFixed(2) + suffixBgn + ")";
   return {
-    eur: formatted, // Throughout the code, the display looks up the .eur string
+    eur: formatted,
     bgn: formatted,
     eurRaw: price,
-    bgnRaw: price
+    bgnRaw: bgnPrice
   };
 }function saveLocalState() {
   localStorage.setItem("hydrolux_products", JSON.stringify(CONFIG.products));

@@ -4011,3 +4011,163 @@ td .admin-actions-cell {
     gap: 4px !important;
   }
 }
+
+
+/* ==========================================================================
+   ROUND 3 OVERRIDES - DUAL CURRENCY, NAV MENU SCROLL FIX, HOVER DROPDOWN, RECTANGULAR CATEGORIES & SUBCATEGORIES
+   ========================================================================== */
+
+/* Fix navigation row height / vertical scrollbar issue */
+.header-nav-row,
+.header-nav-row .container {
+  overflow: visible !important;
+  overflow-y: visible !important;
+}
+
+/* Remove popular products sidebar columns to allow full-width products grid on homepage */
+.popular-layout {
+  display: block !important;
+}
+
+.popular-layout .products-grid {
+  grid-template-columns: repeat(4, 1fr) !important;
+}
+
+@media (max-width: 991px) {
+  .popular-layout .products-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Desktop header categories dropdown hover styles */
+.categories-nav-wrapper {
+  position: relative;
+  display: inline-block;
+  z-index: 1000;
+}
+
+.categories-nav-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  width: 280px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  display: none;
+  padding: 8px 0;
+  margin-top: 5px;
+  z-index: 1100;
+}
+
+@media (min-width: 769px) {
+  .categories-nav-wrapper:hover .categories-nav-dropdown-menu {
+    display: block !important;
+  }
+}
+
+.nav-dropdown-item {
+  display: block;
+  padding: 10px 16px;
+  color: #1e293b;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-align: left;
+}
+
+.nav-dropdown-item:hover {
+  background-color: #f1f5f9;
+  color: #ea580c;
+}
+
+/* Catalog categories rectangular grids layout */
+.catalog-categories-tags-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.catalog-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  width: 100%;
+}
+
+.catalog-subcategories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 10px;
+  width: 100%;
+}
+
+/* Rectangular category buttons overrides */
+.category-tag-btn {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border: 1.5px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  padding: 12px 18px !important;
+  font-size: 0.88rem !important;
+  font-weight: 700 !important;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02) !important;
+}
+
+.category-tag-btn:hover {
+  background-color: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+  transform: translateY(-1px);
+}
+
+.category-tag-btn.active {
+  background-color: #ea580c !important;
+  color: #ffffff !important;
+  border-color: #ea580c !important;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.25) !important;
+}
+
+/* Subcategory tag buttons layout */
+.subcategory-tag-btn {
+  background-color: #f8fafc;
+  color: #475569;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.subcategory-tag-btn:hover {
+  background-color: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.subcategory-tag-btn.active {
+  background-color: #1e293b;
+  color: #ffffff;
+  border-color: #1e293b;
+}
+
+/* Admin subcategories visual additions */
+.admin-badge-category {
+  background-color: #e0f2fe !important;
+  color: #0369a1 !important;
+}
