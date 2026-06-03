@@ -27,4 +27,13 @@ export default defineSchema({
     status: v.string(),
     createdAt: v.number(),
   }).index("by_order_number", ["orderNumber"]),
+
+  users: defineTable({
+    name: v.string(),
+    email: v.string(),
+    passwordHash: v.optional(v.string()),
+    googleId: v.optional(v.string()),
+    avatarUrl: v.optional(v.string()),
+    createdAt: v.number(),
+  }).index("by_email", ["email"]),
 });

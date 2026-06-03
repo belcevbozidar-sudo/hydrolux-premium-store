@@ -132,3 +132,106 @@ export const saveOrder = mutation({
     return { ok: true, orderNumber, createdAt };
   },
 });
+
+export const getUserByEmail = query({
+  args: { email: v.string() },
+  handler: async (ctx, args) => {
+    return await ctx.db
+      .query("users")
+      .withIndex("by_email", q => q.eq("email", args.email.toLowerCase().trim()))
+      .unique();
+  },
+});
+
+export const registerUser = mutation({
+  args: {
+    name: v.string(),
+    email: v.string(),
+    passwordHash: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const emailNormalized = args.email.toLowerCase().trim();
+    const nameClean = args.name.trim();
+
+    const existing = await ctx.db
+      .query("users")
+      .withIndex("by_email", q => q.eq("email", emailNormalized))
+      .unique();
+
+    if (existing) {
+      throw new Error("User already exists");
+    }
+
+    const userId = await ctx.db.insert("users", {
+      name: nameClean,
+      email: emailNormalized,
+      passwordHash: args.passwordHash,
+      createdAt: Date.now(),
+    });
+
+    return { ok: true, userId, name: nameClean, email: emailNormalized };
+  },
+});
+
+export const googleLogin = mutation({
+  args: {
+    name: v.string(),
+    email: v.string(),
+    googleId: v.string(),
+    avatarUrl: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    const emailNormalized = args.email.toLowerCase().trim();
+    const nameClean = args.name.trim();
+
+    const existing = await ctx.db
+      .query("users")
+      .withIndex("by_email", q => q.eq("email", emailNormalized))
+      .unique();
+
+    if (existing) {
+      const patch = {};
+      if (!existing.googleId) patch.googleId = args.googleId;
+      if (args.avatarUrl && !existing.avatarUrl) patch.avatarUrl = args.avatarUrl;
+      
+      if (Object.keys(patch).length > 0) {
+        await ctx.db.patch(existing._id, patch);
+      }
+
+      return {
+        ok: true,
+        userId: existing._id,
+        name: existing.name,
+        email: existing.email,
+        avatarUrl: existing.avatarUrl || args.avatarUrl,
+      };
+    } else {
+      const userId = await ctx.db.insert("users", {
+        name: nameClean,
+        email: emailNormalized,
+        googleId: args.googleId,
+        avatarUrl: args.avatarUrl,
+        createdAt: Date.now(),
+      });
+
+      return {
+        ok: true,
+        userId,
+        name: nameClean,
+        email: emailNormalized,
+        avatarUrl: args.avatarUrl,
+      };
+    }
+  },
+});
+
+export const getUserOrders = query({
+  args: { email: v.string() },
+  handler: async (ctx, args) => {
+    const emailNormalized = args.email.toLowerCase().trim();
+    const all = await ctx.db.query("orders").collect();
+    return all
+      .filter(o => o.customer && o.customer.email && o.customer.email.toLowerCase().trim() === emailNormalized)
+      .sort((a, b) => b.createdAt - a.createdAt);
+  },
+});

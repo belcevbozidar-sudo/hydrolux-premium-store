@@ -65,4 +65,45 @@ const HydroluxBackend = {
       body: { order },
     });
   },
+
+  async hashPassword(password) {
+    if (!crypto || !crypto.subtle) {
+      // Fallback for environments without crypto support (rare in modern browsers)
+      return password;
+    }
+    const encoder = new TextEncoder();
+    const data = encoder.encode(password + "hydrolux_salt_123!");
+    const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+  },
+
+  async authRegister(name, email, password) {
+    const passwordHash = await this.hashPassword(password);
+    return await this.request("/api/auth/register", {
+      method: "POST",
+      body: { name, email, passwordHash },
+    });
+  },
+
+  async authLogin(email, password) {
+    const passwordHash = await this.hashPassword(password);
+    return await this.request("/api/auth/login", {
+      method: "POST",
+      body: { email, passwordHash },
+    });
+  },
+
+  async authGoogleLogin(userData) {
+    return await this.request("/api/auth/google", {
+      method: "POST",
+      body: userData,
+    });
+  },
+
+  async getUserOrders(email) {
+    return await this.request(`/api/auth/orders?email=${encodeURIComponent(email)}`, {
+      method: "GET",
+    });
+  },
 };

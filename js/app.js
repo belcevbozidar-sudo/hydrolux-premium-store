@@ -7,6 +7,10 @@ const App = {
       await CONFIG.ready;
     }
 
+    if (typeof Auth !== "undefined") {
+      Auth.init();
+    }
+
     // 1. Initialize Components
     Cart.init();
     
