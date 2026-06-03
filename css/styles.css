@@ -879,7 +879,7 @@ p {
 }
 
 .category-card-6-img-wrapper {
-  aspect-ratio: 1.1 / 1;
+  aspect-ratio: 1 / 1.15;
   height: auto;
   overflow: hidden;
   background-color: #ffffff;
@@ -1088,7 +1088,7 @@ p {
   }
   .category-card-6-img-wrapper {
     height: auto;
-    aspect-ratio: 1.1 / 1;
+    aspect-ratio: 1 / 1.15;
   }
   .category-card-6-title {
     font-size: 0.75rem;
