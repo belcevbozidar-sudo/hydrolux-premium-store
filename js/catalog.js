@@ -5,19 +5,17 @@ const Catalog = {
 
   // Render product categories inside the top collapsible dropdown menu
   renderSidebar() {
-    const menu = document.getElementById("catalog-cat-dropdown-menu");
-    if (!menu) return;
+    const container = document.getElementById("catalog-categories-tags-list");
+    if (!container) return;
 
-    menu.innerHTML = `
-      <div class="dropdown-all-item" onclick="Catalog.selectCategory(''); Catalog.toggleCategoriesDropdown()">
-        📂 Всички Продукти (Всички Категории)
-      </div>
+    container.innerHTML = `
+      <button class="category-tag-btn active" id="cat-tag-all" onclick="Catalog.selectCategory('')">
+        📂 Всички
+      </button>
       ${CONFIG.categories.map(cat => `
-        <div class="dropdown-col">
-          <div class="dropdown-col-title" onclick="Catalog.selectCategory('${cat.id}'); Catalog.toggleCategoriesDropdown()">
-            ${cat.icon || '📦'} ${cat.name}
-          </div>
-        </div>
+        <button class="category-tag-btn" id="cat-tag-${cat.id}" onclick="Catalog.selectCategory('${cat.id}')">
+          ${cat.icon || '📦'} ${cat.name}
+        </button>
       `).join("")}
     `;
   },
@@ -30,15 +28,18 @@ const Catalog = {
   },
 
   selectCategory(catId) {
-    const btn = document.getElementById("catalog-cat-dropdown-btn");
+    document.querySelectorAll(".category-tag-btn").forEach(btn => {
+      btn.classList.remove("active");
+    });
     
     if (!catId) {
       this.activeCategory = null;
-      if (btn) btn.textContent = "📂 Изберете Категория (Всички Категории) ▾";
+      const tagAll = document.getElementById("cat-tag-all");
+      if (tagAll) tagAll.classList.add("active");
     } else {
       this.activeCategory = catId;
-      const cat = CONFIG.categories.find(c => c.id === catId);
-      if (btn && cat) btn.textContent = `📂 Категория: ${cat.name} ▾`;
+      const tag = document.getElementById(`cat-tag-${catId}`);
+      if (tag) tag.classList.add("active");
     }
     
     if (App.currentView !== "catalog") {
@@ -52,8 +53,11 @@ const Catalog = {
     this.activeCategory = null;
     this.searchQuery = "";
     
-    const btn = document.getElementById("catalog-cat-dropdown-btn");
-    if (btn) btn.textContent = "📂 Изберете Категория (Всички Категории) ▾";
+    document.querySelectorAll(".category-tag-btn").forEach(btn => {
+      btn.classList.remove("active");
+    });
+    const tagAll = document.getElementById("cat-tag-all");
+    if (tagAll) tagAll.classList.add("active");
     
     const searchInput = document.getElementById("search-input-blue");
     if (searchInput) searchInput.value = "";
@@ -371,5 +375,17 @@ const Catalog = {
     event.preventDefault();
     this.closeInquiryModal();
     Cart.showToast("Благодарим Ви! Запитването е изпратено успешно.");
+  },
+
+  toggleMobileFilters() {
+    const sidebar = document.querySelector(".popular-sidebar");
+    const btn = document.getElementById("mobile-filter-toggle-btn");
+    if (sidebar) {
+      sidebar.classList.toggle("open");
+      const isOpen = sidebar.classList.contains("open");
+      if (btn) {
+        btn.querySelector("span").textContent = isOpen ? "Скрий Филтри" : "Покажи Филтри";
+      }
+    }
   }
 };

@@ -852,7 +852,7 @@ p {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
-  margin-top: -35px;
+  margin-top: 25px;
   margin-bottom: 25px;
   position: relative;
   z-index: 20;
@@ -3900,5 +3900,114 @@ td .admin-actions-cell {
     font-size: 0.76rem !important;
     justify-content: center !important;
     white-space: nowrap !important;
+  }
+}
+
+
+/* ==========================================================================
+   ROUND 2 OVERRIDES - NO HEROTO OVERLAPS, MOBILE FILTERS TOGGLING, COMPACT CARDS & Direct selector
+   ========================================================================== */
+
+.home-categories-grid-6 {
+  margin-top: 25px !important; /* Move categories grid below hero on all screen sizes */
+}
+
+/* Catalog categories pills tag list style */
+.catalog-categories-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.category-tag-btn {
+  background-color: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.category-tag-btn:hover {
+  background-color: #e2e8f0;
+  border-color: #94a3b8;
+}
+
+.category-tag-btn.active {
+  background-color: #ea580c;
+  color: #ffffff;
+  border-color: #ea580c;
+  box-shadow: 0 2px 8px rgba(234, 88, 12, 0.2);
+}
+
+/* Mobile filter sidebar layout rules */
+@media (max-width: 991px) {
+  .popular-sidebar {
+    display: none !important;
+  }
+  .popular-sidebar.open {
+    display: block !important;
+    margin-bottom: 20px;
+  }
+}
+
+/* Compact Product Card styling on mobile devices to prevent excessive spacing */
+@media (max-width: 768px) {
+  .home-categories-grid-6 {
+    margin-top: 20px !important;
+  }
+  
+  .popular-layout .product-card {
+    padding: 8px !important;
+    border-radius: 8px !important;
+  }
+  
+  .popular-layout .product-card-img-wrapper {
+    height: 100px !important;
+    margin-bottom: 6px !important;
+  }
+  
+  .popular-layout .product-card-title {
+    font-size: 0.78rem !important;
+    height: 30px !important;
+    line-height: 1.25 !important;
+    margin-bottom: 6px !important;
+  }
+  
+  .product-card-specs {
+    padding: 6px 8px !important;
+    margin-bottom: 6px !important;
+    gap: 4px !important;
+  }
+  
+  .spec-item {
+    font-size: 0.7rem !important;
+    gap: 3px !important;
+  }
+  
+  .spec-checkmark {
+    width: 5px !important;
+    height: 5px !important;
+    margin-right: 4px !important;
+    border-width: 1px !important;
+  }
+  
+  .price-bgn {
+    font-size: 1.15rem !important;
+  }
+  
+  .btn-buy-now {
+    padding: 7px 8px !important;
+    font-size: 0.75rem !important;
+    margin-top: 8px !important;
+    gap: 4px !important;
   }
 }

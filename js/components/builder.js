@@ -205,22 +205,10 @@ const HoseBuilder = {
             </div>
           </div>
 
-          <!-- Add to Cart and Availability panel -->
-          <div class="config-actions-row">
-            <button class="btn btn-config-cyan" onclick="HoseBuilder.addToCart()">
-              ДОБАВИ В КОЛИЧКАТА
-            </button>
-            
-            <div class="availability-badge">
-              <span class="check-circle-icon">✓</span>
-              <span class="avail-text">НАЛИЧНОСТ: <strong class="text-green">НА СКЛАД</strong></span>
-            </div>
-          </div>
-
-          <!-- Inquiry Button -->
-          <div class="inquiry-button-row">
-            <button class="btn-config-outline" onclick="HoseBuilder.openQuickInquiryForm()">
-              ЗАПИТВАНЕ ЗА ПРОДУКТ
+          <!-- Inquiry CTA button -->
+          <div class="config-actions-row" style="margin-top: 15px;">
+            <button class="btn btn-config-cyan" onclick="HoseBuilder.openInquiryModal()" style="width: 100%; text-transform: uppercase;">
+              Изпрати запитване
             </button>
           </div>
 
@@ -293,5 +281,46 @@ const HoseBuilder = {
         textarea.scrollIntoView({ behavior: "smooth", block: "center" });
       }
     }, 150);
+  },
+
+  openInquiryModal() {
+    const modal = document.getElementById("builder-inquiry-modal");
+    if (!modal) return;
+    
+    const hose = this.options.hoseTypes.find(h => h.id === this.state.hoseTypeId);
+    const size = this.options.sizes.find(s => s.id === this.state.sizeId);
+    const fitL = this.options.fittings.find(f => f.id === this.state.fittingLeftId);
+    const fitR = this.options.fittings.find(f => f.id === this.state.fittingRightId);
+    const sleeve = this.options.sleeves.find(sl => sl.id === this.state.sleeveId);
+    const price = this.calculatePrice();
+
+    const summaryHtml = `
+      <strong>Спецификация на маркуча:</strong><br>
+      • <strong>Тип:</strong> ${hose.name}<br>
+      • <strong>Диаметър:</strong> ${size.name}<br>
+      • <strong>Дължина:</strong> ${this.state.lengthMeters} м<br>
+      • <strong>Ляв накрайник:</strong> ${fitL.name}<br>
+      • <strong>Десен накрайник:</strong> ${fitR.name}<br>
+      • <strong>Предпазен ръкав:</strong> ${sleeve.name}<br>
+      • <strong>Прогнозна цена:</strong> ${price.eur.toFixed(2)} лв. с ДДС
+    `;
+    
+    document.getElementById("builder-inquiry-summary").innerHTML = summaryHtml;
+    modal.classList.add("open");
+    document.body.classList.add("no-scroll");
+  },
+
+  closeInquiryModal() {
+    const modal = document.getElementById("builder-inquiry-modal");
+    if (modal) {
+      modal.classList.remove("open");
+      document.body.classList.remove("no-scroll");
+    }
+  },
+
+  submitInquiry(event) {
+    event.preventDefault();
+    this.closeInquiryModal();
+    Cart.showToast("Благодарим Ви! Запитването за сглобен маркуч е изпратено.");
   }
 };

@@ -18,7 +18,7 @@
         <div class="header-top-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
           <span class="desktop-only">Бърза доставка в цяла България</span>
-          <span class="mobile-only">Бърза доставка до 24 часа</span>
+          <span class="mobile-only">Бърза доставка до 48 часа</span>
         </div>
         <span class="header-top-divider">|</span>
         <div class="header-top-item">
@@ -199,7 +199,7 @@
       </div>
 
       <!-- 6 Categories Grid -->
-      <div class="container" style="margin-top: -30px; position: relative; z-index: 20;">
+      <div class="container" style="margin-top: 25px; position: relative; z-index: 20;">
         <div class="home-categories-grid-6">
           <!-- Card 1: Hydraulic Hoses -->
           <div class="category-card-6" onclick="Catalog.selectCategory('high-pressure-hoses'); App.navigate('catalog')">
@@ -400,6 +400,14 @@
           <a class="view-all-link" onclick="Catalog.selectCategory(''); App.navigate('catalog')"><span class="desktop-only">Виж всички продукти ➔</span><span class="mobile-only">Виж всички ➔</span></a>
         </div>
         
+        <!-- Mobile Filter Toggle Button -->
+        <button class="btn btn-secondary mobile-only" id="mobile-filter-toggle-btn" onclick="Catalog.toggleMobileFilters()" style="margin-bottom: 15px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px;">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/>
+          </svg>
+          <span>Покажи Филтри</span>
+        </button>
+        
         <div class="popular-layout">
           <!-- Sidebar Filters -->
           <div class="popular-sidebar card">
@@ -552,14 +560,8 @@
         
         <!-- 🔥 NEW: Top Collapsible Dropdown Categories Selector -->
         <div class="catalog-filters-bar card mb-20">
-          <div class="categories-dropdown-container">
-            <button class="btn btn-primary btn-large" id="catalog-cat-dropdown-btn" onclick="Catalog.toggleCategoriesDropdown()">
-              📂 Изберете Категория (Всички Категории) ▾
-            </button>
-            
-            <div class="categories-dropdown-menu hidden" id="catalog-cat-dropdown-menu">
-              <!-- Dynamically populated options by catalog.js -->
-            </div>
+          <div class="catalog-categories-tags-list" id="catalog-categories-tags-list">
+            <!-- Dynamically populated options by catalog.js -->
           </div>
           <button class="btn btn-secondary" onclick="Catalog.resetFilters()">Изчисти Филтрите</button>
         </div>
@@ -914,6 +916,42 @@
             <textarea class="form-control" rows="4" required placeholder="Желая бързо запитване относно наличност и опции за сглобяване..."></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-block">Изпрати Запитване</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. HOSE BUILDER INQUIRY MODAL -->
+  <div class="modal-overlay" id="builder-inquiry-modal">
+    <div class="modal-window" style="max-width: 500px;">
+      <div class="modal-header">
+        <h3>⚙️ Запитване за сглобен маркуч</h3>
+        <button class="modal-close" onclick="HoseBuilder.closeInquiryModal()">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="builder-inquiry-summary mb-15 p-15" id="builder-inquiry-summary" style="background-color: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.85rem; color: #1e293b; line-height: 1.4; margin-bottom: 15px; padding: 10px;">
+          <!-- Populated dynamically by builder.js -->
+        </div>
+        <form onsubmit="HoseBuilder.submitInquiry(event)">
+          <div class="form-group">
+            <label>Вашето Име</label>
+            <input type="text" id="builder-inquiry-name" class="form-control" required placeholder="Иван Иванов">
+          </div>
+          <div class="form-group-split" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; margin-top: 10px;">
+            <div class="form-group">
+              <label>Телефон</label>
+              <input type="tel" id="builder-inquiry-phone" class="form-control" required placeholder="+359 ...">
+            </div>
+            <div class="form-group">
+              <label>Имейл</label>
+              <input type="email" id="builder-inquiry-email" class="form-control" required placeholder="example@mail.com">
+            </div>
+          </div>
+          <div class="form-group" style="margin-top: 10px;">
+            <label>Допълнителни изисквания (по желание)</label>
+            <textarea id="builder-inquiry-message" class="form-control" rows="3" placeholder="Опишете специфични изисквания, брой сглобки..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" style="margin-top: 15px;">Изпрати Запитване</button>
         </form>
       </div>
     </div>

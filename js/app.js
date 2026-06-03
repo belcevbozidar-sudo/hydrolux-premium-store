@@ -69,8 +69,9 @@ const App = {
           <div class="product-card-body">
             <h4 class="product-card-title">${p.name}</h4>
             
+            ${(p.homeSpecs && p.homeSpecs.length > 0) ? `
             <div class="product-card-specs">
-              ${(p.homeSpecs || []).map(spec => `
+              ${p.homeSpecs.map(spec => `
                 <div class="spec-item">
                   <span class="spec-checkmark">✓</span>
                   <span class="spec-label">${spec.key}:</span>
@@ -78,6 +79,7 @@ const App = {
                 </div>
               `).join("")}
             </div>
+            ` : ""}
             
             <div class="product-card-price-row">
               <span class="price-bgn font-medium text-primary font-bold">
