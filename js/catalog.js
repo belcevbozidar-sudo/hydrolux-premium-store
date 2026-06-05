@@ -23,7 +23,14 @@ const Catalog = {
 
   selectSubcategoryClick(catId, subId) {
     this.activeCategory = catId || null;
-    this.activeSubcategory = subId || null;
+    
+    // Toggle subcategory if clicked again
+    if (this.activeSubcategory === subId) {
+      this.activeSubcategory = null;
+    } else {
+      this.activeSubcategory = subId || null;
+    }
+    
     this.activeSubSubcategory = null;
     if (App.currentView !== "catalog") {
       App.navigate("catalog");
@@ -35,7 +42,14 @@ const Catalog = {
   selectSubSubcategoryClick(catId, subId, subsubId) {
     this.activeCategory = catId || null;
     this.activeSubcategory = subId || null;
-    this.activeSubSubcategory = subsubId || null;
+    
+    // Toggle sub-subcategory if clicked again
+    if (this.activeSubSubcategory === subsubId) {
+      this.activeSubSubcategory = null;
+    } else {
+      this.activeSubSubcategory = subsubId || null;
+    }
+    
     if (App.currentView !== "catalog") {
       App.navigate("catalog");
     }
@@ -109,11 +123,8 @@ const Catalog = {
 
     container.style.display = "flex";
 
-    // 1. Render subcategories horizontal tags
+    // 1. Render subcategories horizontal tags (without "All" button)
     let tagsHtml = `
-      <button class="subcategory-tag-btn ${!this.activeSubcategory ? 'active' : ''}" onclick="Catalog.selectSubcategoryClick('${cat.id}', '')">
-        Всички подкатегории
-      </button>
       ${cat.subcategories.map(sub => `
         <button class="subcategory-tag-btn ${this.activeSubcategory === sub.id ? 'active' : ''}" onclick="Catalog.selectSubcategoryClick('${cat.id}', '${sub.id}')">
           ${sub.name}
@@ -130,9 +141,6 @@ const Catalog = {
         subsubHtml = `
           <div style="font-size: 0.68rem; font-weight: 800; text-transform: uppercase; color: #94a3b8; letter-spacing: 0.5px; width: 100%; margin-top: 5px; margin-bottom: 5px;">Под-подкатегории:</div>
           <div style="display: flex; gap: 10px; flex-wrap: wrap; width: 100%;">
-            <button class="subcategory-tag-btn ${!this.activeSubSubcategory ? 'active' : ''}" onclick="Catalog.selectSubSubcategoryClick('${cat.id}', '${sub.id}', '')">
-              Всички под-подкатегории
-            </button>
             ${sub.subcategories.map(subsub => `
               <button class="subcategory-tag-btn ${this.activeSubSubcategory === subsub.id ? 'active' : ''}" onclick="Catalog.selectSubSubcategoryClick('${cat.id}', '${sub.id}', '${subsub.id}')">
                 ${subsub.name}
