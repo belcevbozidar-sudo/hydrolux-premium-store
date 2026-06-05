@@ -13,8 +13,8 @@ export default async function handler(req, res) {
   }
 
   try {
-    // Correct REST endpoint for Imagen 3 is models/imagen-3.0-generate-002:predict
-    const googleUrl = `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:predict?key=${apiKey}`;
+    // Use the active Imagen 4 model endpoint (imagen-4.0-generate-001)
+    const googleUrl = `https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict?key=${apiKey}`;
     const response = await fetch(googleUrl, {
       method: "POST",
       headers: {
