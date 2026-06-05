@@ -9,70 +9,125 @@ const Catalog = {
   filterPressure: "",
   filterTemp: "",
 
+  expandedCategories: {},
+
+  toggleTreeExpand(catId) {
+    this.expandedCategories[catId] = !this.expandedCategories[catId];
+    this.renderSidebar();
+  },
+
+  toggleTreeExpandSub(catId, subId) {
+    const key = `${catId}_${subId}`;
+    this.expandedCategories[key] = !this.expandedCategories[key];
+    this.renderSidebar();
+  },
+
+  selectSubcategoryClick(catId, subId) {
+    this.activeCategory = catId;
+    this.activeSubcategory = subId;
+    this.activeSubSubcategory = null;
+    if (App.currentView !== "catalog") {
+      App.navigate("catalog");
+    }
+    this.renderSidebar();
+    this.applyFiltersAndRender();
+  },
+
+  selectSubSubcategoryClick(catId, subId, subsubId) {
+    this.activeCategory = catId;
+    this.activeSubcategory = subId;
+    this.activeSubSubcategory = subsubId;
+    if (App.currentView !== "catalog") {
+      App.navigate("catalog");
+    }
+    this.renderSidebar();
+    this.applyFiltersAndRender();
+  },
+
   // Render product categories inside the top collapsible dropdown menu
   renderSidebar() {
     const container = document.getElementById("catalog-categories-tags-list");
     if (!container) return;
 
-    const catHtml = `
-      <div class="catalog-categories-grid">
-        <button class="category-tag-btn ${!this.activeCategory ? 'active' : ''}" id="cat-tag-all" onclick="Catalog.selectCategory('')">
-          Всички
-        </button>
-        ${CONFIG.categories.map(cat => `
-          <button class="category-tag-btn ${this.activeCategory === cat.id ? 'active' : ''}" id="cat-tag-${cat.id}" onclick="Catalog.selectCategory('${cat.id}')">
-            ${cat.name}
-          </button>
-        `).join("")}
+    let treeHtml = `
+      <div class="catalog-tree-container">
+        <ul class="catalog-tree-menu">
+          <li class="tree-item ${!this.activeCategory ? 'active' : ''}">
+            <div class="tree-row" onclick="Catalog.selectCategory('')">
+              <span class="tree-icon">📂</span>
+              <span class="tree-label">Всички продукти</span>
+            </div>
+          </li>
+    `;
+
+    CONFIG.categories.forEach(cat => {
+      const isCatActive = this.activeCategory === cat.id;
+      const hasSub = cat.subcategories && cat.subcategories.length > 0;
+      const isExpanded = isCatActive || !!this.expandedCategories[cat.id];
+
+      treeHtml += `
+        <li class="tree-item ${isCatActive ? 'active' : ''} ${hasSub ? 'has-children' : ''} ${isExpanded ? 'expanded' : ''}" id="tree-cat-${cat.id}">
+          <div class="tree-row">
+            ${hasSub ? `<span class="tree-toggle" onclick="event.stopPropagation(); Catalog.toggleTreeExpand('${cat.id}')">${isExpanded ? '▼' : '▶'}</span>` : '<span class="tree-toggle-spacer"></span>'}
+            <span class="tree-link" onclick="Catalog.selectCategory('${cat.id}')">
+              <span class="tree-icon">${cat.icon || '📁'}</span>
+              <span class="tree-label">${cat.name}</span>
+            </span>
+          </div>
+      `;
+
+      if (hasSub) {
+        treeHtml += `<ul class="tree-sub-list ${isExpanded ? 'open' : ''}">`;
+        
+        cat.subcategories.forEach(sub => {
+          const isSubActive = this.activeSubcategory === sub.id;
+          const hasSubSub = sub.subcategories && sub.subcategories.length > 0;
+          const subKey = `${cat.id}_${sub.id}`;
+          const isSubExpanded = (isSubActive && isCatActive) || !!this.expandedCategories[subKey];
+
+          treeHtml += `
+            <li class="tree-item ${isSubActive ? 'active' : ''} ${hasSubSub ? 'has-children' : ''} ${isSubExpanded ? 'expanded' : ''}" id="tree-sub-${sub.id}">
+              <div class="tree-row">
+                ${hasSubSub ? `<span class="tree-toggle" onclick="event.stopPropagation(); Catalog.toggleTreeExpandSub('${cat.id}', '${sub.id}')">${isSubExpanded ? '▼' : '▶'}</span>` : '<span class="tree-toggle-spacer"></span>'}
+                <span class="tree-link" onclick="Catalog.selectSubcategoryClick('${cat.id}', '${sub.id}')">
+                  <span class="tree-label">${sub.name}</span>
+                </span>
+              </div>
+          `;
+
+          if (hasSubSub) {
+            treeHtml += `<ul class="tree-sub-sub-list ${isSubExpanded ? 'open' : ''}">`;
+            sub.subcategories.forEach(subsub => {
+              const isSubSubActive = this.activeSubSubcategory === subsub.id;
+              treeHtml += `
+                <li class="tree-item ${isSubSubActive ? 'active' : ''}">
+                  <div class="tree-row" onclick="Catalog.selectSubSubcategoryClick('${cat.id}', '${sub.id}', '${subsub.id}')">
+                    <span class="tree-toggle-spacer"></span>
+                    <span class="tree-link">
+                      <span class="tree-label">${subsub.name}</span>
+                    </span>
+                  </div>
+                </li>
+              `;
+            });
+            treeHtml += `</ul>`;
+          }
+
+          treeHtml += `</li>`;
+        });
+        
+        treeHtml += `</ul>`;
+      }
+
+      treeHtml += `</li>`;
+    });
+
+    treeHtml += `
+        </ul>
       </div>
     `;
 
-    // Render subcategories grid below main grid if selected category has any subcategories
-    let subHtml = "";
-    let subsubHtml = "";
-    if (this.activeCategory) {
-      const activeCatObj = CONFIG.categories.find(c => c.id === this.activeCategory);
-      if (activeCatObj && activeCatObj.subcategories && activeCatObj.subcategories.length > 0) {
-        subHtml = `
-          <div class="catalog-subcategories-bar animate-fade-in" style="margin-top: 15px; border-top: 1px dashed #cbd5e1; padding-top: 15px; width: 100%;">
-            <div style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; color: #64748b; letter-spacing: 0.5px; margin-bottom: 10px;">Подкатегории:</div>
-            <div class="catalog-subcategories-grid">
-              <button class="subcategory-tag-btn ${!this.activeSubcategory ? 'active' : ''}" onclick="Catalog.selectSubcategory('')">
-                Всички подкатегории
-              </button>
-              ${activeCatObj.subcategories.map(sub => `
-                <button class="subcategory-tag-btn ${this.activeSubcategory === sub.id ? 'active' : ''}" onclick="Catalog.selectSubcategory('${sub.id}')">
-                  ${sub.name}
-                </button>
-              `).join("")}
-            </div>
-          </div>
-        `;
-
-        if (this.activeSubcategory) {
-          const activeSubObj = activeCatObj.subcategories.find(s => s.id === this.activeSubcategory);
-          if (activeSubObj && activeSubObj.subcategories && activeSubObj.subcategories.length > 0) {
-            subsubHtml = `
-              <div class="catalog-subcategories-bar animate-fade-in" style="margin-top: 15px; border-top: 1px dashed #cbd5e1; padding-top: 15px; width: 100%;">
-                <div style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; color: #64748b; letter-spacing: 0.5px; margin-bottom: 10px;">Под-подкатегории:</div>
-                <div class="catalog-subcategories-grid">
-                  <button class="subcategory-tag-btn ${!this.activeSubSubcategory ? 'active' : ''}" onclick="Catalog.selectSubSubcategory('')">
-                    Всички под-подкатегории
-                  </button>
-                  ${activeSubObj.subcategories.map(subsub => `
-                    <button class="subcategory-tag-btn ${this.activeSubSubcategory === subsub.id ? 'active' : ''}" onclick="Catalog.selectSubSubcategory('${subsub.id}')">
-                      ${subsub.name}
-                    </button>
-                  `).join("")}
-                </div>
-              </div>
-            `;
-          }
-        }
-      }
-    }
-
-    container.innerHTML = catHtml + subHtml + subsubHtml;
+    container.innerHTML = treeHtml;
     this.renderSpecsFilters();
   },
 
@@ -190,6 +245,33 @@ const Catalog = {
     const products = CONFIG.products;
     const grid = document.getElementById("products-grid");
     if (!grid) return;
+
+    // Set grid class back to products grid by default
+    grid.className = "products-grid full-width";
+
+    // If no category and no other filter/search is active, render category card grid
+    if (!this.activeCategory && !this.searchQuery && !this.filterBrand && !this.filterSize && !this.filterPressure && !this.filterTemp) {
+      const titleEl = document.getElementById("catalog-active-title");
+      const countEl = document.getElementById("catalog-count");
+      if (titleEl) titleEl.textContent = "Всички категории";
+      if (countEl) countEl.textContent = CONFIG.categories.length;
+
+      grid.className = "catalog-categories-cards-grid";
+      grid.innerHTML = CONFIG.categories.map(cat => {
+        const imgName = `cat_${cat.id.replace(/-/g, '_')}.png`;
+        return `
+          <div class="category-card-card" onclick="Catalog.selectCategory('${cat.id}')" style="background-image: url('assets/${imgName}');">
+            <div class="category-card-overlay">
+              <div class="category-card-info">
+                <span class="category-card-icon">${cat.icon || '📁'}</span>
+                <h3 class="category-card-title">${cat.name}</h3>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join("");
+      return;
+    }
 
     let filtered = products.filter(p => {
       // 1. Category check

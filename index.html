@@ -499,29 +499,43 @@
       </div> <!-- end of container -->
     </section>
 
-    <!-- 2. CATALOG VIEW (Collapsible Dropdown categories - Wide Products) -->
+    <!-- 2. CATALOG VIEW (Sidebar Filters & Category Tree - Wide Products) -->
     <section id="catalog-view" class="spa-view container mt-20">
       <div class="catalog-wide-layout">
         
-        <!-- 🔥 NEW: Top Collapsible Dropdown Categories Selector -->
-        <div class="catalog-filters-bar card mb-20" style="display: flex; flex-direction: column; gap: 15px;">
-          <div class="catalog-categories-tags-list" id="catalog-categories-tags-list">
-            <!-- Dynamically populated options by catalog.js -->
+        <!-- Sidebar Filters (Desktop left, Mobile drawer) -->
+        <aside class="catalog-sidebar popular-sidebar card">
+          <div class="sidebar-header mobile-only" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid #e2e8f0; padding-bottom: 10px;">
+            <h3 style="margin: 0; font-size: 1.1rem; color: #0f172a; font-weight: 800;">Филтри</h3>
+            <button class="close-sidebar-btn" onclick="Catalog.toggleMobileFilters()" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #64748b;">✕</button>
           </div>
-          <div class="catalog-specs-filters" id="catalog-specs-filters" style="display: flex; gap: 15px; flex-wrap: wrap; border-top: 1px dashed #cbd5e1; padding-top: 15px; width: 100%;">
-            <!-- Dynamically populated spec filters -->
+          
+          <div class="sidebar-section mb-20">
+            <div class="catalog-categories-tags-list" id="catalog-categories-tags-list">
+              <!-- Dynamically populated vertical tree by catalog.js -->
+            </div>
           </div>
-          <button class="btn btn-secondary" onclick="Catalog.resetFilters()" style="width: fit-content; align-self: flex-end;">Изчисти Филтрите</button>
-        </div>
+          
+          <div class="sidebar-section mb-20" style="border-top: 1px dashed #cbd5e1; padding-top: 15px;">
+            <div class="catalog-specs-filters" id="catalog-specs-filters" style="display: flex; flex-direction: column; gap: 15px;">
+              <!-- Dynamically populated spec filters -->
+            </div>
+          </div>
+          
+          <button class="btn btn-secondary btn-block mt-20" onclick="Catalog.resetFilters()" style="width: 100%;">Изчисти Филтрите</button>
+        </aside>
 
-        <!-- Full width Products Grid -->
+        <!-- Catalog main content -->
         <div class="catalog-main">
-          <div class="catalog-content-header">
-            <h2 id="catalog-active-title">Всички продукти</h2>
-            <div class="text-muted font-small">Намерени решения: <strong class="text-dark" id="catalog-count">8</strong></div>
+          <div class="catalog-content-header" style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+            <button id="mobile-filter-toggle-btn" class="btn btn-secondary mobile-only" onclick="Catalog.toggleMobileFilters()" style="display: none; align-items: center; gap: 8px;">
+              <span>Покажи Филтри</span>
+            </button>
+            <h2 id="catalog-active-title" style="margin: 0;">Всички продукти</h2>
+            <div class="text-muted font-small" style="margin-left: auto;">Намерени решения: <strong class="text-dark" id="catalog-count">8</strong></div>
           </div>
           <div class="products-grid full-width" id="products-grid">
-            <!-- Dynamically Rendered Products -->
+            <!-- Dynamically Rendered Products or Category Cards -->
           </div>
         </div>
       </div>
