@@ -3232,8 +3232,83 @@ td .admin-actions-cell {
   border-color: #fca5a5;
 }
 
-.wishlist-btn.active svg {
+/* Wishlist SVG transitions */
+.wishlist-btn svg, .wishlist-btn-overlay svg, .wishlist-btn-detail svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  transition: all 0.2s ease;
+}
+
+.wishlist-btn.active svg, .wishlist-btn-overlay.active svg, .wishlist-btn-detail.active svg {
   fill: #ef4444;
+  stroke: #ef4444;
+}
+
+/* Hover Overlay for product card images */
+.product-card-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card-hover-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 5;
+}
+
+/* On desktop, show the overlay when hovering the card */
+@media (min-width: 1025px) {
+  .product-card:hover .product-card-hover-overlay {
+    opacity: 1;
+  }
+}
+
+.wishlist-btn-overlay {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: none;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  padding: 0;
+}
+
+.wishlist-btn-overlay:hover {
+  transform: scale(1.1);
+  color: #ef4444;
+}
+
+.wishlist-btn-overlay.active {
+  color: #ef4444;
+}
+
+.wishlist-btn-detail {
+  transition: all 0.2s ease;
+}
+
+.wishlist-btn-detail:hover {
+  background-color: #fef2f2 !important;
+  color: #ef4444 !important;
+  border-color: #fca5a5 !important;
+}
+
+.wishlist-btn-detail.active {
+  background-color: #fef2f2 !important;
+  color: #ef4444 !important;
+  border-color: #fca5a5 !important;
 }
 
 /* Badge styling override */

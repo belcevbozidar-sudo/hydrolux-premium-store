@@ -13,6 +13,7 @@ const App = {
 
     // 1. Initialize Components
     Cart.init();
+    this.updateWishlistCount();
     
     // 2. Render dynamic components based on the localStorage state
     this.renderQuickCategories();
@@ -109,13 +110,60 @@ const App = {
     if (specialHeader) specialHeader.style.display = "none";
   },
 
+  getWishlist() {
+    try {
+      return JSON.parse(localStorage.getItem("hydrolux_wishlist")) || [];
+    } catch (e) {
+      return [];
+    }
+  },
+
+  saveWishlist(list) {
+    localStorage.setItem("hydrolux_wishlist", JSON.stringify(list));
+    this.updateWishlistCount();
+  },
+
+  updateWishlistCount() {
+    const list = this.getWishlist();
+    // Wishlist header icon badge
+    const badge = document.getElementById("wishlist-badge") || document.querySelector(".header-actions button:nth-child(2) .header-action-badge");
+    if (badge) {
+      badge.textContent = list.length;
+    }
+  },
+
   toggleFavorite(productId, btn) {
-    btn.classList.toggle("active");
-    const isActive = btn.classList.contains("active");
-    if (isActive) {
-      Cart.showToast("Добавено в любими");
+    let wishlist = this.getWishlist();
+    const index = wishlist.indexOf(productId);
+    let isActive = false;
+    
+    if (index === -1) {
+      wishlist.push(productId);
+      isActive = true;
+      Cart.showToast("Добавено в любими! ❤️");
     } else {
-      Cart.showToast("Премахнато от любими");
+      wishlist.splice(index, 1);
+      isActive = false;
+      Cart.showToast("Премахнато от любими.");
+    }
+    
+    this.saveWishlist(wishlist);
+    
+    // Synchronize the active class on all favorite buttons representing this product in the page
+    document.querySelectorAll(`button[onclick*="App.toggleFavorite('${productId}'"]`).forEach(b => {
+      if (isActive) b.classList.add("active");
+      else b.classList.remove("active");
+    });
+
+    // Also sync the big center overlay buttons
+    document.querySelectorAll(`button[onclick*="App.toggleFavorite('${productId}'"]`).forEach(b => {
+      if (isActive) b.classList.add("active");
+      else b.classList.remove("active");
+    });
+    
+    // If we are currently viewing the wishlist page, refresh the layout!
+    if (typeof Catalog !== "undefined" && Catalog.filterWishlist) {
+      Catalog.applyFiltersAndRender();
     }
   },
 

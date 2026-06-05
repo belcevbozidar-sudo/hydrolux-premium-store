@@ -801,6 +801,9 @@ const Admin = {
             <li class="admin-menu-item ${this.activeTab === 'orders' ? 'active' : ''}" onclick="Admin.switchTab('orders')">
               📋 Поръчки
             </li>
+            <li class="admin-menu-item ${this.activeTab === 'crimping' ? 'active' : ''}" onclick="Admin.switchTab('crimping')">
+              ⚙️ Кримпване
+            </li>
           </ul>
         </aside>
 
@@ -831,6 +834,8 @@ const Admin = {
         return this.renderCategoriesWorkspace();
       case "orders":
         return this.renderOrdersWorkspace();
+      case "crimping":
+        return this.renderCrimpingWorkspace();
       default:
         return "Няма намерен работен панел.";
     }
@@ -2905,6 +2910,362 @@ const Admin = {
       toast.classList.remove("show");
       setTimeout(() => toast.remove(), 300);
     }, 3000);
+  },
+
+  normalizePhone(phone) {
+    if (!phone) return "";
+    return phone.replace(/\D/g, "");
+  },
+
+  activeCrimpingTab: "hoses",
+
+  switchCrimpingTab(subTab) {
+    this.activeCrimpingTab = subTab;
+    this.render();
+  },
+
+  renderCrimpingWorkspace() {
+    const options = CONFIG.builderOptions || { hoseTypes: [], sizes: [], fittings: [], sleeves: [] };
+    
+    // Sub-tab links
+    const tabsHtml = `
+      <div class="admin-header-row">
+        <div>
+          <h2>⚙️ Настройки за кримпване (Асемблиране на маркучи)</h2>
+        </div>
+      </div>
+      
+      <div class="crimping-tabs" style="display: flex; gap: 8px; margin-bottom: 24px; border-bottom: 2px solid var(--border-light); padding-bottom: 12px; flex-wrap: wrap;">
+        <button type="button" class="btn btn-admin-action ${this.activeCrimpingTab === 'hoses' ? 'btn-admin-edit' : 'btn-secondary'}" onclick="Admin.switchCrimpingTab('hoses')" style="padding: 10px 18px; border-radius: 8px; font-weight: 700; ${this.activeCrimpingTab === 'hoses' ? 'background-color: var(--accent); color: white;' : ''}">🩺 Типове маркучи</button>
+        <button type="button" class="btn btn-admin-action ${this.activeCrimpingTab === 'sizes' ? 'btn-admin-edit' : 'btn-secondary'}" onclick="Admin.switchCrimpingTab('sizes')" style="padding: 10px 18px; border-radius: 8px; font-weight: 700; ${this.activeCrimpingTab === 'sizes' ? 'background-color: var(--accent); color: white;' : ''}">📏 Размери (DN)</button>
+        <button type="button" class="btn btn-admin-action ${this.activeCrimpingTab === 'fittings' ? 'btn-admin-edit' : 'btn-secondary'}" onclick="Admin.switchCrimpingTab('fittings')" style="padding: 10px 18px; border-radius: 8px; font-weight: 700; ${this.activeCrimpingTab === 'fittings' ? 'background-color: var(--accent); color: white;' : ''}">🔩 Накрайници</button>
+        <button type="button" class="btn btn-admin-action ${this.activeCrimpingTab === 'sleeves' ? 'btn-admin-edit' : 'btn-secondary'}" onclick="Admin.switchCrimpingTab('sleeves')" style="padding: 10px 18px; border-radius: 8px; font-weight: 700; ${this.activeCrimpingTab === 'sleeves' ? 'background-color: var(--accent); color: white;' : ''}">🛡️ Ръкави</button>
+      </div>
+    `;
+
+    // 1. Hoses Tab Content
+    const sizes = options.sizes || [];
+    const hosesHtml = `
+      <div id="crimping-tab-hoses" class="crimping-tab-content" style="display: ${this.activeCrimpingTab === 'hoses' ? 'block' : 'none'};">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+          <h4 style="margin: 0; font-weight: 800; color: #1e293b;">🩺 Управление на маркучи</h4>
+          <button type="button" class="btn btn-secondary btn-small" onclick="Admin.addCrimpingHoseRow()">＋ Нов маркуч</button>
+        </div>
+        <div class="admin-table-responsive" style="max-width: 100%; overflow-x: auto; border-radius: 8px; border: 1px solid var(--border-light); margin-bottom: 20px;">
+          <table class="admin-table" style="min-width: 800px; font-size: 0.85rem; border-collapse: collapse;">
+            <thead>
+              <tr style="background-color: #f8fafc;">
+                <th style="padding: 12px; width: 120px;">ID (код)</th>
+                <th style="padding: 12px; min-width: 200px;">Име на маркуч</th>
+                <th style="padding: 12px; width: 110px;">Базова цена (€/м)</th>
+                ${sizes.map(s => {
+                  const sizeShortName = s.name.split(" ")[0];
+                  return `<th style="padding: 12px; width: 90px; text-align: center;">${sizeShortName}<br><span style="font-size: 0.7rem; color: #94a3b8; font-weight: 500;">Налягане (Bar)</span></th>`;
+                }).join("")}
+                <th style="padding: 12px; width: 70px; text-align: center;">Действие</th>
+              </tr>
+            </thead>
+            <tbody id="crimping-hoses-tbody">
+              ${(options.hoseTypes || []).map((h, hIdx) => `
+                <tr class="crimping-hose-row" style="border-bottom: 1px solid #f1f5f9;">
+                  <td style="padding: 8px;"><input type="text" class="form-control hose-id" value="${h.id}" style="padding: 6px; font-size: 0.8rem; font-weight: 700; height: 34px;"></td>
+                  <td style="padding: 8px;"><input type="text" class="form-control hose-name" value="${this.escapeAttr(h.name)}" style="padding: 6px; font-size: 0.8rem; height: 34px;"></td>
+                  <td style="padding: 8px;"><input type="number" step="0.01" class="form-control hose-price" value="${h.basePriceEurPerMeter}" style="padding: 6px; font-size: 0.8rem; height: 34px; font-weight: 700;"></td>
+                  ${sizes.map(s => {
+                    const sizeShortName = s.name.split(" ")[0];
+                    const press = h.pressures && h.pressures[sizeShortName] !== undefined ? h.pressures[sizeShortName] : 0;
+                    return `
+                      <td style="padding: 8px; text-align: center;">
+                        <input type="number" class="form-control text-center hose-pressure-input" data-size-key="${sizeShortName}" value="${press}" style="padding: 6px; font-size: 0.8rem; height: 34px; width: 75px; margin: 0 auto; color: #2be885; font-weight: 700; background-color: #061c36;">
+                      </td>
+                    `;
+                  }).join("")}
+                  <td style="padding: 8px; text-align: center;">
+                    <button type="button" class="btn-icon-danger" style="width: 32px; height: 32px; font-size: 0.9rem; margin: 0 auto;" onclick="this.parentElement.parentElement.remove()">×</button>
+                  </td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `;
+
+    // 2. Sizes Tab Content
+    const sizesHtml = `
+      <div id="crimping-tab-sizes" class="crimping-tab-content" style="display: ${this.activeCrimpingTab === 'sizes' ? 'block' : 'none'};">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+          <h4 style="margin: 0; font-weight: 800; color: #1e293b;">📏 Управление на диаметри/размери</h4>
+          <button type="button" class="btn btn-secondary btn-small" onclick="Admin.addCrimpingSizeRow()">＋ Нов размер</button>
+        </div>
+        <div class="admin-table-responsive" style="max-width: 100%; overflow-x: auto; border-radius: 8px; border: 1px solid var(--border-light); margin-bottom: 20px;">
+          <table class="admin-table" style="min-width: 600px; font-size: 0.85rem; border-collapse: collapse;">
+            <thead>
+              <tr style="background-color: #f8fafc;">
+                <th style="padding: 12px; width: 150px;">ID (напр. 1/4)</th>
+                <th style="padding: 12px;">Име / Диаметър (напр. 1/4" (DN06))</th>
+                <th style="padding: 12px; width: 180px;">Оскъпяващ Фактор (1.0 - 3.0)</th>
+                <th style="padding: 12px; width: 80px; text-align: center;">Действие</th>
+              </tr>
+            </thead>
+            <tbody id="crimping-sizes-tbody">
+              ${(options.sizes || []).map((s, sIdx) => `
+                <tr class="crimping-size-row" style="border-bottom: 1px solid #f1f5f9;">
+                  <td style="padding: 8px;"><input type="text" class="form-control size-id" value="${s.id}" style="padding: 6px; font-size: 0.8rem; font-weight: 700; height: 34px;"></td>
+                  <td style="padding: 8px;"><input type="text" class="form-control size-name" value="${this.escapeAttr(s.name)}" style="padding: 6px; font-size: 0.8rem; height: 34px;"></td>
+                  <td style="padding: 8px;"><input type="number" step="0.01" class="form-control size-factor" value="${s.factor}" style="padding: 6px; font-size: 0.8rem; height: 34px; font-weight: 700;"></td>
+                  <td style="padding: 8px; text-align: center;">
+                    <button type="button" class="btn-icon-danger" style="width: 32px; height: 32px; font-size: 0.9rem; margin: 0 auto;" onclick="this.parentElement.parentElement.remove()">×</button>
+                  </td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `;
+
+    // 3. Fittings Tab Content
+    const fittingsHtml = `
+      <div id="crimping-tab-fittings" class="crimping-tab-content" style="display: ${this.activeCrimpingTab === 'fittings' ? 'block' : 'none'};">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+          <h4 style="margin: 0; font-weight: 800; color: #1e293b;">🔩 Управление на накрайници</h4>
+          <button type="button" class="btn btn-secondary btn-small" onclick="Admin.addCrimpingFittingRow()">＋ Нов накрайник</button>
+        </div>
+        <div class="admin-table-responsive" style="max-width: 100%; overflow-x: auto; border-radius: 8px; border: 1px solid var(--border-light); margin-bottom: 20px;">
+          <table class="admin-table" style="min-width: 700px; font-size: 0.85rem; border-collapse: collapse;">
+            <thead>
+              <tr style="background-color: #f8fafc;">
+                <th style="padding: 12px; width: 150px;">ID</th>
+                <th style="padding: 12px;">Име на накрайник</th>
+                <th style="padding: 12px; width: 120px;">Цена (€)</th>
+                <th style="padding: 12px; width: 120px; text-align: center;">Емоджи / Икона</th>
+                <th style="padding: 12px; width: 80px; text-align: center;">Действие</th>
+              </tr>
+            </thead>
+            <tbody id="crimping-fittings-tbody">
+              ${(options.fittings || []).map((f, fIdx) => `
+                <tr class="crimping-fitting-row" style="border-bottom: 1px solid #f1f5f9;">
+                  <td style="padding: 8px;"><input type="text" class="form-control fitting-id" value="${f.id}" style="padding: 6px; font-size: 0.8rem; font-weight: 700; height: 34px;"></td>
+                  <td style="padding: 8px;"><input type="text" class="form-control fitting-name" value="${this.escapeAttr(f.name)}" style="padding: 6px; font-size: 0.8rem; height: 34px;"></td>
+                  <td style="padding: 8px;"><input type="number" step="0.01" class="form-control fitting-price" value="${f.priceEur}" style="padding: 6px; font-size: 0.8rem; height: 34px; font-weight: 700;"></td>
+                  <td style="padding: 8px;"><input type="text" class="form-control text-center fitting-icon" value="${this.escapeAttr(f.icon || '')}" style="padding: 6px; font-size: 0.8rem; height: 34px;"></td>
+                  <td style="padding: 8px; text-align: center;">
+                    <button type="button" class="btn-icon-danger" style="width: 32px; height: 32px; font-size: 0.9rem; margin: 0 auto;" onclick="this.parentElement.parentElement.remove()">×</button>
+                  </td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `;
+
+    // 4. Sleeves Tab Content
+    const sleevesHtml = `
+      <div id="crimping-tab-sleeves" class="crimping-tab-content" style="display: ${this.activeCrimpingTab === 'sleeves' ? 'block' : 'none'};">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+          <h4 style="margin: 0; font-weight: 800; color: #1e293b;">🛡️ Управление на предпазни ръкави</h4>
+          <button type="button" class="btn btn-secondary btn-small" onclick="Admin.addCrimpingSleeveRow()">＋ Нов ръкав</button>
+        </div>
+        <div class="admin-table-responsive" style="max-width: 100%; overflow-x: auto; border-radius: 8px; border: 1px solid var(--border-light); margin-bottom: 20px;">
+          <table class="admin-table" style="min-width: 600px; font-size: 0.85rem; border-collapse: collapse;">
+            <thead>
+              <tr style="background-color: #f8fafc;">
+                <th style="padding: 12px; width: 180px;">ID</th>
+                <th style="padding: 12px;">Име на предпазен ръкав</th>
+                <th style="padding: 12px; width: 140px;">Цена EUR/м (€)</th>
+                <th style="padding: 12px; width: 80px; text-align: center;">Действие</th>
+              </tr>
+            </thead>
+            <tbody id="crimping-sleeves-tbody">
+              ${(options.sleeves || []).map((sl, slIdx) => `
+                <tr class="crimping-sleeve-row" style="border-bottom: 1px solid #f1f5f9;">
+                  <td style="padding: 8px;"><input type="text" class="form-control sleeve-id" value="${sl.id}" style="padding: 6px; font-size: 0.8rem; font-weight: 700; height: 34px;"></td>
+                  <td style="padding: 8px;"><input type="text" class="form-control sleeve-name" value="${this.escapeAttr(sl.name)}" style="padding: 6px; font-size: 0.8rem; height: 34px;"></td>
+                  <td style="padding: 8px;"><input type="number" step="0.01" class="form-control sleeve-price" value="${sl.priceEurPerMeter !== undefined ? sl.priceEurPerMeter : 0}" style="padding: 6px; font-size: 0.8rem; height: 34px; font-weight: 700;"></td>
+                  <td style="padding: 8px; text-align: center;">
+                    <button type="button" class="btn-icon-danger" style="width: 32px; height: 32px; font-size: 0.9rem; margin: 0 auto;" onclick="this.parentElement.parentElement.remove()">×</button>
+                  </td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `;
+
+    // 5. Actions row
+    const actionsHtml = `
+      <div class="divider" style="margin-top: 30px; margin-bottom: 20px;"></div>
+      <div style="display: flex; gap: 12px;">
+        <button type="button" class="btn btn-accent btn-large" style="min-width: 240px;" onclick="Admin.saveCrimpingSettings()">💾 Запази настройките за кримпване</button>
+      </div>
+    `;
+
+    return tabsHtml + hosesHtml + sizesHtml + fittingsHtml + sleevesHtml + actionsHtml;
+  },
+
+  addCrimpingHoseRow() {
+    const tbody = document.getElementById("crimping-hoses-tbody");
+    if (!tbody) return;
+    const sizes = CONFIG.builderOptions.sizes || [];
+    const newHoseId = "hose-" + Date.now();
+    const tr = document.createElement("tr");
+    tr.className = "crimping-hose-row";
+    tr.style.borderBottom = "1px solid #f1f5f9";
+    tr.innerHTML = `
+      <td style="padding: 8px;"><input type="text" class="form-control hose-id" value="${newHoseId}" style="padding: 6px; font-size: 0.8rem; font-weight: 700; height: 34px;"></td>
+      <td style="padding: 8px;"><input type="text" class="form-control hose-name" value="Нов маркуч" style="padding: 6px; font-size: 0.8rem; height: 34px;"></td>
+      <td style="padding: 8px;"><input type="number" step="0.01" class="form-control hose-price" value="1.00" style="padding: 6px; font-size: 0.8rem; height: 34px; font-weight: 700;"></td>
+      ${sizes.map(s => {
+        const sizeShortName = s.name.split(" ")[0];
+        return `
+          <td style="padding: 8px; text-align: center;">
+            <input type="number" class="form-control text-center hose-pressure-input" data-size-key="${sizeShortName}" value="0" style="padding: 6px; font-size: 0.8rem; height: 34px; width: 75px; margin: 0 auto; color: #2be885; font-weight: 700; background-color: #061c36;">
+          </td>
+        `;
+      }).join("")}
+      <td style="padding: 8px; text-align: center;">
+        <button type="button" class="btn-icon-danger" style="width: 32px; height: 32px; font-size: 0.9rem; margin: 0 auto;" onclick="this.parentElement.parentElement.remove()">×</button>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  },
+
+  addCrimpingSizeRow() {
+    const tbody = document.getElementById("crimping-sizes-tbody");
+    if (!tbody) return;
+    const tr = document.createElement("tr");
+    tr.className = "crimping-size-row";
+    tr.style.borderBottom = "1px solid #f1f5f9";
+    tr.innerHTML = `
+      <td style="padding: 8px;"><input type="text" class="form-control size-id" value="new-size" style="padding: 6px; font-size: 0.8rem; font-weight: 700; height: 34px;"></td>
+      <td style="padding: 8px;"><input type="text" class="form-control size-name" value="Размер диаметър" style="padding: 6px; font-size: 0.8rem; height: 34px;"></td>
+      <td style="padding: 8px;"><input type="number" step="0.01" class="form-control size-factor" value="1.0" style="padding: 6px; font-size: 0.8rem; height: 34px; font-weight: 700;"></td>
+      <td style="padding: 8px; text-align: center;">
+        <button type="button" class="btn-icon-danger" style="width: 32px; height: 32px; font-size: 0.9rem; margin: 0 auto;" onclick="this.parentElement.parentElement.remove()">×</button>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  },
+
+  addCrimpingFittingRow() {
+    const tbody = document.getElementById("crimping-fittings-tbody");
+    if (!tbody) return;
+    const tr = document.createElement("tr");
+    tr.className = "crimping-fitting-row";
+    tr.style.borderBottom = "1px solid #f1f5f9";
+    tr.innerHTML = `
+      <td style="padding: 8px;"><input type="text" class="form-control fitting-id" value="new-fitting" style="padding: 6px; font-size: 0.8rem; font-weight: 700; height: 34px;"></td>
+      <td style="padding: 8px;"><input type="text" class="form-control fitting-name" value="Нов накрайник" style="padding: 6px; font-size: 0.8rem; height: 34px;"></td>
+      <td style="padding: 8px;"><input type="number" step="0.01" class="form-control fitting-price" value="0.00" style="padding: 6px; font-size: 0.8rem; height: 34px; font-weight: 700;"></td>
+      <td style="padding: 8px;"><input type="text" class="form-control text-center fitting-icon" value="➡️" style="padding: 6px; font-size: 0.8rem; height: 34px;"></td>
+      <td style="padding: 8px; text-align: center;">
+        <button type="button" class="btn-icon-danger" style="width: 32px; height: 32px; font-size: 0.9rem; margin: 0 auto;" onclick="this.parentElement.parentElement.remove()">×</button>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  },
+
+  addCrimpingSleeveRow() {
+    const tbody = document.getElementById("crimping-sleeves-tbody");
+    if (!tbody) return;
+    const tr = document.createElement("tr");
+    tr.className = "crimping-sleeve-row";
+    tr.style.borderBottom = "1px solid #f1f5f9";
+    tr.innerHTML = `
+      <td style="padding: 8px;"><input type="text" class="form-control sleeve-id" value="new-sleeve" style="padding: 6px; font-size: 0.8rem; font-weight: 700; height: 34px;"></td>
+      <td style="padding: 8px;"><input type="text" class="form-control sleeve-name" value="Нов ръкав" style="padding: 6px; font-size: 0.8rem; height: 34px;"></td>
+      <td style="padding: 8px;"><input type="number" step="0.01" class="form-control sleeve-price" value="0.00" style="padding: 6px; font-size: 0.8rem; height: 34px; font-weight: 700;"></td>
+      <td style="padding: 8px; text-align: center;">
+        <button type="button" class="btn-icon-danger" style="width: 32px; height: 32px; font-size: 0.9rem; margin: 0 auto;" onclick="this.parentElement.parentElement.remove()">×</button>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  },
+
+  async saveCrimpingSettings() {
+    // Collect Hoses
+    const hoseTypes = [];
+    document.querySelectorAll(".crimping-hose-row").forEach(row => {
+      const id = row.querySelector(".hose-id").value.trim();
+      const name = row.querySelector(".hose-name").value.trim();
+      const basePriceEurPerMeter = parseFloat(row.querySelector(".hose-price").value) || 0.0;
+      
+      const pressures = {};
+      row.querySelectorAll(".hose-pressure-input").forEach(input => {
+        const sizeKey = input.getAttribute("data-size-key");
+        const pressureVal = parseInt(input.value) || 0;
+        pressures[sizeKey] = pressureVal;
+      });
+      
+      if (id && name) {
+        hoseTypes.push({ id, name, basePriceEurPerMeter, pressures });
+      }
+    });
+
+    // Collect Sizes
+    const sizes = [];
+    document.querySelectorAll(".crimping-size-row").forEach(row => {
+      const id = row.querySelector(".size-id").value.trim();
+      const name = row.querySelector(".size-name").value.trim();
+      const factor = parseFloat(row.querySelector(".size-factor").value) || 1.0;
+      if (id && name) {
+        sizes.push({ id, name, factor });
+      }
+    });
+
+    // Collect Fittings
+    const fittings = [];
+    document.querySelectorAll(".crimping-fitting-row").forEach(row => {
+      const id = row.querySelector(".fitting-id").value.trim();
+      const name = row.querySelector(".fitting-name").value.trim();
+      const priceEur = parseFloat(row.querySelector(".fitting-price").value) || 0.0;
+      const icon = row.querySelector(".fitting-icon").value.trim() || "➡️";
+      if (id && name) {
+        fittings.push({ id, name, priceEur, icon });
+      }
+    });
+
+    // Collect Sleeves
+    const sleeves = [];
+    document.querySelectorAll(".crimping-sleeve-row").forEach(row => {
+      const id = row.querySelector(".sleeve-id").value.trim();
+      const name = row.querySelector(".sleeve-name").value.trim();
+      const priceEurPerMeter = parseFloat(row.querySelector(".sleeve-price").value) || 0.0;
+      if (id && name) {
+        sleeves.push({ id, name, priceEurPerMeter });
+      }
+    });
+
+    // Construct the options object
+    const newOptions = {
+      hoseTypes,
+      sizes,
+      fittings,
+      sleeves
+    };
+
+    CONFIG.builderOptions = newOptions;
+
+    try {
+      await CONFIG.saveState();
+      
+      // Sync instantly to HoseBuilder
+      if (typeof HoseBuilder !== "undefined") {
+        HoseBuilder.init();
+        HoseBuilder.render();
+      }
+
+      this.showToast("Настройките за кримпване са запазени успешно и се отразяват моментално на сайта!");
+      
+      // Re-render admin too to sync dynamic pressures layout if sizes changed
+      this.render();
+    } catch (err) {
+      console.error(err);
+      alert("Възникна грешка при запазване: " + err.message);
+    }
   },
 
   normalizePhone(phone) {

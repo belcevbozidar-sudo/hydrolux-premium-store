@@ -518,110 +518,15 @@ const Cart = {
       alert("Поръчката е приета локално, но не успяхме да я запишем в Convex. Проверете връзката и синхронизирайте отново.");
     }
 
-    // Show success dialog
-    const successModal = document.getElementById("success-modal");
-    if (successModal) {
-      successModal.classList.add("open");
-      document.body.classList.add("no-scroll");
-
-      const successDetails = document.getElementById("success-details-container");
-      
-      const deliveryBulgarian = {
-        address: "🚚 Доставка до личен / служебен адрес",
-        office: "🏢 Доставка до офис на Еконт",
-        shop: "🏬 Вземане на място от магазина"
-      }[order.delivery] || order.delivery;
-
-      const paymentBulgarian = {
-        cod: "💵 Наложен платеж (при получаване)",
-        bank: "🏦 Банков превод (по проформа)",
-        card: "💳 С дебитна / кредитна карта (myPOS)"
-      }[order.paymentMethod] || order.paymentMethod;
-
-      let invoiceHtml = "";
-      if (order.invoiceDetails) {
-        invoiceHtml = `
-          <div style="margin-top: 15px; padding: 15px; background-color: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px;">
-            <strong style="color: #0f172a;">🧾 Изискана фактура за фирма:</strong><br>
-            <div style="margin-top: 5px; color: #475569; line-height: 1.4;">
-              Име: <strong>${order.invoiceDetails.companyName}</strong><br>
-              Булстат / ЕИК: <strong>${order.invoiceDetails.bulstat}</strong><br>
-              МОЛ: <strong>${order.invoiceDetails.mol}</strong><br>
-              Адрес: <strong>${order.invoiceDetails.address}</strong>
-            </div>
-          </div>
-        `;
-      }
-
-      successDetails.innerHTML = `
-        <div class="success-header text-center">
-          <div class="success-check-icon" style="background-color: #10b981; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 15px;">✓</div>
-          <h2>Поръчката е приета успешно!</h2>
-          <p class="lead">Номер на поръчката: <strong class="text-primary">${order.orderNumber}</strong></p>
-          <p class="text-muted font-small">Наш консултант ще се свърже с Вас на тел. <strong>${order.customer.phone}</strong> за потвърждение.</p>
-        </div>
-        
-        <div class="invoice-box card mt-20 font-small" style="background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px;">
-          <div class="invoice-title" style="font-weight: 800; color: #0f172a; margin-bottom: 10px;">📝 ДЕТАЙЛИ НА ПОРЪЧКАТА / ПРОФОРМА ФАКТУРА</div>
-          <div class="divider"></div>
-          
-          <div class="invoice-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px;">
-            <div>
-              <strong>Доставчик:</strong><br>
-              Хидролукс Груп ЕООД<br>
-              ЕИК: 205612345 (Монтана)<br>
-              гр. Монтана, ул. „Индустриална“ 32г<br>
-              тел: +359 89 248 4337
-            </div>
-            <div>
-              <strong>Получател:</strong><br>
-              ${order.customer.name}<br>
-              тел: ${order.customer.phone}<br>
-              имейл: ${order.customer.email}<br>
-              ${order.delivery !== "shop" ? `град: ${order.city}, ПК: ${order.postcode}<br>` : ""}
-              <strong>Доставка:</strong> ${deliveryBulgarian}<br>
-              ${order.delivery !== "shop" ? `Адрес/Офис: ${order.address}<br>` : ""}
-              <strong>Плащане:</strong> ${paymentBulgarian}
-            </div>
-          </div>
-
-          ${invoiceHtml}
-          
-          <div class="divider" style="margin: 15px 0;"></div>
-          
-          <div class="invoice-items">
-            ${order.items.map((item, idx) => `
-              <div class="invoice-item-row" style="display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #f1f5f9;">
-                <span>${idx + 1}. ${item.name} ${item.variantName ? `(${item.variantName})` : ''}</span>
-                <span>${item.quantity} x ${formatPrice(item.priceEur).eur}</span>
-                <span class="text-right font-bold">${formatPrice(item.priceEur * item.quantity).eur}</span>
-              </div>
-            `).join("")}
-          </div>
-          
-          <div class="divider" style="margin: 15px 0;"></div>
-          
-          <div class="invoice-footer-totals">
-            <div class="row" style="display: flex; justify-content: space-between; padding: 4px 0;">
-              <span>Междинна сума:</span>
-              <span>${(order.totals.eur / 1.2).toFixed(2)} € (${((order.totals.eur / 1.2) * 1.95583).toFixed(2)} лв.)</span>
-            </div>
-            <div class="row" style="display: flex; justify-content: space-between; padding: 4px 0;">
-              <span>ДДС (20%):</span>
-              <span>${(order.totals.eur - (order.totals.eur / 1.2)).toFixed(2)} € (${((order.totals.eur - (order.totals.eur / 1.2)) * 1.95583).toFixed(2)} лв.)</span>
-            </div>
-            <div class="row font-large text-primary font-bold" style="display: flex; justify-content: space-between; padding: 8px 0; font-size: 1.1rem; border-top: 1.5px solid #cbd5e1; margin-top: 8px;">
-              <span>ОБЩО С ДДС:</span>
-              <span>${order.totals.eur.toFixed(2)} € (${(order.totals.eur * 1.95583).toFixed(2)} лв.)</span>
-            </div>
-          </div>
-        </div>
-      `;
-    }
-
+    // Save order details to localStorage for the thank-you page
+    localStorage.setItem("hydrolux_last_order", JSON.stringify(order));
+    
     this.clear();
     this.myposPaid = false;
     this.currentPendingOrder = null;
+
+    // Redirect to the new thank you route
+    window.location.href = "/thank-you";
   },
 
   closeSuccess() {

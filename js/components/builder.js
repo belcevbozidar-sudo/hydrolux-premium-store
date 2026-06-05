@@ -1,33 +1,58 @@
 // Hose Configurator Component (Euro € Optimized)
 const HoseBuilder = {
-  options: {
-    hoseTypes: [
-      { id: "hp-2sn", name: "Хидравличен маркуч 2SN (Двуоплетен)", basePriceEurPerMeter: 3.50, pressures: { "1/4\"": 400, "3/8\"": 330, "1/2\"": 275, "3/4\"": 215, "1\"": 165 } },
-      { id: "hp-1sn", name: "Хидравличен маркуч 1SN (Еднооплетен)", basePriceEurPerMeter: 2.70, pressures: { "1/4\"": 225, "3/8\"": 180, "1/2\"": 160, "3/4\"": 105, "1\"": 88 } },
-      { id: "hp-thermo", name: "Термопластичен маркуч R7", basePriceEurPerMeter: 4.20, pressures: { "1/4\"": 210, "3/8\"": 190, "1/2\"": 140, "3/4\"": 112, "1\"": 70 } }
-    ],
-    sizes: [
-      { id: "1/4", name: "1/4\" (DN06)", factor: 1.0 },
-      { id: "3/8", name: "3/8\" (DN10)", factor: 1.25 },
-      { id: "1/2", name: "1/2\" (DN13)", factor: 1.5 },
-      { id: "3/4", name: "3/4\" (DN19)", factor: 2.1 },
-      { id: "1", name: "1\" (DN25)", factor: 3.0 }
-    ],
-    fittings: [
-      { id: "none", name: "Без накрайник (прав срез)", priceEur: 0.0, icon: "➖" },
-      { id: "dkol-straight", name: "DKOL Метричен прав (DKO-L)", priceEur: 3.20, icon: "➡️" },
-      { id: "dkol-90", name: "DKOL Метричен 90° коляно", priceEur: 5.80, icon: "↳" },
-      { id: "dkol-45", name: "DKOL Метричен 45° коляно", priceEur: 6.20, icon: "↗️" },
-      { id: "bsp-straight", name: "BSP Прав с вътрешна резба", priceEur: 3.40, icon: "➡️" },
-      { id: "bsp-90", name: "BSP 90° коляно с вътрешна резба", priceEur: 6.00, icon: "↳" },
-      { id: "jic-straight", name: "JIC Прав с инчова резба (37° UNF)", priceEur: 3.60, icon: "➡️" }
-    ],
-    sleeves: [
-      { id: "none", name: "Без предпазен ръкав", priceEurPerMeter: 0.0 },
-      { id: "plastic-spiral", name: "Предпазна пластмасова спирала (жълта)", priceEurPerMeter: 1.20 },
-      { id: "textile-sleeve", name: "Текстилен предпазен шлаух (черен)", priceEurPerMeter: 1.50 },
-      { id: "metal-spiral", name: "Стоманена предпазна пружина", priceEurPerMeter: 2.80 }
-    ]
+  options: null,
+
+  init() {
+    this.options = CONFIG.builderOptions || this.getDefaultOptions();
+
+    // Ensure state matches available options
+    if (this.options.hoseTypes && this.options.hoseTypes.length > 0 && !this.options.hoseTypes.some(h => h.id === this.state.hoseTypeId)) {
+      this.state.hoseTypeId = this.options.hoseTypes[0].id;
+    }
+    if (this.options.sizes && this.options.sizes.length > 0 && !this.options.sizes.some(s => s.id === this.state.sizeId)) {
+      this.state.sizeId = this.options.sizes[0].id;
+    }
+    if (this.options.fittings && this.options.fittings.length > 0 && !this.options.fittings.some(f => f.id === this.state.fittingLeftId)) {
+      this.state.fittingLeftId = this.options.fittings[0].id;
+    }
+    if (this.options.fittings && this.options.fittings.length > 0 && !this.options.fittings.some(f => f.id === this.state.fittingRightId)) {
+      this.state.fittingRightId = this.options.fittings[0].id;
+    }
+    if (this.options.sleeves && this.options.sleeves.length > 0 && !this.options.sleeves.some(sl => sl.id === this.state.sleeveId)) {
+      this.state.sleeveId = this.options.sleeves[0].id;
+    }
+  },
+
+  getDefaultOptions() {
+    return {
+      hoseTypes: [
+        { id: "hp-2sn", name: "Хидравличен маркуч 2SN (Двуоплетен)", basePriceEurPerMeter: 3.50, pressures: { "1/4\"": 400, "3/8\"": 330, "1/2\"": 275, "3/4\"": 215, "1\"": 165 } },
+        { id: "hp-1sn", name: "Хидравличен маркуч 1SN (Еднооплетен)", basePriceEurPerMeter: 2.70, pressures: { "1/4\"": 225, "3/8\"": 180, "1/2\"": 160, "3/4\"": 105, "1\"": 88 } },
+        { id: "hp-thermo", name: "Термопластичен маркуч R7", basePriceEurPerMeter: 4.20, pressures: { "1/4\"": 210, "3/8\"": 190, "1/2\"": 140, "3/4\"": 112, "1\"": 70 } }
+      ],
+      sizes: [
+        { id: "1/4", name: "1/4\" (DN06)", factor: 1.0 },
+        { id: "3/8", name: "3/8\" (DN10)", factor: 1.25 },
+        { id: "1/2", name: "1/2\" (DN13)", factor: 1.5 },
+        { id: "3/4", name: "3/4\" (DN19)", factor: 2.1 },
+        { id: "1", name: "1\" (DN25)", factor: 3.0 }
+      ],
+      fittings: [
+        { id: "none", name: "Без накрайник (прав срез)", priceEur: 0.0, icon: "➖" },
+        { id: "dkol-straight", name: "DKOL Метричен прав (DKO-L)", priceEur: 3.20, icon: "➡️" },
+        { id: "dkol-90", name: "DKOL Метричен 90° коляно", priceEur: 5.80, icon: "↳" },
+        { id: "dkol-45", name: "DKOL Метричен 45° коляно", priceEur: 6.20, icon: "↗️" },
+        { id: "bsp-straight", name: "BSP Прав с вътрешна резба", priceEur: 3.40, icon: "➡️" },
+        { id: "bsp-90", name: "BSP 90° коляно с вътрешна резба", priceEur: 6.00, icon: "↳" },
+        { id: "jic-straight", name: "JIC Прав с инчова резба (37° UNF)", priceEur: 3.60, icon: "➡️" }
+      ],
+      sleeves: [
+        { id: "none", name: "Без предпазен ръкав", priceEurPerMeter: 0.0 },
+        { id: "plastic-spiral", name: "Предпазна пластмасова спирала (жълта)", priceEurPerMeter: 1.20 },
+        { id: "textile-sleeve", name: "Текстилен предпазен шлаух (черен)", priceEurPerMeter: 1.50 },
+        { id: "metal-spiral", name: "Стоманена предпазна пружина", priceEurPerMeter: 2.80 }
+      ]
+    };
   },
 
   state: {
@@ -40,6 +65,7 @@ const HoseBuilder = {
   },
 
   calculatePrice() {
+    if (!this.options) this.init();
     const hose = this.options.hoseTypes.find(h => h.id === this.state.hoseTypeId);
     const size = this.options.sizes.find(s => s.id === this.state.sizeId);
     const fitL = this.options.fittings.find(f => f.id === this.state.fittingLeftId);
@@ -75,6 +101,7 @@ const HoseBuilder = {
   },
 
   render() {
+    this.init();
     const container = document.getElementById("hose-builder-container");
     if (!container) return;
 

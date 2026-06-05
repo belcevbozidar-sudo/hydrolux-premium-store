@@ -1,7 +1,7 @@
 import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
 
-const STATE_KEYS = ["products", "categories", "tableTemplates"];
+const STATE_KEYS = ["products", "categories", "tableTemplates", "builderOptions"];
 
 async function getStateDoc(ctx, key) {
   return await ctx.db
@@ -57,6 +57,7 @@ export const setState = mutation({
     products: v.optional(v.any()),
     categories: v.optional(v.any()),
     tableTemplates: v.optional(v.any()),
+    builderOptions: v.optional(v.any()),
   },
   handler: async (ctx, args) => {
     const updatedAt = Date.now();
