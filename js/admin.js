@@ -1853,12 +1853,18 @@ const Admin = {
           </div>
           
           <div class="form-group" style="margin-top: 15px;">
-            <label>Снимка на категорията (URL или локален път)</label>
-            <div style="display: flex; gap: 8px;">
-              <input type="text" id="cat-image" class="form-control" value="${isEditing ? (this.editingCategory.image || '') : ''}" placeholder="напр. assets/cat_air_hoses.png или AI генериран адрес">
-              <button type="button" class="btn btn-secondary" onclick="Admin.generateAICategoryImage()" style="white-space: nowrap;">✨ Генерирай с ИИ</button>
+            <label style="display: block; margin-bottom: 8px;">Снимка на категорията</label>
+            <img id="cat-image-preview" src="${isEditing ? (this.editingCategory.image || '') : ''}" style="max-width: 120px; max-height: 120px; display: ${isEditing && this.editingCategory.image ? 'block' : 'none'}; border-radius: 8px; border: 1.5px solid #cbd5e1; margin-bottom: 12px; object-fit: cover; aspect-ratio: 1/1;">
+            
+            <input type="hidden" id="cat-image" value="${isEditing ? (this.editingCategory.image || '') : ''}">
+            <input type="file" id="cat-file-input" accept="image/*" onchange="Admin.handleCategoryFileSelect(event)" style="display: none;">
+            
+            <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+              <button type="button" class="btn btn-secondary" onclick="document.getElementById('cat-file-input').click()">📁 Избери от устройството</button>
+              <button type="button" class="btn btn-orange" onclick="Admin.generateGeminiCategoryImage()">✨ Генерирай с Gemini</button>
+              <a href="#" onclick="event.preventDefault(); const k = prompt('Промяна на Google AI Studio API Key:', localStorage.getItem('gemini_api_key') || ''); if(k !== null) localStorage.setItem('gemini_api_key', k.trim())" style="font-size: 0.82rem; text-decoration: underline; color: var(--primary); font-weight: 700; margin-left: 5px;">🔧 Настройка на API Ключ</a>
             </div>
-            <p class="font-xs text-muted mt-5" style="margin-bottom: 0;">* Можете да натиснете бутона за автоматично генериране на красива снимка с Изкуствен Интелект въз основа на името.</p>
+            <p class="font-xs text-muted mt-5" style="margin-bottom: 0;">* Можете да качите файл от устройството си или да генерирате изображение с Gemini (изисква API ключ от Google AI Studio).</p>
           </div>
           
           <!-- SUB-CATEGORIES SECTION -->
@@ -1983,17 +1989,51 @@ const Admin = {
     }
   },
 
-  generateAICategoryImage() {
+  handleCategoryFileSelect(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+    
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const base64Url = e.target.result;
+      document.getElementById("cat-image").value = base64Url;
+      
+      const preview = document.getElementById("cat-image-preview");
+      preview.src = base64Url;
+      preview.style.display = "block";
+      
+      if (typeof Cart !== 'undefined' && typeof Cart.showToast === 'function') {
+        Cart.showToast("Снимката е заредена успешно от устройството!");
+      }
+    };
+    reader.readAsDataURL(file);
+  },
+
+  async generateGeminiCategoryImage() {
     const nameEl = document.getElementById("cat-name");
-    const imgEl = document.getElementById("cat-image");
-    if (!nameEl || !imgEl) return;
+    const imgPreview = document.getElementById("cat-image-preview");
+    const imgVal = document.getElementById("cat-image");
+    if (!nameEl || !imgPreview || !imgVal) return;
+    
     const name = nameEl.value.trim();
     if (!name) {
-      alert("Моля, първо въведете име на категорията, за да може ИИ да генерира подходяща снимка!");
+      alert("Моля, първо въведете име на категорията, за да може Gemini да генерира подходяща снимка!");
       nameEl.focus();
       return;
     }
-    const seed = Math.floor(Math.random() * 1000000);
+
+    let apiKey = localStorage.getItem("gemini_api_key");
+    if (!apiKey) {
+      apiKey = prompt("Моля, въведете Вашия Google AI Studio API Key за достъп до Gemini / Imagen 3:");
+      if (!apiKey) return;
+      apiKey = apiKey.trim();
+      localStorage.setItem("gemini_api_key", apiKey);
+    }
+
+    if (typeof Cart !== 'undefined' && typeof Cart.showToast === 'function') {
+      Cart.showToast("Gemini генерира изображение...");
+    }
+
     let enKeywords = "industrial hose hydraulic pneumatic connector";
     if (name.toLowerCase().includes("въздух")) enKeywords = "pneumatic air hose industrial compressor hose";
     else if (name.toLowerCase().includes("вода")) enKeywords = "industrial water delivery flat layflat hose";
@@ -2010,10 +2050,44 @@ const Admin = {
     else if (name.toLowerCase().includes("високо налягане")) enKeywords = "high pressure hydraulic rubber hose 2SN wire braid steel crimped";
     else if (name.toLowerCase().includes("аксесоар")) enKeywords = "hose accessories clamps protective spiral sleeve guards";
 
-    const prompt = encodeURIComponent(`${enKeywords}, bright clean product studio photography, white background, high detail 8k, premium brand`);
-    imgEl.value = `https://image.pollinations.ai/prompt/${prompt}?width=400&height=460&nologo=true&seed=${seed}`;
-    if (typeof Cart !== 'undefined' && typeof Cart.showToast === 'function') {
-      Cart.showToast("Снимката е генерирана успешно с ИИ!");
+    const promptText = `${enKeywords}, bright clean product studio photography, white background, high detail 8k, premium brand`;
+
+    try {
+      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:generateImages?key=${apiKey}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          prompt: promptText,
+          numberOfImages: 1,
+          outputMimeType: "image/jpeg",
+          aspectRatio: "1:1"
+        })
+      });
+
+      if (!response.ok) {
+        const errData = await response.json().catch(() => ({}));
+        throw new Error(errData.error?.message || response.statusText);
+      }
+
+      const resData = await response.json();
+      const imgBytes = resData.generatedImages?.[0]?.image?.imageBytes;
+      if (!imgBytes) {
+        throw new Error("Не бе върнато изображение от Gemini Imagen API.");
+      }
+
+      const base64Url = `data:image/jpeg;base64,${imgBytes}`;
+      imgVal.value = base64Url;
+      imgPreview.src = base64Url;
+      imgPreview.style.display = "block";
+      
+      if (typeof Cart !== 'undefined' && typeof Cart.showToast === 'function') {
+        Cart.showToast("Снимката е генерирана успешно с Gemini!");
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Възникна грешка при генериране с Gemini: " + err.message + "\n\nАко API ключът е невалиден, използвайте линка в формата за промяна.");
     }
   },
 

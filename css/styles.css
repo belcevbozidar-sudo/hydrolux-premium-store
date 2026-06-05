@@ -650,7 +650,7 @@ p {
 .modern-hero-section {
   position: relative;
   min-height: 420px;
-  padding: 35px 0;
+  padding: 35px 0 100px 0;
   background-image: url('../assets/hero_bg.png');
   background-size: cover;
   background-position: right center;
@@ -1066,7 +1066,7 @@ p {
   }
   .modern-hero-section {
     min-height: auto;
-    padding: 40px 0;
+    padding: 40px 0 90px 0;
     background-position: 70% center;
   }
   .hero-bg-overlay {
@@ -3687,7 +3687,7 @@ td .admin-actions-cell {
     left: 0 !important;
     right: 0 !important;
     border-radius: 16px !important;
-    padding: 30px 20px !important;
+    padding: 30px 20px 80px 20px !important;
     min-height: auto !important;
     background-position: 80% center !important;
   }
@@ -4642,5 +4642,30 @@ td .admin-actions-cell {
   }
   .carousel-arrow.next-arrow {
     right: -5px;
+  }
+}
+
+.categories-carousel-container {
+  margin-top: -85px !important;
+  position: relative;
+  z-index: 20;
+  margin-bottom: 0 !important;
+}
+
+@media (max-width: 1100px) {
+  .categories-carousel-container {
+    margin-top: -75px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .categories-carousel-container {
+    margin-top: -65px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .categories-carousel-container {
+    margin-top: -55px !important;
   }
 }
