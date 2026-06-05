@@ -650,7 +650,7 @@ p {
 .modern-hero-section {
   position: relative;
   min-height: 420px;
-  padding: 35px 0 100px 0;
+  padding: 35px 0 135px 0;
   background-image: url('../assets/hero_bg.png');
   background-size: cover;
   background-position: right center;
@@ -862,7 +862,7 @@ p {
 
 .category-card-6 {
   background-color: #ffffff;
-  border: 1px solid #e2e8f0;
+  border: none;
   border-radius: 14px;
   overflow: hidden;
   isolation: isolate;
@@ -877,7 +877,6 @@ p {
 .category-card-6:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 16px -3px rgba(0,0,0,0.08), 0 3px 6px -2px rgba(0,0,0,0.03);
-  border-color: #cbd5e1;
 }
 
 .category-card-6-img-wrapper {
@@ -889,15 +888,15 @@ p {
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 8px 8px 0 8px;
+  padding: 0;
 }
 
 .category-card-6-img-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 14px 14px 0 0;
+  border: none;
   transition: var(--transition);
 }
 
@@ -1066,7 +1065,7 @@ p {
   }
   .modern-hero-section {
     min-height: auto;
-    padding: 40px 0 90px 0;
+    padding: 40px 0 130px 0;
     background-position: 70% center;
   }
   .hero-bg-overlay {
@@ -3687,7 +3686,7 @@ td .admin-actions-cell {
     left: 0 !important;
     right: 0 !important;
     border-radius: 16px !important;
-    padding: 30px 20px 80px 20px !important;
+    padding: 30px 20px 115px 20px !important;
     min-height: auto !important;
     background-position: 80% center !important;
   }
@@ -4646,7 +4645,7 @@ td .admin-actions-cell {
 }
 
 .categories-carousel-container {
-  margin-top: -85px !important;
+  margin-top: -45px !important;
   position: relative;
   z-index: 20;
   margin-bottom: 0 !important;
@@ -4654,18 +4653,18 @@ td .admin-actions-cell {
 
 @media (max-width: 1100px) {
   .categories-carousel-container {
-    margin-top: -75px !important;
+    margin-top: -35px !important;
   }
 }
 
 @media (max-width: 900px) {
   .categories-carousel-container {
-    margin-top: -65px !important;
+    margin-top: -25px !important;
   }
 }
 
 @media (max-width: 600px) {
   .categories-carousel-container {
-    margin-top: -55px !important;
+    margin-top: -15px !important;
   }
 }
