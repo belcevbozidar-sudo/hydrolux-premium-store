@@ -13,23 +13,25 @@ export default async function handler(req, res) {
   }
 
   try {
-    // Use the active Imagen 4 model endpoint (imagen-4.0-generate-001)
-    const googleUrl = `https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict?key=${apiKey}`;
+    // Call gemini-3.1-flash-image using generateContent to support the free tier Google AI Studio keys
+    const googleUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-image:generateContent?key=${apiKey}`;
     const response = await fetch(googleUrl, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        instances: [
+        contents: [
           {
-            prompt: prompt
+            parts: [
+              {
+                text: prompt
+              }
+            ]
           }
         ],
-        parameters: {
-          sampleCount: 1,
-          aspectRatio: "1:1",
-          outputMimeType: "image/jpeg"
+        generationConfig: {
+          responseModalities: ["TEXT", "IMAGE"]
         }
       })
     });
@@ -44,12 +46,20 @@ export default async function handler(req, res) {
     }
 
     const resData = await response.json();
-    const imgBytes = resData.predictions?.[0]?.bytesBase64Encoded;
+    const parts = resData.candidates?.[0]?.content?.parts || [];
+    let imgBytes = '';
+    
+    for (const part of parts) {
+      if (part.inlineData && part.inlineData.data) {
+        imgBytes = part.inlineData.data;
+        break;
+      }
+    }
 
     if (!imgBytes) {
       return res.status(502).json({
         error: {
-          message: 'No image bytes found in Google response. Response structure: ' + JSON.stringify(resData)
+          message: 'No image data returned from Gemini. Response structure: ' + JSON.stringify(resData)
         }
       });
     }
