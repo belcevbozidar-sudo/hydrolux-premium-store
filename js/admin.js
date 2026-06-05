@@ -2803,7 +2803,7 @@ const Admin = {
         const order = this.allOrders.find(o => o.orderNumber === orderNumber);
         if (order) order.status = newStatus;
         
-        Cart.showToast("Статусът е актуализиран успешно!");
+        this.showToast("Статусът е актуализиран успешно!");
         this.renderOrdersSummary();
         this.applyOrdersFilter();
       } else {
@@ -2813,6 +2813,25 @@ const Admin = {
       console.error(err);
       alert(`Грешка при актуализиране на статуса: ${err.message}`);
     }
+  },
+
+  showToast(message) {
+    if (typeof Cart !== "undefined" && Cart.showToast) {
+      Cart.showToast(message);
+      return;
+    }
+
+    const toast = document.createElement("div");
+    toast.className = "toast-notification";
+    toast.textContent = message;
+    document.body.appendChild(toast);
+    
+    setTimeout(() => toast.classList.add("show"), 10);
+    
+    setTimeout(() => {
+      toast.classList.remove("show");
+      setTimeout(() => toast.remove(), 300);
+    }, 3000);
   },
 
   normalizePhone(phone) {
