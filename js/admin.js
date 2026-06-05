@@ -2732,17 +2732,39 @@ const Admin = {
                   </tr>
                 </thead>
                 <tbody>
-                  ${order.items.map(item => `
-                    <tr>
-                      <td style="text-align: left;">
-                        <strong>${item.name}</strong>
-                        ${item.variantName ? `<div style="font-size: 0.75rem; color: #64748b;">${item.variantName}</div>` : ""}
-                        ${item.specsText ? `<div style="font-size: 0.7rem; color: #94a3b8;">${item.specsText}</div>` : ""}
-                      </td>
-                      <td style="text-align: center;">${item.quantity}</td>
-                      <td style="text-align: right;">${formatPrice(item.priceEur * item.quantity).eur}</td>
-                    </tr>
-                  `).join("")}
+                  ${order.items.map(item => {
+                    const productObj = (typeof CONFIG !== "undefined" && CONFIG.products) ? CONFIG.products.find(p => p.id === item.productId) : null;
+                    const baseCode = productObj ? productObj.code : "";
+                    let codeHtml = "";
+
+                    // Resolve the specific code for this item (using code, variantCode, or baseCode fallback)
+                    const itemCode = item.code || ((item.variantCode && item.variantCode !== "CUSTOM-SPEC") ? item.variantCode : baseCode);
+
+                    if (itemCode) {
+                      if (baseCode && baseCode !== itemCode) {
+                        codeHtml = `<div style="font-size: 0.75rem; color: #475569; margin-top: 2px;">Код: <strong>${itemCode}</strong> <span style="color: #94a3b8; font-size: 0.7rem;">(Базов: ${baseCode})</span></div>`;
+                      } else {
+                        codeHtml = `<div style="font-size: 0.75rem; color: #475569; margin-top: 2px;">Код: <strong>${itemCode}</strong></div>`;
+                      }
+                    } else if (item.isCustomHose) {
+                      codeHtml = `<div style="font-size: 0.75rem; color: #475569; margin-top: 2px;">Код: <strong>ИНДИВИДУАЛЕН</strong></div>`;
+                    } else {
+                      codeHtml = `<div style="font-size: 0.75rem; color: #475569; margin-top: 2px;">Код: <strong>${item.productId || "Няма код"}</strong></div>`;
+                    }
+
+                    return `
+                      <tr>
+                        <td style="text-align: left;">
+                          <strong>${item.name}</strong>
+                          ${codeHtml}
+                          ${item.variantName ? `<div style="font-size: 0.75rem; color: #64748b;">${item.variantName}</div>` : ""}
+                          ${item.specsText ? `<div style="font-size: 0.7rem; color: #94a3b8;">${item.specsText}</div>` : ""}
+                        </td>
+                        <td style="text-align: center;">${item.quantity}</td>
+                        <td style="text-align: right;">${formatPrice(item.priceEur * item.quantity).eur}</td>
+                      </tr>
+                    `;
+                  }).join("")}
                 </tbody>
               </table>
               

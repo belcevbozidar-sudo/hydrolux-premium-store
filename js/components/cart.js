@@ -93,6 +93,7 @@ const Cart = {
       this.items.push({
         cartKey,
         productId: product.id,
+        code: (variantCode && variantCode !== "CUSTOM-SPEC") ? variantCode : (product.code || product.id),
         name: product.name,
         variantCode,
         variantName,
