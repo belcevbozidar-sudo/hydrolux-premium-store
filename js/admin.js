@@ -578,6 +578,149 @@ const Admin = {
           width: 100%;
         }
       }
+      
+      /* Orders styles */
+      .orders-summary-bar {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+      .orders-summary-card {
+        background-color: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 16px 20px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .orders-summary-icon {
+        font-size: 2rem;
+        background-color: #e2e8f0;
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .orders-summary-info h5 {
+        margin: 0;
+        font-size: 0.8rem;
+        color: #64748b;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      .orders-summary-info strong {
+        font-size: 1.4rem;
+        color: #0f172a;
+      }
+      
+      .order-card {
+        background-color: white;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 16px;
+        box-shadow: var(--shadow-sm);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .order-card:hover {
+        box-shadow: var(--shadow-md);
+      }
+      .order-card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #f1f5f9;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .order-number-date h4 {
+        margin: 0;
+        font-size: 1.1rem;
+        color: #0f172a;
+      }
+      .order-number-date span {
+        font-size: 0.8rem;
+        color: #94a3b8;
+      }
+      .order-card-status-controls {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .order-grid-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+      @media (max-width: 768px) {
+        .order-grid-details {
+          grid-template-columns: 1fr;
+          gap: 16px;
+        }
+      }
+      .order-details-col h5 {
+        font-size: 0.8rem;
+        color: #64748b;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        border-bottom: 1.5px solid #f1f5f9;
+        padding-bottom: 6px;
+        letter-spacing: 0.5px;
+      }
+      .order-customer-info p {
+        margin-bottom: 6px;
+        font-size: 0.88rem;
+        color: #334155;
+      }
+      .order-items-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.85rem;
+      }
+      .order-items-table th {
+        text-align: left;
+        color: #64748b;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #f1f5f9;
+      }
+      .order-items-table td {
+        padding: 8px 0;
+        border-bottom: 1px dashed #f1f5f9;
+        color: #334155;
+      }
+      .order-items-table tr:last-child td {
+        border-bottom: 0;
+      }
+      
+      .order-badge {
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 30px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      .order-badge-new { background-color: #fef3c7; color: #d97706; }
+      .order-badge-paid { background-color: #dcfce7; color: #15803d; }
+      .order-badge-shipped { background-color: #dbeafe; color: #1d4ed8; }
+      .order-badge-completed { background-color: #a7f3d0; color: #065f46; }
+      .order-badge-unclaimed { background-color: #fee2e2; color: #b91c1c; }
+      .order-badge-canceled { background-color: #f1f5f9; color: #475569; }
+
+      @keyframes pulse-warn {
+        0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+        50% { box-shadow: 0 0 12px 6px rgba(239, 68, 68, 0.2); }
+      }
+      .blacklist-warn-glow {
+        animation: pulse-warn 2s infinite;
+      }
     `;
     document.head.appendChild(style);
   },
@@ -655,6 +798,9 @@ const Admin = {
             <li class="admin-menu-item ${this.activeTab === 'categories' ? 'active' : ''}" onclick="Admin.switchTab('categories')">
               📁 Категории
             </li>
+            <li class="admin-menu-item ${this.activeTab === 'orders' ? 'active' : ''}" onclick="Admin.switchTab('orders')">
+              📋 Поръчки
+            </li>
           </ul>
         </aside>
 
@@ -672,6 +818,9 @@ const Admin = {
     if (this.activeTab === "categories") {
       this.renderSubcategoriesList();
     }
+    if (this.activeTab === "orders") {
+      this.loadOrders();
+    }
   },
 
   renderActiveWorkspace() {
@@ -680,6 +829,8 @@ const Admin = {
         return this.renderProductsWorkspace();
       case "categories":
         return this.renderCategoriesWorkspace();
+      case "orders":
+        return this.renderOrdersWorkspace();
       default:
         return "Няма намерен работен панел.";
     }
@@ -2316,5 +2467,356 @@ const Admin = {
       sub.subcategories = sub.subcategories.filter(ss => ss.id !== subsubId);
       this.renderSubcategoriesList();
     }
+  },
+
+  // ==========================================================================
+  // ORDERS WORKSPACE & BLACKLIST SYSTEM
+  // ==========================================================================
+  allOrders: [],
+  filteredOrders: [],
+
+  renderOrdersWorkspace() {
+    return `
+      <div class="admin-header-row">
+        <h2>📋 Поръчки на клиенти</h2>
+      </div>
+
+      <!-- Statistics bar -->
+      <div class="orders-summary-bar" id="admin-orders-summary-bar">
+        <!-- Dynamic Summary stats -->
+      </div>
+
+      <!-- Filters Panel -->
+      <div class="admin-form-card" style="padding: 20px; margin-bottom: 20px;">
+        <div style="display: grid; grid-template-columns: 1fr auto; gap: 15px; align-items: end; flex-wrap: wrap;">
+          <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 15px; width: 100%;">
+            <div class="form-group" style="margin-bottom: 0;">
+              <label style="font-size: 0.75rem; font-weight: 700; color: #475569;">Търсене на поръчка</label>
+              <input type="text" id="order-search-input" class="form-control" placeholder="Търсене по име, телефон, имейл или номер на поръчка..." oninput="Admin.applyOrdersFilter()">
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <label style="font-size: 0.75rem; font-weight: 700; color: #475569;">Филтър по статус</label>
+              <select id="order-status-filter" class="form-control" onchange="Admin.applyOrdersFilter()">
+                <option value="">Всички статуси</option>
+                <option value="new">Нови</option>
+                <option value="paid">Платени</option>
+                <option value="shipped">Изпратени</option>
+                <option value="completed">Завършени</option>
+                <option value="unclaimed">Непотърсени</option>
+                <option value="canceled">Анулирани</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- List of Orders -->
+      <div id="admin-orders-list">
+        <div style="text-align: center; padding: 40px;">
+          <div class="mypos-spinner" style="width: 40px; height: 40px; border: 4px solid rgba(15, 61, 112, 0.1); border-top-color: #0f3d70; border-radius: 50%; animation: mypos-spin 1s infinite linear; margin: 0 auto 15px;"></div>
+          <p>Зареждане на поръчките...</p>
+        </div>
+      </div>
+    `;
+  },
+
+  async loadOrders() {
+    const listEl = document.getElementById("admin-orders-list");
+    
+    try {
+      const response = await HydroluxBackend.getAllOrders();
+      if (response && response.ok) {
+        this.allOrders = response.orders || [];
+        this.filteredOrders = [...this.allOrders];
+        this.renderOrdersSummary();
+        this.renderOrdersList();
+      } else {
+        throw new Error("Неуспешно изтегляне на поръчките");
+      }
+    } catch (err) {
+      console.error(err);
+      if (listEl) {
+        listEl.innerHTML = `<div class="alert alert-danger" style="text-align: center; padding: 20px;">Грешка при зареждане на поръчките: ${err.message}</div>`;
+      }
+    }
+  },
+
+  renderOrdersSummary() {
+    const summaryBar = document.getElementById("admin-orders-summary-bar");
+    if (!summaryBar) return;
+
+    const total = this.allOrders.length;
+    const newCount = this.allOrders.filter(o => o.status === "new").length;
+    const paidCount = this.allOrders.filter(o => o.status === "paid").length;
+    const unclaimedCount = this.allOrders.filter(o => o.status === "unclaimed").length;
+
+    summaryBar.innerHTML = `
+      <div class="orders-summary-card">
+        <div class="orders-summary-icon">📦</div>
+        <div class="orders-summary-info">
+          <h5>Всички поръчки</h5>
+          <strong>${total}</strong>
+        </div>
+      </div>
+      <div class="orders-summary-card" style="border-left: 4px solid #d97706;">
+        <div class="orders-summary-icon" style="color: #d97706; background-color: #fffbeb;">🔔</div>
+        <div class="orders-summary-info">
+          <h5>Нови поръчки</h5>
+          <strong>${newCount}</strong>
+        </div>
+      </div>
+      <div class="orders-summary-card" style="border-left: 4px solid #15803d;">
+        <div class="orders-summary-icon" style="color: #15803d; background-color: #f0fdf4;">💵</div>
+        <div class="orders-summary-info">
+          <h5>Платени</h5>
+          <strong>${paidCount}</strong>
+        </div>
+      </div>
+      <div class="orders-summary-card" style="border-left: 4px solid #b91c1c;">
+        <div class="orders-summary-icon" style="color: #b91c1c; background-color: #fef2f2;">⚠️</div>
+        <div class="orders-summary-info">
+          <h5>Непотърсени</h5>
+          <strong>${unclaimedCount}</strong>
+        </div>
+      </div>
+    `;
+  },
+
+  renderOrdersList() {
+    const listEl = document.getElementById("admin-orders-list");
+    if (!listEl) return;
+
+    if (this.filteredOrders.length === 0) {
+      listEl.innerHTML = `
+        <div style="text-align: center; padding: 40px; background-color: #f8fafc; border: 1.5px dashed #cbd5e1; border-radius: 12px;">
+          <h4 style="color: #64748b; margin-bottom: 0;">Няма намерени поръчки.</h4>
+        </div>
+      `;
+      return;
+    }
+
+    // Build blacklist sets (from orders marked as unclaimed)
+    const blacklistedPhones = new Set();
+    const blacklistedEmails = new Set();
+    
+    this.allOrders.forEach(o => {
+      if (o.status === "unclaimed") {
+        if (o.customer && o.customer.phone) {
+          blacklistedPhones.add(this.normalizePhone(o.customer.phone));
+        }
+        if (o.customer && o.customer.email) {
+          blacklistedEmails.add(o.customer.email.toLowerCase().trim());
+        }
+      }
+    });
+
+    listEl.innerHTML = this.filteredOrders.map(order => {
+      const normalPhone = order.customer ? this.normalizePhone(order.customer.phone) : "";
+      const emailLower = order.customer && order.customer.email ? order.customer.email.toLowerCase().trim() : "";
+      
+      // Determine blacklist status: match email or normalized phone (last 9 digits)
+      let isBlacklisted = false;
+      if (order.status !== "unclaimed") {
+        if (normalPhone && Array.from(blacklistedPhones).some(p => p.slice(-9) === normalPhone.slice(-9))) {
+          isBlacklisted = true;
+        }
+        if (emailLower && blacklistedEmails.has(emailLower)) {
+          isBlacklisted = true;
+        }
+      }
+
+      const statusMap = {
+        new: { label: "Нова", class: "order-badge-new" },
+        paid: { label: "Платена", class: "order-badge-paid" },
+        shipped: { label: "Изпратена", class: "order-badge-shipped" },
+        completed: { label: "Завършена", class: "order-badge-completed" },
+        unclaimed: { label: "Непотърсена пратка", class: "order-badge-unclaimed" },
+        canceled: { label: "Анулирана", class: "order-badge-canceled" }
+      };
+      
+      const statusDetails = statusMap[order.status] || { label: order.status, class: "order-badge-canceled" };
+
+      const deliveryMap = {
+        address: "🚚 До личен / служебен адрес",
+        office: "🏢 До офис на Еконт / Спиди",
+        shop: "🏬 Вземане от магазина (гр. Монтана)"
+      };
+      const deliveryText = deliveryMap[order.delivery] || order.delivery;
+
+      const paymentMap = {
+        cod: "💵 Наложен платеж",
+        bank: "🏦 Банков превод",
+        card: "💳 С карта (myPOS)"
+      };
+      const paymentText = paymentMap[order.paymentMethod] || order.paymentMethod;
+
+      let invoiceHtml = "";
+      if (order.invoiceDetails) {
+        invoiceHtml = `
+          <div style="background-color: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 8px; padding: 12px 15px; margin-top: 12px; font-size: 0.8rem; text-align: left;">
+            <strong style="color: #1e293b;">🧾 Данни за фактура:</strong><br>
+            Фирма: <strong>${order.invoiceDetails.companyName}</strong><br>
+            ЕИК/Булстат: <strong>${order.invoiceDetails.bulstat}</strong><br>
+            МОЛ: <strong>${order.invoiceDetails.mol}</strong><br>
+            Адрес: <strong>${order.invoiceDetails.address}</strong>
+          </div>
+        `;
+      }
+
+      let warningHtml = "";
+      if (isBlacklisted) {
+        warningHtml = `
+          <div class="blacklist-warn-glow" style="background: linear-gradient(135deg, #fffbeb, #fee2e2); border: 2px solid #ef4444; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; display: flex; align-items: center; gap: 10px;">
+            <span style="font-size: 1.3rem;">⚠️</span>
+            <div style="color: #b91c1c; font-weight: 800; font-size: 0.85rem; text-align: left;">
+              ВНИМАНИЕ: Клиентът има предходна НЕПОТЪРСЕНА пратка в системата!
+            </div>
+          </div>
+        `;
+      }
+
+      const orderDate = new Date(order.createdAt).toLocaleString('bg-BG');
+      const bgnTotal = order.totals.eur * 1.95583;
+
+      return `
+        <div class="order-card" style="text-align: left;">
+          ${warningHtml}
+          
+          <div class="order-card-header">
+            <div class="order-number-date">
+              <h4 style="margin: 0; font-size: 1.15rem; font-weight: 800;">Поръчка #${order.orderNumber}</h4>
+              <span style="font-size: 0.8rem; color: #64748b;">Създадена на: ${orderDate}</span>
+            </div>
+            
+            <div class="order-card-status-controls">
+              <span class="order-badge ${statusDetails.class}">${statusDetails.label}</span>
+              
+              <select class="form-control" style="width: auto; height: 36px; padding: 4px 10px; font-size: 0.85rem; margin-bottom: 0;" onchange="Admin.changeOrderStatus('${order.orderNumber}', this.value)">
+                <option value="new" ${order.status === 'new' ? 'selected' : ''}>Нова</option>
+                <option value="paid" ${order.status === 'paid' ? 'selected' : ''}>Платена</option>
+                <option value="shipped" ${order.status === 'shipped' ? 'selected' : ''}>Изпратена</option>
+                <option value="completed" ${order.status === 'completed' ? 'selected' : ''}>Завършена</option>
+                <option value="unclaimed" ${order.status === 'unclaimed' ? 'selected' : ''}>Непотърсена пратка</option>
+                <option value="canceled" ${order.status === 'canceled' ? 'selected' : ''}>Анулирана</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="order-grid-details">
+            <!-- Customer column -->
+            <div class="order-details-col order-customer-info">
+              <h5>👤 Детайли за клиента & Доставка</h5>
+              <p>Клиент: <strong>${order.customer.name}</strong></p>
+              <p>Телефон: <strong>${order.customer.phone}</strong></p>
+              <p>Имейл: <strong>${order.customer.email}</strong></p>
+              <p style="margin-top: 10px;">Доставка: <strong>${deliveryText}</strong></p>
+              ${order.delivery !== "shop" ? `<p>Град / ПК: <strong>${order.city} (ПК: ${order.postcode})</strong></p>` : ""}
+              ${order.delivery !== "shop" ? `<p>Адрес/Офис: <strong>${order.address}</strong></p>` : ""}
+              <p style="margin-top: 10px;">Плащане: <strong>${paymentText}</strong></p>
+              ${invoiceHtml}
+            </div>
+            
+            <!-- Items column -->
+            <div class="order-details-col">
+              <h5>📦 Поръчани артикули</h5>
+              <table class="order-items-table">
+                <thead>
+                  <tr>
+                    <th>Артикул</th>
+                    <th style="text-align: center;">Кол.</th>
+                    <th style="text-align: right;">Цена</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${order.items.map(item => `
+                    <tr>
+                      <td style="text-align: left;">
+                        <strong>${item.name}</strong>
+                        ${item.variantName ? `<div style="font-size: 0.75rem; color: #64748b;">${item.variantName}</div>` : ""}
+                        ${item.specsText ? `<div style="font-size: 0.7rem; color: #94a3b8;">${item.specsText}</div>` : ""}
+                      </td>
+                      <td style="text-align: center;">${item.quantity}</td>
+                      <td style="text-align: right;">${formatPrice(item.priceEur * item.quantity).eur}</td>
+                    </tr>
+                  `).join("")}
+                </tbody>
+              </table>
+              
+              <div style="margin-top: 15px; text-align: right; font-size: 1.05rem;">
+                <span style="color: #64748b; font-size: 0.85rem;">ОБЩО С ДДС:</span>
+                <strong style="color: var(--primary); font-weight: 800;">
+                  ${order.totals.eur.toFixed(2)} € (${bgnTotal.toFixed(2)} лв.)
+                </strong>
+              </div>
+
+              ${order.notes ? `
+                <div style="background-color: #fffbeb; border-left: 3px solid #f59e0b; padding: 10px 12px; margin-top: 15px; font-size: 0.8rem; border-radius: 0 6px 6px 0; text-align: left;">
+                  <strong>Бележка:</strong> ${order.notes}
+                </div>
+              ` : ""}
+            </div>
+          </div>
+        </div>
+      `;
+    }).join("");
+  },
+
+  applyOrdersFilter() {
+    const searchInput = document.getElementById("order-search-input");
+    const statusSelect = document.getElementById("order-status-filter");
+    
+    if (!searchInput || !statusSelect) return;
+
+    const query = searchInput.value.toLowerCase().trim();
+    const status = statusSelect.value;
+
+    this.filteredOrders = this.allOrders.filter(order => {
+      // 1. Search filter
+      let searchMatch = true;
+      if (query) {
+        searchMatch = 
+          order.orderNumber.toLowerCase().includes(query) ||
+          (order.customer.name && order.customer.name.toLowerCase().includes(query)) ||
+          (order.customer.phone && order.customer.phone.toLowerCase().includes(query)) ||
+          (order.customer.email && order.customer.email.toLowerCase().includes(query)) ||
+          (order.city && order.city.toLowerCase().includes(query)) ||
+          (order.address && order.address.toLowerCase().includes(query));
+      }
+
+      // 2. Status filter
+      let statusMatch = true;
+      if (status) {
+        statusMatch = order.status === status;
+      }
+
+      return searchMatch && statusMatch;
+    });
+
+    this.renderOrdersList();
+  },
+
+  async changeOrderStatus(orderNumber, newStatus) {
+    try {
+      const response = await HydroluxBackend.updateOrderStatus(orderNumber, newStatus);
+      if (response && response.ok) {
+        // Update local object
+        const order = this.allOrders.find(o => o.orderNumber === orderNumber);
+        if (order) order.status = newStatus;
+        
+        Cart.showToast("Статусът е актуализиран успешно!");
+        this.renderOrdersSummary();
+        this.applyOrdersFilter();
+      } else {
+        throw new Error(response.error || "Неуспешна актуализация");
+      }
+    } catch (err) {
+      console.error(err);
+      alert(`Грешка при актуализиране на статуса: ${err.message}`);
+    }
+  },
+
+  normalizePhone(phone) {
+    if (!phone) return "";
+    return phone.replace(/\D/g, "");
   }
 };

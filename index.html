@@ -641,9 +641,9 @@
           <div class="checkout-grid">
             <!-- Form Fields -->
             <div>
-
-
               <!-- General client info -->
+              <h4 style="margin-bottom: 15px; font-weight: 700; color: var(--text-dark);">👤 Данни за получателя</h4>
+              
               <div class="form-group">
                 <label>Име и Фамилия</label>
                 <input type="text" name="client_name" class="form-control" required placeholder="Георги Георгиев">
@@ -659,24 +659,94 @@
                 </div>
               </div>
 
-
-
+              <!-- Delivery details -->
+              <h4 style="margin-top: 25px; margin-bottom: 15px; font-weight: 700; color: var(--text-dark);">🚚 Начин на доставка</h4>
+              
               <div class="form-group">
-                <label>Начин на получаване</label>
-                <select name="delivery_method" class="form-control" onchange="document.getElementById('checkout-delivery-group').style.display = this.value === 'shop' ? 'none' : 'block'">
-                  <option value="courier">Доставка с Еконт / Спиди</option>
-                  <option value="shop">Вземане от магазина в гр. Монтана (ул. Индустриална 32г)</option>
+                <label>Изберете начин на доставка</label>
+                <select name="delivery_method" id="delivery-method-select" class="form-control" onchange="Cart.onDeliveryMethodChange(this.value)">
+                  <option value="address">🚚 Доставка до личен / служебен адрес</option>
+                  <option value="office">🏢 Доставка до офис на Еконт / Спиди</option>
+                  <option value="shop">🏬 Вземане от магазина в гр. Монтана (ул. Индустриална 32г)</option>
                 </select>
               </div>
 
-              <div class="form-group" id="checkout-delivery-group">
-                <label>Адрес за доставка или офис на Еконт/Спиди</label>
-                <input type="text" name="delivery_address" class="form-control" placeholder="гр. София, Офис Еконт - Младост">
+              <div id="delivery-details-container">
+                <div class="form-group-split">
+                  <div class="form-group">
+                    <label>Град</label>
+                    <input type="text" name="client_city" id="checkout-city" class="form-control" required placeholder="гр. София">
+                  </div>
+                  <div class="form-group">
+                    <label>Пощенски код</label>
+                    <input type="text" name="client_postcode" id="checkout-postcode" class="form-control" required placeholder="1000">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label id="delivery-address-label">Точен адрес за доставка</label>
+                  <input type="text" name="delivery_address" id="checkout-address" class="form-control" required placeholder="ул. Примерна №5, вх. А, ап. 2">
+                </div>
               </div>
 
+              <div class="form-group" id="delivery-shop-message" style="display: none; background-color: #f8fafc; border: 1.5px dashed #cbd5e1; border-radius: 8px; padding: 15px; font-size: 0.9rem; color: #475569; font-weight: 500;">
+                🏬 Поръчката може да бъде взета директно от нашия магазин: <br>
+                <strong>гр. Монтана, ул. „Индустриална“ 32г (сервиз Хидролукс)</strong><br>
+                Работно време: Понеделник - Петък 08:30 - 17:30 ч.
+              </div>
+
+              <!-- Payment details -->
+              <h4 style="margin-top: 25px; margin-bottom: 15px; font-weight: 700; color: var(--text-dark);">💳 Начин на плащане</h4>
+              
               <div class="form-group">
-                <label>Бележка към поръчката</label>
-                <textarea name="order_notes" class="form-control" rows="2" placeholder="Напишете допълнителни инструкции (напр. дължина на срязване)..."></textarea>
+                <label>Изберете начин на плащане</label>
+                <select name="payment_method" id="payment-method-select" class="form-control" onchange="Cart.onPaymentMethodChange(this.value)">
+                  <option value="cod">💵 Наложен платеж (при получаване)</option>
+                  <option value="bank">🏦 Банков превод (по проформа)</option>
+                  <option value="card">💳 С дебитна / кредитна карта (myPOS)</option>
+                </select>
+              </div>
+
+              <div id="payment-method-helper" style="background-color: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 12px 15px; font-size: 0.85rem; color: #166534; font-weight: 500; margin-bottom: 20px;">
+                💵 Ще платите на куриера при доставка в брой или с карта.
+              </div>
+
+              <!-- Invoicing details -->
+              <h4 style="margin-top: 25px; margin-bottom: 15px; font-weight: 700; color: var(--text-dark);">🧾 Данни за фактура</h4>
+              
+              <div class="form-group">
+                <label class="checkbox-container">
+                  <input type="checkbox" id="wants-invoice-checkbox" onchange="Cart.toggleInvoiceSection(this.checked)">
+                  <span>Желая фактура за фирма</span>
+                </label>
+              </div>
+
+              <div id="invoice-fields-container" style="display: none; background-color: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; margin-bottom: 20px;">
+                <div class="form-group">
+                  <label>Име на фирмата</label>
+                  <input type="text" name="invoice_company" id="invoice-company" class="form-control" placeholder="Фирма ООД">
+                </div>
+                <div class="form-group-split">
+                  <div class="form-group">
+                    <label>Булстат / ЕИК</label>
+                    <input type="text" name="invoice_bulstat" id="invoice-bulstat" class="form-control" placeholder="123456789">
+                  </div>
+                  <div class="form-group">
+                    <label>МОЛ (Материално отговорно лице)</label>
+                    <input type="text" name="invoice_mol" id="invoice-mol" class="form-control" placeholder="Иван Иванов">
+                  </div>
+                </div>
+                <div class="form-group" style="margin-bottom: 0;">
+                  <label>Адрес по регистрация</label>
+                  <input type="text" name="invoice_address" id="invoice-address" class="form-control" placeholder="гр. София, ул. Примерна №5">
+                </div>
+              </div>
+
+              <!-- General notes -->
+              <h4 style="margin-top: 25px; margin-bottom: 15px; font-weight: 700; color: var(--text-dark);">📝 Бележка към поръчката</h4>
+              
+              <div class="form-group">
+                <textarea name="order_notes" class="form-control" rows="2" placeholder="Напишете допълнителни инструкции (напр. дължина на срязване, специфичен куриер)..."></textarea>
               </div>
 
               <button type="submit" class="btn btn-accent btn-block btn-large mt-20">🚀 Завърши поръчката</button>
@@ -832,6 +902,61 @@
       </div>
     </div>
   </div>
+
+  <!-- 4. myPOS SECURE CARD PAYMENT MODAL -->
+  <div class="modal-overlay" id="mypos-modal">
+    <div class="modal-window" style="max-width: 480px; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.15); border: 1px solid rgba(255, 255, 255, 0.1);">
+      <div class="mypos-header" style="background: linear-gradient(135deg, #0f3d70, #0a2540); color: white; padding: 20px 24px; position: relative; text-align: center;">
+        <div style="display: flex; justify-content: center; align-items: center; gap: 8px;">
+          <strong style="font-size: 1.25rem; letter-spacing: 0.5px;">myPOS PayLink</strong>
+          <span style="background-color: #00d4b2; color: #0a2540; font-size: 0.65rem; font-weight: 800; padding: 2px 6px; border-radius: 4px; text-transform: uppercase;">Secure Redirect</span>
+        </div>
+      </div>
+      <div class="modal-body" style="padding: 32px 24px; text-align: center;">
+        <div class="mypos-spinner" style="width: 50px; height: 50px; border: 4px solid rgba(15, 61, 112, 0.1); border-top-color: #00d4b2; border-radius: 50%; animation: mypos-spin 1s infinite linear; margin: 0 auto 24px;"></div>
+        
+        <h3 style="color: #0a2540; font-size: 1.2rem; font-weight: 800; margin-bottom: 12px;" id="mypos-status-text">Пренасочване към защитения портал на myPOS...</h3>
+        
+        <div class="mypos-amount-banner" style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px 16px; display: inline-flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 20px;">
+          <span style="font-size: 0.85rem; color: #64748b; font-weight: 500;">Сума за авторизиране:</span>
+          <strong id="mypos-pay-amount" style="font-size: 1.1rem; color: #0f3d70;">0.00 €</strong>
+        </div>
+
+        <p style="font-size: 0.85rem; color: #64748b; line-height: 1.5; max-width: 380px; margin: 0 auto 24px;">
+          За Ваша сигурност, <strong>Хидролукс не събира и не съхранява</strong> данни за банкови карти. Плащането се извършва изцяло на криптираните сървъри на лицензирания платежен оператор <strong>myPOS AD</strong>.
+        </p>
+
+        <div style="border-top: 1px solid #e2e8f0; padding-top: 20px; display: flex; justify-content: center; gap: 16px; opacity: 0.8;">
+          <span style="font-size: 0.8rem; font-weight: bold; color: #94a3b8;">VISA</span>
+          <span style="font-size: 0.8rem; font-weight: bold; color: #94a3b8;">MASTERCARD</span>
+          <span style="font-size: 0.8rem; font-weight: bold; color: #94a3b8;">MAESTRO</span>
+          <span style="font-size: 0.8rem; font-weight: bold; color: #94a3b8;">GPAY</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @keyframes mypos-spin {
+      to { transform: rotate(360deg); }
+    }
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #334155;
+      cursor: pointer;
+      margin-top: 15px;
+      user-select: none;
+    }
+    .checkbox-container input {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--accent);
+    }
+  </style>
 
   <!-- ==========================================================================
        ✉️ FLOATING QUICK INQUIRY BAR (Остави съобщение)

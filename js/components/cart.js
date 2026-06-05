@@ -305,6 +305,132 @@ const Cart = {
     `;
   },
 
+  // Checkout Form Event Handlers
+  onDeliveryMethodChange(value) {
+    const detailsContainer = document.getElementById("delivery-details-container");
+    const shopMessage = document.getElementById("delivery-shop-message");
+    const addressLabel = document.getElementById("delivery-address-label");
+    const addressInput = document.getElementById("checkout-address");
+    const cityInput = document.getElementById("checkout-city");
+    const postcodeInput = document.getElementById("checkout-postcode");
+
+    if (!detailsContainer || !shopMessage || !addressInput || !cityInput || !postcodeInput) return;
+
+    if (value === "shop") {
+      detailsContainer.style.display = "none";
+      shopMessage.style.display = "block";
+      addressInput.removeAttribute("required");
+      cityInput.removeAttribute("required");
+      postcodeInput.removeAttribute("required");
+    } else {
+      detailsContainer.style.display = "block";
+      shopMessage.style.display = "none";
+      addressInput.setAttribute("required", "true");
+      cityInput.setAttribute("required", "true");
+      postcodeInput.setAttribute("required", "true");
+
+      if (value === "office") {
+        addressLabel.textContent = "Адрес или име на офис на Еконт / Спиди";
+        addressInput.placeholder = "гр. София, Офис Еконт - Младост";
+      } else {
+        addressLabel.textContent = "Точен адрес за доставка";
+        addressInput.placeholder = "ул. Примерна №5, вх. А, ап. 2";
+      }
+    }
+  },
+
+  onPaymentMethodChange(value) {
+    const helper = document.getElementById("payment-method-helper");
+    if (!helper) return;
+
+    if (value === "cod") {
+      helper.style.display = "block";
+      helper.className = "payment-helper-cod";
+      helper.style.backgroundColor = "#f0fdf4";
+      helper.style.borderColor = "#bbf7d0";
+      helper.style.color = "#166534";
+      helper.textContent = "💵 Ще платите на куриера при доставка в брой или с карта.";
+    } else if (value === "bank") {
+      helper.style.display = "block";
+      helper.style.backgroundColor = "#eff6ff";
+      helper.style.borderColor = "#bfdbfe";
+      helper.style.color = "#1e40af";
+      helper.textContent = "🏦 Ще получите проформа фактура по имейл с банковите ни детайли за банков превод.";
+    } else if (value === "card") {
+      helper.style.display = "block";
+      helper.style.backgroundColor = "#fdf2f8";
+      helper.style.borderColor = "#fbcfe8";
+      helper.style.color = "#9d174d";
+      helper.textContent = "💳 Сигурно плащане в реално време чрез myPOS Secure Checkout.";
+    }
+  },
+
+  toggleInvoiceSection(isChecked) {
+    const invoiceFields = document.getElementById("invoice-fields-container");
+    if (!invoiceFields) return;
+
+    const companyInput = document.getElementById("invoice-company");
+    const bulstatInput = document.getElementById("invoice-bulstat");
+    const molInput = document.getElementById("invoice-mol");
+    const addressInput = document.getElementById("invoice-address");
+
+    if (isChecked) {
+      invoiceFields.style.display = "block";
+      companyInput.setAttribute("required", "true");
+      bulstatInput.setAttribute("required", "true");
+      molInput.setAttribute("required", "true");
+      addressInput.setAttribute("required", "true");
+    } else {
+      invoiceFields.style.display = "none";
+      companyInput.removeAttribute("required");
+      bulstatInput.removeAttribute("required");
+      molInput.removeAttribute("required");
+      addressInput.removeAttribute("required");
+    }
+  },
+
+  // myPOS Checkout execution states
+  myposPaid: false,
+  currentPendingOrder: null,
+
+  cancelMyPOSPayment() {
+    const modal = document.getElementById("mypos-modal");
+    if (modal) modal.classList.remove("open");
+    document.body.classList.remove("no-scroll");
+    this.currentPendingOrder = null;
+    this.myposPaid = false;
+  },
+
+  runSimulatedRedirect() {
+    const statusText = document.getElementById("mypos-status-text");
+    if (!statusText) return;
+
+    statusText.textContent = "Пренасочване към защитения портал на myPOS...";
+    
+    setTimeout(() => {
+      statusText.textContent = "Изчакване на плащането в портала на myPOS...";
+      setTimeout(() => {
+        statusText.textContent = "Плащането е успешно авторизирано!";
+        setTimeout(() => {
+          this.myposPaid = true;
+          const modal = document.getElementById("mypos-modal");
+          if (modal) modal.classList.remove("open");
+          document.body.classList.remove("no-scroll");
+
+          if (this.currentPendingOrder) {
+            this.currentPendingOrder.status = "paid";
+            this.finalizeSubmit(this.currentPendingOrder);
+          }
+        }, 1200);
+      }, 2000);
+    }, 2000);
+  },
+
+  closeCheckout() {
+    // Navigate away from checkout
+    App.navigate("home");
+  },
+
   async submitOrder(event) {
     event.preventDefault();
     const form = event.target;
@@ -314,28 +440,71 @@ const Cart = {
     const phone = form.elements["client_phone"].value;
     const email = form.elements["client_email"].value;
     const delivery = form.elements["delivery_method"].value;
-    const address = form.elements["delivery_address"].value;
+    
+    let city = "";
+    let postcode = "";
+    let address = "";
+    if (delivery !== "shop") {
+      city = form.elements["client_city"].value;
+      postcode = form.elements["client_postcode"].value;
+      address = form.elements["delivery_address"].value;
+    }
+
+    const paymentMethod = form.elements["payment_method"].value;
     const notes = form.elements["order_notes"].value;
-    const clientType = "b2c";
-    const b2bDetails = null;
+    
+    // Invoice details
+    const wantsInvoice = document.getElementById("wants-invoice-checkbox").checked;
+    let invoiceDetails = null;
+    if (wantsInvoice) {
+      invoiceDetails = {
+        companyName: form.elements["invoice_company"].value,
+        bulstat: form.elements["invoice_bulstat"].value,
+        mol: form.elements["invoice_mol"].value,
+        address: form.elements["invoice_address"].value
+      };
+    }
 
     const orderNumber = "HL-" + Math.floor(100000 + Math.random() * 900000);
     const totals = this.getTotal();
     const orderedItems = [...this.items];
+    
     const order = {
       orderNumber,
       customer: { name, phone, email },
       items: orderedItems,
       totals,
       delivery,
+      city,
+      postcode,
       address,
+      paymentMethod,
+      invoiceDetails,
       notes,
-      clientType,
-      b2bDetails,
-      status: "new",
+      status: paymentMethod === "card" ? "paid" : "new",
       createdAt: Date.now(),
     };
 
+    if (paymentMethod === "card" && !this.myposPaid) {
+      // Prompt myPOS simulated window
+      this.currentPendingOrder = order;
+      const modal = document.getElementById("mypos-modal");
+      if (modal) {
+        const bgnTotal = totals.eur * 1.95583;
+        document.getElementById("mypos-pay-amount").textContent = `${totals.eur.toFixed(2)} € (${bgnTotal.toFixed(2)} лв.)`;
+        modal.classList.add("open");
+        document.body.classList.add("no-scroll");
+        
+        // Trigger automated simulation of external myPOS hosted redirect
+        this.runSimulatedRedirect();
+      }
+      return;
+    }
+
+    this.finalizeSubmit(order);
+  },
+
+  async finalizeSubmit(order) {
     try {
       if (typeof HydroluxBackend !== "undefined") {
         await HydroluxBackend.saveOrder(order);
@@ -349,26 +518,53 @@ const Cart = {
     }
 
     // Show success dialog
-    this.closeCheckout();
     const successModal = document.getElementById("success-modal");
     if (successModal) {
       successModal.classList.add("open");
       document.body.classList.add("no-scroll");
 
       const successDetails = document.getElementById("success-details-container");
+      
+      const deliveryBulgarian = {
+        address: "🚚 Доставка до личен / служебен адрес",
+        office: "🏢 Доставка до офис на Еконт / Спиди",
+        shop: "🏬 Вземане на място от магазина"
+      }[order.delivery] || order.delivery;
+
+      const paymentBulgarian = {
+        cod: "💵 Наложен платеж (при получаване)",
+        bank: "🏦 Банков превод (по проформа)",
+        card: "💳 С дебитна / кредитна карта (myPOS)"
+      }[order.paymentMethod] || order.paymentMethod;
+
+      let invoiceHtml = "";
+      if (order.invoiceDetails) {
+        invoiceHtml = `
+          <div style="margin-top: 15px; padding: 15px; background-color: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px;">
+            <strong style="color: #0f172a;">🧾 Изискана фактура за фирма:</strong><br>
+            <div style="margin-top: 5px; color: #475569; line-height: 1.4;">
+              Име: <strong>${order.invoiceDetails.companyName}</strong><br>
+              Булстат / ЕИК: <strong>${order.invoiceDetails.bulstat}</strong><br>
+              МОЛ: <strong>${order.invoiceDetails.mol}</strong><br>
+              Адрес: <strong>${order.invoiceDetails.address}</strong>
+            </div>
+          </div>
+        `;
+      }
+
       successDetails.innerHTML = `
         <div class="success-header text-center">
-          <div class="success-check-icon">✓</div>
+          <div class="success-check-icon" style="background-color: #10b981; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 15px;">✓</div>
           <h2>Поръчката е приета успешно!</h2>
-          <p class="lead">Номер на поръчката: <strong class="text-primary">${orderNumber}</strong></p>
-          <p class="text-muted font-small">Наш консултант ще се свърже с Вас на тел. <strong>${phone}</strong> за потвърждение.</p>
+          <p class="lead">Номер на поръчката: <strong class="text-primary">${order.orderNumber}</strong></p>
+          <p class="text-muted font-small">Наш консултант ще се свърже с Вас на тел. <strong>${order.customer.phone}</strong> за потвърждение.</p>
         </div>
         
-        <div class="invoice-box card mt-20 font-small">
-          <div class="invoice-title">📝 ДЕТАЙЛИ НА ПОРЪЧКАТА / ПРОФОРМА ФАКТУРА (В ЕВРО)</div>
+        <div class="invoice-box card mt-20 font-small" style="background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px;">
+          <div class="invoice-title" style="font-weight: 800; color: #0f172a; margin-bottom: 10px;">📝 ДЕТАЙЛИ НА ПОРЪЧКАТА / ПРОФОРМА ФАКТУРА</div>
           <div class="divider"></div>
           
-          <div class="invoice-grid">
+          <div class="invoice-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px;">
             <div>
               <strong>Доставчик:</strong><br>
               Хидролукс Груп ЕООД<br>
@@ -378,18 +574,23 @@ const Cart = {
             </div>
             <div>
               <strong>Получател:</strong><br>
-              ${name}<br>
-              тел: ${phone}<br>
-              имейл: ${email}<br>
-              <strong>Доставка:</strong> ${delivery === 'shop' ? 'Вземане от магазина в гр. Монтана' : `До адрес: ${address}`}
+              ${order.customer.name}<br>
+              тел: ${order.customer.phone}<br>
+              имейл: ${order.customer.email}<br>
+              ${order.delivery !== "shop" ? `град: ${order.city}, ПК: ${order.postcode}<br>` : ""}
+              <strong>Доставка:</strong> ${deliveryBulgarian}<br>
+              ${order.delivery !== "shop" ? `Адрес/Офис: ${order.address}<br>` : ""}
+              <strong>Плащане:</strong> ${paymentBulgarian}
             </div>
           </div>
+
+          ${invoiceHtml}
           
-          <div class="divider"></div>
+          <div class="divider" style="margin: 15px 0;"></div>
           
           <div class="invoice-items">
-            ${orderedItems.map((item, idx) => `
-              <div class="invoice-item-row">
+            ${order.items.map((item, idx) => `
+              <div class="invoice-item-row" style="display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #f1f5f9;">
                 <span>${idx + 1}. ${item.name} ${item.variantName ? `(${item.variantName})` : ''}</span>
                 <span>${item.quantity} x ${formatPrice(item.priceEur).eur}</span>
                 <span class="text-right font-bold">${formatPrice(item.priceEur * item.quantity).eur}</span>
@@ -397,20 +598,20 @@ const Cart = {
             `).join("")}
           </div>
           
-          <div class="divider"></div>
+          <div class="divider" style="margin: 15px 0;"></div>
           
           <div class="invoice-footer-totals">
-            <div class="row">
+            <div class="row" style="display: flex; justify-content: space-between; padding: 4px 0;">
               <span>Междинна сума:</span>
-              <span>${(totals.eur / 1.2).toFixed(2)} € (${((totals.eur / 1.2) * 1.95583).toFixed(2)} лв.)</span>
+              <span>${(order.totals.eur / 1.2).toFixed(2)} € (${((order.totals.eur / 1.2) * 1.95583).toFixed(2)} лв.)</span>
             </div>
-            <div class="row">
+            <div class="row" style="display: flex; justify-content: space-between; padding: 4px 0;">
               <span>ДДС (20%):</span>
-              <span>${(totals.eur - (totals.eur / 1.2)).toFixed(2)} € (${((totals.eur - (totals.eur / 1.2)) * 1.95583).toFixed(2)} лв.)</span>
+              <span>${(order.totals.eur - (order.totals.eur / 1.2)).toFixed(2)} € (${((order.totals.eur - (order.totals.eur / 1.2)) * 1.95583).toFixed(2)} лв.)</span>
             </div>
-            <div class="row font-large text-primary font-bold">
+            <div class="row font-large text-primary font-bold" style="display: flex; justify-content: space-between; padding: 8px 0; font-size: 1.1rem; border-top: 1.5px solid #cbd5e1; margin-top: 8px;">
               <span>ОБЩО С ДДС:</span>
-              <span>${totals.eur.toFixed(2)} € (${(totals.eur * 1.95583).toFixed(2)} лв.)</span>
+              <span>${order.totals.eur.toFixed(2)} € (${(order.totals.eur * 1.95583).toFixed(2)} лв.)</span>
             </div>
           </div>
         </div>
@@ -418,6 +619,8 @@ const Cart = {
     }
 
     this.clear();
+    this.myposPaid = false;
+    this.currentPendingOrder = null;
   },
 
   closeSuccess() {

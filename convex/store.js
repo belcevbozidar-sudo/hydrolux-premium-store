@@ -121,7 +121,11 @@ export const saveOrder = mutation({
       items: order.items || [],
       totals: order.totals || {},
       delivery: order.delivery,
+      city: order.city,
+      postcode: order.postcode,
       address: order.address,
+      paymentMethod: order.paymentMethod,
+      invoiceDetails: order.invoiceDetails,
       notes: order.notes,
       clientType: order.clientType,
       b2bDetails: order.b2bDetails,
@@ -233,5 +237,31 @@ export const getUserOrders = query({
     return all
       .filter(o => o.customer && o.customer.email && o.customer.email.toLowerCase().trim() === emailNormalized)
       .sort((a, b) => b.createdAt - a.createdAt);
+  },
+});
+
+export const getAllOrders = query({
+  args: {},
+  handler: async (ctx) => {
+    const all = await ctx.db.query("orders").collect();
+    return all.sort((a, b) => b.createdAt - a.createdAt);
+  },
+});
+
+export const updateOrderStatus = mutation({
+  args: {
+    orderNumber: v.string(),
+    status: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const existing = await ctx.db
+      .query("orders")
+      .withIndex("by_order_number", q => q.eq("orderNumber", args.orderNumber))
+      .unique();
+    if (!existing) {
+      throw new Error("Order not found");
+    }
+    await ctx.db.patch(existing._id, { status: args.status });
+    return { ok: true };
   },
 });

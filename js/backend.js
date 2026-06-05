@@ -106,4 +106,17 @@ const HydroluxBackend = {
       method: "GET",
     });
   },
+
+  async getAllOrders() {
+    return await this.request("/api/admin/orders", {
+      method: "GET",
+    });
+  },
+
+  async updateOrderStatus(orderNumber, status) {
+    return await this.request("/api/admin/order/status", {
+      method: "POST",
+      body: { orderNumber, status },
+    });
+  },
 };

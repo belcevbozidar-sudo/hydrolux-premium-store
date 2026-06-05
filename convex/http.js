@@ -115,6 +115,8 @@ http.route({ path: "/api/auth/register", method: "OPTIONS", handler: optionsHand
 http.route({ path: "/api/auth/login", method: "OPTIONS", handler: optionsHandler });
 http.route({ path: "/api/auth/google", method: "OPTIONS", handler: optionsHandler });
 http.route({ path: "/api/auth/orders", method: "OPTIONS", handler: optionsHandler });
+http.route({ path: "/api/admin/orders", method: "OPTIONS", handler: optionsHandler });
+http.route({ path: "/api/admin/order/status", method: "OPTIONS", handler: optionsHandler });
 
 // POST /api/auth/register
 http.route({
@@ -202,6 +204,41 @@ http.route({
       return jsonResponse({ ok: true, orders });
     } catch (e) {
       return jsonResponse({ ok: false, error: e.message }, { status: 500 });
+    }
+  }),
+});
+
+// GET /api/admin/orders
+http.route({
+  path: "/api/admin/orders",
+  method: "GET",
+  handler: httpAction(async (ctx) => {
+    try {
+      const orders = await ctx.runQuery(api.store.getAllOrders, {});
+      return jsonResponse({ ok: true, orders });
+    } catch (e) {
+      return jsonResponse({ ok: false, error: e.message }, { status: 500 });
+    }
+  }),
+});
+
+// POST /api/admin/order/status
+http.route({
+  path: "/api/admin/order/status",
+  method: "POST",
+  handler: httpAction(async (ctx, request) => {
+    try {
+      const body = await request.json();
+      if (!body.orderNumber || !body.status) {
+        return jsonResponse({ ok: false, error: "Липсва номер на поръчка или статус" }, { status: 400 });
+      }
+      const result = await ctx.runMutation(api.store.updateOrderStatus, {
+        orderNumber: body.orderNumber,
+        status: body.status,
+      });
+      return jsonResponse(result);
+    } catch (e) {
+      return jsonResponse({ ok: false, error: e.message }, { status: 400 });
     }
   }),
 });
