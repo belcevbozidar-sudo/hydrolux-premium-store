@@ -731,5 +731,33 @@ const Catalog = {
         btn.querySelector("span").textContent = isOpen ? "Скрий Филтри" : "Покажи Филтри";
       }
     }
+  },
+
+  addToCartFromDetails() {
+    const product = this.currentProduct;
+    if (!product) return;
+
+    if (product.variants && product.variants.length > 0) {
+      if (product.variants.length === 1) {
+        const variant = product.variants[0];
+        const variantCode = this.getVariantCode(product, variant, 0);
+        Cart.addItem(product, variantCode, 1);
+        Cart.openDrawer();
+      } else {
+        const panel = document.querySelector(".variants-panel");
+        if (panel) {
+          panel.scrollIntoView({ behavior: "smooth" });
+          panel.classList.add("pulse-highlight");
+          setTimeout(() => panel.classList.remove("pulse-highlight"), 1000);
+          
+          if (typeof Cart !== "undefined" && Cart.showToast) {
+            Cart.showToast("Моля, изберете размер и количество от таблицата по-долу.");
+          }
+        }
+      }
+    } else {
+      Cart.addItem(product, "CUSTOM-SPEC", 1);
+      Cart.openDrawer();
+    }
   }
 };
