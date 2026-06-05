@@ -2053,16 +2053,14 @@ const Admin = {
     const promptText = `${enKeywords}, bright clean product studio photography, white background, high detail 8k, premium brand`;
 
     try {
-      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:generateImages?key=${apiKey}`, {
+      const response = await fetch(`/api/generate-image`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          prompt: promptText,
-          numberOfImages: 1,
-          outputMimeType: "image/jpeg",
-          aspectRatio: "1:1"
+          apiKey: apiKey,
+          prompt: promptText
         })
       });
 
