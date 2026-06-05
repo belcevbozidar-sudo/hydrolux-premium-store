@@ -23,8 +23,8 @@ const Catalog = {
   },
 
   selectSubcategoryClick(catId, subId) {
-    this.activeCategory = catId;
-    this.activeSubcategory = subId;
+    this.activeCategory = catId || null;
+    this.activeSubcategory = subId || null;
     this.activeSubSubcategory = null;
     if (App.currentView !== "catalog") {
       App.navigate("catalog");
@@ -34,9 +34,9 @@ const Catalog = {
   },
 
   selectSubSubcategoryClick(catId, subId, subsubId) {
-    this.activeCategory = catId;
-    this.activeSubcategory = subId;
-    this.activeSubSubcategory = subsubId;
+    this.activeCategory = catId || null;
+    this.activeSubcategory = subId || null;
+    this.activeSubSubcategory = subsubId || null;
     if (App.currentView !== "catalog") {
       App.navigate("catalog");
     }
@@ -49,73 +49,77 @@ const Catalog = {
     const container = document.getElementById("catalog-categories-tags-list");
     if (!container) return;
 
+    if (!this.activeCategory) {
+      container.innerHTML = "";
+      this.renderSpecsFilters();
+      return;
+    }
+
+    const cat = CONFIG.categories.find(c => c.id === this.activeCategory);
+    if (!cat) {
+      container.innerHTML = "";
+      this.renderSpecsFilters();
+      return;
+    }
+
+    if (!cat.subcategories || cat.subcategories.length === 0) {
+      // If selected category has no subcategories, show active category filter label only
+      container.innerHTML = `
+        <div class="catalog-tree-container">
+          <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #64748b; letter-spacing: 0.5px; margin-bottom: 10px;">Категория</div>
+          <div class="tree-row active" onclick="Catalog.selectCategory('')" style="margin-bottom: 10px;">
+            <span class="tree-icon">${cat.icon || '📁'}</span>
+            <span class="tree-label">${cat.name} ✕</span>
+          </div>
+        </div>
+      `;
+      this.renderSpecsFilters();
+      return;
+    }
+
     let treeHtml = `
       <div class="catalog-tree-container">
+        <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #64748b; letter-spacing: 0.5px; margin-bottom: 10px;">Подкатегории за ${cat.name}</div>
         <ul class="catalog-tree-menu">
-          <li class="tree-item ${!this.activeCategory ? 'active' : ''}">
-            <div class="tree-row" onclick="Catalog.selectCategory('')">
+          <li class="tree-item ${!this.activeSubcategory ? 'active' : ''}">
+            <div class="tree-row" onclick="Catalog.selectSubcategoryClick('${cat.id}', '')">
               <span class="tree-icon">📂</span>
-              <span class="tree-label">Всички продукти</span>
+              <span class="tree-label">Всички подкатегории</span>
             </div>
           </li>
     `;
 
-    CONFIG.categories.forEach(cat => {
-      const isCatActive = this.activeCategory === cat.id;
-      const hasSub = cat.subcategories && cat.subcategories.length > 0;
-      const isExpanded = isCatActive || !!this.expandedCategories[cat.id];
+    cat.subcategories.forEach(sub => {
+      const isSubActive = this.activeSubcategory === sub.id;
+      const hasSubSub = sub.subcategories && sub.subcategories.length > 0;
+      const subKey = `${cat.id}_${sub.id}`;
+      const isSubExpanded = isSubActive || !!this.expandedCategories[subKey];
 
       treeHtml += `
-        <li class="tree-item ${isCatActive ? 'active' : ''} ${hasSub ? 'has-children' : ''} ${isExpanded ? 'expanded' : ''}" id="tree-cat-${cat.id}">
+        <li class="tree-item ${isSubActive ? 'active' : ''} ${hasSubSub ? 'has-children' : ''} ${isSubExpanded ? 'expanded' : ''}" id="tree-sub-${sub.id}">
           <div class="tree-row">
-            ${hasSub ? `<span class="tree-toggle" onclick="event.stopPropagation(); Catalog.toggleTreeExpand('${cat.id}')">${isExpanded ? '▼' : '▶'}</span>` : '<span class="tree-toggle-spacer"></span>'}
-            <span class="tree-link" onclick="Catalog.selectCategory('${cat.id}')">
-              <span class="tree-icon">${cat.icon || '📁'}</span>
-              <span class="tree-label">${cat.name}</span>
+            ${hasSubSub ? `<span class="tree-toggle" onclick="event.stopPropagation(); Catalog.toggleTreeExpandSub('${cat.id}', '${sub.id}')">${isSubExpanded ? '▼' : '▶'}</span>` : '<span class="tree-toggle-spacer"></span>'}
+            <span class="tree-link" onclick="Catalog.selectSubcategoryClick('${cat.id}', '${sub.id}')">
+              <span class="tree-label">${sub.name}</span>
             </span>
           </div>
       `;
 
-      if (hasSub) {
-        treeHtml += `<ul class="tree-sub-list ${isExpanded ? 'open' : ''}">`;
-        
-        cat.subcategories.forEach(sub => {
-          const isSubActive = this.activeSubcategory === sub.id;
-          const hasSubSub = sub.subcategories && sub.subcategories.length > 0;
-          const subKey = `${cat.id}_${sub.id}`;
-          const isSubExpanded = (isSubActive && isCatActive) || !!this.expandedCategories[subKey];
-
+      if (hasSubSub) {
+        treeHtml += `<ul class="tree-sub-sub-list ${isSubExpanded ? 'open' : ''}">`;
+        sub.subcategories.forEach(subsub => {
+          const isSubSubActive = this.activeSubSubcategory === subsub.id;
           treeHtml += `
-            <li class="tree-item ${isSubActive ? 'active' : ''} ${hasSubSub ? 'has-children' : ''} ${isSubExpanded ? 'expanded' : ''}" id="tree-sub-${sub.id}">
-              <div class="tree-row">
-                ${hasSubSub ? `<span class="tree-toggle" onclick="event.stopPropagation(); Catalog.toggleTreeExpandSub('${cat.id}', '${sub.id}')">${isSubExpanded ? '▼' : '▶'}</span>` : '<span class="tree-toggle-spacer"></span>'}
-                <span class="tree-link" onclick="Catalog.selectSubcategoryClick('${cat.id}', '${sub.id}')">
-                  <span class="tree-label">${sub.name}</span>
+            <li class="tree-item ${isSubSubActive ? 'active' : ''}">
+              <div class="tree-row" onclick="Catalog.selectSubSubcategoryClick('${cat.id}', '${sub.id}', '${subsub.id}')">
+                <span class="tree-toggle-spacer"></span>
+                <span class="tree-link">
+                  <span class="tree-label">${subsub.name}</span>
                 </span>
               </div>
+            </li>
           `;
-
-          if (hasSubSub) {
-            treeHtml += `<ul class="tree-sub-sub-list ${isSubExpanded ? 'open' : ''}">`;
-            sub.subcategories.forEach(subsub => {
-              const isSubSubActive = this.activeSubSubcategory === subsub.id;
-              treeHtml += `
-                <li class="tree-item ${isSubSubActive ? 'active' : ''}">
-                  <div class="tree-row" onclick="Catalog.selectSubSubcategoryClick('${cat.id}', '${sub.id}', '${subsub.id}')">
-                    <span class="tree-toggle-spacer"></span>
-                    <span class="tree-link">
-                      <span class="tree-label">${subsub.name}</span>
-                    </span>
-                  </div>
-                </li>
-              `;
-            });
-            treeHtml += `</ul>`;
-          }
-
-          treeHtml += `</li>`;
         });
-        
         treeHtml += `</ul>`;
       }
 
