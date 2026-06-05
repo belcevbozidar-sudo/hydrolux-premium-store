@@ -1861,10 +1861,11 @@ const Admin = {
             
             <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
               <button type="button" class="btn btn-secondary" onclick="document.getElementById('cat-file-input').click()">📁 Избери от устройството</button>
+              <button type="button" class="btn btn-secondary" style="background-color: #10b981; color: white; border: none;" onclick="Admin.generateFreeAIImage()">🎨 Безплатно генериране (без ключ)</button>
               <button type="button" class="btn btn-orange" onclick="Admin.generateGeminiCategoryImage()">✨ Генерирай с Gemini</button>
               <a href="#" onclick="event.preventDefault(); const k = prompt('Промяна на Google AI Studio API Key:', localStorage.getItem('gemini_api_key') || ''); if(k !== null) localStorage.setItem('gemini_api_key', k.trim())" style="font-size: 0.82rem; text-decoration: underline; color: var(--primary); font-weight: 700; margin-left: 5px;">🔧 Настройка на API Ключ</a>
             </div>
-            <p class="font-xs text-muted mt-5" style="margin-bottom: 0;">* Можете да качите файл от устройството си или да генерирате изображение с Gemini (изисква API ключ от Google AI Studio).</p>
+            <p class="font-xs text-muted mt-5" style="margin-bottom: 0;">* Можете да качите файл, да генерирате безплатно с Изкуствен Интелект (без ключ) или да използвате Gemini (изисква платен Google AI Studio ключ).</p>
           </div>
           
           <!-- SUB-CATEGORIES SECTION -->
@@ -2086,6 +2087,70 @@ const Admin = {
     } catch (err) {
       console.error(err);
       alert("Възникна грешка при генериране с Gemini: " + err.message + "\n\nАко API ключът е невалиден, използвайте линка в формата за промяна.");
+    }
+  },
+
+  async generateFreeAIImage() {
+    const nameEl = document.getElementById("cat-name");
+    const imgPreview = document.getElementById("cat-image-preview");
+    const imgVal = document.getElementById("cat-image");
+    if (!nameEl || !imgPreview || !imgVal) return;
+    
+    const name = nameEl.value.trim();
+    if (!name) {
+      alert("Моля, първо въведете име на категорията, за да може ИИ да генерира подходяща снимка!");
+      nameEl.focus();
+      return;
+    }
+
+    if (typeof Cart !== 'undefined' && typeof Cart.showToast === 'function') {
+      Cart.showToast("Безплатният ИИ генерира изображение...");
+    }
+
+    let enKeywords = "industrial hose hydraulic pneumatic connector";
+    if (name.toLowerCase().includes("въздух")) enKeywords = "pneumatic air hose industrial compressor hose";
+    else if (name.toLowerCase().includes("вода")) enKeywords = "industrial water delivery flat layflat hose";
+    else if (name.toLowerCase().includes("гориво") || name.toLowerCase().includes("масло")) enKeywords = "fuel oil rubber chemical transfer hose";
+    else if (name.toLowerCase().includes("охлаждащ")) enKeywords = "silicone coolant engine radiator hose blue red";
+    else if (name.toLowerCase().includes("силиконов")) enKeywords = "silicone hose elbow coupling automotive high temp";
+    else if (name.toLowerCase().includes("газ")) enKeywords = "oxygen acetylene welding gas hose yellow red green";
+    else if (name.toLowerCase().includes("полиуретан")) enKeywords = "polyurethane spiral coiled pneumatic hose blue";
+    else if (name.toLowerCase().includes("pvc") || name.toLowerCase().includes("пвц")) enKeywords = "pvc transparent suction delivery hose helix spiral reinforcement";
+    else if (name.toLowerCase().includes("хран")) enKeywords = "food grade hose silicone transparent winery brewery hygiene FDA";
+    else if (name.toLowerCase().includes("шлаух")) enKeywords = "polyurethane pneumatic tubing spool colorful";
+    else if (name.toLowerCase().includes("фитинг")) enKeywords = "pneumatic brass nickel quick coupling push in fittings";
+    else if (name.toLowerCase().includes("накрайник")) enKeywords = "hydraulic fittings steel thread hose crimp coupling ferrules carbon steel";
+    else if (name.toLowerCase().includes("високо налягане")) enKeywords = "high pressure hydraulic rubber hose 2SN wire braid steel crimped";
+    else if (name.toLowerCase().includes("аксесоар")) enKeywords = "hose accessories clamps protective spiral sleeve guards";
+
+    const promptText = encodeURIComponent(`${enKeywords}, bright clean product studio photography, white background, high detail 8k, premium brand`);
+    
+    try {
+      // Fetch the image from Pollinations AI
+      const pollinationsUrl = `https://image.pollinations.ai/prompt/${promptText}?width=500&height=500&nologo=true&seed=${Math.floor(Math.random() * 1000000)}`;
+      const response = await fetch(pollinationsUrl);
+      if (!response.ok) {
+        throw new Error("Неуспешно изтегляне на снимка от Pollinations AI.");
+      }
+
+      const blob = await response.blob();
+      const reader = new FileReader();
+      
+      reader.onloadend = function() {
+        const base64Url = reader.result;
+        imgVal.value = base64Url;
+        imgPreview.src = base64Url;
+        imgPreview.style.display = "block";
+        
+        if (typeof Cart !== 'undefined' && typeof Cart.showToast === 'function') {
+          Cart.showToast("Снимката е генерирана успешно с Безплатен ИИ!");
+        }
+      };
+      
+      reader.readAsDataURL(blob);
+    } catch (err) {
+      console.error(err);
+      alert("Възникна грешка при безплатното генериране: " + err.message);
     }
   },
 
