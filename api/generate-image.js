@@ -13,17 +13,24 @@ export default async function handler(req, res) {
   }
 
   try {
-    const googleUrl = `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:generateImages?key=${apiKey}`;
+    // Correct REST endpoint for Imagen 3 is models/imagen-3.0-generate-002:predict
+    const googleUrl = `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:predict?key=${apiKey}`;
     const response = await fetch(googleUrl, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        prompt: prompt,
-        numberOfImages: 1,
-        outputMimeType: "image/jpeg",
-        aspectRatio: "1:1"
+        instances: [
+          {
+            prompt: prompt
+          }
+        ],
+        parameters: {
+          sampleCount: 1,
+          aspectRatio: "1:1",
+          outputMimeType: "image/jpeg"
+        }
       })
     });
 
@@ -31,13 +38,32 @@ export default async function handler(req, res) {
       const errData = await response.json().catch(() => ({}));
       return res.status(response.status).json({
         error: {
-          message: errData.error?.message || response.statusText
+          message: errData.error?.message || response.statusText || 'Error from Google API'
         }
       });
     }
 
     const resData = await response.json();
-    return res.status(200).json(resData);
+    const imgBytes = resData.predictions?.[0]?.bytesBase64Encoded;
+
+    if (!imgBytes) {
+      return res.status(502).json({
+        error: {
+          message: 'No image bytes found in Google response. Response structure: ' + JSON.stringify(resData)
+        }
+      });
+    }
+
+    // Map response structure to match the frontend expectation in js/admin.js
+    return res.status(200).json({
+      generatedImages: [
+        {
+          image: {
+            imageBytes: imgBytes
+          }
+        }
+      ]
+    });
   } catch (error) {
     return res.status(500).json({
       error: {
