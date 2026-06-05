@@ -1848,8 +1848,17 @@ const Admin = {
             </div>
             <div class="form-group">
               <label>Икона / Емоджи (не е задължително)</label>
-              <input type="text" id="cat-icon" class="form-control" value="${isEditing ? this.editingCategory.icon : ''}" placeholder="напр. 🌡️ (по подразбиране е 📦)">
+              <input type="text" id="cat-icon" class="form-control" value="${isEditing ? (this.editingCategory.icon || '') : ''}" placeholder="напр. 🌡️ (по подразбиране е 📦)">
             </div>
+          </div>
+          
+          <div class="form-group" style="margin-top: 15px;">
+            <label>Снимка на категорията (URL или локален път)</label>
+            <div style="display: flex; gap: 8px;">
+              <input type="text" id="cat-image" class="form-control" value="${isEditing ? (this.editingCategory.image || '') : ''}" placeholder="напр. assets/cat_air_hoses.png или AI генериран адрес">
+              <button type="button" class="btn btn-secondary" onclick="Admin.generateAICategoryImage()" style="white-space: nowrap;">✨ Генерирай с ИИ</button>
+            </div>
+            <p class="font-xs text-muted mt-5" style="margin-bottom: 0;">* Можете да натиснете бутона за автоматично генериране на красива снимка с Изкуствен Интелект въз основа на името.</p>
           </div>
           
           <!-- SUB-CATEGORIES SECTION -->
@@ -1917,6 +1926,7 @@ const Admin = {
 
     const name = document.getElementById("cat-name").value.trim();
     const icon = document.getElementById("cat-icon").value.trim() || "📦";
+    const image = document.getElementById("cat-image").value.trim();
 
     if (this.editingCategory) {
       // EDIT MODE
@@ -1924,6 +1934,7 @@ const Admin = {
       if (target) {
         target.name = name;
         target.icon = icon;
+        target.image = image;
         target.subcategories = this.tempSubcategories || [];
       }
       CONFIG.saveState();
@@ -1951,6 +1962,7 @@ const Admin = {
         id,
         name,
         icon,
+        image,
         subcategories: this.tempSubcategories || []
       };
 
@@ -1971,6 +1983,40 @@ const Admin = {
     }
   },
 
+  generateAICategoryImage() {
+    const nameEl = document.getElementById("cat-name");
+    const imgEl = document.getElementById("cat-image");
+    if (!nameEl || !imgEl) return;
+    const name = nameEl.value.trim();
+    if (!name) {
+      alert("Моля, първо въведете име на категорията, за да може ИИ да генерира подходяща снимка!");
+      nameEl.focus();
+      return;
+    }
+    const seed = Math.floor(Math.random() * 1000000);
+    let enKeywords = "industrial hose hydraulic pneumatic connector";
+    if (name.toLowerCase().includes("въздух")) enKeywords = "pneumatic air hose industrial compressor hose";
+    else if (name.toLowerCase().includes("вода")) enKeywords = "industrial water delivery flat layflat hose";
+    else if (name.toLowerCase().includes("гориво") || name.toLowerCase().includes("масло")) enKeywords = "fuel oil rubber chemical transfer hose";
+    else if (name.toLowerCase().includes("охлаждащ")) enKeywords = "silicone coolant engine radiator hose blue red";
+    else if (name.toLowerCase().includes("силиконов")) enKeywords = "silicone hose elbow coupling automotive high temp";
+    else if (name.toLowerCase().includes("газ")) enKeywords = "oxygen acetylene welding gas hose yellow red green";
+    else if (name.toLowerCase().includes("полиуретан")) enKeywords = "polyurethane spiral coiled pneumatic hose blue";
+    else if (name.toLowerCase().includes("pvc") || name.toLowerCase().includes("пвц")) enKeywords = "pvc transparent suction delivery hose helix spiral reinforcement";
+    else if (name.toLowerCase().includes("хран")) enKeywords = "food grade hose silicone transparent winery brewery hygiene FDA";
+    else if (name.toLowerCase().includes("шлаух")) enKeywords = "polyurethane pneumatic tubing spool colorful";
+    else if (name.toLowerCase().includes("фитинг")) enKeywords = "pneumatic brass nickel quick coupling push in fittings";
+    else if (name.toLowerCase().includes("накрайник")) enKeywords = "hydraulic fittings steel thread hose crimp coupling ferrules carbon steel";
+    else if (name.toLowerCase().includes("високо налягане")) enKeywords = "high pressure hydraulic rubber hose 2SN wire braid steel crimped";
+    else if (name.toLowerCase().includes("аксесоар")) enKeywords = "hose accessories clamps protective spiral sleeve guards";
+
+    const prompt = encodeURIComponent(`${enKeywords}, bright clean product studio photography, white background, high detail 8k, premium brand`);
+    imgEl.value = `https://image.pollinations.ai/prompt/${prompt}?width=400&height=460&nologo=true&seed=${seed}`;
+    if (typeof Cart !== 'undefined' && typeof Cart.showToast === 'function') {
+      Cart.showToast("Снимката е генерирана успешно с ИИ!");
+    }
+  },
+
   // Propagates active memory/localStorage state to all visible SPA views instantly
   // Safe to call from both the SPA (#admin) and standalone (/admin) page
   propagateStateChanges() {
@@ -1979,6 +2025,7 @@ const Admin = {
       if (typeof App.renderSearchCategories === 'function') App.renderSearchCategories();
       if (typeof App.renderFeaturedProductsHome === 'function') App.renderFeaturedProductsHome();
       if (typeof App.renderHeaderNavDropdown === 'function') App.renderHeaderNavDropdown();
+      if (typeof App.renderHomeCategories === 'function') App.renderHomeCategories();
     }
     if (typeof Catalog !== 'undefined') {
       if (typeof Catalog.renderSidebar === 'function') Catalog.renderSidebar();

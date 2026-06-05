@@ -18,6 +18,7 @@ const App = {
     this.renderQuickCategories();
     this.renderSearchCategories();
     this.renderHeaderNavDropdown();
+    this.renderHomeCategories();
     
     // 3. Setup Smart Search Suggestions and Input
     this.setupSearchSuggestions();
@@ -131,6 +132,33 @@ const App = {
     if (product.specialOfferType === "hot") return "ГОРЕЩА ОФЕРТА";
     if (product.specialOfferType === "other" && product.specialOfferText) return product.specialOfferText;
     return "СЕЗОННО НАМАЛЕНИЕ";
+  },
+
+  renderHomeCategories() {
+    const carousel = document.getElementById("home-categories-carousel");
+    if (!carousel) return;
+
+    carousel.innerHTML = CONFIG.categories.map(c => {
+      const defaultImg = `assets/cat_${c.id.replace(/-/g, '_')}.png`;
+      const imageSrc = c.image || defaultImg;
+      const cleanImageSrc = imageSrc.replace(/\s+/g, '%20');
+      const fallbackPrompt = encodeURIComponent(`${c.name} industrial hose connection premium studio lighting photography`);
+      const fallbackUrl = `https://image.pollinations.ai/prompt/${fallbackPrompt}?width=300&height=350&nologo=true`;
+
+      return `
+        <div class="category-card-6" onclick="Catalog.selectCategory('${c.id}'); App.navigate('catalog')">
+          <div class="category-card-6-img-wrapper">
+            <img src="${cleanImageSrc}" alt="${c.name}" onerror="this.onerror=null; this.src='${fallbackUrl}'">
+          </div>
+          <div class="category-card-6-body">
+            <h3 class="category-card-6-title">${c.name}</h3>
+            <div class="category-card-6-footer">
+              <span class="category-card-6-arrow">➔</span>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join("");
   },
 
   renderQuickCategories() {

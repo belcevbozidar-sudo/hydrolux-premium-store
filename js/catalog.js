@@ -397,6 +397,7 @@ const Catalog = {
   openProductDetails(productId) {
     const product = CONFIG.products.find(p => p.id === productId);
     if (!product) return;
+    this.currentProduct = product;
 
     // Transition view
     App.navigate("product-detail");
@@ -632,6 +633,92 @@ const Catalog = {
     event.preventDefault();
     this.closeInquiryModal();
     Cart.showToast("Благодарим Ви! Запитването е изпратено успешно.");
+  },
+
+  openQuickOrderModal() {
+    const modal = document.getElementById("quick-order-modal");
+    if (modal && this.currentProduct) {
+      modal.classList.add("open");
+      document.body.classList.add("no-scroll");
+
+      const summary = document.getElementById("quick-order-product-summary");
+      if (summary) {
+        const img = this.currentProduct.images[0] || 'assets/logo.png';
+        const priceText = formatPrice(this.currentProduct.variants[0]?.priceEur || 0).eur;
+        summary.innerHTML = `
+          <img src="${img}" style="width: 60px; height: 60px; object-fit: cover; border-radius: 6px; border: 1px solid #e2e8f0;">
+          <div>
+            <strong style="display: block; font-weight: 700; color: #0f172a; font-size: 0.95rem;">${this.currentProduct.name}</strong>
+            <span style="font-size: 0.85rem; color: #ea580c; font-weight: 700;">Цена: ${priceText} / ${this.currentProduct.unit || 'м'}</span>
+          </div>
+        `;
+      }
+    }
+  },
+
+  closeQuickOrderModal() {
+    const modal = document.getElementById("quick-order-modal");
+    if (modal) {
+      modal.classList.remove("open");
+      document.body.classList.remove("no-scroll");
+    }
+  },
+
+  async submitQuickOrder(event) {
+    event.preventDefault();
+    const name = document.getElementById("quick-order-name").value.trim();
+    const phone = document.getElementById("quick-order-phone").value.trim();
+    if (!name || !phone || !this.currentProduct) return;
+
+    const orderNumber = "HL-Q-" + Math.floor(100000 + Math.random() * 900000);
+    const totals = { eur: this.currentProduct.variants[0]?.priceEur || 0 };
+    const orderedItems = [{
+      id: this.currentProduct.id,
+      name: this.currentProduct.name,
+      priceEur: this.currentProduct.variants[0]?.priceEur || 0,
+      quantity: 1,
+      variantName: this.currentProduct.variants[0]?.code || ""
+    }];
+
+    const order = {
+      orderNumber,
+      customer: { name, phone, email: "" },
+      items: orderedItems,
+      totals,
+      delivery: "quick_order",
+      address: "",
+      notes: "БЪРЗА ПОРЪЧКА ОТ СТРАНИЦА НА ПРОДУКТ",
+      clientType: "b2c",
+      b2bDetails: null,
+      status: "new",
+      createdAt: Date.now()
+    };
+
+    try {
+      if (typeof HydroluxBackend !== "undefined") {
+        await HydroluxBackend.saveOrder(order);
+      }
+    } catch (err) {
+      console.warn("Quick order Convex save failed", err);
+      const pendingOrders = JSON.parse(localStorage.getItem("hydrolux_pending_orders") || "[]");
+      pendingOrders.push(order);
+      localStorage.setItem("hydrolux_pending_orders", JSON.stringify(pendingOrders));
+    }
+
+    this.closeQuickOrderModal();
+    document.getElementById("quick-order-name").value = "";
+    document.getElementById("quick-order-phone").value = "";
+    Cart.showToast("Благодарим Ви! Поръчката е изпратена успешно.");
+  },
+
+  slideCategories(direction) {
+    const track = document.getElementById("home-categories-carousel");
+    if (!track) return;
+    const scrollAmount = track.clientWidth * 0.75;
+    track.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
   },
 
   toggleMobileFilters() {

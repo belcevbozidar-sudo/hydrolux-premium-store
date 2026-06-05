@@ -202,86 +202,14 @@
         </div>
       </div>
 
-      <!-- 6 Categories Grid -->
+      <!-- Categories Carousel -->
       <div class="container" style="margin-top: 25px; position: relative; z-index: 20;">
-        <div class="home-categories-grid-6">
-          <!-- Card 1: Hydraulic Hoses -->
-          <div class="category-card-6" onclick="Catalog.selectCategory('high-pressure-hoses'); App.navigate('catalog')">
-            <div class="category-card-6-img-wrapper">
-              <img src="assets/card_hydraulic_hoses.png?v=4" alt="Хидравлични маркучи">
-            </div>
-            <div class="category-card-6-body">
-              <h3 class="category-card-6-title">Хидравлични маркучи</h3>
-              <div class="category-card-6-footer">
-                <span class="category-card-6-arrow">➔</span>
-              </div>
-            </div>
+        <div class="categories-carousel-wrapper">
+          <button class="carousel-arrow prev-arrow" onclick="Catalog.slideCategories(-1)">&#10094;</button>
+          <div class="home-categories-carousel" id="home-categories-carousel">
+            <!-- Dynamically populated categories by App.renderHomeCategories() -->
           </div>
-
-          <!-- Card 2: Industrial Hoses -->
-          <div class="category-card-6" onclick="Catalog.selectCategory('air-hoses'); App.navigate('catalog')">
-            <div class="category-card-6-img-wrapper">
-              <img src="assets/card_industrial_hoses.png?v=4" alt="Индустриални маркучи">
-            </div>
-            <div class="category-card-6-body">
-              <h3 class="category-card-6-title">Индустриални маркучи</h3>
-              <div class="category-card-6-footer">
-                <span class="category-card-6-arrow">➔</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3: Pneumatic Hoses/Systems -->
-          <div class="category-card-6" onclick="Catalog.selectCategory('pneumatic-tubes'); App.navigate('catalog')">
-            <div class="category-card-6-img-wrapper">
-              <img src="assets/card_pneumatic_systems.png?v=4" alt="Пневматични системи">
-            </div>
-            <div class="category-card-6-body">
-              <h3 class="category-card-6-title">Пневматични системи</h3>
-              <div class="category-card-6-footer">
-                <span class="category-card-6-arrow">➔</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4: Fittings & Adapters -->
-          <div class="category-card-6" onclick="Catalog.selectCategory('pneumatic-fittings'); App.navigate('catalog')">
-            <div class="category-card-6-img-wrapper">
-              <img src="assets/card_fittings_adapters.png?v=4" alt="Фитинги и адаптери">
-            </div>
-            <div class="category-card-6-body">
-              <h3 class="category-card-6-title">Фитинги и адаптери</h3>
-              <div class="category-card-6-footer">
-                <span class="category-card-6-arrow">➔</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 5: Quick Couplings -->
-          <div class="category-card-6" onclick="Catalog.selectCategory('pneumatic-fittings'); App.navigate('catalog')">
-            <div class="category-card-6-img-wrapper">
-              <img src="assets/card_quick_couplings.png?v=4" alt="Бързи връзки и съединения">
-            </div>
-            <div class="category-card-6-body">
-              <h3 class="category-card-6-title">Бързи връзки и съединения</h3>
-              <div class="category-card-6-footer">
-                <span class="category-card-6-arrow">➔</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 6: Hoses by Application -->
-          <div class="category-card-6" onclick="Catalog.selectCategory('fuel-oil-hoses'); App.navigate('catalog')">
-            <div class="category-card-6-img-wrapper">
-              <img src="assets/card_hoses_by_application.png?v=4" alt="Маркучи по приложение">
-            </div>
-            <div class="category-card-6-body">
-              <h3 class="category-card-6-title">Маркучи по приложение</h3>
-              <div class="category-card-6-footer">
-                <span class="category-card-6-arrow">➔</span>
-              </div>
-            </div>
-          </div>
+          <button class="carousel-arrow next-arrow" onclick="Catalog.slideCategories(1)">&#10095;</button>
         </div>
       </div>
 
@@ -359,21 +287,6 @@
             </div>
           </div>
 
-          <!-- Item 5: B2B -->
-          <div class="feature-bar-item-5" onclick="App.navigate('services')" style="cursor: pointer;">
-            <div class="feature-bar-icon-5">
-              <svg viewBox="0 0 24 24" width="40" height="40" fill="none">
-                <circle cx="8" cy="8" r="3.5" fill="#1e293b"/>
-                <path d="M2 18a6 6 0 0 1 11.5 -2" stroke="#ffffff" stroke-width="1.5" fill="#1e293b"/>
-                <circle cx="16" cy="8" r="3.5" fill="#ea580c"/>
-                <path d="M10.5 16A6 6 0 0 1 22 18h-11.5z" fill="#ea580c"/>
-              </svg>
-            </div>
-            <div class="feature-bar-content-5">
-              <h4 class="feature-bar-title-5">В2В условия</h4>
-              <span class="feature-bar-desc-5">Специални цени за редовни клиенти</span>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -400,7 +313,7 @@
         <h2 class="industries-section-title">Индустрии и приложения</h2>
         
         <div class="industries-grid">
-          <div class="industry-card" onclick="Catalog.selectCategory('high-pressure-hoses'); App.navigate('catalog')" style="background-image: url('assets/industry_agriculture.png');">
+          <div class="industry-card" style="background-image: url('assets/industry_agriculture.png');">
             <div class="industry-overlay">
               <div class="industry-info">
                 <div class="industry-icon">🚜</div>
@@ -409,7 +322,7 @@
             </div>
           </div>
           
-          <div class="industry-card" onclick="Catalog.selectCategory('high-pressure-hoses'); App.navigate('catalog')" style="background-image: url('assets/industry_construction.png');">
+          <div class="industry-card" style="background-image: url('assets/industry_construction.png');">
             <div class="industry-overlay">
               <div class="industry-info">
                 <div class="industry-icon">🏗️</div>
@@ -418,7 +331,7 @@
             </div>
           </div>
           
-          <div class="industry-card" onclick="Catalog.selectCategory('high-pressure-hoses'); App.navigate('catalog')" style="background-image: url('assets/industry_mining.png');">
+          <div class="industry-card" style="background-image: url('assets/industry_mining.png');">
             <div class="industry-overlay">
               <div class="industry-info">
                 <div class="industry-icon">🚛</div>
@@ -427,7 +340,7 @@
             </div>
           </div>
           
-          <div class="industry-card" onclick="Catalog.selectCategory('high-pressure-hoses'); App.navigate('catalog')" style="background-image: url('assets/industry_manufacturing.png');">
+          <div class="industry-card" style="background-image: url('assets/industry_manufacturing.png');">
             <div class="industry-overlay">
               <div class="industry-info">
                 <div class="industry-icon">⚙️</div>
@@ -436,7 +349,7 @@
             </div>
           </div>
           
-          <div class="industry-card" onclick="Catalog.selectCategory('high-pressure-hoses'); App.navigate('catalog')" style="background-image: url('assets/industry_transport.png');">
+          <div class="industry-card" style="background-image: url('assets/industry_transport.png');">
             <div class="industry-overlay">
               <div class="industry-info">
                 <div class="industry-icon">🚚</div>
@@ -445,7 +358,7 @@
             </div>
           </div>
           
-          <div class="industry-card" onclick="Catalog.selectCategory('food-hoses'); App.navigate('catalog')" style="background-image: url('assets/industry_food.png');">
+          <div class="industry-card" style="background-image: url('assets/industry_food.png');">
             <div class="industry-overlay">
               <div class="industry-info">
                 <div class="industry-icon">🏭</div>
@@ -454,7 +367,7 @@
             </div>
           </div>
           
-          <div class="industry-card" onclick="Catalog.selectCategory('silicone-hoses'); App.navigate('catalog')" style="background-image: url('assets/industry_chemical.png');">
+          <div class="industry-card" style="background-image: url('assets/industry_chemical.png');">
             <div class="industry-overlay">
               <div class="industry-info">
                 <div class="industry-icon">🧪</div>
@@ -600,6 +513,7 @@
           <div class="divider"></div>
 
           <div class="action-buttons-row">
+            <button class="btn btn-orange" onclick="Catalog.openQuickOrderModal()">⚡ Бърза поръчка</button>
             <button class="btn btn-secondary" onclick="Catalog.openInquiryModal()">❓ Задай Въпрос за продукта</button>
           </div>
 
@@ -709,9 +623,6 @@
           <div class="info-item mt-10">
             <span>⚙️</span> <span><strong>Пневматични системи</strong>: Консултации, изграждане, доставка на шлаухи, цанги, регулатори и пневмоподготвящи групи.</span>
           </div>
-          <div class="info-item mt-10">
-            <span>⚙️</span> <span><strong>B2B Договори</strong>: Специални ценови условия и експресно обслужване с предимство за корпоративни клиенти в област Монтана.</span>
-          </div>
         </div>
       </div>
     </section>
@@ -730,19 +641,7 @@
           <div class="checkout-grid">
             <!-- Form Fields -->
             <div>
-              <div class="form-group">
-                <label>Тип на поръчката</label>
-                <div class="client-type-selector">
-                  <div class="client-type-option">
-                    <input type="radio" name="client_type" id="type-b2c" value="b2c" checked onchange="Cart.toggleInvoiceFields('b2c')">
-                    <label for="type-b2c">Частно лице</label>
-                  </div>
-                  <div class="client-type-option">
-                    <input type="radio" name="client_type" id="type-b2b" value="b2b" onchange="Cart.toggleInvoiceFields('b2b')">
-                    <label for="type-b2b">Фирма / B2B</label>
-                  </div>
-                </div>
-              </div>
+
 
               <!-- General client info -->
               <div class="form-group">
@@ -760,27 +659,7 @@
                 </div>
               </div>
 
-              <!-- B2B fields -->
-              <div id="b2b-invoice-fields" class="hidden">
-                <div class="form-group">
-                  <label>Име на фирмата</label>
-                  <input type="text" name="company_name" class="form-control" placeholder="Фирма ЕООД">
-                </div>
-                <div class="form-group-split">
-                  <div class="form-group">
-                    <label>ЕИК/Булстат</label>
-                    <input type="text" name="company_vat" class="form-control" placeholder="BG123456789">
-                  </div>
-                  <div class="form-group">
-                    <label>МОЛ</label>
-                    <input type="text" name="company_mol" class="form-control" placeholder="Иван Иванов">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label>Адрес на регистрация</label>
-                  <input type="text" name="company_address" class="form-control" placeholder="Монтана, ул. Централна 1">
-                </div>
-              </div>
+
 
               <div class="form-group">
                 <label>Начин на получаване</label>
@@ -922,6 +801,33 @@
             <textarea id="builder-inquiry-message" class="form-control" rows="3" placeholder="Опишете специфични изисквания, брой сглобки..."></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-block" style="margin-top: 15px;">Изпрати Запитване</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3.1. PRODUCT QUICK ORDER MODAL (БЪРЗА ПОРЪЧКА) -->
+  <div class="modal-overlay" id="quick-order-modal">
+    <div class="modal-window" style="max-width: 450px;">
+      <div class="modal-header">
+        <h3>⚡ Бърза поръчка</h3>
+        <button class="modal-close" onclick="Catalog.closeQuickOrderModal()">×</button>
+      </div>
+      <div class="modal-body">
+        <form onsubmit="Catalog.submitQuickOrder(event)">
+          <div class="quick-order-product-summary mb-15 p-15" id="quick-order-product-summary" style="background-color: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; font-size: 0.9rem; color: #1e293b; line-height: 1.4; display: flex; align-items: center; gap: 12px; margin-bottom: 20px; padding: 12px;">
+            <!-- Populated dynamically by JS -->
+          </div>
+          
+          <div class="form-group">
+            <label>Име и Фамилия</label>
+            <input type="text" id="quick-order-name" class="form-control" required placeholder="Георги Георгиев">
+          </div>
+          <div class="form-group" style="margin-top: 12px;">
+            <label>Телефонен номер</label>
+            <input type="tel" id="quick-order-phone" class="form-control" required placeholder="08XXXXXXXX">
+          </div>
+          <button type="submit" class="btn btn-orange btn-block btn-large mt-20" style="width: 100%; font-size: 1rem; padding: 12px 0; margin-top: 20px;">⚡ Изпрати поръчката</button>
         </form>
       </div>
     </div>

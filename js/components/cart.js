@@ -316,17 +316,8 @@ const Cart = {
     const delivery = form.elements["delivery_method"].value;
     const address = form.elements["delivery_address"].value;
     const notes = form.elements["order_notes"].value;
-    const clientType = form.elements["client_type"].value;
-
-    let b2bDetails = null;
-    if (clientType === "b2b") {
-      b2bDetails = {
-        companyName: form.elements["company_name"].value,
-        companyVat: form.elements["company_vat"].value,
-        companyMol: form.elements["company_mol"].value,
-        companyAddress: form.elements["company_address"].value
-      };
-    }
+    const clientType = "b2c";
+    const b2bDetails = null;
 
     const orderNumber = "HL-" + Math.floor(100000 + Math.random() * 900000);
     const totals = this.getTotal();
@@ -387,16 +378,9 @@ const Cart = {
             </div>
             <div>
               <strong>Получател:</strong><br>
-              ${clientType === 'b2b' ? `
-                <strong>${b2bDetails.companyName}</strong><br>
-                ЕИК/ДДС: ${b2bDetails.companyVat}<br>
-                МОЛ: ${b2bDetails.companyMol}<br>
-                Адрес: ${b2bDetails.companyAddress}
-              ` : `
-                ${name}<br>
-                тел: ${phone}<br>
-                имейл: ${email}
-              `}<br>
+              ${name}<br>
+              тел: ${phone}<br>
+              имейл: ${email}<br>
               <strong>Доставка:</strong> ${delivery === 'shop' ? 'Вземане от магазина в гр. Монтана' : `До адрес: ${address}`}
             </div>
           </div>
