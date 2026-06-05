@@ -534,6 +534,14 @@
             <h2 id="catalog-active-title" style="margin: 0;">Всички продукти</h2>
             <div class="text-muted font-small" style="margin-left: auto;">Намерени решения: <strong class="text-dark" id="catalog-count">8</strong></div>
           </div>
+          
+          <!-- Horizontal Subcategories tags bar above products grid -->
+          <div id="catalog-subcategories-container" style="display: none; margin-bottom: 20px; flex-direction: column; gap: 10px; border-bottom: 1px dashed #cbd5e1; padding-bottom: 15px;">
+            <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #64748b; letter-spacing: 0.5px;">Подкатегории:</div>
+            <div class="catalog-subcategories-tags" id="catalog-subcategories-tags" style="display: flex; gap: 10px; flex-wrap: wrap;"></div>
+            <div class="catalog-subsubcategories-tags" id="catalog-subsubcategories-tags" style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 5px;"></div>
+          </div>
+
           <div class="products-grid full-width" id="products-grid">
             <!-- Dynamically Rendered Products or Category Cards -->
           </div>
