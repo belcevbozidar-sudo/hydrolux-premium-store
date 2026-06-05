@@ -41,11 +41,13 @@ const App = {
 
   renderFeaturedProductsHome() {
     const grid = document.getElementById("home-featured-products-grid");
+    const specialSection = document.getElementById("home-special-section");
     const specialGrid = document.getElementById("home-special-products-grid");
-    const specialHeader = document.getElementById("home-special-section-header");
     if (!grid) return;
 
-    // We will render exactly the 4 popular products specified in the mockup layout
+    const wishlist = this.getWishlist();
+
+    // 1. Render Popular Products
     const popularProductIds = [
       "hydraulic-hose-2sn",
       "fitting-90-bsp",
@@ -59,12 +61,13 @@ const App = {
       const isTopSale = p.id === "pu-spiral-hose";
       const badgeText = isTopSale ? "Топ продажба" : "В наличност";
       const badgeClass = isTopSale ? "badge-orange" : "badge-green";
+      const isFav = wishlist.includes(p.id);
 
       return `
         <div class="product-card card" onclick="Catalog.openProductDetails('${p.id}')">
           <div class="product-badge ${badgeClass}">${badgeText}</div>
           
-          <button class="wishlist-btn" onclick="event.stopPropagation(); App.toggleFavorite('${p.id}', this)" title="Любими">
+          <button class="wishlist-btn ${isFav ? 'active' : ''}" onclick="event.stopPropagation(); App.toggleFavorite('${p.id}', this)" title="Любими">
             <svg class="heart-icon" viewBox="0 0 24 24" width="18" height="18">
               <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none" stroke="currentColor" stroke-width="2"/>
             </svg>
@@ -105,9 +108,74 @@ const App = {
       `;
     }).join("");
 
-    // Hide old special grids to clean up design
-    if (specialGrid) specialGrid.style.display = "none";
-    if (specialHeader) specialHeader.style.display = "none";
+    // 2. Render Special Offers
+    if (specialSection && specialGrid) {
+      const specialProducts = CONFIG.products.filter(p => p.isSpecial === true || p.isSpecial === "true");
+      if (specialProducts.length > 0) {
+        specialSection.style.display = "block";
+        specialGrid.innerHTML = specialProducts.map(p => {
+          const minPrice = p.variants && p.variants.length > 0 ? Math.min(...p.variants.map(v => v.priceEur)) : 0;
+          const badgeText = p.specialOfferLabel || this.getSpecialOfferLabel(p);
+          const isFav = wishlist.includes(p.id);
+
+          return `
+            <div class="product-card card" onclick="Catalog.openProductDetails('${p.id}')">
+              <div class="product-badge badge-orange">${badgeText}</div>
+              
+              <button class="wishlist-btn ${isFav ? 'active' : ''}" onclick="event.stopPropagation(); App.toggleFavorite('${p.id}', this)" title="Любими">
+                <svg class="heart-icon" viewBox="0 0 24 24" width="18" height="18">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </button>
+
+              <div class="product-card-img-wrapper">
+                <img src="${p.images[0]}" alt="${p.name}" class="product-card-img" onerror="this.src='assets/air_hoses.png'">
+              </div>
+              <div class="product-card-body">
+                <h4 class="product-card-title">${p.name}</h4>
+                
+                ${(p.homeSpecs && p.homeSpecs.length > 0) ? `
+                <div class="product-card-specs">
+                  ${p.homeSpecs.map(spec => `
+                    <div class="spec-item">
+                      <span class="spec-checkmark">✓</span>
+                      <span class="spec-label">${spec.key}:</span>
+                      <span class="spec-value">${spec.value}</span>
+                    </div>
+                  `).join("")}
+                </div>
+                ` : (p.specs && p.specs.length > 0) ? `
+                <div class="product-card-specs">
+                  ${p.specs.slice(0, 3).map(spec => `
+                    <div class="spec-item">
+                      <span class="spec-checkmark">✓</span>
+                      <span class="spec-label">${spec.key}:</span>
+                      <span class="spec-value">${spec.value}</span>
+                    </div>
+                  `).join("")}
+                </div>
+                ` : ""}
+                
+                <div class="product-card-price-row">
+                  <span class="price-bgn font-medium text-primary font-bold">
+                    ${formatPrice(minPrice, p.unit === "м").eur}
+                  </span>
+                </div>
+                
+                <button class="btn-buy-now btn-accent mt-15" onclick="event.stopPropagation(); App.buyProductDirect('${p.id}')">
+                  <svg class="cart-icon" viewBox="0 0 24 24" width="16" height="16">
+                    <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" fill="currentColor"/>
+                  </svg>
+                  Добави в количка
+                </button>
+              </div>
+            </div>
+          `;
+        }).join("");
+      } else {
+        specialSection.style.display = "none";
+      }
+    }
   },
 
   getWishlist() {
