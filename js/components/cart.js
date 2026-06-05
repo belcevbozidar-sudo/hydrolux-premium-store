@@ -330,7 +330,7 @@ const Cart = {
       postcodeInput.setAttribute("required", "true");
 
       if (value === "office") {
-        addressLabel.textContent = "Адрес или име на офис на Еконт / Спиди";
+        addressLabel.textContent = "Адрес или име на офис на Еконт";
         addressInput.placeholder = "гр. София, Офис Еконт - Младост";
       } else {
         addressLabel.textContent = "Точен адрес за доставка";
@@ -527,7 +527,7 @@ const Cart = {
       
       const deliveryBulgarian = {
         address: "🚚 Доставка до личен / служебен адрес",
-        office: "🏢 Доставка до офис на Еконт / Спиди",
+        office: "🏢 Доставка до офис на Еконт",
         shop: "🏬 Вземане на място от магазина"
       }[order.delivery] || order.delivery;
 

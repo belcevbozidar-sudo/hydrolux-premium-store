@@ -2489,7 +2489,7 @@ const Admin = {
       <!-- Filters Panel -->
       <div class="admin-form-card" style="padding: 20px; margin-bottom: 20px;">
         <div style="display: grid; grid-template-columns: 1fr auto; gap: 15px; align-items: end; flex-wrap: wrap;">
-          <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 15px; width: 100%;">
+          <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 15px; width: 100%;">
             <div class="form-group" style="margin-bottom: 0;">
               <label style="font-size: 0.75rem; font-weight: 700; color: #475569;">Търсене на поръчка</label>
               <input type="text" id="order-search-input" class="form-control" placeholder="Търсене по име, телефон, имейл или номер на поръчка..." oninput="Admin.applyOrdersFilter()">
@@ -2504,6 +2504,17 @@ const Admin = {
                 <option value="completed">Завършени</option>
                 <option value="unclaimed">Непотърсени</option>
                 <option value="canceled">Анулирани</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <label style="font-size: 0.75rem; font-weight: 700; color: #475569;">Период</label>
+              <select id="order-date-filter" class="form-control" onchange="Admin.applyOrdersFilter()">
+                <option value="today" selected>Днес</option>
+                <option value="yesterday">Вчера</option>
+                <option value="last7">Последните 7 дни</option>
+                <option value="last14">Последните 14 дни</option>
+                <option value="last30">Последните 30 дни</option>
+                <option value="max">Максимум (всички)</option>
               </select>
             </div>
           </div>
@@ -2528,8 +2539,8 @@ const Admin = {
       if (response && response.ok) {
         this.allOrders = response.orders || [];
         this.filteredOrders = [...this.allOrders];
-        this.renderOrdersSummary();
-        this.renderOrdersList();
+        // Automatically apply the default "today" filter on load
+        this.applyOrdersFilter();
       } else {
         throw new Error("Неуспешно изтегляне на поръчките");
       }
@@ -2541,42 +2552,35 @@ const Admin = {
     }
   },
 
-  renderOrdersSummary() {
+  renderOrdersSummary(startTs = 0, endTs = Infinity) {
     const summaryBar = document.getElementById("admin-orders-summary-bar");
     if (!summaryBar) return;
 
-    const total = this.allOrders.length;
-    const newCount = this.allOrders.filter(o => o.status === "new").length;
-    const paidCount = this.allOrders.filter(o => o.status === "paid").length;
-    const unclaimedCount = this.allOrders.filter(o => o.status === "unclaimed").length;
+    // Filter orders within the selected time window
+    const periodOrders = this.allOrders.filter(o => o.createdAt >= startTs && o.createdAt <= endTs);
+    // Exclude canceled orders from the turnover calculation
+    const activePeriodOrders = periodOrders.filter(o => o.status !== "canceled");
+    
+    const count = periodOrders.length;
+    let totalEur = 0;
+    activePeriodOrders.forEach(o => {
+      totalEur += parseFloat(o.totals.eur) || 0;
+    });
+    const totalBgn = totalEur * 1.95583;
 
     summaryBar.innerHTML = `
-      <div class="orders-summary-card">
-        <div class="orders-summary-icon">📦</div>
+      <div class="orders-summary-card" style="border-left: 4px solid var(--primary);">
+        <div class="orders-summary-icon" style="color: var(--primary); background-color: rgba(13, 110, 253, 0.1);">📦</div>
         <div class="orders-summary-info">
-          <h5>Всички поръчки</h5>
-          <strong>${total}</strong>
+          <h5>Поръчки за периода</h5>
+          <strong>${count}</strong>
         </div>
       </div>
-      <div class="orders-summary-card" style="border-left: 4px solid #d97706;">
-        <div class="orders-summary-icon" style="color: #d97706; background-color: #fffbeb;">🔔</div>
+      <div class="orders-summary-card" style="border-left: 4px solid #10b981;">
+        <div class="orders-summary-icon" style="color: #10b981; background-color: #f0fdf4;">💰</div>
         <div class="orders-summary-info">
-          <h5>Нови поръчки</h5>
-          <strong>${newCount}</strong>
-        </div>
-      </div>
-      <div class="orders-summary-card" style="border-left: 4px solid #15803d;">
-        <div class="orders-summary-icon" style="color: #15803d; background-color: #f0fdf4;">💵</div>
-        <div class="orders-summary-info">
-          <h5>Платени</h5>
-          <strong>${paidCount}</strong>
-        </div>
-      </div>
-      <div class="orders-summary-card" style="border-left: 4px solid #b91c1c;">
-        <div class="orders-summary-icon" style="color: #b91c1c; background-color: #fef2f2;">⚠️</div>
-        <div class="orders-summary-info">
-          <h5>Непотърсени</h5>
-          <strong>${unclaimedCount}</strong>
+          <h5>Оборот за периода</h5>
+          <strong>${totalEur.toFixed(2)} € (${totalBgn.toFixed(2)} лв.)</strong>
         </div>
       </div>
     `;
@@ -2589,7 +2593,7 @@ const Admin = {
     if (this.filteredOrders.length === 0) {
       listEl.innerHTML = `
         <div style="text-align: center; padding: 40px; background-color: #f8fafc; border: 1.5px dashed #cbd5e1; border-radius: 12px;">
-          <h4 style="color: #64748b; margin-bottom: 0;">Няма намерени поръчки.</h4>
+          <h4 style="color: #64748b; margin-bottom: 0;">Няма намерени поръчки за избрания период.</h4>
         </div>
       `;
       return;
@@ -2638,7 +2642,7 @@ const Admin = {
 
       const deliveryMap = {
         address: "🚚 До личен / служебен адрес",
-        office: "🏢 До офис на Еконт / Спиди",
+        office: "🏢 До офис на Еконт",
         shop: "🏬 Вземане от магазина (гр. Монтана)"
       };
       const deliveryText = deliveryMap[order.delivery] || order.delivery;
@@ -2764,11 +2768,56 @@ const Admin = {
   applyOrdersFilter() {
     const searchInput = document.getElementById("order-search-input");
     const statusSelect = document.getElementById("order-status-filter");
+    const dateSelect = document.getElementById("order-date-filter");
     
-    if (!searchInput || !statusSelect) return;
+    if (!searchInput || !statusSelect || !dateSelect) return;
 
     const query = searchInput.value.toLowerCase().trim();
     const status = statusSelect.value;
+    const dateRange = dateSelect.value;
+
+    // Determine timestamp range
+    let startTs = 0;
+    let endTs = Infinity;
+    const now = Date.now();
+
+    if (dateRange === "today") {
+      const start = new Date();
+      start.setHours(0, 0, 0, 0);
+      startTs = start.getTime();
+      endTs = now;
+    } else if (dateRange === "yesterday") {
+      const start = new Date();
+      start.setDate(start.getDate() - 1);
+      start.setHours(0, 0, 0, 0);
+      startTs = start.getTime();
+      
+      const end = new Date();
+      end.setDate(end.getDate() - 1);
+      end.setHours(23, 59, 59, 999);
+      endTs = end.getTime();
+    } else if (dateRange === "last7") {
+      const start = new Date();
+      start.setDate(start.getDate() - 7);
+      start.setHours(0, 0, 0, 0);
+      startTs = start.getTime();
+      endTs = now;
+    } else if (dateRange === "last14") {
+      const start = new Date();
+      start.setDate(start.getDate() - 14);
+      start.setHours(0, 0, 0, 0);
+      startTs = start.getTime();
+      endTs = now;
+    } else if (dateRange === "last30") {
+      const start = new Date();
+      start.setDate(start.getDate() - 30);
+      start.setHours(0, 0, 0, 0);
+      startTs = start.getTime();
+      endTs = now;
+    }
+
+    // Dynamic metrics summary update for the selected period
+    this.renderOrdersSummary(startTs, endTs);
 
     this.filteredOrders = this.allOrders.filter(order => {
       // 1. Search filter
@@ -2789,7 +2838,10 @@ const Admin = {
         statusMatch = order.status === status;
       }
 
-      return searchMatch && statusMatch;
+      // 3. Date filter
+      const dateMatch = order.createdAt >= startTs && order.createdAt <= endTs;
+
+      return searchMatch && statusMatch && dateMatch;
     });
 
     this.renderOrdersList();
@@ -2804,7 +2856,6 @@ const Admin = {
         if (order) order.status = newStatus;
         
         this.showToast("Статусът е актуализиран успешно!");
-        this.renderOrdersSummary();
         this.applyOrdersFilter();
       } else {
         throw new Error(response.error || "Неуспешна актуализация");
