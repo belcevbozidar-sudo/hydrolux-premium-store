@@ -1601,7 +1601,7 @@ const Admin = {
           ctx.fillStyle = "#ffffff";
           ctx.fillRect(0, 0, width, height);
           ctx.drawImage(img, 0, 0, width, height);
-          const compressedDataUrl = canvas.toDataURL("image/jpeg", 0.82);
+          const compressedDataUrl = canvas.toDataURL("image/webp", 0.82);
           resolve(compressedDataUrl.length < originalDataUrl.length ? compressedDataUrl : originalDataUrl);
         };
         img.onerror = () => resolve(originalDataUrl);
