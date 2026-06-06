@@ -200,7 +200,7 @@ const HoseBuilder = {
         <!-- Left Column: Realistic 3D Cutaway Diagram with pointer labels -->
         <div class="builder-graphic-column">
           <div class="hose-cutaway-container">
-            <img src="assets/hose_cutaway.png" alt="Hydraulic Hose Cutaway" class="hose-cutaway-img">
+            <img src="assets/hose_cutaway.webp" alt="Схема на сряз на хидравличен маркуч за конфигуратор" class="hose-cutaway-img">
           </div>
         </div>
 

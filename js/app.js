@@ -255,7 +255,7 @@ const App = {
     if (!carousel) return;
 
     carousel.innerHTML = CONFIG.categories.map(c => {
-      const defaultImg = `assets/cat_${c.id.replace(/-/g, '_')}.png`;
+      const defaultImg = `assets/cat_${c.id.replace(/-/g, '_')}.webp`;
       const imageSrc = c.image || defaultImg;
       const cleanImageSrc = imageSrc.replace(/\s+/g, '%20');
       const fallbackPrompt = encodeURIComponent(`${c.name} industrial hose connection premium studio lighting photography`);

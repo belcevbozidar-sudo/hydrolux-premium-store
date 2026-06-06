@@ -280,7 +280,7 @@ const Catalog = {
 
       grid.className = "catalog-categories-cards-grid";
       grid.innerHTML = CONFIG.categories.map(cat => {
-        const imgName = `cat_${cat.id.replace(/-/g, '_')}.png`;
+        const imgName = `cat_${cat.id.replace(/-/g, '_')}.webp`;
         return `
           <div class="category-card-card" onclick="Catalog.selectCategory('${cat.id}')" style="background-image: url('assets/${imgName}');">
             <div class="category-card-overlay">
