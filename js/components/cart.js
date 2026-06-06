@@ -340,38 +340,27 @@ const Cart = {
   // Checkout Form Event Handlers
   onDeliveryMethodChange(value) {
     const detailsContainer = document.getElementById("delivery-details-container");
-    const shopMessage = document.getElementById("delivery-shop-message");
     const addressLabel = document.getElementById("delivery-address-label");
     const addressInput = document.getElementById("checkout-address");
     const cityInput = document.getElementById("checkout-city");
     const postcodeInput = document.getElementById("checkout-postcode");
     const econtBtnContainer = document.getElementById("econt-office-btn-container");
 
-    if (!detailsContainer || !shopMessage || !addressInput || !cityInput || !postcodeInput) return;
+    if (!detailsContainer || !addressInput || !cityInput || !postcodeInput) return;
 
-    if (value === "shop") {
-      detailsContainer.style.display = "none";
-      shopMessage.style.display = "block";
-      addressInput.removeAttribute("required");
-      cityInput.removeAttribute("required");
-      postcodeInput.removeAttribute("required");
-      if (econtBtnContainer) econtBtnContainer.style.display = "none";
+    detailsContainer.style.display = "block";
+    addressInput.setAttribute("required", "true");
+    cityInput.setAttribute("required", "true");
+    postcodeInput.setAttribute("required", "true");
+
+    if (value === "office") {
+      addressLabel.textContent = "Адрес или име на офис на Еконт";
+      addressInput.placeholder = "гр. София, Офис Еконт - Младост";
+      if (econtBtnContainer) econtBtnContainer.style.display = "block";
     } else {
-      detailsContainer.style.display = "block";
-      shopMessage.style.display = "none";
-      addressInput.setAttribute("required", "true");
-      cityInput.setAttribute("required", "true");
-      postcodeInput.setAttribute("required", "true");
-
-      if (value === "office") {
-        addressLabel.textContent = "Адрес или име на офис на Еконт";
-        addressInput.placeholder = "гр. София, Офис Еконт - Младост";
-        if (econtBtnContainer) econtBtnContainer.style.display = "block";
-      } else {
-        addressLabel.textContent = "Точен адрес за доставка";
-        addressInput.placeholder = "ул. Примерна №5, вх. А, ап. 2";
-        if (econtBtnContainer) econtBtnContainer.style.display = "none";
-      }
+      addressLabel.textContent = "Точен адрес за доставка";
+      addressInput.placeholder = "ул. Примерна №5, вх. А, ап. 2";
+      if (econtBtnContainer) econtBtnContainer.style.display = "none";
     }
   },
 
