@@ -408,6 +408,7 @@ const App = {
                   <div class="search-suggestion-info">
                     <span class="search-suggestion-name">${p.name}</span>
                     <span class="search-suggestion-meta">${subText}</span>
+                  </div>
                   <div class="search-suggestion-price">${formatPrice(minPrice, p.unit === "м").eur}</div>
                 </div>
               `;
