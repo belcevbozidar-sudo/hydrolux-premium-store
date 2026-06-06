@@ -1854,163 +1854,168 @@ const Admin = {
   },
 
   async handleProductSubmit(event) {
-    event.preventDefault();
+    try {
+      event.preventDefault();
 
-    if (this.isProcessingImages) {
-      alert("Моля изчакайте снимките да се обработят и опитайте отново.");
-      return;
-    }
-
-    const name = document.getElementById("prod-name").value.trim();
-    const code = document.getElementById("prod-code").value.trim();
-    
-    const categoryCheckboxes = document.querySelectorAll('input[name="prod-categories"]:checked');
-    const categories = Array.from(categoryCheckboxes).map(cb => cb.value);
-    const category = categories[0] || "";
-    
-    const subcategoryCheckboxes = document.querySelectorAll('input[name="prod-subcategories"]:checked');
-    const subcategories = Array.from(subcategoryCheckboxes).map(cb => cb.value);
-    const subcategory = subcategories[0] || "";
-    
-    const subsubcategoryCheckboxes = document.querySelectorAll('input[name="prod-subsubcategories"]:checked');
-    const subsubcategories = Array.from(subsubcategoryCheckboxes).map(cb => cb.value);
-    const subsubcategory = subsubcategories[0] || "";
-    const brand = document.getElementById("prod-brand").value.trim();
-
-    // JS-based validation for required core fields (replaces silent HTML5 blocks)
-    if (!name) { alert("Моля въведете Име на продукта!"); document.getElementById("prod-name").focus(); return; }
-    if (!code) { alert("Моля въведете Код / Артикулен номер!"); document.getElementById("prod-code").focus(); return; }
-    if (categories.length === 0) { alert("Моля изберете поне една Категория!"); return; }
-    if (!brand) { alert("Моля въведете Марка!"); document.getElementById("prod-brand").focus(); return; }
-    const editor = document.getElementById("prod-description-editor");
-    const description = editor ? editor.innerHTML.trim() : "";
-    const tagsInput = document.getElementById("prod-tags").value;
-    const isSpecial = document.getElementById("prod-is-special").checked;
-    const specialOfferType = isSpecial ? document.getElementById("prod-special-type").value : "";
-    const specialOfferText = isSpecial && specialOfferType === "other"
-      ? document.getElementById("prod-special-text").value.trim()
-      : "";
-
-    if (isSpecial && specialOfferType === "other" && !specialOfferText) {
-      alert("Моля въведете текст за специалното предложение!");
-      document.getElementById("prod-special-text").focus();
-      return;
-    }
-
-    const tags = tagsInput ? tagsInput.split(",").map(t => t.trim()) : [];
-    
-    // Read all uploaded base64 / url images in order
-    const images = this.uploadedImages.filter(img => img !== null && img !== "");
-
-    if (images.length === 0) {
-      alert("Моля качете поне една снимка от устройството!");
-      return;
-    }
-
-    // 1. Collect technical specifications
-    const specs = [];
-    document.querySelectorAll(".admin-spec-row").forEach(row => {
-      const key = row.querySelector(".spec-key").value.trim();
-      const val = row.querySelector(".spec-val").value.trim();
-      if (key && val) {
-        specs.push({ key, value: val });
-      }
-    });
-
-    // 2. Collect dynamic size/variant columns using our DOM collector
-    const variants = this.collectVariantsFromDOM();
-
-    if (!variants || variants.length === 0) {
-      alert("Моля добавете поне един размер в таблицата!");
-      return;
-    }
-
-    if (this.editingProduct) {
-      // EDIT MODE
-      const saved = await this.persistProductChanges(() => {
-        const target = CONFIG.products.find(p => p.id === this.editingProduct.id);
-        if (target) {
-          target.name = name;
-          target.code = code;
-          target.category = category;
-          target.categories = categories;
-          target.subcategory = subcategory;
-          target.subcategories = subcategories;
-          target.subsubcategory = subsubcategory;
-          target.subsubcategories = subsubcategories;
-          target.brand = brand;
-          target.description = description;
-          target.tags = tags;
-          target.isSpecial = isSpecial;
-          target.specialOfferType = specialOfferType;
-          target.specialOfferText = specialOfferText;
-          target.specialOfferLabel = isSpecial ? this.getSpecialOfferLabel(specialOfferType, specialOfferText) : "";
-          target.images = images;
-          target.specs = specs;
-          target.columns = this.currentColumns; // Save columns schema
-          target.variants = variants;
-        }
-      });
-      if (!saved) return;
-      this.editingProduct = null;
-      this.uploadedImages = [];
-      this.currentColumns = null;
-      alert("Продуктът е успешно редактиран и обновен на сайта!");
-    } else {
-      // CREATE MODE
-      const id = name.toLowerCase()
-        .replace(/[^а-яa-z0-9]+/g, "-")
-        .replace(/(^-|-$)/g, "")
-        .replace(/[а-я]/g, m => {
-          const cyr = "абвгдежзийклмнопрстуфхцчшщъьюя";
-          const lat = ["a","b","v","g","d","e","zh","z","i","y","k","l","m","n","o","p","r","s","t","u","f","h","ts","ch","sh","sht","a","y","yu","ya"];
-          const idx = cyr.indexOf(m);
-          return idx > -1 ? lat[idx] : m;
-        });
-
-      if (CONFIG.products.some(p => p.id === id)) {
-        alert("Продукт с това име вече съществува!");
+      if (this.isProcessingImages) {
+        alert("Моля изчакайте снимките да се обработят и опитайте отново.");
         return;
       }
 
-      const newProduct = {
-        id,
-        code,
-        name,
-        category,
-        categories,
-        subcategory,
-        subcategories,
-        subsubcategory,
-        subsubcategories,
-        brand,
-        rating: 5.0,
-        reviewsCount: 1,
-        views: 12,
-        inStock: true,
-        isSpecial,
-        specialOfferType,
-        specialOfferText,
-        specialOfferLabel: isSpecial ? this.getSpecialOfferLabel(specialOfferType, specialOfferText) : "",
-        tags,
-        description,
-        specs,
-        images,
-        columns: this.currentColumns, // Save columns schema
-        variants
-      };
+      const name = document.getElementById("prod-name").value.trim();
+      const code = document.getElementById("prod-code").value.trim();
+      
+      const categoryCheckboxes = document.querySelectorAll('input[name="prod-categories"]:checked');
+      const categories = Array.from(categoryCheckboxes).map(cb => cb.value);
+      const category = categories[0] || "";
+      
+      const subcategoryCheckboxes = document.querySelectorAll('input[name="prod-subcategories"]:checked');
+      const subcategories = Array.from(subcategoryCheckboxes).map(cb => cb.value);
+      const subcategory = subcategories[0] || "";
+      
+      const subsubcategoryCheckboxes = document.querySelectorAll('input[name="prod-subsubcategories"]:checked');
+      const subsubcategories = Array.from(subsubcategoryCheckboxes).map(cb => cb.value);
+      const subsubcategory = subsubcategories[0] || "";
+      const brand = document.getElementById("prod-brand").value.trim();
 
-      const saved = await this.persistProductChanges(() => {
-        CONFIG.products.push(newProduct);
+      // JS-based validation for required core fields (replaces silent HTML5 blocks)
+      if (!name) { alert("Моля въведете Име на продукта!"); document.getElementById("prod-name").focus(); return; }
+      if (!code) { alert("Моля въведете Код / Артикулен номер!"); document.getElementById("prod-code").focus(); return; }
+      if (categories.length === 0) { alert("Моля изберете поне една Категория!"); return; }
+      if (!brand) { alert("Моля въведете Марка!"); document.getElementById("prod-brand").focus(); return; }
+      const editor = document.getElementById("prod-description-editor");
+      const description = editor ? editor.innerHTML.trim() : "";
+      const tagsInput = document.getElementById("prod-tags").value;
+      const isSpecial = document.getElementById("prod-is-special").checked;
+      const specialOfferType = isSpecial ? document.getElementById("prod-special-type").value : "";
+      const specialOfferText = isSpecial && specialOfferType === "other"
+        ? document.getElementById("prod-special-text").value.trim()
+        : "";
+
+      if (isSpecial && specialOfferType === "other" && !specialOfferText) {
+        alert("Моля въведете текст за специалното предложение!");
+        document.getElementById("prod-special-text").focus();
+        return;
+      }
+
+      const tags = tagsInput ? tagsInput.split(",").map(t => t.trim()) : [];
+      
+      // Read all uploaded base64 / url images in order
+      const images = this.uploadedImages.filter(img => img !== null && img !== "");
+
+      if (images.length === 0) {
+        alert("Моля качете поне една снимка от устройството!");
+        return;
+      }
+
+      // 1. Collect technical specifications
+      const specs = [];
+      document.querySelectorAll(".admin-spec-row").forEach(row => {
+        const key = row.querySelector(".spec-key").value.trim();
+        const val = row.querySelector(".spec-val").value.trim();
+        if (key && val) {
+          specs.push({ key, value: val });
+        }
       });
-      if (!saved) return;
-      this.uploadedImages = [];
-      this.currentColumns = null;
-      alert("Продуктът е успешно добавен!");
-    }
 
-    this.propagateStateChanges();
-    this.render();
+      // 2. Collect dynamic size/variant columns using our DOM collector
+      const variants = this.collectVariantsFromDOM();
+
+      if (!variants || variants.length === 0) {
+        alert("Моля добавете поне един размер в таблицата!");
+        return;
+      }
+
+      if (this.editingProduct) {
+        // EDIT MODE
+        const saved = await this.persistProductChanges(() => {
+          const target = CONFIG.products.find(p => p.id === this.editingProduct.id);
+          if (target) {
+            target.name = name;
+            target.code = code;
+            target.category = category;
+            target.categories = categories;
+            target.subcategory = subcategory;
+            target.subcategories = subcategories;
+            target.subsubcategory = subsubcategory;
+            target.subsubcategories = subsubcategories;
+            target.brand = brand;
+            target.description = description;
+            target.tags = tags;
+            target.isSpecial = isSpecial;
+            target.specialOfferType = specialOfferType;
+            target.specialOfferText = specialOfferText;
+            target.specialOfferLabel = isSpecial ? this.getSpecialOfferLabel(specialOfferType, specialOfferText) : "";
+            target.images = images;
+            target.specs = specs;
+            target.columns = this.currentColumns; // Save columns schema
+            target.variants = variants;
+          }
+        });
+        if (!saved) return;
+        this.editingProduct = null;
+        this.uploadedImages = [];
+        this.currentColumns = null;
+        alert("Продуктът е успешно редактиран и обновен на сайта!");
+      } else {
+        // CREATE MODE
+        const id = name.toLowerCase()
+          .replace(/[^а-яa-z0-9]+/g, "-")
+          .replace(/(^-|-$)/g, "")
+          .replace(/[а-я]/g, m => {
+            const cyr = "абвгдежзийклмнопрстуфхцчшщъьюя";
+            const lat = ["a","b","v","g","d","e","zh","z","i","y","k","l","m","n","o","p","r","s","t","u","f","h","ts","ch","sh","sht","a","y","yu","ya"];
+            const idx = cyr.indexOf(m);
+            return idx > -1 ? lat[idx] : m;
+          });
+
+        if (CONFIG.products.some(p => p.id === id)) {
+          alert("Продукт с това име вече съществува!");
+          return;
+        }
+
+        const newProduct = {
+          id,
+          code,
+          name,
+          category,
+          categories,
+          subcategory,
+          subcategories,
+          subsubcategory,
+          subsubcategories,
+          brand,
+          rating: 5.0,
+          reviewsCount: 1,
+          views: 12,
+          inStock: true,
+          isSpecial,
+          specialOfferType,
+          specialOfferText,
+          specialOfferLabel: isSpecial ? this.getSpecialOfferLabel(specialOfferType, specialOfferText) : "",
+          tags,
+          description,
+          specs,
+          images,
+          columns: this.currentColumns, // Save columns schema
+          variants
+        };
+
+        const saved = await this.persistProductChanges(() => {
+          CONFIG.products.push(newProduct);
+        });
+        if (!saved) return;
+        this.uploadedImages = [];
+        this.currentColumns = null;
+        alert("Продуктът е успешно добавен!");
+      }
+
+      this.propagateStateChanges();
+      this.render();
+    } catch (error) {
+      console.error("Error submitting product:", error);
+      alert("Възникна грешка при запазване: " + error.message);
+    }
   },
 
   deleteProduct(productId) {
