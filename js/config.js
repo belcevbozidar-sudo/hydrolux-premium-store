@@ -477,6 +477,43 @@ if (localStorage.getItem("hydrolux_categories")) {
 if (localStorage.getItem("hydrolux_builder_options")) {
   try {
     CONFIG.builderOptions = JSON.parse(localStorage.getItem("hydrolux_builder_options"));
+    // Migrate fittings to have 'prices' and 'angle' if missing
+    if (CONFIG.builderOptions.fittings) {
+      let migrated = false;
+      CONFIG.builderOptions.fittings.forEach(f => {
+        if (!f.category) {
+          if (f.id === "none") f.category = "Без накрайник";
+          else if (f.id.includes("dkol")) f.category = "DKOL Метрични";
+          else if (f.id.includes("bsp")) f.category = "BSP Инчови";
+          else if (f.id.includes("jic")) f.category = "JIC Инчови";
+          else f.category = "Други";
+          migrated = true;
+        }
+        if (!f.prices) {
+          f.prices = {};
+          const activeSizes = CONFIG.builderOptions.sizes || [
+            { id: "1/4" }, { id: "3/8" }, { id: "1/2" }, { id: "3/4" }, { id: "1" }
+          ];
+          const basePrice = f.priceEur !== undefined ? f.priceEur : 0.0;
+          activeSizes.forEach(s => {
+            f.prices[s.id] = basePrice;
+          });
+          delete f.priceEur;
+          migrated = true;
+        }
+        if (!f.angle) {
+          if (f.id.includes("straight")) f.angle = "straight";
+          else if (f.id.includes("90")) f.angle = "90";
+          else if (f.id.includes("45")) f.angle = "45";
+          else if (f.id === "none") f.angle = "none";
+          else f.angle = "straight";
+          migrated = true;
+        }
+      });
+      if (migrated) {
+        saveLocalState();
+      }
+    }
   } catch (e) {
     console.error("Error parsing builderOptions from localStorage", e);
   }
@@ -495,13 +532,13 @@ if (localStorage.getItem("hydrolux_builder_options")) {
       { id: "1", name: "1\" (DN25)", factor: 3.0 }
     ],
     fittings: [
-      { id: "none", name: "Без накрайник (прав срез)", priceEur: 0.0, icon: "➖" },
-      { id: "dkol-straight", name: "DKOL Метричен прав (DKO-L)", priceEur: 3.20, icon: "➡️" },
-      { id: "dkol-90", name: "DKOL Метричен 90° коляно", priceEur: 5.80, icon: "↳" },
-      { id: "dkol-45", name: "DKOL Метричен 45° коляно", priceEur: 6.20, icon: "↗️" },
-      { id: "bsp-straight", name: "BSP Прав с вътрешна резба", priceEur: 3.40, icon: "➡️" },
-      { id: "bsp-90", name: "BSP 90° коляно с вътрешна резба", priceEur: 6.00, icon: "↳" },
-      { id: "jic-straight", name: "JIC Прав с инчова резба (37° UNF)", priceEur: 3.60, icon: "➡️" }
+      { id: "none", name: "Без накрайник (прав срез)", prices: { "1/4": 0.0, "3/8": 0.0, "1/2": 0.0, "3/4": 0.0, "1": 0.0 }, icon: "➖", category: "Без накрайник", angle: "none" },
+      { id: "dkol-straight", name: "DKOL Метричен прав (DKO-L)", prices: { "1/4": 3.20, "3/8": 3.60, "1/2": 4.20, "3/4": 5.50, "1": 7.50 }, icon: "➡️", category: "DKOL Метрични", angle: "straight" },
+      { id: "dkol-90", name: "DKOL Метричен 90° коляно", prices: { "1/4": 5.80, "3/8": 6.50, "1/2": 7.50, "3/4": 9.80, "1": 13.50 }, icon: "↳", category: "DKOL Метрични", angle: "90" },
+      { id: "dkol-45", name: "DKOL Метричен 45° коляно", prices: { "1/4": 6.20, "3/8": 6.90, "1/2": 7.90, "3/4": 10.50, "1": 14.20 }, icon: "↗️", category: "DKOL Метрични", angle: "45" },
+      { id: "bsp-straight", name: "BSP Прав с вътрешна резба", prices: { "1/4": 3.40, "3/8": 3.80, "1/2": 4.40, "3/4": 5.80, "1": 7.90 }, icon: "➡️", category: "BSP Инчови", angle: "straight" },
+      { id: "bsp-90", name: "BSP 90° коляно с вътрешна резба", prices: { "1/4": 6.00, "3/8": 6.70, "1/2": 7.75, "3/4": 10.20, "1": 14.00 }, icon: "↳", category: "BSP Инчови", angle: "90" },
+      { id: "jic-straight", name: "JIC Прав с инчова резба (37° UNF)", prices: { "1/4": 3.60, "3/8": 4.10, "1/2": 4.80, "3/4": 6.20, "1": 8.50 }, icon: "➡️", category: "JIC Инчови", angle: "straight" }
     ],
     sleeves: [
       { id: "none", name: "Без предпазен ръкав", priceEurPerMeter: 0.0 },

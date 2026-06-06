@@ -3033,28 +3033,52 @@ const Admin = {
           <button type="button" class="btn btn-secondary btn-small" onclick="Admin.addCrimpingFittingRow()">＋ Нов накрайник</button>
         </div>
         <div class="admin-table-responsive" style="max-width: 100%; overflow-x: auto; border-radius: 8px; border: 1px solid var(--border-light); margin-bottom: 20px;">
-          <table class="admin-table" style="min-width: 700px; font-size: 0.85rem; border-collapse: collapse;">
+          <table class="admin-table" style="min-width: 900px; font-size: 0.85rem; border-collapse: collapse;">
             <thead>
               <tr style="background-color: #f8fafc;">
-                <th style="padding: 12px; width: 150px;">ID</th>
-                <th style="padding: 12px;">Име на накрайник</th>
-                <th style="padding: 12px; width: 120px;">Цена (€)</th>
-                <th style="padding: 12px; width: 120px; text-align: center;">Емоджи / Икона</th>
-                <th style="padding: 12px; width: 80px; text-align: center;">Действие</th>
+                <th style="padding: 12px; width: 140px;">ID</th>
+                <th style="padding: 12px; min-width: 160px;">Име на накрайник</th>
+                <th style="padding: 12px; width: 130px;">Категория</th>
+                <th style="padding: 12px; width: 110px;">Форма/Ъгъл</th>
+                ${sizes.map(s => {
+                  const sizeShortName = s.name.split(" ")[0];
+                  return `<th style="padding: 12px; width: 85px; text-align: center;">${sizeShortName}<br><span style="font-size: 0.7rem; color: #94a3b8; font-weight: 500;">Цена (€)</span></th>`;
+                }).join("")}
+                <th style="padding: 12px; width: 90px; text-align: center;">Икона</th>
+                <th style="padding: 12px; width: 70px; text-align: center;">Действие</th>
               </tr>
             </thead>
             <tbody id="crimping-fittings-tbody">
-              ${(options.fittings || []).map((f, fIdx) => `
-                <tr class="crimping-fitting-row" style="border-bottom: 1px solid #f1f5f9;">
-                  <td style="padding: 8px;"><input type="text" class="form-control fitting-id" value="${f.id}" style="padding: 6px; font-size: 0.8rem; font-weight: 700; height: 34px;"></td>
-                  <td style="padding: 8px;"><input type="text" class="form-control fitting-name" value="${this.escapeAttr(f.name)}" style="padding: 6px; font-size: 0.8rem; height: 34px;"></td>
-                  <td style="padding: 8px;"><input type="number" step="0.01" class="form-control fitting-price" value="${f.priceEur}" style="padding: 6px; font-size: 0.8rem; height: 34px; font-weight: 700;"></td>
-                  <td style="padding: 8px;"><input type="text" class="form-control text-center fitting-icon" value="${this.escapeAttr(f.icon || '')}" style="padding: 6px; font-size: 0.8rem; height: 34px;"></td>
-                  <td style="padding: 8px; text-align: center;">
-                    <button type="button" class="btn-icon-danger" style="width: 32px; height: 32px; font-size: 0.9rem; margin: 0 auto;" onclick="this.parentElement.parentElement.remove()">×</button>
-                  </td>
-                </tr>
-              `).join("")}
+              ${(options.fittings || []).map((f, fIdx) => {
+                const angle = f.angle || "straight";
+                return `
+                  <tr class="crimping-fitting-row" style="border-bottom: 1px solid #f1f5f9;">
+                    <td style="padding: 8px;"><input type="text" class="form-control fitting-id" value="${f.id}" style="padding: 6px; font-size: 0.8rem; font-weight: 700; height: 34px;"></td>
+                    <td style="padding: 8px;"><input type="text" class="form-control fitting-name" value="${this.escapeAttr(f.name)}" style="padding: 6px; font-size: 0.8rem; height: 34px;"></td>
+                    <td style="padding: 8px;"><input type="text" class="form-control fitting-category" value="${this.escapeAttr(f.category || '')}" placeholder="напр. DKOL Метрични" style="padding: 6px; font-size: 0.8rem; height: 34px;"></td>
+                    <td style="padding: 8px;">
+                      <select class="form-control fitting-angle" style="padding: 6px; font-size: 0.8rem; height: 34px;">
+                        <option value="straight" ${angle === 'straight' ? 'selected' : ''}>Прав</option>
+                        <option value="90" ${angle === '90' ? 'selected' : ''}>90° коляно</option>
+                        <option value="45" ${angle === '45' ? 'selected' : ''}>45° коляно</option>
+                        <option value="none" ${angle === 'none' ? 'selected' : ''}>Без</option>
+                      </select>
+                    </td>
+                    ${sizes.map(s => {
+                      const price = f.prices && f.prices[s.id] !== undefined ? f.prices[s.id] : "";
+                      return `
+                        <td style="padding: 8px; text-align: center;">
+                          <input type="number" step="0.01" class="form-control text-center fitting-price-input" data-size-id="${s.id}" value="${price}" style="padding: 6px; font-size: 0.8rem; height: 34px; width: 75px; margin: 0 auto; font-weight: 700;">
+                        </td>
+                      `;
+                    }).join("")}
+                    <td style="padding: 8px;"><input type="text" class="form-control text-center fitting-icon" value="${this.escapeAttr(f.icon || '')}" style="padding: 6px; font-size: 0.8rem; height: 34px;"></td>
+                    <td style="padding: 8px; text-align: center;">
+                      <button type="button" class="btn-icon-danger" style="width: 32px; height: 32px; font-size: 0.9rem; margin: 0 auto;" onclick="this.parentElement.parentElement.remove()">×</button>
+                    </td>
+                  </tr>
+                `;
+              }).join("")}
             </tbody>
           </table>
         </div>
@@ -3153,13 +3177,30 @@ const Admin = {
   addCrimpingFittingRow() {
     const tbody = document.getElementById("crimping-fittings-tbody");
     if (!tbody) return;
+    const sizes = CONFIG.builderOptions.sizes || [];
     const tr = document.createElement("tr");
     tr.className = "crimping-fitting-row";
     tr.style.borderBottom = "1px solid #f1f5f9";
+    
+    const sizePricesHtml = sizes.map(s => `
+      <td style="padding: 8px; text-align: center;">
+        <input type="number" step="0.01" class="form-control text-center fitting-price-input" data-size-id="${s.id}" value="0.00" style="padding: 6px; font-size: 0.8rem; height: 34px; width: 75px; margin: 0 auto; font-weight: 700;">
+      </td>
+    `).join("");
+
     tr.innerHTML = `
-      <td style="padding: 8px;"><input type="text" class="form-control fitting-id" value="new-fitting" style="padding: 6px; font-size: 0.8rem; font-weight: 700; height: 34px;"></td>
+      <td style="padding: 8px;"><input type="text" class="form-control fitting-id" value="fitting-${Date.now()}" style="padding: 6px; font-size: 0.8rem; font-weight: 700; height: 34px;"></td>
       <td style="padding: 8px;"><input type="text" class="form-control fitting-name" value="Нов накрайник" style="padding: 6px; font-size: 0.8rem; height: 34px;"></td>
-      <td style="padding: 8px;"><input type="number" step="0.01" class="form-control fitting-price" value="0.00" style="padding: 6px; font-size: 0.8rem; height: 34px; font-weight: 700;"></td>
+      <td style="padding: 8px;"><input type="text" class="form-control fitting-category" value="Нова категория" style="padding: 6px; font-size: 0.8rem; height: 34px;"></td>
+      <td style="padding: 8px;">
+        <select class="form-control fitting-angle" style="padding: 6px; font-size: 0.8rem; height: 34px;">
+          <option value="straight">Прав</option>
+          <option value="90">90° коляно</option>
+          <option value="45">45° коляно</option>
+          <option value="none">Без</option>
+        </select>
+      </td>
+      ${sizePricesHtml}
       <td style="padding: 8px;"><input type="text" class="form-control text-center fitting-icon" value="➡️" style="padding: 6px; font-size: 0.8rem; height: 34px;"></td>
       <td style="padding: 8px; text-align: center;">
         <button type="button" class="btn-icon-danger" style="width: 32px; height: 32px; font-size: 0.9rem; margin: 0 auto;" onclick="this.parentElement.parentElement.remove()">×</button>
@@ -3221,10 +3262,21 @@ const Admin = {
     document.querySelectorAll(".crimping-fitting-row").forEach(row => {
       const id = row.querySelector(".fitting-id").value.trim();
       const name = row.querySelector(".fitting-name").value.trim();
-      const priceEur = parseFloat(row.querySelector(".fitting-price").value) || 0.0;
+      const category = row.querySelector(".fitting-category").value.trim() || "Други";
+      const angle = row.querySelector(".fitting-angle").value || "straight";
       const icon = row.querySelector(".fitting-icon").value.trim() || "➡️";
+      
+      const prices = {};
+      row.querySelectorAll(".fitting-price-input").forEach(input => {
+        const sizeId = input.getAttribute("data-size-id");
+        const priceVal = parseFloat(input.value);
+        if (!isNaN(priceVal)) {
+          prices[sizeId] = priceVal;
+        }
+      });
+
       if (id && name) {
-        fittings.push({ id, name, priceEur, icon });
+        fittings.push({ id, name, category, angle, prices, icon });
       }
     });
 
