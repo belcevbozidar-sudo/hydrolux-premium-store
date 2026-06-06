@@ -26,6 +26,8 @@ const Admin = {
         }
       }
     });
+
+    this.startOrderPolling();
   },
 
   injectStyles() {
@@ -720,6 +722,181 @@ const Admin = {
       }
       .blacklist-warn-glow {
         animation: pulse-warn 2s infinite;
+      }
+
+      /* Custom Order Notification Modal Styles */
+      .admin-orders-notification-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(15, 23, 42, 0.75);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999999;
+        animation: adminNotificationFadeIn 0.3s ease forwards;
+      }
+      .admin-orders-notification-overlay.fade-out {
+        animation: adminNotificationFadeOut 0.3s ease forwards;
+      }
+      .admin-orders-notification-card {
+        background: #0f172a;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 24px;
+        padding: 32px;
+        width: 90%;
+        max-width: 500px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 40px rgba(249, 115, 22, 0.15);
+        text-align: center;
+        color: white;
+        animation: adminNotificationScaleUp 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      }
+      .bell-animation-wrapper {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .bell-pulse {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, rgba(249, 115, 22, 0.4) 0%, rgba(249, 115, 22, 0) 70%);
+        border-radius: 50%;
+        animation: bellPulseGlow 2s infinite ease-in-out;
+      }
+      .bell-icon {
+        font-size: 3rem;
+        z-index: 2;
+        animation: bellRing 1.5s infinite ease-in-out;
+        display: inline-block;
+      }
+      .admin-orders-notification-card h2 {
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin: 0 0 8px;
+        color: #ffffff;
+        letter-spacing: -0.025em;
+      }
+      .notification-subtitle {
+        color: #94a3b8;
+        font-size: 0.95rem;
+        margin: 0 0 20px;
+      }
+      .new-orders-scroll-list {
+        max-height: 280px;
+        overflow-y: auto;
+        margin-bottom: 24px;
+        padding-right: 4px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        text-align: left;
+      }
+      .new-orders-scroll-list::-webkit-scrollbar {
+        width: 6px;
+      }
+      .new-orders-scroll-list::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 3px;
+      }
+      .new-orders-scroll-list::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+      }
+      .new-order-item-card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 14px;
+        padding: 16px;
+        transition: border-color 0.2s ease;
+      }
+      .new-order-item-card:hover {
+        border-color: rgba(249, 115, 22, 0.3);
+      }
+      .new-order-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding-bottom: 8px;
+        margin-bottom: 10px;
+      }
+      .new-order-number {
+        font-weight: 700;
+        color: #f97316;
+        font-size: 0.95rem;
+      }
+      .new-order-date {
+        color: #64748b;
+        font-size: 0.8rem;
+      }
+      .new-order-details {
+        font-size: 0.88rem;
+        color: #e2e8f0;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .new-order-price {
+        color: #ffffff;
+        font-size: 0.95rem;
+        margin-top: 4px;
+        border-top: 1px dashed rgba(255, 255, 255, 0.08);
+        padding-top: 6px;
+      }
+      .notification-ack-btn {
+        background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+        color: white;
+        border: none;
+        padding: 14px 28px;
+        font-weight: 700;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        width: 100%;
+        font-size: 1rem;
+        box-shadow: 0 4px 14px rgba(249, 115, 22, 0.4);
+      }
+      .notification-ack-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(249, 115, 22, 0.6);
+        filter: brightness(1.1);
+      }
+      .notification-ack-btn:active {
+        transform: translateY(0);
+      }
+      @keyframes adminNotificationFadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes adminNotificationFadeOut {
+        from { opacity: 1; }
+        to { opacity: 0; }
+      }
+      @keyframes adminNotificationScaleUp {
+        from { transform: scale(0.9); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+      }
+      @keyframes bellPulseGlow {
+        0%, 100% { transform: scale(0.85); opacity: 0.4; }
+        50% { transform: scale(1.15); opacity: 0.7; }
+      }
+      @keyframes bellRing {
+        0%, 100% { transform: rotate(0); }
+        15% { transform: rotate(15deg); }
+        30% { transform: rotate(-15deg); }
+        45% { transform: rotate(10deg); }
+        60% { transform: rotate(-10deg); }
+        75% { transform: rotate(4deg); }
+        85% { transform: rotate(-4deg); }
       }
     `;
     document.head.appendChild(style);
@@ -3456,5 +3633,172 @@ const Admin = {
   normalizePhone(phone) {
     if (!phone) return "";
     return phone.replace(/\D/g, "");
+  },
+
+  startOrderPolling() {
+    if (this.orderPollingInterval) {
+      clearInterval(this.orderPollingInterval);
+    }
+    this.checkForNewOrders();
+    this.orderPollingInterval = setInterval(() => {
+      const adminView = document.getElementById("admin-view");
+      if (adminView && adminView.classList.contains("active")) {
+        this.checkForNewOrders();
+      }
+    }, 15000);
+  },
+
+  async checkForNewOrders() {
+    try {
+      const response = await HydroluxBackend.getAllOrders();
+      if (!response || !response.ok) return;
+
+      const orders = response.orders || [];
+      if (orders.length === 0) return;
+
+      let acknowledged = [];
+      const stored = localStorage.getItem("hydrolux_acknowledged_orders");
+      if (stored) {
+        try {
+          acknowledged = JSON.parse(stored);
+        } catch (e) {
+          acknowledged = [];
+        }
+      }
+
+      if (stored === null) {
+        acknowledged = orders.map(o => o.orderNumber);
+        localStorage.setItem("hydrolux_acknowledged_orders", JSON.stringify(acknowledged));
+        return;
+      }
+
+      const newOrders = orders.filter(o => !acknowledged.includes(o.orderNumber) && o.status !== "canceled");
+
+      if (newOrders.length > 0) {
+        this.showNewOrdersNotification(newOrders);
+      }
+    } catch (err) {
+      console.error("Грешка при проверка за нови поръчки:", err);
+    }
+  },
+
+  playNotificationSound() {
+    try {
+      const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      const playTone = (freq, startTime, duration) => {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.type = "sine";
+        osc.frequency.value = freq;
+        gain.gain.setValueAtTime(0.08, startTime);
+        gain.gain.exponentialRampToValueAtTime(0.0001, startTime + duration);
+        osc.start(startTime);
+        osc.stop(startTime + duration);
+      };
+      const now = audioCtx.currentTime;
+      playTone(523.25, now, 0.25);
+      playTone(659.25, now + 0.12, 0.25);
+      playTone(783.99, now + 0.24, 0.4);
+    } catch (e) {
+      console.warn("Неуспешно възпроизвеждане на звук:", e);
+    }
+  },
+
+  showNewOrdersNotification(newOrders) {
+    let modal = document.getElementById("admin-new-orders-modal");
+    if (modal) {
+      const contentEl = document.getElementById("admin-new-orders-list-content");
+      if (contentEl) {
+        contentEl.innerHTML = this.renderNewOrdersListHTML(newOrders);
+      }
+      return;
+    }
+
+    this.playNotificationSound();
+
+    modal = document.createElement("div");
+    modal.id = "admin-new-orders-modal";
+    modal.className = "admin-orders-notification-overlay";
+    modal.innerHTML = `
+      <div class="admin-orders-notification-card">
+        <div class="bell-animation-wrapper">
+          <div class="bell-pulse"></div>
+          <div class="bell-icon">🔔</div>
+        </div>
+        <h2>Нова поръчка!</h2>
+        <p class="notification-subtitle">Имате нови поръчки, очакващи обработка:</p>
+        <div id="admin-new-orders-list-content" class="new-orders-scroll-list">
+          ${this.renderNewOrdersListHTML(newOrders)}
+        </div>
+        <button class="notification-ack-btn" onclick="Admin.acknowledgeNewOrders(${JSON.stringify(newOrders.map(o => o.orderNumber)).replace(/"/g, '&quot;')})">
+          Разбрах
+        </button>
+      </div>
+    `;
+
+    document.body.appendChild(modal);
+  },
+
+  renderNewOrdersListHTML(newOrders) {
+    return newOrders.map(o => {
+      const name = o.customer?.fullName || o.customer?.name || "Анонимен клиент";
+      const total = o.totals?.total !== undefined ? parseFloat(o.totals.total).toFixed(2) : "0.00";
+      const itemsCount = Array.isArray(o.items) ? o.items.length : 0;
+      const formattedDate = new Date(o.createdAt).toLocaleString("bg-BG", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit"
+      });
+      return `
+        <div class="new-order-item-card">
+          <div class="new-order-header">
+            <span class="new-order-number">${o.orderNumber}</span>
+            <span class="new-order-date">${formattedDate}</span>
+          </div>
+          <div class="new-order-details">
+            <div><strong>Клиент:</strong> ${name}</div>
+            <div><strong>Телефон:</strong> ${o.customer?.phone || "Не е въведен"}</div>
+            <div><strong>Артикули:</strong> ${itemsCount} бр.</div>
+            <div class="new-order-price"><strong>Сума:</strong> ${total} лв.</div>
+          </div>
+        </div>
+      `;
+    }).join("");
+  },
+
+  acknowledgeNewOrders(orderNumbers) {
+    let acknowledged = [];
+    const stored = localStorage.getItem("hydrolux_acknowledged_orders");
+    if (stored) {
+      try {
+        acknowledged = JSON.parse(stored);
+      } catch (e) {
+        acknowledged = [];
+      }
+    }
+
+    orderNumbers.forEach(num => {
+      if (!acknowledged.includes(num)) {
+        acknowledged.push(num);
+      }
+    });
+
+    localStorage.setItem("hydrolux_acknowledged_orders", JSON.stringify(acknowledged));
+
+    const modal = document.getElementById("admin-new-orders-modal");
+    if (modal) {
+      modal.classList.add("fade-out");
+      setTimeout(() => {
+        modal.remove();
+      }, 300);
+    }
+
+    if (this.activeTab === "orders") {
+      this.loadOrders();
+    }
   }
 };
