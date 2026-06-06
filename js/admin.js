@@ -1019,7 +1019,7 @@ const Admin = {
             </div>
             <div class="form-group">
               <label>Марка <span class="text-accent">*</span></label>
-              <input type="text" id="prod-brand" class="form-control" list="existing-brands-datalist" value="${isEditing ? this.editingProduct.brand : ''}" placeholder="напр. Semperit" required autocomplete="off">
+              <input type="text" id="prod-brand-input" class="form-control" list="existing-brands-datalist" value="${isEditing ? this.editingProduct.brand : ''}" placeholder="напр. Semperit" required autocomplete="off">
               <datalist id="existing-brands-datalist">
                 ${existingBrands.map(b => `<option value="${this.escapeAttr(b)}"></option>`).join("")}
               </datalist>
@@ -1876,13 +1876,13 @@ const Admin = {
       const subsubcategoryCheckboxes = document.querySelectorAll('input[name="prod-subsubcategories"]:checked');
       const subsubcategories = Array.from(subsubcategoryCheckboxes).map(cb => cb.value);
       const subsubcategory = subsubcategories[0] || "";
-      const brand = (document.getElementById("prod-brand")?.value || "").trim();
+      const brand = (document.getElementById("prod-brand-input")?.value || "").trim();
 
       // JS-based validation for required core fields (replaces silent HTML5 blocks)
       if (!name) { alert("Моля въведете Име на продукта!"); document.getElementById("prod-name")?.focus(); return; }
       if (!code) { alert("Моля въведете Код / Артикулен номер!"); document.getElementById("prod-code")?.focus(); return; }
       if (categories.length === 0) { alert("Моля изберете поне една Категория!"); return; }
-      if (!brand) { alert("Моля въведете Марка!"); document.getElementById("prod-brand")?.focus(); return; }
+      if (!brand) { alert("Моля въведете Марка!"); document.getElementById("prod-brand-input")?.focus(); return; }
       const editor = document.getElementById("prod-description-editor");
       const description = editor ? (editor.innerHTML || "").trim() : "";
       const tagsInput = document.getElementById("prod-tags")?.value || "";
