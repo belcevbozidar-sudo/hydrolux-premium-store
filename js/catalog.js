@@ -160,7 +160,10 @@ const Catalog = {
     // Filter available option options to match the selected category & subcategory
     let scopeProducts = CONFIG.products;
     if (this.activeCategory) {
-      scopeProducts = scopeProducts.filter(p => p.category === this.activeCategory);
+      scopeProducts = scopeProducts.filter(p => {
+        const productCats = p.categories || (p.category ? [p.category] : []);
+        return productCats.includes(this.activeCategory);
+      });
     }
     if (this.activeSubcategory) {
       scopeProducts = scopeProducts.filter(p => p.subcategory === this.activeSubcategory);
@@ -297,7 +300,10 @@ const Catalog = {
 
     let filtered = products.filter(p => {
       // 1. Category check
-      if (this.activeCategory && p.category !== this.activeCategory) return false;
+      if (this.activeCategory) {
+        const productCats = p.categories || (p.category ? [p.category] : []);
+        if (!productCats.includes(this.activeCategory)) return false;
+      }
 
       // 2. Subcategory check
       if (this.activeSubcategory && p.subcategory !== this.activeSubcategory) return false;
@@ -408,7 +414,8 @@ const Catalog = {
     // Breadcrumb rendering
     const breadcrumb = document.getElementById("product-detail-breadcrumb");
     if (breadcrumb) {
-      const cat = CONFIG.categories.find(c => c.id === product.category);
+      const primaryCatId = (product.categories && product.categories.length > 0) ? product.categories[0] : product.category;
+      const cat = CONFIG.categories.find(c => c.id === primaryCatId);
       let breadcrumbHtml = `<a onclick="App.navigate('home')">Начало</a>`;
       if (cat) {
         breadcrumbHtml += ` › <a onclick="Catalog.selectCategory('${cat.id}'); App.navigate('catalog')">${cat.name}</a>`;

@@ -851,7 +851,10 @@ const Admin = {
     // Filter products list based on selected category filter and search query
     let products = CONFIG.products;
     if (this.filterCategory) {
-      products = products.filter(p => p.category === this.filterCategory);
+      products = products.filter(p => {
+        const productCats = p.categories || (p.category ? [p.category] : []);
+        return productCats.includes(this.filterCategory);
+      });
     }
     const query = this.productSearchQuery ? this.productSearchQuery.toLowerCase().trim() : "";
     if (query) {
@@ -871,20 +874,24 @@ const Admin = {
 
     let productRows = products.map(p => {
       const minPrice = p.variants && p.variants.length > 0 ? Math.min(...p.variants.map(v => v.priceEur)) : 0;
-      const catObj = CONFIG.categories.find(c => c.id === p.category);
-      let catDisplay = catObj ? catObj.name : p.category;
-      if (p.subcategory && catObj && catObj.subcategories) {
-        const subObj = catObj.subcategories.find(s => s.id === p.subcategory);
-        if (subObj) {
-          catDisplay += ` / ${subObj.name}`;
-          if (p.subsubcategory && subObj.subcategories) {
-            const subsubObj = subObj.subcategories.find(ss => ss.id === p.subsubcategory);
-            if (subsubObj) {
-              catDisplay += ` / ${subsubObj.name}`;
+      const productCats = p.categories || (p.category ? [p.category] : []);
+      let catDisplay = productCats.map(catId => {
+        const catObj = CONFIG.categories.find(c => c.id === catId);
+        let name = catObj ? catObj.name : catId;
+        if (p.subcategory && catObj && catObj.subcategories && productCats[0] === catId) {
+          const subObj = catObj.subcategories.find(s => s.id === p.subcategory);
+          if (subObj) {
+            name += ` / ${subObj.name}`;
+            if (p.subsubcategory && subObj.subcategories) {
+              const subsubObj = subObj.subcategories.find(ss => ss.id === p.subsubcategory);
+              if (subsubObj) {
+                name += ` / ${subsubObj.name}`;
+              }
             }
           }
         }
-      }
+        return name;
+      }).join(", ");
       const thumb = p.images && p.images[0] ? p.images[0] : "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop";
 
       return `
@@ -975,13 +982,21 @@ const Admin = {
 
           <div class="form-grid-2">
             <div class="form-group">
-              <label>Категория <span class="text-accent">*</span></label>
-              <select id="prod-category" class="form-control" required>
-                <option value="">-- Изберете категория --</option>
-                ${CONFIG.categories.map(c => `
-                  <option value="${c.id}" ${isEditing && this.editingProduct.category === c.id ? 'selected' : ''}>${c.name}</option>
-                `).join("")}
-              </select>
+              <label>Категории (изберете една или повече) <span class="text-accent">*</span></label>
+              <div id="prod-categories-checkboxes" style="display: flex; flex-direction: column; gap: 6px; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; max-height: 150px; overflow-y: auto; background: white;">
+                ${CONFIG.categories.map(c => {
+                  const isChecked = isEditing && (
+                    (this.editingProduct.categories && this.editingProduct.categories.includes(c.id)) ||
+                    (this.editingProduct.category === c.id)
+                  );
+                  return `
+                    <label style="display: flex; align-items: center; gap: 8px; font-weight: 500; font-size: 0.85rem; cursor: pointer; color: var(--text-dark); margin: 0;">
+                      <input type="checkbox" name="prod-categories" value="${c.id}" ${isChecked ? 'checked' : ''} style="width: 16px; height: 16px; accent-color: var(--accent);">
+                      <span>${c.name}</span>
+                    </label>
+                  `;
+                }).join("")}
+              </div>
             </div>
             <div class="form-group" id="prod-subcategory-group" style="display: none;">
               <label>Подкатегория</label>
@@ -1135,7 +1150,10 @@ const Admin = {
     
     let products = CONFIG.products;
     if (catId) {
-      products = products.filter(p => p.category === catId);
+      products = products.filter(p => {
+        const productCats = p.categories || (p.category ? [p.category] : []);
+        return productCats.includes(catId);
+      });
     }
     if (query) {
       products = products.filter(p => {
@@ -1154,20 +1172,24 @@ const Admin = {
     
     let productRows = products.map(p => {
       const minPrice = p.variants && p.variants.length > 0 ? Math.min(...p.variants.map(v => v.priceEur)) : 0;
-      const catObj = CONFIG.categories.find(c => c.id === p.category);
-      let catDisplay = catObj ? catObj.name : p.category;
-      if (p.subcategory && catObj && catObj.subcategories) {
-        const subObj = catObj.subcategories.find(s => s.id === p.subcategory);
-        if (subObj) {
-          catDisplay += ` / ${subObj.name}`;
-          if (p.subsubcategory && subObj.subcategories) {
-            const subsubObj = subObj.subcategories.find(ss => ss.id === p.subsubcategory);
-            if (subsubObj) {
-              catDisplay += ` / ${subsubObj.name}`;
+      const productCats = p.categories || (p.category ? [p.category] : []);
+      let catDisplay = productCats.map(catId => {
+        const catObj = CONFIG.categories.find(c => c.id === catId);
+        let name = catObj ? catObj.name : catId;
+        if (p.subcategory && catObj && catObj.subcategories && productCats[0] === catId) {
+          const subObj = catObj.subcategories.find(s => s.id === p.subcategory);
+          if (subObj) {
+            name += ` / ${subObj.name}`;
+            if (p.subsubcategory && subObj.subcategories) {
+              const subsubObj = subObj.subcategories.find(ss => ss.id === p.subsubcategory);
+              if (subsubObj) {
+                name += ` / ${subsubObj.name}`;
+              }
             }
           }
         }
-      }
+        return name;
+      }).join(", ");
       const thumb = p.images && p.images[0] ? p.images[0] : "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop";
 
       return `
@@ -1530,20 +1552,32 @@ const Admin = {
     }
 
     // Populate Category + Subcategory + Sub-subcategory selectors
-    const catSelect = document.getElementById("prod-category");
+    const categoryCheckboxes = document.querySelectorAll('input[name="prod-categories"]');
     const subSelect = document.getElementById("prod-subcategory");
-    if (catSelect && subSelect) {
+    
+    const getFirstSelectedCategory = () => {
+      const checked = document.querySelector('input[name="prod-categories"]:checked');
+      return checked ? checked.value : "";
+    };
+
+    if (categoryCheckboxes.length > 0 && subSelect) {
       const isEditing = this.editingProduct !== null;
       const initialSubId = isEditing ? this.editingProduct.subcategory : null;
       const initialSubSubId = isEditing ? this.editingProduct.subsubcategory : null;
-      this.handleProductCategoryChange(catSelect.value, initialSubId, initialSubSubId);
       
-      catSelect.addEventListener("change", (e) => {
-        this.handleProductCategoryChange(e.target.value);
+      const primaryCatId = isEditing ? (this.editingProduct.category || getFirstSelectedCategory()) : getFirstSelectedCategory();
+      this.handleProductCategoryChange(primaryCatId, initialSubId, initialSubSubId);
+
+      categoryCheckboxes.forEach(cb => {
+        cb.addEventListener("change", () => {
+          const firstCat = getFirstSelectedCategory();
+          this.handleProductCategoryChange(firstCat);
+        });
       });
 
       subSelect.addEventListener("change", (e) => {
-        this.handleProductSubcategoryChange(catSelect.value, e.target.value);
+        const firstCat = getFirstSelectedCategory();
+        this.handleProductSubcategoryChange(firstCat, e.target.value);
       });
     }
 
@@ -1815,7 +1849,11 @@ const Admin = {
 
     const name = document.getElementById("prod-name").value.trim();
     const code = document.getElementById("prod-code").value.trim();
-    const category = document.getElementById("prod-category").value;
+    
+    const categoryCheckboxes = document.querySelectorAll('input[name="prod-categories"]:checked');
+    const categories = Array.from(categoryCheckboxes).map(cb => cb.value);
+    const category = categories[0] || "";
+    
     const subcategory = document.getElementById("prod-subcategory") ? document.getElementById("prod-subcategory").value : "";
     const subsubcategory = document.getElementById("prod-subsubcategory") ? document.getElementById("prod-subsubcategory").value : "";
     const brand = document.getElementById("prod-brand").value.trim();
@@ -1823,7 +1861,7 @@ const Admin = {
     // JS-based validation for required core fields (replaces silent HTML5 blocks)
     if (!name) { alert("Моля въведете Име на продукта!"); document.getElementById("prod-name").focus(); return; }
     if (!code) { alert("Моля въведете Код / Артикулен номер!"); document.getElementById("prod-code").focus(); return; }
-    if (!category) { alert("Моля изберете Категория!"); document.getElementById("prod-category").focus(); return; }
+    if (categories.length === 0) { alert("Моля изберете поне една Категория!"); return; }
     if (!brand) { alert("Моля въведете Марка!"); document.getElementById("prod-brand").focus(); return; }
     const editor = document.getElementById("prod-description-editor");
     const description = editor ? editor.innerHTML.trim() : "";
@@ -1876,6 +1914,7 @@ const Admin = {
           target.name = name;
           target.code = code;
           target.category = category;
+          target.categories = categories;
           target.subcategory = subcategory;
           target.subsubcategory = subsubcategory;
           target.brand = brand;
@@ -1918,6 +1957,7 @@ const Admin = {
         code,
         name,
         category,
+        categories,
         subcategory,
         subsubcategory,
         brand,
@@ -1965,7 +2005,10 @@ const Admin = {
     const categories = CONFIG.categories;
 
     let categoryRows = categories.map(c => {
-      const productCount = CONFIG.products.filter(p => p.category === c.id).length;
+      const productCount = CONFIG.products.filter(p => {
+        const productCats = p.categories || (p.category ? [p.category] : []);
+        return productCats.includes(c.id);
+      }).length;
       return `
         <tr class="admin-table-row">
           <td data-label="Икона"><span style="font-size: 1.4rem;">${c.icon || '📦'}</span></td>
