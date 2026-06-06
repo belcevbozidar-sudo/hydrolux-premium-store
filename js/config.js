@@ -59,7 +59,7 @@ const CONFIG = {
         { key: "Защитен фактор", value: "3:1 (Налягане на пръсване 60 bar)" }
       ],
       images: [
-        "assets/air_hoses.png"
+        "assets/air_hoses.webp"
       ],
       variants: [
         { code: "PLW20006", innerDb: 6, inch: "1/4\"", outerDb: 12, pressure: 20, bend: 60, weight: 0.13, rollLength: 50, priceEur: 1.45 },
@@ -96,7 +96,7 @@ const CONFIG = {
         { key: "Работна температура", value: "-10°C до +60°C" }
       ],
       images: [
-        "assets/product_layflat.png"
+        "assets/product_layflat.webp"
       ],
       variants: [
         { code: "FLAT-DN50", innerDb: 51, inch: "2\"", outerDb: 53.5, pressure: 8, bend: 0, weight: 0.28, rollLength: 100, priceEur: 2.10 },
@@ -130,7 +130,7 @@ const CONFIG = {
         { key: "Работна температура", value: "-30°C до +80°C" }
       ],
       images: [
-        "assets/fuel_hoses.png"
+        "assets/fuel_hoses.webp"
       ],
       variants: [
         { code: "TOF319-06", innerDb: 6, inch: "1/4\"", outerDb: 13, pressure: 20, bend: 40, weight: 0.15, rollLength: 50, priceEur: 2.20 },
@@ -166,7 +166,7 @@ const CONFIG = {
         { key: "Дебелина на стената", value: "5.0 мм" }
       ],
       images: [
-        "assets/product_silicone_elbow.png"
+        "assets/product_silicone_elbow.webp"
       ],
       variants: [
         { code: "SIL90-DN38", innerDb: 38, inch: "1 1/2\"", outerDb: 48, pressure: 5, bend: 90, weight: 0.22, rollLength: 1, priceEur: 8.50 },
@@ -201,7 +201,7 @@ const CONFIG = {
         { key: "Работна температура", value: "-35°C до +95°C" }
       ],
       images: [
-        "assets/product_food_hose.png"
+        "assets/product_food_hose.webp"
       ],
       variants: [
         { code: "FOOD-DN25", innerDb: 25, inch: "1\"", outerDb: 37, pressure: 10, bend: 150, weight: 0.76, rollLength: 40, priceEur: 9.80 },
@@ -234,7 +234,7 @@ const CONFIG = {
         { key: "Работна температура", value: "-20°C до +60°C" }
       ],
       images: [
-        "assets/product_pu_tubing.png"
+        "assets/product_pu_tubing.webp"
       ],
       variants: [
         { code: "PU0425-BL", innerDb: 2.5, inch: "1/10\"", outerDb: 4, pressure: 10, bend: 15, weight: 0.012, rollLength: 100, priceEur: 0.35 },
@@ -268,7 +268,7 @@ const CONFIG = {
         { key: "Подсилване", value: "Две оплетки от стоманена тел" }
       ],
       images: [
-        "assets/product_hydraulic_2sn.png"
+        "assets/product_hydraulic_2sn.webp"
       ],
       variants: [
         { code: "2SN06", innerDb: 6.3, inch: "1/4\"", outerDb: 15.0, pressure: 400, bend: 100, weight: 0.38, rollLength: 50, priceEur: 3.80 },
@@ -302,7 +302,7 @@ const CONFIG = {
         { key: "Работна температура", value: "-40°C до +90°C" }
       ],
       images: [
-        "assets/product_spiral_guard.png"
+        "assets/product_spiral_guard.webp"
       ],
       variants: [
         { code: "SP-16G", innerDb: 13.0, inch: "ø 16мм", outerDb: 16.0, pressure: 0, bend: 0, weight: 0.05, rollLength: 20, priceEur: 0.85 },
@@ -336,7 +336,7 @@ const CONFIG = {
         { key: "Материал", value: "Поцинкована стомана" }
       ],
       images: [
-        "assets/product_fitting_90.png"
+        "assets/product_fitting_90.webp"
       ],
       variants: [
         { code: "FIT90-BSP-12", innerDb: 12, inch: "1/2\"", outerDb: 0, pressure: 315, bend: 90, weight: 0.08, rollLength: 1, priceEur: 3.45 },
@@ -370,7 +370,7 @@ const CONFIG = {
         { key: "Максимално налягане", value: "15 bar" }
       ],
       images: [
-        "assets/product_pu_spiral.png"
+        "assets/product_pu_spiral.webp"
       ],
       variants: [
         { code: "PU-SPIR-812-10", innerDb: 8, inch: "10м", outerDb: 12, pressure: 15, bend: 0, weight: 0.65, rollLength: 10, priceEur: 18.90 },
@@ -402,7 +402,7 @@ const CONFIG = {
         { key: "Начин на затваряне", value: "Със сачмен клапан" }
       ],
       images: [
-        "assets/product_quick_coupling.png"
+        "assets/product_quick_coupling.webp"
       ],
       variants: [
         { code: "ISOA-12-M", innerDb: 12, inch: "1/2\"", outerDb: 0, pressure: 350, bend: 0, weight: 0.12, rollLength: 1, priceEur: 12.90 },

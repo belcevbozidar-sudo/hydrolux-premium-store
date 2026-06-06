@@ -371,7 +371,7 @@ const Catalog = {
         <div class="product-card card" onclick="Catalog.openProductDetails('${p.id}')">
           <div class="product-badge">${p.inStock ? 'В наличност' : 'По поръчка'}</div>
           <div class="product-card-img-wrapper">
-            <img src="${p.images[0]}" alt="${p.name}" class="product-card-img" onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop'">
+            <img src="${p.images[0]}" alt="${p.name} - ${p.brand} | Хидролукс Груп" class="product-card-img" onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop'">
           </div>
           <div class="product-card-body">
             <div class="product-card-brand">${p.brand}</div>
@@ -394,13 +394,16 @@ const Catalog = {
     }).join("");
   },
 
-  openProductDetails(productId) {
+  openProductDetails(productId, shouldNavigate = true) {
     const product = CONFIG.products.find(p => p.id === productId);
     if (!product) return;
     this.currentProduct = product;
 
     // Transition view
-    App.navigate("product-detail");
+    if (shouldNavigate) {
+      App.navigate("product-detail/" + productId);
+      return;
+    }
 
     // Breadcrumb rendering
     const breadcrumb = document.getElementById("product-detail-breadcrumb");
@@ -458,10 +461,11 @@ const Catalog = {
     // Inject Gallery Image
     const mainImg = document.getElementById("prod-main-image");
     mainImg.src = product.images[0];
+    mainImg.alt = `${product.name} - ${product.brand} | Хидролукс Груп`;
     
     const thumbsContainer = document.getElementById("prod-thumbnails");
     thumbsContainer.innerHTML = product.images.map((img, idx) => `
-      <img src="${img}" class="thumb-img ${idx === 0 ? 'active' : ''}" 
+      <img src="${img}" alt="${product.name} - детайлно изображение ${idx + 1}" class="thumb-img ${idx === 0 ? 'active' : ''}" 
            onclick="Catalog.changeMainImage('${img}', this)">
     `).join("");
 
@@ -548,6 +552,16 @@ const Catalog = {
         Cart.showToast("Моля, задайте количество за поне един вариант.");
       }
     };
+
+    // Update SEO Metadata and inject JSON-LD Product schema
+    if (typeof App !== "undefined" && typeof App.updateSEO === "function") {
+      const title = `${product.name} - ${product.brand} | Хидролукс Груп Монтана`;
+      const desc = product.description.length > 155 ? product.description.substring(0, 152) + "..." : product.description;
+      App.updateSEO(title, desc, `#product-detail/${product.id}`);
+      
+      const productSchema = this.getProductSchema(product);
+      App.updateSchema(productSchema);
+    }
   },
 
   getVariantCode(product, variant, index = 0) {
@@ -643,10 +657,10 @@ const Catalog = {
 
       const summary = document.getElementById("quick-order-product-summary");
       if (summary) {
-        const img = this.currentProduct.images[0] || 'assets/logo.png';
+        const img = this.currentProduct.images[0] || 'assets/logo.webp';
         const priceText = formatPrice(this.currentProduct.variants[0]?.priceEur || 0).eur;
         summary.innerHTML = `
-          <img src="${img}" style="width: 60px; height: 60px; object-fit: cover; border-radius: 6px; border: 1px solid #e2e8f0;">
+          <img src="${img}" alt="${this.currentProduct.name} - бърза поръчка" style="width: 60px; height: 60px; object-fit: cover; border-radius: 6px; border: 1px solid #e2e8f0;">
           <div>
             <strong style="display: block; font-weight: 700; color: #0f172a; font-size: 0.95rem;">${this.currentProduct.name}</strong>
             <span style="font-size: 0.85rem; color: #ea580c; font-weight: 700;">Цена: ${priceText} / ${this.currentProduct.unit || 'м'}</span>
@@ -759,5 +773,65 @@ const Catalog = {
       Cart.addItem(product, "CUSTOM-SPEC", 1);
       Cart.openDrawer();
     }
+  },
+
+  getProductSchema(product) {
+    const prices = product.variants.map(v => v.priceEur);
+    const minPrice = Math.min(...prices);
+    const maxPrice = Math.max(...prices);
+    const hasMultiplePrices = prices.length > 1;
+
+    let offers = {};
+    if (hasMultiplePrices) {
+      offers = {
+        "@type": "AggregateOffer",
+        "priceCurrency": "EUR",
+        "lowPrice": minPrice.toFixed(2),
+        "highPrice": maxPrice.toFixed(2),
+        "offerCount": product.variants.length,
+        "availability": product.inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+        "priceSpecification": product.variants.map(v => ({
+          "@type": "UnitPriceSpecification",
+          "price": v.priceEur.toFixed(2),
+          "priceCurrency": "EUR",
+          "referenceQuantity": {
+            "@type": "QuantitativeValue",
+            "value": "1",
+            "unitCode": product.unit === "м" ? "MTR" : "C62"
+          }
+        }))
+      };
+    } else {
+      offers = {
+        "@type": "Offer",
+        "price": minPrice.toFixed(2),
+        "priceCurrency": "EUR",
+        "availability": product.inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": minPrice.toFixed(2),
+          "priceCurrency": "EUR",
+          "referenceQuantity": {
+            "@type": "QuantitativeValue",
+            "value": "1",
+            "unitCode": product.unit === "м" ? "MTR" : "C62"
+          }
+        }
+      };
+    }
+
+    return {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": product.name,
+      "image": product.images.map(img => img.startsWith("http") ? img : `https://hydrolux.bg/${img}`),
+      "description": product.description,
+      "sku": product.code,
+      "brand": {
+        "@type": "Brand",
+        "name": product.brand
+      },
+      "offers": offers
+    };
   }
 };

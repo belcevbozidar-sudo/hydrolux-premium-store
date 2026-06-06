@@ -74,7 +74,7 @@ const App = {
           </button>
 
           <div class="product-card-img-wrapper">
-            <img src="${p.images[0]}" alt="${p.name}" class="product-card-img" onerror="this.src='assets/air_hoses.png'">
+            <img src="${p.images[0]}" alt="${p.name} - ${p.brand} | Хидролукс Груп" class="product-card-img" onerror="this.src='assets/air_hoses.webp'">
           </div>
           <div class="product-card-body">
             <h4 class="product-card-title">${p.name}</h4>
@@ -129,7 +129,7 @@ const App = {
               </button>
 
               <div class="product-card-img-wrapper">
-                <img src="${p.images[0]}" alt="${p.name}" class="product-card-img" onerror="this.src='assets/air_hoses.png'">
+                <img src="${p.images[0]}" alt="${p.name} - ${p.brand} | Хидролукс Груп" class="product-card-img" onerror="this.src='assets/air_hoses.webp'">
               </div>
               <div class="product-card-body">
                 <h4 class="product-card-title">${p.name}</h4>
@@ -264,7 +264,7 @@ const App = {
       return `
         <div class="category-card-6" onclick="Catalog.selectCategory('${c.id}'); App.navigate('catalog')">
           <div class="category-card-6-img-wrapper">
-            <img src="${cleanImageSrc}" alt="${c.name}" onerror="this.onerror=null; this.src='${fallbackUrl}'">
+            <img src="${cleanImageSrc}" alt="Категория: ${c.name} - Хидролукс Груп" onerror="this.onerror=null; this.src='${fallbackUrl}'">
           </div>
           <div class="category-card-6-body">
             <h3 class="category-card-6-title">${c.name}</h3>
@@ -404,7 +404,7 @@ const App = {
 
               return `
                 <div class="search-suggestion-item" onclick="App.handleProductSuggestionClick('${p.id}')">
-                  <img src="${coverImg}" class="search-suggestion-img" onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop'">
+                  <img src="${coverImg}" alt="${p.name} - ${p.brand}" class="search-suggestion-img" onerror="this.src='assets/air_hoses.webp'">
                   <div class="search-suggestion-info">
                     <span class="search-suggestion-name">${p.name}</span>
                     <span class="search-suggestion-meta">${subText}</span>
@@ -458,9 +458,10 @@ const App = {
     let hash = window.location.hash.substring(1);
     if (!hash) hash = "home";
 
-    // Separate params if any, e.g. product/semperit-plw-20
+    // Separate params if any, e.g. product-detail/semperit-plw-20
     const parts = hash.split("/");
     const mainView = parts[0];
+    const viewParam = parts[1];
     
     // Hide all views
     document.querySelectorAll(".spa-view").forEach(v => {
@@ -489,18 +490,72 @@ const App = {
       // Scroll to top
       window.scrollTo({ top: 0, behavior: "smooth" });
 
-      // Run view-specific inits
+      // Run view-specific inits and update SEO metadata
       if (mainView === "builder") {
         HoseBuilder.render();
+        this.updateSEO(
+          "Интерактивен конфигуратор на маркучи | Хидролукс Груп",
+          "Конфигурирайте и поръчайте маркучи за високо налягане по индивидуален размер. Лесен избор на накрайници и спирали с изчисляване на цена в реално време.",
+          "#builder"
+        );
+        this.updateSchema({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Интерактивен конфигуратор на маркучи",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Хидролукс Груп"
+          },
+          "description": "Сглобете и конфигурирайте собствен маркуч по индивидуални размери с бързи калкулации на цената."
+        });
       } else if (mainView === "admin") {
         Admin.init();
+        this.updateSEO("Административен панел | Хидролукс Груп", "Административен панел на Хидролукс Груп.", "#admin");
+        this.updateSchema(null);
       } else if (mainView === "checkout") {
         Cart.renderCheckoutSummary();
+        this.updateSEO("Завършване на поръчката | Хидролукс Груп", "Сигурно финализиране на Вашата поръчка за хидравлични и пневматични решения в онлайн магазина на Хидролукс.", "#checkout");
+        this.updateSchema(null);
+      } else if (mainView === "catalog") {
+        this.updateSEO(
+          "Продуктов каталог | Маркучи, Хидравлика & Пневматика | Хидролукс Груп",
+          "Разгледайте нашия продуктов каталог с маркучи за въздух, вода, гориво, силиконови съединения, хидравлични накрайници, бързи връзки и други от Хидролукс.",
+          "#catalog"
+        );
+        this.updateSchema(null);
+      } else if (mainView === "services") {
+        this.updateSEO(
+          "Сервиз, услуги и техническа консултация в Монтана | Хидролукс Груп",
+          "Професионално запресоване на маркучи, ремонт на хидравлични цилиндри и пневматични системи в нашия специализиран сервиз в град Монтана на ул. Индустриална 32г.",
+          "#services"
+        );
+        this.updateSchema(this.getLocalBusinessSchema());
+      } else if (mainView === "product-detail") {
+        if (viewParam) {
+          // If product page is loaded directly via URL, initialize it (avoiding navigate recursion)
+          Catalog.openProductDetails(viewParam, false);
+        } else {
+          // Fallback to catalog
+          this.navigate("catalog");
+        }
+      } else if (mainView === "home") {
+        this.updateSEO(
+          "Хидролукс Груп | Маркучи за високо налягане, Хидравлика и Пневматика Монтана",
+          "Хидролукс Груп град Монтана предлага производство и запресоване на маркучи за високо налягане, хидравлика, пневматика, фитинги и уплътнения. Професионален сервиз от 2019 г.",
+          ""
+        );
+        this.updateSchema(this.getLocalBusinessSchema());
       }
     } else {
       // Fallback
       document.getElementById("home-view").classList.add("active");
       this.currentView = "home";
+      this.updateSEO(
+        "Хидролукс Груп | Маркучи за високо налягане, Хидравлика и Пневматика Монтана",
+        "Хидролукс Груп град Монтана предлага производство и запресоване на маркучи за високо налягане, хидравлика, пневматика, фитинги и уплътнения. Професионален сервиз от 2019 г.",
+        ""
+      );
+      this.updateSchema(this.getLocalBusinessSchema());
     }
   },
 
@@ -521,6 +576,87 @@ const App = {
     if (yearEl) {
       yearEl.textContent = new Date().getFullYear();
     }
+  },
+
+  // Dynamic SEO meta tags and OG updates
+  updateSEO(title, description, hashPath) {
+    document.title = title;
+
+    const metaDesc = document.getElementById("meta-description");
+    if (metaDesc) {
+      metaDesc.setAttribute("content", description);
+    }
+
+    const canonicalLink = document.getElementById("canonical-link");
+    if (canonicalLink) {
+      const fullUrl = `https://hydrolux.bg/${hashPath}`;
+      canonicalLink.setAttribute("href", fullUrl);
+    }
+
+    const ogTitle = document.getElementById("og-title");
+    if (ogTitle) ogTitle.setAttribute("content", title);
+
+    const ogDesc = document.getElementById("og-description");
+    if (ogDesc) ogDesc.setAttribute("content", description);
+
+    const ogUrl = document.getElementById("og-url");
+    if (ogUrl) ogUrl.setAttribute("content", `https://hydrolux.bg/${hashPath}`);
+  },
+
+  // Dynamic JSON-LD injection
+  updateSchema(schemaObj) {
+    const scriptEl = document.getElementById("schema-jsonld");
+    if (!scriptEl) return;
+    
+    if (schemaObj) {
+      scriptEl.textContent = JSON.stringify(schemaObj, null, 2);
+    } else {
+      scriptEl.textContent = "";
+    }
+  },
+
+  getLocalBusinessSchema() {
+    return {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Хидролукс Груп ЕООД",
+      "image": "https://hydrolux.bg/assets/logo.webp",
+      "url": "https://hydrolux.bg/",
+      "telephone": "+359892484337",
+      "email": "office@hydrolux.bg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Индустриална 32г",
+        "addressLocality": "Монтана",
+        "postalCode": "3400",
+        "addressCountry": "BG"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "43.4125",
+        "longitude": "23.2250"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:30",
+          "closes": "17:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00"
+        }
+      ]
+    };
   }
 };
 

@@ -651,7 +651,7 @@ p {
   position: relative;
   min-height: 420px;
   padding: 35px 0 110px 0;
-  background-image: url('../assets/hero_bg.png');
+  background-image: url('../assets/hero_bg.webp');
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
