@@ -875,23 +875,30 @@ const Admin = {
     let productRows = products.map(p => {
       const minPrice = p.variants && p.variants.length > 0 ? Math.min(...p.variants.map(v => v.priceEur)) : 0;
       const productCats = p.categories || (p.category ? [p.category] : []);
+      const productSubs = p.subcategories || (p.subcategory ? [p.subcategory] : []);
+      const productSubSubs = p.subsubcategories || (p.subsubcategory ? [p.subsubcategory] : []);
+
       let catDisplay = productCats.map(catId => {
         const catObj = CONFIG.categories.find(c => c.id === catId);
         let name = catObj ? catObj.name : catId;
-        if (p.subcategory && catObj && catObj.subcategories && productCats[0] === catId) {
-          const subObj = catObj.subcategories.find(s => s.id === p.subcategory);
-          if (subObj) {
-            name += ` / ${subObj.name}`;
-            if (p.subsubcategory && subObj.subcategories) {
-              const subsubObj = subObj.subcategories.find(ss => ss.id === p.subsubcategory);
-              if (subsubObj) {
-                name += ` / ${subsubObj.name}`;
+        if (catObj && catObj.subcategories) {
+          const assignedSubs = catObj.subcategories.filter(s => productSubs.includes(s.id));
+          if (assignedSubs.length > 0) {
+            const subDisplay = assignedSubs.map(subObj => {
+              let subName = subObj.name;
+              if (subObj.subcategories) {
+                const assignedSubSubs = subObj.subcategories.filter(ss => productSubSubs.includes(ss.id));
+                if (assignedSubSubs.length > 0) {
+                  subName += ` (${assignedSubSubs.map(ss => ss.name).join(", ")})`;
+                }
               }
-            }
+              return subName;
+            }).join(", ");
+            name += ` / ${subDisplay}`;
           }
         }
         return name;
-      }).join(", ");
+      }).join("; ");
       const thumb = p.images && p.images[0] ? p.images[0] : "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop";
 
       return `
@@ -999,16 +1006,16 @@ const Admin = {
               </div>
             </div>
             <div class="form-group" id="prod-subcategory-group" style="display: none;">
-              <label>Подкатегория</label>
-              <select id="prod-subcategory" class="form-control">
+              <label>Подкатегории (изберете една или повече)</label>
+              <div id="prod-subcategories-checkboxes" style="display: flex; flex-direction: column; gap: 6px; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; max-height: 150px; overflow-y: auto; background: white;">
                 <!-- Populated dynamically -->
-              </select>
+              </div>
             </div>
             <div class="form-group" id="prod-subsubcategory-group" style="display: none;">
-              <label>Под-подкатегория</label>
-              <select id="prod-subsubcategory" class="form-control">
+              <label>Под-подкатегории (изберете една или повече)</label>
+              <div id="prod-subsubcategories-checkboxes" style="display: flex; flex-direction: column; gap: 6px; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; max-height: 150px; overflow-y: auto; background: white;">
                 <!-- Populated dynamically -->
-              </select>
+              </div>
             </div>
             <div class="form-group">
               <label>Марка <span class="text-accent">*</span></label>
@@ -1173,23 +1180,30 @@ const Admin = {
     let productRows = products.map(p => {
       const minPrice = p.variants && p.variants.length > 0 ? Math.min(...p.variants.map(v => v.priceEur)) : 0;
       const productCats = p.categories || (p.category ? [p.category] : []);
+      const productSubs = p.subcategories || (p.subcategory ? [p.subcategory] : []);
+      const productSubSubs = p.subsubcategories || (p.subsubcategory ? [p.subsubcategory] : []);
+
       let catDisplay = productCats.map(catId => {
         const catObj = CONFIG.categories.find(c => c.id === catId);
         let name = catObj ? catObj.name : catId;
-        if (p.subcategory && catObj && catObj.subcategories && productCats[0] === catId) {
-          const subObj = catObj.subcategories.find(s => s.id === p.subcategory);
-          if (subObj) {
-            name += ` / ${subObj.name}`;
-            if (p.subsubcategory && subObj.subcategories) {
-              const subsubObj = subObj.subcategories.find(ss => ss.id === p.subsubcategory);
-              if (subsubObj) {
-                name += ` / ${subsubObj.name}`;
+        if (catObj && catObj.subcategories) {
+          const assignedSubs = catObj.subcategories.filter(s => productSubs.includes(s.id));
+          if (assignedSubs.length > 0) {
+            const subDisplay = assignedSubs.map(subObj => {
+              let subName = subObj.name;
+              if (subObj.subcategories) {
+                const assignedSubSubs = subObj.subcategories.filter(ss => productSubSubs.includes(ss.id));
+                if (assignedSubSubs.length > 0) {
+                  subName += ` (${assignedSubSubs.map(ss => ss.name).join(", ")})`;
+                }
               }
-            }
+              return subName;
+            }).join(", ");
+            name += ` / ${subDisplay}`;
           }
         }
         return name;
-      }).join(", ");
+      }).join("; ");
       const thumb = p.images && p.images[0] ? p.images[0] : "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop";
 
       return `
@@ -1553,31 +1567,31 @@ const Admin = {
 
     // Populate Category + Subcategory + Sub-subcategory selectors
     const categoryCheckboxes = document.querySelectorAll('input[name="prod-categories"]');
-    const subSelect = document.getElementById("prod-subcategory");
+    const subcategoriesContainer = document.getElementById("prod-subcategories-checkboxes");
     
-    const getFirstSelectedCategory = () => {
-      const checked = document.querySelector('input[name="prod-categories"]:checked');
-      return checked ? checked.value : "";
+    const getSelectedCategories = () => {
+      const checked = document.querySelectorAll('input[name="prod-categories"]:checked');
+      return Array.from(checked).map(cb => cb.value);
     };
 
-    if (categoryCheckboxes.length > 0 && subSelect) {
+    if (categoryCheckboxes.length > 0 && subcategoriesContainer) {
       const isEditing = this.editingProduct !== null;
-      const initialSubId = isEditing ? this.editingProduct.subcategory : null;
-      const initialSubSubId = isEditing ? this.editingProduct.subsubcategory : null;
       
-      const primaryCatId = isEditing ? (this.editingProduct.category || getFirstSelectedCategory()) : getFirstSelectedCategory();
-      this.handleProductCategoryChange(primaryCatId, initialSubId, initialSubSubId);
+      let initialSubIds = [];
+      let initialSubSubIds = [];
+      if (isEditing) {
+        initialSubIds = this.editingProduct.subcategories || (this.editingProduct.subcategory ? [this.editingProduct.subcategory] : []);
+        initialSubSubIds = this.editingProduct.subsubcategories || (this.editingProduct.subsubcategory ? [this.editingProduct.subsubcategory] : []);
+      }
+      
+      const selectedCats = getSelectedCategories();
+      this.handleProductCategoryChange(selectedCats, initialSubIds, initialSubSubIds);
 
       categoryCheckboxes.forEach(cb => {
         cb.addEventListener("change", () => {
-          const firstCat = getFirstSelectedCategory();
-          this.handleProductCategoryChange(firstCat);
+          const cats = getSelectedCategories();
+          this.handleProductCategoryChange(cats);
         });
-      });
-
-      subSelect.addEventListener("change", (e) => {
-        const firstCat = getFirstSelectedCategory();
-        this.handleProductSubcategoryChange(firstCat, e.target.value);
       });
     }
 
@@ -1854,8 +1868,13 @@ const Admin = {
     const categories = Array.from(categoryCheckboxes).map(cb => cb.value);
     const category = categories[0] || "";
     
-    const subcategory = document.getElementById("prod-subcategory") ? document.getElementById("prod-subcategory").value : "";
-    const subsubcategory = document.getElementById("prod-subsubcategory") ? document.getElementById("prod-subsubcategory").value : "";
+    const subcategoryCheckboxes = document.querySelectorAll('input[name="prod-subcategories"]:checked');
+    const subcategories = Array.from(subcategoryCheckboxes).map(cb => cb.value);
+    const subcategory = subcategories[0] || "";
+    
+    const subsubcategoryCheckboxes = document.querySelectorAll('input[name="prod-subsubcategories"]:checked');
+    const subsubcategories = Array.from(subsubcategoryCheckboxes).map(cb => cb.value);
+    const subsubcategory = subsubcategories[0] || "";
     const brand = document.getElementById("prod-brand").value.trim();
 
     // JS-based validation for required core fields (replaces silent HTML5 blocks)
@@ -1916,7 +1935,9 @@ const Admin = {
           target.category = category;
           target.categories = categories;
           target.subcategory = subcategory;
+          target.subcategories = subcategories;
           target.subsubcategory = subsubcategory;
+          target.subsubcategories = subsubcategories;
           target.brand = brand;
           target.description = description;
           target.tags = tags;
@@ -1959,7 +1980,9 @@ const Admin = {
         category,
         categories,
         subcategory,
+        subcategories,
         subsubcategory,
+        subsubcategories,
         brand,
         rating: 5.0,
         reviewsCount: 1,
@@ -2361,55 +2384,115 @@ const Admin = {
     }
   },
 
-  handleProductCategoryChange(catId, selectedSubId = null, selectedSubSubId = null) {
-    const subGroup = document.getElementById("prod-subcategory-group");
-    const subSelect = document.getElementById("prod-subcategory");
-    if (!subGroup || !subSelect) return;
+  handleProductCategoryChange(catIds, selectedSubIds = [], selectedSubSubIds = []) {
+    if (!Array.isArray(catIds)) {
+      catIds = catIds ? [catIds] : [];
+    }
+    if (!Array.isArray(selectedSubIds)) {
+      selectedSubIds = selectedSubIds ? [selectedSubIds] : [];
+    }
+    if (!Array.isArray(selectedSubSubIds)) {
+      selectedSubSubIds = selectedSubSubIds ? [selectedSubSubIds] : [];
+    }
 
-    const cat = CONFIG.categories.find(c => c.id === catId);
-    if (cat && cat.subcategories && cat.subcategories.length > 0) {
+    const subGroup = document.getElementById("prod-subcategory-group");
+    const subContainer = document.getElementById("prod-subcategories-checkboxes");
+    if (!subGroup || !subContainer) return;
+
+    // Gather all subcategories from all selected categories
+    let allSubs = [];
+    catIds.forEach(catId => {
+      const cat = CONFIG.categories.find(c => c.id === catId);
+      if (cat && cat.subcategories) {
+        cat.subcategories.forEach(sub => {
+          const displayLabel = catIds.length > 1 ? `${cat.name} > ${sub.name}` : sub.name;
+          allSubs.push({ ...sub, displayLabel, parentCatId: cat.id });
+        });
+      }
+    });
+
+    if (allSubs.length > 0) {
       subGroup.style.display = "block";
-      subSelect.innerHTML = `
-        <option value="">-- Изберете подкатегория (по избор) --</option>
-        ${cat.subcategories.map(sub => `
-          <option value="${sub.id}" ${selectedSubId === sub.id ? 'selected' : ''}>${sub.name}</option>
-        `).join("")}
-      `;
-      this.handleProductSubcategoryChange(catId, selectedSubId || subSelect.value, selectedSubSubId);
+      subContainer.innerHTML = allSubs.map(sub => {
+        const isChecked = selectedSubIds.includes(sub.id);
+        return `
+          <label style="display: flex; align-items: center; gap: 8px; font-weight: 500; font-size: 0.85rem; cursor: pointer; color: var(--text-dark); margin: 0;">
+            <input type="checkbox" name="prod-subcategories" value="${sub.id}" data-parent-cat="${sub.parentCatId}" ${isChecked ? 'checked' : ''} style="width: 16px; height: 16px; accent-color: var(--accent);">
+            <span>${sub.displayLabel}</span>
+          </label>
+        `;
+      }).join("");
+
+      const subCheckboxes = subContainer.querySelectorAll('input[name="prod-subcategories"]');
+      subCheckboxes.forEach(cb => {
+        cb.addEventListener("change", () => {
+          const selectedSubs = Array.from(subContainer.querySelectorAll('input[name="prod-subcategories"]:checked')).map(scb => scb.value);
+          this.handleProductSubcategoryChange(catIds, selectedSubs, selectedSubSubIds);
+        });
+      });
+
+      const currentSelectedSubs = Array.from(subContainer.querySelectorAll('input[name="prod-subcategories"]:checked')).map(scb => scb.value);
+      this.handleProductSubcategoryChange(catIds, currentSelectedSubs, selectedSubSubIds);
     } else {
       subGroup.style.display = "none";
-      subSelect.innerHTML = "";
-      this.handleProductSubcategoryChange(catId, "", null);
+      subContainer.innerHTML = "";
+      this.handleProductSubcategoryChange(catIds, [], []);
     }
   },
 
-  handleProductSubcategoryChange(catId, subId, selectedSubSubId = null) {
-    const subsubGroup = document.getElementById("prod-subsubcategory-group");
-    const subsubSelect = document.getElementById("prod-subsubcategory");
-    if (!subsubGroup || !subsubSelect) return;
+  handleProductSubcategoryChange(catIds, subIds, selectedSubSubIds = []) {
+    if (!Array.isArray(catIds)) {
+      catIds = catIds ? [catIds] : [];
+    }
+    if (!Array.isArray(subIds)) {
+      subIds = subIds ? [subIds] : [];
+    }
+    if (!Array.isArray(selectedSubSubIds)) {
+      selectedSubSubIds = selectedSubSubIds ? [selectedSubSubIds] : [];
+    }
 
-    if (!catId || !subId) {
+    const subsubGroup = document.getElementById("prod-subsubcategory-group");
+    const subsubContainer = document.getElementById("prod-subsubcategories-checkboxes");
+    if (!subsubGroup || !subsubContainer) return;
+
+    if (catIds.length === 0 || subIds.length === 0) {
       subsubGroup.style.display = "none";
-      subsubSelect.innerHTML = "";
+      subsubContainer.innerHTML = "";
       return;
     }
 
-    const cat = CONFIG.categories.find(c => c.id === catId);
-    if (cat && cat.subcategories) {
-      const sub = cat.subcategories.find(s => s.id === subId);
-      if (sub && sub.subcategories && sub.subcategories.length > 0) {
-        subsubGroup.style.display = "block";
-        subsubSelect.innerHTML = `
-          <option value="">-- Изберете под-подкатегория (по избор) --</option>
-          ${sub.subcategories.map(subsub => `
-            <option value="${subsub.id}" ${selectedSubSubId === subsub.id ? 'selected' : ''}>${subsub.name}</option>
-          `).join("")}
-        `;
-        return;
+    let allSubSubs = [];
+    catIds.forEach(catId => {
+      const cat = CONFIG.categories.find(c => c.id === catId);
+      if (cat && cat.subcategories) {
+        cat.subcategories.forEach(sub => {
+          if (subIds.includes(sub.id) && sub.subcategories) {
+            sub.subcategories.forEach(subsub => {
+              const displayLabel = subIds.length > 1 
+                ? `${sub.name} > ${subsub.name}` 
+                : subsub.name;
+              allSubSubs.push({ ...subsub, displayLabel, parentSubId: sub.id });
+            });
+          }
+        });
       }
+    });
+
+    if (allSubSubs.length > 0) {
+      subsubGroup.style.display = "block";
+      subsubContainer.innerHTML = allSubSubs.map(subsub => {
+        const isChecked = selectedSubSubIds.includes(subsub.id);
+        return `
+          <label style="display: flex; align-items: center; gap: 8px; font-weight: 500; font-size: 0.85rem; cursor: pointer; color: var(--text-dark); margin: 0;">
+            <input type="checkbox" name="prod-subsubcategories" value="${subsub.id}" data-parent-sub="${subsub.parentSubId}" ${isChecked ? 'checked' : ''} style="width: 16px; height: 16px; accent-color: var(--accent);">
+            <span>${subsub.displayLabel}</span>
+          </label>
+        `;
+      }).join("");
+    } else {
+      subsubGroup.style.display = "none";
+      subsubContainer.innerHTML = "";
     }
-    subsubGroup.style.display = "none";
-    subsubSelect.innerHTML = "";
   },
 
   renderSubcategoriesList() {

@@ -166,7 +166,10 @@ const Catalog = {
       });
     }
     if (this.activeSubcategory) {
-      scopeProducts = scopeProducts.filter(p => p.subcategory === this.activeSubcategory);
+      scopeProducts = scopeProducts.filter(p => {
+        const productSubs = p.subcategories || (p.subcategory ? [p.subcategory] : []);
+        return productSubs.includes(this.activeSubcategory);
+      });
     }
 
     // 1. Brands
@@ -306,10 +309,16 @@ const Catalog = {
       }
 
       // 2. Subcategory check
-      if (this.activeSubcategory && p.subcategory !== this.activeSubcategory) return false;
+      if (this.activeSubcategory) {
+        const productSubs = p.subcategories || (p.subcategory ? [p.subcategory] : []);
+        if (!productSubs.includes(this.activeSubcategory)) return false;
+      }
 
       // 2.5. Sub-subcategory check
-      if (this.activeSubSubcategory && p.subsubcategory !== this.activeSubSubcategory) return false;
+      if (this.activeSubSubcategory) {
+        const productSubSubs = p.subsubcategories || (p.subsubcategory ? [p.subsubcategory] : []);
+        if (!productSubSubs.includes(this.activeSubSubcategory)) return false;
+      }
 
       // 3. Search check
       if (this.searchQuery) {
@@ -415,16 +424,18 @@ const Catalog = {
     const breadcrumb = document.getElementById("product-detail-breadcrumb");
     if (breadcrumb) {
       const primaryCatId = (product.categories && product.categories.length > 0) ? product.categories[0] : product.category;
+      const primarySubId = (product.subcategories && product.subcategories.length > 0) ? product.subcategories[0] : product.subcategory;
+      const primarySubSubId = (product.subsubcategories && product.subsubcategories.length > 0) ? product.subsubcategories[0] : product.subsubcategory;
       const cat = CONFIG.categories.find(c => c.id === primaryCatId);
       let breadcrumbHtml = `<a onclick="App.navigate('home')">Начало</a>`;
       if (cat) {
         breadcrumbHtml += ` › <a onclick="Catalog.selectCategory('${cat.id}'); App.navigate('catalog')">${cat.name}</a>`;
-        if (product.subcategory && cat.subcategories) {
-          const subObj = cat.subcategories.find(s => s.id === product.subcategory);
+        if (primarySubId && cat.subcategories) {
+          const subObj = cat.subcategories.find(s => s.id === primarySubId);
           if (subObj) {
             breadcrumbHtml += ` › <a onclick="Catalog.selectCategory('${cat.id}'); Catalog.selectSubcategory('${subObj.id}'); App.navigate('catalog')">${subObj.name}</a>`;
-            if (product.subsubcategory && subObj.subcategories) {
-              const subsubObj = subObj.subcategories.find(ss => ss.id === product.subsubcategory);
+            if (primarySubSubId && subObj.subcategories) {
+              const subsubObj = subObj.subcategories.find(ss => ss.id === primarySubSubId);
               if (subsubObj) {
                 breadcrumbHtml += ` › <a onclick="Catalog.selectCategory('${cat.id}'); Catalog.selectSubcategory('${subObj.id}'); Catalog.selectSubSubcategory('${subsubObj.id}'); App.navigate('catalog')">${subsubObj.name}</a>`;
               }
