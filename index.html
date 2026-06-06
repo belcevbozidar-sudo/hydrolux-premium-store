@@ -1012,11 +1012,32 @@
   </style>
 
   <!-- ==========================================================================
-       ✉️ FLOATING QUICK INQUIRY BAR (Остави съобщение)
+       🤖 FLOATING AI CHATBOT WIDGET
        ========================================================================== -->
-  <div class="floating-chat-btn" onclick="Catalog.openInquiryModal()">
-    <span class="chat-btn-icon">✉️</span>
-    <span class="chat-btn-text">Остави съобщение</span>
+  <div class="floating-chat-btn" onclick="Chatbot.toggle()">
+    <span class="chat-btn-icon">🤖</span>
+    <span class="chat-btn-text">AI Асистент</span>
+  </div>
+
+  <!-- AI Chatbot Window -->
+  <div id="ai-chatbot-window" class="chatbot-window" style="display: none;">
+    <div class="chatbot-header">
+      <div class="chatbot-header-info">
+        <span class="chatbot-header-status"></span>
+        <h4>🤖 AI Асистент</h4>
+      </div>
+      <button class="chatbot-close-btn" onclick="Chatbot.toggle()">&times;</button>
+    </div>
+    <div id="chatbot-messages" class="chatbot-messages"></div>
+    <div id="chatbot-typing" class="chatbot-typing" style="display: none;">
+      <span class="typing-dot"></span>
+      <span class="typing-dot"></span>
+      <span class="typing-dot"></span>
+    </div>
+    <div class="chatbot-input-container">
+      <input type="text" id="chatbot-input" placeholder="Попитайте за маркуч, размери..." onkeydown="if(event.key === 'Enter') Chatbot.sendMessage()">
+      <button id="chatbot-send-btn" onclick="Chatbot.sendMessage()">➔</button>
+    </div>
   </div>
 
   <!-- ==========================================================================
@@ -1089,6 +1110,7 @@
   <script src="js/config.js" defer></script>
   <script src="js/components/builder.js" defer></script>
   <script src="js/components/cart.js" defer></script>
+  <script src="js/components/chatbot.js" defer></script>
   <script src="js/catalog.js" defer></script>
   <script src="js/admin.js" defer></script>
   <script src="js/app.js" defer></script>

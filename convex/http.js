@@ -117,6 +117,7 @@ http.route({ path: "/api/auth/google", method: "OPTIONS", handler: optionsHandle
 http.route({ path: "/api/auth/orders", method: "OPTIONS", handler: optionsHandler });
 http.route({ path: "/api/admin/orders", method: "OPTIONS", handler: optionsHandler });
 http.route({ path: "/api/admin/order/status", method: "OPTIONS", handler: optionsHandler });
+http.route({ path: "/api/chatbot", method: "OPTIONS", handler: optionsHandler });
 
 // POST /api/auth/register
 http.route({
@@ -239,6 +240,27 @@ http.route({
       return jsonResponse(result);
     } catch (e) {
       return jsonResponse({ ok: false, error: e.message }, { status: 400 });
+    }
+  }),
+});
+
+// POST /api/chatbot
+http.route({
+  path: "/api/chatbot",
+  method: "POST",
+  handler: httpAction(async (ctx, request) => {
+    try {
+      const body = await request.json();
+      if (!body.messages || !body.catalog) {
+        return jsonResponse({ ok: false, error: "Липсват съобщения или каталог" }, { status: 400 });
+      }
+      const result = await ctx.runAction(api.chatbot.respond, {
+        messages: body.messages,
+        catalog: body.catalog,
+      });
+      return jsonResponse(result);
+    } catch (e) {
+      return jsonResponse({ ok: false, error: e.message }, { status: 500 });
     }
   }),
 });
