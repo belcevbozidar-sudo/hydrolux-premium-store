@@ -445,8 +445,9 @@ function mergeById(remoteItems, localItems) {
   return merged;
 }
 
-// Clear localStorage products/categories if they contain old unsplash urls to migrate to new local assets
-if (localStorage.getItem("hydrolux_products") && localStorage.getItem("hydrolux_products").includes("unsplash.com")) {
+// Clear localStorage products/categories if they contain old unsplash urls or png image extensions to migrate to new local webp assets
+if (localStorage.getItem("hydrolux_products") && 
+    (localStorage.getItem("hydrolux_products").includes("unsplash.com") || localStorage.getItem("hydrolux_products").includes(".png"))) {
   localStorage.removeItem("hydrolux_products");
   localStorage.removeItem("hydrolux_categories");
   localStorage.removeItem("hydrolux_builder_options");
@@ -580,6 +581,31 @@ CONFIG.ready = (async () => {
     if (hasRemoteBuilderOptions) {
       CONFIG.builderOptions = state.builderOptions;
       localStorage.setItem("hydrolux_builder_options", JSON.stringify(CONFIG.builderOptions));
+    }
+
+    // Clean any legacy .png files from CONFIG.products and CONFIG.categories, replacing them with .webp
+    let hasLegacyPng = false;
+    CONFIG.products.forEach(p => {
+      if (p.images) {
+        p.images = p.images.map(img => {
+          if (typeof img === "string" && img.endsWith(".png")) {
+            hasLegacyPng = true;
+            return img.slice(0, -4) + ".webp";
+          }
+          return img;
+        });
+      }
+    });
+
+    CONFIG.categories.forEach(c => {
+      if (c.image && typeof c.image === "string" && c.image.endsWith(".png")) {
+        hasLegacyPng = true;
+        c.image = c.image.slice(0, -4) + ".webp";
+      }
+    });
+
+    if (hasLegacyPng) {
+      shouldSyncMergedState = true;
     }
 
     saveLocalState();
