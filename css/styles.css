@@ -4877,9 +4877,20 @@ td .admin-actions-cell {
   box-shadow: 0 6px 20px rgba(15, 61, 112, 0.6);
 }
 
-.chat-btn-icon {
-  font-size: 1.8rem;
-  line-height: 1;
+.chatbot-avatar-btn-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.chatbot-header-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
 }
 
 .chatbot-window {
