@@ -114,6 +114,9 @@ const Cart = {
     this.items = this.items.filter(item => item.cartKey !== cartKey);
     this.save();
     this.renderDrawer();
+    if (typeof App !== "undefined" && App.currentView === "checkout") {
+      this.renderCheckoutSummary();
+    }
   },
 
   updateQuantity(cartKey, newQty) {
@@ -122,6 +125,9 @@ const Cart = {
       item.quantity = Math.max(1, parseInt(newQty) || 1);
       this.save();
       this.renderDrawer();
+      if (typeof App !== "undefined" && App.currentView === "checkout") {
+        this.renderCheckoutSummary();
+      }
     }
   },
 
@@ -280,15 +286,28 @@ const Cart = {
       <div class="checkout-summary-card">
         <h4>📦 Обобщение на поръчката</h4>
         <div class="checkout-summary-items">
-          ${this.items.map(item => `
-            <div class="checkout-summary-item font-small">
-              <div>
-                <strong>${item.name}</strong> x ${item.quantity}
-                ${item.variantName ? `<div class="text-muted font-xs">${item.variantName}</div>` : ""}
+          ${this.items.map(item => {
+            const cartKey = this.escapeJsString(item.cartKey);
+            return `
+              <div class="checkout-summary-item font-small" style="display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 12px;">
+                <div style="flex: 1;">
+                  <strong style="display: block;">${item.name}</strong>
+                  ${item.variantName ? `<div class="text-muted font-xs">${item.variantName}</div>` : ""}
+                  ${item.specsText ? `<div class="text-muted font-xs">${item.specsText}</div>` : ""}
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <div class="quantity-input-wrapper small" style="margin-bottom: 0;">
+                    <button type="button" class="btn btn-secondary btn-icon small" onclick="Cart.updateQuantity('${cartKey}', ${item.quantity - 1})">-</button>
+                    <input type="number" class="form-control text-center small qty-input" value="${item.quantity}" style="width: 40px;"
+                           onchange="Cart.updateQuantity('${cartKey}', this.value)">
+                    <button type="button" class="btn btn-secondary btn-icon small" onclick="Cart.updateQuantity('${cartKey}', ${item.quantity + 1})">+</button>
+                  </div>
+                  <div class="text-right" style="min-width: 65px; font-weight: 700; color: var(--text-dark);">${formatPrice(item.priceEur * item.quantity).eur}</div>
+                  <button type="button" class="btn-delete" onclick="Cart.removeItem('${cartKey}')" style="background: none; border: none; cursor: pointer; font-size: 0.95rem; padding: 0 4px;" title="Премахни">🗑️</button>
+                </div>
               </div>
-              <div class="text-right">${formatPrice(item.priceEur * item.quantity).eur}</div>
-            </div>
-          `).join("")}
+            `;
+          }).join("")}
         </div>
         <div class="divider"></div>
         <div class="checkout-summary-totals">
