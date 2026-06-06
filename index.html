@@ -735,6 +735,12 @@
                   </div>
                 </div>
 
+                <div class="form-group" id="econt-office-btn-container" style="display: none; margin-bottom: 15px;">
+                  <button type="button" class="btn btn-accent btn-block" id="econt-office-select-btn" onclick="Cart.openEcontLocator()" style="display: flex; align-items: center; justify-content: center; gap: 8px; font-weight: 700; background: linear-gradient(135deg, #0f3d70 0%, #1e5ba3 100%); border: none; padding: 12px; border-radius: 8px; color: white; width: 100%; cursor: pointer;">
+                    🏢 Избери офис на Еконт от картата
+                  </button>
+                </div>
+
                 <div class="form-group">
                   <label for="checkout-address" id="delivery-address-label">Точен адрес за доставка</label>
                   <input type="text" name="delivery_address" id="checkout-address" class="form-control" required placeholder="ул. Примерна №5, вх. А, ап. 2">
@@ -1056,6 +1062,29 @@
       </div>
     </div>
   </footer>
+
+  <!-- Econt Office Locator Modal -->
+  <div id="econt-locator-modal" class="custom-modal-backdrop" style="display: none;">
+    <div class="econt-locator-modal-container">
+      <div class="econt-locator-modal-header">
+        <h3>🏢 Избор на офис на Еконт</h3>
+        <button class="econt-locator-close-btn" onclick="Cart.closeEcontLocator()">&times;</button>
+      </div>
+      <div class="econt-locator-modal-body">
+        <div id="econt-iframe-loader" class="econt-spinner-wrapper">
+          <div class="econt-spinner"></div>
+          <p>Зареждане на картата на Еконт...</p>
+        </div>
+        <iframe 
+          id="econt-locator-iframe" 
+          title="Econt Office Locator" 
+          src="" 
+          allow="geolocation"
+          style="width: 100%; height: 500px; border: none; border-radius: 12px; display: none;">
+        </iframe>
+      </div>
+    </div>
+  </div>
 
   <!-- ==========================================================================
        JAVASCRIPT MODULES IMPORT

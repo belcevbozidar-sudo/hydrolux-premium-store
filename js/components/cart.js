@@ -12,6 +12,16 @@ const Cart = {
       }
     }
     this.updateCartBadge();
+
+    // Register Econt message event listener
+    window.addEventListener("message", (event) => {
+      if (event.origin !== "https://officelocator.econt.com" && event.origin !== "https://offices.econt.com") {
+        return;
+      }
+      if (event.data && event.data.office) {
+        this.onEcontOfficeSelected(event.data.office);
+      }
+    });
   },
 
   save() {
@@ -335,6 +345,7 @@ const Cart = {
     const addressInput = document.getElementById("checkout-address");
     const cityInput = document.getElementById("checkout-city");
     const postcodeInput = document.getElementById("checkout-postcode");
+    const econtBtnContainer = document.getElementById("econt-office-btn-container");
 
     if (!detailsContainer || !shopMessage || !addressInput || !cityInput || !postcodeInput) return;
 
@@ -344,6 +355,7 @@ const Cart = {
       addressInput.removeAttribute("required");
       cityInput.removeAttribute("required");
       postcodeInput.removeAttribute("required");
+      if (econtBtnContainer) econtBtnContainer.style.display = "none";
     } else {
       detailsContainer.style.display = "block";
       shopMessage.style.display = "none";
@@ -354,9 +366,11 @@ const Cart = {
       if (value === "office") {
         addressLabel.textContent = "Адрес или име на офис на Еконт";
         addressInput.placeholder = "гр. София, Офис Еконт - Младост";
+        if (econtBtnContainer) econtBtnContainer.style.display = "block";
       } else {
         addressLabel.textContent = "Точен адрес за доставка";
         addressInput.placeholder = "ул. Примерна №5, вх. А, ап. 2";
+        if (econtBtnContainer) econtBtnContainer.style.display = "none";
       }
     }
   },
@@ -571,5 +585,71 @@ const Cart = {
       toast.classList.remove("show");
       setTimeout(() => toast.remove(), 300);
     }, 3000);
+  },
+
+  openEcontLocator() {
+    const modal = document.getElementById("econt-locator-modal");
+    const iframe = document.getElementById("econt-locator-iframe");
+    const loader = document.getElementById("econt-iframe-loader");
+
+    if (modal && iframe) {
+      modal.style.display = "flex";
+      if (loader) loader.style.display = "flex";
+      iframe.style.display = "none";
+
+      const siteUrl = window.location.origin;
+      iframe.src = `https://officelocator.econt.com/?lang=bg&shopUrl=${encodeURIComponent(siteUrl)}`;
+
+      iframe.onload = () => {
+        if (loader) loader.style.display = "none";
+        iframe.style.display = "block";
+      };
+    }
+  },
+
+  closeEcontLocator() {
+    const modal = document.getElementById("econt-locator-modal");
+    const iframe = document.getElementById("econt-locator-iframe");
+    if (modal) {
+      modal.style.display = "none";
+    }
+    if (iframe) {
+      iframe.src = "";
+    }
+  },
+
+  onEcontOfficeSelected(office) {
+    const cityInput = document.getElementById("checkout-city");
+    const postcodeInput = document.getElementById("checkout-postcode");
+    const addressInput = document.getElementById("checkout-address");
+
+    if (office) {
+      const cityName = office.address?.city?.name || "";
+      if (cityName && cityInput) {
+        cityInput.value = "гр. " + cityName;
+      }
+
+      const postcode = office.address?.city?.postCode || office.address?.zip || "";
+      if (postcode && postcodeInput) {
+        postcodeInput.value = postcode;
+      }
+
+      let officeName = office.name || "";
+      let fullAddress = office.address?.fullAddress || "";
+      
+      let displayAddress = officeName;
+      if (office.code) {
+        displayAddress += " (код: " + office.code + ")";
+      }
+      if (fullAddress) {
+        displayAddress += ", " + fullAddress;
+      }
+
+      if (addressInput) {
+        addressInput.value = displayAddress;
+      }
+
+      this.closeEcontLocator();
+    }
   }
 };
