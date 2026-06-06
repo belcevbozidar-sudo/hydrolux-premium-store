@@ -215,6 +215,7 @@ const Cart = {
         <div class="cart-item">
           <div class="cart-item-info">
             <div class="cart-item-title">${item.name}</div>
+            <div class="cart-item-code font-xs text-muted" style="font-weight: 600; margin-bottom: 2px;">Код: ${item.code}</div>
             ${item.variantName ? `<div class="cart-item-variant">${item.variantName}</div>` : ""}
             ${item.specsText ? `<div class="cart-item-specs font-xs text-muted">${item.specsText}</div>` : ""}
             <div class="cart-item-pricing font-small">
@@ -292,6 +293,7 @@ const Cart = {
               <div class="checkout-summary-item font-small" style="display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 12px;">
                 <div style="flex: 1;">
                   <strong style="display: block;">${item.name}</strong>
+                  <div class="text-muted font-xs" style="font-weight: 600;">Код: ${item.code}</div>
                   ${item.variantName ? `<div class="text-muted font-xs">${item.variantName}</div>` : ""}
                   ${item.specsText ? `<div class="text-muted font-xs">${item.specsText}</div>` : ""}
                 </div>
