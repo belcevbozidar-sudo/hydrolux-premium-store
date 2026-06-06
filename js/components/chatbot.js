@@ -74,42 +74,85 @@ const Chatbot = {
       parsedContent = parsedContent.replace(/\n/g, "<br>");
       
       // Generate cards HTML for recommendations
-      const cardsHtml = recommendations.map(prodId => {
-        const product = CONFIG.products.find(p => p.id === prodId);
-        if (!product) return "";
-        
-        const coverImg = product.images[0] || "assets/air_hoses.webp";
-        const prices = product.variants.map(v => v.priceEur);
-        const minPrice = Math.min(...prices);
-        const priceText = formatPrice(minPrice, product.unit === "м").eur;
-        
-        return `
-          <a class="chatbot-recommended-product" href="#product-detail/${product.id}" onclick="Chatbot.handleCardClick('${product.id}')">
-            <img src="${coverImg}" alt="${product.name}" class="chatbot-rec-img" onerror="this.src='assets/air_hoses.webp'">
-            <div class="chatbot-rec-info">
-              <span class="chatbot-rec-name">${product.name}</span>
-              <span class="chatbot-rec-brand">${product.brand || "Хидролукс"}</span>
-              <span class="chatbot-rec-price">${priceText}</span>
+      let carouselHtml = "";
+      if (recommendations.length > 0) {
+        const cardsHtml = recommendations.map(prodId => {
+          const product = CONFIG.products.find(p => p.id === prodId);
+          if (!product) return "";
+          
+          const coverImg = product.images[0] || "assets/air_hoses.webp";
+          const prices = product.variants.map(v => v.priceEur);
+          const minPrice = Math.min(...prices);
+          const priceText = formatPrice(minPrice, product.unit === "м").eur;
+          
+          return `
+            <a class="chatbot-recommended-product" href="#product-detail/${product.id}" onclick="Chatbot.handleCardClick(event, '${product.id}')">
+              <img src="${coverImg}" alt="${product.name}" class="chatbot-rec-img" onerror="this.src='assets/air_hoses.webp'">
+              <div class="chatbot-rec-info">
+                <span class="chatbot-rec-name">${product.name}</span>
+                <span class="chatbot-rec-brand">${product.brand || "Хидролукс"}</span>
+                <span class="chatbot-rec-price">${priceText}</span>
+              </div>
+            </a>
+          `;
+        }).join("");
+
+        // Generate carousel wrapper with arrows if recommendations.length > 2
+        const showArrows = recommendations.length > 2;
+        const carouselId = `carousel-${Math.random().toString(36).substr(2, 9)}`;
+        carouselHtml = `
+          <div class="chatbot-products-carousel-wrapper">
+            ${showArrows ? `<button class="chatbot-carousel-btn prev" onclick="Chatbot.scrollCarousel('${carouselId}', -1)">&#10094;</button>` : ""}
+            <div id="${carouselId}" class="chatbot-products-carousel">
+              ${cardsHtml}
             </div>
-          </a>
+            ${showArrows ? `<button class="chatbot-carousel-btn next" onclick="Chatbot.scrollCarousel('${carouselId}', 1)">&#10095;</button>` : ""}
+          </div>
         `;
-      }).join("");
+      }
 
       return `
         <div class="chatbot-message ${cls}">
           ${parsedContent}
-          ${cardsHtml}
+          ${carouselHtml}
         </div>
       `;
     }).join("");
 
-    // Scroll to bottom
-    msgsEl.scrollTop = msgsEl.scrollHeight;
+    // Scroll handling:
+    // If scrollToBotResponse is true, scroll to the top of the new response.
+    // Otherwise, scroll to the bottom.
+    if (this.scrollToBotResponse) {
+      const messageElements = msgsEl.querySelectorAll(".chatbot-message");
+      if (messageElements.length > 0) {
+        const lastMsgEl = messageElements[messageElements.length - 1];
+        msgsEl.scrollTop = lastMsgEl.offsetTop - 10;
+      }
+      this.scrollToBotResponse = false; // Reset the flag
+    } else {
+      msgsEl.scrollTop = msgsEl.scrollHeight;
+    }
   },
 
-  handleCardClick(prodId) {
+  handleCardClick(event, prodId) {
+    if (event && event.preventDefault) {
+      event.preventDefault();
+      event.stopPropagation();
+    } else if (typeof event === "string" && !prodId) {
+      prodId = event;
+    }
     this.toggle(); // Close chatbot window
-    Catalog.openProductDetails(prodId);
+    if (prodId) {
+      Catalog.openProductDetails(prodId);
+    }
+  },
+
+  scrollCarousel(carouselId, direction) {
+    const carousel = document.getElementById(carouselId);
+    if (carousel) {
+      const scrollAmount = (carousel.clientWidth / 2 + 4) * direction;
+      carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    }
   },
 
   async sendMessage() {
@@ -185,6 +228,7 @@ const Chatbot = {
       this.messages.push({ role: "assistant", content: "Възникна проблем с връзката. Моля, проверете интернет връзката си и опитайте отново." });
     }
 
+    this.scrollToBotResponse = true;
     this.renderMessages();
     this.saveMessages();
   },

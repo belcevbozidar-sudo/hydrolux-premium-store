@@ -8,6 +8,7 @@
  * @module
  */
 
+import type * as chatbot from "../chatbot.js";
 import type * as http from "../http.js";
 import type * as store from "../store.js";
 
@@ -18,6 +19,7 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  chatbot: typeof chatbot;
   http: typeof http;
   store: typeof store;
 }>;
