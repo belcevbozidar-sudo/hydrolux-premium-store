@@ -1445,7 +1445,7 @@ const Admin = {
 
   getSpecialOfferLabel(type, customText = "") {
     if (type === "hot") return "ГОРЕЩА ОФЕРТА";
-    if (type === "other") return customText.trim();
+    if (type === "other") return (customText || "").trim();
     return "СЕЗОННО НАМАЛЕНИЕ";
   },
 
@@ -1460,7 +1460,7 @@ const Admin = {
       let hasValue = false;
       row.querySelectorAll(".var-cell").forEach(input => {
         const key = input.getAttribute("data-key");
-        const val = input.value.trim();
+        const val = (input.value || "").trim();
         if (val !== "") {
           hasValue = true;
         }
@@ -1862,8 +1862,8 @@ const Admin = {
         return;
       }
 
-      const name = document.getElementById("prod-name").value.trim();
-      const code = document.getElementById("prod-code").value.trim();
+      const name = (document.getElementById("prod-name")?.value || "").trim();
+      const code = (document.getElementById("prod-code")?.value || "").trim();
       
       const categoryCheckboxes = document.querySelectorAll('input[name="prod-categories"]:checked');
       const categories = Array.from(categoryCheckboxes).map(cb => cb.value);
@@ -1876,29 +1876,29 @@ const Admin = {
       const subsubcategoryCheckboxes = document.querySelectorAll('input[name="prod-subsubcategories"]:checked');
       const subsubcategories = Array.from(subsubcategoryCheckboxes).map(cb => cb.value);
       const subsubcategory = subsubcategories[0] || "";
-      const brand = document.getElementById("prod-brand").value.trim();
+      const brand = (document.getElementById("prod-brand")?.value || "").trim();
 
       // JS-based validation for required core fields (replaces silent HTML5 blocks)
-      if (!name) { alert("Моля въведете Име на продукта!"); document.getElementById("prod-name").focus(); return; }
-      if (!code) { alert("Моля въведете Код / Артикулен номер!"); document.getElementById("prod-code").focus(); return; }
+      if (!name) { alert("Моля въведете Име на продукта!"); document.getElementById("prod-name")?.focus(); return; }
+      if (!code) { alert("Моля въведете Код / Артикулен номер!"); document.getElementById("prod-code")?.focus(); return; }
       if (categories.length === 0) { alert("Моля изберете поне една Категория!"); return; }
-      if (!brand) { alert("Моля въведете Марка!"); document.getElementById("prod-brand").focus(); return; }
+      if (!brand) { alert("Моля въведете Марка!"); document.getElementById("prod-brand")?.focus(); return; }
       const editor = document.getElementById("prod-description-editor");
-      const description = editor ? editor.innerHTML.trim() : "";
-      const tagsInput = document.getElementById("prod-tags").value;
-      const isSpecial = document.getElementById("prod-is-special").checked;
-      const specialOfferType = isSpecial ? document.getElementById("prod-special-type").value : "";
+      const description = editor ? (editor.innerHTML || "").trim() : "";
+      const tagsInput = document.getElementById("prod-tags")?.value || "";
+      const isSpecial = document.getElementById("prod-is-special")?.checked || false;
+      const specialOfferType = isSpecial ? (document.getElementById("prod-special-type")?.value || "") : "";
       const specialOfferText = isSpecial && specialOfferType === "other"
-        ? document.getElementById("prod-special-text").value.trim()
+        ? (document.getElementById("prod-special-text")?.value || "").trim()
         : "";
 
       if (isSpecial && specialOfferType === "other" && !specialOfferText) {
         alert("Моля въведете текст за специалното предложение!");
-        document.getElementById("prod-special-text").focus();
+        document.getElementById("prod-special-text")?.focus();
         return;
       }
 
-      const tags = tagsInput ? tagsInput.split(",").map(t => t.trim()) : [];
+      const tags = tagsInput ? tagsInput.split(",").map(t => (t || "").trim()) : [];
       
       // Read all uploaded base64 / url images in order
       const images = this.uploadedImages.filter(img => img !== null && img !== "");
@@ -1911,8 +1911,10 @@ const Admin = {
       // 1. Collect technical specifications
       const specs = [];
       document.querySelectorAll(".admin-spec-row").forEach(row => {
-        const key = row.querySelector(".spec-key").value.trim();
-        const val = row.querySelector(".spec-val").value.trim();
+        const keyEl = row.querySelector(".spec-key");
+        const valEl = row.querySelector(".spec-val");
+        const key = (keyEl?.value || "").trim();
+        const val = (valEl?.value || "").trim();
         if (key && val) {
           specs.push({ key, value: val });
         }
