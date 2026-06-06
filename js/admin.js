@@ -3641,11 +3641,12 @@ const Admin = {
     }
     this.checkForNewOrders();
     this.orderPollingInterval = setInterval(() => {
-      const adminView = document.getElementById("admin-view");
-      if (adminView && adminView.classList.contains("active")) {
+      const adminActive = (typeof App !== "undefined" && App.currentView === "admin") || 
+                          (document.getElementById("admin-view")?.classList.contains("active"));
+      if (adminActive) {
         this.checkForNewOrders();
       }
-    }, 15000);
+    }, 4000); // Check every 4 seconds for instant real-time notifications
   },
 
   async checkForNewOrders() {
@@ -3707,6 +3708,8 @@ const Admin = {
   },
 
   showNewOrdersNotification(newOrders) {
+    this.currentlyNotifiedOrderNumbers = newOrders.map(o => o.orderNumber);
+
     let modal = document.getElementById("admin-new-orders-modal");
     if (modal) {
       const contentEl = document.getElementById("admin-new-orders-list-content");
@@ -3732,7 +3735,7 @@ const Admin = {
         <div id="admin-new-orders-list-content" class="new-orders-scroll-list">
           ${this.renderNewOrdersListHTML(newOrders)}
         </div>
-        <button class="notification-ack-btn" onclick="Admin.acknowledgeNewOrders(${JSON.stringify(newOrders.map(o => o.orderNumber)).replace(/"/g, '&quot;')})">
+        <button class="notification-ack-btn" onclick="Admin.acknowledgeNewOrders()">
           Разбрах
         </button>
       </div>
@@ -3771,6 +3774,7 @@ const Admin = {
   },
 
   acknowledgeNewOrders(orderNumbers) {
+    const numsToAck = orderNumbers || this.currentlyNotifiedOrderNumbers || [];
     let acknowledged = [];
     const stored = localStorage.getItem("hydrolux_acknowledged_orders");
     if (stored) {
@@ -3781,7 +3785,7 @@ const Admin = {
       }
     }
 
-    orderNumbers.forEach(num => {
+    numsToAck.forEach(num => {
       if (!acknowledged.includes(num)) {
         acknowledged.push(num);
       }
