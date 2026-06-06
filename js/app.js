@@ -444,8 +444,7 @@ const App = {
   },
 
   handleProductSuggestionClick(prodId) {
-    Catalog.openProductDetails(prodId);
-    this.navigate("product-detail");
+    this.navigate(`product-detail/${prodId}`);
     const dropdown = document.getElementById("search-suggestions-dropdown");
     if (dropdown) dropdown.style.display = "none";
   },
