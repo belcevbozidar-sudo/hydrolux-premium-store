@@ -67,14 +67,14 @@ const App = {
         <div class="product-card card" onclick="Catalog.openProductDetails('${p.id}')">
           <div class="product-badge ${badgeClass}">${badgeText}</div>
           
-          <button class="wishlist-btn ${isFav ? 'active' : ''}" onclick="event.stopPropagation(); App.toggleFavorite('${p.id}', this)" title="Любими">
-            <svg class="heart-icon" viewBox="0 0 24 24" width="18" height="18">
+          <button class="wishlist-btn ${isFav ? 'active' : ''}" onclick="event.stopPropagation(); App.toggleFavorite('${p.id}', this)" title="Любими" aria-label="Добави в любими">
+            <svg class="heart-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
               <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none" stroke="currentColor" stroke-width="2"/>
             </svg>
           </button>
 
           <div class="product-card-img-wrapper">
-            <img src="${p.images[0]}" alt="${p.name} - ${p.brand} | Хидролукс Груп" class="product-card-img" onerror="this.src='assets/air_hoses.webp'">
+            <img src="${p.images[0]}" alt="${p.name} - ${p.brand} | Хидролукс Груп" class="product-card-img" onerror="this.src='assets/air_hoses.webp'" width="240" height="240" loading="lazy">
           </div>
           <div class="product-card-body">
             <h4 class="product-card-title">${p.name}</h4>
@@ -122,14 +122,14 @@ const App = {
             <div class="product-card card" onclick="Catalog.openProductDetails('${p.id}')">
               <div class="product-badge badge-orange">${badgeText}</div>
               
-              <button class="wishlist-btn ${isFav ? 'active' : ''}" onclick="event.stopPropagation(); App.toggleFavorite('${p.id}', this)" title="Любими">
-                <svg class="heart-icon" viewBox="0 0 24 24" width="18" height="18">
+              <button class="wishlist-btn ${isFav ? 'active' : ''}" onclick="event.stopPropagation(); App.toggleFavorite('${p.id}', this)" title="Любими" aria-label="Добави в любими">
+                <svg class="heart-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
                   <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none" stroke="currentColor" stroke-width="2"/>
                 </svg>
               </button>
 
               <div class="product-card-img-wrapper">
-                <img src="${p.images[0]}" alt="${p.name} - ${p.brand} | Хидролукс Груп" class="product-card-img" onerror="this.src='assets/air_hoses.webp'">
+                <img src="${p.images[0]}" alt="${p.name} - ${p.brand} | Хидролукс Груп" class="product-card-img" onerror="this.src='assets/air_hoses.webp'" width="240" height="240" loading="lazy">
               </div>
               <div class="product-card-body">
                 <h4 class="product-card-title">${p.name}</h4>
@@ -264,7 +264,7 @@ const App = {
       return `
         <div class="category-card-6" onclick="Catalog.selectCategory('${c.id}'); App.navigate('catalog')">
           <div class="category-card-6-img-wrapper">
-            <img src="${cleanImageSrc}" alt="Категория: ${c.name} - Хидролукс Груп" onerror="this.onerror=null; this.src='${fallbackUrl}'">
+            <img src="${cleanImageSrc}" alt="Категория: ${c.name} - Хидролукс Груп" onerror="this.onerror=null; this.src='${fallbackUrl}'" width="300" height="345" loading="lazy">
           </div>
           <div class="category-card-6-body">
             <h3 class="category-card-6-title">${c.name}</h3>
@@ -404,7 +404,7 @@ const App = {
 
               return `
                 <div class="search-suggestion-item" onclick="App.handleProductSuggestionClick('${p.id}')">
-                  <img src="${coverImg}" alt="${p.name} - ${p.brand}" class="search-suggestion-img" onerror="this.src='assets/air_hoses.webp'">
+                  <img src="${coverImg}" alt="${p.name} - ${p.brand}" class="search-suggestion-img" onerror="this.src='assets/air_hoses.webp'" width="40" height="40" loading="lazy">
                   <div class="search-suggestion-info">
                     <span class="search-suggestion-name">${p.name}</span>
                     <span class="search-suggestion-meta">${subText}</span>

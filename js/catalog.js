@@ -371,7 +371,7 @@ const Catalog = {
         <div class="product-card card" onclick="Catalog.openProductDetails('${p.id}')">
           <div class="product-badge">${p.inStock ? 'В наличност' : 'По поръчка'}</div>
           <div class="product-card-img-wrapper">
-            <img src="${p.images[0]}" alt="${p.name} - ${p.brand} | Хидролукс Груп" class="product-card-img" onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop'">
+            <img src="${p.images[0]}" alt="${p.name} - ${p.brand} | Хидролукс Груп" class="product-card-img" onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop'" width="240" height="240" loading="lazy">
           </div>
           <div class="product-card-body">
             <div class="product-card-brand">${p.brand}</div>

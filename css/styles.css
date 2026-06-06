@@ -4,8 +4,6 @@
    Aligned precisely with desktop & mobile screenshot layouts
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
-
 /* ==========================================================================
    CSS CUSTOM VARIABLES & COLOR PALETTE (HSL)
    ========================================================================== */
@@ -30,7 +28,7 @@
   --border-light: #e2e8f0; /* Alias for admin panel components */
   
   --text-dark: #1e293b;
-  --text-muted: #64748b;
+  --text-muted: #4b5563; /* Improved contrast for accessibility */
   
   --success: #10b981;
   --warning: #f59e0b;
@@ -444,12 +442,15 @@ p {
   border: none;
   padding: 8px 16px;
   cursor: pointer;
-  color: #64748b;
+  color: var(--text-muted);
   font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: var(--transition);
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4px;
 }
 
 .search-submit-btn:hover {
@@ -955,7 +956,7 @@ p {
 }
 
 .category-card-6-arrow {
-  color: #64748b;
+  color: var(--text-muted);
   font-weight: bold;
   font-size: 0.88rem;
   transition: var(--transition);
@@ -1029,7 +1030,7 @@ p {
 
 .feature-bar-desc-5 {
   font-size: 0.68rem;
-  color: #64748b;
+  color: var(--text-muted);
   line-height: 1.2;
 }
 
@@ -1342,6 +1343,7 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 20px;
+  min-height: 400px; /* Placeholder height to prevent Cumulative Layout Shift */
 }
 
 .product-card {
@@ -2700,7 +2702,7 @@ footer {
 }
 .search-suggestion-meta {
   font-size: 0.75rem;
-  color: #64748b;
+  color: var(--text-muted);
 }
 .search-suggestion-price {
   font-weight: 700;
@@ -2710,7 +2712,7 @@ footer {
 }
 .search-no-suggestions {
   padding: 15px;
-  color: #64748b;
+  color: var(--text-muted);
   font-size: 0.85rem;
   text-align: center;
 }
@@ -3407,7 +3409,7 @@ td .admin-actions-cell {
 
 .spec-label {
   font-weight: 600;
-  color: #64748b;
+  color: var(--text-muted);
   margin-right: 4px;
 }
 
@@ -3486,6 +3488,20 @@ td .admin-actions-cell {
   cursor: default;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.industry-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  transition: transform 0.3s ease;
+}
+
+.industry-card:hover img {
+  transform: scale(1.05);
 }
 
 .industry-card:hover {
@@ -3897,7 +3913,7 @@ td .admin-actions-cell {
   }
   .feature-bar-desc-5 {
     font-size: 0.78rem !important;
-    color: #64748b !important;
+    color: var(--text-muted) !important;
   }
 
   /* Popular Products 2-Column Grid on Mobile */
@@ -4622,6 +4638,7 @@ td .admin-actions-cell {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;  /* IE 10+ */
+  min-height: 220px; /* Placeholder height to prevent Cumulative Layout Shift */
 }
 
 .home-categories-carousel::-webkit-scrollbar {

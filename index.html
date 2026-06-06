@@ -20,6 +20,12 @@
   <!-- Structured Data JSON-LD Container -->
   <script type="application/ld+json" id="schema-jsonld"></script>
 
+  <!-- Preconnect & Preload Fonts / LCP Assets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/hero_bg.webp" as="image" type="image/webp" fetchpriority="high">
+
   <link rel="stylesheet" href="css/styles.css?v=6">
   <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
@@ -32,33 +38,33 @@
     <div class="container">
       <div class="header-top-left">
         <div class="header-top-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
           <span class="desktop-only">Бърза доставка в цяла България</span>
           <span class="mobile-only">Бърза доставка до 48 часа</span>
         </div>
         <span class="header-top-divider">|</span>
         <div class="header-top-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 11 2 2 4-4"></path></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 11 2 2 4-4"></path></svg>
           <span>Гарантирано качество</span>
         </div>
         <span class="header-top-divider">|</span>
         <div class="header-top-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
           <span>Кримпване по поръчка</span>
         </div>
       </div>
       <div class="header-top-right">
         <a href="tel:+359892484337" class="desktop-only">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
           <span>0892 484 337</span>
         </a>
         <a href="tel:0888123456" class="mobile-only">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
           <span>0888 123 456</span>
         </a>
         <span class="header-top-divider">|</span>
         <a href="mailto:hydroluxgroup@gmail.com">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
           <span>office@hydrolux.bg</span>
         </a>
       </div>
@@ -71,41 +77,41 @@
   <header class="header-main">
     <div class="container">
       <!-- Official Brand Logo Image -->
-      <a onclick="App.navigate('home')" class="logo-link" title="Хидролукс Груп">
-        <img src="assets/logo.webp" alt="Хидролукс Груп - Производство и запресоване на хидравлични и пневматични маркучи Монтана" class="brand-logo-img">
+      <a onclick="App.navigate('home')" class="logo-link" title="Хидролукс Груп" href="#home">
+        <img src="assets/logo.webp" width="200" height="78" alt="Хидролукс Груп - Производство и запресоване на хидравлични и пневматични маркучи Монтана" class="brand-logo-img" fetchpriority="high">
       </a>
 
       <!-- Center Search Bar -->
       <div class="search-bar-wrapper">
-        <input type="text" id="search-input-blue" class="search-field" placeholder="Търсене по продукт, марка, диаметър..." oninput="Catalog.searchQuery = this.value; if(App.currentView !== 'catalog') App.navigate('catalog'); Catalog.applyFiltersAndRender()">
-        <button class="search-submit-btn" onclick="if(App.currentView !== 'catalog') App.navigate('catalog'); Catalog.applyFiltersAndRender();">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="search-input-blue" class="search-field" placeholder="Търсене по продукт, марка, диаметър..." oninput="Catalog.searchQuery = this.value; if(App.currentView !== 'catalog') App.navigate('catalog'); Catalog.applyFiltersAndRender()" aria-label="Търсене на продукти">
+        <button class="search-submit-btn" onclick="if(App.currentView !== 'catalog') App.navigate('catalog'); Catalog.applyFiltersAndRender();" aria-label="Търси">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
         </button>
       </div>
 
       <!-- Header Actions -->
       <div class="header-actions">
         <!-- Account -->
-        <button class="header-action-btn" onclick="Auth.showAuthModal()" title="Вход / Регистрация">
+        <button class="header-action-btn" onclick="Auth.showAuthModal()" title="Вход / Регистрация" aria-label="Вход / Регистрация">
           <div class="header-action-icon-wrapper">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
           </div>
           <span class="header-action-label">Вход / Регистрация</span>
         </button>
 
         <!-- Wishlist -->
-        <button class="header-action-btn" onclick="Cart.showToast('Списъкът с любими е празен')" title="Любими">
+        <button class="header-action-btn" onclick="Cart.showToast('Списъкът с любими е празен')" title="Любими" aria-label="Любими">
           <div class="header-action-icon-wrapper">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
             <span class="header-action-badge">0</span>
           </div>
           <span class="header-action-label">Любими</span>
         </button>
 
         <!-- Shopping Cart -->
-        <button class="header-action-btn btn-cart-trigger" onclick="Cart.openDrawer()" title="Количка">
+        <button class="header-action-btn btn-cart-trigger" onclick="Cart.openDrawer()" title="Количка" aria-label="Количка">
           <div class="header-action-icon-wrapper">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
             <span class="header-action-badge cart-count-badge-inline">0</span>
           </div>
           <span class="header-action-label">Количка</span>
@@ -121,8 +127,8 @@
     <div class="container">
       <!-- Categories Wrapper with dropdown -->
       <div class="categories-nav-wrapper">
-        <div class="categories-nav-trigger" onclick="Catalog.resetFilters(); App.navigate('catalog')">
-          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        <div class="categories-nav-trigger" onclick="Catalog.resetFilters(); App.navigate('catalog')" role="button" tabindex="0" aria-label="Всички категории">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" fill="none" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
           <span>Всички категории</span>
           <span class="caret-down">▼</span>
         </div>
@@ -132,18 +138,18 @@
       <!-- Navigation Links -->
       <nav id="main-nav-links">
         <ul class="nav-links-list">
-          <li><a class="nav-link active" onclick="App.navigate('home')">Начало</a></li>
-          <li><a class="nav-link" onclick="Catalog.resetFilters(); App.navigate('catalog')">Продукти</a></li>
-          <li><a class="nav-link" onclick="App.navigate('builder')">Кримпване</a></li>
-          <li><a class="nav-link" onclick="App.navigate('services')">Услуги</a></li>
-          <li><a class="nav-link" onclick="Cart.showToast('Изборът на марки ще бъде достъпен скоро!')">Марки</a></li>
-          <li><a class="nav-link" onclick="App.navigate('services')">За нас</a></li>
-          <li><a class="nav-link" onclick="App.navigate('services')">Контакти</a></li>
+          <li><a class="nav-link active" href="#home" onclick="App.navigate('home')">Начало</a></li>
+          <li><a class="nav-link" href="#catalog" onclick="Catalog.resetFilters(); App.navigate('catalog')">Продукти</a></li>
+          <li><a class="nav-link" href="#builder" onclick="App.navigate('builder')">Кримпване</a></li>
+          <li><a class="nav-link" href="#services" onclick="App.navigate('services')">Услуги</a></li>
+          <li><a class="nav-link" href="#brands" onclick="event.preventDefault(); Cart.showToast('Изборът на марки ще бъде достъпен скоро!')">Марки</a></li>
+          <li><a class="nav-link" href="#services" onclick="App.navigate('services')">За нас</a></li>
+          <li><a class="nav-link" href="#services" onclick="App.navigate('services')">Контакти</a></li>
         </ul>
       </nav>
 
       <!-- Mobile hamburger menu toggle -->
-      <button class="mobile-menu-btn" onclick="App.toggleMobileMenu()" style="margin-left: auto;">☰</button>
+      <button class="mobile-menu-btn" onclick="App.toggleMobileMenu()" aria-label="Отвори мобилно меню" style="margin-left: auto;">☰</button>
     </div>
   </div>
 
@@ -192,10 +198,10 @@
               <div class="hero-buttons">
                 <button class="btn btn-orange" onclick="App.navigate('catalog')">
                   <span>Разгледай продуктите</span>
-                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </button>
                 <button class="btn btn-outline-white" onclick="App.navigate('services')">
-                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                   <span>Изпрати запитване</span>
                 </button>
               </div>
@@ -205,7 +211,7 @@
             <div class="hero-right">
               <div class="crimping-badge" onclick="App.navigate('builder')">
                 <div class="crimping-badge-icon">
-                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
                 </div>
                 <div class="crimping-badge-text">
                   <h4>Кримпване по поръчка</h4>
@@ -220,11 +226,11 @@
       <!-- Categories Carousel -->
       <div class="container categories-carousel-container">
         <div class="categories-carousel-wrapper">
-          <button class="carousel-arrow prev-arrow" onclick="Catalog.slideCategories(-1)">&#10094;</button>
+          <button class="carousel-arrow prev-arrow" aria-label="Предишна категория" onclick="Catalog.slideCategories(-1)">&#10094;</button>
           <div class="home-categories-carousel" id="home-categories-carousel">
             <!-- Dynamically populated categories by App.renderHomeCategories() -->
           </div>
-          <button class="carousel-arrow next-arrow" onclick="Catalog.slideCategories(1)">&#10095;</button>
+          <button class="carousel-arrow next-arrow" aria-label="Следваща категория" onclick="Catalog.slideCategories(1)">&#10095;</button>
         </div>
       </div>
 
@@ -234,7 +240,7 @@
           <!-- Item 1: Stock -->
           <div class="feature-bar-item-5">
             <div class="feature-bar-icon-5">
-              <svg viewBox="0 0 24 24" width="40" height="40" fill="none">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" aria-hidden="true">
                 <rect x="3" y="3" width="2" height="18" fill="#1e293b"/>
                 <rect x="19" y="3" width="2" height="18" fill="#1e293b"/>
                 <rect x="5" y="11" width="14" height="2" fill="#1e293b"/>
@@ -253,7 +259,7 @@
           <!-- Item 2: Custom Crimping -->
           <div class="feature-bar-item-5" onclick="App.navigate('builder')" style="cursor: pointer;">
             <div class="feature-bar-icon-5">
-              <svg viewBox="0 0 24 24" width="40" height="40" fill="none">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" aria-hidden="true">
                 <circle cx="12" cy="11" r="7" stroke="#1e293b" stroke-width="2.5"/>
                 <path d="M12 4v3M12 18v-3M5 11h3M19 11h-3M7 6l2 2M17 16l-2-2M17 6l-2 2M7 16l2-2" stroke="#ea580c" stroke-width="2" stroke-linecap="round"/>
                 <rect x="8" y="9.5" width="8" height="3" rx="1" fill="#1e293b"/>
@@ -270,7 +276,7 @@
           <!-- Item 3: Fast Shipping -->
           <div class="feature-bar-item-5">
             <div class="feature-bar-icon-5">
-              <svg viewBox="0 0 24 24" width="40" height="40" fill="none">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" aria-hidden="true">
                 <path d="M2 7h5M1 11h4M3 15h3" stroke="#ea580c" stroke-width="2" stroke-linecap="round"/>
                 <rect x="8" y="5" width="10" height="11" rx="1" fill="#ea580c"/>
                 <path d="M18 8h3l2 3v5h-5V8z" fill="#1e293b"/>
@@ -287,7 +293,7 @@
           <!-- Item 4: Consulting -->
           <div class="feature-bar-item-5" onclick="App.navigate('services')" style="cursor: pointer;">
             <div class="feature-bar-icon-5">
-              <svg viewBox="0 0 24 24" width="40" height="40" fill="none">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" aria-hidden="true">
                 <path d="M16 14a4 4 0 0 1-8 0v-2a4 4 0 0 1 8 0v2z" fill="#1e293b"/>
                 <path d="M6 20a6 6 0 0 1 12 0" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round"/>
                 <path d="M7 13a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2" stroke="#ea580c" stroke-width="2" fill="none"/>
@@ -345,8 +351,9 @@
         <h2 class="industries-section-title">Индустрии и приложения</h2>
         
         <div class="industries-grid">
-          <div class="industry-card" style="background-image: url('assets/industry_agriculture.webp');">
-            <div class="industry-overlay">
+          <div class="industry-card">
+            <img src="assets/industry_agriculture.webp" alt="Земеделие" loading="lazy" width="400" height="200">
+            <div class="industry-overlay" style="z-index: 1;">
               <div class="industry-info">
                 <div class="industry-icon">🚜</div>
                 <h4>Земеделие</h4>
@@ -354,8 +361,9 @@
             </div>
           </div>
           
-          <div class="industry-card" style="background-image: url('assets/industry_construction.webp');">
-            <div class="industry-overlay">
+          <div class="industry-card">
+            <img src="assets/industry_construction.webp" alt="Строителство" loading="lazy" width="400" height="200">
+            <div class="industry-overlay" style="z-index: 1;">
               <div class="industry-info">
                 <div class="industry-icon">🏗️</div>
                 <h4>Строителство</h4>
@@ -363,8 +371,9 @@
             </div>
           </div>
           
-          <div class="industry-card" style="background-image: url('assets/industry_mining.webp');">
-            <div class="industry-overlay">
+          <div class="industry-card">
+            <img src="assets/industry_mining.webp" alt="Минна индустрия" loading="lazy" width="400" height="200">
+            <div class="industry-overlay" style="z-index: 1;">
               <div class="industry-info">
                 <div class="industry-icon">🚛</div>
                 <h4>Минна индустрия</h4>
@@ -372,8 +381,9 @@
             </div>
           </div>
           
-          <div class="industry-card" style="background-image: url('assets/industry_manufacturing.webp');">
-            <div class="industry-overlay">
+          <div class="industry-card">
+            <img src="assets/industry_manufacturing.webp" alt="Производство" loading="lazy" width="400" height="200">
+            <div class="industry-overlay" style="z-index: 1;">
               <div class="industry-info">
                 <div class="industry-icon">⚙️</div>
                 <h4>Производство</h4>
@@ -381,8 +391,9 @@
             </div>
           </div>
           
-          <div class="industry-card" style="background-image: url('assets/industry_transport.webp');">
-            <div class="industry-overlay">
+          <div class="industry-card">
+            <img src="assets/industry_transport.webp" alt="Транспорт" loading="lazy" width="400" height="200">
+            <div class="industry-overlay" style="z-index: 1;">
               <div class="industry-info">
                 <div class="industry-icon">🚚</div>
                 <h4>Транспорт</h4>
@@ -390,8 +401,9 @@
             </div>
           </div>
           
-          <div class="industry-card" style="background-image: url('assets/industry_food.webp');">
-            <div class="industry-overlay">
+          <div class="industry-card">
+            <img src="assets/industry_food.webp" alt="Хранително-вкусова промишленост" loading="lazy" width="400" height="200">
+            <div class="industry-overlay" style="z-index: 1;">
               <div class="industry-info">
                 <div class="industry-icon">🏭</div>
                 <h4>Хранително-вкусова промишленост</h4>
@@ -399,8 +411,9 @@
             </div>
           </div>
           
-          <div class="industry-card" style="background-image: url('assets/industry_chemical.webp');">
-            <div class="industry-overlay">
+          <div class="industry-card">
+            <img src="assets/industry_chemical.webp" alt="Химическа индустрия" loading="lazy" width="400" height="200">
+            <div class="industry-overlay" style="z-index: 1;">
               <div class="industry-info">
                 <div class="industry-icon">🧪</div>
                 <h4>Химическа индустрия</h4>
@@ -418,19 +431,19 @@
         </div>
         <div class="cta-banner-buttons">
           <button class="btn btn-cta-outline" onclick="App.navigate('services')">
-            <svg viewBox="0 0 24 24" width="18" height="18" class="cta-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" class="cta-icon" aria-hidden="true">
               <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
             </svg>
             Изпрати запитване
           </button>
           <a href="tel:0892484337" class="btn btn-cta-solid desktop-only">
-            <svg viewBox="0 0 24 24" width="18" height="18" class="cta-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" class="cta-icon" aria-hidden="true">
               <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4.01c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.59c0-.55-.45-1-1-1z" fill="currentColor"/>
             </svg>
             Свържи се с нас
           </a>
           <a href="tel:0888123456" class="btn btn-cta-solid mobile-only">
-            <svg viewBox="0 0 24 24" width="18" height="18" class="cta-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" class="cta-icon" aria-hidden="true">
               <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4.01c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.59c0-.55-.45-1-1-1z" fill="currentColor"/>
             </svg>
             Свържи се с нас
@@ -504,7 +517,7 @@
         <!-- Product Images Gallery -->
         <div class="gallery-panel">
           <div class="main-image-wrapper">
-            <img src="" id="prod-main-image" alt="Product Image">
+            <img src="" id="prod-main-image" width="500" height="500" alt="Product Image">
           </div>
           <div class="thumbnails-list" id="prod-thumbnails">
             <!-- Dynamically populated thumbs -->
@@ -628,20 +641,20 @@
 
           <form onsubmit="Catalog.submitInquiry(event)">
             <div class="form-group">
-              <label>Вашето Име</label>
-              <input type="text" class="form-control" required placeholder="Иван Иванов">
+              <label for="services-name">Вашето Име</label>
+              <input type="text" id="services-name" class="form-control" required placeholder="Иван Иванов">
             </div>
             <div class="form-group">
-              <label>Телефон за връзка</label>
-              <input type="tel" class="form-control" required placeholder="+359 888 888 888">
+              <label for="services-phone">Телефон за връзка</label>
+              <input type="tel" id="services-phone" class="form-control" required placeholder="+359 888 888 888">
             </div>
             <div class="form-group">
-              <label>Имейл адрес</label>
-              <input type="email" class="form-control" required placeholder="example@gmail.com">
+              <label for="services-email">Имейл адрес</label>
+              <input type="email" id="services-email" class="form-control" required placeholder="example@gmail.com">
             </div>
             <div class="form-group">
-              <label>Вашето съобщение / Спецификация</label>
-              <textarea class="form-control" rows="4" required placeholder="Опишете каква машина обслужвате, диаметър на маркуча или накрайниците..."></textarea>
+              <label for="services-message">Вашето съобщение / Спецификация</label>
+              <textarea id="services-message" class="form-control" rows="4" required placeholder="Опишете каква машина обслужвате, диаметър на маркуча или накрайниците..."></textarea>
             </div>
             <button type="submit" class="btn btn-primary btn-block">Изпрати Запитване</button>
           </form>
@@ -684,17 +697,17 @@
               <h4 style="margin-bottom: 15px; font-weight: 700; color: var(--text-dark);">👤 Данни за получателя</h4>
               
               <div class="form-group">
-                <label>Име и Фамилия</label>
-                <input type="text" name="client_name" class="form-control" required placeholder="Георги Георгиев">
+                <label for="checkout-name">Име и Фамилия</label>
+                <input type="text" name="client_name" id="checkout-name" class="form-control" required placeholder="Георги Георгиев">
               </div>
               <div class="form-group-split">
                 <div class="form-group">
-                  <label>Телефон</label>
-                  <input type="tel" name="client_phone" class="form-control" required placeholder="+359 89...">
+                  <label for="checkout-phone">Телефон</label>
+                  <input type="tel" name="client_phone" id="checkout-phone" class="form-control" required placeholder="+359 89...">
                 </div>
                 <div class="form-group">
-                  <label>Е-мейл</label>
-                  <input type="email" name="client_email" class="form-control" required placeholder="georgi@gmail.com">
+                  <label for="checkout-email">Е-мейл</label>
+                  <input type="email" name="client_email" id="checkout-email" class="form-control" required placeholder="georgi@gmail.com">
                 </div>
               </div>
 
@@ -702,7 +715,7 @@
               <h4 style="margin-top: 25px; margin-bottom: 15px; font-weight: 700; color: var(--text-dark);">🚚 Начин на доставка</h4>
               
               <div class="form-group">
-                <label>Изберете начин на доставка</label>
+                <label for="delivery-method-select">Изберете начин на доставка</label>
                 <select name="delivery_method" id="delivery-method-select" class="form-control" onchange="Cart.onDeliveryMethodChange(this.value)">
                   <option value="address">🚚 Доставка до личен / служебен адрес</option>
                   <option value="office">🏢 Доставка до офис на Еконт</option>
@@ -713,17 +726,17 @@
               <div id="delivery-details-container">
                 <div class="form-group-split">
                   <div class="form-group">
-                    <label>Град</label>
+                    <label for="checkout-city">Град</label>
                     <input type="text" name="client_city" id="checkout-city" class="form-control" required placeholder="гр. София">
                   </div>
                   <div class="form-group">
-                    <label>Пощенски код</label>
+                    <label for="checkout-postcode">Пощенски код</label>
                     <input type="text" name="client_postcode" id="checkout-postcode" class="form-control" required placeholder="1000">
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label id="delivery-address-label">Точен адрес за доставка</label>
+                  <label for="checkout-address" id="delivery-address-label">Точен адрес за доставка</label>
                   <input type="text" name="delivery_address" id="checkout-address" class="form-control" required placeholder="ул. Примерна №5, вх. А, ап. 2">
                 </div>
               </div>
@@ -858,20 +871,20 @@
       <div class="modal-body">
         <form onsubmit="Catalog.submitInquiry(event)">
           <div class="form-group">
-            <label>Тема</label>
+            <label for="inquiry-subject">Тема</label>
             <input type="text" id="inquiry-subject" class="form-control" readonly>
           </div>
           <div class="form-group">
-            <label>Вашето Име</label>
-            <input type="text" class="form-control" required placeholder="Димитър Петров">
+            <label for="inquiry-name">Вашето Име</label>
+            <input type="text" id="inquiry-name" class="form-control" required placeholder="Димитър Петров">
           </div>
           <div class="form-group">
-            <label>Телефон</label>
-            <input type="tel" class="form-control" required placeholder="+359 ...">
+            <label for="inquiry-phone">Телефон</label>
+            <input type="tel" id="inquiry-phone" class="form-control" required placeholder="+359 ...">
           </div>
           <div class="form-group">
-            <label>Въпрос / Запитване</label>
-            <textarea class="form-control" rows="4" required placeholder="Желая бързо запитване относно наличност и опции за сглобяване..."></textarea>
+            <label for="inquiry-message">Въпрос / Запитване</label>
+            <textarea id="inquiry-message" class="form-control" rows="4" required placeholder="Желая бързо запитване относно наличност и опции за сглобяване..."></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-block">Изпрати Запитване</button>
         </form>
@@ -892,21 +905,21 @@
         </div>
         <form onsubmit="HoseBuilder.submitInquiry(event)">
           <div class="form-group">
-            <label>Вашето Име</label>
+            <label for="builder-inquiry-name">Вашето Име</label>
             <input type="text" id="builder-inquiry-name" class="form-control" required placeholder="Иван Иванов">
           </div>
           <div class="form-group-split" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; margin-top: 10px;">
             <div class="form-group">
-              <label>Телефон</label>
+              <label for="builder-inquiry-phone">Телефон</label>
               <input type="tel" id="builder-inquiry-phone" class="form-control" required placeholder="+359 ...">
             </div>
             <div class="form-group">
-              <label>Имейл</label>
+              <label for="builder-inquiry-email">Имейл</label>
               <input type="email" id="builder-inquiry-email" class="form-control" required placeholder="example@mail.com">
             </div>
           </div>
           <div class="form-group" style="margin-top: 10px;">
-            <label>Допълнителни изисквания (по желание)</label>
+            <label for="builder-inquiry-message">Допълнителни изисквания (по желание)</label>
             <textarea id="builder-inquiry-message" class="form-control" rows="3" placeholder="Опишете специфични изисквания, брой сглобки..."></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-block" style="margin-top: 15px;">Изпрати Запитване</button>
@@ -929,11 +942,11 @@
           </div>
           
           <div class="form-group">
-            <label>Име и Фамилия</label>
+            <label for="quick-order-name">Име и Фамилия</label>
             <input type="text" id="quick-order-name" class="form-control" required placeholder="Георги Георгиев">
           </div>
           <div class="form-group" style="margin-top: 12px;">
-            <label>Телефонен номер</label>
+            <label for="quick-order-phone">Телефонен номер</label>
             <input type="tel" id="quick-order-phone" class="form-control" required placeholder="08XXXXXXXX">
           </div>
           <button type="submit" class="btn btn-orange btn-block btn-large mt-20" style="width: 100%; font-size: 1rem; padding: 12px 0; margin-top: 20px;">⚡ Изпрати поръчката</button>
@@ -1020,19 +1033,19 @@
         <div class="footer-col">
           <h4>Полезни връзки</h4>
           <ul class="footer-links">
-            <li><a onclick="App.navigate('home')">Начало</a></li>
-            <li><a onclick="Catalog.resetFilters(); App.navigate('catalog')">Продуктов Каталог</a></li>
-            <li><a onclick="App.navigate('builder')">Конфигуратор на маркучи</a></li>
-            <li><a onclick="App.navigate('services')">Консултация & Услуги</a></li>
+            <li><a href="#home" onclick="App.navigate('home')">Начало</a></li>
+            <li><a href="#catalog" onclick="Catalog.resetFilters(); App.navigate('catalog')">Продуктов Каталог</a></li>
+            <li><a href="#builder" onclick="App.navigate('builder')">Конфигуратор на маркучи</a></li>
+            <li><a href="#services" onclick="App.navigate('services')">Консултация & Услуги</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Продукти</h4>
           <ul class="footer-links">
-            <li><a onclick="Catalog.selectCategory('air-hoses'); App.navigate('catalog')">Маркучи за въздух</a></li>
-            <li><a onclick="Catalog.selectCategory('water-hoses'); App.navigate('catalog')">Маркучи за вода</a></li>
-            <li><a onclick="Catalog.selectCategory('high-pressure-hoses'); App.navigate('catalog')">Маркучи високо налягане</a></li>
-            <li><a onclick="Catalog.selectCategory('pneumatic-tubes'); App.navigate('catalog')">Пневматични шлаухи</a></li>
+            <li><a href="#catalog" onclick="Catalog.selectCategory('air-hoses'); App.navigate('catalog')">Маркучи за въздух</a></li>
+            <li><a href="#catalog" onclick="Catalog.selectCategory('water-hoses'); App.navigate('catalog')">Маркучи за вода</a></li>
+            <li><a href="#catalog" onclick="Catalog.selectCategory('high-pressure-hoses'); App.navigate('catalog')">Маркучи високо налягане</a></li>
+            <li><a href="#catalog" onclick="Catalog.selectCategory('pneumatic-tubes'); App.navigate('catalog')">Пневматични шлаухи</a></li>
           </ul>
         </div>
       </div>
@@ -1047,13 +1060,13 @@
   <!-- ==========================================================================
        JAVASCRIPT MODULES IMPORT
        ========================================================================== -->
-  <script src="js/backend.js"></script>
-  <script src="js/auth.js"></script>
-  <script src="js/config.js"></script>
-  <script src="js/components/builder.js"></script>
-  <script src="js/components/cart.js"></script>
-  <script src="js/catalog.js"></script>
-  <script src="js/admin.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/backend.js" defer></script>
+  <script src="js/auth.js" defer></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/components/builder.js" defer></script>
+  <script src="js/components/cart.js" defer></script>
+  <script src="js/catalog.js" defer></script>
+  <script src="js/admin.js" defer></script>
+  <script src="js/app.js" defer></script>
 </body>
 </html>
