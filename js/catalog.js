@@ -227,29 +227,39 @@ const Catalog = {
   },
 
   selectCategory(catId) {
-    this.activeCategory = catId || null;
-    this.activeSubcategory = null; // Clear subcategory filter when changing category
-    this.activeSubSubcategory = null; // Clear sub-subcategory filter when changing category
-    
-    if (App.currentView !== "catalog") {
+    this.filterWishlist = false;
+    if (catId) {
+      App.navigate(`catalog/${catId}`);
+    } else {
       App.navigate("catalog");
     }
-    
-    this.renderSidebar();
-    this.applyFiltersAndRender();
   },
 
   selectSubcategory(subId) {
-    this.activeSubcategory = subId || null;
-    this.activeSubSubcategory = null; // Clear sub-subcategory filter when changing subcategory
-    this.renderSidebar();
-    this.applyFiltersAndRender();
+    this.filterWishlist = false;
+    const catId = this.activeCategory;
+    if (catId && subId) {
+      App.navigate(`catalog/${catId}/${subId}`);
+    } else if (catId) {
+      App.navigate(`catalog/${catId}`);
+    } else {
+      App.navigate("catalog");
+    }
   },
 
   selectSubSubcategory(subsubId) {
-    this.activeSubSubcategory = subsubId || null;
-    this.renderSidebar();
-    this.applyFiltersAndRender();
+    this.filterWishlist = false;
+    const catId = this.activeCategory;
+    const subId = this.activeSubcategory;
+    if (catId && subId && subsubId) {
+      App.navigate(`catalog/${catId}/${subId}/${subsubId}`);
+    } else if (catId && subId) {
+      App.navigate(`catalog/${catId}/${subId}`);
+    } else if (catId) {
+      App.navigate(`catalog/${catId}`);
+    } else {
+      App.navigate("catalog");
+    }
   },
 
   resetFilters() {
@@ -261,12 +271,12 @@ const Catalog = {
     this.filterSize = "";
     this.filterPressure = "";
     this.filterTemp = "";
+    this.filterWishlist = false;
     
     const searchInput = document.getElementById("search-input-blue");
     if (searchInput) searchInput.value = "";
     
-    this.renderSidebar();
-    this.applyFiltersAndRender();
+    App.navigate("catalog");
   },
 
   applyFiltersAndRender() {
@@ -278,7 +288,7 @@ const Catalog = {
     grid.className = "products-grid full-width";
 
     // If no category and no other filter/search is active, render category card grid
-    if (!this.activeCategory && !this.searchQuery && !this.filterBrand && !this.filterSize && !this.filterPressure && !this.filterTemp) {
+    if (!this.filterWishlist && !this.activeCategory && !this.searchQuery && !this.filterBrand && !this.filterSize && !this.filterPressure && !this.filterTemp) {
       const titleEl = document.getElementById("catalog-active-title");
       const countEl = document.getElementById("catalog-count");
       if (titleEl) titleEl.textContent = "Всички категории";
@@ -302,6 +312,12 @@ const Catalog = {
     }
 
     let filtered = products.filter(p => {
+      // 0. Wishlist check
+      if (this.filterWishlist) {
+        const wishlist = (typeof App !== "undefined" && typeof App.getWishlist === "function") ? App.getWishlist() : [];
+        if (!wishlist.includes(p.id)) return false;
+      }
+
       // 1. Category check
       if (this.activeCategory) {
         const productCats = p.categories || (p.category ? [p.category] : []);
@@ -352,7 +368,9 @@ const Catalog = {
     if (countEl) countEl.textContent = filtered.length;
 
     if (titleEl) {
-      if (this.activeCategory) {
+      if (this.filterWishlist) {
+        titleEl.textContent = "Любими продукти";
+      } else if (this.activeCategory) {
         const cat = CONFIG.categories.find(c => c.id === this.activeCategory);
         titleEl.textContent = cat ? cat.name : "Всички продукти";
       } else if (this.searchQuery) {
@@ -363,14 +381,25 @@ const Catalog = {
     }
 
     if (filtered.length === 0) {
-      grid.innerHTML = `
-        <div class="no-products text-center py-40 card">
-          <div class="no-products-icon">🔍</div>
-          <h3>Няма намерени продукти</h3>
-          <p class="text-muted">Променете филтрите или опитайте с друга ключова дума.</p>
-          <button class="btn btn-secondary mt-20" onclick="Catalog.resetFilters()">Изчисти филтрите</button>
-        </div>
-      `;
+      if (this.filterWishlist) {
+        grid.innerHTML = `
+          <div class="no-products text-center py-40 card">
+            <div class="no-products-icon">❤️</div>
+            <h3>Списъкът с любими е празен</h3>
+            <p class="text-muted">Можете да добавите продукти в любими, като натиснете иконата със сърце на продуктите.</p>
+            <button class="btn btn-primary mt-20" onclick="Catalog.resetFilters(); App.navigate('catalog')">Към каталога</button>
+          </div>
+        `;
+      } else {
+        grid.innerHTML = `
+          <div class="no-products text-center py-40 card">
+            <div class="no-products-icon">🔍</div>
+            <h3>Няма намерени продукти</h3>
+            <p class="text-muted">Променете филтрите или опитайте с друга ключова дума.</p>
+            <button class="btn btn-secondary mt-20" onclick="Catalog.resetFilters()">Изчисти филтрите</button>
+          </div>
+        `;
+      }
       return;
     }
 
@@ -429,15 +458,15 @@ const Catalog = {
       const cat = CONFIG.categories.find(c => c.id === primaryCatId);
       let breadcrumbHtml = `<a onclick="App.navigate('home')">Начало</a>`;
       if (cat) {
-        breadcrumbHtml += ` › <a onclick="Catalog.selectCategory('${cat.id}'); App.navigate('catalog')">${cat.name}</a>`;
+        breadcrumbHtml += ` › <a onclick="Catalog.selectCategory('${cat.id}')">${cat.name}</a>`;
         if (primarySubId && cat.subcategories) {
           const subObj = cat.subcategories.find(s => s.id === primarySubId);
           if (subObj) {
-            breadcrumbHtml += ` › <a onclick="Catalog.selectCategory('${cat.id}'); Catalog.selectSubcategory('${subObj.id}'); App.navigate('catalog')">${subObj.name}</a>`;
+            breadcrumbHtml += ` › <a onclick="Catalog.selectCategory('${cat.id}'); Catalog.selectSubcategory('${subObj.id}')">${subObj.name}</a>`;
             if (primarySubSubId && subObj.subcategories) {
               const subsubObj = subObj.subcategories.find(ss => ss.id === primarySubSubId);
               if (subsubObj) {
-                breadcrumbHtml += ` › <a onclick="Catalog.selectCategory('${cat.id}'); Catalog.selectSubcategory('${subObj.id}'); Catalog.selectSubSubcategory('${subsubObj.id}'); App.navigate('catalog')">${subsubObj.name}</a>`;
+                breadcrumbHtml += ` › <a onclick="Catalog.selectCategory('${cat.id}'); Catalog.selectSubcategory('${subObj.id}'); Catalog.selectSubSubcategory('${subsubObj.id}')">${subsubObj.name}</a>`;
               }
             }
           }

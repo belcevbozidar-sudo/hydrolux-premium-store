@@ -37,6 +37,9 @@ const App = {
     
     // 7. Hero Stats
     this.updateHeroStats();
+    
+    // 8. Sticky reveal header
+    this.initScrollHeader();
   },
 
   renderFeaturedProductsHome() {
@@ -262,7 +265,7 @@ const App = {
       const fallbackUrl = `https://image.pollinations.ai/prompt/${fallbackPrompt}?width=300&height=350&nologo=true`;
 
       return `
-        <div class="category-card-6" onclick="Catalog.selectCategory('${c.id}'); App.navigate('catalog')">
+        <div class="category-card-6" onclick="Catalog.selectCategory('${c.id}')">
           <div class="category-card-6-img-wrapper">
             <img src="${cleanImageSrc}" alt="Категория: ${c.name} - Хидролукс Груп" onerror="this.onerror=null; this.src='${fallbackUrl}'" width="300" height="345" loading="lazy">
           </div>
@@ -284,7 +287,7 @@ const App = {
     // Display the first 8 main categories or all of them
     const categories = CONFIG.categories.slice(0, 8);
     grid.innerHTML = categories.map(c => `
-      <div class="category-card card" onclick="Catalog.selectCategory('${c.id}'); App.navigate('catalog')">
+      <div class="category-card card" onclick="Catalog.selectCategory('${c.id}')">
         <span class="cat-icon">${c.icon || '📦'}</span>
         <h4>${c.name}</h4>
       </div>
@@ -307,11 +310,11 @@ const App = {
     if (!menu) return;
 
     menu.innerHTML = `
-      <a class="nav-dropdown-item" onclick="Catalog.selectCategory(''); App.navigate('catalog')" style="grid-column: span 3; font-weight: 800; border-bottom: 1px dashed #cbd5e1; padding-bottom: 8px; margin-bottom: 4px;">
+      <a class="nav-dropdown-item" onclick="Catalog.selectCategory('')" style="grid-column: span 3; font-weight: 800; border-bottom: 1px dashed #cbd5e1; padding-bottom: 8px; margin-bottom: 4px;">
         Всички категории
       </a>
       ${CONFIG.categories.map(cat => `
-        <a class="nav-dropdown-item" onclick="Catalog.selectCategory('${cat.id}'); App.navigate('catalog')">
+        <a class="nav-dropdown-item" onclick="Catalog.selectCategory('${cat.id}')">
           ${cat.name}
         </a>
       `).join("")}
@@ -438,7 +441,6 @@ const App = {
 
   handleCategorySuggestionClick(catId) {
     Catalog.selectCategory(catId);
-    this.navigate("catalog");
     const dropdown = document.getElementById("search-suggestions-dropdown");
     if (dropdown) dropdown.style.display = "none";
   },
@@ -478,10 +480,13 @@ const App = {
     this.toggleMobileMenu(false);
 
     // Show selected view
-    const targetView = document.getElementById(`${mainView}-view`);
+    let targetView = document.getElementById(`${mainView}-view`);
+    if (mainView === "wishlist") {
+      targetView = document.getElementById("catalog-view");
+    }
     if (targetView) {
       targetView.classList.add("active");
-      this.currentView = mainView;
+      this.currentView = mainView === "wishlist" ? "catalog" : mainView;
 
       // Update active nav link
       const navLink = document.querySelector(`.nav-link[onclick*="navigate('${mainView}')"]`);
@@ -517,10 +522,41 @@ const App = {
         this.updateSEO("Завършване на поръчката | Хидролукс Груп", "Сигурно финализиране на Вашата поръчка за хидравлични и пневматични решения в онлайн магазина на Хидролукс.", "#checkout");
         this.updateSchema(null);
       } else if (mainView === "catalog") {
+        Catalog.filterWishlist = false;
+        const subParam = parts[2];
+        const subsubParam = parts[3];
+        if (viewParam) {
+          Catalog.activeCategory = viewParam;
+          Catalog.activeSubcategory = subParam || null;
+          Catalog.activeSubSubcategory = subsubParam || null;
+        } else {
+          Catalog.activeCategory = null;
+          Catalog.activeSubcategory = null;
+          Catalog.activeSubSubcategory = null;
+        }
+        Catalog.renderSidebar();
+        Catalog.applyFiltersAndRender();
+
         this.updateSEO(
           "Продуктов каталог | Маркучи, Хидравлика & Пневматика | Хидролукс Груп",
           "Разгледайте нашия продуктов каталог с маркучи за въздух, вода, гориво, силиконови съединения, хидравлични накрайници, бързи връзки и други от Хидролукс.",
-          "#catalog"
+          hash
+        );
+        this.updateSchema(null);
+      } else if (mainView === "wishlist") {
+        Catalog.filterWishlist = true;
+        Catalog.activeCategory = null;
+        Catalog.activeSubcategory = null;
+        Catalog.activeSubSubcategory = null;
+        Catalog.searchQuery = "";
+        
+        Catalog.renderSidebar();
+        Catalog.applyFiltersAndRender();
+
+        this.updateSEO(
+          "Любими продукти | Хидролукс Груп",
+          "Вашите любими и запазени продукти в Хидролукс Груп.",
+          "#wishlist"
         );
         this.updateSchema(null);
       } else if (mainView === "services") {
@@ -657,6 +693,35 @@ const App = {
         }
       ]
     };
+  },
+
+  initScrollHeader() {
+    let lastScrollY = window.pageYOffset;
+    const header = document.querySelector(".header-main");
+    if (!header) return;
+
+    window.addEventListener("scroll", () => {
+      const currentScrollY = window.pageYOffset;
+      
+      // If we scrolled past a certain threshold (e.g. 150px)
+      if (currentScrollY > 150) {
+        header.classList.add("header-scrolled");
+        
+        // Check scroll direction
+        if (currentScrollY > lastScrollY) {
+          // Scrolling down - hide header
+          header.classList.add("header-hidden");
+        } else {
+          // Scrolling up - show header
+          header.classList.remove("header-hidden");
+        }
+      } else {
+        // Near the top of the page - show header and remove shadow
+        header.classList.remove("header-hidden", "header-scrolled");
+      }
+      
+      lastScrollY = currentScrollY;
+    }, { passive: true });
   }
 };
 

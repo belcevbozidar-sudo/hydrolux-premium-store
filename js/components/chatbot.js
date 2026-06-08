@@ -119,19 +119,14 @@ const Chatbot = {
       `;
     }).join("");
 
-    // Scroll handling:
-    // If scrollToBotResponse is true, scroll to the top of the new response.
-    // Otherwise, scroll to the bottom.
-    if (this.scrollToBotResponse) {
-      const messageElements = msgsEl.querySelectorAll(".chatbot-message");
-      if (messageElements.length > 0) {
-        const lastMsgEl = messageElements[messageElements.length - 1];
-        msgsEl.scrollTop = lastMsgEl.offsetTop - 10;
-      }
-      this.scrollToBotResponse = false; // Reset the flag
-    } else {
+    // Scroll handling: scroll to the bottom of the container.
+    // Use multiple timeouts to handle dynamic image/card height changes and keyboard overlay.
+    setTimeout(() => {
       msgsEl.scrollTop = msgsEl.scrollHeight;
-    }
+    }, 50);
+    setTimeout(() => {
+      msgsEl.scrollTop = msgsEl.scrollHeight;
+    }, 250);
   },
 
   handleCardClick(event, prodId) {
