@@ -1137,7 +1137,6 @@ const Admin = {
       <option value="${c.id}" ${this.filterCategory === c.id ? 'selected' : ''}>${c.name}</option>
     `).join("");
 
-    const isEditing = this.editingProduct !== null;
     const specialOfferType = isEditing ? (this.editingProduct.specialOfferType || "seasonal") : "seasonal";
     const specialOfferText = isEditing ? (this.editingProduct.specialOfferText || "") : "";
     const showSpecialFields = isEditing && this.editingProduct.isSpecial;
