@@ -517,7 +517,9 @@
         <!-- Product Images Gallery -->
         <div class="gallery-panel">
           <div class="main-image-wrapper">
+            <button type="button" class="gallery-nav-btn prev" onclick="Catalog.navigateGallery(-1)" aria-label="Previous image">‹</button>
             <img src="" id="prod-main-image" width="500" height="500" alt="Product Image">
+            <button type="button" class="gallery-nav-btn next" onclick="Catalog.navigateGallery(1)" aria-label="Next image">›</button>
           </div>
           <div class="thumbnails-list" id="prod-thumbnails">
             <!-- Dynamically populated thumbs -->
@@ -526,7 +528,6 @@
 
         <!-- Product Core Info -->
         <div class="product-info-panel">
-          <span class="text-accent font-bold font-xs text-uppercase" id="prod-brand">Semperit</span>
           <h2 id="prod-title">Маркуч за въздух и вода SEMPERIT - PLW 20</h2>
           
           <div class="meta-stats">
@@ -534,9 +535,13 @@
             <div>|</div>
             <div id="prod-stock" class="stock-badge in-stock">В наличност</div>
             <div>|</div>
-            <div>Видян: <strong id="prod-views">2136</strong> пъти</div>
+            <div>Видян: <strong id="prod-views">0</strong> пъти</div>
             <div>|</div>
             <div><a onclick="Catalog.openInquiryModal()" style="font-size: 0.82rem; font-weight: 600; color: var(--text-muted); display: inline-flex; align-items: center; gap: 4px; text-decoration: underline;"><span style="font-size: 0.95rem;">❓</span> Задай въпрос</a></div>
+          </div>
+
+          <div id="prod-brand-container" style="margin-top: 10px; font-size: 0.9rem; color: var(--text-dark); font-weight: 500;">
+            Марка: <span class="text-accent font-bold text-uppercase" id="prod-brand">Semperit</span>
           </div>
 
           <div class="divider"></div>
@@ -940,6 +945,13 @@
         <form onsubmit="Catalog.submitQuickOrder(event)">
           <div class="quick-order-product-summary mb-15 p-15" id="quick-order-product-summary" style="background-color: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; font-size: 0.9rem; color: #1e293b; line-height: 1.4; display: flex; align-items: center; gap: 12px; margin-bottom: 20px; padding: 12px;">
             <!-- Populated dynamically by JS -->
+          </div>
+
+          <div class="form-group" id="quick-order-variant-wrapper" style="margin-bottom: 15px; display: none;">
+            <label for="quick-order-variant-select" style="font-weight: 700; margin-bottom: 5px; display: block;">Изберете размер / вариант <span class="text-accent">*</span></label>
+            <select id="quick-order-variant-select" class="form-control" required onchange="Catalog.handleQuickOrderVariantChange()" style="font-weight: 600;">
+              <!-- Populated dynamically by JS -->
+            </select>
           </div>
           
           <div class="form-group">

@@ -1025,6 +1025,21 @@ const Admin = {
     // Collect unique brands from existing products for the datalist autocomplete
     const existingBrands = [...new Set(CONFIG.products.map(p => p.brand).filter(Boolean))].sort();
 
+    const isEditing = this.editingProduct !== null;
+    const currentBrand = isEditing ? (this.editingProduct.brand || "") : "";
+    const brandInList = existingBrands.includes(currentBrand);
+    
+    let selectValue = "";
+    let showCustomInput = false;
+    if (currentBrand) {
+      if (brandInList) {
+        selectValue = currentBrand;
+      } else {
+        selectValue = "__NEW_BRAND__";
+        showCustomInput = true;
+      }
+    }
+
     // Filter products list based on selected category filter and search query
     let products = CONFIG.products;
     if (this.filterCategory) {
@@ -1195,11 +1210,13 @@ const Admin = {
               </div>
             </div>
             <div class="form-group">
-              <label>Марка <span class="text-accent">*</span></label>
-              <input type="text" id="prod-brand-input" class="form-control" list="existing-brands-datalist" value="${isEditing ? this.editingProduct.brand : ''}" placeholder="напр. Semperit" required autocomplete="off">
-              <datalist id="existing-brands-datalist">
-                ${existingBrands.map(b => `<option value="${this.escapeAttr(b)}"></option>`).join("")}
-              </datalist>
+              <label>Марка</label>
+              <select id="prod-brand-select" class="form-control" onchange="Admin.handleBrandSelectChange(this.value)">
+                <option value="" ${selectValue === '' ? 'selected' : ''}>-- Изберете марка (незадължително) --</option>
+                ${existingBrands.map(b => `<option value="${this.escapeAttr(b)}" ${selectValue === b ? 'selected' : ''}>${b}</option>`).join("")}
+                <option value="__NEW_BRAND__" ${selectValue === '__NEW_BRAND__' ? 'selected' : ''}>Друга марка (въведи ръчно)...</option>
+              </select>
+              <input type="text" id="prod-brand-custom-input" class="form-control" value="${selectValue === '__NEW_BRAND__' ? this.escapeAttr(currentBrand) : ''}" placeholder="Въведете нова марка..." style="margin-top: 8px; display: ${showCustomInput ? 'block' : 'none'};">
             </div>
           </div>
 
@@ -1423,6 +1440,19 @@ const Admin = {
     const badge = document.querySelector(".admin-header-row .admin-badge-success");
     if (badge) {
       badge.textContent = `${products.length} Продукта`;
+    }
+  },
+
+  handleBrandSelectChange(val) {
+    const customInput = document.getElementById("prod-brand-custom-input");
+    if (customInput) {
+      if (val === "__NEW_BRAND__") {
+        customInput.style.display = "block";
+        customInput.focus();
+      } else {
+        customInput.style.display = "none";
+        customInput.value = "";
+      }
     }
   },
 
@@ -2053,13 +2083,20 @@ const Admin = {
       const subsubcategoryCheckboxes = document.querySelectorAll('input[name="prod-subsubcategories"]:checked');
       const subsubcategories = Array.from(subsubcategoryCheckboxes).map(cb => cb.value);
       const subsubcategory = subsubcategories[0] || "";
-      const brand = (document.getElementById("prod-brand-input")?.value || "").trim();
+      const brandSelect = document.getElementById("prod-brand-select");
+      let brand = "";
+      if (brandSelect) {
+        if (brandSelect.value === "__NEW_BRAND__") {
+          brand = (document.getElementById("prod-brand-custom-input")?.value || "").trim();
+        } else {
+          brand = brandSelect.value;
+        }
+      }
 
       // JS-based validation for required core fields (replaces silent HTML5 blocks)
       if (!name) { alert("Моля въведете Име на продукта!"); document.getElementById("prod-name")?.focus(); return; }
       if (!code) { alert("Моля въведете Код / Артикулен номер!"); document.getElementById("prod-code")?.focus(); return; }
       if (categories.length === 0) { alert("Моля изберете поне една Категория!"); return; }
-      if (!brand) { alert("Моля въведете Марка!"); document.getElementById("prod-brand-input")?.focus(); return; }
       const editor = document.getElementById("prod-description-editor");
       const description = editor ? (editor.innerHTML || "").trim() : "";
       const tagsInput = document.getElementById("prod-tags")?.value || "";

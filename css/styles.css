@@ -1490,12 +1490,55 @@ p {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  position: relative;
 }
 
 .main-image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.gallery-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1.5px solid var(--border-color);
+  color: var(--text-dark);
+  font-size: 1.8rem;
+  font-weight: 700;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  user-select: none;
+}
+
+.gallery-nav-btn:hover {
+  background: var(--bg-pure);
+  color: var(--primary);
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.gallery-nav-btn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.gallery-nav-btn.prev {
+  left: 12px;
+}
+
+.gallery-nav-btn.next {
+  right: 12px;
 }
 
 .thumbnails-list {

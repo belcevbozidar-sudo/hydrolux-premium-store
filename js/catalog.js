@@ -478,7 +478,14 @@ const Catalog = {
 
     // Set title and brand
     document.getElementById("prod-title").textContent = product.name;
-    document.getElementById("prod-brand").textContent = product.brand;
+    const brandEl = document.getElementById("prod-brand");
+    const brandContainer = document.getElementById("prod-brand-container");
+    if (product.brand) {
+      if (brandEl) brandEl.textContent = product.brand;
+      if (brandContainer) brandContainer.style.display = "block";
+    } else {
+      if (brandContainer) brandContainer.style.display = "none";
+    }
     document.getElementById("prod-sku").textContent = product.code;
     document.getElementById("prod-views").textContent = product.views;
     
@@ -505,7 +512,22 @@ const Catalog = {
       <span class="tag" onclick="Catalog.triggerTagSearch('${t}')">${t}</span>
     `).join("");
 
-    // Inject Gallery Image
+    // Inject Gallery Image and Setup Gallery Navigation state
+    this.currentProductImages = product.images || [];
+    this.currentProductImageIndex = 0;
+
+    const prevBtn = document.querySelector(".gallery-nav-btn.prev");
+    const nextBtn = document.querySelector(".gallery-nav-btn.next");
+    if (prevBtn && nextBtn) {
+      if (this.currentProductImages.length > 1) {
+        prevBtn.style.display = "flex";
+        nextBtn.style.display = "flex";
+      } else {
+        prevBtn.style.display = "none";
+        nextBtn.style.display = "none";
+      }
+    }
+
     const mainImg = document.getElementById("prod-main-image");
     mainImg.src = product.images[0];
     mainImg.alt = `${product.name} - ${product.brand} | Хидролукс Груп`;
@@ -535,7 +557,7 @@ const Catalog = {
         <table class="table">
           <thead>
             <tr>
-              ${cols.map(c => `<th>${c.label}</th>`).join("")}
+              ${cols.map(c => `<th class="text-center">${c.label}</th>`).join("")}
               <th class="text-center">Количество</th>
               <th class="text-center">Действие</th>
             </tr>
@@ -550,16 +572,16 @@ const Catalog = {
                   ${cols.map(c => {
                     const val = v[c.key] !== undefined ? v[c.key] : '';
                     if (c.key === 'priceEur') {
-                      return `<td><div class="table-price-bgn">${formatPrice(priceVal, product.unit === 'м').eur}</div></td>`;
+                      return `<td class="text-center"><div class="table-price-bgn">${formatPrice(priceVal, product.unit === 'м').eur}</div></td>`;
                     }
                     if (c.key === 'code') {
-                      return `<td class="font-bold text-primary font-xs">${val}</td>`;
+                      return `<td class="text-center font-bold text-primary font-xs">${val}</td>`;
                     }
                     if (c.key === 'pressure') {
-                      return `<td><span class="badge badge-warning">${val} Bar</span></td>`;
+                      return `<td class="text-center"><span class="badge badge-warning">${val} Bar</span></td>`;
                     }
                     const suffix = c.suffix || '';
-                    return `<td>${val}${suffix}</td>`;
+                    return `<td class="text-center">${val}${suffix}</td>`;
                   }).join("")}
                   <td class="text-center">
                     <div class="quantity-input-wrapper small">
@@ -626,6 +648,38 @@ const Catalog = {
     document.getElementById("prod-main-image").src = src;
     document.querySelectorAll(".thumb-img").forEach(t => t.classList.remove("active"));
     thumbEl.classList.add("active");
+    if (this.currentProductImages) {
+      const idx = this.currentProductImages.indexOf(src);
+      if (idx !== -1) {
+        this.currentProductImageIndex = idx;
+      }
+    }
+  },
+
+  navigateGallery(direction) {
+    if (!this.currentProductImages || this.currentProductImages.length <= 1) return;
+    
+    let newIndex = this.currentProductImageIndex + direction;
+    if (newIndex < 0) {
+      newIndex = this.currentProductImages.length - 1;
+    } else if (newIndex >= this.currentProductImages.length) {
+      newIndex = 0;
+    }
+    
+    this.currentProductImageIndex = newIndex;
+    const src = this.currentProductImages[newIndex];
+    
+    const mainImg = document.getElementById("prod-main-image");
+    if (mainImg) mainImg.src = src;
+    
+    const thumbnails = document.querySelectorAll(".thumb-img");
+    thumbnails.forEach((thumb, idx) => {
+      if (idx === newIndex) {
+        thumb.classList.add("active");
+      } else {
+        thumb.classList.remove("active");
+      }
+    });
   },
 
   adjustVariantQty(code, diff) {
@@ -710,17 +764,62 @@ const Catalog = {
       modal.classList.add("open");
       document.body.classList.add("no-scroll");
 
+      const select = document.getElementById("quick-order-variant-select");
+      const wrapper = document.getElementById("quick-order-variant-wrapper");
+      const hasVariants = this.currentProduct.variants && this.currentProduct.variants.length > 0;
+      
+      if (select && wrapper) {
+        if (hasVariants) {
+          wrapper.style.display = "block";
+          select.setAttribute("required", "required");
+          select.innerHTML = `
+            <option value="">-- Изберете размер / вариант --</option>
+            ${this.currentProduct.variants.map((v, idx) => {
+              const code = this.getVariantCode(this.currentProduct, v, idx);
+              const displayLabel = v.innerDb ? `${v.innerDb}мм (${v.inch || ''})` : code;
+              const price = formatPrice(v.priceEur).eur;
+              return `<option value="${idx}">${displayLabel} - ${price}</option>`;
+            }).join("")}
+          `;
+        } else {
+          wrapper.style.display = "none";
+          select.removeAttribute("required");
+          select.innerHTML = "";
+        }
+      }
+
       const summary = document.getElementById("quick-order-product-summary");
       if (summary) {
         const img = this.currentProduct.images[0] || 'assets/logo.webp';
-        const priceText = formatPrice(this.currentProduct.variants[0]?.priceEur || 0).eur;
+        const defaultPrice = hasVariants ? this.currentProduct.variants[0]?.priceEur || 0 : this.currentProduct.priceEur || 0;
+        const priceText = formatPrice(defaultPrice).eur;
         summary.innerHTML = `
           <img src="${img}" alt="${this.currentProduct.name} - бърза поръчка" style="width: 60px; height: 60px; object-fit: cover; border-radius: 6px; border: 1px solid #e2e8f0;">
           <div>
             <strong style="display: block; font-weight: 700; color: #0f172a; font-size: 0.95rem;">${this.currentProduct.name}</strong>
-            <span style="font-size: 0.85rem; color: #ea580c; font-weight: 700;">Цена: ${priceText} / ${this.currentProduct.unit || 'м'}</span>
+            <span style="font-size: 0.85rem; color: #ea580c; font-weight: 700;" id="quick-order-price-display">Цена: ${priceText} / ${this.currentProduct.unit || 'м'}</span>
           </div>
         `;
+      }
+    }
+  },
+
+  handleQuickOrderVariantChange() {
+    const select = document.getElementById("quick-order-variant-select");
+    const priceDisplay = document.getElementById("quick-order-price-display");
+    if (select && priceDisplay && this.currentProduct) {
+      const idx = select.value;
+      if (idx !== "") {
+        const variant = this.currentProduct.variants[parseInt(idx)];
+        if (variant) {
+          const priceText = formatPrice(variant.priceEur).eur;
+          priceDisplay.textContent = `Цена: ${priceText} / ${this.currentProduct.unit || 'м'}`;
+        }
+      } else {
+        const hasVariants = this.currentProduct.variants && this.currentProduct.variants.length > 0;
+        const defaultPrice = hasVariants ? this.currentProduct.variants[0]?.priceEur || 0 : this.currentProduct.priceEur || 0;
+        const priceText = formatPrice(defaultPrice).eur;
+        priceDisplay.textContent = `Цена: ${priceText} / ${this.currentProduct.unit || 'м'}`;
       }
     }
   },
@@ -739,14 +838,42 @@ const Catalog = {
     const phone = document.getElementById("quick-order-phone").value.trim();
     if (!name || !phone || !this.currentProduct) return;
 
+    const select = document.getElementById("quick-order-variant-select");
+    let priceEur = 0;
+    let variantCode = "";
+    let variantName = "";
+    
+    const hasVariants = this.currentProduct.variants && this.currentProduct.variants.length > 0;
+    if (hasVariants) {
+      if (!select || select.value === "") {
+        alert("Моля, изберете размер / вариант за бърза поръчка!");
+        if (select) select.focus();
+        return;
+      }
+      const idx = parseInt(select.value);
+      const selectedVariant = this.currentProduct.variants[idx];
+      if (!selectedVariant) return;
+
+      priceEur = parseFloat(selectedVariant.priceEur) || 0;
+      variantCode = this.getVariantCode(this.currentProduct, selectedVariant, idx);
+      const diameter = selectedVariant.innerDb !== undefined && selectedVariant.innerDb !== "" ? `ø ${selectedVariant.innerDb}мм` : variantCode;
+      const inch = selectedVariant.inch ? ` (${selectedVariant.inch})` : "";
+      variantName = `Размер: ${diameter}${inch}`;
+    } else {
+      priceEur = parseFloat(this.currentProduct.priceEur) || 0;
+      variantCode = this.currentProduct.code || this.currentProduct.id;
+      variantName = "";
+    }
+
     const orderNumber = "HL-Q-" + Math.floor(100000 + Math.random() * 900000);
-    const totals = { eur: this.currentProduct.variants[0]?.priceEur || 0 };
+    const totals = { eur: priceEur };
     const orderedItems = [{
       id: this.currentProduct.id,
       name: this.currentProduct.name,
-      priceEur: this.currentProduct.variants[0]?.priceEur || 0,
+      priceEur: priceEur,
       quantity: 1,
-      variantName: this.currentProduct.variants[0]?.code || ""
+      variantCode: variantCode,
+      variantName: variantName
     }];
 
     const order = {
@@ -777,6 +904,7 @@ const Catalog = {
     this.closeQuickOrderModal();
     document.getElementById("quick-order-name").value = "";
     document.getElementById("quick-order-phone").value = "";
+    if (select) select.value = "";
     Cart.showToast("Благодарим Ви! Поръчката е изпратена успешно.");
   },
 
