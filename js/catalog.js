@@ -536,8 +536,8 @@ const Catalog = {
           <thead>
             <tr>
               ${cols.map(c => `<th>${c.label}</th>`).join("")}
-              <th>Количество</th>
-              <th>Действие</th>
+              <th class="text-center">Количество</th>
+              <th class="text-center">Действие</th>
             </tr>
           </thead>
           <tbody id="prod-variants-tbody">
@@ -561,14 +561,14 @@ const Catalog = {
                     const suffix = c.suffix || '';
                     return `<td>${val}${suffix}</td>`;
                   }).join("")}
-                  <td>
+                  <td class="text-center">
                     <div class="quantity-input-wrapper small">
                       <button class="btn btn-secondary btn-icon small" onclick="Catalog.adjustVariantQtyByIndex(${idx}, -1)">-</button>
-                      <input type="number" id="${qtyId}" class="form-control text-center small qty-input" value="1" min="1">
+                      <input type="number" id="${qtyId}" class="form-control text-center small qty-input" value="0" min="0">
                       <button class="btn btn-secondary btn-icon small" onclick="Catalog.adjustVariantQtyByIndex(${idx}, 1)">+</button>
                     </div>
                   </td>
-                  <td>
+                  <td class="text-center">
                     <button class="btn btn-primary small btn-buy-variant" onclick="Catalog.buyVariantByIndex('${product.id}', ${idx})">
                       Купи
                     </button>
@@ -631,21 +631,25 @@ const Catalog = {
   adjustVariantQty(code, diff) {
     const input = document.getElementById(`qty-${code}`);
     if (input) {
-      input.value = Math.max(1, (parseInt(input.value) || 1) + diff);
+      input.value = Math.max(0, (parseInt(input.value) || 0) + diff);
     }
   },
 
   adjustVariantQtyByIndex(index, diff) {
     const input = document.getElementById(this.getVariantQtyInputId(index));
     if (input) {
-      input.value = Math.max(1, (parseInt(input.value) || 1) + diff);
+      input.value = Math.max(0, (parseInt(input.value) || 0) + diff);
     }
   },
 
   buyVariant(productId, code) {
     const product = CONFIG.products.find(p => p.id === productId);
     const input = document.getElementById(`qty-${code}`);
-    const qty = parseInt(input.value) || 1;
+    let qty = parseInt(input ? input.value : 0) || 0;
+    if (qty <= 0) {
+      qty = 1;
+      if (input) input.value = 1;
+    }
     if (product) {
       Cart.addItem(product, code, qty);
       Cart.openDrawer();
@@ -657,7 +661,11 @@ const Catalog = {
     if (!product || !product.variants || !product.variants[index]) return;
 
     const input = document.getElementById(this.getVariantQtyInputId(index));
-    const qty = parseInt(input ? input.value : 1) || 1;
+    let qty = parseInt(input ? input.value : 0) || 0;
+    if (qty <= 0) {
+      qty = 1;
+      if (input) input.value = 1;
+    }
     const variantCode = this.getVariantCode(product, product.variants[index], index);
     Cart.addItem(product, variantCode, qty);
     Cart.openDrawer();

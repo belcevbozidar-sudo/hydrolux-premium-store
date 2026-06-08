@@ -1679,6 +1679,13 @@ p {
   text-align: center;
   padding: 4px;
   font-weight: 600;
+  -moz-appearance: textfield;
+}
+
+.qty-input::-webkit-outer-spin-button,
+.qty-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* Bulk Variant Actions */
