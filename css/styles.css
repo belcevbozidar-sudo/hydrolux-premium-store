@@ -5218,3 +5218,12 @@ td .admin-actions-cell {
     font-size: 16px !important;
   }
 }
+
+/* Homepage popular products grid fix for small screens */
+@media (max-width: 480px) {
+  .popular-layout .products-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    padding: 0 10px !important;
+  }
+}
