@@ -298,9 +298,9 @@ const Catalog = {
       grid.className = "catalog-categories-cards-grid";
       const getCatImg = (cat) => {
         const mapping = {
-          "73": "assets/cat_73.png",
-          "74": "assets/cat_74.png",
-          "168": "assets/cat_168.png",
+          "73": "assets/cat_73.jpg",
+          "74": "assets/cat_74.jpg",
+          "168": "assets/cat_168.jpg",
           "60": "assets/cat_air_hoses.webp",
           "61": "assets/cat_fuel_oil_hoses.webp",
           "62": "assets/cat_coolant_hoses.webp",
@@ -314,7 +314,8 @@ const Catalog = {
           "59": "assets/cat_water_hoses.webp",
           "71": "assets/cat_pneumatic_tubes.webp",
           "72": "assets/logo.webp",
-          "154": "assets/logo.webp"
+          "67": "assets/cat_67.jpg",
+          "154": "assets/cat_154.jpg"
         };
         const mapped = mapping[String(cat.id)];
         if (mapped) return mapped;

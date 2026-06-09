@@ -3,10 +3,6 @@ const App = {
   currentView: "home",
 
   async init() {
-    if (CONFIG.ready) {
-      await CONFIG.ready;
-    }
-
     if (typeof Auth !== "undefined") {
       Auth.init();
     }
@@ -15,31 +11,38 @@ const App = {
     Cart.init();
     this.updateWishlistCount();
     
-    // 2. Render dynamic components based on the localStorage state
+    // 2. Render UI immediately using local/seed state for instant FCP/LCP
+    this.renderAllUI();
+    
+    // 3. Setup event listeners
+    this.setupSearchSuggestions();
+    this.route();
+    window.addEventListener("hashchange", () => this.route());
+    this.updateHeroStats();
+    this.initScrollHeader();
+
+    // 4. Background revalidate after Convex resolves
+    if (CONFIG.ready) {
+      CONFIG.ready.then(() => {
+        // Re-render UI with latest synced server state in the background
+        this.renderAllUI();
+        this.updateWishlistCount();
+      }).catch(err => {
+        console.error("Error waiting for server config load:", err);
+      });
+    }
+  },
+
+  renderAllUI() {
     this.renderQuickCategories();
     this.renderSearchCategories();
     this.renderHeaderNavDropdown();
     this.renderHomeCategories();
-    
-    // 3. Setup Smart Search Suggestions and Input
-    this.setupSearchSuggestions();
-
-    // 4. Render Catalog Sidebar on startup
-    Catalog.renderSidebar();
-    Catalog.applyFiltersAndRender();
-    
-    // 5. Populate Homepage Featured Products Grid
+    if (typeof Catalog !== "undefined") {
+      Catalog.renderSidebar();
+      Catalog.applyFiltersAndRender();
+    }
     this.renderFeaturedProductsHome();
-
-    // 6. Default View routing
-    this.route();
-    window.addEventListener("hashchange", () => this.route());
-    
-    // 7. Hero Stats
-    this.updateHeroStats();
-    
-    // 8. Sticky reveal header
-    this.initScrollHeader();
   },
 
   renderFeaturedProductsHome() {
@@ -279,9 +282,9 @@ const App = {
 
     const getCatImg = (cat) => {
       const mapping = {
-        "73": "assets/cat_73.png",
-        "74": "assets/cat_74.png",
-        "168": "assets/cat_168.png",
+        "73": "assets/cat_73.jpg",
+        "74": "assets/cat_74.jpg",
+        "168": "assets/cat_168.jpg",
         "60": "assets/cat_air_hoses.webp",
         "61": "assets/cat_fuel_oil_hoses.webp",
         "62": "assets/cat_coolant_hoses.webp",
@@ -295,7 +298,8 @@ const App = {
         "59": "assets/cat_water_hoses.webp",
         "71": "assets/cat_pneumatic_tubes.webp",
         "72": "assets/logo.webp",
-        "154": "assets/logo.webp"
+        "67": "assets/cat_67.jpg",
+        "154": "assets/cat_154.jpg"
       };
       const mapped = mapping[String(cat.id)];
       if (mapped) return mapped;
