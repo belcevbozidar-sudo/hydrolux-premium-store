@@ -77964,10 +77964,11 @@ if (localStorage.getItem("hydrolux_builder_options")) {
       if (migrated) {
         saveLocalState();
       }
-    } else {
-      localStorage.removeItem("hydrolux_builder_options");
     }
-  } catch (e) {
+  } else {
+    localStorage.removeItem("hydrolux_builder_options");
+  }
+} catch (e) {
     console.error("Error parsing builderOptions from localStorage", e);
   }
 } else {
