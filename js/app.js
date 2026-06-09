@@ -277,17 +277,26 @@ const App = {
     const carousel = document.getElementById("home-categories-carousel");
     if (!carousel) return;
 
+    const getCatImg = (cat) => {
+      if (cat.image) return cat.image;
+      const mapping = {
+        "73": "assets/cat_pneumatic_fittings.webp",
+        "74": "assets/cat_hydraulic_fittings.webp",
+        "168": "assets/cat_high_pressure_hoses.webp",
+        "72": "assets/logo.webp",
+        "154": "assets/logo.webp"
+      };
+      return mapping[String(cat.id)] || "assets/logo.webp";
+    };
+
     carousel.innerHTML = CONFIG.categories.map(c => {
-      const defaultImg = `assets/cat_${String(c.id).replace(/-/g, '_')}.webp`;
-      const imageSrc = c.image || defaultImg;
+      const imageSrc = getCatImg(c);
       const cleanImageSrc = imageSrc.replace(/\s+/g, '%20');
-      const fallbackPrompt = encodeURIComponent(`${c.name} industrial hose connection premium studio lighting photography`);
-      const fallbackUrl = `https://image.pollinations.ai/prompt/${fallbackPrompt}?width=300&height=350&nologo=true`;
 
       return `
         <div class="category-card-6" onclick="Catalog.selectCategory('${c.id}')">
           <div class="category-card-6-img-wrapper">
-            <img src="${cleanImageSrc}" alt="Категория: ${c.name} - Хидролукс Груп" onerror="this.onerror=null; this.src='${fallbackUrl}'" width="300" height="345" loading="lazy">
+            <img src="${cleanImageSrc}" alt="Категория: ${c.name} - Хидролукс Груп" onerror="this.onerror=null; this.src='assets/logo.webp'" width="300" height="345" loading="lazy">
           </div>
           <div class="category-card-6-body">
             <h3 class="category-card-6-title">${c.name}</h3>

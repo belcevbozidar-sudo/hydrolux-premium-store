@@ -296,10 +296,23 @@ const Catalog = {
       if (countEl) countEl.textContent = CONFIG.categories.length;
 
       grid.className = "catalog-categories-cards-grid";
+      const getCatImg = (c) => {
+        if (c.image) return c.image;
+        const mapping = {
+          "73": "assets/cat_pneumatic_fittings.webp",
+          "74": "assets/cat_hydraulic_fittings.webp",
+          "168": "assets/cat_high_pressure_hoses.webp",
+          "72": "assets/logo.webp",
+          "154": "assets/logo.webp"
+        };
+        return mapping[String(c.id)] || "assets/logo.webp";
+      };
+
       grid.innerHTML = CONFIG.categories.map(cat => {
-        const imgName = `cat_${String(cat.id).replace(/-/g, '_')}.webp`;
+        const imageSrc = getCatImg(cat);
+        const cleanImageSrc = imageSrc.replace(/\s+/g, '%20');
         return `
-          <div class="category-card-card" onclick="Catalog.selectCategory('${cat.id}')" style="background-image: url('assets/${imgName}');">
+          <div class="category-card-card" onclick="Catalog.selectCategory('${cat.id}')" style="background-image: url('${cleanImageSrc}');">
             <div class="category-card-overlay">
               <div class="category-card-info">
                 <span class="category-card-icon">${cat.icon || '📁'}</span>
