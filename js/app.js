@@ -280,9 +280,9 @@ const App = {
     const getCatImg = (cat) => {
       if (cat.image) return cat.image;
       const mapping = {
-        "73": "assets/cat_pneumatic_fittings.webp",
-        "74": "assets/cat_hydraulic_fittings.webp",
-        "168": "assets/cat_high_pressure_hoses.webp",
+        "73": "assets/cat_73.png",
+        "74": "assets/cat_74.png",
+        "168": "assets/cat_168.png",
         "72": "assets/logo.webp",
         "154": "assets/logo.webp"
       };
