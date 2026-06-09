@@ -19,21 +19,25 @@ const CONFIG = {
     "id": "73",
     "name": "Пневматични и съединители фитинги",
     "icon": "⚙️",
+    "image": "",
     "subcategories": [
       {
         "id": "96",
         "name": "Цангови връзки",
         "icon": "📁",
+        "image": "",
         "subcategories": [
           {
             "id": "97",
             "name": "Инчови цангови връзки",
-            "icon": "📁"
+            "icon": "📁",
+            "image": ""
           },
           {
             "id": "98",
             "name": "Метрични цангови връзки",
-            "icon": "📁"
+            "icon": "📁",
+            "image": ""
           }
         ]
       },
@@ -41,127 +45,151 @@ const CONFIG = {
         "id": "99",
         "name": "Бързи връзки",
         "icon": "📁",
+        "image": "",
         "subcategories": [
           {
             "id": "100",
             "name": "Високо дебитни",
-            "icon": "📁"
+            "icon": "📁",
+            "image": ""
           },
           {
             "id": "101",
             "name": "Стандартен дебит",
-            "icon": "📁"
+            "icon": "📁",
+            "image": ""
           },
           {
             "id": "102",
             "name": "Мини",
-            "icon": "📁"
+            "icon": "📁",
+            "image": ""
           }
         ]
       },
       {
         "id": "103",
         "name": "Резбови Връзки",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "104",
         "name": "Връзки с врязващ пръстен",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "105",
         "name": "Сферични кранове",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "106",
         "name": "Възвратни клапани",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "107",
         "name": "Връзки със затягаща гайка",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "108",
         "name": "Инструменти за пневматика",
-        "icon": "⚙️"
+        "icon": "⚙️",
+        "image": ""
       },
       {
         "id": "175",
         "name": "PVC снадки за шлаух",
-        "icon": "🌀"
+        "icon": "🌀",
+        "image": ""
       }
     ]
   },
   {
     "id": "72",
     "name": "Категории",
-    "icon": "📁"
+    "icon": "📁",
+    "image": ""
   },
   {
     "id": "71",
     "name": "Пневматични шлаухи",
     "icon": "🌀",
+    "image": "https://hydrolux.bg/image/catalog/Pneumatic.png",
     "subcategories": [
       {
         "id": "90",
         "name": "Полиамидни шлаухи PA 12",
-        "icon": "🌀"
+        "icon": "🌀",
+        "image": ""
       },
       {
         "id": "91",
         "name": "Полиамидни шлаухи - NYLON",
-        "icon": "🌀"
+        "icon": "🌀",
+        "image": ""
       },
       {
         "id": "92",
         "name": "Полиамидни шлаухи - Спирали",
-        "icon": "🌀"
+        "icon": "🌀",
+        "image": ""
       },
       {
         "id": "93",
         "name": "Полиетиленови шлаухи",
-        "icon": "🌀"
+        "icon": "🌀",
+        "image": ""
       },
       {
         "id": "94",
         "name": "Полиуретанови шлаухи",
-        "icon": "🌀"
+        "icon": "🌀",
+        "image": ""
       },
       {
         "id": "95",
         "name": "Тефлонови шлаухи",
-        "icon": "🌀"
+        "icon": "🌀",
+        "image": ""
       }
     ]
   },
   {
     "id": "61",
     "name": "Маркучи за гориво и масло",
-    "icon": "🛢️"
+    "icon": "🛢️",
+    "image": "https://hydrolux.bg/image/catalog/Fuel.png"
   },
   {
     "id": "60",
     "name": "Маркучи за въздух",
     "icon": "💨",
+    "image": "https://hydrolux.bg/image/catalog/Air.png",
     "subcategories": [
       {
         "id": "75",
         "name": "Гумени маркучи за въздух",
-        "icon": "💨"
+        "icon": "💨",
+        "image": ""
       },
       {
         "id": "76",
         "name": "PVC маркучи за въздух",
-        "icon": "💨"
+        "icon": "💨",
+        "image": ""
       },
       {
         "id": "77",
         "name": "Полиуретанови маркучи за въздух",
-        "icon": "💨"
+        "icon": "💨",
+        "image": ""
       }
     ]
   },
@@ -169,26 +197,31 @@ const CONFIG = {
     "id": "74",
     "name": "Индустриални накрайници",
     "icon": "🔩",
+    "image": "",
     "subcategories": [
       {
         "id": "109",
         "name": "IBC накрайници за бидони",
         "icon": "🔩",
+        "image": "",
         "subcategories": [
           {
             "id": "110",
             "name": "Накрайници IBC",
-            "icon": "🔩"
+            "icon": "🔩",
+            "image": ""
           },
           {
             "id": "111",
             "name": "Кранове за бидони IBC",
-            "icon": "📁"
+            "icon": "📁",
+            "image": ""
           },
           {
             "id": "112",
             "name": "Капачки и чучури за IBC бидони",
-            "icon": "📁"
+            "icon": "📁",
+            "image": ""
           }
         ]
       },
@@ -196,150 +229,179 @@ const CONFIG = {
         "id": "113",
         "name": "Накрайници CAMLOCK",
         "icon": "🔩",
+        "image": "",
         "subcategories": [
           {
             "id": "181",
             "name": "Алуминий",
-            "icon": "📁"
+            "icon": "📁",
+            "image": ""
           },
           {
             "id": "182",
             "name": "Месинг",
-            "icon": "📁"
+            "icon": "📁",
+            "image": ""
           },
           {
             "id": "183",
             "name": "Неръждаема стомана",
-            "icon": "📁"
+            "icon": "📁",
+            "image": ""
           },
           {
             "id": "184",
             "name": "Полипропилен",
-            "icon": "📁"
+            "icon": "📁",
+            "image": ""
           }
         ]
       },
       {
         "id": "114",
         "name": "Накрайници Storz",
-        "icon": "🔩"
+        "icon": "🔩",
+        "image": ""
       },
       {
         "id": "115",
         "name": "Накрайници FERRARI",
-        "icon": "🔩"
+        "icon": "🔩",
+        "image": ""
       },
       {
         "id": "116",
         "name": "Накрайници GEKA",
-        "icon": "🔩"
+        "icon": "🔩",
+        "image": ""
       },
       {
         "id": "117",
         "name": "Накрайници SANDBLAST - MORTAR",
-        "icon": "🔩"
+        "icon": "🔩",
+        "image": ""
       },
       {
         "id": "118",
         "name": "Накрайници Guillemin",
-        "icon": "🔩"
+        "icon": "🔩",
+        "image": ""
       },
       {
         "id": "119",
         "name": "Накрайници Cardan Perrot",
-        "icon": "🔩"
+        "icon": "🔩",
+        "image": ""
       },
       {
         "id": "120",
         "name": "Накрайници TODO",
-        "icon": "🔩"
+        "icon": "🔩",
+        "image": ""
       },
       {
         "id": "176",
         "name": "Резбови накрайници",
         "icon": "🔩",
+        "image": "",
         "subcategories": [
           {
             "id": "177",
             "name": "Резбови накраници - Алуминий",
-            "icon": "📁"
+            "icon": "📁",
+            "image": ""
           },
           {
             "id": "178",
             "name": "Резбови накрайници - месинг",
-            "icon": "🔩"
+            "icon": "🔩",
+            "image": ""
           },
           {
             "id": "179",
             "name": "Резбови накрайници - неръждаеми",
-            "icon": "🔩"
+            "icon": "🔩",
+            "image": ""
           },
           {
             "id": "180",
             "name": "Резбови фитинги - полипропилен",
-            "icon": "📁"
+            "icon": "📁",
+            "image": ""
           }
         ]
       },
       {
         "id": "122",
         "name": "Бързосменници за въздух, компресори",
-        "icon": "💨"
+        "icon": "💨",
+        "image": ""
       },
       {
         "id": "123",
         "name": "Накрайници за храни и фармация",
-        "icon": "🍎"
+        "icon": "🍎",
+        "image": ""
       },
       {
         "id": "124",
         "name": "Накрайници за бензиноколонки",
-        "icon": "🔩"
+        "icon": "🔩",
+        "image": ""
       },
       {
         "id": "125",
         "name": "Накрайници Фланци",
-        "icon": "🔩"
+        "icon": "🔩",
+        "image": ""
       },
       {
         "id": "126",
         "name": "Накрайници за къртачи",
-        "icon": "🔩"
+        "icon": "🔩",
+        "image": ""
       },
       {
         "id": "127",
         "name": "Накрайници BAUER",
-        "icon": "🔩"
+        "icon": "🔩",
+        "image": ""
       },
       {
         "id": "128",
         "name": "Чаши за каучукови маркучи",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "129",
         "name": "Възвратни клапани",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "130",
         "name": "Накрайници за заварка",
-        "icon": "🔩"
+        "icon": "🔩",
+        "image": ""
       },
       {
         "id": "131",
         "name": "Спирателни кранове",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "132",
         "name": "Пистолети за измиване",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "153",
         "name": "Накрайници TW",
-        "icon": "🔩"
+        "icon": "🔩",
+        "image": ""
       }
     ]
   },
@@ -347,16 +409,19 @@ const CONFIG = {
     "id": "62",
     "name": "Маркучи за охлаждаща течност",
     "icon": "❄️",
+    "image": "https://hydrolux.bg/image/catalog/Cooling.png",
     "subcategories": [
       {
         "id": "82",
         "name": "Силиконови маркучи за охлаждаща течност",
-        "icon": "❄️"
+        "icon": "❄️",
+        "image": ""
       },
       {
         "id": "83",
         "name": "Гумени маркучи за охлаждаща течност",
-        "icon": "❄️"
+        "icon": "❄️",
+        "image": ""
       }
     ]
   },
@@ -364,16 +429,19 @@ const CONFIG = {
     "id": "63",
     "name": "Силиконови маркучи и Съединения",
     "icon": "🧪",
+    "image": "https://hydrolux.bg/image/catalog/Sillicone.png",
     "subcategories": [
       {
         "id": "84",
         "name": "Силиконови маркучи",
-        "icon": "🧪"
+        "icon": "🧪",
+        "image": ""
       },
       {
         "id": "85",
         "name": "Силиконови съединения",
-        "icon": "🧪"
+        "icon": "🧪",
+        "image": ""
       }
     ]
   },
@@ -381,36 +449,43 @@ const CONFIG = {
     "id": "64",
     "name": "PVC Маркучи",
     "icon": "📏",
+    "image": "https://hydrolux.bg/image/catalog/PVC.png",
     "subcategories": [
       {
         "id": "155",
         "name": "Маркучи за въздух",
-        "icon": "💨"
+        "icon": "💨",
+        "image": ""
       },
       {
         "id": "156",
         "name": "Маркучи за гориво и масло",
-        "icon": "🛢️"
+        "icon": "🛢️",
+        "image": ""
       },
       {
         "id": "157",
         "name": "Маркучи за храна",
-        "icon": "🍎"
+        "icon": "🍎",
+        "image": ""
       },
       {
         "id": "158",
         "name": "PVC маркучи за абразия",
-        "icon": "📏"
+        "icon": "📏",
+        "image": ""
       },
       {
         "id": "159",
         "name": "Маркучи за вода",
-        "icon": "💧"
+        "icon": "💧",
+        "image": ""
       },
       {
         "id": "160",
         "name": "Маркучи за пестициди",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       }
     ]
   },
@@ -418,11 +493,13 @@ const CONFIG = {
     "id": "70",
     "name": "Полиуретанови маркучи",
     "icon": "🌀",
+    "image": "https://hydrolux.bg/image/catalog/PUR Hose.png",
     "subcategories": [
       {
         "id": "86",
         "name": "Съединения за полиуретанови маркучи",
-        "icon": "🌀"
+        "icon": "🌀",
+        "image": ""
       }
     ]
   },
@@ -430,38 +507,45 @@ const CONFIG = {
     "id": "69",
     "name": "Аксесоари за маркучи",
     "icon": "🎒",
+    "image": "https://hydrolux.bg/image/catalog/Accessories.png",
     "subcategories": [
       {
         "id": "142",
         "name": "Свръзки за маркучи",
         "icon": "📁",
+        "image": "",
         "subcategories": [
           {
             "id": "144",
             "name": "POM снадки за маркучи",
-            "icon": "📁"
+            "icon": "📁",
+            "image": ""
           },
           {
             "id": "145",
             "name": "Месингови снадки за маркучи",
-            "icon": "📁"
+            "icon": "📁",
+            "image": ""
           }
         ]
       },
       {
         "id": "146",
         "name": "Предпазни ръкави и спирали",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "147",
         "name": "Инструменти за маркучи",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "174",
         "name": "Помпи и клапани",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       }
     ]
   },
@@ -469,21 +553,25 @@ const CONFIG = {
     "id": "68",
     "name": "Маркучи за храни",
     "icon": "🍎",
+    "image": "https://hydrolux.bg/image/catalog/Food.png",
     "subcategories": [
       {
         "id": "87",
         "name": "PVC маркучи за храни",
-        "icon": "📏"
+        "icon": "📏",
+        "image": ""
       },
       {
         "id": "88",
         "name": "Силиконови маркучи за храни",
-        "icon": "🧪"
+        "icon": "🧪",
+        "image": ""
       },
       {
         "id": "89",
         "name": "Гумени маркучи за храни",
-        "icon": "🍎"
+        "icon": "🍎",
+        "image": ""
       }
     ]
   },
@@ -491,88 +579,105 @@ const CONFIG = {
     "id": "67",
     "name": "Машини за Кербоване",
     "icon": "📁",
+    "image": "https://hydrolux.bg/image/catalog/Pressing .png",
     "subcategories": [
       {
         "id": "148",
         "name": "Преси за маркучи",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "149",
         "name": "Отрезни машини",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "150",
         "name": "Забелващи машини",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "151",
         "name": "Аксесоари за машини за кербоване",
-        "icon": "🎒"
+        "icon": "🎒",
+        "image": ""
       },
       {
         "id": "152",
         "name": "Машини за монтиране на врязващи пръстени",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       }
     ]
   },
   {
     "id": "66",
     "name": "Маркучи за технически газове",
-    "icon": "🔥"
+    "icon": "🔥",
+    "image": "https://hydrolux.bg/image/catalog/CO2.png"
   },
   {
     "id": "65",
     "name": "Хидравлични накрайници",
     "icon": "🔩",
+    "image": "https://hydrolux.bg/image/catalog/Pressure.png",
     "subcategories": [
       {
         "id": "133",
         "name": "BSP 60°",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "134",
         "name": "DIN 24°",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "135",
         "name": "Hyper Spiral",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "136",
         "name": "Interlock",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "137",
         "name": "JIC 37°",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "138",
         "name": "ORFS",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "139",
         "name": "Универсален конус",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "140",
         "name": "Фланцови",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "141",
         "name": "Чаши",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       }
     ]
   },
@@ -580,63 +685,75 @@ const CONFIG = {
     "id": "59",
     "name": "Маркучи за вода",
     "icon": "💧",
+    "image": "https://hydrolux.bg/image/catalog/Water.png",
     "subcategories": [
       {
         "id": "78",
         "name": "Гумени маркучи за вода",
-        "icon": "💧"
+        "icon": "💧",
+        "image": ""
       },
       {
         "id": "79",
         "name": "Плоски маркучи",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "80",
         "name": "PVC маркучи за вода",
-        "icon": "💧"
+        "icon": "💧",
+        "image": ""
       },
       {
         "id": "81",
         "name": "Маркучи за каналопочистване",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       }
     ]
   },
   {
     "id": "154",
     "name": "Продукти",
-    "icon": "📁"
+    "icon": "📁",
+    "image": ""
   },
   {
     "id": "168",
     "name": "Маркучи за високо налягане",
     "icon": "⚡",
+    "image": "",
     "subcategories": [
       {
         "id": "173",
         "name": "Паро-Водоструйки",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "172",
         "name": "Тефлонови маркучи",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "171",
         "name": "Маркучи за каналопочистване",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       },
       {
         "id": "170",
         "name": "Хидравлични маркучи",
-        "icon": "⚡"
+        "icon": "⚡",
+        "image": ""
       },
       {
         "id": "169",
         "name": "Термопластични маркучи",
-        "icon": "📁"
+        "icon": "📁",
+        "image": ""
       }
     ]
   }
@@ -679,7 +796,7 @@ const CONFIG = {
     "description": "Гумен маркуч&nbsp; за транспорт на омаслен въздух от компресори, въздух, топла вода до &nbsp; 60°С и други неагресивни течности. Лек и гъвкав, подходящ за помпене на гуми, изграждане на въздушни пътища, маркуч за въздух в автомобили и други. Подси...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/markuch-za-vyzduh-voda-ALFAGOMMA-185-АА-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ за въздух/markuch-za-vyzduh-voda-ALFAGOMMA-185-АА-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -755,7 +872,7 @@ const CONFIG = {
     "description": "Приложение: &nbsp;минерални масла, дизелово гориво и бензин с ароматно съдържание до 50% Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;черен, гладък NBR каучук Подсилване: &nbsp;високоякостни синтетични слоеве Покритие: &nbsp;черен, NBR/PVC ка...",
     "specs": [],
     "images": [
-      "catalog/ и масло/markuch-za-dizel-i-benzin-oil-p14-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-dizel-i-benzin-oil-p14-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -840,11 +957,11 @@ const CONFIG = {
     "description": "Армиран гъвкав маркуч&nbsp; за транспорт на въздух и вода, за индустриални и битови нужди, пренос на сгъстен и омаслен въздух.Произведен изцяло от каучук, осигуряващо му дълъг живот на екслоатация. Режим на работа:&nbsp; нагнетателен Вложка: &nbsp...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/gumen-markuch-vazduh-voda-20bar-PLW20-1200x1200.jpg",
-      "catalog/ за въздух/markuch-za-vyzduh-i-voda-plw-20-bar-semperit-1200x1200.jpg",
-      "catalog/ за въздух/semperit_gumen-markuch-vazduh-voda-20bar-PLW20_opletka-1200x1200.jpg",
-      "catalog/ за въздух/gumen-markuch-vazduh-voda-20bar-PLW20-1-1200x1200.jpg",
-      "catalog/ за въздух/gumen-markuch-vazduh-voda-20bar-PLW202-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-vazduh-voda-20bar-PLW20-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ за въздух/markuch-za-vyzduh-i-voda-plw-20-bar-semperit-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ за въздух/semperit_gumen-markuch-vazduh-voda-20bar-PLW20_opletka-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-vazduh-voda-20bar-PLW20-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-vazduh-voda-20bar-PLW202-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -972,7 +1089,7 @@ const CONFIG = {
     "description": "PVC маркуч, тип шлаух е подходящ за транспортиране на течности, въздух, храни и фармацевтичната индустрия. Използва за пренасяне на алкохол до 20%. Използва се и в химическата промишленост.&nbsp; Режим на работа: &nbsp;агнетателен Конструкция:&nbs...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/pvc-shlauh-prozrachen-apd840-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ за въздух/pvc-shlauh-prozrachen-apd840-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -1125,7 +1242,7 @@ const CONFIG = {
     "description": "Каучуков маркуч с маслоустойчиво покритие, за минерални масла, дизелово и бензиново гориво. Използва се за потопяеми помпи. &nbsp; Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;черен, гладък електропроводим NBR каучук Подсилване: &nbsp;високоя...",
     "specs": [],
     "images": [
-      "catalog/ и масло/markuch-s-masloustoichovo-pokritie-petrocar-20-l-l-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/markuch-s-masloustoichovo-pokritie-petrocar-20-l-l-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -1289,7 +1406,7 @@ const CONFIG = {
     "description": "Маркуч за въздух и вода при средно - високо налягане, пренос на сгъстен въздух. Подходящ за компресори, транспорт на омаслен сгъстен въздух при работно налягане на 20 bar. Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;черен, гладък синтетичен ...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/gumen-markuch-vazduh-voda-20bar-LLAirWater-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-vazduh-voda-20bar-LLAirWater-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -1398,7 +1515,7 @@ const CONFIG = {
     "description": "Маркуч предназначен за отвеждане на излишното гориво в дизелови двигатели, гумена оплетка, обвит в текстил за обратна нафта. Режим на работа:&nbsp; нагнетателен Вложка:&nbsp; черна, гладка, озоно и маслоустойчива естествена гума - NBR Покритие:&nb...",
     "specs": [],
     "images": [
-      "catalog/ и масло/markuch-gorivo-tekstil-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/markuch-gorivo-tekstil-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -1474,8 +1591,8 @@ const CONFIG = {
     "description": "Армиран гъвкав маркуч &nbsp;предназначен за пренос на горива и минерални масла, въздух и вода. Приложение - в строителството, земеделието и други, подходящ за всички превозни средства. Подсилване: две вградени текстилни оплетки. Вътрешна камера: &...",
     "specs": [],
     "images": [
-      "catalog/ и масло/markuch-za-bezolovni-goriva-fub-1200x1200.jpg",
-      "catalog/ и масло/gumen-markuch-gorivo-20bar-tuc20-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-bezolovni-goriva-fub-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ и масло/gumen-markuch-gorivo-20bar-tuc20-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -1562,7 +1679,7 @@ const CONFIG = {
     "description": "Маркуч за пренос на горива и масла в бензинови и дизелови автомобили. Не е подходящ за биогорива. Режим на работа:&nbsp; нагнетателен Вложка:&nbsp; NBR гума, устойчива на бензинови, дизелови, газови и етанолови горива Покритие:&nbsp; гума с патент...",
     "specs": [],
     "images": [
-      "catalog/ и масло/gumen-markuch-goriva-masla-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/gumen-markuch-goriva-masla-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -1671,8 +1788,8 @@ const CONFIG = {
     "description": "Армиран маркуч за пренос на минарални горива и масла, вода, въздух и други. Подходящ за автомобили, камиони, автобуси и други. Външна обвивка:&nbsp; маслоустойчива гума, антистатична, устоичива на износване и климатични условия. Подсилване: &nbsp;...",
     "specs": [],
     "images": [
-      "catalog/ и масло/markuch-za-bezolovni-goriva-fub-1200x1200.jpg",
-      "catalog/ и масло/gumen-markuch-gorivo-20bar-tuc20-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-bezolovni-goriva-fub-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ и масло/gumen-markuch-gorivo-20bar-tuc20-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -1756,7 +1873,7 @@ const CONFIG = {
     "description": "Армиран маркуч за транспортиране на течности, вода, въздух, хранителни продукти на прах, лека химия и пестициди. Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;гладка, прозрачна от нетоксично PVC Подсилване: &nbsp;текстилна армировка от силнора...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/armiran-pvc-markuch-za-voda-OLYMPOSLD-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ за въздух/armiran-pvc-markuch-za-voda-OLYMPOSLD-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -1870,7 +1987,7 @@ const CONFIG = {
     "description": "Маркучът за антифриз подходящ за пренасяне на гореща вода и охлаждащи течности със средна агресивност, прилагани в охладителните системи на двигателя и различни отоплителни системи. Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;черна, гладка&n...",
     "specs": [],
     "images": [
-      "catalog/ течност/markuch-za-antifriz-goreshta-voda-CALORWATER-120°C-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ течност/markuch-za-antifriz-goreshta-voda-CALORWATER-120°C-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -2057,7 +2174,7 @@ const CONFIG = {
     "description": "Маркуч за каналопочистване с вода под високо налягане &nbsp; - 250 bar. Вътрешна камера:&nbsp; синтетична гумена смес с вградени усилени текстилни оплетки&nbsp; Външна обвивка: &nbsp;синтетична гумена смес Температурен режим: &nbsp;-40°С +70°С",
     "specs": [],
     "images": [
-      "catalog/ вода/markuch-za-kanalopochistvane-25CAA-250bar-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/markuch-za-kanalopochistvane-25CAA-250bar-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -2128,9 +2245,9 @@ const CONFIG = {
     "description": "Маркуч за транспортиране на гореща вода, антифриз и други охладителни течности в двигателите на автомобили и други превозни средство. Режим на работа:&nbsp; нагнетателен Вложка:&nbsp; E PDM черен каучук Подсилване:&nbsp; синтетична текстилна оплет...",
     "specs": [],
     "images": [
-      "catalog/ течност/markuch-za-antifriz-goreshta-voda-Semperit-FKD-R-1200x1200.jpg",
-      "catalog/ течност/markuch-za-antifriz-goreshta-voda-Semperit-FKD-R1-1200x1200.jpg",
-      "catalog/ течност/markuch-za-antifriz-goreshta-voda-Semperit-FKD-R2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ течност/markuch-za-antifriz-goreshta-voda-Semperit-FKD-R-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ течност/markuch-za-antifriz-goreshta-voda-Semperit-FKD-R1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ течност/markuch-za-antifriz-goreshta-voda-Semperit-FKD-R2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -2285,8 +2402,8 @@ const CONFIG = {
     "description": "Гъвкав каучуков маркуч за транспорт на безоловни горива, дизелови масла, биодизели за автомобили и други. Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;Черен гладък NBR каучук, устойчив на масла Подсилване: &nbsp;текстилна оплетка Покритие:&nb...",
     "specs": [],
     "images": [
-      "catalog/ и масло/markuch-za-bezolovni-goriva-fub-1200x1200.jpg",
-      "catalog/ и масло/markuch-za-bezolovni-goriva-fub1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-bezolovni-goriva-fub-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-bezolovni-goriva-fub1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -2465,7 +2582,7 @@ const CONFIG = {
     "description": "МАРКУЧ ЗА АСПИРАЦИЯ&nbsp; &nbsp; &nbsp; &nbsp; Приложение:&nbsp; за транспортиране на въздух, прах и др. Режим на работа: &nbsp;смукателен Вложка: &nbsp;еластично PVC Подсилване: &nbsp;PVC спирала Температурен обхват: &nbsp;-10ºС до +60ºС Маркучит...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/pvc-markuch-za-zasmukvane-na-vyv-vyzduh-prah-abrazivni-chastici-urartu-st-white-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ за въздух/pvc-markuch-za-zasmukvane-na-vyv-vyzduh-prah-abrazivni-chastici-urartu-st-white-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -2583,9 +2700,9 @@ const CONFIG = {
     "description": "Маркуч за транспортиране на вода, пестициди, препарати за растителна защита в течно състояние, течни торове и др. PVC маркучът за пестициди е усилен с якостна текстилна оплетка и издържа на високо налягане - 40 bar. Маркуч за пръскачки. Вътрешна к...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/markuch-za-pesticidi-Vinylfrut-40bar-1200x1200.jpg",
-      "catalog/ за въздух/markuch-za-pesticidi-Vinylfrut-40bar2-1200x1200.png",
-      "catalog/ за въздух/markuch-za-pesticidi-Vinylfrut-40bar3-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ за въздух/markuch-za-pesticidi-Vinylfrut-40bar-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ за въздух/markuch-za-pesticidi-Vinylfrut-40bar2-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/ за въздух/markuch-za-pesticidi-Vinylfrut-40bar3-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -2692,11 +2809,11 @@ const CONFIG = {
     "description": "Армиран маркуч&nbsp; подходящ за пренос на въздух и вода, индустриални и битови нужди, маркуч за поливане, миене, използван в земеделието и строителството. Маркучът PLW10 се използва за пълнене и разтоварване на резервоари. Режим на работа:&nbsp; ...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/gumen-markuch-vazduh-voda-20bar-PLW202-1200x1200.jpg",
-      "catalog/ за въздух/gumen-markuch-voda-10bar-PLW102-1200x1200.png",
-      "catalog/ за въздух/gumen-markuch-voda-10bar-PLW10-1200x1200.jpg",
-      "catalog/ за въздух/gumen-markuch-voda-10bar-PLW10_ROLKA-1200x1200.jpg",
-      "catalog/ за въздух/gumen-markuch-voda-10bar-PLW10-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-vazduh-voda-20bar-PLW202-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-voda-10bar-PLW102-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-voda-10bar-PLW10-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-voda-10bar-PLW10_ROLKA-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-voda-10bar-PLW10-1-1200x1200.png"
     ],
     "variants": [
       {
@@ -2782,7 +2899,7 @@ const CONFIG = {
     "description": "Гумен маркуч &nbsp;за транспортиране на студена и гореща вода, транспорт на омаслен въздух и много химически продукти. Подходящ за пестициди и торове. Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;EPDM гума, черна, гладка, електропроводима Под...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/gumen-markuch-torove-pesticidi-vyzduh-MP20EPDM-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-torove-pesticidi-vyzduh-MP20EPDM-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -2929,7 +3046,7 @@ const CONFIG = {
     "description": "PVC маркучът OLYMPOS ST е армиран маркуч подходящ за транспортиране на вода, течности, въздух, хранителни продукти на прах, сол, пестициди и лека химия. Маркуч за хранителни цели. Вложка: &nbsp;гладка, прозрачна от нетоксично PVC Покритие: &nbsp;п...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/armiran-pvc-markuch-za-voda-OLYMPOSLD-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ за въздух/armiran-pvc-markuch-za-voda-OLYMPOSLD-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -3031,7 +3148,7 @@ const CONFIG = {
     "description": "Полиуретанов маркуч с метална спирала за засмукване на прах, въздух, маслени и бензинови пари. Подходящ за използване в&nbsp; хартиената, дървообработващата, текстилната, хранително-вкусовата и фармацевтичната промишленост. Режим на работа:&nbsp; ...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/poliuretanov-markuch-za-zasmukvane-na-vyzduh-prah-P2PU-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ за въздух/poliuretanov-markuch-za-zasmukvane-na-vyzduh-prah-P2PU-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -3496,7 +3613,7 @@ const CONFIG = {
     "description": "Полиуретанов маркуч с помеднена метална спирала за засмукване на въздух, прах, маслени и бензинови пари, абразивни дребни частици, маркуч за аспирация, дървени стружки.&nbsp; Режим на работа:&nbsp; смукателно-нагнетателен Конструкция: &nbsp; Полие...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/poliuretanov-markuch-za-zasmukvane-na-vyzduh-prah-P2PU-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ за въздух/poliuretanov-markuch-za-zasmukvane-na-vyzduh-prah-P2PU-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -3945,7 +4062,7 @@ const CONFIG = {
     "description": "Маркуч предназначен за отвеждане на вода и неагресивни течности в различни промишлени и селскостопански приложение, транспорт на сгъстен въздух. Устойчив на високи натоварвания. Подсилен е с две текстилни оплетки между слоевете, което го прави уст...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/markuch-za-vyzduh-voda-ALFAGOMMA-155AA-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ за въздух/markuch-za-vyzduh-voda-ALFAGOMMA-155AA-1200x1200.png"
     ],
     "variants": [
       {
@@ -4093,7 +4210,7 @@ const CONFIG = {
     "description": "Гумен маркуч за транспорт на гореща вода до &nbsp; 80°С &nbsp;, въздух, омаслен въздух от компресори и въздух при много високо налягане -&nbsp; 27 Bar. Вътрешна камера: &nbsp;SBR/NBR, устойчива на маслени изпарения&nbsp; Подсилване: &nbsp;две вгра...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/markuch-za-vyzduh-voda-ALFAGOMMA-157АK–yellow-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ за въздух/markuch-za-vyzduh-voda-ALFAGOMMA-157АK–yellow-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -4171,8 +4288,8 @@ const CONFIG = {
     "description": "MULTIPURPOSE-202AA е гумен маркуч за транспортиране на вода и въздух, подходящ за средно агресивни химикали и гореща вода до&nbsp; 120°C. Режим на работа: &nbsp;смукателно-нагнетателен Вложка:&nbsp; черна гладка EPDM гума, електропроводима Подсилв...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/gimen-markuch-za-voda-vyzduh-i-leki-himikali-202АА-1200x1200.jpg",
-      "catalog/ за въздух/gimen-markuch-za-voda-vyzduh-i-leki-himikali-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ за въздух/gimen-markuch-za-voda-vyzduh-i-leki-himikali-202АА-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ за въздух/gimen-markuch-za-voda-vyzduh-i-leki-himikali-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -4518,11 +4635,11 @@ const CONFIG = {
     "description": "Армиран маркуч за помпене на гуми. За пренос на сгъстен и обезмаслен въздух. С UV защита и специално покритие, което не се напуква. Вложка: &nbsp;каучукова смес Подсилване: &nbsp; две вградени текстилни оплетки Покритие:&nbsp; каучукова смес, усто...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/_за помпене на гуми на камиони-1200x1200.jpg",
-      "catalog/ за въздух/_за помпене на гуми - гайка1-1200x1200.jpg",
-      "catalog/ за въздух/_за помпене на гуми - щипка-1200x1200.jpg",
-      "catalog/ за въздух/_за помпене на гуми на камиони Semperit-1200x1200.jpg",
-      "catalog/ за въздух/_за помпене на гуми - гайка-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ за въздух/_за помпене на гуми на камиони-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ за въздух/_за помпене на гуми - гайка1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ за въздух/_за помпене на гуми - щипка-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ за въздух/_за помпене на гуми на камиони Semperit-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ за въздух/_за помпене на гуми - гайка-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -4610,7 +4727,7 @@ const CONFIG = {
     "description": "Гумен плосък маркуч с накрайници за подаване на сгъстен въздух от мобилни компресори до пневматични чукове. Устойчив на горива, масла и слабо агресивни химически продукти с широк температурен диапазон. Режим на работа:&nbsp; нагнетателен Вложка:&n...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/plosyk-gumen-markuch-za-sgysten-vyzduh-s-nakrainici-za-pnevmochuk-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ за въздух/plosyk-gumen-markuch-za-sgysten-vyzduh-s-nakrainici-za-pnevmochuk-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -4667,7 +4784,7 @@ const CONFIG = {
     "description": "Маркуч подходящ за транспорт на горещ въздух в цистерни за разтоварване на сухи смеси и насипни храни. Вътрешна камера: &nbsp;EPDM Подсилване: &nbsp;Една вградена текстилна оплетка, и метална спирала Външна обвивка: &nbsp;синя EPDM, устойчива на а...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/markuch-za-transport-na-goresht-vyzduh-hot-air-blower-902-le-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ за въздух/markuch-za-transport-na-goresht-vyzduh-hot-air-blower-902-le-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -4753,7 +4870,7 @@ const CONFIG = {
     "description": "Каучуков маркуч, &nbsp; подходящ за почистване на канали под високо налягане, за оборудване на ВиК и комунални автомобили. Икономичен и надежден, с дълъг експлоатационен живот, дължащо се на високоабразивното и устойчиво на атмосферни влияния покр...",
     "specs": [],
     "images": [
-      "catalog/ вода/markuch-za-visoko-nalqhane-gumen-markuch-za-kanalopochistvane-ik25-semperit-500x500-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/markuch-za-visoko-nalqhane-gumen-markuch-za-kanalopochistvane-ik25-semperit-500x500-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -4847,7 +4964,7 @@ const CONFIG = {
     "description": "Маркучът се използва за пренос на вода, масла, други течности, въздух и неагресивни химикали, с гладка вътрешна повърхност. Режим на работа: &nbsp;нагнетателен Конструкция:&nbsp; еднослойно гъвкаво прозрачно PVC, изключително гладко и маслоустойчи...",
     "specs": [],
     "images": [
-      "catalog/ вода/pvc-masloustoichiv-markuch-TEKNO-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/pvc-masloustoichiv-markuch-TEKNO-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -4953,11 +5070,11 @@ const CONFIG = {
     "description": "Немски PVC градински маркуч за поливане и напояване. Устойчив на абразия и на влиянията на околната среда.&nbsp; Маркуч за градински чешми на 1/2\", 3/4\" и 1\" Вътрешен слой: &nbsp;черно и пластично PVC Армировка: &nbsp;високоякостен синтетичен текс...",
     "specs": [],
     "images": [
-      "catalog/ вода/gradinski-markuch-za-poliane-APD80-classic-1200x1200.jpg",
-      "catalog/ вода/gradinski-markuch-za-poliane-APD80-classic-1 (4)-1200x1200.jpg",
-      "catalog/ вода/gradinski-markuch-za-poliane-APD80-classic-1 (3)-1200x1200.jpg",
-      "catalog/ вода/gradinski-markuch-za-poliane-APD80-classic-1 (1)-1200x1200.jpg",
-      "catalog/ вода/gradinski-markuch-za-poliane-APD80-classic-1 (2)-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/gradinski-markuch-za-poliane-APD80-classic-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/gradinski-markuch-za-poliane-APD80-classic-1 (4)-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/gradinski-markuch-za-poliane-APD80-classic-1 (3)-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/gradinski-markuch-za-poliane-APD80-classic-1 (1)-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/gradinski-markuch-za-poliane-APD80-classic-1 (2)-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -5089,7 +5206,7 @@ const CONFIG = {
     "description": "Двуслоен плосък маркуч&nbsp; за поливане и отвеждане на вода&nbsp; изпомпена от потопяеми помпи, за промишлени, битови и селскостопански приложения. Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;гладко черно PVC Подсилване:&nbsp; полиестерни в...",
     "specs": [],
     "images": [
-      "catalog/ вода/plosyk-markuch-inovaflat-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/plosyk-markuch-inovaflat-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -5248,7 +5365,7 @@ const CONFIG = {
     "description": "PVC смукателен маркуч за засмукване и пренос течности, вода, плодови сокове и други течности, леки химикали и други.&nbsp; &nbsp;Намира приложение за пневмо -транспорт на семена в сеялки, маркуч за сеялка, семепровод. Режим на работа:&nbsp; смукат...",
     "specs": [],
     "images": [
-      "catalog/ вода/smukatelen-markuch-za-voda-troy-ld-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/smukatelen-markuch-za-voda-troy-ld-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -5435,7 +5552,7 @@ const CONFIG = {
     "description": "Смукателно - нагнетателен маркуч за вода, леки химикали в земеделски приложения и конструкции. Използва се за пренос и засмукване на вода, плодови сокове и други течности в хранително-вкусовата промишленост, селскостопански и индустриални машини и...",
     "specs": [],
     "images": [
-      "catalog/ вода/pvc-markuchi-troy-sld-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ вода/pvc-markuchi-troy-sld-1200x1200.png"
     ],
     "variants": [
       {
@@ -5562,10 +5679,10 @@ const CONFIG = {
     "description": "SMARTFLEX SMT Comfort&nbsp; е 5-слоен PVC маркуч, подходящ за градинарство и напояване. Удобен, гъвкав и при ниски температури с висока устойчивост на смачкване и огъване.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Режим на работа:&nbsp; нагнетателен...",
     "specs": [],
     "images": [
-      "catalog/ вода/pvc-markuch-za-polivane-SMARTFLEX-SMT-Comfort-1200x1200.jpg",
-      "catalog/ вода/pvc-markuch-za-polivane-SMARTFLEX-SMT-Comfort3-1200x1200.jpg",
-      "catalog/ вода/pvc-markuch-za-polivane-SMARTFLEX-SMT-Comfort2-1200x1200.png",
-      "catalog/ вода/pvc-markuch-za-polivane-SMARTFLEX-SMT-Comfort1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/pvc-markuch-za-polivane-SMARTFLEX-SMT-Comfort-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/pvc-markuch-za-polivane-SMARTFLEX-SMT-Comfort3-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/pvc-markuch-za-polivane-SMARTFLEX-SMT-Comfort2-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/ вода/pvc-markuch-za-polivane-SMARTFLEX-SMT-Comfort1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -5655,7 +5772,7 @@ const CONFIG = {
     "description": "Маркуч &nbsp;с метална спирала устойчив на налягане, подходящ за транспортиране и засмукване на питейна и минерална вода, мляко, плодови сокове, прахообразни храни, течности в индустриални и селскостопански машини. Режим на работа: &nbsp; смукател...",
     "specs": [],
     "images": [
-      "catalog/ вода/pvc-markuch-metalna-spirala-BOSPHORUS-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/pvc-markuch-metalna-spirala-BOSPHORUS-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -5983,7 +6100,7 @@ const CONFIG = {
     "description": "Пожарникарски маркуч с текстил за отводняване и напояване, с висока устойчивост на налягане и абразия. Режим на работа:&nbsp; нагнетателен Вложка:&nbsp; гладко черно PVC Подсилване: &nbsp;полиестерни влакна Покритие:&nbsp; Полиестерни влакна.&nbsp...",
     "specs": [],
     "images": [
-      "catalog/ вода/plosyk-markuch-bez-nakrajnici-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ вода/plosyk-markuch-bez-nakrajnici-1200x1200.png"
     ],
     "variants": [
       {
@@ -6058,8 +6175,8 @@ const CONFIG = {
     "description": "Г умен плосък маркуч &nbsp;за транспорт на вода в напоителни системи. Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;черна EPDM гума&nbsp; Подсилване: &nbsp;вградени текстилни оплетки Покритие:&nbsp; черна EPDM гума, устойчива на абразия и мете...",
     "specs": [],
     "images": [
-      "catalog/ вода/plosyk-gumen-markuch-za-voda-1200x1200.jpg",
-      "catalog/ вода/plosyk-gumen-markuch-za-voda1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/plosyk-gumen-markuch-za-voda-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/plosyk-gumen-markuch-za-voda1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -6170,9 +6287,9 @@ const CONFIG = {
     "description": "Маркучът е подходящ за транспортиране и засмукване на вода, химикали и други течности в строителството, селското стопанство, индустрията, каналопочистване, пясък, чакъл и отпадни води.&nbsp; Подходящ е за оборудване на цистерни, комунални автомоби...",
     "specs": [],
     "images": [
-      "catalog/ вода/pvc-markuch-za-zasmukvane-voda-LAGINA-1200x1200.jpg",
-      "catalog/ вода/pvc-markuch-za-zasmukvane-voda-LAGINA3-1200x1200.jpg",
-      "catalog/ вода/pvc-markuch-za-zasmukvane-voda-LAGINA2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/pvc-markuch-za-zasmukvane-voda-LAGINA-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/pvc-markuch-za-zasmukvane-voda-LAGINA3-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/pvc-markuch-za-zasmukvane-voda-LAGINA2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -6445,7 +6562,7 @@ const CONFIG = {
     "description": "Смукателен PVC маркуч за средно натоварване.&nbsp; Подходящ за вода, солена вода, каши, химикали и абразиви Подсилване: &nbsp;удароустойчива PVC спирала Порърхност: &nbsp;леко гофрирана, абразивоустойчива Работна темпера: -30 ° C +60 ° C",
     "specs": [],
     "images": [
-      "catalog/ вода/smukatelen-pvc-markuch-za-otpadychni-vodi-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/smukatelen-pvc-markuch-za-otpadychni-vodi-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -6597,7 +6714,7 @@ const CONFIG = {
     "description": "Смукателен PVC маркуч за средно натоварване.&nbsp; Подходящ за вода, солена вода, каши, химикали и абразиви Подсилване: &nbsp;удароустойчива PVC спирала Порърхност: &nbsp;леко гофрирана, абразивоустойчива Работна темпера: -30 ° C +60 ° C",
     "specs": [],
     "images": [
-      "catalog/ вода/smukatelen-pvc-markuch-za-otpadychni-vodi-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/smukatelen-pvc-markuch-za-otpadychni-vodi-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -6644,9 +6761,9 @@ const CONFIG = {
     "description": "Smartflex SMT&nbsp; е 5-слоен PVC маркуч, подходящ за градинарство и напояване. Удобен, гъвкав и при ниски температури с висока устойчивост на смачкване и огъване. Режим на работа:&nbsp; нагнетателен Материал: &nbsp;меко PVC Подсилване: &nbsp;Висо...",
     "specs": [],
     "images": [
-      "catalog/ вода/gradinski-markuch-za-polivane-Smartflex-smt-1200x1200.jpg",
-      "catalog/ вода/gradinski-markuch-za-polivane-Smartflex-smt-1-1200x1200.jpg",
-      "catalog/ вода/gradinski-markuch-za-polivane-Smartflex-smt-2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/gradinski-markuch-za-polivane-Smartflex-smt-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/gradinski-markuch-za-polivane-Smartflex-smt-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/gradinski-markuch-za-polivane-Smartflex-smt-2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -6732,7 +6849,7 @@ const CONFIG = {
     "description": "Пожарникарски маркуч с текстил за отводняване и напояване, с висока устойчивост на налягане и абразия. Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;гладко черно PVC Подсилване: &nbsp;полиестерни влакна Покритие: &nbsp;Полиестерни влакна.&nbsp...",
     "specs": [],
     "images": [
-      "catalog/ вода/pojarnikarski-markuch-OneFlat-Germany-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/pojarnikarski-markuch-OneFlat-Germany-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -6803,7 +6920,7 @@ const CONFIG = {
     "description": "Маркучът за антифриз подходящ за пренасяне на гореща вода и охлаждащи течности със средна агресивност, прилагани в охладителните системи на двигателя и различни отоплителни системи. Водно съединение за камиони, трактори и други превозни средства. ...",
     "specs": [],
     "images": [
-      "catalog/ течност/markuch-za-ohlajdane-antifriz-i-goreshta-voda-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ течност/markuch-za-ohlajdane-antifriz-i-goreshta-voda-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -7080,9 +7197,9 @@ const CONFIG = {
     "description": "Горивен маркуч с външна метална оплетка, подходящ за дизелово гориво и бензин, минерални масла и други. Режим на работа:&nbsp; нагнетателен Вложка:&nbsp; черен, гладък електропроводим NBR каучук, устойчив на масла и горива Покритие: &nbsp;метална ...",
     "specs": [],
     "images": [
-      "catalog/ и масло/goriven-markuch-s-metalna-opletka-1200x1200.jpg",
-      "catalog/ и масло/goriven-markuch-s-metalna-opletka-1-1200x1200.jpg",
-      "catalog/ и масло/goriven-markuch-s-metalna-opletka-2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/goriven-markuch-s-metalna-opletka-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ и масло/goriven-markuch-s-metalna-opletka-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ и масло/goriven-markuch-s-metalna-opletka-2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -7222,7 +7339,7 @@ const CONFIG = {
     "description": "Маркуч &nbsp;подходящ за безоловни горива с ароматно съдържание до 50%, индустриални масла, дизелово гориво, пълнене и разтоварване на цистерни и други. Режим на работа:&nbsp; всмукателно-нагнетателен Вложка: &nbsp;черен, гладък, електропроводим N...",
     "specs": [],
     "images": [
-      "catalog/ и масло/gumen-markuch-zasmukvane-goriva-masla-benzin-TM30Tanker-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/gumen-markuch-zasmukvane-goriva-masla-benzin-TM30Tanker-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -7444,7 +7561,7 @@ const CONFIG = {
     "description": "Каучуков маркуч за пренос на горива и масла. Режим на работа:&nbsp; смукателно-нагнетателен Вложка: &nbsp;черен синтетичен каучук Подсилване: &nbsp;високоякостна синтетична текстилна уплетка и метална спирала Покритие: &nbsp;синтетичен каучук&nbsp...",
     "specs": [],
     "images": [
-      "catalog/ и масло/kauchukov-markuch-za-goriva-i-masla-Petrofor-SD-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/kauchukov-markuch-za-goriva-i-masla-Petrofor-SD-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -7805,7 +7922,7 @@ const CONFIG = {
     "description": "Маркуч за течности, вода, леки химикали и други в селското стопанство, индустрията, пясък и чакъл и други. Режим на работа: &nbsp;смукателно-нагнетателен Конструкция: &nbsp;Много гъвкав маркуч, изработен от мек PVC / Buna-wall, подсилен с устойчив...",
     "specs": [],
     "images": [
-      "catalog/PVCC/markuch-za-technosti-apdatec144-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/PVCC/markuch-za-technosti-apdatec144-1200x1200.png"
     ],
     "variants": [
       {
@@ -7948,7 +8065,7 @@ const CONFIG = {
     "description": "МАРКУЧ ЗА АСПИРАЦИЯ&nbsp; &nbsp; Приложение: &nbsp;за транспортиране на въздух, прах и др. Режим на работа:&nbsp; смукателен Вложка: &nbsp;еластично PVC Подсилване: &nbsp;PVC спирала Температурен обхват: &nbsp;-10ºС до +60ºС",
     "specs": [],
     "images": [
-      "catalog/PVCC/pvc-markuch-za-izsmukvane-na-gazove-i-prah-urartu-ld-blue-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/PVCC/pvc-markuch-za-izsmukvane-na-gazove-i-prah-urartu-ld-blue-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -8191,7 +8308,7 @@ const CONFIG = {
     "description": "PVC гъвкав маркуч за пренос на горива, индустриално масло и течности. Режим на работа: &nbsp;смукателно-нагнетателен Вложка: &nbsp;здрава, гъвкава и гладка маслоустойчива PVC/NBR смес Подсилване:&nbsp; удароустойчива PVC спирала Покритие: &nbsp;ус...",
     "specs": [],
     "images": [
-      "catalog/ и масло/gyvkav-pvc-nbr-markuch-za-goriva-Pegasus-hd-se-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/gyvkav-pvc-nbr-markuch-za-goriva-Pegasus-hd-se-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -8238,7 +8355,7 @@ const CONFIG = {
     "description": "Маркуч подходящ за засмукване и доставка на течна газ. Режим на работа: &nbsp;смукателно-нагнетателен Вложка: &nbsp;черен, гладък електропроводим NBR каучук Подсилване: &nbsp;високоякостни синтетични слоеве със стоманена спирала Покритие: &nbsp;че...",
     "specs": [],
     "images": [
-      "catalog/ и масло/markuch-za-lpg-gaz-petrogas-25-sd-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-lpg-gaz-petrogas-25-sd-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -8389,9 +8506,9 @@ const CONFIG = {
     "description": "Силиконов маркуч за транспортиране на течности, масла, вода, течни храни и химикали в редица промишлености - хранително вкусовата, медицина и други. Отлична устойчивост на високи температури и влияния на околната среда. Конструкция: &nbsp;Изключит...",
     "specs": [],
     "images": [
-      "catalog/silikoni/silikonov-markuch-prozrachen-1200x1200.jpg",
-      "catalog/silikoni/silikonov-markuch-prozrachen-1-1200x1200.jpg",
-      "catalog/silikoni/silikonov-markuch-prozrachen-2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonov-markuch-prozrachen-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silikonov-markuch-prozrachen-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silikonov-markuch-prozrachen-2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -8858,7 +8975,7 @@ const CONFIG = {
     "description": "Силиконов маркуч се използва в автомобилната индустрия. &nbsp;Подходящи за охладителни системи, турбо пътища, вакуумни системи и други. Устойчивост на високи температури, термичнии електрически изолационни свойства. Силиконовият маркуч е идеално р...",
     "specs": [],
     "images": [
-      "catalog/silikoni/Sin silionov markuch.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/Sin silionov markuch.jpg"
     ],
     "variants": [
       {
@@ -8983,7 +9100,7 @@ const CONFIG = {
     "description": "Силиконов маркуч за вакуум, &nbsp;предназначен за системи за вакуум, турбо системи, охладителни и други. Подходящ за транспорт на въздух и течности при високи температури. Материал:&nbsp; екструдиран&nbsp;чист черен силикон, изключително гладък и ...",
     "specs": [],
     "images": [
-      "catalog/silikoni/cheren-silikonov-markuch.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/cheren-silikonov-markuch.jpg"
     ],
     "variants": [
       {
@@ -9060,8 +9177,8 @@ const CONFIG = {
     "description": "Свързваща втулка неръждаема",
     "specs": [],
     "images": [
-      "catalog/silikoni/svyrzvashta-vtulka-neryjdaema-1-1200x1200 (1).jpg",
-      "catalog/silikoni/svyrzvashta-vtulka-neryjdaema-AISI-hose-joiner-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/svyrzvashta-vtulka-neryjdaema-1-1200x1200 (1).jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/svyrzvashta-vtulka-neryjdaema-AISI-hose-joiner-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -9381,7 +9498,7 @@ const CONFIG = {
     "description": "Силиконовото съединение редукция се използва в автомобилната индустрия.&nbsp; Прилага се за свързване на системи с различни диаметри - използва се като редукия. Подходящи за охладителни системи, турбо пътища, вакуумни системи и други.Устойчивост н...",
     "specs": [],
     "images": [
-      "catalog/silikoni/silikonovo syedinenie redukciq.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovo syedinenie redukciq.jpg"
     ],
     "variants": [
       {
@@ -9497,10 +9614,10 @@ const CONFIG = {
     "description": "Силиконовото коляно 45° се използва в автомобилната индустрия. Подходящи за охладителни системи, турбо пътища, вакуумни системи и други. Устойчивост на високи температури, термичнии електрически изолационни свойства. Оплетка:&nbsp; подсилена текст...",
     "specs": [],
     "images": [
-      "catalog/silikoni/silikonovi saedinenya 45°.jpg",
-      "catalog/silikoni/silikonovo syedinenie kolyano 45°.jpg",
-      "catalog/silikoni/silikonovi syedineniq.jpg",
-      "catalog/silikoni/silikonovo-syedinenie-kolyano-45°-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovi saedinenya 45°.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovo syedinenie kolyano 45°.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovi syedineniq.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovo-syedinenie-kolyano-45°-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -9913,8 +10030,8 @@ const CONFIG = {
     "description": "Силиконовото коляно 90° се използва в автомобилната индустрия. Подходящи за охладителни системи, турбо пътища, вакуумни системи и други. Устойчивост на високи температури, термичнии електрически изолационни свойства. Оплетка:&nbsp; подсилена текст...",
     "specs": [],
     "images": [
-      "catalog/silikoni/silikonovi saedinenya 90°.jpg",
-      "catalog/silikoni/silikonovi syedineniq.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovi saedinenya 90°.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovi syedineniq.jpg"
     ],
     "variants": [
       {
@@ -10307,7 +10424,7 @@ const CONFIG = {
     "description": "Силиконовото коляно 90° се използва в автомобилната индустрия.&nbsp; Прилага се за свързване на системи с различни диаметри - използва се като редукия. Подходящи за охладителни системи, турбо пътища, вакуумни системи и други. Устойчивост на високи...",
     "specs": [],
     "images": [
-      "catalog/silikoni/silikonovo kolqno prehodno 90.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovo kolqno prehodno 90.jpg"
     ],
     "variants": [
       {
@@ -10475,8 +10592,8 @@ const CONFIG = {
     "description": "Двуслоен&nbsp;прозрачен маркуч, изработен от силикон с изключителна гъвкавост. &nbsp; Използва се за транспорт на вода, въздух и течности при висока температура и налягане. Подходящ за пренос на храни, масла, транспосрт на химикали, пестициди и др...",
     "specs": [],
     "images": [
-      "catalog/silikoni/silikonov-markuch-s-opletka-za-hrana-bql-1200x1200.jpg",
-      "catalog/silikoni/bql-silikonov-markuch-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonov-markuch-s-opletka-za-hrana-bql-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/bql-silikonov-markuch-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -10630,8 +10747,8 @@ const CONFIG = {
     "description": "Силиконов съединител с демпфер&nbsp; се използва в автомобилната индустрия. Използва се за автомобили с по-висока степен на вибрации.&nbsp;Подходящи за охладителни системи, турбо пътища, вакуумни системи и други.&nbsp; Устойчивост на високи темпер...",
     "specs": [],
     "images": [
-      "catalog/silikoni/silikonovo syedinenie dumpfer1.jpg",
-      "catalog/silikoni/silikonovo syedinenie dumpfer.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovo syedinenie dumpfer1.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovo syedinenie dumpfer.jpg"
     ],
     "variants": [
       {
@@ -10799,10 +10916,10 @@ const CONFIG = {
     "description": "Силиконов маркуч с оплетка подходящ за транспорт на въздух, вода, течности под висока температура и налягане. Използва се за пренос на масла, храни, химикали и други. Конструкция: &nbsp;Изключително гъвкав прозрачен двуслоен маркуч, изработен от п...",
     "specs": [],
     "images": [
-      "catalog/silikoni/cherven-silikonov-markuch-s-opletka-za-hrana-1200x1200.jpg",
-      "catalog/silikoni/silikonov-markuch-cherven-s-opletka-1200x1200.jpg",
-      "catalog/silikoni/silicone-markuch-s-opletka-cherven-1200x1200.jpg",
-      "catalog/silikoni/markuch-silikonov-s-opletka-cvqt-cherven-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/cherven-silikonov-markuch-s-opletka-za-hrana-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silikonov-markuch-cherven-s-opletka-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silicone-markuch-s-opletka-cherven-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/markuch-silikonov-s-opletka-cvqt-cherven-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -10904,8 +11021,8 @@ const CONFIG = {
     "description": "Силиконовото коляно 180° се използва в автомобилната индустрия. С &nbsp;U-образна форма има еднакъв вътрешен диаметър в двата края.&nbsp; Подходящи за охладителни системи, турбо пътища, вакуумни системи,въздушни пътища на турбини и други. Устойчви...",
     "specs": [],
     "images": [
-      "catalog/silikoni/silikonovo syedinenie 180.jpg",
-      "catalog/silikoni/silikonovi syedineniq.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovo syedinenie 180.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovi syedineniq.jpg"
     ],
     "variants": [
       {
@@ -11090,8 +11207,8 @@ const CONFIG = {
     "description": "Силиконовото съединение&nbsp; се използва в автомобилната индустрия . Подходящи за охладителни системи, турбо пътища, вакуумни системи и други.Устойчивост на високи температури, термичнии електрически изолационни свойства. Оплетка:&nbsp; подсилена...",
     "specs": [],
     "images": [
-      "catalog/silikoni/silikonovo saedinenie 1m.jpg",
-      "catalog/silikoni/silikonovi syedineniq.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovo saedinenie 1m.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovi syedineniq.jpg"
     ],
     "variants": [
       {
@@ -11477,8 +11594,8 @@ const CONFIG = {
     "description": "Силиконова Т-снадка",
     "specs": [],
     "images": [
-      "catalog/silikoni/silikonova t snadka.png",
-      "catalog/silikoni/t snadka.png"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonova t snadka.png",
+      "https://hydrolux.bg/image/catalog/silikoni/t snadka.png"
     ],
     "variants": [
       {
@@ -11557,7 +11674,7 @@ const CONFIG = {
     "description": "Силиконово съединие за турбо / интеркулер се използва в автомобилната индустрия. Намира приложение като изпускателна - всмукателна тръба, маркуч за обезвъздушаване, турбокомпресор и други. Подходящи за охладителни системи, турбо пътища, вакуумни с...",
     "specs": [],
     "images": [
-      "catalog/silikoni/silikonovo syedinenie za turbo intercooler.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovo syedinenie za turbo intercooler.jpg"
     ],
     "variants": [
       {
@@ -11697,7 +11814,7 @@ const CONFIG = {
     "description": "Силиконовото коляно 45° се използва в автомобилната индустрия.&nbsp; Прилага се за свързване на системи с различни диаметри - използва се като редукия. Подходящи за охладителни системи, турбо пътища, вакуумни системи и други. Устойчивост на високи...",
     "specs": [],
     "images": [
-      "catalog/silikoni/silikonovo kolqno prehodno 45.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovo kolqno prehodno 45.jpg"
     ],
     "variants": [
       {
@@ -11785,7 +11902,7 @@ const CONFIG = {
     "description": "Маркуч за солена вода, леки химикали, вода, течности и други в селското стопанство, индустрия, чакъл и пясък и други. Режим на работа: &nbsp;смукателно-нагнетателен Конструкция: &nbsp;Много гъвкав маркуч, изработен от мек PVC / Buna-wall, подсилен...",
     "specs": [],
     "images": [
-      "catalog/PVCC/markuch-za-solena-voda-i-himikali-apdatec146-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/PVCC/markuch-za-solena-voda-i-himikali-apdatec146-1200x1200.png"
     ],
     "variants": [
       {
@@ -11923,8 +12040,8 @@ const CONFIG = {
     "description": "Смукателен PVC маркуч за вино, ликьори и&nbsp; др. напитки с алкохолно съдържание до 15%, маркуч за минерална вода, плодови сокове, хранителни течности и други . Маркучът за вино има отличителен червен цвят и здрава плътна конструкция. Режим на ра...",
     "specs": [],
     "images": [
-      "catalog/PVCC/pvc-markuch-za-vino-Likya-st-1200x1200.jpg",
-      "catalog/PVCC/pvc-markuch-za-vino-Likya-st-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/PVCC/pvc-markuch-za-vino-Likya-st-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/PVCC/pvc-markuch-za-vino-Likya-st-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -11988,7 +12105,7 @@ const CONFIG = {
     "description": "Тефлонов маркуч&nbsp; предназначен за транспорт на сгъстен въздух, газ, пара, запалителни вещества, масла, химически, хранителни и фармацевтични продукти. Работна температура: &nbsp;-60°&nbsp; +205°/220° Подсилване: &nbsp;2 метални оплетки&nbsp;AI...",
     "specs": [],
     "images": [
-      "catalog/ налягане/teflonov-markuch-sdve-stomaneni-opletki-ptfe-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/teflonov-markuch-sdve-stomaneni-opletki-ptfe-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -12105,7 +12222,7 @@ const CONFIG = {
     "description": "Маркуч подходящ за пренос на хидравлично масло под високо налягане. Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;Синтетичен каучук, устойчив на хидравлични течности Подсилване: &nbsp;една оплетка от силно разтеглива стомана Покритие: &nbsp;си...",
     "specs": [],
     "images": [
-      "catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-1sn-k-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-1sn-k-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -12233,7 +12350,7 @@ const CONFIG = {
     "description": "Маркуч&nbsp; подходящ за пренос на хидравлично масло под високо налягане. Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;Синтетичен каучук, устойчив на хидравлични течности Подсилване: &nbsp;две оплетки от силно разтеглива стомана Покритие:&nbs...",
     "specs": [],
     "images": [
-      "catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-2sn-k-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-2sn-k-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -12361,7 +12478,7 @@ const CONFIG = {
     "description": "Маркуч подходящ за пренос на хидравлично масло под високо налягане. &nbsp; Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;Синтетичен каучук, устойчив на хидравлични течности Подсилване: &nbsp;една оплетка от силно разтеглива стомана Покритие:&n...",
     "specs": [],
     "images": [
-      "catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-1sn-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-1sn-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -12511,7 +12628,7 @@ const CONFIG = {
     "description": "Маркуч&nbsp; подходящ за пренос на хидравлично масло под високо налягане. Режим на работа : нагнетателен Вложка: &nbsp;Синтетичен каучук, устойчив на хидравлични течности Подсилване: &nbsp;две оплетки от силно разтеглива стомана Покритие: &nbsp;си...",
     "specs": [],
     "images": [
-      "catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-2sn-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-2sn-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -12652,7 +12769,7 @@ const CONFIG = {
     "description": "Тефлонов маркуч предназначен за транспорт на сгъстен въздух, газ, пара, запалителни вещества, масла, химически, хранителни и фармацевтични продукти. Подсилване: &nbsp;Една оплетка от неръждаема стомана Покритие:&nbsp; гладко вътрешно покритие от т...",
     "specs": [],
     "images": [
-      "catalog/ налягане/teflonov-markuch-ptfe-gladyk-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/teflonov-markuch-ptfe-gladyk-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -12819,7 +12936,7 @@ const CONFIG = {
     "description": "Маркуч за транспортиране на хидравлично масло под високо налпгане.&nbsp; Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;Синтетичен каучук, устойчив на биоразградими хидравлични течности Подсилване: &nbsp;4 метални оплетки с висока якост, устойч...",
     "specs": [],
     "images": [
-      "catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-DUNLOP-4SH-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-DUNLOP-4SH-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -12905,7 +13022,7 @@ const CONFIG = {
     "description": "Тефлонов маркуч подходящ за транспорт на&nbsp; с гъстен въздух, газ, пара, запалителни вещества, масла, химически, хранителни и фармацевтични продукти. Подсилване: &nbsp;една оплетка от неръждаема стомана Покритие:&nbsp; безшевно гофрирано вътрешн...",
     "specs": [],
     "images": [
-      "catalog/ налягане/teflonov-markuch-ptfe-gofriran-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/teflonov-markuch-ptfe-gofriran-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -13065,10 +13182,10 @@ const CONFIG = {
     "description": "SEMPERIT - GAC е гъвкав маркуч за ацетилен, използващ се за заваръчни и отрезни инструменти, битови и индустриални приложения. Подходящ за въглищен газ, въглероден диоксид, водород, аргон и други. Режим на работа: &nbsp;нагнетателен Вложка:&nbsp; ...",
     "specs": [],
     "images": [
-      "catalog/gazove/gumen-markuch-acetilen-SEMPERIT- GAC-1200x1200.jpg",
-      "catalog/gazove/gumen-markuch-acetilen-SEMPERIT- GAC3-1200x1200.jpg",
-      "catalog/gazove/gumen-markuch-acetilen-SEMPERIT- GAC4-1200x1200.jpg",
-      "catalog/gazove/gumen-markuch-acetilen-SEMPERIT- GAC2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/gazove/gumen-markuch-acetilen-SEMPERIT- GAC-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/gazove/gumen-markuch-acetilen-SEMPERIT- GAC3-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/gazove/gumen-markuch-acetilen-SEMPERIT- GAC4-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/gazove/gumen-markuch-acetilen-SEMPERIT- GAC2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -13138,9 +13255,9 @@ const CONFIG = {
     "description": "SEMPERIT - GOX - нагнетателен син маркуч за кислород, използващ се за отрезни и заваръчни инструменти, битови и индустриални приложения. Маркуч с дълъг живот на експлоатация. Режим на работа: &nbsp;нагнетателен Вложка:&nbsp; EPDM, черна, гладка По...",
     "specs": [],
     "images": [
-      "catalog/gazove/gumen-markuch-kislorod-SEMPERIT-GOX-1200x1200.jpg",
-      "catalog/gazove/gumen-markuch-kislorod-SEMPERIT-GOX3-1200x1200.png",
-      "catalog/gazove/gumen-markuch-kislorod-SEMPERIT-GOX2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/gazove/gumen-markuch-kislorod-SEMPERIT-GOX-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/gazove/gumen-markuch-kislorod-SEMPERIT-GOX3-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/gazove/gumen-markuch-kislorod-SEMPERIT-GOX2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -13212,7 +13329,7 @@ const CONFIG = {
     "description": "Маркуч каучуков за индустриално заваряване на пропан-бутан, транспорт на газ и други. Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;черен, гладък, синтетичен каучук, устойчив на пропан-бутан (LPG) Подсилване: &nbsp;силно разтеглив синтетичен т...",
     "specs": [],
     "images": [
-      "catalog/gazove/gumen-markuch-propan-butan-URANUS-LPG-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/gazove/gumen-markuch-propan-butan-URANUS-LPG-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -13308,7 +13425,7 @@ const CONFIG = {
     "description": "Двоен маркуч за кислород и ацетилен, използва се за заваръчни и отрезни инструменти, с дълъг живот на експлоатация. Режим на работа: &nbsp;нагнетателен Вложка:&nbsp; EPDM, черна, гладка Подсилване: &nbsp;две вградени текстилни оплетки, устойчиви н...",
     "specs": [],
     "images": [
-      "catalog/gazove/sdvoen-markuch-za-kislorod-i-acetilen-markuchite-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/gazove/sdvoen-markuch-za-kislorod-i-acetilen-markuchite-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -13360,7 +13477,7 @@ const CONFIG = {
     "description": "Маркуч за климатични инсталации Вложка: &nbsp;CR Подсилване: &nbsp;PA; &nbsp;NBR; &nbsp;PET; &nbsp;NBR; &nbsp;PET &nbsp; Покритие: &nbsp;EPDM Работна температура: &nbsp;-40°C/+125°C (-40°F + 257°F) Маркучите се продават на дължини кратно на 1 м. М...",
     "specs": [],
     "images": [
-      "catalog/gazove/markuch-za-klimatici-galaxy-4826-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/gazove/markuch-za-klimatici-galaxy-4826-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -13434,7 +13551,7 @@ const CONFIG = {
     "description": "Маркуч за климатични инсталации. Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;хлоропрен Преграда: &nbsp;найлон Подсилване: &nbsp;една полиестерна оплетка Покритие: &nbsp;черно хлоробутилово Работна температура: &nbsp;-40°C/+135°C (-40°F + 257...",
     "specs": [],
     "images": [
-      "catalog/gazove/markuch-za-klimatici-galaxy-sle-g4890-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/gazove/markuch-za-klimatici-galaxy-sle-g4890-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -13520,7 +13637,7 @@ const CONFIG = {
     "description": "Маркуч &nbsp;за транспортиране на гореща вода, и течни неагресивни храни. Подходящ за пренос на питейна топла вода и препарати в хранително-вкусовата промишленост. Вътрешна камера:&nbsp; EPDM - FDA&nbsp; Две вградени текстилни оплетки&nbsp; Външна...",
     "specs": [],
     "images": [
-      "catalog/hrani/markuch-za-hrani-i-izmivane-CALORFOOD-120c-fda-ll-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/hrani/markuch-za-hrani-i-izmivane-CALORFOOD-120c-fda-ll-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -13606,7 +13723,7 @@ const CONFIG = {
     "description": "Маркуч за гореща вода и пара&nbsp; до 165 °C,. Подходящ за мандри, фабрики, заводи и други. Вътрешна камера:&nbsp; EPDM гума – FDA Вътрешна камера: &nbsp;Две вградени текстилни оплетки&nbsp; Външна обвивка:&nbsp; EPDM - абразиво устойчива Работно ...",
     "specs": [],
     "images": [
-      "catalog/hrani/markuch-markuch-za-goreshta-voda-i-para-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/hrani/markuch-markuch-za-goreshta-voda-i-para-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -13726,7 +13843,7 @@ const CONFIG = {
     "description": "Нагнетателен маркуч за пренос на течни храни и алкохоли. Подходящ за мазни храни, мляко, олио и други. Вътрешна камера:&nbsp; бялa NBR Вътрешна камера:&nbsp; Две вградени текстилни оплетки&nbsp; Външна обвивка: &nbsp;NBR/PVC - абразиво устойчива Р...",
     "specs": [],
     "images": [
-      "catalog/hrani/markuch-nagnetatelen-za-mazni-hrani-455LE-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/hrani/markuch-nagnetatelen-za-mazni-hrani-455LE-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -13835,7 +13952,7 @@ const CONFIG = {
     "description": "Смукателно - нагнетателен маркуч &nbsp;за засмукване и транспорт на алкохоли до 75% и течни храни. Вътрешна камера:&nbsp; бялa NBR Вътрешна камера:&nbsp; Две вградени текстилни оплетки&nbsp; и две метални спирали&nbsp; Външна обвивка: &nbsp;NBR/PV...",
     "specs": [],
     "images": [
-      "catalog/hrani/markuch-smukatelno-nagnetatelen-za-hranitelni-celi-450LE-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/hrani/markuch-smukatelno-nagnetatelen-za-hranitelni-celi-450LE-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -13964,7 +14081,7 @@ const CONFIG = {
     "description": "Прозрачен износоусточйив полиетерен полиуретан, подсилен с удароустойчива&nbsp; бяла PVC спирала. Подходящ за засмукване на брашна, захар, семена, течни и прахообразни храни и други. Устойчив на абразия и огъване. Конструкция: &nbsp;гладка вътрешн...",
     "specs": [],
     "images": [
-      "catalog/poliyretan/poliuretanov-markuch-za-seqlki-eolo-pu-food-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/poliyretan/poliuretanov-markuch-za-seqlki-eolo-pu-food-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -14089,8 +14206,8 @@ const CONFIG = {
     "description": "Маркуч подходящ за транспортиране на абразивни частици, гранулати, зърно, семена и др. Използва се като семепровод в сеялките. Режим на работа: &nbsp;смукателен Вложка:&nbsp; Полиуретан PUR Подсилване: &nbsp;PVC спирала Покритие: &nbsp;Полиуретан ...",
     "specs": [],
     "images": [
-      "catalog/poliyretan/poliuretanov-markuch-za-seyalki-PUR-1200x1200.jpg",
-      "catalog/poliyretan/poliuretanov-markuch-za-seyalki-PUR-2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/poliyretan/poliuretanov-markuch-za-seyalki-PUR-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/poliyretan/poliuretanov-markuch-za-seyalki-PUR-2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -14186,7 +14303,7 @@ const CONFIG = {
     "description": "Прозрачен износоусточйив полиетерен полиуретан, подсилен с удароустойчива&nbsp; сива PVC спирала. Подходящ за засмукване на зърна, семена, пелети и други. Устойчив на абразия и усукване. Конструкция:&nbsp; гладка вътрешна повърхност, леко гофриран...",
     "specs": [],
     "images": [
-      "catalog/poliyretan/poliuretanov-markuch-za-seqlki-eolo-pu-est-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/poliyretan/poliuretanov-markuch-za-seqlki-eolo-pu-est-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -14336,7 +14453,7 @@ const CONFIG = {
     "description": "Маркуч за изгорели газове и горещ въздух MAGNUM 178AA. Гъвкав маркуч за транспортиране на абразивни материали, прах, изгорели газове, и други. Режим на работа: &nbsp;смукателен Вложка: &nbsp;EPDM/PP смес Подсилване: &nbsp;Eдна вградена метална спи...",
     "specs": [],
     "images": [
-      "catalog/poliyretan/markuch-za-izgoreli-gazove-vyzduh-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/poliyretan/markuch-za-izgoreli-gazove-vyzduh-1200x1200.png"
     ],
     "variants": [
       {
@@ -14594,7 +14711,7 @@ const CONFIG = {
     "description": "Дебелостенен полиуретанов маркуч, антистатичен износоустойчив за транспорт и засмукване на абразивни частици. Подходящ за натоварен режим на работа, добра устойчивост на абразия, минерални масла, атмосферни условия и стареене. Температурна устойчи...",
     "specs": [],
     "images": [
-      "catalog/poliyretan/poliuretanov-markuch-next-09-pu-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/poliyretan/poliuretanov-markuch-next-09-pu-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -14869,7 +14986,7 @@ const CONFIG = {
     "description": "Полиуретанов маркуч за пелетна горелка, за транспорт на пелети. Подходящи и за засмукване на пелети, дървесина, прах, абразивни дребни частици,&nbsp; Режим на работа:&nbsp; смукателно-нагнетателен Конструкция:&nbsp; Полиестер-полиуретан, антистати...",
     "specs": [],
     "images": [
-      "catalog/poliyretan/pur-markuch-za-peletna-gorelka-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/poliyretan/pur-markuch-za-peletna-gorelka-1200x1200.png"
     ],
     "variants": [
       {
@@ -14942,7 +15059,7 @@ const CONFIG = {
     "description": "Усилен антистатичен полиуретанов маркуч, огнеустойчив и устойчив на микроби. Подходящ за засмукване и транспорт на абразивен прах, гранули, насипни материали, въздух и газове. Дебелина на стената 1,4 - 1,5 mm, Пластичен маркуч и при ниски температ...",
     "specs": [],
     "images": [
-      "catalog/poliyretan/antistatichen-poliuretanov-markuch-airduc-355-as-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/poliyretan/antistatichen-poliuretanov-markuch-airduc-355-as-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -15524,7 +15641,7 @@ const CONFIG = {
     "description": "Полиетиленов шлаух подходящ за транспорт на вода, въздух, масла и други. Използва се за вакуум системи, пневматични системи, не е подходящ за високи температури. Температурен обхват: &nbsp;-10°C до +60°C Области на приложение: &nbsp;пневматични си...",
     "specs": [],
     "images": [
-      "catalog/shlauhi/polietilenovi-shlauhi-mb-pe-ld-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/shlauhi/polietilenovi-shlauhi-mb-pe-ld-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -15640,7 +15757,7 @@ const CONFIG = {
     "description": "Полиуретанов шлаух за сгъстен въздух в пневматични системи, сиситеми работещи на вакуум и други. Подходящ за транспосрт на въздух, вода, газове, масла и други. Устойчив на ниски температурни действия, слънчева светлина. Температурен режим: &nbsp;-...",
     "specs": [],
     "images": [
-      "catalog/shlauhi/poliuretanov-shlauh-sin-cherben-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/shlauhi/poliuretanov-shlauh-sin-cherben-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -15892,7 +16009,7 @@ const CONFIG = {
     "description": "Полиетиленов пневматичен шлаух подходящ за вода, въздух, слаби химикали и бой. Не е устойчив на атмосферни условия и UV лъчи. Покритие: &nbsp; не е устойчиво на атмосферни влияния и UV светлина и се препоръчва за работа на закрито Температурен обх...",
     "specs": [],
     "images": [
-      "catalog/shlauhi/plietilenov-shlauh-pe-ld-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/shlauhi/plietilenov-shlauh-pe-ld-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -16008,8 +16125,8 @@ const CONFIG = {
     "description": "Полиуретанов шлаух подходящ за транспорт на вода, въздух и други неагресивни течности в пневматични системи и работещи на вакуум и хидравлични системи при ниско налягане. Твърдост по Shore: &nbsp;98A / 52D Температурен обхват: &nbsp;-40°C до +70°C...",
     "specs": [],
     "images": [
-      "catalog/shlauhi/pu-shlauh-sin-1200x1200.png",
-      "catalog/shlauhi/pu-tube-blue-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/shlauhi/pu-shlauh-sin-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/shlauhi/pu-tube-blue-1200x1200.png"
     ],
     "variants": [
       {
@@ -16239,7 +16356,7 @@ const CONFIG = {
     "description": "Твърд полиамиден шлаух PA 6.6 с химически произход, подходящ за транспорт на въздух под високо налягане и масло. Области на приложение:&nbsp; хидравлични и пневматични системи, вакуум системи и гресиращи системи. Температурен режим: &nbsp;-40⁰C до...",
     "specs": [],
     "images": [
-      "catalog/shlauhi/pnevmatichen-shlauh-nylon-pa-6-6-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/shlauhi/pnevmatichen-shlauh-nylon-pa-6-6-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -16412,8 +16529,8 @@ const CONFIG = {
     "description": "PA 12 Ether HF &nbsp;гъвкав трислоен полиамиден шлаух, проектиран за пневматични приложения, устойчив на ниско-температурни въздействия.П одходящ за сгъстен въздух, транспорт на газове, вода, бой, слабо агресивни химически вещества, масла и други....",
     "specs": [],
     "images": [
-      "catalog/shlauhi/poliamiden-shlauh-p12-mb-longlife-1200x1200.jpg",
-      "catalog/shlauhi/poliamiden-shlauh-mb-pa12-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/shlauhi/poliamiden-shlauh-p12-mb-longlife-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/shlauhi/poliamiden-shlauh-mb-pa12-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -16622,8 +16739,8 @@ const CONFIG = {
     "description": "&nbsp; Полиамиден пневматичен шлаух за въздух, подходящ за транспорт на вода, въздух, масла и слаби химикали, бой, горива. Устойчив на UV лъчи и атмосфретни влияния. Температурен обхват:&nbsp; -40°C до +100°C;&nbsp; Макс.работна температура за флу...",
     "specs": [],
     "images": [
-      "catalog/shlauhi/poliamiden-shlauh-pa12-phl-1-1200x1200.jpg",
-      "catalog/shlauhi/poliamiden-shlauh-p12-longlife-e-hf-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/shlauhi/poliamiden-shlauh-pa12-phl-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/shlauhi/poliamiden-shlauh-p12-longlife-e-hf-1200x1200.png"
     ],
     "variants": [
       {
@@ -16972,7 +17089,7 @@ const CONFIG = {
     "description": "Полиамиден шлаух за въздух, подходящ за транспорт на вода, въздух, масла и слаби химикали. Устойчив на UV лъчи и атмосфретни влияния. Температурен обхват: &nbsp;-40°C до +110°C;&nbsp; Макс.работна температура за флуиди съдържащи вода +70°C",
     "specs": [],
     "images": [
-      "catalog/shlauhi/poliamiden-shlauh-pa12-cheren-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/shlauhi/poliamiden-shlauh-pa12-cheren-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -17203,7 +17320,7 @@ const CONFIG = {
     "description": "Полиамиден шлаух за въздух, подходящ за транспорт на вода, въздух, масла и слаби химикали. Устойчив на UV лъчи и атмосфретни влияния. Температурен обхват: &nbsp;-40°C до +110°C;&nbsp; Макс.работна температура за флуиди съдържащи вода +70°C Шлаухит...",
     "specs": [],
     "images": [
-      "catalog/shlauhi/poliamiden-shlauh-pa12-cheren-1200x1200 (1).jpg"
+      "https://hydrolux.bg/image/catalog/shlauhi/poliamiden-shlauh-pa12-cheren-1200x1200 (1).jpg"
     ],
     "variants": [
       {
@@ -17301,9 +17418,9 @@ const CONFIG = {
     "description": "Пневматичен твърд шлаух за въздух, подходящ за транспорт на вода, въздух, масла и слаби химикали, бой,горива. Устойчив на UV лъчи и атмосфретни влияния.&nbsp; За употреба на открито се препоръчва черен цвят шлаух. Температурен обхват: &nbsp;-10°C ...",
     "specs": [],
     "images": [
-      "catalog/shlauhi/nylon-shlauh-cheren-bql-1200x1200.jpg",
-      "catalog/shlauhi/nylon-shlauh-prozrachen-1200x1200.jpg",
-      "catalog/shlauhi/nylon-tube-cheren-shlauh-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/shlauhi/nylon-shlauh-cheren-bql-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/shlauhi/nylon-shlauh-prozrachen-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/shlauhi/nylon-tube-cheren-shlauh-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -17430,7 +17547,7 @@ const CONFIG = {
     "description": "Прозрачен полиуретанов шлаух PUX подходящ за транспорт на вода, въздух, храни и слаби химикали. Добра устойчивост на пречупване. Температурен обхват:&nbsp; -20°C до +60°C;&nbsp; Полиуретановият PUX шлаух е на склад в прозрачен цвят Твърдост по Sho...",
     "specs": [],
     "images": [
-      "catalog/shlauhi/poliuretanov-shlauh-pux-prozrachen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/shlauhi/poliuretanov-shlauh-pux-prozrachen-1200x1200.png"
     ],
     "variants": [
       {
@@ -17561,7 +17678,7 @@ const CONFIG = {
     "description": "Спирален шлаух RILSAN PA11 PHL,&nbsp; подходящи за транспорт на въздух, газове, вода и водни разтвори, бои, масла, горива и греси.&nbsp; Конструкция: &nbsp;спирален шлаух, изработен от полиамид PA11.&nbsp; Температурен режим:&nbsp; -40⁰C до 80⁰C",
     "specs": [],
     "images": [
-      "catalog/shlauhi/spiralni-shlauhi-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/shlauhi/spiralni-shlauhi-1200x1200.png"
     ],
     "variants": [
       {
@@ -17657,7 +17774,7 @@ const CONFIG = {
     "description": "Тефлонов (PTFE) шлаух - прозрачен, предназначен за транспорт на агресивни химикали, горещи течности и пара, антифриз и други. Устойчив на кислород, озон и UV лъчи. Подходящ за вакуум системи, пренвматични и горещи течности. Температурен обхват: &n...",
     "specs": [],
     "images": [
-      "catalog/shlauhi/teflonov-shlauh-ptfe-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/shlauhi/teflonov-shlauh-ptfe-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -17777,7 +17894,7 @@ const CONFIG = {
     "description": "Тефлонов шлаух подходящ за транспорт на течни и прахообразни храни, въздух, горива, химикали, хидравлични масла, гореща пара и вода. Отлична химическа и температуро-устойчивост. Работна температура: &nbsp;- 60°C до + 260°C Норми: &nbsp; FDA 21 CFR...",
     "specs": [],
     "images": [
-      "catalog/shlauhi/teflon-ptfe-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/shlauhi/teflon-ptfe-1200x1200.png"
     ],
     "variants": [
       {
@@ -17935,7 +18052,7 @@ const CONFIG = {
     "description": "Спирален шлаух RILSAN® PA11, подходящ за въздушни спирани системи. Гъвкав шлаух за транспорт на въздух, пневматични инструменти и задвижвания. Конструкция:&nbsp; Уникален Био-Полиамид 11 от растителен произход, извлечен от рициново масло. Спиралит...",
     "specs": [],
     "images": [
-      "catalog/shlauhi/Spiral-tube-without-nozzles-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/shlauhi/Spiral-tube-without-nozzles-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -18064,7 +18181,7 @@ const CONFIG = {
     "description": "Спирален шлаух RILSAN PA11 подходящ за транспортиране на въздух, пневматични инструменти и задвижвания. Конструкция: &nbsp;спирален шлаух, изработен от полиамид PA11.&nbsp; Температурен режим:&nbsp; -40⁰C до 80⁰C RILSAN PA11 спиралата е на склад в...",
     "specs": [],
     "images": [
-      "catalog/shlauhi/spiralen-shlauh-poliamid-30-m-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/shlauhi/spiralen-shlauh-poliamid-30-m-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -18160,8 +18277,8 @@ const CONFIG = {
     "description": "Термообработени медни уплътняващи пръстени. Разкалените пръстени са гъвкави и пластични за по-сигурен и лесен монтаж.",
     "specs": [],
     "images": [
-      "catalog/aksesoari/medna-diftunga-za-metrichna-rezba-1200x1200.png",
-      "catalog/aksesoari/medna-diftunga-za-metrichna-rezba-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/aksesoari/medna-diftunga-za-metrichna-rezba-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/aksesoari/medna-diftunga-za-metrichna-rezba-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -18357,8 +18474,8 @@ const CONFIG = {
     "description": "Термообработени медни уплътняващи пръстени. Разкалените пръстени са гъвкави и пластични за по-сигурен и лесен монтаж Дифтунгите са предназначени да запълват пространството между два елемента, като целта им&nbsp; да уплътнят и предотвратят изтичане...",
     "specs": [],
     "images": [
-      "catalog/aksesoari/medna-diftunga-za-metrichna-rezba-1200x1200.png",
-      "catalog/aksesoari/medna-diftunga-za-metrichna-rezba-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/aksesoari/medna-diftunga-za-metrichna-rezba-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/aksesoari/medna-diftunga-za-metrichna-rezba-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -18489,7 +18606,7 @@ const CONFIG = {
     "description": "Пластмасов съединител за маркучи и тръби. Приложение:&nbsp; Автомобилна и химическа индустрия, поливни системи, хранително - вкусовата промишленост и др. Предимства:&nbsp; Здравина, устойчиви на удар, устойчиви на надраскване и абразия. Материал н...",
     "specs": [],
     "images": [
-      "catalog/aksesoari/pvc-vryzka-za-markuch-prava-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/aksesoari/pvc-vryzka-za-markuch-prava-1200x1200.png"
     ],
     "variants": [
       {
@@ -18664,7 +18781,7 @@ const CONFIG = {
     "description": "Пластмасов съединител за маркучи и тръби. Приложение: Автомобилна и химическа индустрия, поливни системи, хранително - вкусовата промишленост и др. Предимства:&nbsp; Здравина, устойчиви на удар, устойчиви на надраскване и абразия. Материал на изра...",
     "specs": [],
     "images": [
-      "catalog/aksesoari/pvc-syedinitel-za-markuch-y-obrazen-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/aksesoari/pvc-syedinitel-za-markuch-y-obrazen-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -18828,7 +18945,7 @@ const CONFIG = {
     "description": "Пластмасов съединител за маркучи и тръби. Приложение:&nbsp; Автомобилна и химическа индустрия, поливни системи, хранително - вкусовата промишленост и др. Предимства:&nbsp; Здравина, устойчиви на удар, устойчиви на надраскване и абразия. Материал н...",
     "specs": [],
     "images": [
-      "catalog/aksesoari/pvc-syedinitel-za-markuch-redukciq-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/aksesoari/pvc-syedinitel-za-markuch-redukciq-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -18959,7 +19076,7 @@ const CONFIG = {
     "description": "Пластмасов съединител за маркучи и тръби. Т-образният тройник с редукция&nbsp; служи за разклоняване на маркучи. Приложение:&nbsp; Автомобилна и химическа индустрия, поливни системи, хранително - вкусовата промишленост и др. Предимства:&nbsp; Здра...",
     "specs": [],
     "images": [
-      "catalog/aksesoari/pvc-sydinitel-za-markuch-troinik-redukciya-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/aksesoari/pvc-sydinitel-za-markuch-troinik-redukciya-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -19167,7 +19284,7 @@ const CONFIG = {
     "description": "Пластмасов съединител за маркучи и тръби. Приложение:&nbsp; Автомобилна и химическа индустрия, поливни системи, хранително - вкусовата промишленост и др. Предимства:&nbsp; Здравина, устойчиви на удар, устойчиви на надраскване и абразия. Материал н...",
     "specs": [],
     "images": [
-      "catalog/aksesoari/pvc-syedinitel-za-markuch-kolyano-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/aksesoari/pvc-syedinitel-za-markuch-kolyano-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -19353,7 +19470,7 @@ const CONFIG = {
     "description": "Пластмасов съединител за маркучи и тръби. Приложение:&nbsp; Автомобилна и химическа индустрия, поливни системи, хранително - вкусовата промишленост и др. Предимства:&nbsp; Здравина, устойчиви на удар, устойчиви на надраскване и абразия. Материал н...",
     "specs": [],
     "images": [
-      "catalog/aksesoari/pvc-syedinitel-za-markuch-troinik-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/aksesoari/pvc-syedinitel-za-markuch-troinik-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -19537,7 +19654,7 @@ const CONFIG = {
     "description": "Снадките тип LAYfit, са специално пригодени за свързаване на плоски маркучи. Връзките за lay flat маркучи са подходящи както за 4bar, така и за 10bar&nbsp; версии. Предимства на снадките за плоски маркучи: – Отлична водонепропускливост при снаждан...",
     "specs": [],
     "images": [
-      "catalog/aksesoari/snadka-za-lay-flat-markuch-4-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/aksesoari/snadka-za-lay-flat-markuch-4-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -19634,7 +19751,7 @@ const CONFIG = {
     "description": "Защитните силиконови ръкави са произведени от плътно фибростъкло, покрито с тънък слой самогасящ се термоустойчив силикон. Силиконовите протектори за маркучи се използват за да предпазват маркучи, кабели и снопове от жици от потенциална повреда, п...",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/predpazen-slikonov-rykav-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ аксесоари/predpazen-slikonov-rykav-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -19757,7 +19874,7 @@ const CONFIG = {
     "description": "Тип: &nbsp;Инструменти Пружина: &nbsp;неръждаема стомана Накрайник за въздух: &nbsp;никелиран месинг Конфигурация: &nbsp;Въздушни пистолети Материал: &nbsp;Технополимер",
     "specs": [],
     "images": [
-      "catalog/aksesoari/pistolet-za-vyzduh-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/aksesoari/pistolet-za-vyzduh-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -19801,9 +19918,9 @@ const CONFIG = {
     "description": "Приложение: &nbsp;за уплътняване в системи с хидравлични течности на минерална основа и смазочни масла Предимства: &nbsp;сигурно уплътняване, устойчивост на удар и химикали, лесни за употреба Материал: &nbsp;Нитрил бутадиенова гума (NBR) Твърдост:...",
     "specs": [],
     "images": [
-      "catalog/aksesoari/komplekt-masloustoichivi-o-prysteni-metrichni-1200x1200.jpg",
-      "catalog/aksesoari/komplekt-masloustoichivi-o-prysteni-metrichni2-1200x1200.jpg",
-      "catalog/aksesoari/komplekt-masloustoichivi-o-prysteni-metrichni1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/aksesoari/komplekt-masloustoichivi-o-prysteni-metrichni-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/aksesoari/komplekt-masloustoichivi-o-prysteni-metrichni2-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/aksesoari/komplekt-masloustoichivi-o-prysteni-metrichni1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -19847,8 +19964,8 @@ const CONFIG = {
     "description": "Маслоустойчиви о-пръстени за уплътняване на системи с хидравлични течности на минерална основа и масла. Предимства: &nbsp;сигурно уплътняване, устойчивост на удар и химикали, лесни за употреба Материал: &nbsp;Нитрил бутадиенова гума (NBR) Твърдост...",
     "specs": [],
     "images": [
-      "catalog/aksesoari/kleshti-za-skobi-sys-stranichno-i-predno-zatvarqne-1200x1200 (1).jpg",
-      "catalog/aksesoari/komplekt-masloustoichivi-o-prysteni-bsp1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/aksesoari/kleshti-za-skobi-sys-stranichno-i-predno-zatvarqne-1200x1200 (1).jpg",
+      "https://hydrolux.bg/image/catalog/aksesoari/komplekt-masloustoichivi-o-prysteni-bsp1-1200x1200.png"
     ],
     "variants": [
       {
@@ -19898,8 +20015,8 @@ const CONFIG = {
     "description": "Клещи за прецизно рязане на пневматични шлаухи - предназначени за рязане на калибровъни шлаухи и маркучи. Използването на специализираните клещи за пневматични тръбички елиминира деформацията на отвора при разреза. Обхват: &nbsp;ф2 - ф20 Корпусът ...",
     "specs": [],
     "images": [
-      "catalog/aksesoari/kleshti-za-rqzane-nashlauh-1200x1200.jpg",
-      "catalog/aksesoari/kleshti-za-rqzane-nashlauh-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/aksesoari/kleshti-za-rqzane-nashlauh-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/aksesoari/kleshti-za-rqzane-nashlauh-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -19946,7 +20063,7 @@ const CONFIG = {
     "description": "Използват се за бързо и лесно&nbsp; затваряне на всички видове клипс скоби. Снимките в сайта са илюстративни. За повече детайли, моля свържете се с нашите консултанти.",
     "specs": [],
     "images": [
-      "catalog/aksesoari/kleshti-za-klips-skobi-za-predno-zatvarqne-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/aksesoari/kleshti-za-klips-skobi-za-predno-zatvarqne-1200x1200.png"
     ],
     "variants": [
       {
@@ -19994,7 +20111,7 @@ const CONFIG = {
     "description": "Използват се в труднодостъпни зони на приложение. Може да се използват както фронтално, така и странично.",
     "specs": [],
     "images": [
-      "catalog/aksesoari/kleshti-za-skobi-sys-stranichno-i-predno-zatvarqne-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/aksesoari/kleshti-za-skobi-sys-stranichno-i-predno-zatvarqne-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -20044,8 +20161,8 @@ const CONFIG = {
     "description": "Материал: &nbsp;Brass Nickel Plated Приложение: &nbsp;Пневматични, хидравлични и олеодинамични вериги Работна температура: &nbsp;-20 ÷ 70 C° Работно налягане (max): &nbsp;60 bar",
     "specs": [],
     "images": [
-      "catalog/fitingi/uplytnqvasht-prysten-pa6-1200x1200.jpg",
-      "catalog/fitingi/uplytnqvasht-prysten-pa6-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/fitingi/uplytnqvasht-prysten-pa6-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/fitingi/uplytnqvasht-prysten-pa6-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -20143,8 +20260,8 @@ const CONFIG = {
     "description": "Месинговият врязващ пръстен е подходящ за: медни и алуминиеви тръби, шлаухи PA11 и PA 6, последством поддържащ пръстен. Използва се в пневматични и хидравлични системи и магистрали. Подходящ за вода, въздух, гориво, газове и други течности. Връзки...",
     "specs": [],
     "images": [
-      "catalog/fitingi/vrqzvasht-prysten-mesing-1200x1200.jpg",
-      "catalog/fitingi/vrqzvasht-prysten-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/fitingi/vrqzvasht-prysten-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/fitingi/vrqzvasht-prysten-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -20277,8 +20394,8 @@ const CONFIG = {
     "description": "Месинговата контра гайка за &nbsp;медни и алуминиеви тръби, шлаухи PA11 и PA 6, последством поддържащ пръстен. Подходяща за вода, въздух, гориво и други течности и газове.Използва се в пневматични и хидравлични системи и магистрали.&nbsp; Връзките...",
     "specs": [],
     "images": [
-      "catalog/fitingi/gaika-mesing-1200x1200.jpg",
-      "catalog/fitingi/gaika-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/fitingi/gaika-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/fitingi/gaika-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -20394,8 +20511,8 @@ const CONFIG = {
     "description": "Опорен пръстен",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/oporen-prysten-1200x1200.jpg",
-      "catalog/pnevmatika/oporen-prysten-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/oporen-prysten-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/oporen-prysten-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -20507,8 +20624,8 @@ const CONFIG = {
     "description": "Тапа за шлаух и цангови връзки",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/tapa-za-shlauh-i-cangovi-vryzki-1200x1200.jpg",
-      "catalog/pnevmatika/tapa-za-shlauh-i-cangovi-vryzki-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/tapa-za-shlauh-i-cangovi-vryzki-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/tapa-za-shlauh-i-cangovi-vryzki-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -20616,8 +20733,8 @@ const CONFIG = {
     "description": "Тапа месинг",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/tapa-mesing-1200x1200.jpg",
-      "catalog/pnevmatika/tapa-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/tapa-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/tapa-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -20714,7 +20831,7 @@ const CONFIG = {
     "description": "Муфа месинг подходяща за хидравлични, пневматични и олеодинамични вериги. Материал: &nbsp;Brass Nickel Plated Работна температура: &nbsp;-20 ÷ 70 C° Работно налягане (max): &nbsp;60 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/mufa-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/mufa-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -20834,8 +20951,8 @@ const CONFIG = {
     "description": "Муфа - нипел месинг",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/mufa-nipel-mesing-1200x1200.jpg",
-      "catalog/pnevmatika/mufa-nipel-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/mufa-nipel-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/mufa-nipel-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -20992,8 +21109,8 @@ const CONFIG = {
     "description": "Материал: &nbsp;Brass Nickel Plated Приложение: &nbsp;Пневматични, хидравлични и олеодинамични вериги Работна температура: &nbsp;-20 ÷ 70 C° Работно налягане (max): &nbsp;60 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/shtucer-za-markuch-s-vytreshna-rezba-mesing-1200x1200.jpg",
-      "catalog/pnevmatika/shtucer-za-markuch-s-vytreshna-rezba-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/shtucer-za-markuch-s-vytreshna-rezba-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/shtucer-za-markuch-s-vytreshna-rezba-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -21191,8 +21308,8 @@ const CONFIG = {
     "description": "Материал: &nbsp;Brass Nickel Plated Работна температура: &nbsp;-20 ÷ 70 C° Работно налягане (max): &nbsp;60 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-mesing-npt-1200x1200.jpg",
-      "catalog/pnevmatika/nipel-mesing-npt-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mesing-npt-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mesing-npt-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -21367,8 +21484,8 @@ const CONFIG = {
     "description": "Адаптер цилиндриен за преход от цангова връзка към цилиндрична резба. Подходящ за следните пневмошлаухи: PA11, PA12, PA6, Полиетилен PE, Полиуретан PU (98 Shore A) Подходящи за бързи връзки в различни индустриални приложения. Сфера на приложение: ...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/adapter-cilindrichen-1200x1200.jpg",
-      "catalog/pnevmatika/adapter-cilindrichen-diagram-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/adapter-cilindrichen-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/adapter-cilindrichen-diagram-1200x1200.png"
     ],
     "variants": [
       {
@@ -21542,8 +21659,8 @@ const CONFIG = {
     "description": "Материал: &nbsp;Brass Nickel Plated Приложение: &nbsp;Пневматични, хидравлични и олеодинамични вериги Работна температура: &nbsp;-20 ÷ 70 C° Работно налягане (max): &nbsp;60 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/kolqno-vytreshna-i-vynshna-rezba-mesing-1200x1200.jpg",
-      "catalog/pnevmatika/kolqno-vytreshna-i-vynshna-rezba-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/kolqno-vytreshna-i-vynshna-rezba-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/kolqno-vytreshna-i-vynshna-rezba-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -21651,8 +21768,8 @@ const CONFIG = {
     "description": "Снимките в сайта са илюстративни. За повече детайли, моля свържете се с нашите консултанти.",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/kolqno-vytreshni-rezbi-mesing-1200x1200.jpg",
-      "catalog/pnevmatika/kolqno-vytreshni-rezbi-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/kolqno-vytreshni-rezbi-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/kolqno-vytreshni-rezbi-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -21738,8 +21855,8 @@ const CONFIG = {
     "description": "Материал: &nbsp;Brass Nickel Plated Приложение: &nbsp;Пневматични, хидравлични и олеодинамични вериги Работна температура: &nbsp;-20 ÷ 70 C° Работно налягане (max): &nbsp;60 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/kolqno-vynshni-rezbi-mesing-1200x1200.jpg",
-      "catalog/pnevmatika/kolqno-vynshni-rezbi-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/kolqno-vynshni-rezbi-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/kolqno-vynshni-rezbi-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -21852,8 +21969,8 @@ const CONFIG = {
     "description": "Високодебитна бърза връзка за окомплектоване на маркучи за въздух с бързи връзки Месингова бърза връзка със щуцер се използват за снаждане/удължаване на маркучи, върза връзка към пистолет и гайковерт. Подходяща за окемплектоване на на бърза връзка...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-mesing-s-izvod-za-markuch-1200x1200.jpg",
-      "catalog/pnevmatika/nipel-mesing-s-izvod-za-markuch-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mesing-s-izvod-za-markuch-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mesing-s-izvod-za-markuch-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -21953,8 +22070,8 @@ const CONFIG = {
     "description": "Прав фитинг за преход от NPT резба към цангова връзка. Подходящ за вода, въздух, гориво, други течни газове.&nbsp; Уплътнителният пръстен e от NBR каучук (устойчив на масла, смазки, гориво и др. издържлив на температура до +120 градуса) Материал: ...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/prav-fiting-NPT-1200x1200.jpg",
-      "catalog/pnevmatika/prav-fiting-NPT-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/prav-fiting-NPT-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/prav-fiting-NPT-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -22164,8 +22281,8 @@ const CONFIG = {
     "description": "Материал: &nbsp;Brass Nickel Plated Приложение: &nbsp;Пневматични, хидравлични и олеодинамични вериги Работна температура: &nbsp;-20 ÷ 70 C° Работно налягане (max): &nbsp;60 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/troinik-vytreshni-rezbi-mesing-1200x1200.jpg",
-      "catalog/pnevmatika/troinik-vytreshni-rezbi-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-vytreshni-rezbi-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-vytreshni-rezbi-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -22253,8 +22370,8 @@ const CONFIG = {
     "description": "Прав фитинг за преход от NPT резба към цангова връзка. Подходящ за вода, въздух, гориво, други течни газове.&nbsp; Уплътнителният пръстен e от NBR каучук (устойчив на масла, смазки, гориво и др. издържлив на температура до +120 градуса) Материал: ...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/prav-fiting-1200x1200.jpg",
-      "catalog/pnevmatika/prav-fiting-diagram-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/prav-fiting-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/prav-fiting-diagram-1200x1200.png"
     ],
     "variants": [
       {
@@ -22531,8 +22648,8 @@ const CONFIG = {
     "description": "Високодебитна бърза връзка с мъжка цолова резба за присъединяване към женски резбови накрайници и инструменти Месингова бърза връзка подходяща за въздух и други газове, пневматични системи. Подходяща за окемплектоване на на бърза връзка към пистол...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-mesing-vynshna-rezba-1200x1200.jpg",
-      "catalog/pnevmatika/nipel-mesing-vynshna-rezba-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mesing-vynshna-rezba-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mesing-vynshna-rezba-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -22612,8 +22729,8 @@ const CONFIG = {
     "description": "Високодебитна бърза връзка с женска цолова резба за присъединяване към мъжки резбови накрайници и инструменти Месингова бърза връзка подходяща за въздух и други газове, пневматични системи. Подходяща за окемплектоване на на бърза връзка към пистол...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-mesing-vytreshna-rezba-1200x1200.jpg",
-      "catalog/pnevmatika/nipel-mesing-vytreshna-rezba-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mesing-vytreshna-rezba-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mesing-vytreshna-rezba-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -22690,8 +22807,8 @@ const CONFIG = {
     "description": "Материал: &nbsp;Brass Nickel Plated Приложение: &nbsp;Пневматични, хидравлични и олеодинамични вериги Работна температура: &nbsp;-20 ÷ 70 C° Работно налягане (max): &nbsp;60 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/troinik-vynshni-rezbi-mesing-1200x1200.jpg",
-      "catalog/pnevmatika/troinik-vynshni-rezbi-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-vynshni-rezbi-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-vynshni-rezbi-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -22801,8 +22918,8 @@ const CONFIG = {
     "description": "Материал: &nbsp;Brass Nickel Plated Приложение: &nbsp;Пневматични, хидравлични и олеодинамични вериги Работна температура: &nbsp;-20 ÷ 70 C° Работно налягане (max): &nbsp;60 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/troinik-sredna-vynshna-rezba-mesing-1200x1200.jpg",
-      "catalog/pnevmatika/troinik-sredna-vynshna-rezba-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-sredna-vynshna-rezba-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-sredna-vynshna-rezba-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -22912,8 +23029,8 @@ const CONFIG = {
     "description": "Материал: &nbsp;Brass Nickel Plated Приложение: &nbsp;Пневматични, хидравлични и олеодинамични вериги Работна температура: &nbsp;-20 ÷ 70 C° Работно налягане (max): &nbsp;60 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/troinik-sredna-vytreshna-rezba-mesing-1200x1200.jpg",
-      "catalog/pnevmatika/troinik-sredna-vytreshna-rezba-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-sredna-vytreshna-rezba-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-sredna-vytreshna-rezba-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -23000,8 +23117,8 @@ const CONFIG = {
     "description": "Месинговият нипел краен с NPT резба и врязващ пръстен за &nbsp;медни и алуминиеви тръби. Подходящ за вода, въздух, гориво, други течности и газове. Използват се в пневматични и хидравлични системи и магистрали. Връзките са с никелирано покритие, п...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-kraen-s-vrqzvasht-prysten-NPT-mesing-1200x1200.jpg",
-      "catalog/pnevmatika/nipel-kraen-s-vrqzvasht-prysten-NPT-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-kraen-s-vrqzvasht-prysten-NPT-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-kraen-s-vrqzvasht-prysten-NPT-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -23177,7 +23294,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp; -0°C до 60°C Работно налягане: &nbsp; 10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-m-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-m-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -23286,8 +23403,8 @@ const CONFIG = {
     "description": "Нипел краен с врязващ пръстен BSP месинг",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-kraen-s-vrqzvasht-prysten-bsp-mesing-1200x1200.jpg",
-      "catalog/pnevmatika/nipel-kraen-s-vrqzvasht-prysten-bsp-mesing-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-kraen-s-vrqzvasht-prysten-bsp-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-kraen-s-vrqzvasht-prysten-bsp-mesing-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -23422,7 +23539,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0 до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/pvc-syedinitel-za-markuch-kolqno-kraino-bspt-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/pvc-syedinitel-za-markuch-kolqno-kraino-bspt-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -23622,8 +23739,8 @@ const CONFIG = {
     "description": "Намалител редуцир за преход от цангова връзка с по-голям диаметър към по-малък размер. &nbsp;Подходящ за вода, въздух, гориво, други течности и газове.&nbsp; Уплътнителният пръстен e от NBR каучук (устойчив на масла, смазки, гориво и др. Издържлив...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/namalitel-reducir-1200x1200.jpg",
-      "catalog/pnevmatika/namalitel-reducir-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/namalitel-reducir-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/namalitel-reducir-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -23864,8 +23981,8 @@ const CONFIG = {
     "description": "Месинговото крайното коляно с BSPT резба и врязващ пръстен за: &nbsp;медни и алуминиеви тръби. Подходящо за вода, въздух, гориво, други течности и газове. Използват се в пневматични и хидравлични системи и магистрали. Връзките са с никелирано покр...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/kolqno-kraino-s-vrqzvasht-prysten-BSPT-mesing-1200x1200.jpg",
-      "catalog/pnevmatika/kolqno-kraino-s-vrqzvasht-prysten-BSPT-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/kolqno-kraino-s-vrqzvasht-prysten-BSPT-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/kolqno-kraino-s-vrqzvasht-prysten-BSPT-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -24031,8 +24148,8 @@ const CONFIG = {
     "description": "Прав фитинг за преход от NPT резба към цангова връзка. Правият фитинг е подходящ за следните пневмошлаухи: PA11, PA12, PA6, Полиетилен PE, Полиуретан PU (98 Shore A) Сфера на приложение: &nbsp; пневматични системи и приложения Подходящ за въздух, ...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/prav-fiting-NPT-1200x1200.jpg",
-      "catalog/pnevmatika/prav-fiting-NPT-diagrama-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/prav-fiting-NPT-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/prav-fiting-NPT-diagrama-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -24130,8 +24247,8 @@ const CONFIG = {
     "description": "Месинговият нипел междинен с врязващи пръстени за &nbsp; меднии алуминиеви тръби. Подходящ за вода, въздух, гориво, течности&nbsp; и газове.&nbsp; Използват се в пневматични и хидравлични системи и магистрали. Връзките са с никелирано покритие, пр...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-mejdinen-s-vrqzvasht-prysten-mesing-1200x1200.jpg",
-      "catalog/pnevmatika/nipel-mejdinen-s-vrqzvasht-prysten-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mejdinen-s-vrqzvasht-prysten-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mejdinen-s-vrqzvasht-prysten-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -24262,7 +24379,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0°C до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-bspt-inchov-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-bspt-inchov-1200x1200.png"
     ],
     "variants": [
       {
@@ -24356,8 +24473,8 @@ const CONFIG = {
     "description": "Метална бърза връзка за свързване на шлаух за въздух. Метална връзка с цанки, предлагаща се във вариант за свързване на шлаухи с различен диаметър. Подходяща за въздух, вода, гориво, други течности и газове, пневматични системи и приложения.&nbsp;...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/vryzka-prava-metalna-za-shlauh-1200x1200.jpg",
-      "catalog/pnevmatika/vryzka-prava-metalna-za-shlauh-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/vryzka-prava-metalna-za-shlauh-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/vryzka-prava-metalna-za-shlauh-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -24529,8 +24646,8 @@ const CONFIG = {
     "description": "Коляно въртящо за ъглова връзка от шлаух към BSPT резба. Подходящо за вода, въздух, гориво, други течности и газове. Връзките се използват за закрепване посредством цанги.&nbsp; Уплътнителният пръстен e от NBR &nbsp;каучук (устойчив на масла, смаз...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/kolqno-vyrtqshto-BSPT-1200x1200.jpg",
-      "catalog/pnevmatika/kolqno-vyrtqshto-BSPT-diagram-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/kolqno-vyrtqshto-BSPT-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/kolqno-vyrtqshto-BSPT-diagram-1200x1200.png"
     ],
     "variants": [
       {
@@ -24856,8 +24973,8 @@ const CONFIG = {
     "description": "Коляно - ъглова връзка свързваща пневматични шлаухи. Металното коляно с цанги подходящо за вода, въздух, гориво, други течности и газове. Връзките за шлаух са подходящи за бързи връзки в различни индустриални приложения. Уплътнителният пръстен e о...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/kolqno-metalno-za-shlauh-1200x1200.jpg",
-      "catalog/pnevmatika/troinik-metalen-za-shlauh-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/kolqno-metalno-za-shlauh-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-metalen-za-shlauh-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -24992,8 +25109,8 @@ const CONFIG = {
     "description": "Високодебитна бърза връзка за директен монтаж върху пневматичен шлаух Месингова бърза връзка с холендрова гайка използващи се за окемплектоване на пневматични шлаухи и&nbsp; спирали,директно върху шлауха. Подходяща за окемплектоване на на бърза вр...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-mesing-za-shlauh-1200x1200.jpg",
-      "catalog/pnevmatika/nipel-mesing-za-shlauh-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mesing-za-shlauh-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mesing-za-shlauh-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -25071,7 +25188,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0 до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/pvc-syedinitel-za-markuch-kolqno-m-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/pvc-syedinitel-za-markuch-kolqno-m-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -25163,8 +25280,8 @@ const CONFIG = {
     "description": "Месинговият тройник краен със средна NPT резба и врязващи пръстени е подходящ за вода, въздух, гориво и други течности и газове. Използват се в пневматични и хидравлични системи и магистрали. С никелирано покритие, предпазващо от корозия. Материал...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/troinik-kraen-s-vrqzvasht-prysten-NPT-mesing-1200x1200.jpg",
-      "catalog/pnevmatika/troinik-kraen-s-vrqzvasht-prysten-NPT-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-kraen-s-vrqzvasht-prysten-NPT-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-kraen-s-vrqzvasht-prysten-NPT-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -25337,8 +25454,8 @@ const CONFIG = {
     "description": "Метална бърза връзка за свързване на шлаух за въздух. Метална връзка с цанки, предлагаща се във вариант за свързване на шлаухи с различен диаметър. Подходяща за въздух, вода, гориво, други течности и газове, пневматични системи и приложения.&nbsp;...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/vryzka-prava-metalna-za-shlauh-1200x1200.jpg",
-      "catalog/pnevmatika/vryzka-prava-metalna-za-shlauh-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/vryzka-prava-metalna-za-shlauh-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/vryzka-prava-metalna-za-shlauh-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -25425,8 +25542,8 @@ const CONFIG = {
     "description": "Месинговото коляно с врязващи пръстени е подходящо за вода, въздух, гориво, други течности и газове. Използват се в пневматични и хидравлични магистрали. Връзките са с никелирано покритие, предпазващо от корозия. Материал: &nbsp;месинг с никелиран...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/kolqno-s-vrqzvasht-prysten-mesing-1200x1200.jpg",
-      "catalog/pnevmatika/kolqno-s-vrqzvasht-prysten-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/kolqno-s-vrqzvasht-prysten-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/kolqno-s-vrqzvasht-prysten-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -25555,8 +25672,8 @@ const CONFIG = {
     "description": "Тройник - Т-връзка свързваща пневматични шлаухи, подходящ за вода, въздух, гориво, други течности и газове. Уплътнителният пръстен e от NBR каучук (устойчив на масла, смазки, гориво и др., издържлив на температура до +120 градуса). Материал:&nbsp;...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/troinik-metalen-s-cangi-za-shlauh-1200x1200.jpg",
-      "catalog/pnevmatika/troinik-metalen-s-cangi-za-shlauh-diagram-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-metalen-s-cangi-za-shlauh-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-metalen-s-cangi-za-shlauh-diagram-1200x1200.png"
     ],
     "variants": [
       {
@@ -25687,8 +25804,8 @@ const CONFIG = {
     "description": "Материал: &nbsp;Brass Nickel Plated Проложение: &nbsp;Пневматични, хидравлични и олеодинамични вериги Работна температура: &nbsp;-20 ÷ 70 C° Работно налягане (max): &nbsp;60 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/chetiripytnik-vytreshni-rezbi-mesing-1200x1200.jpg",
-      "catalog/pnevmatika/chetiripytnik-vytreshni-rezbi-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/chetiripytnik-vytreshni-rezbi-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/chetiripytnik-vytreshni-rezbi-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -25773,8 +25890,8 @@ const CONFIG = {
     "description": "Тройник - Т-връзка свързваща пневматични шлаухи, подходящ за вода, въздух, гориво, други течности и газове. Уплътнителният пръстен e от NBR каучук (устойчив на масла, смазки, гориво и др., издържлив на температура до +120 градуса). Материал:&nbsp;...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/troinik-metalen-s-cangi-za-shlauh-1200x1200.jpg",
-      "catalog/pnevmatika/troinik-vynshni-rezbi-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-metalen-s-cangi-za-shlauh-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-vynshni-rezbi-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -25867,8 +25984,8 @@ const CONFIG = {
     "description": "Тройник с врязващ пръстен свързваща пневматични шлаухи, подходящ за вода, въздух, гориво, други течности и газове. Уплътнителният пръстен e от NBR каучук (устойчив на масла, смазки, гориво и др., издържлив на температура до +120 градуса). Връзките...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/troinik-s-vrqzvasht-prysten-mesing-1200x1200.jpg",
-      "catalog/pnevmatika/troinik-s-vrqzvasht-prysten-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-s-vrqzvasht-prysten-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-s-vrqzvasht-prysten-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -25996,8 +26113,8 @@ const CONFIG = {
     "description": "Прав преграден съединител с цангови връзки за снаждане на пневматичен шлаух. Подходящ за вода, въздух, гориво, други течности и газове.&nbsp; Уплътнителният пръстен e от NBR каучук (устойчив на масла, смазки, гориво и др. издържлив на температура ...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-pregrada-1200x1200.jpg",
-      "catalog/pnevmatika/nipel-pregrada-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-pregrada-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-pregrada-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -26115,8 +26232,8 @@ const CONFIG = {
     "description": "Тройник въртящ Т-връзка от шлаух към BSPT резба",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/troinik-vyrtqsht-t-vryzka-ot-shlauh-kym-bspt-rezba-1200x1200.jpg",
-      "catalog/pnevmatika/troinik-vyrtqsht-t-vryzka-ot-shlauh-kym-bspt-rezba-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-vyrtqsht-t-vryzka-ot-shlauh-kym-bspt-rezba-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-vyrtqsht-t-vryzka-ot-shlauh-kym-bspt-rezba-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -26283,8 +26400,8 @@ const CONFIG = {
     "description": "Бърза връзка месинг външна резба",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/byrza-vryzka-mesing-vynshna-rezba-sd-1200x1200.jpg",
-      "catalog/pnevmatika/byrza-vryzka-mesing-vynshna-rezba-sd-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/byrza-vryzka-mesing-vynshna-rezba-sd-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/byrza-vryzka-mesing-vynshna-rezba-sd-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -26348,8 +26465,8 @@ const CONFIG = {
     "description": "Работна температура: &nbsp;-40 ÷ 150 C° Работно налягане (max): &nbsp;25 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/troinik-za-shlauh-sredna-rezba-1200x1200.jpg",
-      "catalog/pnevmatika/troinik-za-shlauh-sredna-rezba-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-za-shlauh-sredna-rezba-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-za-shlauh-sredna-rezba-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -26408,8 +26525,8 @@ const CONFIG = {
     "description": "Бърза връзка месинг с извод за маркуч",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/byrza-vryzka-mesing-s-izvod-za-markuch-1200x1200.jpg",
-      "catalog/pnevmatika/byrza-vryzka-mesing-s-izvod-za-markuch-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/byrza-vryzka-mesing-s-izvod-za-markuch-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/byrza-vryzka-mesing-s-izvod-za-markuch-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -26479,7 +26596,7 @@ const CONFIG = {
     "description": "Бързосменник MK TYPE DIN 28450 за композитни и каучукови маркучи - месинг",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrzosmennik-mk-type-din28450-za-kompozitni-i-kaucukovi-markuchi-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-mk-type-din28450-za-kompozitni-i-kaucukovi-markuchi-1200x1200.png"
     ],
     "variants": [
       {
@@ -26558,8 +26675,8 @@ const CONFIG = {
     "description": "Бърза връзка месинг вътрешна резба",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/byrza-vryzka-mesing-vytreshna-rezba-sd-1200x1200.jpg",
-      "catalog/pnevmatika/byrza-vryzka-mesing-vytreshna-rezba-sd-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/byrza-vryzka-mesing-vytreshna-rezba-sd-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/byrza-vryzka-mesing-vytreshna-rezba-sd-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -26640,8 +26757,8 @@ const CONFIG = {
     "description": "Високодебитна бърза връзка &nbsp;с мъжка цолова резба за присъединяване към женски резбови накрайници и инструменти Приложение: &nbsp;пневматични системи, подходяща за въздух и други газове. Материал: &nbsp;месинг с никелирано покритие Клапан: &nb...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/kuplung-mesing-vynshna-rezba-1200x1200.jpg",
-      "catalog/pnevmatika/kuplung-mesing-vynshna-rezba-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/kuplung-mesing-vynshna-rezba-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/kuplung-mesing-vynshna-rezba-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -26725,8 +26842,8 @@ const CONFIG = {
     "description": "Високодебитна бърза връзка с женска цолова резба &nbsp;за присъединяване към мъжки резбови накрайници и инструменти Сфера на приложение: &nbsp;пневматични системи, п одходяща за въздух и др газове. Материал: &nbsp;месинг с никелирано покритие Рабо...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/kuplung-mesing-vytreshna-rezba-1200x1200.jpg",
-      "catalog/pnevmatika/kuplung-mesing-vytreshna-rezba-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/kuplung-mesing-vytreshna-rezba-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/kuplung-mesing-vytreshna-rezba-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -26810,8 +26927,8 @@ const CONFIG = {
     "description": "Бърза връзка, женска със щуцер за маркуч - високодебитна &nbsp;за окомплектоване на маркучи за въздух с бързи връзки. Приложение: &nbsp;пневматични системи, подходяща за въздух и други газове. Материал: &nbsp;месинг с никелирано покритие Клапан: &...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/kuplung-mesing-s-izvod-za-markuch-1200x1200.jpg",
-      "catalog/pnevmatika/kuplung-mesing-s-izvod-za-markuch-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/kuplung-mesing-s-izvod-za-markuch-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/kuplung-mesing-s-izvod-za-markuch-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -26895,8 +27012,8 @@ const CONFIG = {
     "description": "Високодебитна бърза връзка за директен монтаж върху пневматичен шлаух Приложение: &nbsp;пневматични системи, подходяща за въздух и други газове. Материал: &nbsp;месинг с никелирано покритие Клапан: &nbsp; месинг с никелирано покритие Работна темпе...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/kuplung-mesing-za-shlauh-1200x1200.jpg",
-      "catalog/pnevmatika/kuplung-mesing-za-shlauh-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/kuplung-mesing-za-shlauh-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/kuplung-mesing-za-shlauh-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -26974,8 +27091,8 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK с край за маркуч Използва се за транспорт на чисти и отпадни води, торове, химикали, разтворители и други. Има приложение в редица индустрии за бързо свързване и разкачване на маркучи и тръби.&nbsp; Материал: &nbsp;полипроп...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-e-polipropilen-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-e-polipropilen-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -27162,8 +27279,8 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK с мъжка резба Използва се в индустрии за бързо свързване и разкачване на маркучи и тръби. Използват се главно за транспорт на чисти и отпадни води, химикали, торове и други. Материал: &nbsp;полипропилен Работна температура:...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-f-polipropilen-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-f-polipropilen-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -27350,8 +27467,8 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK с женска резба Използват се за транспорт на отпадни води, торове, химикали, разтвори и други. Използва се в индустриите за бързо свързване и разкачване на маркучи и тръби. Присъединява се към всички типове женски камлок нак...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-a-polipropilen-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-a-polipropilen-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -27538,8 +27655,8 @@ const CONFIG = {
     "description": "Накрайник CAMLOCK под формата на капачка Използва се в индустрии за бързо свързване и разкачване на маркучи и тръби. Използват се главно за транспорт на чисти и отпадни води, торове, химикали и други. Материал: &nbsp;полипропилен Работна температу...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-dc-tapa-a-pp-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-dc-tapa-a-pp-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -27717,9 +27834,9 @@ const CONFIG = {
     "description": "Капачка за IBC бидон с женска резба S60x6 Присъединяване: &nbsp;женска резба S60x6 Материал: &nbsp;корпус от Полипропилен,&nbsp; уплътнение от Полиетилен Работно налягане: &nbsp;7 bar Работна температура: &nbsp;-10°C до +70°C",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/kapachka-za-IBC- bidoni-jenska-S60x6-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/kapachka-za-IBC- bidoni-jenska-S60x6_2-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/kapachka-za-IBC- bidoni-jenska-S60x6_3-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kapachka-za-IBC- bidoni-jenska-S60x6-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kapachka-za-IBC- bidoni-jenska-S60x6_2-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kapachka-za-IBC- bidoni-jenska-S60x6_3-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -27787,8 +27904,8 @@ const CONFIG = {
     "description": "Неръждаема муфа кръгла - AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/gyvkav-silikonov-markuch-750mm-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/neryjdaema-mufa-krygla-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/gyvkav-silikonov-markuch-750mm-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaema-mufa-krygla-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -27971,8 +28088,8 @@ const CONFIG = {
     "description": "Накрайник CAMLOCK под формата на капачка Алуминиевите адаптери се използват за транспорт на чисти и отпадни води, вода, хидравлично масло, бензин и петролни продукти, охлаждащи течности. Има приложение в редица индустрии за бързо свързване и разка...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-camlock-dc-a-al-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-camlock-dc-a-al-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -28141,7 +28258,7 @@ const CONFIG = {
     "description": "Бързосменник за въздух EUROPEAN DIN3489",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-european-din3489-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-european-din3489-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -28222,7 +28339,7 @@ const CONFIG = {
     "description": "Бързосменник за въздух EUROPEAN DIN3489",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-european-din3489-2-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-european-din3489-2-1200x1200.png"
     ],
     "variants": [
       {
@@ -28302,7 +28419,7 @@ const CONFIG = {
     "description": "Бързосменник за въздух EUROPEAN DIN3489",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-european-din-3489-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-european-din-3489-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -28401,8 +28518,8 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK с женска резба. Използва се в индустрии за бързо свързване и разкачване на маркучи и тръби. Използват се главно за транспорт на неагресивни течности: чисти и отпадни води, вода, смеси масло-вода, хидравлично масло, охлаждащ...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-a-al-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-a-al-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -28589,8 +28706,8 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK със щуцер за маркуч Алуминиевите адаптери се използват за транспорт на чисти и отпадни води, вода, хидравлично масло, бензин и петролни продукти, охлаждащи течности. Има приложение в редица индустрии за бързо свързване и ра...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-camlock-tip-e-aluminii-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-camlock-tip-e-aluminii-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -28767,7 +28884,7 @@ const CONFIG = {
     "description": "Адаптер за IBC бидони Накрайника, се монтира на Ibc контейнерите, посредством&nbsp; капачка за IBC &nbsp; бидон и се използва при изпразване на контейнерите. Материал:&nbsp; - Полипропилен Работно налягане:&nbsp; 7 bar Работна температура:&nbsp; -...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/adapter-chuchur-za-ibc-bidoni-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/adapter-chuchur-za-ibc-bidoni-1200x1200.png"
     ],
     "variants": [
       {
@@ -28844,8 +28961,8 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK с мъжка резба Алуминиевите адаптери се използват за транспорт на чисти и отпадни води, вода, хидравлично масло, бензин и петролни продукти, охлаждащи течности. Има приложение в редица индустрии за бързо свързване и разкачва...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-f-al-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-f-al-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -29027,9 +29144,9 @@ const CONFIG = {
     "description": "Капачка за IBC бидон преходна с мъжка резба M80x3 или инчова 2\" BSPP. Присъединяване: - страна 1 - мъжка резба S60 x 6 - страна 2 - женска IBC резба M80x3 или инчова 2\" BSPP Материал:&nbsp; - корпус от Полипропилен - уплътнение от Полиетилен Работ...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-myjka-i-jenska-rezba-polipropilen-1200x1200.png",
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-myjka-i-jenska-rezba-polipropilen-2-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-myjka-i-jenska-rezba-polipropilen-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-myjka-i-jenska-rezba-polipropilen-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-myjka-i-jenska-rezba-polipropilen-2-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-myjka-i-jenska-rezba-polipropilen-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -29096,7 +29213,7 @@ const CONFIG = {
     "description": "Съединител месинг за маркуч - бърза връзка за вода GEKA",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/syedinitel-mesing-za-markuch-byrza-vryzka-za-voda-geka-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/syedinitel-mesing-za-markuch-byrza-vryzka-za-voda-geka-1200x1200.png"
     ],
     "variants": [
       {
@@ -29212,10 +29329,10 @@ const CONFIG = {
     "description": "Капачка за IBC бидон с извод за накрайник CAMLOCK. Присъединяване: - страна 1 - женска резба S60 x 6 / S100 x 8 - страна 2 - извод за присъединяване към накрайник тип CAMLOCK Материал:&nbsp; корпус от Полипропилен,&nbsp; уплътнение от Полиетилен Р...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-za-myjki-camlock-polipropilen-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-za-myjki-camlock-polipropilen-2-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-za-myjki-camlock-polipropilen-1-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-za-myjki-camlock-polipropilen-3-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-za-myjki-camlock-polipropilen-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-za-myjki-camlock-polipropilen-2-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-za-myjki-camlock-polipropilen-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-za-myjki-camlock-polipropilen-3-1200x1200.png"
     ],
     "variants": [
       {
@@ -29295,7 +29412,7 @@ const CONFIG = {
     "description": "Дръжка за Camlock накрайник, неръждаема стомана",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/rezervna-dryjka-za-camlock-nakrainik-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/rezervna-dryjka-za-camlock-nakrainik-1200x1200.png"
     ],
     "variants": [
       {
@@ -29358,7 +29475,7 @@ const CONFIG = {
     "description": "Материал: &nbsp;Неръждаема стомана Посочените цени са за 1 л.м. / 1 бр.",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/veriga-s-prysten-neryjdaema-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/veriga-s-prysten-neryjdaema-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -29405,9 +29522,9 @@ const CONFIG = {
     "description": "Материал: &nbsp;Месинг Верига: 30 cm. Дължина с куките: 36 cm Посочените цени са за 1 л.м. / 1 бр.",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/veriga-s-kuka-mesing-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/veriga-s-kuka-mesing-camlock-1200x1200.png",
-      "catalog/indystrialni nakrainici/veriga-s-kuka-mesing-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/veriga-s-kuka-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/veriga-s-kuka-mesing-camlock-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/veriga-s-kuka-mesing-1200x1200.png"
     ],
     "variants": [
       {
@@ -29453,7 +29570,7 @@ const CONFIG = {
     "description": "Материал: &nbsp;Неръждаема стомана Посочените цени са за 1 л.м. / 1 бр.",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/veriga-s-kuka-neryjdaema-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/veriga-s-kuka-neryjdaema-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -29514,9 +29631,9 @@ const CONFIG = {
     "description": "Капачка за IBC бидон с женска резба BSPP Присъединяване: - страна 1 - женска резба S60 x 6 - страна 2 -&nbsp; женска резба инчова резба BSPP Материал:&nbsp; - корпус от Полипропилен - уплътнение от Полиетилен Работно налягане: &nbsp;7 bar Работна ...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspp-jenska-rezba-polipropilen-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspp-jenska-rezba-polipropilen-1-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspp-jenska-rezba-polipropilen-2-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspp-jenska-rezba-polipropilen-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspp-jenska-rezba-polipropilen-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspp-jenska-rezba-polipropilen-2-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -29606,7 +29723,7 @@ const CONFIG = {
     "description": "Размери: &nbsp;3ММ X 300MM",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/veriga-s-prysten-neryjdaema-ss316-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/veriga-s-prysten-neryjdaema-ss316-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -29663,7 +29780,7 @@ const CONFIG = {
     "description": "Накрайник с тръбна цолова резба външна резба - месинг",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/rezbovi-nakrainik-s-trybna-colova-rezba-vynshna-rezba-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/rezbovi-nakrainik-s-trybna-colova-rezba-vynshna-rezba-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -29816,7 +29933,7 @@ const CONFIG = {
     "description": "Чаша поцинкована за индустриални каучукови маркучи до 25 bar",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/pocinkovana-chasha-za-industrialni-kauchokovi-markuchi-do-41bar-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pocinkovana-chasha-za-industrialni-kauchokovi-markuchi-do-41bar-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -30003,8 +30120,8 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK с мъжка резба. Използва се за транспорт на чисти и отпадни води, торове, химикали, разтворители и други. Има приложение в редица индустрии за бързо свързване и разкачване на маркучи и тръби.&nbsp; Материал: &nbsp;полипропи...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-b-polipropilen-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-b-polipropilen-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -30191,8 +30308,8 @@ const CONFIG = {
     "description": "Накрайник CAMLOCK под формата на капачка Приложение: &nbsp;мъжката камлок тапа, тип DP се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединява с...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-camlock-dc-a-al-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-camlock-dc-a-al-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -30379,8 +30496,8 @@ const CONFIG = {
     "description": "Накрайник CAMLOCK под формата на капачка Приложение: &nbsp;мъжката камлок тапа, тип DP се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединява с...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-dci-tapa-a-mesing-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-dci-tapa-a-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -30562,9 +30679,9 @@ const CONFIG = {
     "description": "Капачка за IBC бидон с мъжка резба BSPT. Присъединяване: - страна 1 - женска резба S60 x 6 / S100 x 8 - страна 2 -&nbsp; мъжка резба инчова резба BSPT Материал:&nbsp; - корпус от Полипропилен - уплътнение от Полиетилен Работно налягане: &nbsp;7 ba...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspt-myjka-rezba-polipropilen-1200x1200.png",
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspt-myjka-rezba-polipropilen-1-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspt-myjka-rezba-polipropilen-2-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspt-myjka-rezba-polipropilen-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspt-myjka-rezba-polipropilen-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspt-myjka-rezba-polipropilen-2-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -30674,8 +30791,8 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK с женска резба Полипропиленовите адаптери се използват за транспортиране на чисти и отпадни води, химикали, торове, разтворители и други.&nbsp; Има приложение в редица индустрии за бързо свързване и разкачване на маркучи и ...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-c-pp-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-c-pp-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -30862,8 +30979,8 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK с женска резба Използва се за транспорт на чисти и отпадни води, торове, химикали, разтворители и други. Има приложение в редица индустрии за бързо свързване и разкачване на маркучи и тръби.&nbsp; Camlock връзките имат нис...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-d-polipropilen-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-d-polipropilen-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -31049,8 +31166,8 @@ const CONFIG = {
     "description": "Накрайник CAMLOCK под формата на капачка Използва се в индустрии за бързо свързване и разкачване на маркучи и тръби. Използват се главно за транспорт на неагресивни течности: чисти и отпадни води, вода, торове, химикали и други. Материал: &nbsp;по...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-dc-tapa-b-polipropilen-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-dc-tapa-b-polipropilen-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -31238,7 +31355,7 @@ const CONFIG = {
     "description": "Мъжкият Camlock накрайник, тип E се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединява се към всички типове женски камлок накрайници от същия ...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-e-ss-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-e-ss-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -31424,8 +31541,8 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK с женска резба Приложение: &nbsp;мъжкият камлок накрайник, тип А се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединява...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-camlock-tip-a-aluminii-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-camlock-tip-a-aluminii-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -31612,8 +31729,8 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK със щуцер за маркуч Алуминиевите адаптери се използват за транспорт на чисти и отпадни води, вода, хидравлично масло, бензин и петролни продукти, охлаждащи течности. Има приложение в редица индустрии за бързо свързване и р...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-c-al-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-c-al-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -31797,8 +31914,8 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK с мъжка резба Използва се в индустрии за бързо свързване и разкачване на маркучи и тръби. Използват се за транспорт на неагресивни течности, чисти и отпадни води, смеси масло - вода, хидравлично масло, бензин, петролни про...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-b-aluminii-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-b-aluminii-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -31973,8 +32090,8 @@ const CONFIG = {
     "description": "Накрайник с тръбна конусна резба без борд AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-rezbovi-nakrainik-s-trybna-konusna-rezba-bez-bord-aisi316-1200x1200.png",
-      "catalog/indystrialni nakrainici/industrialen-rezbovi-nakrainik-s-trybna-konusna-rezba-bez-bord-aisi-316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-rezbovi-nakrainik-s-trybna-konusna-rezba-bez-bord-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-rezbovi-nakrainik-s-trybna-konusna-rezba-bez-bord-aisi-316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -32078,8 +32195,8 @@ const CONFIG = {
     "description": "Използва се за пренос на течности, въздух, леки химикали и други. Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;нетоксично, прозрачно PVC Подсилване: &nbsp;високоякостни полиестерни влакна Покритие: &nbsp;прозрачно PVC, което позволява лесно и...",
     "specs": [],
     "images": [
-      "catalog/ вода/pvc-armiran-markuch-za-voda-hrani-i-himikali-arianna-ta-1200x1200.jpg",
-      "catalog/ вода/pvc-armiran-markuch-za-voda-hrani-i-himikali-arianna-ta-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/pvc-armiran-markuch-za-voda-hrani-i-himikali-arianna-ta-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/pvc-armiran-markuch-za-voda-hrani-i-himikali-arianna-ta-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -32261,10 +32378,10 @@ const CONFIG = {
     "description": "Капачка за IBC бидон с щуцер за маркуч. Присъединяване: *страна 1 - женска резба S60 x 6 *страна 2 - извод за присъединяване с опашка за маркуч Материал:&nbsp; * корпус от Полипропилен * уплътнение от Полиетилен Работно налягане: &nbsp;7 bar Работ...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/ibc-nakrainik-s-opashka-za-markuch-polipropilen-1200x1200.png",
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-s-opashka-za-markuch-polipropilen-3-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-s-opashka-za-markuch-polipropilen-2-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-s-opashka-za-markuch-polipropilen-1-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/ibc-nakrainik-s-opashka-za-markuch-polipropilen-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-s-opashka-za-markuch-polipropilen-3-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-s-opashka-za-markuch-polipropilen-2-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-s-opashka-za-markuch-polipropilen-1-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -32370,7 +32487,7 @@ const CONFIG = {
     "description": "Уплътнения за клампови накрайници Silicone",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/uplytneniq-za-klampovi-nakrainici-nbr-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytneniq-za-klampovi-nakrainici-nbr-1200x1200.png"
     ],
     "variants": [
       {
@@ -32520,8 +32637,8 @@ const CONFIG = {
     "description": "Накрайник CAMLOCK под формата на капачка Алуминиевите адаптери се използват за транспорт на чисти и отпадни води, вода, хидравлично масло, бензин и петролни продукти, охлаждащи течности. Има приложение в редица индустрии за бързо свързване и разка...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-dc-tapa-b-aluminii-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-dc-tapa-b-aluminii-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -32705,8 +32822,8 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK с женска резба Алуминиевите адаптери се използват за транспорт на чисти и отпадни води, вода, хидравлично масло, бензин и петролни продукти, охлаждащи течности. Има приложение в редица индустрии за бързо свързване и разкач...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-d-aluminii-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-d-aluminii-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -32882,7 +32999,7 @@ const CONFIG = {
     "description": "Накрайник тип GUILLEMIN, с контра с външна резба, алуминий, 16bar",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nakrainik-tip=guillemin-s-kontra-s-vynshna-rezba-aluminii-16-bar-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-tip=guillemin-s-kontra-s-vynshna-rezba-aluminii-16-bar-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -33025,8 +33142,8 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK с мъжка резба Приложение: &nbsp;мъжкият камлок накрайник, тип F се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединява ...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-f-neryjdaema-stomana-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-f-neryjdaema-stomana-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -33214,8 +33331,8 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK със щуцер за маркуч Приложение: &nbsp;мъжкият камлок накрайник, тип E се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъед...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-e-ms-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-e-ms-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -33401,8 +33518,8 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK с женска резба Приложение: &nbsp;мъжкият камлок накрайник, тип А се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединява...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-a-mesing-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-a-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -33580,11 +33697,11 @@ const CONFIG = {
     "description": "Капак за IBC бидон с женска резба DN 150 mm Присъединяване:&nbsp; женска резба DN 150 mm Материал:&nbsp; корпус от Полипропилен,&nbsp; уплътнение от Полиетилен Работно налягане: &nbsp;7 bar Работна температура: &nbsp;-10°C до +70°C",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/kapachka-za-ibc-bidon-jenska-150-mm-markuchite-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/kapachka-za-ibc-bidon-jenska-150-mm-cherna-1-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/kapachka-za-ibc-bidon-jenska-150-mm-cherna-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/kapachka-za-ibc-bidon-jenska-150-mm-cherna-2-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/kapachka-za-ibc-bidon-jenska-150-mm-chervena-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kapachka-za-ibc-bidon-jenska-150-mm-markuchite-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kapachka-za-ibc-bidon-jenska-150-mm-cherna-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kapachka-za-ibc-bidon-jenska-150-mm-cherna-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kapachka-za-ibc-bidon-jenska-150-mm-cherna-2-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kapachka-za-ibc-bidon-jenska-150-mm-chervena-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -33652,8 +33769,8 @@ const CONFIG = {
     "description": "Тапа за Triclamp DIN32676",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/tapa-din32676-1-1200x1200.png",
-      "catalog/indystrialni nakrainici/tapa-din32676-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/tapa-din32676-1-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/tapa-din32676-1200x1200.png"
     ],
     "variants": [
       {
@@ -33795,7 +33912,7 @@ const CONFIG = {
     "description": "Накрайник тип STORZ с опашка за маркуч, алуминий, 16bar",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-stroz-s-opashka-za-markuch-aluminii-16-bar-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-stroz-s-opashka-za-markuch-aluminii-16-bar-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -33971,8 +34088,8 @@ const CONFIG = {
     "description": "Кран-канелка за IBC бидон с вътрешна резба S60x6 PP. Подходящи за питейна вода, отпадна вода, леки химикали, торове и пестициди. Присъединяване: &nbsp;Женска резба S 60x6 Материал: - корпус от полипропилен - уплътнение от полиетилен",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/kran-za-ibc-bidon-s-kanelka-1200x1200.png",
-      "catalog/indystrialni nakrainici/kran-za-ibc-bidon-s-kanelka-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kran-za-ibc-bidon-s-kanelka-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kran-za-ibc-bidon-s-kanelka-1-1200x1200.png"
     ],
     "variants": [
       {
@@ -34033,8 +34150,8 @@ const CONFIG = {
     "description": "Неръждаем четирипътник муфа - AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/neryjdaem-chetiripytnik-mufa-aisi316-1200x1200.png",
-      "catalog/indystrialni nakrainici/neryjdaem-chetiripytnik-mufa-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-chetiripytnik-mufa-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-chetiripytnik-mufa-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -34221,8 +34338,8 @@ const CONFIG = {
     "description": "Накрайник CAMLOCK под формата на капачка Приложение: &nbsp;женската камлок тапа, тип DC се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединява ...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-dc-tapa-b-neryjdaema-stomana-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-dc-tapa-b-neryjdaema-stomana-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -34409,8 +34526,8 @@ const CONFIG = {
     "description": "Накрайник CAMLOCK под формата на капачка Приложение: &nbsp;женската камлок тапа, тип DC се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединява ...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-dc-tapa-b-mesing-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-dc-tapa-b-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -34596,8 +34713,8 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK със щуцер за маркуч Приложение: &nbsp;женският&nbsp;камлок накрайник, тип C се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. ...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-c-neryjdaema-stomana-1200x1200.png",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-c-neryjdaema-stomana-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -34784,8 +34901,8 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK с мъжка резба Приложение: &nbsp;мъжкият камлок накрайник, тип F се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединява ...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-f-mesing-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-f-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -34950,7 +35067,7 @@ const CONFIG = {
     "description": "Гъвкав нагнетателен маркуч за въздух и вода, използван за битови и индустриални приложения, строителство, селско стопанство и други. Вложка: &nbsp;NR-SBR каучук Подсилване:&nbsp; една вградена текстилна оплетка. Покритие: &nbsp;NR-SBR каучук каучу...",
     "specs": [],
     "images": [
-      "catalog/ вода/markuch-za-vyzduh-i-voda-belinda-air-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/markuch-za-vyzduh-i-voda-belinda-air-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -35004,9 +35121,9 @@ const CONFIG = {
     "description": "Използва се за пренос на минерална вода, индустриални, строителни и селскостопански машини. Режим на работа: &nbsp;смукателно-нагнетателен Вложка: &nbsp;много гъвкав и гладък, нетоксичен, прозрачен, омекотен PVC материал Подсилване: &nbsp;устойчив...",
     "specs": [],
     "images": [
-      "catalog/ вода/pcv-markuch-s-metalna-spirala-plutone-a-1200x1200.jpg",
-      "catalog/ вода/pcv-markuch-s-metalna-spirala-plutone-a-1-1200x1200.jpg",
-      "catalog/ вода/pcv-markuch-s-metalna-spirala-plutone-a-2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/pcv-markuch-s-metalna-spirala-plutone-a-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/pcv-markuch-s-metalna-spirala-plutone-a-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/pcv-markuch-s-metalna-spirala-plutone-a-2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -35347,8 +35464,8 @@ const CONFIG = {
     "description": "Приложение: &nbsp;в селското стопанство - за напояване и засмукване на течности и торове, леки химикали; подходящ за използване на машини за суспензия. Режим на работа: &nbsp;смукателно-нагнетателен Вложка: &nbsp;здраво, гъвкаво, гладко, пластифиц...",
     "specs": [],
     "images": [
-      "catalog/ вода/smukatelen-markuch-za-technosti-i-semena-saturno-l-1200x1200.jpg",
-      "catalog/ вода/smukatelen-markuch-za-technosti-i-semena-saturno-l-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/smukatelen-markuch-za-technosti-i-semena-saturno-l-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/smukatelen-markuch-za-technosti-i-semena-saturno-l-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -35543,8 +35660,8 @@ const CONFIG = {
     "description": "Предназначен за всмукване и доставка на прахообразни храни, замразени и сушени храни, брашна, течности, сокове и други. Вложка: &nbsp;напълно гладко, гъвкаво, нетоксично PVC Подсилване: &nbsp;бяла, твърда, ударо устойчива PVC спирала Покритие: &nb...",
     "specs": [],
     "images": [
-      "catalog/ вода/smukatelen-markuch-za-technosti-i-semena-netunno-ff-standart-1200x1200.jpg",
-      "catalog/ вода/smukatelen-markuch-za-technosti-i-semena-netunno-ff-standart-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/smukatelen-markuch-za-technosti-i-semena-netunno-ff-standart-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/smukatelen-markuch-za-technosti-i-semena-netunno-ff-standart-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -35733,8 +35850,8 @@ const CONFIG = {
     "description": "Предназначен за засмукване и транспорт на отпадни води, химикали, и други течности в селското стопанство, индустрията и строителството. Особено подходящ за оборудване на цистерни Режим на работа: &nbsp;смукателно-нагнетателен Конструкция: &nbsp;Гл...",
     "specs": [],
     "images": [
-      "catalog/ вода/smukatelen-pvc-markuch-za-kanalopochistvane-appolo-se-1200x1200.jpg",
-      "catalog/ вода/smukatelen-pvc-markuch-za-kanalopochistvane-appolo-se-2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/smukatelen-pvc-markuch-za-kanalopochistvane-appolo-se-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/smukatelen-pvc-markuch-za-kanalopochistvane-appolo-se-2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -35888,7 +36005,7 @@ const CONFIG = {
     "description": "Използва се за изпомпване , засмукване и отвеждане на вода, кал и други субстанции. Режим на работа: &nbsp;смукателно-нагнетателен Вложка: &nbsp;синтетичен каучук Подсилване: &nbsp;текстилна оплетка и стоманена спирала (двойна стоманена спирала на...",
     "specs": [],
     "images": [
-      "catalog/ вода/gumen-markuch-za-voda-eh360-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/gumen-markuch-za-voda-eh360-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -36097,7 +36214,7 @@ const CONFIG = {
     "description": "Приложение: &nbsp;въздух под средно високо налягане Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;синтетичен каучук, устойчив на маслени изпарения Подсилване: &nbsp;високоякостна синтетична текстилна оплетка Покритие: &nbsp;синтетичен каучук у...",
     "specs": [],
     "images": [
-      "catalog/ вода/gumen-markuch-za-vyzduh-eha501-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/gumen-markuch-za-vyzduh-eha501-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -36251,7 +36368,7 @@ const CONFIG = {
     "description": "За прехвърляне на горещ въздух от компресори към цистерни. Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;топлоустойчив бял EPDM каучук Подсилване: &nbsp;силно разтеглив синтетичен текстил Покритие: &nbsp;специален EPDM каучук устойчив на износ...",
     "specs": [],
     "images": [
-      "catalog/ вода/gumen-markuch-za-goresht-vyzduh-alize-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/gumen-markuch-za-goresht-vyzduh-alize-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -36361,7 +36478,7 @@ const CONFIG = {
     "description": "За въздух под високо налягане. Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;маслоустойчива Подсилване: &nbsp;високоякостни метални нишки Покритие: &nbsp;микроперфориран синтетичен каучук, устойчив на износване, озон и атмосферни влияния Работ...",
     "specs": [],
     "images": [
-      "catalog/ вода/gumen-markuch-za-vyzduh-eha501-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/gumen-markuch-za-vyzduh-eha501-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -36498,11 +36615,11 @@ const CONFIG = {
     "description": "Резервен маркуч с накрайници за помпане на гуми. Подходящ е за монтиране към пистолет с манометър за помпане на гуми, както и за въздушни компресори за гуми.",
     "specs": [],
     "images": [
-      "catalog/ за въздух/rezerven-markuch-za-pompene-na-gumi (1)-1200x1200.jpg",
-      "catalog/ за въздух/rezerven-markuch-za-pompene-na-gumi (5)-1200x1200.jpg",
-      "catalog/ за въздух/rezerven-markuch-za-pompene-na-gumi (4)-1200x1200.jpg",
-      "catalog/ за въздух/rezerven-markuch-za-pompene-na-gumi (3)-1200x1200.jpg",
-      "catalog/ за въздух/rezerven-markuch-za-pompene-na-gumi (2)-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ за въздух/rezerven-markuch-za-pompene-na-gumi (1)-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ за въздух/rezerven-markuch-za-pompene-na-gumi (5)-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ за въздух/rezerven-markuch-za-pompene-na-gumi (4)-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ за въздух/rezerven-markuch-za-pompene-na-gumi (3)-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ за въздух/rezerven-markuch-za-pompene-na-gumi (2)-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -36548,8 +36665,8 @@ const CONFIG = {
     "description": "МАРКУЧ ЗА АСПИРАЦИЯ и КЛИМАТИЗАЦИЯ за засмукване и транспортиране на въздух, прах, пари, газове и дребни абразивни частици;&nbsp; Вложка: &nbsp;изцяло гладко еластично PVC Подсилване: &nbsp;бяла ударо-устойчива PVC спирала Покритие: &nbsp;гофриран...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/eolo-l-1200x1200.jpg",
-      "catalog/ за въздух/eolo-l-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ за въздух/eolo-l-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ за въздух/eolo-l-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -36625,8 +36742,8 @@ const CONFIG = {
     "description": "Лек и гъвкав маркуч за засмукване и транспорт на индустриални масла и горива, смазки и др. неагресивни течности. Вложка: &nbsp;здрава, гъвкава и гладка маслоустойчива PVC/NBR смес Подсилване: &nbsp;вградени високоякостни полиестерни влакна и медна...",
     "specs": [],
     "images": [
-      "catalog/PVCC/gyvkav-i-lek-markuch-za-raztovarvane-na-goriva-spiralpress-oil-pvc-nbr-1200x1200.jpg",
-      "catalog/PVCC/gyvkav-i-lek-markuch-za-raztovarvane-na-goriva-spiralpress-oil-pvc-nbr-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/PVCC/gyvkav-i-lek-markuch-za-raztovarvane-na-goriva-spiralpress-oil-pvc-nbr-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/PVCC/gyvkav-i-lek-markuch-za-raztovarvane-na-goriva-spiralpress-oil-pvc-nbr-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -36692,8 +36809,8 @@ const CONFIG = {
     "description": "Маркуч за аспирация за транспортиране на въздух, прах, газ, изпарения, климатизация и аспирация. Режим на работа: &nbsp;смукателен Вложка: &nbsp;напълно гладко, еластично PVC Подсилване: &nbsp;пластифицирана PVC твърда спирала, удароустойчива Покр...",
     "specs": [],
     "images": [
-      "catalog/PVCC/pvc-markuch-za-izsmukvane-na-gazove-i-prah-eolo-sl-1200x1200.jpg",
-      "catalog/PVCC/pvc-markuch-za-izsmukvane-na-gazove-i-prah-eolo-sl-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/PVCC/pvc-markuch-za-izsmukvane-na-gazove-i-prah-eolo-sl-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/PVCC/pvc-markuch-za-izsmukvane-na-gazove-i-prah-eolo-sl-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -36933,8 +37050,8 @@ const CONFIG = {
     "description": "Маркуч за транспортиране и разтоварване на течности, отпадни води, санитарни системи и др.&nbsp; Режим на работа: &nbsp;смукателен Вложка: &nbsp;бяло гладко PVC-P Подсилване: &nbsp;ударо-устойчива PVC спирала Покритие: &nbsp;бяло гъвкаво PVC, усто...",
     "specs": [],
     "images": [
-      "catalog/PVCC/markuch-za-morska-industriq-i-sanitarni-sistemi-nautilus-odorsafe-1200x1200.jpg",
-      "catalog/PVCC/markuch-za-morska-industriq-i-sanitarni-sistemi-nautilus-odorsafe-2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/PVCC/markuch-za-morska-industriq-i-sanitarni-sistemi-nautilus-odorsafe-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/PVCC/markuch-za-morska-industriq-i-sanitarni-sistemi-nautilus-odorsafe-2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -37072,8 +37189,8 @@ const CONFIG = {
     "description": "Използва се в &nbsp;лозаро-винарската индустрия - идеално решение за засмукване и доставка на вина, оцет, течности с концентрация на алкохол до 50% и други хранителни течности. Вложка: &nbsp;напълно гладко, гъвкаво, нетоксично PVC Подсилване: &nbs...",
     "specs": [],
     "images": [
-      "catalog/PVCC/pvc-markuch-za-vino-netunno-evo-1200x1200.jpg",
-      "catalog/PVCC/pvc-markuch-za-vino-netunno-evo-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/PVCC/pvc-markuch-za-vino-netunno-evo-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/PVCC/pvc-markuch-za-vino-netunno-evo-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -37178,9 +37295,9 @@ const CONFIG = {
     "description": "Специално разработен за лозаро-винарската индустрия, устойчив на високо налягане. Напълно гладко, гъвкаво, нетоксично PVC Подсилване: &nbsp;червена, твърда, ударо устойчива PVC спирала и оплетка от полиестерни влакна Покритие: &nbsp;устойчиво на н...",
     "specs": [],
     "images": [
-      "catalog/PVCC/pvc-markuch-za-vino-spiralpress-eno-1200x1200.jpg",
-      "catalog/PVCC/pvc-markuch-za-vino-spiralpress-eno-1-1200x1200.jpg",
-      "catalog/PVCC/pvc-markuch-za-vino-spiralpress-eno-2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/PVCC/pvc-markuch-za-vino-spiralpress-eno-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/PVCC/pvc-markuch-za-vino-spiralpress-eno-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/PVCC/pvc-markuch-za-vino-spiralpress-eno-2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -37288,7 +37405,7 @@ const CONFIG = {
     "description": "Вложка:&nbsp; &nbsp;водоустойчив синтетичен каучук Подсилване: &nbsp;една стоманена оплетка с висока якост Покритие: &nbsp;черен, сив или син устойчив синтетичен каучук Работната температура: &nbsp;- 10°C / + 135°C с връх от + 150°C",
     "specs": [],
     "images": [
-      "catalog/ налягане/markuch-za-parostruiki-i-vodostruiki-teknojet-1sn-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/markuch-za-parostruiki-i-vodostruiki-teknojet-1sn-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -37367,7 +37484,7 @@ const CONFIG = {
     "description": "Предназначен за доставка на течна газ. Вложка: &nbsp;черен, гладък електропроводим NBR каучук Подсилване: &nbsp;високоякостни синтетични слоеве Покритие: &nbsp;черен, гладък, микроперфориран, огнеопорен, антистатичен, противохлъзгав, CR каучукова ...",
     "specs": [],
     "images": [
-      "catalog/ и масло/markuch-za-lpg-gaz-petrogas-25-sd-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-lpg-gaz-petrogas-25-sd-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -37511,7 +37628,7 @@ const CONFIG = {
     "description": "Маркуч за транспортиране на въздух, вода, гориво както и химически продукти в промишлеността и селското стопанство. Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;синтетичен каучук, устойчив на масло, гориво и бензин Подсилване: &nbsp;високоуст...",
     "specs": [],
     "images": [
-      "catalog/ и масло/BALFLEX-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ и масло/BALFLEX-1200x1200.png"
     ],
     "variants": [
       {
@@ -37552,7 +37669,7 @@ const CONFIG = {
     "description": "Вложка: &nbsp;Силна, гъвкава, и гладка масло устойчива смес от PVC/NBR Подсилване: &nbsp;Силно разтеглив синтетичен текстил Покритие: &nbsp;Химически агенти, протъркване и външни атмосферни условия Работната температура: &nbsp;– 10° до +60° C",
     "specs": [],
     "images": [
-      "catalog/ и масло/markuch-za-goriva-i-masla-dis-fuel-oil-hose-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-goriva-i-masla-dis-fuel-oil-hose-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -37627,7 +37744,7 @@ const CONFIG = {
     "description": "Армиран маркуч за пренос на газ в газови системи на автомобили. Температурен обхват: &nbsp;-40°C / +125°C Вътрешна обвивка: &nbsp;синтетична, гладка, изолираща черна гума, устойчива на LPG и CNG. Външна обвивка: &nbsp;маслоустойчива черна гума, ан...",
     "specs": [],
     "images": [
-      "catalog/ и масло/markuch-za-bezolovni-goriva-fub-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-bezolovni-goriva-fub-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -37745,7 +37862,7 @@ const CONFIG = {
     "description": "Смукателно-нагнетателен маркуч за горива и масла. Вложка: &nbsp;NВR гума - електропроводима Подсилване: &nbsp;Две вградени текстилни оплетки и една вградена метална спирала Покритие: &nbsp;черна СR - електропроводима устойчива на масла, абразии и ...",
     "specs": [],
     "images": [
-      "catalog/ и масло/smukatelno-nagnetatelen-markuch-za-goriva-i-masla-605aa-sae-100-r4-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/smukatelno-nagnetatelen-markuch-za-goriva-i-masla-605aa-sae-100-r4-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -38072,7 +38189,7 @@ const CONFIG = {
     "description": "Режим на работа: &nbsp;смукателно-нагнетателен Вложка: &nbsp;черен, гладък NBR каучук Подсилване: &nbsp;високоякостни синтетични слоеве със стоманена спирала и 1 меден проводник за заземяване на маркуча Покритие: &nbsp;черен, гладък, противохлъзга...",
     "specs": [],
     "images": [
-      "catalog/ и масло/markuch-za-lpg-gaz-petrogas-25-sd-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-lpg-gaz-petrogas-25-sd-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -38323,7 +38440,7 @@ const CONFIG = {
     "description": "Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;Черен електропроводим NBR Подсилване: &nbsp;Високоякостни текстилни оплетки Покритие: &nbsp;Черен електропроводим CR - устойчив на абразия, озон, въглеводород и огън Работна температура: &nbsp;-30°...",
     "specs": [],
     "images": [
-      "catalog/ и масло/markuch-za-cisterni-i-svetli-goriva-650aa-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-cisterni-i-svetli-goriva-650aa-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -38393,7 +38510,7 @@ const CONFIG = {
     "description": "Режим на работа: &nbsp;нагнетателен Вложка:&nbsp; черен, електропроводим, газоустойчив NBR каучук Подсилване: &nbsp;синтетичен текстил с висока якост на опън Покритие: &nbsp;озоно, климатично, топло, огне и маслоустойчив, специалномикро перфориран...",
     "specs": [],
     "images": [
-      "catalog/ и масло/gumen-markuch-za-goresht-vyzduh-alize-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/gumen-markuch-za-goresht-vyzduh-alize-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -38523,7 +38640,7 @@ const CONFIG = {
     "description": "Режим на работа: &nbsp;нагнетателен Вътрешна камера: &nbsp;NВR електропроводима Подсилване: &nbsp;Две вградени текстилни оплетки и една медна антистатична нишка Външна обвивка: &nbsp;CR Работна температура: &nbsp;-30°C/+70°C",
     "specs": [],
     "images": [
-      "catalog/ и масло/markuch-za-cisterni-svetli-goriva-makara-658aa-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-cisterni-svetli-goriva-makara-658aa-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -38602,7 +38719,7 @@ const CONFIG = {
     "description": "Приложение: &nbsp; смукателно-нагнетателен маркуч за битум. Подходящ за товарене и разтоварване на битум, асфалт, горещи масла и др. Вложка: &nbsp; NВR гума Подсилване: &nbsp; Една вградена текстилна оплетка и метална спирала Покритие: &nbsp; черн...",
     "specs": [],
     "images": [
-      "catalog/ и масло/markuch-za-bitum-hot-tar-614aa-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-bitum-hot-tar-614aa-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -38666,7 +38783,7 @@ const CONFIG = {
     "description": "Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;маслоустойчив синтетичен каучук Подсилване: &nbsp;една стоманена оплетка с висока якост Покритие: &nbsp;черен, устойчив на масло и околна среда синтетичен каучук Работна температура: &nbsp;-40°C /+...",
     "specs": [],
     "images": [
-      "catalog/ налягане/hidravlichen-markuch-s-edna-opletka-tekno-agri-1sn-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-s-edna-opletka-tekno-agri-1sn-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -38818,7 +38935,7 @@ const CONFIG = {
     "description": "Хидравличен маркуч за горещо масло и пароструйки, устойчив до +135°C. Вложка: &nbsp;водоустойчив синтетичен каучук Подсилване: &nbsp;една стоманена оплетка с висока якост Покритие: &nbsp;син устойчив синтетичен каучук Работната температура: &nbsp;...",
     "specs": [],
     "images": [
-      "catalog/ налягане/markuch-za-goreshto-maslo-vulcan-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/markuch-za-goreshto-maslo-vulcan-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -38959,7 +39076,7 @@ const CONFIG = {
     "description": "Вложка: &nbsp;синтетична гума, устойчива на студена и топла вода Подсилване: &nbsp;една оплетка с висока якост на огъване Покритие: &nbsp;устойчив на абразия и на озон синтетичен каучук Температурен диапазон: &nbsp;-10 ° С до 155 ° С / 14 ° F до +...",
     "specs": [],
     "images": [
-      "catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-1sn-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-1sn-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -39100,7 +39217,7 @@ const CONFIG = {
     "description": "Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;маслоустойчив синтетичен каучук Подсилване: &nbsp;две стоманени оплетки с висока якост Покритие: &nbsp;черен, устойчив на масло и околна среда синтетичен каучук Работна температура: &nbsp;-40° C /+...",
     "specs": [],
     "images": [
-      "catalog/ налягане/hidravlichen-markuch-s-edna-opletka-tekno-agri-1sn-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-s-edna-opletka-tekno-agri-1sn-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -39263,7 +39380,7 @@ const CONFIG = {
     "description": "Специален синтетичен каучук, устойчив на минерални, растителни и гликол базирани хидравлични масла. Армировка: &nbsp;4 метални оплетки с висока якост Външно покритие: &nbsp;специален синтетичен каучук, устойчив на хидравлични масла, абразия и атмо...",
     "specs": [],
     "images": [
-      "catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-dunlop-4sp-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-dunlop-4sp-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -39327,7 +39444,7 @@ const CONFIG = {
     "description": "За хидравлични системи с високи пикови налягания и екстремни условия на работа. Покритие: &nbsp;специален синтетичен каучук устойчив на минерални, растителни и гликол базирани хидравлични масла Подсилване:&nbsp; 4 метални оплетки с висока якост Въ...",
     "specs": [],
     "images": [
-      "catalog/ налягане/hidravlichen-markuch-s-chetiri-metalni-opletki-aeroquip-4-sp-en-586-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-s-chetiri-metalni-opletki-aeroquip-4-sp-en-586-1200x1200.png"
     ],
     "variants": [
       {
@@ -39422,7 +39539,7 @@ const CONFIG = {
     "description": "Покритие: &nbsp;специален синтетичен каучук устойчив на минерални, растителни и гликол базирани хидравлични масла Подсилване:&nbsp; 4 метални оплетки с висока якост Външно покритие:&nbsp; специален синтетичен каучук, устойчив на хидравлични масла,...",
     "specs": [],
     "images": [
-      "catalog/ налягане/hidravlichen-markuch-s-chetiri-metalni-opletki-aeroquip-4-sp-en-586-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-s-chetiri-metalni-opletki-aeroquip-4-sp-en-586-1200x1200.png"
     ],
     "variants": [
       {
@@ -39520,9 +39637,9 @@ const CONFIG = {
     "description": "Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;черна CR гума, устойчива на фреон Подсилване:&nbsp; PES - полиестерни текстилни оплетки. Долълнителен слой: &nbsp;Nylon, за херметичност (газонепропускливост) Покритие: &nbsp;Chemivic™ синтетична г...",
     "specs": [],
     "images": [
-      "catalog/gazove/markuch-za-zarejdane-na-freon-continental-ct5-1200x1200.jpg",
-      "catalog/gazove/markuch-za-zarejdane-na-freon-continental-ct5 (1.1)-1200x1200.jpg",
-      "catalog/gazove/markuch-za-zarejdane-na-freon-continental-ct5 (2)-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/gazove/markuch-za-zarejdane-na-freon-continental-ct5-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/gazove/markuch-za-zarejdane-na-freon-continental-ct5 (1.1)-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/gazove/markuch-za-zarejdane-na-freon-continental-ct5 (2)-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -39585,7 +39702,7 @@ const CONFIG = {
     "description": "Режим на работа: &nbsp;нагнетателен Вложка:&nbsp; черен, гладък, електропроводим NBR Подсилване: &nbsp;текстилна спирална конструкция Покритие: &nbsp;CR, черен, гладък, електропроводим Работна температура:&nbsp; -30°C/+60°C (-22°F/140°F)",
     "specs": [],
     "images": [
-      "catalog/gazove/gumen-markuch-za-bezolovni-goriva-teu-1360-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/gazove/gumen-markuch-za-bezolovni-goriva-teu-1360-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -39660,7 +39777,7 @@ const CONFIG = {
     "description": "Нагнетателен макруч за бира, вино, алкохол и безалкохолни напитки. Вложка: &nbsp;Бяла, гладка BIIR ( бутил ) каучукова смес , без мирис и вкус , подходяща за храни Подсилване: &nbsp;високоякостни текстилни слоеве Покритие:&nbsp; оранжев EPDM каучу...",
     "specs": [],
     "images": [
-      "catalog/hrani/nagnetatelen-markuch-za-slaboalkoholni-napitki-agrabrew-10-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/hrani/nagnetatelen-markuch-za-slaboalkoholni-napitki-agrabrew-10-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -39801,7 +39918,7 @@ const CONFIG = {
     "description": "Всмукателно-нагнетателен маркуч за бира, вино, алкохол, безалкохолни напитки. Вложка: &nbsp;Бяла, гладка BIIR ( бутил ) каучукова смес , без мирис и вкус , подходяща за храни Подсилване: &nbsp;високоякостни текстилни оплетки и стоманена спирала По...",
     "specs": [],
     "images": [
-      "catalog/hrani/smukatelen-markuch-za-slaboalkoholni-napitki-agrabrew-sd-10-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/hrani/smukatelen-markuch-za-slaboalkoholni-napitki-agrabrew-sd-10-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -39931,8 +40048,8 @@ const CONFIG = {
     "description": "За почистване в хранително преработвателните предприятия с вода до 93°С (200°F) Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;Бял, нитрил синтетичнен каучук, одобрен за работа с храни от FDA (Агенцията за контрол на храните и лекарствата) Подс...",
     "specs": [],
     "images": [
-      "catalog/hrani/markuch-za-pochistvane-vamandri-i-klanici-fortress-1200x1200.png",
-      "catalog/hrani/markuch-za-pochistvane-vamandri-i-klanici-fortress-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/hrani/markuch-za-pochistvane-vamandri-i-klanici-fortress-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/hrani/markuch-za-pochistvane-vamandri-i-klanici-fortress-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -40006,7 +40123,7 @@ const CONFIG = {
     "description": "За разтоварване на млечни продукти, растителни мазнини и напитки Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;материал устойчив на растителни мазнини, NBR,FDA одобрен Подсилване: високоякостна, синтетична &nbsp;текстилна оплетка Покритие:&nbs...",
     "specs": [],
     "images": [
-      "catalog/hrani/markuch-za-raztovarvane-na-mazni-hrani-i-napitki-ehf001-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/hrani/markuch-za-raztovarvane-na-mazni-hrani-i-napitki-ehf001-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -40136,7 +40253,7 @@ const CONFIG = {
     "description": "Вътрешна камера: &nbsp;NВR 1 електропроводима. Две вградени текстилни оплетки Външна обвивка: &nbsp;СR - устойчива на абразии и климатични условия, електропроводима, незапалима. Температурен режим: &nbsp;-30°С +70°С Работно налягане &nbsp;25 bar П...",
     "specs": [],
     "images": [
-      "catalog/ и масло/markuch-za-gaz-propan-butan-lpg-659aa-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-gaz-propan-butan-lpg-659aa-1200x1200.png"
     ],
     "variants": [
       {
@@ -40264,8 +40381,8 @@ const CONFIG = {
     "description": "PVC маркуч, тип шлаух е подходящ за транспортиране на течности, въздух, храни и фармацевтичната индустрия. Използва за пренасяне на алкохол до 20%. Използва се и в химическата промишленост.&nbsp; Режим на работа: &nbsp;агнетателен Конструкция:&nbs...",
     "specs": [],
     "images": [
-      "catalog/ вода/IMG_6916.JPG",
-      "catalog/ вода/markuch-cristallo-prozrachen-pvc-shlauh-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/IMG_6916.JPG",
+      "https://hydrolux.bg/image/catalog/ вода/markuch-cristallo-prozrachen-pvc-shlauh-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -40441,7 +40558,7 @@ const CONFIG = {
     "description": "Гофрираните съединения от силикон намират приложение в системите за охлаждаща течност и въздухопроводи при турбинирани и атмосферни двигатели, за приложения с много кривки и различни ъгли. Оплетка: &nbsp;подсилена текстилна оплетка Температура: &n...",
     "specs": [],
     "images": [
-      "catalog/silikoni/gyvkav-silikonov-markuch-350-mm-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/gyvkav-silikonov-markuch-350-mm-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -40658,7 +40775,7 @@ const CONFIG = {
     "description": "Маркуч за гореща вода, премесена с антифриз в охладителната система на автомобилите Режим на работа: &nbsp;смукателно-нагнетателен, черен каучук, гладък, устойчив на топлина и антифриз, черен гладък каучук устойчив на масло, атмосферни влияния и т...",
     "specs": [],
     "images": [
-      "catalog/ налягане/smukatelen-gofriran-markuch-za-antifriz-idroflex-18n-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ налягане/smukatelen-gofriran-markuch-za-antifriz-idroflex-18n-1200x1200.png"
     ],
     "variants": [
       {
@@ -40966,7 +41083,7 @@ const CONFIG = {
     "description": "&nbsp;Силиконовите гъвкави съединения се използват в автомобилната индустрия - за товарни и леки автомобили и автобуси. Гофрираните съединения от силикон намират приложение в системите за охлаждаща течност и въздухопроводи при турбинирани и атмосф...",
     "specs": [],
     "images": [
-      "catalog/silikoni/gyvkav-silikonov-markuch-500mm-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/gyvkav-silikonov-markuch-500mm-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -41197,7 +41314,7 @@ const CONFIG = {
     "description": "Гъвкав силиконов маркуч - 750 mm",
     "specs": [],
     "images": [
-      "catalog/silikoni/gyvkav-silikonov-markuch-750mm-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/gyvkav-silikonov-markuch-750mm-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -41428,7 +41545,7 @@ const CONFIG = {
     "description": "Гъвкав силиконов маркуч - 1000 mm",
     "specs": [],
     "images": [
-      "catalog/silikoni/gyvkav-silikonov-markuch-1000mm-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/gyvkav-silikonov-markuch-1000mm-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -41648,7 +41765,7 @@ const CONFIG = {
     "description": "Гъвкав силиконов маркуч - 5 m",
     "specs": [],
     "images": [
-      "catalog/silikoni/gyvkav-silikonov-markuc-5-m-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/gyvkav-silikonov-markuc-5-m-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -41789,7 +41906,7 @@ const CONFIG = {
     "description": "Маркуч за пароструйки, водоустойчив синтетичен каучук, стоманени оплетки. Работната температура: &nbsp;- 10°C / + 135°C с връх от + 150°C Вложка: &nbsp; водоустойчив синтетичен каучук Подсилване: &nbsp; две стоманени оплетки с висока якост Покрити...",
     "specs": [],
     "images": [
-      "catalog/ налягане/markuch-za-parostruiki-i-vodostruiki-teknojet-2sn-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/markuch-za-parostruiki-i-vodostruiki-teknojet-2sn-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -41875,7 +41992,7 @@ const CONFIG = {
     "description": "Маркуч за водоструйки, синтетична гума, устойчива на студена и топла вода, с две оплетки. Вложка: &nbsp; синтетична гума, устойчива на студена и топла вода Подсилване: две оплетки с висока якост на огъване Покритие: &nbsp; устойчив на абразия и на...",
     "specs": [],
     "images": [
-      "catalog/ налягане/hidravlichen-markuch-za-vodostruiki-2sn-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-za-vodostruiki-2sn-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -42006,7 +42123,7 @@ const CONFIG = {
     "description": "Маркуч подходящ за хранителни течности и авто резервоари за горещ въздух. Смукателно - нагнетателен с текстилна оплетка и метална спирала.&nbsp; Работна температура: &nbsp;-40°C/+140°C (-40°F/284°F) Вложка: &nbsp; бял, гладък EPDM каучук подходящ ...",
     "specs": [],
     "images": [
-      "catalog/hrani/gumen-smukatelen-markuch-za-mqlko-i-mazni-hrani-agra-4-all-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/hrani/gumen-smukatelen-markuch-za-mqlko-i-mazni-hrani-agra-4-all-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -42223,7 +42340,7 @@ const CONFIG = {
     "description": "Маркуч за плечни продукти, растителни мазнини и напитки. Всмукателно - нагнетателен със синтетична текстилна оплетка със единична стоманена спирала. Работна температура: &nbsp;-40°C/+80°C (-40°F/176°F) Режим на работа: &nbsp; всмукателно-нагнетате...",
     "specs": [],
     "images": [
-      "catalog/hrani/smukatelen-markuch-za-mazni-hrani-i-napitki-ehf002-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/hrani/smukatelen-markuch-za-mazni-hrani-i-napitki-ehf002-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -42353,7 +42470,7 @@ const CONFIG = {
     "description": "Маркуч за засмукване и транспортиране на течни храни и напитки. Смукателно - нагнетателен с текстилна оплетка.&nbsp; Работна температура:&nbsp; -35°C/+95°C (-31°F + 203°F) При почистване с пара: &nbsp;до +130°С (+266°F) за 30 мин Режим на работа: ...",
     "specs": [],
     "images": [
-      "catalog/hrani/smukatelen-markuch-za-techni-hrani-i-napitki-lm1-epdm-1200x1200 (1).jpg"
+      "https://hydrolux.bg/image/catalog/hrani/smukatelen-markuch-za-techni-hrani-i-napitki-lm1-epdm-1200x1200 (1).jpg"
     ],
     "variants": [
       {
@@ -42517,8 +42634,8 @@ const CONFIG = {
     "description": "Съединения за маркучи PUR - прави",
     "specs": [],
     "images": [
-      "catalog/aksesoari/syedineniq-za-markuchi-pur-pravi-1200x1200.jpg",
-      "catalog/aksesoari/syedineniq-za-markuchi-pur-pravi-5-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/aksesoari/syedineniq-za-markuchi-pur-pravi-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/aksesoari/syedineniq-za-markuchi-pur-pravi-5-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -42759,8 +42876,8 @@ const CONFIG = {
     "description": "Съединения за маркучи PUR - редукции",
     "specs": [],
     "images": [
-      "catalog/aksesoari/syedineniq-za-markuchi-pur-redukcii-1200x1200.jpg",
-      "catalog/aksesoari/syedineniq-za-markuchi-pur-redukcii-3-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/aksesoari/syedineniq-za-markuchi-pur-redukcii-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/aksesoari/syedineniq-za-markuchi-pur-redukcii-3-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -42882,8 +42999,8 @@ const CONFIG = {
     "description": "Прозрачен изключително гъвкав полиуретанов маркуч с помеднена метална спирала за засмукване на въздух, прах, маслени и бензинови пари; идеален за отвеждане на излишната дървесина при дървообработване.&nbsp; Маркуч за аспирация. Маркуч за дървени с...",
     "specs": [],
     "images": [
-      "catalog/poliyretan/IMG-49cbf2c51fd7cc00c26bb8cd2c920f78-V-1200x1200.jpg",
-      "catalog/poliyretan/IMG-6c96fa7d0150db2d2f9c4a7e83e6ef1d-V-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/poliyretan/IMG-49cbf2c51fd7cc00c26bb8cd2c920f78-V-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/poliyretan/IMG-6c96fa7d0150db2d2f9c4a7e83e6ef1d-V-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -43341,7 +43458,7 @@ const CONFIG = {
     "description": "Маркуч за изгорели газове и горещ въздух, за аспирации, за транспортиране на изгорели газове, изпарения, абразиви, горещи отпадъци и др. С мукателен с термоплстична гума. Температурен обхват: &nbsp;-40°С +125°С Режим на работа: &nbsp; смукателен В...",
     "specs": [],
     "images": [
-      "catalog/poliyretan/markuch-za-izgoreli-gazove-i-goresht-vyzduh-vulcano-tpr-a-125c-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/poliyretan/markuch-za-izgoreli-gazove-i-goresht-vyzduh-vulcano-tpr-a-125c-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -43649,7 +43766,7 @@ const CONFIG = {
     "description": "Изключително гъвкав полиуретанов маркуч с помеднена метална спирала за засмукване на въздух, прах, абразивен прах, влакна, маслени пари за системи за обезпрашаване; маркуч за прахообразни бои; идеален за отвеждане на излишната дървесина при дървоо...",
     "specs": [],
     "images": [
-      "catalog/poliyretan/antistatichen-negorim-poliuretanov-markuch-protape-pur301-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/poliyretan/antistatichen-negorim-poliuretanov-markuch-protape-pur301-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -43973,8 +44090,8 @@ const CONFIG = {
     "description": "Млечно-прозрачен полиестерен полиуретан. Всмукване и транспортиране на гранули, абразивни частици и прах, пелети, дървесни стърготини и влакна, изпарения. Подходящ за използване в пластмасовата, дървообработващата, керамичната, прахоотвеждащата пр...",
     "specs": [],
     "images": [
-      "catalog/poliyretan/antistatichen-poliuretanov-markuch-next07-pu-1200x1200.jpg",
-      "catalog/poliyretan/antistatichen-poliuretanov-markuch-next07-pu-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/poliyretan/antistatichen-poliuretanov-markuch-next07-pu-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/poliyretan/antistatichen-poliuretanov-markuch-next07-pu-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -44114,8 +44231,8 @@ const CONFIG = {
     "description": "Много лек и гъвкав гофриран маркуч за смукване на отпадни течности. Специализиран за каналопочистващи приложения. Маркуч за източване на химически тоалетни, за засмукване и транспорт на отпадни води. Работна температура: &nbsp;- 40 ° до + 60 ° C С...",
     "specs": [],
     "images": [
-      "catalog/poliyretan/markuch-za-himicheski-toaletni-1200x1200.jpg",
-      "catalog/poliyretan/markuch-za-himicheski-toaletni-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/poliyretan/markuch-za-himicheski-toaletni-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/poliyretan/markuch-za-himicheski-toaletni-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -44295,8 +44412,8 @@ const CONFIG = {
     "description": "Високодебитна бърза връзка за директен монтаж върху пневматичен шлау. Подходяща за&nbsp; пневматични системи и приложения, &nbsp;въздух и др газове. Сфера на приложение: &nbsp;пневматични системи и приложения Подходяща за въздух и др газове Присъе...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-mesing-za-shlauh-1200x1200.jpg",
-      "catalog/pnevmatika/nipel-mesing-za-shlauh-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mesing-za-shlauh-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mesing-za-shlauh-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -44369,8 +44486,8 @@ const CONFIG = {
     "description": "Високодебитна бърза връзка за окомплектоване на маркучи за въздух с бързи връзки. Подходяща за&nbsp; пневматични системи и приложения &nbsp;въздух и др газове. Работна температура: &nbsp;-20 ÷ 80 C° Месинговите бързи връзки със щуцер се използват ...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/kuplung-mesing-s-izvod-za-markuch-1200x1200.jpg",
-      "catalog/pnevmatika/byrza-vryzka-mesing-s-izvod-za-markuch-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/kuplung-mesing-s-izvod-za-markuch-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/byrza-vryzka-mesing-s-izvod-za-markuch-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -44437,7 +44554,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0 до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/pvc-syedinitel-za-markuch-troinik-metrichen-rezba-v-sredata-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/pvc-syedinitel-za-markuch-troinik-metrichen-rezba-v-sredata-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -44531,8 +44648,8 @@ const CONFIG = {
     "description": "Високодебитна бърза връзка с мъжка цолова резба за присъединяване към женски резбови накрайници и инструменти. Подходяща за&nbsp; пневматични системи и приложения &nbsp;въздух и др газове. Работна температура: &nbsp;-20 ÷ 80 C° Месинговите бързи в...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/kuplung-mesing-vynshna-rezba-1200x1200.jpg",
-      "catalog/pnevmatika/kuplung-mesing-vynshna-rezba-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/kuplung-mesing-vynshna-rezba-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/kuplung-mesing-vynshna-rezba-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -44607,8 +44724,8 @@ const CONFIG = {
     "description": "Високодебитна бърза връзка с женска цолова резба за присъединяване към мъжки резбови накрайници и инструменти. Подходяща за&nbsp; пневматични системи и приложения &nbsp;въздух и др газове. Работна температура: &nbsp;-20 ÷ 80 C° Месинговите бързи в...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/kuplung-mesing-vytreshna-rezba-1200x1200.jpg",
-      "catalog/pnevmatika/kuplung-mesing-vytreshna-rezba-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/kuplung-mesing-vytreshna-rezba-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/kuplung-mesing-vytreshna-rezba-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -44683,8 +44800,8 @@ const CONFIG = {
     "description": "Високодебитна бърза връзка за директен монтаж върху пневматичен шлаух Подходяща за въздух и др газове Дебит: &nbsp;600Nl/min (6bar - ∆p = 1bar) Материал: &nbsp;месинг с никелирано покритие Уплътнение: &nbsp;NBR Клапан: &nbsp; месинг с никелирано п...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/kuplung-mesing-za-shlauh-1200x1200.jpg",
-      "catalog/pnevmatika/byrza-vryzka-jenska-mesing-za-shlauh-diagrama-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/kuplung-mesing-za-shlauh-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/byrza-vryzka-jenska-mesing-za-shlauh-diagrama-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -44744,8 +44861,8 @@ const CONFIG = {
     "description": "Сферичен кран mini с женски резби",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/sferichen-kran-mini-s-jenski-rezbi-1200x1200.png",
-      "catalog/pnevmatika/sferichen-kran-mini-s-jenski-rezbi-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/sferichen-kran-mini-s-jenski-rezbi-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/pnevmatika/sferichen-kran-mini-s-jenski-rezbi-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -44820,8 +44937,8 @@ const CONFIG = {
     "description": "Работна температура: &nbsp;-40 ÷ 150 C° Работно налягане (max): &nbsp;25 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/prava-vryzka-za-shlauh-push-on-1200x1200.jpg",
-      "catalog/pnevmatika/prava-vryzka-za-shlauh-push-on-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/prava-vryzka-za-shlauh-push-on-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/prava-vryzka-za-shlauh-push-on-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -44880,8 +44997,8 @@ const CONFIG = {
     "description": "Високодебитна бърза връзка за окомплектоване на маркучи за въздух с бързи връзки. Подходяща за&nbsp; пневматични системи и приложения&nbsp; въздух и др газове. Работна температура: &nbsp;-20 ÷ 80 C° Месинговите бързи връзки със щуцер се използват ...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-mesing-s-izvod-za-markuch-1200x1200.jpg",
-      "catalog/pnevmatika/nipel-mesing-s-izvod-za-markuch-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mesing-s-izvod-za-markuch-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mesing-s-izvod-za-markuch-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -44950,8 +45067,8 @@ const CONFIG = {
     "description": "Високодебитна бърза връзка с мъжка цолова резба за присъединяване към женски резбови накрайници и инструменти. Сфера на приложение: &nbsp;пневматични системи и приложения Подходяща за въздух и др газове Присъединяване: &nbsp;Евро профил 5 mm Дебит...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-mesing-vynshna-rezba-1200x1200.jpg",
-      "catalog/pnevmatika/nipel-mesing-vynshna-rezba-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mesing-vynshna-rezba-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mesing-vynshna-rezba-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -45022,8 +45139,8 @@ const CONFIG = {
     "description": "Висо кодебитна бърза връзка с женска цолова резба за присъединяване към мъжки резбови накрайници и инструменти. &nbsp; Сфера на приложение: &nbsp;пневматични системи и приложения Подходяща за въздух и др газове Присъединяване: &nbsp;Евро профил 5 ...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-mesing-vytreshna-rezba-1200x1200.jpg",
-      "catalog/pnevmatika/nipel-mesing-vytreshna-rezba-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mesing-vytreshna-rezba-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mesing-vytreshna-rezba-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -45089,7 +45206,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0 до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/syedinitel-pvc-za-markuch-kolqno-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/syedinitel-pvc-za-markuch-kolqno-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -45200,8 +45317,8 @@ const CONFIG = {
     "description": "Неръждаема тапа с вътрешна резба - AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/neryjdaema-tapa-s-vytreshna-rezba-aisi-316-1200x1200.png",
-      "catalog/indystrialni nakrainici/neryjdaema-tapa-s-vytreshna-rezba-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaema-tapa-s-vytreshna-rezba-aisi-316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaema-tapa-s-vytreshna-rezba-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -45380,8 +45497,8 @@ const CONFIG = {
     "description": "Неръждаем нипел-муфа ВРН - AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/neryjdaem-niple-mufa-bph-aisi316-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/neryjdaem-niple-mufa-bph-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-niple-mufa-bph-aisi316-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-niple-mufa-bph-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -45655,8 +45772,8 @@ const CONFIG = {
     "description": "Неръждаема тапа с външна резба - AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/neryjdaema-tapa-aisi316-s-vynshna-rezba-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/neryjdaema-tapa-s-vynshna-rezba-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaema-tapa-aisi316-s-vynshna-rezba-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaema-tapa-s-vynshna-rezba-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -45834,8 +45951,8 @@ const CONFIG = {
     "description": "Неръждаема муфа кръгла - AISI 304",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/gyvkav-silikonov-markuch-750mm-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/neryjdaema-mufa-krygla-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/gyvkav-silikonov-markuch-750mm-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaema-mufa-krygla-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -45999,8 +46116,8 @@ const CONFIG = {
     "description": "Неръждаем щуцер с мъжка резба и опашка за маркуч - AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/neryjdaem-shtucer-myjka-rezba-i-opashka-za-markuch-aisi316-1200x1200.png",
-      "catalog/indystrialni nakrainici/neryjdaem-shtucer-myjka-rezba-i-opashka-za-markuch-aisi316-diagrama-1200x1200 (1).png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-shtucer-myjka-rezba-i-opashka-za-markuch-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-shtucer-myjka-rezba-i-opashka-za-markuch-aisi316-diagrama-1200x1200 (1).png"
     ],
     "variants": [
       {
@@ -46147,8 +46264,8 @@ const CONFIG = {
     "description": "Неръждаем нипел редуктивен шестограмен - AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/neryjdaem-nipel-reduktiven-shestogram-aisi316-1200x1200.png",
-      "catalog/indystrialni nakrainici/neryjdaem-nipel-reduktiven-shestogram-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-nipel-reduktiven-shestogram-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-nipel-reduktiven-shestogram-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -46450,8 +46567,8 @@ const CONFIG = {
     "description": "Неръждаемо коляно муфа 90° - AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/neryjdaemo-kolqno-mufa-90-aisi316-1200x1200.png",
-      "catalog/indystrialni nakrainici/neryjdaemo-kolqno-mufa-90-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaemo-kolqno-mufa-90-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaemo-kolqno-mufa-90-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -46630,8 +46747,8 @@ const CONFIG = {
     "description": "Неръждаем нипел шестограмен - AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/neryjdaem-nipel-shestogramen-aisi316-1200x1200.png",
-      "catalog/indystrialni nakrainici/neryjdaem-nipel-shestogramen-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-nipel-shestogramen-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-nipel-shestogramen-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -46807,8 +46924,8 @@ const CONFIG = {
     "description": "Приложение: &nbsp;плосък двуслоен маркуч, тип Layflat за отвеждане на вода за промишлени, битови и селскостопански приложения. Плоският PVC маркуч (ръкав) за поливане се използва за отвеждане на водата, изпомпена от потопяеми помпи. Режим на работ...",
     "specs": [],
     "images": [
-      "catalog/ вода/plosyk-pvc-markuch-flatgreen-1200x1200.png",
-      "catalog/ вода/plosyk-markuch-flatgreen-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ вода/plosyk-pvc-markuch-flatgreen-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/ вода/plosyk-markuch-flatgreen-1-1200x1200.png"
     ],
     "variants": [
       {
@@ -46926,7 +47043,7 @@ const CONFIG = {
     "description": "Приложение: &nbsp;гумен маркуч за транспорт на въздух, омаслен въздух от компресори, топла вода до 60°С и др неагресивни течности. Изключително лек и гъвкав, намира широко приложение за битови и индустриални нужди - помпене на гуми, изграждане на ...",
     "specs": [],
     "images": [
-      "catalog/ вода/markuch-za-vyzduh-voda-185ah-Alfagomma-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/markuch-za-vyzduh-voda-185ah-Alfagomma-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -47014,8 +47131,8 @@ const CONFIG = {
     "description": "Mаркуч под налягане за доставка на фунгицидни разтвори, торове и хербициди в селското стопанство. Използва се за теглени пулверизатори за обработка на торове и пестициди. Въздух под налягане. Вътрешна камера: &nbsp;еластично PVC Подсилване: &nbsp;...",
     "specs": [],
     "images": [
-      "catalog/ вода/markuch-za-pesticidi-arianna-40bar-1200x1200.png",
-      "catalog/ вода/markuch-za-pesticidi-arianna-40bar-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ вода/markuch-za-pesticidi-arianna-40bar-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/ вода/markuch-za-pesticidi-arianna-40bar-1-1200x1200.png"
     ],
     "variants": [
       {
@@ -47102,8 +47219,8 @@ const CONFIG = {
     "description": "Маркуч за транспортиране на вода, сгъстен въздух, фунгициди, торове, хербициди и други препарати за растителна защита в течно състояние. PVC маркучът за пестициди е усилен с якостна текстилна оплетка и издържа на високо налягане - 20 bar. Маркуч з...",
     "specs": [],
     "images": [
-      "catalog/ вода/markuch-za-pesticidi-markuch-za-pryskachki-arianna-20bar-1200x1200.jpg",
-      "catalog/ вода/markuch-za-pesticidi-markuch-za-pryskachki-arianna-20bar-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/markuch-za-pesticidi-markuch-za-pryskachki-arianna-20bar-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/markuch-za-pesticidi-markuch-za-pryskachki-arianna-20bar-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -47169,7 +47286,7 @@ const CONFIG = {
     "description": "Приложение: &nbsp;плосък двуслоен маркуч, тип Layflat за отвеждане на вода за промишлени, битови и селскостопански приложения. Плоският PVC маркуч (ръкав) за поливане се използва за отвеждане на водата, изпомпена от потопяеми помпи. Режим на работ...",
     "specs": [],
     "images": [
-      "catalog/ вода/plosyk-pvc-markuch-za-voda-inovaflat-m-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/plosyk-pvc-markuch-za-voda-inovaflat-m-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -47233,7 +47350,7 @@ const CONFIG = {
     "description": "Кучуков плосък маркуч с отлична устойчивост на абразия, армиран с двоен слой от полиестерни влакна. Материал: &nbsp;2 слоя специално формован черен нитрилен каучук Подсилване: &nbsp;оплетка от полиестерни влакна Свойства и приложение:&nbsp; за тра...",
     "specs": [],
     "images": [
-      "catalog/ вода/plosyk-pvc-markuch-za-voda-agroflat-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/plosyk-pvc-markuch-za-voda-agroflat-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -47521,8 +47638,8 @@ const CONFIG = {
     "description": "За засмукване и транспорт на течности като отпадни води, химикали, абразивни флуиди и частици и други течности в селското стопанство, индустрията, строителството, каналопочистване. Особено подходящ за оборудване на цистерни. Режим на работа: &nbsp...",
     "specs": [],
     "images": [
-      "catalog/ вода/smukatelen-pvc-markuch-za-kanalopochistvane-apollo-superflex-2-1200x1200.jpg",
-      "catalog/ вода/smukatelen-pvc-markuch-za-kanalopochistvane-apollo-superflex-3-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/smukatelen-pvc-markuch-za-kanalopochistvane-apollo-superflex-2-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/smukatelen-pvc-markuch-za-kanalopochistvane-apollo-superflex-3-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -47583,7 +47700,7 @@ const CONFIG = {
     "description": "Пожарникарски плосък маркуч за отвеждане на вода в строителството, промишлеността и селското стопанство. Пожарникарският маркуч с текстил се използва и за отводняване и напояване. Маркуч за потопяеми помпи. Режим на работа: &nbsp;нагнетателен Влож...",
     "specs": [],
     "images": [
-      "catalog/ вода/pojarnikarski-markuch-mcc-germany-s-nakrainici-storz-8bar-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ вода/pojarnikarski-markuch-mcc-germany-s-nakrainici-storz-8bar-1200x1200.png"
     ],
     "variants": [
       {
@@ -47649,8 +47766,8 @@ const CONFIG = {
     "description": "Приложение: &nbsp;за изсмукване и доставка на течности и отпадъчни води като цяло; идеален за използване на камиони-цистерни, дори при изключително ниски температури. Режим на работа: &nbsp;смукателно-нагнетателен Конструкция: &nbsp;гладка PVC-NBR...",
     "specs": [],
     "images": [
-      "catalog/ вода/pvc-markuch-podsilen-sys-zelena-protivoudarna-pvc-spirala-apollo-total-1-1200x1200.png",
-      "catalog/ вода/pvc-markuch-podsilen-sys-zelena-protivoudarna-pvc-spirala-apollo-total-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ вода/pvc-markuch-podsilen-sys-zelena-protivoudarna-pvc-spirala-apollo-total-1-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/ вода/pvc-markuch-podsilen-sys-zelena-protivoudarna-pvc-spirala-apollo-total-1200x1200.png"
     ],
     "variants": [
       {
@@ -47763,9 +47880,9 @@ const CONFIG = {
     "description": "Използва се за пренос на минерална вода, течни храни и напитки, сокове, вино с до 20% алкохолно съдържание и други течности в хранително - вкусовата индустрия, в индустриални, строителни и селскостопански машини. Режим на работа: &nbsp;смукателно-...",
     "specs": [],
     "images": [
-      "catalog/ вода/pcv-markuch-s-metalna-spirala-plutone-a-2-1200x1200.jpg",
-      "catalog/ вода/pcv-markuch-s-metalna-spirala-plutone-a-1-1200x1200.jpg",
-      "catalog/ вода/pcv-markuch-s-metalna-spirala-plutone-a-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ вода/pcv-markuch-s-metalna-spirala-plutone-a-2-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/pcv-markuch-s-metalna-spirala-plutone-a-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/pcv-markuch-s-metalna-spirala-plutone-a-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -48126,9 +48243,9 @@ const CONFIG = {
     "description": "Приложение: &nbsp;Изключително гъвкав многоцелев маркуч с много добра устойчивост на стареене, атмосферни влияния и абразия. Подходящ за пренос на въздух и вода, както и много химически продукти в промишлеността и селско стопанство. Вложка: &nbsp;...",
     "specs": [],
     "images": [
-      "catalog/ вода/markuch-za-voda-ohlajdashti-technosti-i-himikali-colorflex-1200x1200.png",
-      "catalog/ вода/markuch-za-voda-ohlajdashti-technosti-i-himikali-colorflex-red-blue-1200x1200.jpg",
-      "catalog/ вода/markuch-za-voda-ohlajdashti-technosti-i-himikali-colorflex-red-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ вода/markuch-za-voda-ohlajdashti-technosti-i-himikali-colorflex-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/ вода/markuch-za-voda-ohlajdashti-technosti-i-himikali-colorflex-red-blue-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ вода/markuch-za-voda-ohlajdashti-technosti-i-himikali-colorflex-red-1200x1200.png"
     ],
     "variants": [
       {
@@ -48270,8 +48387,8 @@ const CONFIG = {
     "description": "Приложение: &nbsp; двуслойният силиконов маркуч се използва за засмукване и транспорт на горещ въздух и други газове с висока температура. Прилага се в предприятия за обработка на хартия, пластмаса и в автомобилостроенето. Конструкция: &nbsp; едно...",
     "specs": [],
     "images": [
-      "catalog/silikoni/silikonov-za-goresht-vyzduh-markuch-silduct-2s-1200x1200.jpg",
-      "catalog/silikoni/silikonov-za-goresht-vyzduh-markuch-silduct-2s-2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonov-za-goresht-vyzduh-markuch-silduct-2s-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silikonov-za-goresht-vyzduh-markuch-silduct-2s-2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -48798,8 +48915,8 @@ const CONFIG = {
     "description": "Силиконов еднослоен маркуч, използващ се за транспорт и засмукване на горещ въздух и други газове с висока температура. Конструкция: &nbsp;еднопластов стъклен материал, покрит със силикон, червено-кафяв Режим на работа: &nbsp;смукателно-нагнетател...",
     "specs": [],
     "images": [
-      "catalog/silikoni/silikonov-markuch-FLEXADUX-P4-SIL-I-500x500-1200x1200.jpg",
-      "catalog/silikoni/silikonov-markuch-FLEXADUX-P4-SIL-I-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonov-markuch-FLEXADUX-P4-SIL-I-500x500-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silikonov-markuch-FLEXADUX-P4-SIL-I-1-1200x1200.png"
     ],
     "variants": [
       {
@@ -49316,7 +49433,7 @@ const CONFIG = {
     "description": "Приложения: &nbsp;PVC маркуч с PVC твърда спирала, за засмукване и отвеждане на въздух, дим, стружки, прах, текстилни нишки и вентилация. Самозагасващ в съответствие с UL 94 V2 Режим на работа: &nbsp;смукателен СВОЙСТВА: Добра устойчивост на абраз...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/pvc-markuch-za-aspiraciq-oregon-continental-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ за въздух/pvc-markuch-za-aspiraciq-oregon-continental-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -49393,8 +49510,8 @@ const CONFIG = {
     "description": "Силиконов еднослоен маркуч, използващ се за транспорт и засмукване на горещ въздух и други газове с висока температура. Конструкция: еднопластов стъклен материал, покрит със силикон, червено-кафяв Режим на работа: &nbsp;смукателно-нагнетателен Кон...",
     "specs": [],
     "images": [
-      "catalog/silikoni/silikonov-markuch-FLEXADUX-P4-SIL-I-500x500-1200x1200.jpg",
-      "catalog/silikoni/silikonov-markuch-FLEXADUX-P4-SIL-I-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonov-markuch-FLEXADUX-P4-SIL-I-500x500-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silikonov-markuch-FLEXADUX-P4-SIL-I-1-1200x1200.png"
     ],
     "variants": [
       {
@@ -49917,7 +50034,7 @@ const CONFIG = {
     "description": "Приложение: &nbsp;маркучът за автомобилни въздушни спирачки се използва в спирачните системи на автомобили, автобуси и ремаркета и в други пневматични системи Защитен фактор: &nbsp;5 : 1 Вложка: &nbsp;EPDM, черен, гладък каучук Подсилване: &nbsp;Т...",
     "specs": [],
     "images": [
-      "catalog/ за въздух/gumen-markuch-za-vyzdushni-spirachki-fbd-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-za-vyzdushni-spirachki-fbd-1200x1200.png"
     ],
     "variants": [
       {
@@ -49985,7 +50102,7 @@ const CONFIG = {
     "description": "Маркуч&nbsp; за горивоколонки и горивопренасящи системи. Подходящ за дизел, газ, биодизел, горива. Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;Нитрилен синтетичен каучук (ORS) Подсилване: &nbsp;Спирално навита синтетична оплетка със статичен...",
     "specs": [],
     "images": [
-      "catalog/ и масло/markuch-za-benzinokolonki-pacer-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-benzinokolonki-pacer-1200x1200.png"
     ],
     "variants": [
       {
@@ -50063,8 +50180,8 @@ const CONFIG = {
     "description": "Подходящ за безоловни горива (EN 228: 2017), дизелови масла (EN 590: 2017), биодизел за автомобили, камиони и трактори. Подходящ за използване в двигателни отделения на камиони. Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;Черен гладък NBR ка...",
     "specs": [],
     "images": [
-      "catalog/ и масло/markuch-za-bezolovnigoriva-i-biodizel-semperit-fmo-1200x1200.jpg",
-      "catalog/ и масло/markuch-za-bezolovnigoriva-i-biodizel-semperit-fmo-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-bezolovnigoriva-i-biodizel-semperit-fmo-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-bezolovnigoriva-i-biodizel-semperit-fmo-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -50336,9 +50453,9 @@ const CONFIG = {
     "description": "&nbsp;Високотемпературният маркуч се използва за транспорт на охлаждаща вода в стоманодобивни заводи, стомано-преработвателни предприятия, леярни, стъкларски заводи и във случаи, когато е наложително да работи близо до източници на много висока те...",
     "specs": [],
     "images": [
-      "catalog/ течност/markuch-s-pokritie-ot-fibrostyklo-forno25-1200x1200.jpg",
-      "catalog/ течност/markuch-s-pokritie-ot-fibrostyklo-forno25-1-1200x1200.png",
-      "catalog/ течност/markuch-s-pokritie-ot-fibrostyklo-forno25-2-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ течност/markuch-s-pokritie-ot-fibrostyklo-forno25-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ течност/markuch-s-pokritie-ot-fibrostyklo-forno25-1-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/ течност/markuch-s-pokritie-ot-fibrostyklo-forno25-2-1200x1200.png"
     ],
     "variants": [
       {
@@ -50565,8 +50682,8 @@ const CONFIG = {
     "description": "Приложение: &nbsp; Маркуч за транспортиране на вода, пестициди, препарати за растителна защита в течно състояние, течни торове и др. PVC маркучът за пестициди е усилен с якостна текстилна оплетка и издържа на високо налягане - 40 bar. Маркуч за пр...",
     "specs": [],
     "images": [
-      "catalog/PVCC/markuch-za-pesticidi-alfagomma-591ae-1200x1200 (1).png",
-      "catalog/PVCC/markuch-za-pesticidi-alfagomma-591ae-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/PVCC/markuch-za-pesticidi-alfagomma-591ae-1200x1200 (1).png",
+      "https://hydrolux.bg/image/catalog/PVCC/markuch-za-pesticidi-alfagomma-591ae-1-1200x1200.png"
     ],
     "variants": [
       {
@@ -50663,8 +50780,8 @@ const CONFIG = {
     "description": "Характеристики: &nbsp;PVC маркуч с напълно антиабразивна TPU тръба, подсилена с противоударна, твърда PVC спирала. Вътрешната повърхност е гладка, външната е полутвърда. Неговата здрава структура с TPU слой го прави особено подходящ, когато се изи...",
     "specs": [],
     "images": [
-      "catalog/PVCC/smukatelen-markuch-za-abrazivni-technosti-urano-pu-1200x1200.png",
-      "catalog/PVCC/smukatelen-markuch-za-abrazivni-technosti-urano-pu-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/PVCC/smukatelen-markuch-za-abrazivni-technosti-urano-pu-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/PVCC/smukatelen-markuch-za-abrazivni-technosti-urano-pu-1-1200x1200.png"
     ],
     "variants": [
       {
@@ -50904,7 +51021,7 @@ const CONFIG = {
     "description": "Маркуч за пароструйки Вложка: &nbsp;водоустойчив синтетичен каучук Подсилване: &nbsp;две стоманени оплетки с висока якост Покритие: &nbsp;синтетичен каучук с изключителна устойчивост на абразия Работната температура: &nbsp;- 10°C / + 135°C с връх ...",
     "specs": [],
     "images": [
-      "catalog/ налягане/markuch-za-vodostruiki-i-parostruiki-teknojet-2sn-plus-600-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/markuch-za-vodostruiki-i-parostruiki-teknojet-2sn-plus-600-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -50957,7 +51074,7 @@ const CONFIG = {
     "description": "За пренос на течности на водна основа, разтворители, бои, хидравлични масла при високо налягане. Защитен фактор: &nbsp;1:4 Вложка: &nbsp;Термопластичен полиамид Подсилване: &nbsp;&nbsp;Eдна стоманена и две кевларени оплетки Покритие: &nbsp;Микропе...",
     "specs": [],
     "images": [
-      "catalog/ налягане/termoplastov-markuch-s-ena-stomanena-i-dve-kevalerni-opletki-re7d00-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/termoplastov-markuch-s-ena-stomanena-i-dve-kevalerni-opletki-re7d00-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -51054,7 +51171,7 @@ const CONFIG = {
     "description": "Защитен фактор: &nbsp;1:4 Вложка: &nbsp;Термопластичен полиамид Подсилване: &nbsp;Две стоманени оплетки Покритие: &nbsp; Температурен диапазон: &nbsp;-40°C - +93°C.&nbsp; Маркучът е подходящ за кербоване с стандартни фитинги и се изпозлва в следни...",
     "specs": [],
     "images": [
-      "catalog/ налягане/termoplastov-markuch-s-edna-stomanena-opletka-i-edna-kevlarena-opletka-sk0100-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/termoplastov-markuch-s-edna-stomanena-opletka-i-edna-kevlarena-opletka-sk0100-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -51173,7 +51290,7 @@ const CONFIG = {
     "description": "Термопластичен маркуч за транспорт на хидравлични течности със средно до високо налягане Защитен фактор: &nbsp;1:4 Вложка: &nbsp;Термопластичен полиестер Подсилване: &nbsp;Една стоманена оплетка Покритие: &nbsp;Микроперфориран полиуретан, устойчив...",
     "specs": [],
     "images": [
-      "catalog/ налягане/termoplastov-markuch-sys-stomanena-opletka-sae-100r8-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/termoplastov-markuch-sys-stomanena-opletka-sae-100r8-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -51259,7 +51376,7 @@ const CONFIG = {
     "description": "Термопластичен маркуч за транспорт на хидравлични течности със средно до високо налягане Защитен фактор: &nbsp;1:4 Вложка: &nbsp;Термопластичен полиестер Подсилване: &nbsp;Две текстилни оплетки Покритие: &nbsp;Микроперфориран полиуретан, устойчив ...",
     "specs": [],
     "images": [
-      "catalog/ налягане/termoplastov-markuch-s-dve-tekstilni-opletki-sae-100r7-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/termoplastov-markuch-s-dve-tekstilni-opletki-sae-100r7-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -51334,8 +51451,8 @@ const CONFIG = {
     "description": "Вътрешен слой: &nbsp;маслоустойчива синтетична гума Армировка: &nbsp;две стоманени оплетки с голяма якост Външно покритие: &nbsp;гладка, лъскава, синтетична гума, устойчива нa масла, въглеводороди, абразия и озон Приложение: &nbsp;изключително гъв...",
     "specs": [],
     "images": [
-      "catalog/ налягане/markuch-za-vodostruiki-i-parostruiki-teknojet-2sn-plus-600-1200x1200.jpg",
-      "catalog/ налягане/hidravlichen-markuch-za-visoko-nalqgane-dunlop-slimline-pluse-2sc-221t-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/markuch-za-vodostruiki-i-parostruiki-teknojet-2sn-plus-600-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-za-visoko-nalqgane-dunlop-slimline-pluse-2sc-221t-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -51443,7 +51560,7 @@ const CONFIG = {
     "description": "За пренос на течности на водна основа, разтворители, бои, хидравлични масла при високо налягане. Защитен фактор: &nbsp;1:4 Вложка: &nbsp;Термопластичен полиамид Подсилване: &nbsp;Две стоманени оплетки Покритие: &nbsp;Микроперфориран полиуретан, ус...",
     "specs": [],
     "images": [
-      "catalog/ налягане/termoplastov-markuch-mt2-s-dve-stomaneni-opletki-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/termoplastov-markuch-mt2-s-dve-stomaneni-opletki-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -51496,7 +51613,7 @@ const CONFIG = {
     "description": "Сдвоен термопластичен маркуч за транспорт на хидравлични течности със средно до високо налягане Защитен фактор: &nbsp;1:4 Вложка: &nbsp;Термопластичен полиестер Подсилване: &nbsp;Две текстилни оплетки Покритие: &nbsp;Микроперфориран полиуретан, ус...",
     "specs": [],
     "images": [
-      "catalog/ налягане/sdvoen-termoplastov-markuch-s-dve-teskstilni-opletki-sae-100r7-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/sdvoen-termoplastov-markuch-s-dve-teskstilni-opletki-sae-100r7-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -51571,7 +51688,7 @@ const CONFIG = {
     "description": "Сдвоен термопластичен маркуч за транспорт на хидравлични течности със средно до високо налягане Защитен фактор: &nbsp;1:4 Вложка: &nbsp;Термопластичен полиестер Подсилване: &nbsp;Една стоманена оплетка Покритие: &nbsp;Микроперфориран полиуретан, у...",
     "specs": [],
     "images": [
-      "catalog/ налягане/sdvoen-termoplastov-markuch-s-edna-stomanena-opletka-sae-100r8-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/sdvoen-termoplastov-markuch-s-edna-stomanena-opletka-sae-100r8-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -51662,7 +51779,7 @@ const CONFIG = {
     "description": "Климатични системи за автобусна техника Препоръчителни смазочни материали: PAG, POE Не се препоръчва за хладилни газове, използващи минерал смазочни масла Охладителни течности: R134a R1234yf Много гъвкав Подсилване: &nbsp;една метална оплетка Покр...",
     "specs": [],
     "images": [
-      "catalog/ налягане/markuch-za-freon-s-metalna-opletka-manuli-ultrastar-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ налягане/markuch-za-freon-s-metalna-opletka-manuli-ultrastar-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -51759,8 +51876,8 @@ const CONFIG = {
     "description": "Приложение: &nbsp;универсален маркуч за засмукване и пренос на хранителни течности. Подходящ за широка гама продукти, като първокласни вина, плодови сокове, оцет, спиртни напитки с алкохолно съдържание до 50%. Добра химическа устойчивост на кисели...",
     "specs": [],
     "images": [
-      "catalog/hrani/markuch-za-hrani-plutone-pf-1-1200x1200.png",
-      "catalog/hrani/markuch-za-hrani-plutone-pf-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hrani/markuch-za-hrani-plutone-pf-1-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/hrani/markuch-za-hrani-plutone-pf-1200x1200.png"
     ],
     "variants": [
       {
@@ -51945,7 +52062,7 @@ const CONFIG = {
     "description": "Маркуч за високо алкохолни напитки, киселини, химикали и течни храни Режим на работа: &nbsp;смукателно-нагнетателен Вложка: &nbsp;Прозрачен UPE (полиетилен с ултра висока молекулна маса) Подсилване: &nbsp;Високоякостни текстилни оплетки с вградена...",
     "specs": [],
     "images": [
-      "catalog/hrani/markuch-za-himicheski-produkti-i-hrani-509oe-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/hrani/markuch-za-himicheski-produkti-i-hrani-509oe-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -52093,7 +52210,7 @@ const CONFIG = {
     "description": "ПРИЛОЖЕНИЯ за хранителновкусова промишленост, фармацевтичната промишленост: за засмукване и транспорт на хранителни и фармацевтични продукти транспорт на сухи храни, като ориз, зърнени храни, захар, мляко на прах, прахообразни храни, кафе, чай, зъ...",
     "specs": [],
     "images": [
-      "catalog/poliyretan/poliuretanov-plosyk-markuch-za-abrazivi-protape-pur-c-335-food-as-flat-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/poliyretan/poliuretanov-plosyk-markuch-za-abrazivi-protape-pur-c-335-food-as-flat-1200x1200.png"
     ],
     "variants": [
       {
@@ -52365,7 +52482,7 @@ const CONFIG = {
     "description": "Маркуч с удароустойчива PVC спирала, за засмукване и транспортиране на абразивни материали и сухи хранителни продукти. СВОЙСТВА: Изключителна устойчивост на абразия Отлична устойчивост на озон Устойчив на хидролиза в 60°C топла вода. Гладка повърх...",
     "specs": [],
     "images": [
-      "catalog/poliyretan/poliuretanov-markuch-za-aspiraciq-oregon-pu-et-continental-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/poliyretan/poliuretanov-markuch-za-aspiraciq-oregon-pu-et-continental-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -52414,8 +52531,8 @@ const CONFIG = {
     "description": "Антистатичен износоустойчив полиуретанов маркуч за засмукване и транспорт на абразивни частици: гранулати,&nbsp; пелети, дървесни стърготини и влакна, абразивни прахообразни частици и изпарения. Подходящ за използване в пластмасовата, дървообработ...",
     "specs": [],
     "images": [
-      "catalog/poliyretan/antistatichen-poliuretanov-markuch-next15-pu-1200x1200.png",
-      "catalog/poliyretan/antistatichen-poliuretanov-markuch-next15-pu-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/poliyretan/antistatichen-poliuretanov-markuch-next15-pu-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/poliyretan/antistatichen-poliuretanov-markuch-next15-pu-1-1200x1200.png"
     ],
     "variants": [
       {
@@ -52483,7 +52600,7 @@ const CONFIG = {
     "description": "Гъвкав, лек, антистатичен и самосмазващ се полиуретанов маркуч с текстилна армировка ХАРАКТЕРИСТИКИ НА ШЛАУХА: Подсилен гъвкав маркуч Многослоен шлаух, състоящ се от вътрешен и външен слой от полиуретан на етерна основа, устойчив на хидролиза и ми...",
     "specs": [],
     "images": [
-      "catalog/poliyretan/antistatichen-poliuretanov-shlaih-s-tekstilna-opletka-1185-crt-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/poliyretan/antistatichen-poliuretanov-shlaih-s-tekstilna-opletka-1185-crt-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -52613,8 +52730,8 @@ const CONFIG = {
     "description": "Предимства:&nbsp; Здравина, лекота, устойчиви на удар, устойчиви на надраскване Материал на изработка: &nbsp; Аcetalcopolymerisat (POM)",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/pvc-syedinitel-za-markuch-y-obrazen-redukciq-1200x1200.png",
-      "catalog/ аксесоари/pvc-syedinitel-za-markuch-y-obrazen-redukciq-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ аксесоари/pvc-syedinitel-za-markuch-y-obrazen-redukciq-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/ аксесоари/pvc-syedinitel-za-markuch-y-obrazen-redukciq-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -52679,7 +52796,7 @@ const CONFIG = {
     "description": "Предимства: &nbsp;Здравина, лекота, устойчиви на удар, устойчиви на надраскване Материал на изработка: &nbsp;Аcetalcopolymerisat (POM)",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/pom-syedinitel-za-markuch-chetvornik-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ аксесоари/pom-syedinitel-za-markuch-chetvornik-1200x1200.png"
     ],
     "variants": [
       {
@@ -52763,8 +52880,8 @@ const CONFIG = {
     "description": "Коляно с мъжка резба - технополимер",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/kolqno-s-myjka-rezba-tehnopolimer-1200x1200.jpg",
-      "catalog/ аксесоари/kolqno-s-myjka-rezba-tehnopolimer-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ аксесоари/kolqno-s-myjka-rezba-tehnopolimer-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ аксесоари/kolqno-s-myjka-rezba-tehnopolimer-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -52969,8 +53086,8 @@ const CONFIG = {
     "description": "Тапа с мъжка резба - технополимер",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/tapa-s-myjka-rezba-tehnopolimer-1200x1200.jpg",
-      "catalog/ аксесоари/tapa-s-myjka-rezba-tehnopolimer-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ аксесоари/tapa-s-myjka-rezba-tehnopolimer-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ аксесоари/tapa-s-myjka-rezba-tehnopolimer-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -53054,8 +53171,8 @@ const CONFIG = {
     "description": "Тройник с мъжка резба за маркуч - технополимер",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/troinik-s-myjka-rezba-za-marhuch-tehnopolimer-1200x1200.jpg",
-      "catalog/ аксесоари/troinik-s-myjka-rezba-za-marhuch-tehnopolimer-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ аксесоари/troinik-s-myjka-rezba-za-marhuch-tehnopolimer-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ аксесоари/troinik-s-myjka-rezba-za-marhuch-tehnopolimer-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -53161,8 +53278,8 @@ const CONFIG = {
     "description": "Щуцер с мъжка резба за маркуч - технополимер",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/shtucer-s-myvka-rezba-za-markuch-tehnopolimer-1200x1200.jpg",
-      "catalog/ аксесоари/shtucer-s-myjka-rezba-za-markuch-tehnopolimer-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ аксесоари/shtucer-s-myvka-rezba-za-markuch-tehnopolimer-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ аксесоари/shtucer-s-myjka-rezba-za-markuch-tehnopolimer-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -53359,8 +53476,8 @@ const CONFIG = {
     "description": "Материал на метала: &nbsp;въглеродна стомана AISI 1008 -1010 Уплътнение: &nbsp;NBR 85 +/- 5 Sh A Повърхностна обработка: &nbsp;цинкова плоча (Cr3) Работна температура: &nbsp;От -30°C до +100°C",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/gumeno-metalni-uplytneniq-1200x1200.jpg",
-      "catalog/ аксесоари/gumeno-metalni-uplytneniq-metrichna-rezba-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ аксесоари/gumeno-metalni-uplytneniq-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ аксесоари/gumeno-metalni-uplytneniq-metrichna-rezba-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -53502,8 +53619,8 @@ const CONFIG = {
     "description": "Материал на метала: &nbsp;въглеродна стомана AISI 1008 -1010 Уплътнение: &nbsp;NBR 85 +/- 5 Sh A Повърхностна обработка: &nbsp;цинкова плоча (Cr3) Работна температура: &nbsp;От -30°C до +100°C",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/gumeno-metalni-uplytneniq-1200x1200.jpg",
-      "catalog/ аксесоари/gumeno-metalni-uplytneniq-metrichna-rezba-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ аксесоари/gumeno-metalni-uplytneniq-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ аксесоари/gumeno-metalni-uplytneniq-metrichna-rezba-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -53689,7 +53806,7 @@ const CONFIG = {
     "description": "Месингов съединител за маркуч - прав",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/pravo-syedinenie-za-markuch-mesing-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ аксесоари/pravo-syedinenie-za-markuch-mesing-1200x1200.png"
     ],
     "variants": [
       {
@@ -53820,7 +53937,7 @@ const CONFIG = {
     "description": "Месингов съединител за маркуч - редукция",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/mesingovo-pravo-syedinenie-za-markuch-redukciq-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ аксесоари/mesingovo-pravo-syedinenie-za-markuch-redukciq-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -53928,7 +54045,7 @@ const CONFIG = {
     "description": "Абразиво-устойчив предпазен ръкав Приложение: &nbsp;предпазва от протриване на&nbsp;маркуча и преобразува в облак струята,при спукан маркуч, обхваща сноп маркучи.",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/predpazni-tekstilni-rykavi-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ аксесоари/predpazni-tekstilni-rykavi-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -54076,7 +54193,7 @@ const CONFIG = {
     "description": "Месингов съединиетел за маркуч - тройник с редукция",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/mesingovo-syedinenie-za-markuch-troinik-s-redukciq-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ аксесоари/mesingovo-syedinenie-za-markuch-troinik-s-redukciq-1200x1200.png"
     ],
     "variants": [
       {
@@ -54276,7 +54393,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0 до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/pvc-syedinitel-za-markuch-nipel-reducir-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ аксесоари/pvc-syedinitel-za-markuch-nipel-reducir-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -54397,7 +54514,7 @@ const CONFIG = {
     "description": "Месингов съединиетел за маркуч - тройник",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/mesingovo-syedinenie-za-markuch-troinik-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ аксесоари/mesingovo-syedinenie-za-markuch-troinik-1200x1200.png"
     ],
     "variants": [
       {
@@ -54527,7 +54644,7 @@ const CONFIG = {
     "description": "Абразиво-устойчива предпазна спирала Предпазните HDPE спирали са предназначени да предпазват хидравлични и пневматични маркучи против удар и абразия. Подходящи са за защита на единични или снопове от маркучи. Може да се използва за единични маркуч...",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/predpazni-pvc-spirali-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ аксесоари/predpazni-pvc-spirali-1200x1200.png"
     ],
     "variants": [
       {
@@ -54685,8 +54802,8 @@ const CONFIG = {
     "description": "Комплект бързи връзки за градински маркуч Адаптор с резба 1/2\" &amp; 3/4\" Накрайник за маркуч 1/2\" &amp; 5/8\" Конектор за маркуч, със стоп клапан, 1/2\" &amp; 5/8\" Струйник за пръскане с регулируема струя Водният струйник е предназначен за поливане...",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/struinik-kompl ekt-byrzi-vryz ki-gradinski-m arkuch1.jpg-1200x1200.jpg",
-      "catalog/ аксесоари/struinik-kompl ekt-byrzi-vryz ki-gradinski-m arkuch.jpg-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ аксесоари/struinik-kompl ekt-byrzi-vryz ki-gradinski-m arkuch1.jpg-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/ аксесоари/struinik-kompl ekt-byrzi-vryz ki-gradinski-m arkuch.jpg-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -54737,7 +54854,7 @@ const CONFIG = {
     "description": "Резервни остриета: &nbsp;ø 2-20 мм Тип: &nbsp;Инструменти Конфигурация: &nbsp;Резервни ножове Материал: &nbsp;стомана",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/rezci-za-kleshti-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ аксесоари/rezci-za-kleshti-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -54783,7 +54900,7 @@ const CONFIG = {
     "description": "Бандажна спирала",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/bandajna-spirala-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ аксесоари/bandajna-spirala-1200x1200.png"
     ],
     "variants": [
       {
@@ -54854,7 +54971,7 @@ const CONFIG = {
     "description": "Еднопосочен възвратен клапан",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/ednoposochen-vyzvraten-klapan-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ аксесоари/ednoposochen-vyzvraten-klapan-1200x1200.png"
     ],
     "variants": [
       {
@@ -54929,7 +55046,7 @@ const CONFIG = {
     "description": "Ръчна подкачваща помпа за гориво",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/rychna-podkachvashta-pompa-za-gorivo-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ аксесоари/rychna-podkachvashta-pompa-za-gorivo-1200x1200.png"
     ],
     "variants": [
       {
@@ -55004,7 +55121,7 @@ const CONFIG = {
     "description": "Ръчна подкачваща помпа за гориво 90°",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/rychna-podkachvashta-pompa-za-gorivo-90-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ аксесоари/rychna-podkachvashta-pompa-za-gorivo-90-1200x1200.png"
     ],
     "variants": [
       {
@@ -55068,7 +55185,7 @@ const CONFIG = {
     "description": "Ръкав от неръждаема стомана AISI 304",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/rykav-ot-neryjdaema-stomana-aisi-304-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/ аксесоари/rykav-ot-neryjdaema-stomana-aisi-304-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -55220,7 +55337,7 @@ const CONFIG = {
     "description": "Предпазни текстилни ръкави залепващи Абразиво-устойчив предпазен ръкав Приложение: &nbsp; предпазва от протриване на маркуча и преобразува в облак струята при спукан маркуч, обхваща сноп маркучи.",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/predpazni-tekstilni-rykavi-zalepvashti-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ аксесоари/predpazni-tekstilni-rykavi-zalepvashti-1200x1200.png"
     ],
     "variants": [
       {
@@ -55347,8 +55464,8 @@ const CONFIG = {
     "description": "Елeĸтpичecĸa гopивнa пoмпa 12V вoлтa зa ниcĸo нaлягaнe зa бeнзин и дизeл с бутало на принципа на електромагнит. Bxoдящo нaпpeжeниe: &nbsp;12V вoлтa DС Дължинa: &nbsp;14.5сm Диaмeтъp нa ĸopпyca: &nbsp;4сm Haлягaнe: &nbsp;3-6 рѕі",
     "specs": [],
     "images": [
-      "catalog/ аксесоари/elektricheska-pompa-za-gorivo-12v-100-120lh-1200x1200.png",
-      "catalog/ аксесоари/elektricheska-pompa-za-gorivo-12v-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/ аксесоари/elektricheska-pompa-za-gorivo-12v-100-120lh-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/ аксесоари/elektricheska-pompa-za-gorivo-12v-1-1200x1200.png"
     ],
     "variants": [
       {
@@ -55398,8 +55515,8 @@ const CONFIG = {
     "description": "Материал: &nbsp;Brass Nickel Plated Приложение: &nbsp;Пневматични, хидравлични и олеодинамични вериги Работна температура: &nbsp;-20 ÷ 80 C° Работно налягане (max): &nbsp;60 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/gumeno-metalni-uplytneniq-1200x1200.jpg",
-      "catalog/pnevmatika/uplytnqvasht-prysten-guma-metal-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/gumeno-metalni-uplytneniq-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/uplytnqvasht-prysten-guma-metal-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -55451,8 +55568,8 @@ const CONFIG = {
     "description": "Материал: &nbsp;Brass Nickel Plated Работна температура: &nbsp;-20 ÷ 80 C° Работно налягане (max): &nbsp;60 bar Приложение: &nbsp;Пневматични, хидравлични и олеодинамични вериги",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/tapa-s-vytreshen-shestoten-i-o-prysten-1200x1200.jpg",
-      "catalog/pnevmatika/tapa-s-vytreshen-shestoten-i-o-prysten-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/tapa-s-vytreshen-shestoten-i-o-prysten-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/tapa-s-vytreshen-shestoten-i-o-prysten-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -55540,7 +55657,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0 до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/pvc-syedinitel-za-markuch-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/pvc-syedinitel-za-markuch-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -55651,8 +55768,8 @@ const CONFIG = {
     "description": "Редуцир муфа - нипел ВРН месинг",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/mufa-reducir-niple-vnr-mesing-1-1200x1200.jpg",
-      "catalog/pnevmatika/reducir-mufa-niple-vnr-mesing-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/mufa-reducir-niple-vnr-mesing-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/reducir-mufa-niple-vnr-mesing-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -55807,7 +55924,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0 до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/pvc-syedinitel-za-markuch-reducir-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/pvc-syedinitel-za-markuch-reducir-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -55906,7 +56023,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0°C до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-kraen-bspt-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-kraen-bspt-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -56091,8 +56208,8 @@ const CONFIG = {
     "description": "Работна температура: &nbsp;-50 ÷ 150 C° Работно налягане (max): &nbsp;25 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-vytreshna-rezba-za-shlauh-push-on-1200x1200.jpg",
-      "catalog/pnevmatika/nipel-vytreshna-rezba-za-shlauh-push-on-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-vytreshna-rezba-za-shlauh-push-on-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-vytreshna-rezba-za-shlauh-push-on-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -56147,7 +56264,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp; -0 до 60°C Работно налягане: &nbsp; 10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/syedinitel-za-markuch-troinik-pvc-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/syedinitel-za-markuch-troinik-pvc-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -56263,7 +56380,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0 до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/pvc-syedinitel-za-markuch-kolqno-kraino-bspt-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/pvc-syedinitel-za-markuch-kolqno-kraino-bspt-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -56426,8 +56543,8 @@ const CONFIG = {
     "description": "Работна температура: &nbsp;-40 ÷ 150 C° Работно налягане (max): &nbsp;25 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/kolqno-za-shlauh-s-vynshna-rezba-push-on-1200x1200.jpg",
-      "catalog/pnevmatika/kolqno-za-shlauh-s-vynshna-rezba-push-on-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/kolqno-za-shlauh-s-vynshna-rezba-push-on-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/kolqno-za-shlauh-s-vynshna-rezba-push-on-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -56494,7 +56611,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0 до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/pvc-syedinitel-za-markuch-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/pvc-syedinitel-za-markuch-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -56592,7 +56709,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0°C до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-npt-inchov-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-npt-inchov-1200x1200.png"
     ],
     "variants": [
       {
@@ -56759,7 +56876,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0 до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/pvc-syedinitel-za-markuch-nipel-reducir-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/pvc-syedinitel-za-markuch-nipel-reducir-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -56825,7 +56942,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0°C до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-pregrada-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-pregrada-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -56924,7 +57041,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0°C до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-bspt-inchov-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-bspt-inchov-1200x1200.png"
     ],
     "variants": [
       {
@@ -57140,8 +57257,8 @@ const CONFIG = {
     "description": "Работна температура: &nbsp;-20 ÷ 80 C° Работно налягане (max): &nbsp;20 bar Vacuum: &nbsp;-99 kPa Pus-in &nbsp;връзките за шлаух се използват за снаждане на шлаухи, посредством закрепване с цанги. Връзките за шлаух са подходящи за бързи връзки в р...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/kolqno-adapter-za-shlauh-reducir-1200x1200.jpg",
-      "catalog/pnevmatika/kolqno-adapter-za-shlauh-reducir-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/kolqno-adapter-za-shlauh-reducir-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/kolqno-adapter-za-shlauh-reducir-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -57274,7 +57391,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0 до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/syedinitel-pvc-za-markuch-kolqno-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/syedinitel-pvc-za-markuch-kolqno-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -57374,8 +57491,8 @@ const CONFIG = {
     "description": "Работна температура: &nbsp;-20/+80 °C Работно налягане (bar): &nbsp;20",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/troinik-vyrtqsht-vertikalen-za-shlauh-1200x1200.jpg",
-      "catalog/pnevmatika/troinik-vyrtqsht-vertikalen-za-shlauh-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-vyrtqsht-vertikalen-za-shlauh-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-vyrtqsht-vertikalen-za-shlauh-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -57529,7 +57646,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0 до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/pvc-syedinitel-za-markuch-chetiripytnik-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/pvc-syedinitel-za-markuch-chetiripytnik-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -57629,7 +57746,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0 до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/syedinitel-za-markuch-troinik-pvc-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/syedinitel-za-markuch-troinik-pvc-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -57731,8 +57848,8 @@ const CONFIG = {
     "description": "Работна температура: &nbsp;-40 ÷ 150 C° Работно налягане (max): &nbsp;60 bar Приложение: &nbsp;Пневматични, хидравлични и олеодинамични вериги",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/mufa-reduktivna-mesing-1200x1200.jpg",
-      "catalog/pnevmatika/mufa-reduktivna-mesing-diagrama-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/mufa-reduktivna-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/mufa-reduktivna-mesing-diagrama-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -57849,8 +57966,8 @@ const CONFIG = {
     "description": "Коляно - ъглова връзка свързваща пневматични шлаухи. Металното коляно с цанги подходящо за вода, въздух, гориво, други течности и газове. Връзките за шлаух са подходящи за бързи връзки в различни индустриални приложения. Уплътнителният пръстен e о...",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/kolqno-metalno-za-shlauh-1200x1200.jpg",
-      "catalog/pnevmatika/troinik-metalen-za-shlauh-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/kolqno-metalno-za-shlauh-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/troinik-metalen-za-shlauh-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -57940,7 +58057,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0 до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/pvc-syedinitel-za-markuch-reducir-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/pvc-syedinitel-za-markuch-reducir-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -58015,8 +58132,8 @@ const CONFIG = {
     "description": "Работна температура: &nbsp;-40 ÷ 150 C° Работно налягане (max): &nbsp;25 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/nipel-za-shlauh-push-on-1200x1200.jpg",
-      "catalog/pnevmatika/nipel-za-shlauh-push-on-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-za-shlauh-push-on-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/nipel-za-shlauh-push-on-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -58058,7 +58175,7 @@ const CONFIG = {
     "description": "Работна температура: &nbsp;-40 ÷ 150 C° Работно налягане (max): &nbsp;25 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/kolqno-za-shlauh-push-on-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/kolqno-za-shlauh-push-on-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -58121,8 +58238,8 @@ const CONFIG = {
     "description": "Y-тройник метален за шлаух",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/Y-troinik-metalen-za-shlauh-cangovi-vryzki-1200x1200.png",
-      "catalog/pnevmatika/Y-troinik-metalen-za-shlauh-cangovi-vryzki-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/pnevmatika/Y-troinik-metalen-za-shlauh-cangovi-vryzki-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/pnevmatika/Y-troinik-metalen-za-shlauh-cangovi-vryzki-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -58217,10 +58334,10 @@ const CONFIG = {
     "description": "Потокът се осъществява само в една посока (гравирана върху тялото стрелката показва посоката). Протичане на потокът в обратна посока е невъзможен.",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/pnevmatichen-vyzvraten-klapan-1200x1200.jpg",
-      "catalog/pnevmatika/obraten-pnevmatichen-klapan-diagrama-1200x1200.png",
-      "catalog/pnevmatika/obraten-pnevmatichen-klapan-harakteristiki-1200x1200.png",
-      "catalog/pnevmatika/pnevmatichen-vyzvraten-klapan-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/pnevmatichen-vyzvraten-klapan-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/pnevmatika/obraten-pnevmatichen-klapan-diagrama-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/pnevmatika/obraten-pnevmatichen-klapan-harakteristiki-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/pnevmatika/pnevmatichen-vyzvraten-klapan-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -58309,7 +58426,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0 до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "catalog/pnevmatika/pvc-nakrainik-kontrolen-debit-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/pnevmatika/pvc-nakrainik-kontrolen-debit-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -58511,7 +58628,7 @@ const CONFIG = {
     "description": "Бързосменник MK TYPE DIN 28450 за композитни и каучукови маркучи - неръждаем",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrzosmennik-mk-type-din28450-za-kompozitni-i-kaucukovi-markuchi-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-mk-type-din28450-za-kompozitni-i-kaucukovi-markuchi-1200x1200.png"
     ],
     "variants": [
       {
@@ -58581,7 +58698,7 @@ const CONFIG = {
     "description": "Бързосменник VK TYPE DIN 28450 за композитни и каучукови маркучи - месинг",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrzosmennik-vk-type-din28450-za-kompozitni-i-kaucukovi-markuchi-mesing-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-vk-type-din28450-za-kompozitni-i-kaucukovi-markuchi-mesing-1200x1200.png"
     ],
     "variants": [
       {
@@ -58651,7 +58768,7 @@ const CONFIG = {
     "description": "Бързосменник VK TYPE DIN 28450 за композитни и каучукови маркучи - неръждаем",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrzosmennik-vk-type-din28450-za-kompozitni-i-kaucukovi-markuchi-mesing-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-vk-type-din28450-za-kompozitni-i-kaucukovi-markuchi-mesing-1200x1200.png"
     ],
     "variants": [
       {
@@ -58727,7 +58844,7 @@ const CONFIG = {
     "description": "Накрайник Triclamp за заварка INCH, неръждаема стомана AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nakrainik-triclamp-za-zavarka-iso-aisi316-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-triclamp-za-zavarka-iso-aisi316-1200x1200.png"
     ],
     "variants": [
       {
@@ -58858,7 +58975,7 @@ const CONFIG = {
     "description": "Накрайник Triclamp за заварка ISO, неръждаема стомана AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nakrainik-triclamp-za-zavarka-iso-aisi316-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-triclamp-za-zavarka-iso-aisi316-1200x1200.png"
     ],
     "variants": [
       {
@@ -58984,7 +59101,7 @@ const CONFIG = {
     "description": "Неподвижен фланец ANSI 150",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nepodvijen-fiksiran-flanec-ansi150-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nepodvijen-fiksiran-flanec-ansi150-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -59165,7 +59282,7 @@ const CONFIG = {
     "description": "Неподвижен фланец ANSI 300",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nepodvijen-fiksiran-flanec-ansi150-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nepodvijen-fiksiran-flanec-ansi150-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -59346,7 +59463,7 @@ const CONFIG = {
     "description": "Неподвижен фланец ANSI 600",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nepodvijen-fiksiran-flanec-ansi150-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nepodvijen-fiksiran-flanec-ansi150-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -59527,7 +59644,7 @@ const CONFIG = {
     "description": "Неподвижен фланец DIN PN10/16",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nepodvijen-fiksiran-flanec-ansi150-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nepodvijen-fiksiran-flanec-ansi150-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -59686,7 +59803,7 @@ const CONFIG = {
     "description": "Неподвижен фланец DIN PN25/40",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nepodvijen-fiksiran-flanec-ansi150-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nepodvijen-fiksiran-flanec-ansi150-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -59812,9 +59929,9 @@ const CONFIG = {
     "description": "Подвижен фланец ANSI 150",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/podvijen-flanec-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/podvijen-flanec-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -59995,9 +60112,9 @@ const CONFIG = {
     "description": "Подвижен фланец ANSI 300",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/podvijen-flanec-1-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/podvijen-flanec-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -60046,9 +60163,9 @@ const CONFIG = {
     "description": "Подвижен фланец ANSI 600",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/podvijen-flanec-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/podvijen-flanec-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -60229,9 +60346,9 @@ const CONFIG = {
     "description": "Подвижен фланец DIN PN10/16",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/podvijen-flanec-1-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/podvijen-flanec-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -60280,9 +60397,9 @@ const CONFIG = {
     "description": "Подвижен фланец DIN PN40",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/podvijen-flanec-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/podvijen-flanec-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -60353,9 +60470,9 @@ const CONFIG = {
     "description": "Подвижен фланец DIN PN6",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/podvijen-flanec-1-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/podvijen-flanec-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -60398,7 +60515,7 @@ const CONFIG = {
     "description": "Уплътнение за накрайник CAMLOCK материал NBR",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/uplytnenie-za-nakrainici-geka-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytnenie-za-nakrainici-geka-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -60561,7 +60678,7 @@ const CONFIG = {
     "description": "Уплътнението е подходящо за всички размери бързосменници за въздух EUROPEAN DIN3489: DN10, DN13, DN15,&nbsp;&nbsp;DN19, DN20, DN25, DN32,&nbsp; 3/8\",&nbsp;1/2\", 3/4\", 1\", 1 1/4\"",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/uplytnenie-za-nakrainici-za-kompresor-express-nbr-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytnenie-za-nakrainici-za-kompresor-express-nbr-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -60609,7 +60726,7 @@ const CONFIG = {
     "description": "Полипропилен, подходящ е за всички видове накрайници за IBC бидони с женска IBC резба. Външен диаметър: &nbsp;55mm Вътрешен диаметър: &nbsp;45mm Дебелина: &nbsp;3mm",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/uplytnenie-za-ibc-adapteri-bqlo-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytnenie-za-ibc-adapteri-bqlo-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -60651,7 +60768,7 @@ const CONFIG = {
     "description": "Уплътнение за накрайник GEKA материал NBR",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/uplytnenie-za-nakrainici-geka-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytnenie-za-nakrainici-geka-1200x1200.png"
     ],
     "variants": [
       {
@@ -60698,7 +60815,7 @@ const CONFIG = {
     "description": "Челно уплътнение за вътрешни резби полиуретан PU",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/chelno-uplytnenie-za-vytreshni-rezbi-poliuretan-pu-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/chelno-uplytnenie-za-vytreshni-rezbi-poliuretan-pu-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -60833,7 +60950,7 @@ const CONFIG = {
     "description": "Уплътнение за STORZ материал NBR",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/uplytnenie-za-storz-nbr-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytnenie-za-storz-nbr-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -60946,8 +61063,8 @@ const CONFIG = {
     "description": "Пинче за дръжка за Mortar накрайник",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/pinche-za-dryjka-mortart-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/pinche-za-dryjka-mortart-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pinche-za-dryjka-mortart-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pinche-za-dryjka-mortart-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -61027,7 +61144,7 @@ const CONFIG = {
     "description": "Уплътнение за GUILLEMIN материал NBR",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/uplytnenie-za-nakrainici-guillemin-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytnenie-za-nakrainici-guillemin-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -61131,7 +61248,7 @@ const CONFIG = {
     "description": "Уплътнение за накрайници за хранителновкусовата промишленост DIN 11851",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/uplytnenie-za-nakrainici-za-hranitelno-vkusovata-promishlenost-din11851-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytnenie-za-nakrainici-za-hranitelno-vkusovata-promishlenost-din11851-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -61257,7 +61374,7 @@ const CONFIG = {
     "description": "Максимално препоръчително работно налягане до 10-12 bar.",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/opashka-za-zavarka-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/opashka-za-zavarka-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -61425,7 +61542,7 @@ const CONFIG = {
     "description": "Уплътнение за TW NBR - черен",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/uplytnenie-za-tw-nbr-cherno-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytnenie-za-tw-nbr-cherno-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -61489,7 +61606,7 @@ const CONFIG = {
     "description": "Уплътнение за CARDAN - PERROT материал NBR",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/uplytnenie-za-cardan-perrot-material-nbr-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytnenie-za-cardan-perrot-material-nbr-1200x1200.png"
     ],
     "variants": [
       {
@@ -61593,8 +61710,8 @@ const CONFIG = {
     "description": "Неръждаемо коляно нипел-муфа 90° - AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/neryjdaemo-kolqno-nipel-mufa-90-aisi316-1200x1200.png",
-      "catalog/indystrialni nakrainici/neryjdaemo-kolqno-nipel-mufa-90-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaemo-kolqno-nipel-mufa-90-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaemo-kolqno-nipel-mufa-90-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -61762,7 +61879,7 @@ const CONFIG = {
     "description": "Дръжка за Mortar накрайник, месинг",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/dryjka-za-mortar-nakrainik-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/dryjka-za-mortar-nakrainik-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -61810,7 +61927,7 @@ const CONFIG = {
     "description": "Челно уплътнение за вътрешни резби тефлон PTFE",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/chelno-uplytnenie-za-vytreshni-rezbi-teflon-ptfe-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/chelno-uplytnenie-za-vytreshni-rezbi-teflon-ptfe-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -61957,7 +62074,7 @@ const CONFIG = {
     "description": "Смyĸaтeлят с възвратна клапа и неръждаема решетка e пpeднaзнaчeн дa предотвратява вpъщaнeтo нa засмукана вoдa или дpyг флyид в oбpaтнa пocoĸa и поддържа пълна смукателната линия на помпата с течност. Нepъждaeмият филтъp възпрепятства пpoниĸвaнeтo ...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/smukatel-cedka-vyzvraten-klapan-s-filtyr-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/smukatel-cedka-vyzvraten-klapan-s-filtyr-1200x1200.png"
     ],
     "variants": [
       {
@@ -62097,8 +62214,8 @@ const CONFIG = {
     "description": "Неръждаем тройник муфа - AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/neryjdaem-troinik-mufa-aisi316-1200x1200.png",
-      "catalog/indystrialni nakrainici/neryjdaem-troinik-mufa-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-troinik-mufa-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-troinik-mufa-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -62275,7 +62392,7 @@ const CONFIG = {
     "description": "Съединител с външна резба месинг - бърза връзка за вода GEKA",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/syedinitel-s-vynshna-rezba-mesing-byrza-vryzka-za-voda-geka-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/syedinitel-s-vynshna-rezba-mesing-byrza-vryzka-za-voda-geka-1200x1200.png"
     ],
     "variants": [
       {
@@ -62364,7 +62481,7 @@ const CONFIG = {
     "description": "Съединител с вътрешна резба месинг - бърза връзка за вода GEKA",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/syedinitel-s-vytreshna-rezba-mesing-byrza-vryzka-za-voda-geka-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/syedinitel-s-vytreshna-rezba-mesing-byrza-vryzka-za-voda-geka-1200x1200.png"
     ],
     "variants": [
       {
@@ -62444,7 +62561,7 @@ const CONFIG = {
     "description": "Уплътнение за TW HYPALON - зелен",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/uplytnenie-za-tw-hypalon-zeleno-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytnenie-za-tw-hypalon-zeleno-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -62520,7 +62637,7 @@ const CONFIG = {
     "description": "Чаша поцинкована за индустриални каучукови маркучи до 41 bar",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/pocinkovana-chasha-za-industrialni-kauchokovi-markuchi-do-41bar-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pocinkovana-chasha-za-industrialni-kauchokovi-markuchi-do-41bar-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -62782,8 +62899,8 @@ const CONFIG = {
     "description": "Неръждаема муфа редуцир - AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/neryjdaema-mufa-reducir-aisi316-1200x1200.png",
-      "catalog/indystrialni nakrainici/neryjdaema-mufa-reducir-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaema-mufa-reducir-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaema-mufa-reducir-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -63065,7 +63182,7 @@ const CONFIG = {
     "description": "Уплътнения за клампови накрайници EPDM",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/klampovi-uplytneniq-epdm-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/klampovi-uplytneniq-epdm-1200x1200.png"
     ],
     "variants": [
       {
@@ -63213,8 +63330,8 @@ const CONFIG = {
     "description": "Неръждаемо коляно муфа 45° - AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/neryjdaemo-kolqno-mufa45-aisi316-1200x1200.png",
-      "catalog/indystrialni nakrainici/neryjdaemo-kolqno-mufa-45-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaemo-kolqno-mufa45-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaemo-kolqno-mufa-45-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -63386,7 +63503,7 @@ const CONFIG = {
     "description": "Уплътнения за клампови накрайници NBR",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/uplytneniq-za-klampovi-nakrainici-nbr-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytneniq-za-klampovi-nakrainici-nbr-1200x1200.png"
     ],
     "variants": [
       {
@@ -63526,8 +63643,8 @@ const CONFIG = {
     "description": "Накрайник тип STORZ с вътрешна резба, алуминий, 16bar",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-stroz-s-vytreshna-rezba-aluminii-16bar-1200x1200.png",
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-stroz-s-vytreshna-rezba-aluminii-16-bar-1-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-stroz-s-vytreshna-rezba-aluminii-16bar-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-stroz-s-vytreshna-rezba-aluminii-16-bar-1-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -63672,8 +63789,8 @@ const CONFIG = {
     "description": "Накрайник с тръбна цолова резба с гайка - месинг",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/rezbovi-nakrainik-s-trybna-colova-rezba-s-gaika-mesing-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/industrialen-rezbovi-nakrainik-s-trybna-colova-rezba-s-gaika-mesing-1-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/rezbovi-nakrainik-s-trybna-colova-rezba-s-gaika-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-rezbovi-nakrainik-s-trybna-colova-rezba-s-gaika-mesing-1-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -63822,7 +63939,7 @@ const CONFIG = {
     "description": "Чаша пресова за SM40/757AA тип MORTAR / PLASTER",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/presova-chasha-za-sm40-757aa-tip-mortar-plaster-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/presova-chasha-za-sm40-757aa-tip-mortar-plaster-1200x1200.png"
     ],
     "variants": [
       {
@@ -63898,8 +64015,8 @@ const CONFIG = {
     "description": "Неръждаем холендър конусен вътрешни резби - AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/neryjdaem-holendyr-konusen-vytreshni-rezbi-aisi316-1200x1200.png",
-      "catalog/indystrialni nakrainici/neryjdaem-holendyr-konusen-vytreshni-rezbi-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-holendyr-konusen-vytreshni-rezbi-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-holendyr-konusen-vytreshni-rezbi-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -64073,7 +64190,7 @@ const CONFIG = {
     "description": "Накрайник за маркуч за бластиране SANDBLAST - AL",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nakrainik-za-markuch-za-blastirane-sandblast-al-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-za-markuch-za-blastirane-sandblast-al-1200x1200.png"
     ],
     "variants": [
       {
@@ -64160,8 +64277,8 @@ const CONFIG = {
     "description": "Неръждаем холендър конусен вътрешна и външна резба - AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/neryjdaem-holender-konusen-s-vytreshna-i-vynshna-rezba-aisi316-1200x1200.png",
-      "catalog/indystrialni nakrainici/neryjdaem-holender-konusen-vytreshna-i-vynshna-rezba-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-holender-konusen-s-vytreshna-i-vynshna-rezba-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-holender-konusen-vytreshna-i-vynshna-rezba-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -64332,9 +64449,9 @@ const CONFIG = {
     "description": "Мъжки накрайник за маркучи за мазилки MORTAR /PLASTER с опашка за маркуч",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-opashka-za-markuch-4-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-opashka-za-markuch-3-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-opashka-za-markuch-2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-opashka-za-markuch-4-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-opashka-za-markuch-3-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-opashka-za-markuch-2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -64418,9 +64535,9 @@ const CONFIG = {
     "description": "Капачка за IBC бидон, редуктивна&nbsp; Присъединяване: *страна 1 - женска резба S100 x 8 *страна 2 -&nbsp; мъжка резба S60 x 6 Материал:&nbsp; * корпус от Полипропилен * уплътнение от Полиетилен Работно налягане: &nbsp;7 bar Работна температура: &...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-reductor-polipropilen-1-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-reductor-polipropilen-2-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-reductor-polipropilen-3-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-reductor-polipropilen-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-reductor-polipropilen-2-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-reductor-polipropilen-3-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -64482,9 +64599,9 @@ const CONFIG = {
     "description": "Накрайник за IBC бидон с щуцер за маркуч Присъединяване: *страна 1 - мъжка резба S100 x 8 *страна 2 - извод за присъединяване с опашка за маркуч 2\" Материал: &nbsp; * Полипропилен Работно налягане:&nbsp; 7 bar Работна температура: &nbsp;-10°C до +...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-s-myjka-rezba-s-opashka-za-markuch-polipropilen-1200x1200.png",
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-s-myjka-rezba-s-opashka-za-markuch-polipropilen-1-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-s-myjka-rezba-s-opashka-za-markuch-polipropilen-3-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-s-myjka-rezba-s-opashka-za-markuch-polipropilen-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-s-myjka-rezba-s-opashka-za-markuch-polipropilen-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-s-myjka-rezba-s-opashka-za-markuch-polipropilen-3-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -64539,7 +64656,7 @@ const CONFIG = {
     "description": "Бързосменен съединител мъжки CARDAN - PERROT с опашка за маркуч",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrzosmenen-syedinitel-cardan-perot-kvs-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmenen-syedinitel-cardan-perot-kvs-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -64650,8 +64767,8 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK с женска резба Приложение: &nbsp;женският камлок накрайник, тип D се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединя...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrza-vryzka-camlock-d-neryjdaema-stomana-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-d-neryjdaema-stomana-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -64838,8 +64955,8 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK с мъжка резба Приложение: &nbsp;женският камлок накрайник, тип B се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединяв...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-b-mesing-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-b-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -65017,7 +65134,7 @@ const CONFIG = {
     "description": "Накрайник с тръбна цолова резба външна резба - неръждаем",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-rezbovi-nakrainik-s-trybna-colova-rezba-vynshna-rezba-neryjdaem-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-rezbovi-nakrainik-s-trybna-colova-rezba-vynshna-rezba-neryjdaem-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -65161,8 +65278,8 @@ const CONFIG = {
     "description": "Неръждаем холендър за заваряване - AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/neryjdaem-holendyr-za-zavarqvavane-aisi316-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/neryjdaem-holender-konusen-vytreshna-i-vynshna-rezba-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-holendyr-za-zavarqvavane-aisi316-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-holender-konusen-vytreshna-i-vynshna-rezba-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -65337,7 +65454,7 @@ const CONFIG = {
     "description": "Тапа за STORZ алуминий, 10bar",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/tapa-za-storz-aluminii-10-bar-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/tapa-za-storz-aluminii-10-bar-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -65414,7 +65531,7 @@ const CONFIG = {
     "description": "Накрайник тип GUILLEMIN, с контра с вътрешна резба, алуминий, 16bar",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nakrainik-guillemin-s-kontra-s-vytreshna-rezba-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-guillemin-s-kontra-s-vytreshna-rezba-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -65557,8 +65674,8 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK с мъжка резба Приложение: &nbsp;женският&nbsp;камлок накрайник, тип B се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъе...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-b-neryjdaema-stomana-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-b-neryjdaema-stomana-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -65736,8 +65853,8 @@ const CONFIG = {
     "description": "Накрайник с тръбна цолова резба с гайка - неръжд. стомана AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/rezbovi-nakrainik-s-trybna-colova-rezba-s-gaika-neryjdaema-stomana-aisi-316-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/rezbovi-nakrainik-s-trybna-colova-rezba-s-gaika-neryjdaema-stomana-aisi-316-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/rezbovi-nakrainik-s-trybna-colova-rezba-s-gaika-neryjdaema-stomana-aisi-316-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/rezbovi-nakrainik-s-trybna-colova-rezba-s-gaika-neryjdaema-stomana-aisi-316-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -65892,8 +66009,8 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK със щуцер за маркуч Приложение: &nbsp;женският камлок накрайник, тип C се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъ...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-c-ms-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-c-ms-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -66080,8 +66197,8 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK с женска резба Приложение: &nbsp;женският камлок накрайник, тип D се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединя...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-d-ms-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-d-ms-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -66254,7 +66371,7 @@ const CONFIG = {
     "description": "Капачка за CARDAN - PERROT накрайник, мъжка",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/kapachka-za-cardan-perrot-nakrainik-myjka-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kapachka-za-cardan-perrot-nakrainik-myjka-1200x1200.png"
     ],
     "variants": [
       {
@@ -66343,7 +66460,7 @@ const CONFIG = {
     "description": "VB тапа за МK неръждаема стомана AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/vb-tapa-za-mk-neryjdaema-stomana-aisi316-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/vb-tapa-za-mk-neryjdaema-stomana-aisi316-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -66424,7 +66541,7 @@ const CONFIG = {
     "description": "Накрайник нерезбови за хранително вкусовата промишленост за заварка DIN 11851",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nakrainik-nerezbovi-za-hranitelno-vkusovata-promishlenost-din11851-za-zavarka-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-nerezbovi-za-hranitelno-vkusovata-promishlenost-din11851-za-zavarka-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -66556,7 +66673,7 @@ const CONFIG = {
     "description": "Гайка за хранително вкусова промишленост, DIN 11851",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/gaika-hranitelno-vkusova-promishlenost-din11851-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/gaika-hranitelno-vkusova-promishlenost-din11851-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -66685,8 +66802,8 @@ const CONFIG = {
     "description": "PVC многофункционален противопожарен струйник с дълга дюза 52 mm (1\"\"),&nbsp; за плътна и разпръскаваща струя. Приложение: &nbsp;пожарни хидранти",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/reguliruem-struinik-storz-pvc-52cm-1-1200x1200.png",
-      "catalog/indystrialni nakrainici/reguliruem-pvc-struinik-storz-52cm-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/reguliruem-struinik-storz-pvc-52cm-1-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/reguliruem-pvc-struinik-storz-52cm-1200x1200.png"
     ],
     "variants": [
       {
@@ -66739,9 +66856,9 @@ const CONFIG = {
     "description": "Накрайник STORZ намалител, алуминий, 16 bar",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nakrainik-storz-promenitel-1-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/nakrainik-storz-promenitel-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/nakrainik-storz-promenitel-2-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-storz-promenitel-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-storz-promenitel-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-storz-promenitel-2-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -66844,7 +66961,7 @@ const CONFIG = {
     "description": "Накрайник резбови за хранително вкусовата промишленост за заварка DIN 11851",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nakrainik-rezbovi-za-hranitelno-vkusovata-promishlenost-din11851-za-zavarka-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-rezbovi-za-hranitelno-vkusovata-promishlenost-din11851-za-zavarka-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -66972,10 +67089,10 @@ const CONFIG = {
     "description": "Мъжки накрайник за маркучи за мазилки MORTAR /PLASTER с вътрешна резба",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-1-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-3-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-2-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-4-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-3-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-2-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-4-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -67047,7 +67164,7 @@ const CONFIG = {
     "description": "TW с вътрешна резба мъжки VK месинг",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/tw-s-vytreshna-rezba-mejki-vk-mesing1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/tw-s-vytreshna-rezba-mejki-vk-mesing1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -67124,7 +67241,7 @@ const CONFIG = {
     "description": "Кламп скоба",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/clamp-skoba-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/clamp-skoba-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -67262,7 +67379,7 @@ const CONFIG = {
     "description": "Гаечният ключ се изпозлва за лесно разединяване и свързване на съединители Storz. Изработен от лек материал, с дълга дръжка за допълнителен лост.",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/kluch-za-storz-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kluch-za-storz-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -67315,9 +67432,9 @@ const CONFIG = {
     "description": "Тяло и сфера от неръждаема стомана AISI 316 Температурен режим: &nbsp;-10 +150°C",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/spiratelen-kran-neryjdaem-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/spiratelen-kran-1-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/spiratelen-kran-2-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/spiratelen-kran-neryjdaem-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/spiratelen-kran-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/spiratelen-kran-2-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -67469,9 +67586,9 @@ const CONFIG = {
     "description": "Бързосменен съединител FERRARI мъжки с опашка за маркуч",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/myjki-byrzosmenen-syedinitel-ferrari-s-opashka-za-markuc-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/industrialni-nakrainici-ferrari-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/industrialni-nakrainici-ferrari-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/myjki-byrzosmenen-syedinitel-ferrari-s-opashka-za-markuc-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialni-nakrainici-ferrari-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialni-nakrainici-ferrari-1-1200x1200.png"
     ],
     "variants": [
       {
@@ -67584,7 +67701,7 @@ const CONFIG = {
     "description": "Берт за заварка DIN32676",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/bert-za-zavarka-din32676-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/bert-za-zavarka-din32676-1200x1200.png"
     ],
     "variants": [
       {
@@ -67717,7 +67834,7 @@ const CONFIG = {
     "description": "MB тапа за VK месинг",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/mb-tapa-za-vk-mesing-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/mb-tapa-za-vk-mesing-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -67784,7 +67901,7 @@ const CONFIG = {
     "description": "VB тапа за МK месинг",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/vb-tapa-za-mk-mesing-tw-nakrainici-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/vb-tapa-za-mk-mesing-tw-nakrainici-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -67857,8 +67974,8 @@ const CONFIG = {
     "description": "Женски накрайник за маркучи за мазилки MORTAR /PLASTER с вътрешна резба",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/jenski-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-1-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/jenski-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jenski-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jenski-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -67934,7 +68051,7 @@ const CONFIG = {
     "description": "Капачка за CARDAN - PERROT накрайник, женска",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/kapachka-za-cardan-perrot-nakrainik-jenska-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kapachka-za-cardan-perrot-nakrainik-jenska-1200x1200.png"
     ],
     "variants": [
       {
@@ -68028,8 +68145,8 @@ const CONFIG = {
     "description": "TW с вътрешна резба мъжки VK неръждаема стомана AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/tw-s-vytreshna-rezba-myjki-vk-neryjdaema-stomana-aisi-316-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/tw-s-vytreshna-rezba-myjki-vk-neryjdaema-stomana-aisi316-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/tw-s-vytreshna-rezba-myjki-vk-neryjdaema-stomana-aisi-316-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/tw-s-vytreshna-rezba-myjki-vk-neryjdaema-stomana-aisi316-1200x1200.png"
     ],
     "variants": [
       {
@@ -68105,7 +68222,7 @@ const CONFIG = {
     "description": "Чаша неръждаема за индустриални каучукови маркучи до 25 bar",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/pocinkovana-chasha-za-industrialni-kauchokovi-markuchi-do-41bar-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pocinkovana-chasha-za-industrialni-kauchokovi-markuchi-do-41bar-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -68279,7 +68396,7 @@ const CONFIG = {
     "description": "Накрайник за маркуч за бластиране SANDBLAST - PVC",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/pvc-nakrainik-za-markuch-za-blastirane-sandblast-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pvc-nakrainik-za-markuch-za-blastirane-sandblast-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -68335,7 +68452,7 @@ const CONFIG = {
     "description": "MB тапа за VK неръждаема стомана AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/mb-tapa-za-vk-neryjdaema-stomana-aisi316-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/mb-tapa-za-vk-neryjdaema-stomana-aisi316-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -68408,8 +68525,8 @@ const CONFIG = {
     "description": "Женски накрайник за маркучи за мазилки MORTAR /PLASTER с опашка за маркуч",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/jenski-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-opashka-za-markuch-2-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/jenski-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-opashka-za-markuch-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jenski-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-opashka-za-markuch-2-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jenski-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-opashka-za-markuch-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -68486,7 +68603,7 @@ const CONFIG = {
     "description": "Накрайник тип GUILLEMIN, без контра с външна резба, алуминий, 16bar",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nakrainik-guillemin-bez-kontra-s-vynshna-rezba-aluminii-16-bar-1200x1200.gif"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-guillemin-bez-kontra-s-vynshna-rezba-aluminii-16-bar-1200x1200.gif"
     ],
     "variants": [
       {
@@ -68542,10 +68659,10 @@ const CONFIG = {
     "description": "Сферичен кран за IBC бидон, тип Пеперуда, женска резба S60x6 и мъжка резба с капачка S60x6. Намират приложение за питейна вода, отпадни води, леки химикали, торове и пестициди. Присъединяване: * страна 1 - женска резба S60x6 * страна 2 - мъжка рез...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/jenski-bql-izpuskatelen-kran-za-ibc-bidon-obiknoven-1200x1200.png",
-      "catalog/indystrialni nakrainici/sferichen-bql-izpuskatelen-kran-za-ibc-bidon-obiknoven-3-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/sferichen-bql-izpuskatelen-kran-za-ibc-bidon-obiknoven-2-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/sferichen-bql-izpuskatelen-kran-za-ibc-bidon-obiknoven-1-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jenski-bql-izpuskatelen-kran-za-ibc-bidon-obiknoven-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/sferichen-bql-izpuskatelen-kran-za-ibc-bidon-obiknoven-3-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/sferichen-bql-izpuskatelen-kran-za-ibc-bidon-obiknoven-2-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/sferichen-bql-izpuskatelen-kran-za-ibc-bidon-obiknoven-1-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -68598,9 +68715,9 @@ const CONFIG = {
     "description": "Бързосменен съединител FERRARI женски с опашка за маркуч",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-jenski-ferrari-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/industrialni-nakrainici-ferrari-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/industrialni-nakrainici-ferrari-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-jenski-ferrari-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialni-nakrainici-ferrari-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialni-nakrainici-ferrari-1-1200x1200.png"
     ],
     "variants": [
       {
@@ -68710,7 +68827,7 @@ const CONFIG = {
     "description": "Накрайник тип GUILLEMIN, с контра с опашка за маркуч, алуминий, 16bar",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nakrainik-za-markuch-s-kontra-s-opashka-za-markuch-aluminii-16-bar-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-za-markuch-s-kontra-s-opashka-za-markuch-aluminii-16-bar-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -68842,7 +68959,7 @@ const CONFIG = {
     "description": "Накрайник с тръбна цолова резба външна резба - алуминий",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-rezbovi-nakrainik-s-trybna-colova-rezba-vynshna-rezba-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-rezbovi-nakrainik-s-trybna-colova-rezba-vynshna-rezba-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -68928,7 +69045,7 @@ const CONFIG = {
     "description": "Накрайник с вътрешна резба разглобяем месинг челно уплътнение",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/jenski-nakrainik-s-vytreshna-rezba-razglobqem-mesing-chelno-upravlenie-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jenski-nakrainik-s-vytreshna-rezba-razglobqem-mesing-chelno-upravlenie-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -69063,7 +69180,7 @@ const CONFIG = {
     "description": "Сферичен кран за IBC бидон с EPDM уплътнение, S60x6 външна резба с капачка за бидон. Използва се за топла вода и пара, силиконови масла, полярни разтворители, спирачни течности на основата на гликол (антифриз). Присъединяване: * страна 1 - алумини...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/izpuskatelen-kran-za-ibc-bidoni-s-epdm-uplatnenie-i-al-jenska-rezba-IBCBVM60-E-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/izpuskatelen-kran-za-ibc-bidoni-s-epdm-uplatnenie-i-al-jenska-rezba-IBCBVM60-E-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -69121,11 +69238,11 @@ const CONFIG = {
     "description": "Сферичен кран за IBC бидон с PTFE уплътнение, S60x6 външна резба с капачка за бидон.&nbsp; Използва се за м инерални и растителни масла, бензин, алкали и ароматни въглеводороди. Присъединяване: * страна 1 - алуминиева женска резба S75 x 6 * страна...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/sferichen-izpuskatelen-kran-za-ibc-bidoni-s-epdm-uplatnenie-i-al-jenska-rezba-1-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/izpuskatelen-kran-za-ibc-bidoni-s-ptfe-ulytnenie-i-al-jenska-rezba-IBCBVM60-P-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/sferichen-izpuskatelen-kran-za-ibc-bidoni-s-epdm-uplatnenie-i-al-jenska-rezba-4-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/sferichen-izpuskatelen-kran-za-ibc-bidoni-s-epdm-uplatnenie-i-al-jenska-rezba-3-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/sferichen-izpuskatelen-kran-za-ibc-bidoni-s-epdm-uplatnenie-i-al-jenska-rezba-2-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/sferichen-izpuskatelen-kran-za-ibc-bidoni-s-epdm-uplatnenie-i-al-jenska-rezba-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/izpuskatelen-kran-za-ibc-bidoni-s-ptfe-ulytnenie-i-al-jenska-rezba-IBCBVM60-P-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/sferichen-izpuskatelen-kran-za-ibc-bidoni-s-epdm-uplatnenie-i-al-jenska-rezba-4-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/sferichen-izpuskatelen-kran-za-ibc-bidoni-s-epdm-uplatnenie-i-al-jenska-rezba-3-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/sferichen-izpuskatelen-kran-za-ibc-bidoni-s-epdm-uplatnenie-i-al-jenska-rezba-2-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -69183,10 +69300,10 @@ const CONFIG = {
     "description": "Сферичен кран за IBC бидон с PTFE уплътнение, DN50 NPT + опция за присъединяване към женска бърза връзка тип CAMLOCK 2\". Използва се за пренос на минерални и растителни масла, бензин, алкали и ароматни въглеводороди. Присъединяване: * страна 1 - а...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/jylt-izpuskatelen-kran-za-ibc-bidoni-s-ptfe-uplytnenie-premium-npt-c-g-1-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/izpuskatelen-kran-za-ibc-bidoni-s-ptfe-uplytnenie-premium-npt-cg-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/jylt-izpuskatelen-kran-za-ibc-bidoni-s-ptfe-uplytnenie-premium-npt-c-g-3-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/jylt-izpuskatelen-kran-za-ibc-bidoni-s-ptfe-uplytnenie-premium-npt-c-g-2-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jylt-izpuskatelen-kran-za-ibc-bidoni-s-ptfe-uplytnenie-premium-npt-c-g-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/izpuskatelen-kran-za-ibc-bidoni-s-ptfe-uplytnenie-premium-npt-cg-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jylt-izpuskatelen-kran-za-ibc-bidoni-s-ptfe-uplytnenie-premium-npt-c-g-3-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jylt-izpuskatelen-kran-za-ibc-bidoni-s-ptfe-uplytnenie-premium-npt-c-g-2-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -69244,7 +69361,7 @@ const CONFIG = {
     "description": "Сферичен кран за IBC бидон с FKM уплътнение, S60x6 външна резба с капачка за бидон. Използва се за пренос на минерални и растителни масла, бензин, алкали и ароматни въглеводороди. Присъединяване: * страна 1 - алуминиева женска резба S75 x 6 * стра...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/sferichen-izpuskatelen-kran-za-ibc-bidoni-s-fkm-viton-uplytnenie-i-al-jenska-rezba-IBCBVM60-V-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/sferichen-izpuskatelen-kran-za-ibc-bidoni-s-fkm-viton-uplytnenie-i-al-jenska-rezba-IBCBVM60-V-1200x1200.png"
     ],
     "variants": [
       {
@@ -69303,7 +69420,7 @@ const CONFIG = {
     "description": "Накрайник нерезбови за хранително вкусова промишленост, с външна резба DIN 11851",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nakrainik-nerezbovi-za-hranitelno-vkusovata-promishlenost-s-vynshna-rezba-din11851-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-nerezbovi-za-hranitelno-vkusovata-promishlenost-s-vynshna-rezba-din11851-1200x1200.png"
     ],
     "variants": [
       {
@@ -69411,7 +69528,7 @@ const CONFIG = {
     "description": "Накрайник с външна резба разглобяем месинг",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/jenski-nakrainik-s-vytreshna-rezba-razglobqem-mesing-chelno-upravlenie-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jenski-nakrainik-s-vytreshna-rezba-razglobqem-mesing-chelno-upravlenie-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -69542,7 +69659,7 @@ const CONFIG = {
     "description": "Бързосменен съединител мъжки CARDAN - PERROT с външна резба",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrzosmenen-syedinitel-myjki-cardan-perrot-s-vynshna-rezba-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmenen-syedinitel-myjki-cardan-perrot-s-vynshna-rezba-1200x1200.png"
     ],
     "variants": [
       {
@@ -69637,9 +69754,9 @@ const CONFIG = {
     "description": "Бауер накрайниците се използват предимно в селскостопанската, строителната и водопреработвателната промишленост за пренасяне на широк спектър от течности, включително: химикали,отпадни води, суспензия и чиста вода.",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrzosmenen-syedinitel-bauer-jenski-s-opashka-za-markuch-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzosmenen-syedinitel-bauer-jenski-s-opashka-za-markuch-1-1200x1200.png",
-      "catalog/indystrialni nakrainici/byrzosmenen-syedinitel-bauer-jenski-s-opashka-za-markuch-2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmenen-syedinitel-bauer-jenski-s-opashka-za-markuch-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmenen-syedinitel-bauer-jenski-s-opashka-za-markuch-1-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmenen-syedinitel-bauer-jenski-s-opashka-za-markuch-2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -69726,7 +69843,7 @@ const CONFIG = {
     "description": "Чаша неръждаема за индустриални каучукови маркучи до 41 bar",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/pocinkovana-chasha-za-industrialni-kauchokovi-markuchi-do-41bar-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pocinkovana-chasha-za-industrialni-kauchokovi-markuchi-do-41bar-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -69803,7 +69920,7 @@ const CONFIG = {
     "description": "Бързосменен съединител женски CARDAN - PERROT с опашка за маркуч",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrzosmenen-syedinitel-cardan-perot-kms-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmenen-syedinitel-cardan-perot-kms-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -69897,7 +70014,7 @@ const CONFIG = {
     "description": "TW с вътрешна резба женски MK месинг",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/tw-s-vytreshna-rezba-jenski-mk-mesing-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/tw-s-vytreshna-rezba-jenski-mk-mesing-1-1200x1200.png"
     ],
     "variants": [
       {
@@ -69975,8 +70092,8 @@ const CONFIG = {
     "description": "Накрайник с външна резба DIN 11851",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nakrainik-s-vynshna-rezba-hranitelno-vkusowata-promishlenost-din11851-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/nakrainik-s-vynshna-rezba-hranitelno-vkusowata-promishlenost-din-11851-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-s-vynshna-rezba-hranitelno-vkusowata-promishlenost-din11851-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-s-vynshna-rezba-hranitelno-vkusowata-promishlenost-din-11851-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -70145,7 +70262,7 @@ const CONFIG = {
     "description": "Накрайник Triclamp DIN 32676",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nakrainik-triclamp-din-32676-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-triclamp-din-32676-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -70314,9 +70431,9 @@ const CONFIG = {
     "description": "Накрайник с гайка хранително вкусова промишленост DIN 11851",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nakrainik-s-gaika-hranitelno-vkusova-promishlenost-din11851-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/gaika-hranitelno-vkusova-promishlenost-din11851-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/nakrainik-s-gaika-hranitelno-vkusova-promishlenost-din-11851-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-s-gaika-hranitelno-vkusova-promishlenost-din11851-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/gaika-hranitelno-vkusova-promishlenost-din11851-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-s-gaika-hranitelno-vkusova-promishlenost-din-11851-1200x1200.png"
     ],
     "variants": [
       {
@@ -70358,7 +70475,7 @@ const CONFIG = {
     "description": "Дръжка за TW накрайник, неръждаема стомана",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/dryjka-za-tw-nakrainik-neryjdaema-stomana-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/dryjka-za-tw-nakrainik-neryjdaema-stomana-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -70421,7 +70538,7 @@ const CONFIG = {
     "description": "Регулируем струйник STORZ, алуминий φ52 cm",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/reguliruem-struinik-storz-aluminii-52cm-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/reguliruem-struinik-storz-aluminii-52cm-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -70472,7 +70589,7 @@ const CONFIG = {
     "description": "Бързосменник за въздух женски",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-jenski-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-jenski-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -70522,7 +70639,7 @@ const CONFIG = {
     "description": "TW с вътрешна резба женски MK неръждаема стомана AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/tw-s-vytreshna-rezba-jenski-mk-neryjdaema-stomana-aisi316-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/tw-s-vytreshna-rezba-jenski-mk-neryjdaema-stomana-aisi316-1200x1200.png"
     ],
     "variants": [
       {
@@ -70592,7 +70709,7 @@ const CONFIG = {
     "description": "Бързосменник за въздух женски DIXON",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-jenski-dixon-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-jenski-dixon-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -70654,7 +70771,7 @@ const CONFIG = {
     "description": "Бързосменник за въздух мъжки",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-myjki-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-myjki-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -70708,7 +70825,7 @@ const CONFIG = {
     "description": "Накрайник с тръбна конусна резба без борд AISI 316",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-s-trybna-konusna-rezba-bez-bord-aisi-316-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-s-trybna-konusna-rezba-bez-bord-aisi-316-1200x1200.png"
     ],
     "variants": [
       {
@@ -70759,7 +70876,7 @@ const CONFIG = {
     "description": "Бързосменник за въздух мъжки DIXON",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-dixon-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-dixon-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -70824,9 +70941,9 @@ const CONFIG = {
     "description": "Пистолет с ръкохватка за измиване в мандри, пивоварни, месопреработвателни и други ХВП сектори Месинговият пистолет със силиконово покритие е подходящ за окомплектоване на&nbsp; маркучи за почистващи дейности &nbsp;в хранително-преработвателните п...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/pistolet-za-miene-v-hranitelno-vkusovi-predpriqtiq-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/shema-pistolet-za-hranitelno-vkusovata-promishlenost-mesing-1200x1200.png",
-      "catalog/indystrialni nakrainici/pistolet-za-miene-v-hranitelno-vkusovi-predpriqtiq-coladge-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pistolet-za-miene-v-hranitelno-vkusovi-predpriqtiq-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/shema-pistolet-za-hranitelno-vkusovata-promishlenost-mesing-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pistolet-za-miene-v-hranitelno-vkusovi-predpriqtiq-coladge-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -70877,9 +70994,9 @@ const CONFIG = {
     "description": "Съединителите Bauer са специални сферични накрайници ,тип бърза връзка, които осигуряват бързо и лесно решение за свързване на маркучи с различни дължини. Намират приложение в изграждането на тръбопроводи, помпени станции, пречиствателни странции,...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrzosmenen-syedinitel-bauer-myjki-s-opashka-za-markuch-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzosmenen-syedinitel-bauer-jenski-s-opashka-za-markuch-2-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/byrzosmenen-syedinitel-bauer-myjki-s-opashka-za-markuch-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmenen-syedinitel-bauer-myjki-s-opashka-za-markuch-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmenen-syedinitel-bauer-jenski-s-opashka-za-markuch-2-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmenen-syedinitel-bauer-myjki-s-opashka-za-markuch-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -70977,7 +71094,7 @@ const CONFIG = {
     "description": "Бързосменен съединител женски CARDAN - PERROT с външна резба",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/byrzosmenen-syedinitel-cardan-perrot-s-vysnhna-rezba-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmenen-syedinitel-cardan-perrot-s-vysnhna-rezba-1200x1200.png"
     ],
     "variants": [
       {
@@ -71080,8 +71197,8 @@ const CONFIG = {
     "description": "Женски накрайник с гайка за хранително вкусова промишленост, с вътрешна резба DIN 11851",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/jenski-nakrainik-s-gaika-za-hranitelno-vkusovata-promishlenost-s-vytreshna-rezba-din11851-1200x1200.png",
-      "catalog/indystrialni nakrainici/gaika-hranitelno-vkusova-promishlenost-din11851-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jenski-nakrainik-s-gaika-za-hranitelno-vkusovata-promishlenost-s-vytreshna-rezba-din11851-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/gaika-hranitelno-vkusova-promishlenost-din11851-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -71190,9 +71307,9 @@ const CONFIG = {
     "description": "Пистолет с ръкохватка за измиване в мандри, пивоварни, месопреработвателни и други ХВП сектори Неръждаемият пистолет за миене със силиконово покритие е подходящ за окомплектоване на&nbsp; маркучи за почистващи дейности &nbsp;в хранително-преработв...",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/pistolet-za-miene-v-hranitelno-vkusovi-predpriqtiq-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/shema-pistolet-za-hranitelno-vkusovata-promishlenost-mesing-1200x1200.png",
-      "catalog/indystrialni nakrainici/pistolet-za-miene-v-hranitelno-vkusovi-predpriqtiq-coladge-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pistolet-za-miene-v-hranitelno-vkusovi-predpriqtiq-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/shema-pistolet-za-hranitelno-vkusovata-promishlenost-mesing-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pistolet-za-miene-v-hranitelno-vkusovi-predpriqtiq-coladge-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -71240,8 +71357,8 @@ const CONFIG = {
     "description": "Индустриален накрайник TODO мъжки",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-myjki-todo-1-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-myjki-todo-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-myjki-todo-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-myjki-todo-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -71300,8 +71417,8 @@ const CONFIG = {
     "description": "Материали: &nbsp;316L специална неръждаема стомана Уплътнения: &nbsp;NBR / FKM / FPM Свързване: &nbsp;BSP / NPT / фланец",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-jenski-todo-1-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/industrialen-nakrainik-myjki-todo-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-jenski-todo-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-myjki-todo-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -71373,7 +71490,7 @@ const CONFIG = {
     "description": "Нипел редуктивен - полипропилен",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nipel-reduktiven-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nipel-reduktiven-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -71555,7 +71672,7 @@ const CONFIG = {
     "description": "Нипел мъжка резба - полипропилен",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nipel-myjka-rezba-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nipel-myjka-rezba-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -71686,7 +71803,7 @@ const CONFIG = {
     "description": "Муфа - полипропилен",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/mufa-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/mufa-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -71810,7 +71927,7 @@ const CONFIG = {
     "description": "Нипел муфа - полипропилен",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/nipel-mufa-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nipel-mufa-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -71945,7 +72062,7 @@ const CONFIG = {
     "description": "Муфа редуктивна - полипропилен",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/mufa-reduktivna-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/mufa-reduktivna-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -72004,9 +72121,9 @@ const CONFIG = {
     "description": "Работна температура: &nbsp;-10° C до +70° C",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/shtucer-za-markuch-s-vynshna-rezba-polipropilen-1-1200x1200.jpg",
-      "catalog/indystrialni nakrainici/shtucer-za-markuch-s-vynshna-rezba-polipropilen-3-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/shtucer-za-markuch-s-vynshna-rezba-polipropilen-2-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/shtucer-za-markuch-s-vynshna-rezba-polipropilen-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/shtucer-za-markuch-s-vynshna-rezba-polipropilen-3-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/shtucer-za-markuch-s-vynshna-rezba-polipropilen-2-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -72145,7 +72262,7 @@ const CONFIG = {
     "description": "Тройник мъжки външна резба - полипропилен",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/troinik-vynshna-rezba-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/troinik-vynshna-rezba-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -72248,7 +72365,7 @@ const CONFIG = {
     "description": "Коляно вътрешна резба - полипропилен",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/kolqno-vytreshna-rezba-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kolqno-vytreshna-rezba-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -72351,9 +72468,9 @@ const CONFIG = {
     "description": "Щуцер за маркуч с вътрешна резба - полипропилен",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/shtucer-za-markuch-s-vytreshna-rezba-polipropilen-1-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/shtucer-za-markuch-s-vytreshna-rezba-polipropilen-3-1200x1200.jpeg",
-      "catalog/indystrialni nakrainici/shtucer-za-markuch-s-vytreshna-rezba-polipropilen-2-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/shtucer-za-markuch-s-vytreshna-rezba-polipropilen-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/shtucer-za-markuch-s-vytreshna-rezba-polipropilen-3-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/shtucer-za-markuch-s-vytreshna-rezba-polipropilen-2-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -72492,7 +72609,7 @@ const CONFIG = {
     "description": "Тройник женски вътрешна резба - полипропилен",
     "specs": [],
     "images": [
-      "catalog/indystrialni nakrainici/troinik-myjki-vytreshna-rezba-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/troinik-myjki-vytreshna-rezba-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -72588,7 +72705,7 @@ const CONFIG = {
     "description": "Женски накрайник Komatsu, коляно 90° метрична резба, конус 37° JIC",
     "specs": [],
     "images": [
-      "catalog/hydraulics/jenski-nakrainik-komatsu-kolqno90-metrichna-rezba-konus37-jic-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/hydraulics/jenski-nakrainik-komatsu-kolqno90-metrichna-rezba-konus37-jic-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -72794,7 +72911,7 @@ const CONFIG = {
     "description": "Женски накрайник Toyota BSP резба, конус 37° JIC, коляно 90°",
     "specs": [],
     "images": [
-      "catalog/hydraulics/jenski-nakrainik-toyota-bsp-rezba-konus37-jic-kolqno90-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/hydraulics/jenski-nakrainik-toyota-bsp-rezba-konus37-jic-kolqno90-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -72901,7 +73018,7 @@ const CONFIG = {
     "description": "Накрайник BEL/BES за монтаж на гайка и врязващ пръстен DIN2353",
     "specs": [],
     "images": [
-      "catalog/hydraulics/nakrainik-bel-bes-za-montaj-na-gaika-i-vrqzvasht-prysten-din2353-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/nakrainik-bel-bes-za-montaj-na-gaika-i-vrqzvasht-prysten-din2353-1200x1200.png"
     ],
     "variants": [
       {
@@ -73294,7 +73411,7 @@ const CONFIG = {
     "description": "Чаша за термопластов маркуч тип SAE 100 R8 и SAE 100 R7, VITILLO",
     "specs": [],
     "images": [
-      "catalog/hydraulics/chasha-za-termoplastov-markuch-tip-sae100-r8-i-sae100-r7-vitillo-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/chasha-za-termoplastov-markuch-tip-sae100-r8-i-sae100-r7-vitillo-1200x1200.png"
     ],
     "variants": [
       {
@@ -73437,7 +73554,7 @@ const CONFIG = {
     "description": "Чаша за хидравличен маркуч с 2 оплетки, със зачистване, AVHB",
     "specs": [],
     "images": [
-      "catalog/hydraulics/chasha-za-hidravlichen-markuch-s-2-opletki-sys-zachistvane-avhb-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/chasha-za-hidravlichen-markuch-s-2-opletki-sys-zachistvane-avhb-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -73586,7 +73703,7 @@ const CONFIG = {
     "description": "Чаша за хидравличен маркуч 2SN/R2AT, без забелване, VITILLO",
     "specs": [],
     "images": [
-      "catalog/hydraulics/chasha-za-hidravlichen-markuch-2sn-r2at-bez-zabelvane-vitillo-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/chasha-za-hidravlichen-markuch-2sn-r2at-bez-zabelvane-vitillo-1200x1200.png"
     ],
     "variants": [
       {
@@ -73696,7 +73813,7 @@ const CONFIG = {
     "description": "Чаша за хидравличен маркуч с 1 оплетка, със зачистване, AVHB",
     "specs": [],
     "images": [
-      "catalog/hydraulics/chasha-za-hidravlichen-markuch-s-2-opletki-sys-zachistvane-avhb-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/chasha-za-hidravlichen-markuch-s-2-opletki-sys-zachistvane-avhb-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -73837,7 +73954,7 @@ const CONFIG = {
     "description": "Чаша за хидравличен маркуч 1SN/1SC/2SC , без забелване, VITILLO",
     "specs": [],
     "images": [
-      "catalog/hydraulics/chasha-za-hidravlichen-markuch-2sn-r2at-bez-zabelvane-vitillo-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/chasha-za-hidravlichen-markuch-2sn-r2at-bez-zabelvane-vitillo-1200x1200.png"
     ],
     "variants": [
       {
@@ -73947,8 +74064,8 @@ const CONFIG = {
     "description": "Чаша за хидравличен маркуч с 1 и 2 оплетки, комбинирана, без зачистване, VITILLO",
     "specs": [],
     "images": [
-      "catalog/hydraulics/chasha-za-hidravlichen-markuch-s-1-i-2-opletki-kombinirana-bez-zachistvane-vitilllo-1200x1200.png",
-      "catalog/hydraulics/chasha-za-hidravlichen-markuch-s-1-i-2-opletki-kombinirana-bez-zachistvane-vitilllo-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/chasha-za-hidravlichen-markuch-s-1-i-2-opletki-kombinirana-bez-zachistvane-vitilllo-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/hydraulics/chasha-za-hidravlichen-markuch-s-1-i-2-opletki-kombinirana-bez-zachistvane-vitilllo-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -74135,7 +74252,7 @@ const CONFIG = {
     "description": "Чаша за хидравличен маркуч с 4 оплетки 4SP/4SH, без вътрешно забелване, VITILLO",
     "specs": [],
     "images": [
-      "catalog/hydraulics/chasha-s-hidravlichen-markuch-s-4-opletki-4sp-4sh-bez-vytreshno-zabelvane-vitillo-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/chasha-s-hidravlichen-markuch-s-4-opletki-4sp-4sh-bez-vytreshno-zabelvane-vitillo-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -74281,8 +74398,8 @@ const CONFIG = {
     "description": "Накрайник за хидравличен маркуч с цолова женска резба BSP и външен конус 60°, прав Резба: &nbsp;цолова, женска Конус: &nbsp;външен 60°",
     "specs": [],
     "images": [
-      "catalog/hydraulics/jenski-nakrainik-dkr-s-colova-rezba-bsp-vynshen-konus-60-prav-1200x1200.png",
-      "catalog/hydraulics/jenski-nakrainik-dkr-s-colova-rezba-bsp-vynshen-konus-60-prav-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/jenski-nakrainik-dkr-s-colova-rezba-bsp-vynshen-konus-60-prav-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/hydraulics/jenski-nakrainik-dkr-s-colova-rezba-bsp-vynshen-konus-60-prav-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -74636,7 +74753,7 @@ const CONFIG = {
     "description": "Болт холендров, метрична резба",
     "specs": [],
     "images": [
-      "catalog/hydraulics/bolt-holendrov-metrichna-rezba-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/bolt-holendrov-metrichna-rezba-1200x1200.png"
     ],
     "variants": [
       {
@@ -74847,7 +74964,7 @@ const CONFIG = {
     "description": "Болт холендров, цолова резба BSPP",
     "specs": [],
     "images": [
-      "catalog/hydraulics/bolt-holendrov-colova-rezba-bspp-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/bolt-holendrov-colova-rezba-bspp-1200x1200.png"
     ],
     "variants": [
       {
@@ -74960,7 +75077,7 @@ const CONFIG = {
     "description": "Накрайник за хидравличен маркуч с женска UNF резба и конус 74° / 37°, прав Резба: &nbsp;женска, UNF Конус: &nbsp;JIC 37° / 74°",
     "specs": [],
     "images": [
-      "catalog/hydraulics/jenski-nakrainik-dkj-s-unf-rezba-s-konus-74-prav-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/jenski-nakrainik-dkj-s-unf-rezba-s-konus-74-prav-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -75304,8 +75421,8 @@ const CONFIG = {
     "description": "Накрайник за хидравличен маркуч с метрична женска резба и о-пръстен, конус 24°, прав, лека серия Резба:&nbsp; метрична, женска Конус: &nbsp;24°",
     "specs": [],
     "images": [
-      "catalog/hydraulics/jenski-nakrainik-s-metrichna-rezba-i-o-prysten-dkol-prav-1200x1200.png",
-      "catalog/hydraulics/jenski-nakrainik-s-metrichna-rezba-i-o-prysten-dkol-prav-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/jenski-nakrainik-s-metrichna-rezba-i-o-prysten-dkol-prav-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/hydraulics/jenski-nakrainik-s-metrichna-rezba-i-o-prysten-dkol-prav-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -75616,8 +75733,8 @@ const CONFIG = {
     "description": "Накрайник за хидравличен маркуч с метрична женска резба и универсален конус от 24° до 60°, прав Резба: &nbsp;метрична, женска Конус: &nbsp;от 24° до 60°",
     "specs": [],
     "images": [
-      "catalog/hydraulics/jenski-nakrainik-s-metrichna-rezba-dkl-universalen-konus-prav-1200x1200.png",
-      "catalog/hydraulics/jenski-nakrainik-s-metrichna-rezba-dkl-prav-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/jenski-nakrainik-s-metrichna-rezba-dkl-universalen-konus-prav-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/hydraulics/jenski-nakrainik-s-metrichna-rezba-dkl-prav-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -75850,8 +75967,8 @@ const CONFIG = {
     "description": "Накрайник за хидравличен маркуч с цолова мъжка резба BSP и вътрешен конус 60°, прав Резба: &nbsp;цолова, мъжка Конус: &nbsp;60°",
     "specs": [],
     "images": [
-      "catalog/hydraulics/myjki-nakrainik-agr-s-colova-rezba-bsp-vytreshen-konus-60-1200x1200.png",
-      "catalog/hydraulics/myjki-nakrainik-agr-s-colova-rezba-bsp-vytreshen-konus-60-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/myjki-nakrainik-agr-s-colova-rezba-bsp-vytreshen-konus-60-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/hydraulics/myjki-nakrainik-agr-s-colova-rezba-bsp-vytreshen-konus-60-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -76200,7 +76317,7 @@ const CONFIG = {
     "description": "Чаша за тефлонови маркучи PTFE с една и две оплетки, VITILLO",
     "specs": [],
     "images": [
-      "catalog/hydraulics/chasha-za-teflonovi-markuchi-ptfe-s-edna-i-dve-opletki-vitillo-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/chasha-za-teflonovi-markuchi-ptfe-s-edna-i-dve-opletki-vitillo-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -76307,7 +76424,7 @@ const CONFIG = {
     "description": "Накрайник за хидравличен маркуч с мъжка UNF резба и конус 74° / 37° Конус: &nbsp;JIC 37° / 74°",
     "specs": [],
     "images": [
-      "catalog/hydraulics/myjki-nakrainik-agjd-s-unf-rezba-s-konus-74-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/myjki-nakrainik-agjd-s-unf-rezba-s-konus-74-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -76623,7 +76740,7 @@ const CONFIG = {
     "description": "Накрайник за хидравличен маркуч с метрична мъжка резба BSP и вътрешен конус 60°, прав Резба: &nbsp;метрична, мъжка",
     "specs": [],
     "images": [
-      "catalog/hydraulics/myjki-nakrainik-AGM-s-metrichna-rezba-vytreshen-konus-60-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/myjki-nakrainik-AGM-s-metrichna-rezba-vytreshen-konus-60-1200x1200.png"
     ],
     "variants": [
       {
@@ -76862,7 +76979,7 @@ const CONFIG = {
     "description": "Опашка за заварка",
     "specs": [],
     "images": [
-      "catalog/hydraulics/opashka-za-zavarka-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/opashka-za-zavarka-1200x1200.png"
     ],
     "variants": [
       {
@@ -77013,8 +77130,8 @@ const CONFIG = {
     "description": "Накрайник за хидравличен маркуч с метрична женска резба и о-пръстен, конус 24°, прав, тежка серия Резба: &nbsp;метрична, женска",
     "specs": [],
     "images": [
-      "catalog/hydraulics/jenski-nakrainik-s-metrichna-rezba-i-o-prysten-dkos-prav-tejka-seriq-1200x1200.png",
-      "catalog/hydraulics/jenski-nakrainik-s-metrichna-rezba-i-o-prysten-dkos-prav-tejka-seriq-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/jenski-nakrainik-s-metrichna-rezba-i-o-prysten-dkos-prav-tejka-seriq-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/hydraulics/jenski-nakrainik-s-metrichna-rezba-i-o-prysten-dkos-prav-tejka-seriq-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -77341,8 +77458,8 @@ const CONFIG = {
     "description": "Накрайник за хидравличен маркуч с метрична мъжка резба, конус 24°, лека серия Резба: &nbsp;метрична, мъжки",
     "specs": [],
     "images": [
-      "catalog/hydraulics/ накрайник с мет резба cel лека серия конус.png",
-      "catalog/hydraulics/ накрайник с мет резба cel лека серия конус 1.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/ накрайник с мет резба cel лека серия конус.png",
+      "https://hydrolux.bg/image/catalog/hydraulics/ накрайник с мет резба cel лека серия конус 1.png"
     ],
     "variants": [
       {
@@ -77759,9 +77876,13 @@ if (localStorage.getItem("hydrolux_products") &&
 }
 
 // Load dynamic state if present in localStorage to support admin dashboard updates in real-time
+const staticProducts = [...CONFIG.products];
+const staticCategories = [...CONFIG.categories];
+
 if (localStorage.getItem("hydrolux_products")) {
   try {
-    CONFIG.products = JSON.parse(localStorage.getItem("hydrolux_products"));
+    const local = JSON.parse(localStorage.getItem("hydrolux_products"));
+    CONFIG.products = mergeById(staticProducts, local);
   } catch (e) {
     console.error("Error parsing products from localStorage", e);
   }
@@ -77771,7 +77892,8 @@ if (localStorage.getItem("hydrolux_products")) {
 
 if (localStorage.getItem("hydrolux_categories")) {
   try {
-    CONFIG.categories = JSON.parse(localStorage.getItem("hydrolux_categories"));
+    const local = JSON.parse(localStorage.getItem("hydrolux_categories"));
+    CONFIG.categories = mergeById(staticCategories, local);
   } catch (e) {
     console.error("Error parsing categories from localStorage", e);
   }
@@ -77871,12 +77993,17 @@ CONFIG.ready = (async () => {
     let shouldSyncMergedState = false;
 
     if (hasRemoteProducts) {
-      CONFIG.products = mergeById(state.products, localProducts);
-      shouldSyncMergedState = CONFIG.products.length !== state.products.length;
+      const mergedProducts = mergeById(staticProducts, mergeById(state.products, localProducts));
+      shouldSyncMergedState = mergedProducts.length !== state.products.length || 
+                              JSON.stringify(mergedProducts) !== JSON.stringify(state.products);
+      CONFIG.products = mergedProducts;
     }
     if (hasRemoteCategories) {
-      CONFIG.categories = mergeById(state.categories, localCategories);
-      shouldSyncMergedState = shouldSyncMergedState || CONFIG.categories.length !== state.categories.length;
+      const mergedCategories = mergeById(staticCategories, mergeById(state.categories, localCategories));
+      shouldSyncMergedState = shouldSyncMergedState || 
+                              mergedCategories.length !== state.categories.length || 
+                              JSON.stringify(mergedCategories) !== JSON.stringify(state.categories);
+      CONFIG.categories = mergedCategories;
     }
     if (hasRemoteTemplates) {
       const tableTemplates = mergeById(state.tableTemplates, localTemplates);
@@ -77971,4 +78098,5 @@ CONFIG.resetToDefaults = function() {
   localStorage.removeItem("hydrolux_builder_options");
   window.location.reload();
 };
+
 

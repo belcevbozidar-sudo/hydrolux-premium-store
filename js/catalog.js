@@ -168,7 +168,8 @@ const Catalog = {
     if (this.activeSubcategory) {
       scopeProducts = scopeProducts.filter(p => {
         const productSubs = p.subcategories || (p.subcategory ? [p.subcategory] : []);
-        return productSubs.includes(this.activeSubcategory);
+        const productCats = p.categories || [];
+        return productSubs.includes(this.activeSubcategory) || productCats.includes(this.activeSubcategory);
       });
     }
 
@@ -296,7 +297,7 @@ const Catalog = {
 
       grid.className = "catalog-categories-cards-grid";
       grid.innerHTML = CONFIG.categories.map(cat => {
-        const imgName = `cat_${cat.id.replace(/-/g, '_')}.webp`;
+        const imgName = `cat_${String(cat.id).replace(/-/g, '_')}.webp`;
         return `
           <div class="category-card-card" onclick="Catalog.selectCategory('${cat.id}')" style="background-image: url('assets/${imgName}');">
             <div class="category-card-overlay">
@@ -327,13 +328,15 @@ const Catalog = {
       // 2. Subcategory check
       if (this.activeSubcategory) {
         const productSubs = p.subcategories || (p.subcategory ? [p.subcategory] : []);
-        if (!productSubs.includes(this.activeSubcategory)) return false;
+        const productCats = p.categories || [];
+        if (!productSubs.includes(this.activeSubcategory) && !productCats.includes(this.activeSubcategory)) return false;
       }
 
       // 2.5. Sub-subcategory check
       if (this.activeSubSubcategory) {
         const productSubSubs = p.subsubcategories || (p.subsubcategory ? [p.subsubcategory] : []);
-        if (!productSubSubs.includes(this.activeSubSubcategory)) return false;
+        const productCats = p.categories || [];
+        if (!productSubSubs.includes(this.activeSubSubcategory) && !productCats.includes(this.activeSubSubcategory)) return false;
       }
 
       // 3. Search check

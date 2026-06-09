@@ -128,6 +128,14 @@ for (let line of lines) {
 
 console.log("Parsing metadata tables...");
 
+function resolveImageUrl(img) {
+  if (!img) return "";
+  if (img.startsWith("catalog/")) {
+    return `https://hydrolux.bg/image/${img}`;
+  }
+  return img;
+}
+
 // 1. Manufacturers / Brands
 const manufacturerMap = new Map();
 for (let row of tables.manufacturer) {
@@ -165,7 +173,7 @@ for (let row of tables.category) {
   categoryMap.set(id, {
     id: id,
     name: name,
-    image: img ? img : "",
+    image: resolveImageUrl(img),
     parentId: parentId,
     subcategories: []
   });
@@ -179,6 +187,7 @@ for (let [id, cat] of categoryMap) {
     id: id,
     name: cat.name,
     icon: getCategoryIcon(cat.name),
+    image: cat.image,
     parentId: cat.parentId,
     subcategories: []
   });
@@ -203,7 +212,8 @@ function cleanHierarchy(cats) {
     const cleanCat = {
       id: c.id,
       name: c.name,
-      icon: c.icon
+      icon: c.icon,
+      image: c.image
     };
     if (c.subcategories && c.subcategories.length > 0) {
       cleanCat.subcategories = cleanHierarchy(c.subcategories);
@@ -384,8 +394,8 @@ for (let row of tables.product) {
   const descObj = productDescMap.get(id) || { name: `Продукт ${model}`, desc: "", tags: "" };
   const categories = prodToCatMap.get(id) || [];
   const brand = manufacturerMap.get(mfrId) || "Хидролукс";
-  const mainImage = image ? image : "assets/logo.webp";
-  const addImages = additionalImagesMap.get(id) || [];
+  const mainImage = resolveImageUrl(image) || "assets/logo.webp";
+  const addImages = (additionalImagesMap.get(id) || []).map(resolveImageUrl).filter(Boolean);
   const images = [mainImage, ...addImages];
   
   const tags = descObj.tags ? descObj.tags.split(",").map(t => t.trim()).filter(Boolean) : [];

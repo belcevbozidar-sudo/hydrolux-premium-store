@@ -57,7 +57,27 @@ const App = {
       "pu-spiral-hose",
       "quick-coupling-isoa"
     ];
-    const featured = popularProductIds.map(id => CONFIG.products.find(p => p.id === id)).filter(Boolean);
+    let featured = popularProductIds.map(id => CONFIG.products.find(p => p.id === id)).filter(Boolean);
+
+    if (featured.length === 0) {
+      const targets = [
+        { key: "2SN", fallbackCode: "2SN" },
+        { key: "BSP", fallbackCode: "BSP" },
+        { key: "спирала", fallbackCode: "SPIRAL" },
+        { key: "бърза връзка", fallbackCode: "ISOA" }
+      ];
+      featured = targets.map(t => {
+        let found = CONFIG.products.find(p => p.code && p.code.toUpperCase().includes(t.fallbackCode));
+        if (!found) {
+          found = CONFIG.products.find(p => p.name && p.name.toLowerCase().includes(t.key.toLowerCase()));
+        }
+        return found;
+      }).filter(Boolean);
+    }
+
+    if (featured.length === 0) {
+      featured = CONFIG.products.slice(0, 4);
+    }
 
     grid.innerHTML = featured.map(p => {
       const minPrice = p.variants && p.variants.length > 0 ? Math.min(...p.variants.map(v => v.priceEur)) : 0;
@@ -258,7 +278,7 @@ const App = {
     if (!carousel) return;
 
     carousel.innerHTML = CONFIG.categories.map(c => {
-      const defaultImg = `assets/cat_${c.id.replace(/-/g, '_')}.webp`;
+      const defaultImg = `assets/cat_${String(c.id).replace(/-/g, '_')}.webp`;
       const imageSrc = c.image || defaultImg;
       const cleanImageSrc = imageSrc.replace(/\s+/g, '%20');
       const fallbackPrompt = encodeURIComponent(`${c.name} industrial hose connection premium studio lighting photography`);
