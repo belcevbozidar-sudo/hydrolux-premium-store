@@ -77884,9 +77884,23 @@ function mergeById(remoteItems, localItems) {
   return merged;
 }
 
-// Clear localStorage products/categories if they contain old unsplash urls or png image extensions to migrate to new local webp assets
-if (localStorage.getItem("hydrolux_products") && 
-    (localStorage.getItem("hydrolux_products").includes("unsplash.com") || localStorage.getItem("hydrolux_products").includes(".png"))) {
+function filterOldItems(items) {
+  if (!Array.isArray(items)) return [];
+  return items.filter(item => {
+    if (!item || !item.id) return false;
+    const s = String(item.id);
+    const isOld = !/^\d+$/.test(s) && !s.startsWith("custom-");
+    return !isOld;
+  });
+}
+
+// Clear localStorage products/categories if they contain old unsplash urls, png image extensions, or old category IDs
+const hasOldUnsplashOrPng = localStorage.getItem("hydrolux_products") && 
+    (localStorage.getItem("hydrolux_products").includes("unsplash.com") || localStorage.getItem("hydrolux_products").includes(".png"));
+const hasOldCategoryIds = localStorage.getItem("hydrolux_categories") && 
+    (localStorage.getItem("hydrolux_categories").includes("air-hoses") || localStorage.getItem("hydrolux_categories").includes("water-hoses"));
+
+if (hasOldUnsplashOrPng || hasOldCategoryIds) {
   localStorage.removeItem("hydrolux_products");
   localStorage.removeItem("hydrolux_categories");
   localStorage.removeItem("hydrolux_builder_options");
@@ -77899,7 +77913,7 @@ const staticCategories = [...CONFIG.categories];
 if (localStorage.getItem("hydrolux_products")) {
   try {
     const local = JSON.parse(localStorage.getItem("hydrolux_products"));
-    CONFIG.products = mergeById(staticProducts, local);
+    CONFIG.products = mergeById(staticProducts, filterOldItems(local));
   } catch (e) {
     console.error("Error parsing products from localStorage", e);
   }
@@ -77910,7 +77924,7 @@ if (localStorage.getItem("hydrolux_products")) {
 if (localStorage.getItem("hydrolux_categories")) {
   try {
     const local = JSON.parse(localStorage.getItem("hydrolux_categories"));
-    CONFIG.categories = mergeById(staticCategories, local);
+    CONFIG.categories = mergeById(staticCategories, filterOldItems(local));
   } catch (e) {
     console.error("Error parsing categories from localStorage", e);
   }
@@ -78019,13 +78033,17 @@ CONFIG.ready = (async () => {
     let shouldSyncMergedState = false;
 
     if (hasRemoteProducts) {
-      const mergedProducts = mergeById(staticProducts, mergeById(state.products, localProducts));
+      const cleanRemoteProducts = filterOldItems(state.products);
+      const cleanLocalProducts = filterOldItems(localProducts);
+      const mergedProducts = mergeById(staticProducts, mergeById(cleanRemoteProducts, cleanLocalProducts));
       shouldSyncMergedState = mergedProducts.length !== state.products.length || 
                               JSON.stringify(mergedProducts) !== JSON.stringify(state.products);
       CONFIG.products = mergedProducts;
     }
     if (hasRemoteCategories) {
-      const mergedCategories = mergeById(staticCategories, mergeById(state.categories, localCategories));
+      const cleanRemoteCategories = filterOldItems(state.categories);
+      const cleanLocalCategories = filterOldItems(localCategories);
+      const mergedCategories = mergeById(staticCategories, mergeById(cleanRemoteCategories, cleanLocalCategories));
       shouldSyncMergedState = shouldSyncMergedState || 
                               mergedCategories.length !== state.categories.length || 
                               JSON.stringify(mergedCategories) !== JSON.stringify(state.categories);
