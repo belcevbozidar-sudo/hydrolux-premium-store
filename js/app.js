@@ -278,15 +278,29 @@ const App = {
     if (!carousel) return;
 
     const getCatImg = (cat) => {
-      if (cat.image) return cat.image;
       const mapping = {
         "73": "assets/cat_73.png",
         "74": "assets/cat_74.png",
         "168": "assets/cat_168.png",
+        "60": "assets/cat_air_hoses.webp",
+        "61": "assets/cat_fuel_oil_hoses.webp",
+        "62": "assets/cat_coolant_hoses.webp",
+        "63": "assets/cat_silicone_hoses.webp",
+        "64": "assets/cat_pvc_hoses.webp",
+        "70": "assets/cat_polyurethane_hoses.webp",
+        "69": "assets/cat_hose_accessories.webp",
+        "68": "assets/cat_food_hoses.webp",
+        "66": "assets/cat_gas_hoses.webp",
+        "65": "assets/cat_hydraulic_fittings.webp",
+        "59": "assets/cat_water_hoses.webp",
+        "71": "assets/cat_pneumatic_tubes.webp",
         "72": "assets/logo.webp",
         "154": "assets/logo.webp"
       };
-      return mapping[String(cat.id)] || "assets/logo.webp";
+      const mapped = mapping[String(cat.id)];
+      if (mapped) return mapped;
+      if (cat.image && !cat.image.includes("hydrolux.bg")) return cat.image;
+      return "assets/logo.webp";
     };
 
     carousel.innerHTML = CONFIG.categories.map(c => {
