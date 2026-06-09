@@ -595,6 +595,20 @@ const App = {
           "#services"
         );
         this.updateSchema(this.getLocalBusinessSchema());
+      } else if (mainView === "about") {
+        this.updateSEO(
+          "За нас | Хидролукс Груп - Лидер в Хидравликата & Пневматиката",
+          "Научете повече за историята, мисията и екипа от професионалисти на Хидролукс Груп. Работим с водещи световни марки от 2019 г.",
+          "#about"
+        );
+        this.updateSchema(null);
+      } else if (mainView === "contacts") {
+        this.updateSEO(
+          "Контакти | Свържете се с нас | Хидролукс Груп Монтана",
+          "Свържете се с екипа на Хидролукс Груп в Монтана. Телефон: 0892 483 337, имейл: hydroluxgroup@gmail.com, адрес: ул. Индустриална 32Г.",
+          "#contacts"
+        );
+        this.updateSchema(this.getLocalBusinessSchema());
       } else if (mainView === "product-detail") {
         if (viewParam) {
           // If product page is loaded directly via URL, initialize it (avoiding navigate recursion)

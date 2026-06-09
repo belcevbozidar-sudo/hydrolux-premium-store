@@ -3,7 +3,14 @@ const HoseBuilder = {
   options: null,
 
   init() {
-    this.options = CONFIG.builderOptions || this.getDefaultOptions();
+    this.options = CONFIG.builderOptions;
+    if (!this.options || 
+        !Array.isArray(this.options.hoseTypes) || this.options.hoseTypes.length === 0 ||
+        !Array.isArray(this.options.sizes) || this.options.sizes.length === 0 ||
+        !Array.isArray(this.options.fittings) || this.options.fittings.length === 0 ||
+        !Array.isArray(this.options.sleeves) || this.options.sleeves.length === 0) {
+      this.options = this.getDefaultOptions();
+    }
 
     // Ensure state matches available options
     if (this.options.hoseTypes && this.options.hoseTypes.length > 0 && !this.options.hoseTypes.some(h => h.id === this.state.hoseTypeId)) {

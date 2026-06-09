@@ -169,6 +169,9 @@ for (let row of tables.category) {
   const id = row[0];
   const img = row[1];
   const parentId = row[2];
+  const status = row[6];
+  if (status !== "1") continue;
+
   const name = categoryDescMap.get(id) || `Категория ${id}`;
   categoryMap.set(id, {
     id: id,
@@ -486,13 +489,35 @@ const companyStr = companyMatch ? companyMatch[0] : `company: {
     workingHours: "Понеделник - Петък: 08:30 - 17:30 | Събота: 09:00 - 13:00"
   },`;
 
-// Find builderOptions block
-const builderMatch = originalConfig.match(/builderOptions:\s*\{[\s\S]*?\n\s*\}/);
-const builderStr = builderMatch ? builderMatch[0] : `builderOptions: {
-    hoseTypes: [],
-    sizes: [],
-    fittings: [],
-    sleeves: []
+// Use hardcoded builderOptions to avoid lazy regex match errors
+const builderStr = `builderOptions: {
+    hoseTypes: [
+      { id: "hp-2sn", name: "Хидравличен маркуч 2SN (Двуоплетен)", basePriceEurPerMeter: 3.50, pressures: { "1/4\\\"": 400, "3/8\\\"": 330, "1/2\\\"": 275, "3/4\\\"": 215, "1\\\"": 165 } },
+      { id: "hp-1sn", name: "Хидравличен маркуч 1SN (Еднооплетен)", basePriceEurPerMeter: 2.70, pressures: { "1/4\\\"": 225, "3/8\\\"": 180, "1/2\\\"": 160, "3/4\\\"": 105, "1\\\"": 88 } },
+      { id: "hp-thermo", name: "Термопластичен маркуч R7", basePriceEurPerMeter: 4.20, pressures: { "1/4\\\"": 210, "3/8\\\"": 190, "1/2\\\"": 140, "3/4\\\"": 112, "1\\\"": 70 } }
+    ],
+    sizes: [
+      { id: "1/4", name: "1/4\\\" (DN06)", factor: 1.0 },
+      { id: "3/8", name: "3/8\\\" (DN10)", factor: 1.25 },
+      { id: "1/2", name: "1/2\\\" (DN13)", factor: 1.5 },
+      { id: "3/4", name: "3/4\\\" (DN19)", factor: 2.1 },
+      { id: "1", name: "1\\\" (DN25)", factor: 3.0 }
+    ],
+    fittings: [
+      { id: "none", name: "Без накрайник (прав срез)", prices: { "1/4": 0.0, "3/8": 0.0, "1/2": 0.0, "3/4": 0.0, "1": 0.0 }, icon: "➖", category: "Без накрайник", angle: "none" },
+      { id: "dkol-straight", name: "DKOL Метричен прав (DKO-L)", prices: { "1/4": 3.20, "3/8": 3.60, "1/2": 4.20, "3/4": 5.50, "1": 7.50 }, icon: "➡️", category: "DKOL Метрични", angle: "straight" },
+      { id: "dkol-90", name: "DKOL Метричен 90° коляно", prices: { "1/4": 5.80, "3/8": 6.50, "1/2": 7.50, "3/4": 9.80, "1": 13.50 }, icon: "↳", category: "DKOL Метрични", angle: "90" },
+      { id: "dkol-45", name: "DKOL Метричен 45° коляно", prices: { "1/4": 6.20, "3/8": 6.90, "1/2": 7.90, "3/4": 10.50, "1": 14.20 }, icon: "↗️", category: "DKOL Метрични", angle: "45" },
+      { id: "bsp-straight", name: "BSP Прав с вътрешна резба", prices: { "1/4": 3.40, "3/8": 3.80, "1/2": 4.40, "3/4": 5.80, "1": 7.90 }, icon: "➡️", category: "BSP Инчови", angle: "straight" },
+      { id: "bsp-90", name: "BSP 90° коляно с вътрешна резба", prices: { "1/4": 6.00, "3/8": 6.70, "1/2": 7.75, "3/4": 10.20, "1": 14.00 }, icon: "↳", category: "BSP Инчови", angle: "90" },
+      { id: "jic-straight", name: "JIC Прав с инчова резба (37° UNF)", prices: { "1/4": 3.60, "3/8": 4.10, "1/2": 4.80, "3/4": 6.20, "1": 8.50 }, icon: "➡️", category: "JIC Инчови", angle: "straight" }
+    ],
+    sleeves: [
+      { id: "none", name: "Без предпазен ръкав", priceEurPerMeter: 0.0 },
+      { id: "plastic-spiral", name: "Предпазна пластмасова спирала (жълта)", priceEurPerMeter: 1.20 },
+      { id: "textile-sleeve", name: "Текстилен предпазен шлаух (черен)", priceEurPerMeter: 1.50 },
+      { id: "metal-spiral", name: "Стоманена предпазна пружина", priceEurPerMeter: 2.80 }
+    ]
   }`;
 
 // Find functions after CONFIG object
