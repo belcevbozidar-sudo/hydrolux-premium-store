@@ -1,0 +1,510 @@
+const fs = require('fs');
+const path = require('path');
+
+function parseCSVRow(line) {
+  const result = [];
+  let current = '';
+  let inQuotes = false;
+  for (let i = 0; i < line.length; i++) {
+    const char = line[i];
+    if (char === '"') {
+      if (inQuotes && line[i + 1] === '"') {
+        current += '"';
+        i++;
+      } else {
+        inQuotes = !inQuotes;
+      }
+    } else if (char === ',' && !inQuotes) {
+      result.push(current);
+      current = '';
+    } else {
+      current += char;
+    }
+  }
+  result.push(current);
+  return result;
+}
+
+function getCategoryIcon(name) {
+  name = name.toLowerCase();
+  if (name.includes("въздух")) return "💨";
+  if (name.includes("вода")) return "💧";
+  if (name.includes("горив") || name.includes("масл")) return "🛢️";
+  if (name.includes("охлажд") || name.includes("антифриз")) return "❄️";
+  if (name.includes("силикон")) return "🧪";
+  if (name.includes("газ") || name.includes("газове")) return "🔥";
+  if (name.includes("полиуретан") || name.includes("шлаух")) return "🌀";
+  if (name.includes("pvc") || name.includes("пвц")) return "📏";
+  if (name.includes("хран")) return "🍎";
+  if (name.includes("пневматик") || name.includes("съединител")) return "⚙️";
+  if (name.includes("накрайник") || name.includes("накрайници") || name.includes("резба")) return "🔩";
+  if (name.includes("високо налягане") || name.includes("хидравлич")) return "⚡";
+  if (name.includes("аксесоар") || name.includes("скоба") || name.includes("спирала")) return "🎒";
+  return "📁";
+}
+
+const csvPath = "/Users/bozhidarbelchev/Downloads/hydrolux_ocar740 (1).csv";
+if (!fs.existsSync(csvPath)) {
+  console.error("Error: CSV file not found at " + csvPath);
+  process.exit(1);
+}
+
+console.log("Reading CSV database dump...");
+const csvData = fs.readFileSync(csvPath, 'utf-8');
+const lines = csvData.split(/\r?\n/);
+
+let currentTable = null;
+const tables = {};
+
+for (let line of lines) {
+  if (!line.trim()) continue;
+  
+  if (line.startsWith('"category_id","image","parent_id"')) {
+    currentTable = 'category';
+    tables[currentTable] = [];
+    continue;
+  }
+  if (line.startsWith('"category_id","language_id","name"')) {
+    currentTable = 'category_description';
+    tables[currentTable] = [];
+    continue;
+  }
+  if (line.startsWith('"manufacturer_id","name","image"')) {
+    currentTable = 'manufacturer';
+    tables[currentTable] = [];
+    continue;
+  }
+  if (line.startsWith('"product_id","model","sku"')) {
+    currentTable = 'product';
+    tables[currentTable] = [];
+    continue;
+  }
+  if (line.startsWith('"product_id","attribute_id","language_id"')) {
+    currentTable = 'product_attribute';
+    tables[currentTable] = [];
+    continue;
+  }
+  if (line.startsWith('"product_id","language_id","name"')) {
+    currentTable = 'product_description';
+    tables[currentTable] = [];
+    continue;
+  }
+  if (line.startsWith('"product_image_id","product_id"')) {
+    currentTable = 'product_image';
+    tables[currentTable] = [];
+    continue;
+  }
+  if (line.startsWith('"product_option_id","product_id"')) {
+    currentTable = 'product_option';
+    tables[currentTable] = [];
+    continue;
+  }
+  if (line.startsWith('"product_option_value_id","product_option_id"')) {
+    currentTable = 'product_option_value';
+    tables[currentTable] = [];
+    continue;
+  }
+  if (line.startsWith('"product_id","related_id"')) {
+    currentTable = 'product_related';
+    tables[currentTable] = [];
+    continue;
+  }
+  if (line.startsWith('"product_id","category_id"')) {
+    currentTable = 'product_to_category';
+    tables[currentTable] = [];
+    continue;
+  }
+  if (line.startsWith('"product_id","store_id"')) {
+    currentTable = 'product_to_store';
+    tables[currentTable] = [];
+    continue;
+  }
+
+  if (currentTable) {
+    const row = parseCSVRow(line);
+    tables[currentTable].push(row);
+  }
+}
+
+console.log("Parsing metadata tables...");
+
+// 1. Manufacturers / Brands
+const manufacturerMap = new Map();
+for (let row of tables.manufacturer) {
+  const id = row[0];
+  const name = row[1];
+  manufacturerMap.set(id, name.trim());
+}
+
+// 2. Category Descriptions (Bulgarian language_id = 2, fallback to 1)
+const categoryDescMap = new Map();
+for (let row of tables.category_description) {
+  const id = row[0];
+  const lang = row[1];
+  const name = row[2];
+  if (lang === '2') {
+    categoryDescMap.set(id, name.trim());
+  }
+}
+for (let row of tables.category_description) {
+  const id = row[0];
+  const lang = row[1];
+  const name = row[2];
+  if (lang === '1' && !categoryDescMap.has(id)) {
+    categoryDescMap.set(id, name.trim());
+  }
+}
+
+// 3. Category Objects
+const categoryMap = new Map();
+for (let row of tables.category) {
+  const id = row[0];
+  const img = row[1];
+  const parentId = row[2];
+  const name = categoryDescMap.get(id) || `Категория ${id}`;
+  categoryMap.set(id, {
+    id: id,
+    name: name,
+    image: img ? img : "",
+    parentId: parentId,
+    subcategories: []
+  });
+}
+
+// 4. Build Categories Hierarchical tree
+const categoriesHierarchy = [];
+const allCategories = new Map();
+for (let [id, cat] of categoryMap) {
+  allCategories.set(id, {
+    id: id,
+    name: cat.name,
+    icon: getCategoryIcon(cat.name),
+    parentId: cat.parentId,
+    subcategories: []
+  });
+}
+
+for (let [id, cat] of allCategories) {
+  if (cat.parentId === "0") {
+    categoriesHierarchy.push(cat);
+  } else {
+    const parent = allCategories.get(cat.parentId);
+    if (parent) {
+      parent.subcategories.push(cat);
+    } else {
+      categoriesHierarchy.push(cat);
+    }
+  }
+}
+
+// Helper to clean parentIds from final output
+function cleanHierarchy(cats) {
+  return cats.map(c => {
+    const cleanCat = {
+      id: c.id,
+      name: c.name,
+      icon: c.icon
+    };
+    if (c.subcategories && c.subcategories.length > 0) {
+      cleanCat.subcategories = cleanHierarchy(c.subcategories);
+    }
+    return cleanCat;
+  });
+}
+const finalCategories = cleanHierarchy(categoriesHierarchy);
+
+// 5. Product Category mapping
+const prodToCatMap = new Map();
+for (let row of tables.product_to_category) {
+  const prodId = row[0];
+  const catId = row[1];
+  if (!prodToCatMap.has(prodId)) {
+    prodToCatMap.set(prodId, []);
+  }
+  prodToCatMap.get(prodId).push(catId);
+}
+
+// 6. Additional Product Images
+const additionalImagesMap = new Map();
+for (let row of tables.product_image) {
+  const prodId = row[1];
+  const img = row[2];
+  if (!additionalImagesMap.has(prodId)) {
+    additionalImagesMap.set(prodId, []);
+  }
+  additionalImagesMap.get(prodId).push(img);
+}
+
+// 7. Product Descriptions
+const productDescMap = new Map();
+for (let row of tables.product_description) {
+  const id = row[0];
+  const lang = row[1];
+  const name = row[2];
+  const desc = row[3];
+  const tags = row[4];
+  if (lang === '2') {
+    productDescMap.set(id, { name, desc, tags });
+  }
+}
+for (let row of tables.product_description) {
+  const id = row[0];
+  const lang = row[1];
+  const name = row[2];
+  const desc = row[3];
+  const tags = row[4];
+  if (lang === '1' && !productDescMap.has(id)) {
+    productDescMap.set(id, { name, desc, tags });
+  }
+}
+
+// Helper to parse parameter string
+function parseParams(paramStr) {
+  const params = {};
+  if (!paramStr) return params;
+  
+  const parts = paramStr.split(',');
+  for (let part of parts) {
+    const sepIdx = part.indexOf(':');
+    if (sepIdx === -1) continue;
+    const key = part.substring(0, sepIdx).trim();
+    const val = part.substring(sepIdx + 1).trim();
+    params[key] = val;
+  }
+  return params;
+}
+
+// Helper to extract variant
+function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
+  const v = {
+    code: optSku || ""
+  };
+  
+  const pFloat = (val) => {
+    const f = parseFloat(val);
+    return isNaN(f) ? 0 : f;
+  };
+
+  let inner = params["Вътрешен диаметър (мм)"] || params["Вътрешен диаметър (цол)"] || params["Вътрешен диаметър (inch)"];
+  if (inner) {
+    const f = parseFloat(inner);
+    v.innerDb = isNaN(f) ? inner : f;
+  } else {
+    v.innerDb = 0;
+  }
+  
+  let inch = params["Inch"] || params["Вътрешен диаметър (цол)"] || params["Вътрешен диаметър (inch)"];
+  if (inch) {
+    v.inch = inch.toString().includes('"') ? inch : `${inch}"`;
+  } else {
+    v.inch = "";
+  }
+  
+  let outer = params["Външен диаметър (мм)"] || params["Външен диаметър (inch)"];
+  if (outer) {
+    v.outerDb = pFloat(outer);
+  } else {
+    v.outerDb = 0;
+  }
+  
+  let pressure = params["Работно налягане (bar)"] || params["Работно налягане (Bar)"];
+  if (pressure) {
+    v.pressure = pFloat(pressure);
+  } else {
+    v.pressure = 0;
+  }
+  
+  let bend = params["Радиус на огъване"] || params["Радиус огъване"];
+  if (bend) {
+    v.bend = pFloat(bend);
+  } else {
+    v.bend = 0;
+  }
+  
+  let weight = params["Тегло (кг/м)"] || params["Тегло"];
+  if (weight) {
+    v.weight = pFloat(weight);
+  } else {
+    v.weight = 0;
+  }
+  
+  let rollLength = params["L"] || params["Дължина на ролката"] || params["Дълж. ролка"];
+  if (rollLength) {
+    v.rollLength = pFloat(rollLength);
+  } else {
+    v.rollLength = 0;
+  }
+  
+  let price = basePrice;
+  const diff = parseFloat(optPrice) || 0;
+  if (optPrefix === '+') {
+    price += diff;
+  } else if (optPrefix === '-') {
+    price -= diff;
+  }
+  v.priceEur = parseFloat(price.toFixed(2));
+  
+  return v;
+}
+
+// 8. Product Option Values
+const productOptionValuesMap = new Map();
+for (let row of tables.product_option_value) {
+  const prodId = row[2];
+  const price = row[7];
+  const paramsStr = row[8];
+  const prefix = row[9];
+  const params = parseParams(paramsStr);
+  
+  if (!productOptionValuesMap.has(prodId)) {
+    productOptionValuesMap.set(prodId, []);
+  }
+  productOptionValuesMap.get(prodId).push({
+    price,
+    prefix,
+    params
+  });
+}
+
+console.log("Assembling products array...");
+
+// 9. Map and build final Products list
+const finalProducts = [];
+for (let row of tables.product) {
+  const id = row[0];
+  const model = row[1];
+  const sku = row[2];
+  const image = row[11];
+  const mfrId = row[12];
+  const price = parseFloat(row[14]) || 0;
+  const status = row[27];
+  
+  if (status !== "1") continue; // only active products
+
+  const descObj = productDescMap.get(id) || { name: `Продукт ${model}`, desc: "", tags: "" };
+  const categories = prodToCatMap.get(id) || [];
+  const brand = manufacturerMap.get(mfrId) || "Хидролукс";
+  const mainImage = image ? image : "assets/logo.webp";
+  const addImages = additionalImagesMap.get(id) || [];
+  const images = [mainImage, ...addImages];
+  
+  const tags = descObj.tags ? descObj.tags.split(",").map(t => t.trim()).filter(Boolean) : [];
+  
+  // Clean description HTML slightly
+  let cleanDesc = descObj.desc || "";
+  cleanDesc = cleanDesc.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&amp;/g, '&');
+  let textDesc = cleanDesc.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+  if (textDesc.length > 250) {
+    textDesc = textDesc.substring(0, 247) + "...";
+  }
+
+  // Parse variants
+  const optValues = productOptionValuesMap.get(id) || [];
+  const variants = optValues.map((opt, vIdx) => {
+    return extractVariant(opt.params, price, opt.price, opt.prefix, `${sku}-${vIdx + 1}`);
+  });
+  
+  // If no variants, create a single default variant
+  if (variants.length === 0) {
+    variants.push({
+      code: sku || model,
+      innerDb: 0,
+      inch: "",
+      outerDb: 0,
+      pressure: 0,
+      bend: 0,
+      weight: 0,
+      rollLength: 0,
+      priceEur: price
+    });
+  }
+
+  finalProducts.push({
+    id: `prod-${id}`,
+    code: sku || model,
+    isSpecial: false,
+    name: descObj.name,
+    category: categories[0] || "",
+    categories: categories,
+    brand: brand,
+    rating: 5.0,
+    reviewsCount: 0,
+    views: 0,
+    inStock: true,
+    unit: "м",
+    homeSpecs: [
+      { key: "Марка", value: brand }
+    ],
+    tags: tags,
+    description: textDesc || descObj.name,
+    specs: [],
+    images: images,
+    variants: variants
+  });
+}
+
+console.log(`Parsed ${finalCategories.length} top-level categories and ${finalProducts.length} active products.`);
+
+// 10. Update config.js
+const configPath = path.join(__dirname, 'js', 'config.js');
+console.log("Updating config file at: " + configPath);
+
+if (!fs.existsSync(configPath)) {
+  console.error("Error: config.js not found at " + configPath);
+  process.exit(1);
+}
+
+// Backup original config.js
+const backupPath = configPath + '.bak';
+fs.copyFileSync(configPath, backupPath);
+console.log("Created backup of config.js at: " + backupPath);
+
+const originalConfig = fs.readFileSync(configPath, 'utf-8');
+
+// We will replace categories and products arrays
+// Let's find the company object block
+const companyMatch = originalConfig.match(/company:\s*\{[\s\S]*?\},\s*/);
+const companyStr = companyMatch ? companyMatch[0] : `company: {
+    name: "Хидролукс Груп",
+    tagline: "Хидравлични и пневматични решения, маркучи и компоненти",
+    yearFounded: 2019,
+    address: "Град Монтана, ул. „Индустриална“ 32г",
+    addressShort: "ул. „Индустриална“ 32г, Монтана",
+    phone: "+359 89 248 4337",
+    phoneDisplay: "089 248 4337",
+    email: "hydroluxgroup@gmail.com",
+    workingHours: "Понеделник - Петък: 08:30 - 17:30 | Събота: 09:00 - 13:00"
+  },`;
+
+// Find builderOptions block
+const builderMatch = originalConfig.match(/builderOptions:\s*\{[\s\S]*?\n\s*\}/);
+const builderStr = builderMatch ? builderMatch[0] : `builderOptions: {
+    hoseTypes: [],
+    sizes: [],
+    fittings: [],
+    sleeves: []
+  }`;
+
+// Find functions after CONFIG object
+const functionsIndex = originalConfig.indexOf('// Helper function to format prices');
+const functionsStr = functionsIndex !== -1 ? originalConfig.substring(functionsIndex) : '';
+
+// Rebuild new config
+const newConfig = `// Hydrolux Group Store Configuration & Catalog Seed Data (Euro € Optimized)
+const CONFIG = {
+  ${companyStr.trim()}
+  
+  eurToBgn: 1.0, // Strictly EUR now
+  
+  categories: ${JSON.stringify(finalCategories, null, 2)},
+
+  products: ${JSON.stringify(finalProducts, null, 2)},
+
+  ${builderStr.trim()}
+};
+
+${functionsStr}
+`;
+
+fs.writeFileSync(configPath, newConfig, 'utf-8');
+console.log("Import completed successfully!");
