@@ -97,7 +97,13 @@ const Cart = {
         const specs = [];
         if (variant.pressure !== undefined && variant.pressure !== "" && parseFloat(variant.pressure) > 0) specs.push(`Работно налягане: ${variant.pressure} Bar`);
         if (variant.wallDb !== undefined && variant.wallDb !== "") specs.push(`Стена: ${variant.wallDb} мм`);
+        if (variant.burstDb !== undefined && variant.burstDb !== "") specs.push(`Разрушаващо налягане: ${variant.burstDb}`);
         if (variant.vacuumDb !== undefined && variant.vacuumDb !== "") specs.push(`Вакуум: ${variant.vacuumDb}`);
+        if (variant.rangeDb !== undefined && variant.rangeDb !== "") specs.push(`Диапазон: ${variant.rangeDb} мм`);
+        if (variant.spacingDb !== undefined && variant.spacingDb !== "") specs.push(`Разстояние зъби: ${variant.spacingDb} мм`);
+        if (variant.hexDb !== undefined && variant.hexDb !== "") specs.push(`HEX размер: ${variant.hexDb} мм`);
+        if (variant.braidsDb !== undefined && variant.braidsDb !== "") specs.push(`Оплетки: ${variant.braidsDb}`);
+        if (variant.sleeveWidthDb !== undefined && variant.sleeveWidthDb !== "") specs.push(`Ширина ръкав: ${variant.sleeveWidthDb} мм`);
         if (variant.rollLength !== undefined && variant.rollLength !== "" && parseFloat(variant.rollLength) > 0) specs.push(`Дължина на ролката: ${variant.rollLength}м`);
         specsText = specs.join(" | ");
       }

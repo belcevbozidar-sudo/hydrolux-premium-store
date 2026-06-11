@@ -675,6 +675,127 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
   } else {
     v.vacuumDb = "";
   }
+
+  // 7c. Burst pressure / Разрушаващо налягане
+  let burstVal = getVal([
+    "bp bar",
+    "bp psi",
+    "налягане на разкъсване (bar)",
+    "налягане на разкъсване (Bar)",
+    "налягане на разкъсване (23 °c bar)",
+    "разрушаващо налягане (bar)",
+    "налягане на разкъсване (psi)",
+    "налягане на разкъсване (мм)",
+    "разрушаващо налягане (bar)"
+  ]);
+  
+  if (burstVal && burstVal !== "-") {
+    let matchedKey = "";
+    for (let k of [
+      "bp bar", "bp psi", "налягане на разкъсване (bar)", "налягане на разкъсване (Bar)",
+      "налягане на разкъсване (23 °c bar)", "разрушаващо налягане (bar)", "налягане на разкъсване (psi)",
+      "налягане на разкъсване (мм)", "разрушаващо налягане (bar)"
+    ]) {
+      if (norm[normalizeKey(k)] !== undefined) {
+        matchedKey = k;
+        break;
+      }
+    }
+    if (matchedKey.toLowerCase().includes("psi")) {
+      const psi = parseFloat(burstVal);
+      if (!isNaN(psi)) {
+        v.burstDb = `${Math.round(psi / 14.5)} Bar`;
+      } else {
+        v.burstDb = `${burstVal} PSI`;
+      }
+    } else {
+      v.burstDb = `${burstVal} Bar`;
+    }
+  } else {
+    v.burstDb = "";
+  }
+
+  // 7d. Spacing / Разстояние между зъбите
+  let spacingVal = getVal([
+    "разстояние между зъбите (мм)",
+    "разстояние между зъбите (mm)",
+    "разстоние на зъбите (мм)",
+    "разтояние между зъбите (mm )",
+    "разтояние между зъбите (мм)",
+    "разстояние между зъбите (mm )",
+    "разтояние между зъбите (mm)",
+    "разстояние между зъбите (мм)",
+    "расзтояние на зъбите (mm)"
+  ]);
+  if (spacingVal && spacingVal !== "-") {
+    v.spacingDb = spacingVal;
+  } else {
+    v.spacingDb = "";
+  }
+
+  // 7e. HEX Size / HEX размер
+  let hexVal = getVal([
+    "hex (mm)",
+    "hex(mm)",
+    "hex",
+    "sw (mm)",
+    "sw",
+    "ch",
+    "ch1",
+    "ch2"
+  ]);
+  if (hexVal && hexVal !== "-") {
+    v.hexDb = hexVal;
+  } else {
+    v.hexDb = "";
+  }
+
+  // 7f. Sleeve Width / Широчина на ръкава
+  let sleeveWidthVal = getVal([
+    "широчина на ръкава (мм)",
+    "ширина на ръкава (мм)",
+    "ширина на ръкава"
+  ]);
+  if (sleeveWidthVal && sleeveWidthVal !== "-") {
+    v.sleeveWidthDb = sleeveWidthVal;
+  } else {
+    v.sleeveWidthDb = "";
+  }
+
+  // 7g. Braids / Оплетки
+  let braidsVal = getVal([
+    "оплетки (nr)",
+    "брой оплетки",
+    "брой на оплетките",
+    "оплетки краища (nr)"
+  ]);
+  if (braidsVal && braidsVal !== "-") {
+    v.braidsDb = braidsVal;
+  } else {
+    v.braidsDb = "";
+  }
+
+  // 7h. Clamping Range / Работен диапазон
+  let rangeMin = getVal([
+    "диапазон долен - диаметър (mm)",
+    "диапазон долен - диаметър (мм)",
+    "диапазон - мин"
+  ]);
+  let rangeMax = getVal([
+    "диапазон горен - диаметър (mm)",
+    "диапазон горен - диаметър (мм)",
+    "диапазон - макс"
+  ]);
+  let rangeVal = getVal([
+    "диапазон"
+  ]);
+  if (rangeMin && rangeMax) {
+    v.rangeDb = `${rangeMin}-${rangeMax}`;
+  } else if (rangeVal) {
+    v.rangeDb = rangeVal;
+  } else {
+    v.rangeDb = "";
+  }
   
   let price = basePrice;
   const diff = parseFloat(optPrice) || 0;
@@ -761,8 +882,14 @@ for (let row of tables.product) {
       inch: "",
       outerDb: 0,
       wallDb: "",
+      burstDb: "",
       pressure: 0,
       vacuumDb: "",
+      spacingDb: "",
+      hexDb: "",
+      sleeveWidthDb: "",
+      braidsDb: "",
+      rangeDb: "",
       bend: 0,
       weight: 0,
       rollLength: 0,
