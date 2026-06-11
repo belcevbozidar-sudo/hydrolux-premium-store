@@ -319,23 +319,35 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
     return isNaN(f) ? 0 : f;
   };
 
-  // Normalize all keys of the params object to lowercase, trimmed
+  // Normalize all keys of the params object to lowercase, stripped of spaces and slashes
   const norm = {};
   for (let key in params) {
     if (params[key] !== undefined && params[key] !== null) {
-      norm[key.trim().toLowerCase().replace(/\s+/g, ' ')] = params[key].toString().trim();
+      const cleanKey = key.trim().toLowerCase().replace(/[\s\/]/g, '');
+      norm[cleanKey] = params[key].toString().trim();
     }
   }
 
+  const getVal = (list) => {
+    for (let k of list) {
+      const clean = k.toLowerCase().replace(/[\s\/]/g, '');
+      if (norm[clean] !== undefined) return norm[clean];
+    }
+    return null;
+  };
+
   // 1. Inner diameter / Вътрешен диаметър
-  let inner = norm["вътрешен диаметър (мм)"] || 
-               norm["вътрешен размер (mm)"] || 
-               norm["вътрешен диаметър (цол)"] || 
-               norm["вътрешен диаметър (inch)"] || 
-               norm["dn"] || 
-               norm["inmm"] || 
-               norm["idmm"] ||
-               norm["вътр. ø (мм)"];
+  let inner = getVal([
+    "вътрешен диаметър (мм)",
+    "вътрешен размер (mm)",
+    "вътрешен диаметър (цол)",
+    "вътрешен диаметър (inch)",
+    "dn",
+    "inmm",
+    "idmm",
+    "вътр. ø (мм)",
+    "id mm"
+  ]);
   if (inner) {
     const f = parseFloat(inner);
     v.innerDb = isNaN(f) ? inner : f;
@@ -344,12 +356,15 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
   }
   
   // 2. Inch size / Инчов размер
-  let inch = norm["inch"] || 
-             norm["цол"] || 
-             norm["инч"] || 
-             norm["ininch"] || 
-             norm["вътрешен диаметър (цол)"] || 
-             norm["вътрешен диаметър (inch)"];
+  let inch = getVal([
+    "inch",
+    "цол",
+    "инч",
+    "ininch",
+    "вътрешен диаметър (цол)",
+    "вътрешен диаметър (inch)",
+    "id inch"
+  ]);
   if (inch) {
     if (inch === "-") {
       v.inch = "";
@@ -361,13 +376,16 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
   }
   
   // 3. Outer diameter / Външен диаметър
-  let outer = norm["външен диаметър (мм)"] || 
-              norm["външен размер (mm)"] || 
-              norm["външен размер (мм)"] ||
-              norm["външен диаметър (inch)"] || 
-              norm["outmm"] || 
-              norm["odmm"] ||
-              norm["външ. ø (мм)"];
+  let outer = getVal([
+    "външен диаметър (мм)",
+    "външен размер (mm)",
+    "външен размер (мм)",
+    "външен диаметър (inch)",
+    "outmm",
+    "odmm",
+    "външ. ø (мм)",
+    "od mm"
+  ]);
   if (outer) {
     v.outerDb = pFloat(outer);
   } else {
@@ -375,11 +393,14 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
   }
   
   // 4. Pressure / Работно налягане
-  let pressure = norm["работно налягане (bar)"] || 
-                 norm["работно налягане"] || 
-                 norm["работно нал."] || 
-                 norm["wpbar"] || 
-                 norm["maxbar"];
+  let pressure = getVal([
+    "работно налягане (bar)",
+    "работно налягане",
+    "работно нал.",
+    "wpbar",
+    "maxbar",
+    "wp bar"
+  ]);
   if (pressure) {
     v.pressure = pFloat(pressure);
   } else {
@@ -387,10 +408,12 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
   }
   
   // 5. Bending radius / Радиус огъване
-  let bend = norm["радиус на огъване (мм)"] || 
-             norm["радиус на огъване"] || 
-             norm["радиус огъване"] || 
-             norm["radiusog"];
+  let bend = getVal([
+    "радиус на огъване (мм)",
+    "радиус на огъване",
+    "радиус огъване",
+    "radiusog"
+  ]);
   if (bend) {
     v.bend = pFloat(bend);
   } else {
@@ -398,9 +421,12 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
   }
   
   // 6. Weight / Тегло
-  let weight = norm["тегло (кг/м)"] || 
-               norm["тегло"] || 
-               norm["wgm"];
+  let weight = getVal([
+    "тегло (кг/м)",
+    "тегло",
+    "wgm",
+    "w g/m"
+  ]);
   if (weight) {
     v.weight = pFloat(weight);
   } else {
@@ -408,11 +434,13 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
   }
   
   // 7. Roll length / Дължина на ролката
-  let rollLength = norm["дължина линейна (m)"] || 
-                   norm["дължина на ролката"] || 
-                   norm["дълж. ролка"] || 
-                   norm["l"] || 
-                   norm["sizeroll"];
+  let rollLength = getVal([
+    "дължина линейна (m)",
+    "дължина на ролката",
+    "дълж. ролка",
+    "l",
+    "sizeroll"
+  ]);
   if (rollLength) {
     v.rollLength = pFloat(rollLength);
   } else {
