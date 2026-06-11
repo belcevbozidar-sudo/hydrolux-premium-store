@@ -20,22 +20,85 @@ const HydroluxBackend = {
     return await response.json();
   },
 
+  async compressString(str) {
+    if (typeof CompressionStream === "undefined") {
+      return str;
+    }
+    const stream = new Blob([str]).stream();
+    const compressedStream = stream.pipeThrough(new CompressionStream("gzip"));
+    const response = new Response(compressedStream);
+    const buffer = await response.arrayBuffer();
+    let binary = "";
+    const bytes = new Uint8Array(buffer);
+    const len = bytes.byteLength;
+    for (let i = 0; i < len; i++) {
+      binary += String.fromCharCode(bytes[i]);
+    }
+    return btoa(binary);
+  },
+
+  async decompressString(base64) {
+    if (typeof DecompressionStream === "undefined") {
+      throw new Error("DecompressionStream is not supported in this browser.");
+    }
+    const binaryString = atob(base64);
+    const len = binaryString.length;
+    const bytes = new Uint8Array(len);
+    for (let i = 0; i < len; i++) {
+      bytes[i] = binaryString.charCodeAt(i);
+    }
+    const stream = new Blob([bytes.buffer]).stream();
+    const decompressedStream = stream.pipeThrough(new DecompressionStream("gzip"));
+    const response = new Response(decompressedStream);
+    return await response.text();
+  },
+
   async getState() {
     const result = await this.request("/api/state");
-    return result.state || {};
+    const state = result.state || {};
+    
+    if (state.products && state.products.__compressed) {
+      const decompressed = await this.decompressString(state.products.data);
+      state.products = JSON.parse(decompressed);
+    }
+    if (state.categories && state.categories.__compressed) {
+      const decompressed = await this.decompressString(state.categories.data);
+      state.categories = JSON.parse(decompressed);
+    }
+    
+    return state;
   },
 
   async saveState(values) {
+    const clonedValues = { ...values };
+    
+    if (clonedValues.products && typeof CompressionStream !== "undefined") {
+      const jsonStr = JSON.stringify(clonedValues.products);
+      const compressed = await this.compressString(jsonStr);
+      clonedValues.products = { __compressed: true, data: compressed };
+    }
+    if (clonedValues.categories && typeof CompressionStream !== "undefined") {
+      const jsonStr = JSON.stringify(clonedValues.categories);
+      const compressed = await this.compressString(jsonStr);
+      clonedValues.categories = { __compressed: true, data: compressed };
+    }
+
     return await this.request("/api/state", {
       method: "POST",
-      body: values,
+      body: clonedValues,
     });
   },
 
   async saveStateValue(key, value) {
+    let finalValue = value;
+    if ((key === "products" || key === "categories") && value && typeof CompressionStream !== "undefined") {
+      const jsonStr = JSON.stringify(value);
+      const compressed = await this.compressString(jsonStr);
+      finalValue = { __compressed: true, data: compressed };
+    }
     return await this.request("/api/state-value", {
       method: "POST",
-      body: { key, value },
+      body: { key, value: finalValue },
     });
   },
 
