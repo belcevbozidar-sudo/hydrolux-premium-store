@@ -195,10 +195,34 @@ for (let row of tables.category) {
   if (status !== "1") continue;
 
   const name = categoryDescMap.get(id) || `Категория ${id}`;
+  let catImage = resolveImageUrl(img);
+  const catImageOverrides = {
+    "154": "assets/cat_154.jpg",
+    "168": "assets/cat_168.jpg",
+    "67": "assets/cat_67.jpg",
+    "73": "assets/cat_73.jpg",
+    "74": "assets/cat_74.jpg",
+    "60": "assets/cat_air_hoses.webp",
+    "61": "assets/cat_fuel_oil_hoses.webp",
+    "62": "assets/cat_coolant_hoses.webp",
+    "63": "assets/cat_silicone_hoses.webp",
+    "64": "assets/cat_pvc_hoses.webp",
+    "70": "assets/cat_polyurethane_hoses.webp",
+    "69": "assets/cat_hose_accessories.webp",
+    "68": "assets/cat_food_hoses.webp",
+    "66": "assets/cat_gas_hoses.webp",
+    "65": "assets/cat_hydraulic_fittings.webp",
+    "59": "assets/cat_water_hoses.webp",
+    "71": "assets/cat_pneumatic_tubes.webp"
+  };
+  if (catImageOverrides[id]) {
+    catImage = catImageOverrides[id];
+  }
+
   categoryMap.set(id, {
     id: id,
     name: name,
-    image: resolveImageUrl(img),
+    image: catImage,
     parentId: parentId,
     subcategories: []
   });
@@ -379,7 +403,30 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
     "id mm",
     "маркуч dn",
     "размер dn",
-    "dn (мм)"
+    "dn (мм)",
+    "диаметър на маркуча (мм)",
+    "диаметър на маркуча (mm)",
+    "вътрешен размер (dn)",
+    "вътрешен диаметър dn",
+    "вътрешен диаметър mm",
+    "вътрешен размер на тръба mm",
+    "вътрешен размер на фланец mm",
+    "за маркуч dn (mm)",
+    "за накрайник dn",
+    "storz dn",
+    "guilemin dn",
+    "фланец dn",
+    "d1",
+    "d (mm)",
+    "d1 (mm)",
+    "d2 (mm)",
+    "d3",
+    "размер",
+    "размер (mm)",
+    "за тръба (mm)",
+    "условен размер",
+    "вътрешен ø mm кислород",
+    "вътрешен ø mm ацетилен"
   ]);
   if (inner) {
     const f = parseFloat(inner);
@@ -403,7 +450,16 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
     "резба bspp",
     "bspp",
     "резба npt",
-    "npt"
+    "npt",
+    "резба inch",
+    "резба rd",
+    "резба r(bspt)",
+    "резба r",
+    "резба ibc",
+    "резба 1",
+    "резба 2",
+    "за маркуч inch",
+    "за маркуч dn (inch)"
   ]);
   if (inch) {
     if (inch === "-") {
@@ -424,7 +480,18 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
     "outmm",
     "odmm",
     "външ. ø (мм)",
-    "od mm"
+    "od mm",
+    "външен диаметър",
+    "външен диаметър mm",
+    "външен диаметър dn",
+    "d2",
+    "външен ø mm",
+    "външен размер на тръба mm",
+    "външен размер (mm) min",
+    "външен размер (mm) max",
+    "външен размер-min (мм)",
+    "външен размер-max (мм)",
+    "оплетка (мм)"
   ]);
   if (outer) {
     v.outerDb = pFloat(outer);
@@ -439,7 +506,14 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
     "работно нал.",
     "wpbar",
     "maxbar",
-    "wp bar"
+    "wp bar",
+    "работно налятане (bar)",
+    "работноналягане (bar)",
+    "максимално работно налягане (bar)",
+    "налягане (bar)",
+    "работно налягане bar",
+    "работно налягане (psi)",
+    "bar"
   ]);
   if (pressure) {
     v.pressure = pFloat(pressure);
@@ -452,7 +526,13 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
     "радиус на огъване (мм)",
     "радиус на огъване",
     "радиус огъване",
-    "radiusog"
+    "radiusog",
+    "радиус на огъенае (mm)",
+    "минимален радиус на огъване (mm)",
+    "минимален радиус на огъване (мм)",
+    "радиус на огъване в mm",
+    "адиус на огъване (mm)",
+    "радиус на огъване (bar)"
   ]);
   if (bend) {
     v.bend = pFloat(bend);
@@ -465,7 +545,17 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
     "тегло (кг/м)",
     "тегло",
     "wgm",
-    "w g/m"
+    "w g/m",
+    "тегло (kg/m)",
+    "тегло(kg/m)",
+    "тегло (g/m)",
+    "тегло (кг/г)",
+    "тегло (kg/g)",
+    "тегло kg/mm",
+    "тегло (кг/m)",
+    "тегло kg / m",
+    "тегло (м)",
+    "тегло (мм)"
   ]);
   if (weight) {
     v.weight = pFloat(weight);
@@ -480,12 +570,110 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
     "дълж. ролка",
     "l",
     "sizeroll",
-    "размер на ролка (м)"
+    "размер на ролка (м)",
+    "размер на ролка (m)",
+    "размер на ролката",
+    "размер на ролката (m)",
+    "размер на ролката(m)",
+    "дължина на ролката (m)",
+    "ролка (m)",
+    "l (m)",
+    "дължина на рулата",
+    "количество на ролки в метри",
+    "дължина на маркуча (m)"
   ]);
   if (rollLength) {
     v.rollLength = pFloat(rollLength);
   } else {
     v.rollLength = 0;
+  }
+  
+  // 7a. Wall thickness / Дебелина на стената
+  let wallMin = getVal([
+    "дебелина на стената min (mm)",
+    "дебелина на стената min (мм)",
+    "дебелина на стената - min"
+  ]);
+  let wallMax = getVal([
+    "дебелина на стената max (mm)",
+    "дебелина на стената max (мм)",
+    "дебелина на стената - max"
+  ]);
+  let wall = getVal([
+    "дебелина на стената (mm)",
+    "дебелина на стената (мм)",
+    "дебелина на стената",
+    "стена (мм)",
+    "стена(мм)",
+    "дебелина на стената mm кислород",
+    "дебелина на стената mm ацетилен"
+  ]);
+
+  if (wallMin && wallMax) {
+    v.wallDb = `${wallMin}-${wallMax}`;
+  } else if (wall) {
+    v.wallDb = wall;
+  } else if (wallMin) {
+    v.wallDb = wallMin;
+  } else if (wallMax) {
+    v.wallDb = wallMax;
+  } else {
+    v.wallDb = "";
+  }
+
+  // 7b. Vacuum / Вакуум
+  let vacuumVal = getVal([
+    "вакуум (%)",
+    "вакуум %",
+    "вакуум (bar)",
+    "275 вакуум (bar)",
+    "вакуум (m h2o)",
+    "вакуум (23 °c m/h2o)",
+    "вакуум (h2o)",
+    "вакуум (мм)",
+    "вакуум (м)",
+    "вакуум"
+  ]);
+
+  if (vacuumVal && vacuumVal !== "-") {
+    let matchedKey = "";
+    for (let k of [
+      "вакуум (%)", "вакуум %", "вакуум (bar)", "275 вакуум (bar)",
+      "вакуум (m h2o)", "вакуум (23 °c m/h2o)", "вакуум (h2o)",
+      "вакуум (мм)", "вакуум (м)", "вакуум"
+    ]) {
+      if (norm[normalizeKey(k)] !== undefined) {
+        matchedKey = k;
+        break;
+      }
+    }
+    
+    if (matchedKey.includes("%")) {
+      v.vacuumDb = `${vacuumVal}%`;
+    } else if (matchedKey.includes("bar")) {
+      v.vacuumDb = `${vacuumVal} Bar`;
+    } else if (matchedKey.includes("h2o")) {
+      v.vacuumDb = `${vacuumVal} m H2O`;
+    } else if (matchedKey.includes("(мм)")) {
+      v.vacuumDb = `${vacuumVal} m H2O`;
+    } else if (matchedKey.includes("(м)")) {
+      v.vacuumDb = `${vacuumVal} m H2O`;
+    } else {
+      const num = parseFloat(vacuumVal);
+      if (!isNaN(num)) {
+        if (num > 10) {
+          v.vacuumDb = `${vacuumVal}%`;
+        } else if (num > 0 && num < 1) {
+          v.vacuumDb = `${vacuumVal} Bar`;
+        } else {
+          v.vacuumDb = `${vacuumVal} m H2O`;
+        }
+      } else {
+        v.vacuumDb = vacuumVal;
+      }
+    }
+  } else {
+    v.vacuumDb = "";
   }
   
   let price = basePrice;
@@ -572,7 +760,9 @@ for (let row of tables.product) {
       innerDb: 0,
       inch: "",
       outerDb: 0,
+      wallDb: "",
       pressure: 0,
+      vacuumDb: "",
       bend: 0,
       weight: 0,
       rollLength: 0,

@@ -328,7 +328,10 @@
           const itemTotal = parseFloat(item.priceEur) * parseInt(item.quantity);
           return `
             <div class="invoice-item-row">
-              <span>${idx + 1}. ${item.name} ${item.variantName ? `(${item.variantName})` : ''}</span>
+              <span>
+                ${idx + 1}. ${item.name} ${item.variantName ? `(${item.variantName})` : ''}
+                ${item.specsText ? `<br><small style="color: var(--text-muted); font-size: 0.75rem; display: block; margin-top: 2px;">${item.specsText}</small>` : ''}
+              </span>
               <span>${item.quantity} x ${item.priceEur.toFixed(2)} €</span>
               <strong>${itemTotal.toFixed(2)} €</strong>
             </div>

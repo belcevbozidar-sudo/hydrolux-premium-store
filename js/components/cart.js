@@ -81,12 +81,24 @@ const Cart = {
       const variant = this.findVariant(product, variantCode);
       if (variant) {
         priceEur = parseFloat(variant.priceEur) || 0;
-        const diameter = variant.innerDb !== undefined && variant.innerDb !== "" ? `ø ${variant.innerDb}мм` : variantCode;
-        const inch = variant.inch ? ` (${variant.inch})` : "";
-        variantName = `Размер: ${diameter}${inch}`;
+        let sizeText = "";
+        if (variant.innerDb && parseFloat(variant.innerDb) > 0) {
+          sizeText = `ø ${variant.innerDb}мм`;
+        } else if (variant.outerDb && parseFloat(variant.outerDb) > 0) {
+          sizeText = `Външ. ø ${variant.outerDb}мм`;
+        } else if (variant.inch) {
+          sizeText = variant.inch;
+        } else {
+          sizeText = variantCode;
+        }
+        const inch = (variant.inch && sizeText !== variant.inch) ? ` (${variant.inch})` : "";
+        variantName = `Размер: ${sizeText}${inch}`;
+
         const specs = [];
-        if (variant.pressure !== undefined && variant.pressure !== "") specs.push(`Работно налягане: ${variant.pressure} Bar`);
-        if (variant.rollLength !== undefined && variant.rollLength !== "") specs.push(`Дължина на ролката: ${variant.rollLength}м`);
+        if (variant.pressure !== undefined && variant.pressure !== "" && parseFloat(variant.pressure) > 0) specs.push(`Работно налягане: ${variant.pressure} Bar`);
+        if (variant.wallDb !== undefined && variant.wallDb !== "") specs.push(`Стена: ${variant.wallDb} мм`);
+        if (variant.vacuumDb !== undefined && variant.vacuumDb !== "") specs.push(`Вакуум: ${variant.vacuumDb}`);
+        if (variant.rollLength !== undefined && variant.rollLength !== "" && parseFloat(variant.rollLength) > 0) specs.push(`Дължина на ролката: ${variant.rollLength}м`);
         specsText = specs.join(" | ");
       }
     } else if (product.isCustomHose) {
