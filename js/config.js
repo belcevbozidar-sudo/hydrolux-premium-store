@@ -796,10 +796,10 @@ const CONFIG = {
       {
         "code": "185АА-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 35,
         "pressure": 20,
-        "bend": 0,
+        "bend": 200,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 14.5
@@ -807,10 +807,10 @@ const CONFIG = {
       {
         "code": "185АА-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 28,
         "pressure": 20,
-        "bend": 0,
+        "bend": 152,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 9.5
@@ -818,10 +818,10 @@ const CONFIG = {
       {
         "code": "185АА-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 24,
         "pressure": 20,
-        "bend": 0,
+        "bend": 128,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 7.5
@@ -871,9 +871,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "OIL P14-1",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 38,
+        "inch": "1.1/2\"",
+        "outerDb": 52,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -882,9 +882,9 @@ const CONFIG = {
       },
       {
         "code": "OIL P14-2",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 32,
+        "inch": "1.1/4\"",
+        "outerDb": 42,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -893,9 +893,9 @@ const CONFIG = {
       },
       {
         "code": "OIL P14-3",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 28,
+        "inch": "1.1/8\"",
+        "outerDb": 38,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -904,9 +904,9 @@ const CONFIG = {
       },
       {
         "code": "OIL P14-4",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 22,
+        "inch": "7/8\"",
+        "outerDb": 30,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -964,7 +964,7 @@ const CONFIG = {
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 20,
-        "bend": 0,
+        "bend": 250,
         "weight": 0.65,
         "rollLength": 50,
         "priceEur": 12.55
@@ -975,7 +975,7 @@ const CONFIG = {
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 20,
-        "bend": 0,
+        "bend": 190,
         "weight": 0.5,
         "rollLength": 50,
         "priceEur": 8.5
@@ -986,7 +986,7 @@ const CONFIG = {
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 20,
-        "bend": 0,
+        "bend": 160,
         "weight": 0.29,
         "rollLength": 50,
         "priceEur": 6.7
@@ -997,7 +997,7 @@ const CONFIG = {
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 20,
-        "bend": 0,
+        "bend": 130,
         "weight": 0.24,
         "rollLength": 50,
         "priceEur": 5.5
@@ -1008,7 +1008,7 @@ const CONFIG = {
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 20,
-        "bend": 0,
+        "bend": 100,
         "weight": 0.2,
         "rollLength": 50,
         "priceEur": 3.8
@@ -1019,7 +1019,7 @@ const CONFIG = {
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 20,
-        "bend": 0,
+        "bend": 80,
         "weight": 0.17,
         "rollLength": 50,
         "priceEur": 3.3
@@ -1030,7 +1030,7 @@ const CONFIG = {
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 20,
-        "bend": 0,
+        "bend": 60,
         "weight": 0.13,
         "rollLength": 50,
         "priceEur": 2.65
@@ -1088,9 +1088,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "APD840-1",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 20,
+        "inch": "3/4\"",
+        "outerDb": 24,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -1099,9 +1099,9 @@ const CONFIG = {
       },
       {
         "code": "APD840-2",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 25,
+        "inch": "1\"",
+        "outerDb": 31,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -1110,9 +1110,9 @@ const CONFIG = {
       },
       {
         "code": "APD840-3",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 16,
+        "inch": "5/8\"",
+        "outerDb": 20,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -1121,9 +1121,9 @@ const CONFIG = {
       },
       {
         "code": "APD840-4",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 16,
+        "inch": "5/8\"",
+        "outerDb": 20,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -1132,9 +1132,9 @@ const CONFIG = {
       },
       {
         "code": "APD840-5",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 12,
+        "inch": "1/2\"",
+        "outerDb": 17,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -1143,9 +1143,9 @@ const CONFIG = {
       },
       {
         "code": "APD840-6",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 10,
+        "inch": "3/8\"",
+        "outerDb": 13,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -1154,9 +1154,9 @@ const CONFIG = {
       },
       {
         "code": "APD840-7",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 8,
+        "inch": "5/16\"",
+        "outerDb": 10,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -1165,9 +1165,9 @@ const CONFIG = {
       },
       {
         "code": "APD840-8",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 7,
+        "inch": "9/32\"",
+        "outerDb": 10,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -1176,9 +1176,9 @@ const CONFIG = {
       },
       {
         "code": "APD840-9",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 6,
+        "inch": "1/4\"",
+        "outerDb": 8,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -1187,9 +1187,9 @@ const CONFIG = {
       },
       {
         "code": "APD840-10",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 5,
+        "inch": "3/16\"",
+        "outerDb": 8,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -1198,9 +1198,9 @@ const CONFIG = {
       },
       {
         "code": "APD840-11",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 4,
+        "inch": "1/6\"",
+        "outerDb": 6,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -1242,10 +1242,10 @@ const CONFIG = {
       {
         "code": "PETROCAR 20 L/L-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 36,
         "pressure": 20,
-        "bend": 0,
+        "bend": 200,
         "weight": 0.65,
         "rollLength": 0,
         "priceEur": 24.45
@@ -1253,8 +1253,8 @@ const CONFIG = {
       {
         "code": "PETROCAR 20 L/L-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/8\"",
+        "outerDb": 38,
         "pressure": 20,
         "bend": 0,
         "weight": 0,
@@ -1264,10 +1264,10 @@ const CONFIG = {
       {
         "code": "PETROCAR 20 L/L-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "7/8\"",
+        "outerDb": 29,
         "pressure": 20,
-        "bend": 0,
+        "bend": 140,
         "weight": 0.4,
         "rollLength": 0,
         "priceEur": 30.7
@@ -1275,10 +1275,10 @@ const CONFIG = {
       {
         "code": "PETROCAR 20 L/L-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 29,
         "pressure": 20,
-        "bend": 0,
+        "bend": 140,
         "weight": 0.4,
         "rollLength": 0,
         "priceEur": 18.3
@@ -1286,10 +1286,10 @@ const CONFIG = {
       {
         "code": "PETROCAR 20 L/L-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 26,
         "pressure": 20,
-        "bend": 0,
+        "bend": 120,
         "weight": 0.35,
         "rollLength": 0,
         "priceEur": 15.6
@@ -1297,10 +1297,10 @@ const CONFIG = {
       {
         "code": "PETROCAR 20 L/L-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 17,
         "pressure": 20,
-        "bend": 0,
+        "bend": 75,
         "weight": 0.2,
         "rollLength": 0,
         "priceEur": 7.1
@@ -1308,10 +1308,10 @@ const CONFIG = {
       {
         "code": "PETROCAR 20 L/L-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 17,
         "pressure": 20,
-        "bend": 0,
+        "bend": 75,
         "weight": 0.2,
         "rollLength": 0,
         "priceEur": 9.45
@@ -1320,9 +1320,9 @@ const CONFIG = {
         "code": "PETROCAR 20 L/L-8",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 22,
         "pressure": 20,
-        "bend": 0,
+        "bend": 115,
         "weight": 0.29,
         "rollLength": 0,
         "priceEur": 11.05
@@ -1330,10 +1330,10 @@ const CONFIG = {
       {
         "code": "PETROCAR 20 L/L-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 13,
         "pressure": 20,
-        "bend": 0,
+        "bend": 40,
         "weight": 0.14,
         "rollLength": 0,
         "priceEur": 5.7
@@ -1341,10 +1341,10 @@ const CONFIG = {
       {
         "code": "PETROCAR 20 L/L-10",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/16\"",
+        "outerDb": 15,
         "pressure": 20,
-        "bend": 0,
+        "bend": 60,
         "weight": 0.17,
         "rollLength": 0,
         "priceEur": 5.95
@@ -1352,10 +1352,10 @@ const CONFIG = {
       {
         "code": "PETROCAR 20 L/L-11",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 10,
         "pressure": 20,
-        "bend": 0,
+        "bend": 40,
         "weight": 0.7,
         "rollLength": 0,
         "priceEur": 5.45
@@ -1593,9 +1593,9 @@ const CONFIG = {
         "code": "TUC 20-1",
         "innerDb": 0,
         "inch": "5/8\"",
-        "outerDb": 0,
+        "outerDb": 24,
         "pressure": 20,
-        "bend": 0,
+        "bend": 100,
         "weight": 0.42,
         "rollLength": 50,
         "priceEur": 8.65
@@ -1604,9 +1604,9 @@ const CONFIG = {
         "code": "TUC 20-2",
         "innerDb": 0,
         "inch": "1/2\"",
-        "outerDb": 0,
+        "outerDb": 20,
         "pressure": 20,
-        "bend": 0,
+        "bend": 80,
         "weight": 0.32,
         "rollLength": 50,
         "priceEur": 6.55
@@ -1615,9 +1615,9 @@ const CONFIG = {
         "code": "TUC 20-3",
         "innerDb": 0,
         "inch": "3/8\"",
-        "outerDb": 0,
+        "outerDb": 17,
         "pressure": 20,
-        "bend": 0,
+        "bend": 60,
         "weight": 0.28,
         "rollLength": 50,
         "priceEur": 5.15
@@ -1626,9 +1626,9 @@ const CONFIG = {
         "code": "TUC 20-4",
         "innerDb": 0,
         "inch": "1/4\"",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 20,
-        "bend": 0,
+        "bend": 40,
         "weight": 0.17,
         "rollLength": 50,
         "priceEur": 3.75
@@ -1637,9 +1637,9 @@ const CONFIG = {
         "code": "TUC 20-5",
         "innerDb": 0,
         "inch": "5/16\"",
-        "outerDb": 0,
+        "outerDb": 15,
         "pressure": 20,
-        "bend": 0,
+        "bend": 50,
         "weight": 0.21,
         "rollLength": 50,
         "priceEur": 4.25
@@ -1790,9 +1790,9 @@ const CONFIG = {
         "code": "TUC 10-1",
         "innerDb": 0,
         "inch": "1\"",
-        "outerDb": 0,
+        "outerDb": 35,
         "pressure": 10,
-        "bend": 0,
+        "bend": 150,
         "weight": 0.61,
         "rollLength": 50,
         "priceEur": 13.4
@@ -1801,9 +1801,9 @@ const CONFIG = {
         "code": "TUC 10-2",
         "innerDb": 0,
         "inch": "3/4\"",
-        "outerDb": 0,
+        "outerDb": 27,
         "pressure": 10,
-        "bend": 0,
+        "bend": 120,
         "weight": 0.37,
         "rollLength": 50,
         "priceEur": 9.9
@@ -1812,9 +1812,9 @@ const CONFIG = {
         "code": "TUC 10-3",
         "innerDb": 0,
         "inch": "1/2\"",
-        "outerDb": 0,
+        "outerDb": 20,
         "pressure": 10,
-        "bend": 0,
+        "bend": 80,
         "weight": 0.23,
         "rollLength": 50,
         "priceEur": 5.85
@@ -2250,7 +2250,7 @@ const CONFIG = {
         "inch": "1\"",
         "outerDb": 32,
         "pressure": 6,
-        "bend": 0,
+        "bend": 150,
         "weight": 0.46,
         "rollLength": 50,
         "priceEur": 17.25
@@ -2261,7 +2261,7 @@ const CONFIG = {
         "inch": "7/8\"",
         "outerDb": 29,
         "pressure": 6,
-        "bend": 0,
+        "bend": 135,
         "weight": 0.41,
         "rollLength": 50,
         "priceEur": 14.5
@@ -2269,10 +2269,10 @@ const CONFIG = {
       {
         "code": "FKDR-3",
         "innerDb": 20,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 27,
         "pressure": 6,
-        "bend": 0,
+        "bend": 120,
         "weight": 0.38,
         "rollLength": 50,
         "priceEur": 12.8
@@ -2283,7 +2283,7 @@ const CONFIG = {
         "inch": "3/4\"",
         "outerDb": 26,
         "pressure": 6,
-        "bend": 0,
+        "bend": 115,
         "weight": 0.36,
         "rollLength": 50,
         "priceEur": 10.85
@@ -2291,10 +2291,10 @@ const CONFIG = {
       {
         "code": "FKDR-5",
         "innerDb": 18,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 25,
         "pressure": 6,
-        "bend": 0,
+        "bend": 110,
         "weight": 0.35,
         "rollLength": 50,
         "priceEur": 10.75
@@ -2305,7 +2305,7 @@ const CONFIG = {
         "inch": "5/8\"",
         "outerDb": 23,
         "pressure": 6,
-        "bend": 0,
+        "bend": 95,
         "weight": 0.31,
         "rollLength": 50,
         "priceEur": 8.25
@@ -2313,10 +2313,10 @@ const CONFIG = {
       {
         "code": "FKDR-7",
         "innerDb": 13,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 20,
         "pressure": 6,
-        "bend": 0,
+        "bend": 80,
         "weight": 0.27,
         "rollLength": 50,
         "priceEur": 0
@@ -2327,7 +2327,7 @@ const CONFIG = {
         "inch": "3/8\"",
         "outerDb": 22,
         "pressure": 6,
-        "bend": 0,
+        "bend": 90,
         "weight": 0.3,
         "rollLength": 50,
         "priceEur": 8.65
@@ -2338,7 +2338,7 @@ const CONFIG = {
         "inch": "9/16\"",
         "outerDb": 21,
         "pressure": 6,
-        "bend": 0,
+        "bend": 85,
         "weight": 0.28,
         "rollLength": 50,
         "priceEur": 8.6
@@ -2349,7 +2349,7 @@ const CONFIG = {
         "inch": "1/2\"",
         "outerDb": 19,
         "pressure": 6,
-        "bend": 0,
+        "bend": 70,
         "weight": 0.25,
         "rollLength": 50,
         "priceEur": 7.7
@@ -2357,10 +2357,10 @@ const CONFIG = {
       {
         "code": "FKDR-11",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 13,
         "pressure": 20,
-        "bend": 0,
+        "bend": 40,
         "weight": 0.15,
         "rollLength": 100,
         "priceEur": 7.95
@@ -2406,7 +2406,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 12,
-        "bend": 0,
+        "bend": 120,
         "weight": 0.21,
         "rollLength": 0,
         "priceEur": 10.9
@@ -2417,7 +2417,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 12,
-        "bend": 0,
+        "bend": 100,
         "weight": 0.16,
         "rollLength": 0,
         "priceEur": 8.8
@@ -2425,10 +2425,10 @@ const CONFIG = {
       {
         "code": "FUB-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 12,
-        "bend": 0,
+        "bend": 95,
         "weight": 0.15,
         "rollLength": 0,
         "priceEur": 0
@@ -2439,7 +2439,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 12,
-        "bend": 0,
+        "bend": 90,
         "weight": 0.14,
         "rollLength": 0,
         "priceEur": 0
@@ -2447,10 +2447,10 @@ const CONFIG = {
       {
         "code": "FUB-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 12,
-        "bend": 0,
+        "bend": 80,
         "weight": 0.13,
         "rollLength": 0,
         "priceEur": 8.3
@@ -2461,7 +2461,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 12,
-        "bend": 0,
+        "bend": 70,
         "weight": 0.12,
         "rollLength": 0,
         "priceEur": 8.6
@@ -2472,7 +2472,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 12,
-        "bend": 0,
+        "bend": 75,
         "weight": 0.13,
         "rollLength": 0,
         "priceEur": 0
@@ -2480,10 +2480,10 @@ const CONFIG = {
       {
         "code": "FUB-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 12,
-        "bend": 0,
+        "bend": 63,
         "weight": 0.1,
         "rollLength": 0,
         "priceEur": 0
@@ -2494,7 +2494,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 12,
-        "bend": 0,
+        "bend": 60,
         "weight": 0.1,
         "rollLength": 0,
         "priceEur": 5.8
@@ -2505,7 +2505,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 12,
-        "bend": 0,
+        "bend": 55,
         "weight": 0.11,
         "rollLength": 0,
         "priceEur": 0
@@ -2513,10 +2513,10 @@ const CONFIG = {
       {
         "code": "FUB-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/8\"",
         "outerDb": 0,
         "pressure": 12,
-        "bend": 0,
+        "bend": 32,
         "weight": 0.08,
         "rollLength": 0,
         "priceEur": 4.2
@@ -2527,7 +2527,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 12,
-        "bend": 0,
+        "bend": 44,
         "weight": 0.11,
         "rollLength": 0,
         "priceEur": 4.4
@@ -2535,10 +2535,10 @@ const CONFIG = {
       {
         "code": "FUB-13",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/16\"",
         "outerDb": 0,
         "pressure": 12,
-        "bend": 0,
+        "bend": 50,
         "weight": 0.11,
         "rollLength": 0,
         "priceEur": 5.3
@@ -2581,8 +2581,8 @@ const CONFIG = {
     "variants": [
       {
         "code": "URARTU ST - WHITE-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 203,
+        "inch": "8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -2592,8 +2592,8 @@ const CONFIG = {
       },
       {
         "code": "URARTU ST - WHITE-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 102,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -2603,7 +2603,7 @@ const CONFIG = {
       },
       {
         "code": "URARTU ST - WHITE-3",
-        "innerDb": 0,
+        "innerDb": 60,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -2614,8 +2614,8 @@ const CONFIG = {
       },
       {
         "code": "URARTU ST - WHITE-4",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -2625,8 +2625,8 @@ const CONFIG = {
       },
       {
         "code": "URARTU ST - WHITE-5",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 25,
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -2636,7 +2636,7 @@ const CONFIG = {
       },
       {
         "code": "URARTU ST - WHITE-6",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -2647,8 +2647,8 @@ const CONFIG = {
       },
       {
         "code": "URARTU ST - WHITE-7",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 32,
+        "inch": "1 ¼\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -2701,9 +2701,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "Vinylfrut-1",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 8,
+        "inch": "5/16\"",
+        "outerDb": 14,
         "pressure": 50,
         "bend": 0,
         "weight": 0,
@@ -2712,9 +2712,9 @@ const CONFIG = {
       },
       {
         "code": "Vinylfrut-2",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 25,
+        "inch": "1\"",
+        "outerDb": 34,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
@@ -2723,9 +2723,9 @@ const CONFIG = {
       },
       {
         "code": "Vinylfrut-3",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 19,
+        "inch": "3/4\"",
+        "outerDb": 27,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
@@ -2734,9 +2734,9 @@ const CONFIG = {
       },
       {
         "code": "Vinylfrut-4",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 16,
+        "inch": "5/8\"",
+        "outerDb": 24,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
@@ -2745,9 +2745,9 @@ const CONFIG = {
       },
       {
         "code": "Vinylfrut-5",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 13,
+        "inch": "1/2\"",
+        "outerDb": 20,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
@@ -2756,9 +2756,9 @@ const CONFIG = {
       },
       {
         "code": "Vinylfrut-6",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 10,
+        "inch": "3/8\"",
+        "outerDb": 16,
         "pressure": 50,
         "bend": 0,
         "weight": 0,
@@ -2816,7 +2816,7 @@ const CONFIG = {
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 10,
-        "bend": 0,
+        "bend": 250,
         "weight": 0.48,
         "rollLength": 50,
         "priceEur": 10.85
@@ -2827,7 +2827,7 @@ const CONFIG = {
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 10,
-        "bend": 0,
+        "bend": 160,
         "weight": 0.28,
         "rollLength": 50,
         "priceEur": 6.1
@@ -2838,7 +2838,7 @@ const CONFIG = {
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 10,
-        "bend": 0,
+        "bend": 190,
         "weight": 0.33,
         "rollLength": 50,
         "priceEur": 6.9
@@ -2849,7 +2849,7 @@ const CONFIG = {
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 10,
-        "bend": 0,
+        "bend": 130,
         "weight": 0.24,
         "rollLength": 50,
         "priceEur": 0
@@ -2899,10 +2899,10 @@ const CONFIG = {
       {
         "code": "MP 20 EPDM-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ¼\"",
+        "outerDb": 44,
         "pressure": 20,
-        "bend": 0,
+        "bend": 200,
         "weight": 1.05,
         "rollLength": 50,
         "priceEur": 41.7
@@ -2910,10 +2910,10 @@ const CONFIG = {
       {
         "code": "MP 20 EPDM-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ½\"",
+        "outerDb": 50,
         "pressure": 20,
-        "bend": 0,
+        "bend": 250,
         "weight": 1.2,
         "rollLength": 50,
         "priceEur": 50.3
@@ -2921,10 +2921,10 @@ const CONFIG = {
       {
         "code": "MP 20 EPDM-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 35,
         "pressure": 20,
-        "bend": 0,
+        "bend": 150,
         "weight": 0.67,
         "rollLength": 50,
         "priceEur": 22.65
@@ -2932,10 +2932,10 @@ const CONFIG = {
       {
         "code": "MP 20 EPDM-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 28,
         "pressure": 20,
-        "bend": 0,
+        "bend": 115,
         "weight": 0.47,
         "rollLength": 50,
         "priceEur": 15.4
@@ -2943,10 +2943,10 @@ const CONFIG = {
       {
         "code": "MP 20 EPDM-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "8/8\"",
+        "outerDb": 24,
         "pressure": 20,
-        "bend": 0,
+        "bend": 100,
         "weight": 0.35,
         "rollLength": 100,
         "priceEur": 13.1
@@ -2954,10 +2954,10 @@ const CONFIG = {
       {
         "code": "MP 20 EPDM-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 21,
         "pressure": 20,
-        "bend": 0,
+        "bend": 80,
         "weight": 0.3,
         "rollLength": 100,
         "priceEur": 11.05
@@ -2965,10 +2965,10 @@ const CONFIG = {
       {
         "code": "MP 20 EPDM-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 17,
         "pressure": 20,
-        "bend": 0,
+        "bend": 60,
         "weight": 0.21,
         "rollLength": 100,
         "priceEur": 7.95
@@ -2976,10 +2976,10 @@ const CONFIG = {
       {
         "code": "MP 20 EPDM-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/16\"",
+        "outerDb": 15,
         "pressure": 20,
-        "bend": 0,
+        "bend": 50,
         "weight": 0.18,
         "rollLength": 100,
         "priceEur": 6.95
@@ -2987,10 +2987,10 @@ const CONFIG = {
       {
         "code": "MP 20 EPDM-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 13,
         "pressure": 20,
-        "bend": 0,
+        "bend": 40,
         "weight": 0.15,
         "rollLength": 100,
         "priceEur": 6
@@ -3046,8 +3046,8 @@ const CONFIG = {
       {
         "code": "Olympos ST-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 61,
         "pressure": 6,
         "bend": 0,
         "weight": 1.2,
@@ -3058,7 +3058,7 @@ const CONFIG = {
         "code": "Olympos ST-2",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 55,
         "pressure": 6,
         "bend": 0,
         "weight": 0.99,
@@ -3069,7 +3069,7 @@ const CONFIG = {
         "code": "Olympos ST-3",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 50,
         "pressure": 6,
         "bend": 0,
         "weight": 0.89,
@@ -3079,8 +3079,8 @@ const CONFIG = {
       {
         "code": "Olympos ST-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1½\"",
+        "outerDb": 48,
         "pressure": 7,
         "bend": 0,
         "weight": 0.88,
@@ -3090,8 +3090,8 @@ const CONFIG = {
       {
         "code": "Olympos ST-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1¼\"",
+        "outerDb": 40,
         "pressure": 8,
         "bend": 0,
         "weight": 0.58,
@@ -3151,7 +3151,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 400,
         "weight": 4.6,
         "rollLength": 0,
         "priceEur": 171.25
@@ -3162,7 +3162,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 350,
         "weight": 2.62,
         "rollLength": 0,
         "priceEur": 144.65
@@ -3173,7 +3173,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 315,
         "weight": 2.35,
         "rollLength": 0,
         "priceEur": 0
@@ -3184,7 +3184,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 245,
         "weight": 2.1,
         "rollLength": 0,
         "priceEur": 117.7
@@ -3195,7 +3195,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 245,
         "weight": 1.8,
         "rollLength": 0,
         "priceEur": 104.8
@@ -3206,7 +3206,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 210,
         "weight": 1.55,
         "rollLength": 0,
         "priceEur": 83.85
@@ -3217,7 +3217,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 195,
         "weight": 1.4,
         "rollLength": 0,
         "priceEur": 67.15
@@ -3228,7 +3228,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 175,
         "weight": 1.25,
         "rollLength": 0,
         "priceEur": 52.15
@@ -3239,7 +3239,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 155,
         "weight": 1.15,
         "rollLength": 0,
         "priceEur": 47.65
@@ -3250,7 +3250,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 140,
         "weight": 1.05,
         "rollLength": 0,
         "priceEur": 39
@@ -3261,7 +3261,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 125,
         "weight": 1,
         "rollLength": 0,
         "priceEur": 35.15
@@ -3272,7 +3272,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 123,
         "weight": 0.9,
         "rollLength": 0,
         "priceEur": 36.8
@@ -3283,7 +3283,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 115,
         "weight": 0.85,
         "rollLength": 0,
         "priceEur": 35.3
@@ -3294,7 +3294,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 90,
         "weight": 0.7,
         "rollLength": 0,
         "priceEur": 24.5
@@ -3305,7 +3305,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 95,
         "weight": 0.71,
         "rollLength": 0,
         "priceEur": 27.1
@@ -3316,7 +3316,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 105,
         "weight": 0.86,
         "rollLength": 0,
         "priceEur": 31.35
@@ -3327,7 +3327,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 105,
         "weight": 0.78,
         "rollLength": 0,
         "priceEur": 29.35
@@ -3338,7 +3338,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 88,
         "weight": 0.65,
         "rollLength": 0,
         "priceEur": 23.8
@@ -3349,7 +3349,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 85,
         "weight": 0.6,
         "rollLength": 0,
         "priceEur": 22.2
@@ -3360,7 +3360,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 66,
         "weight": 0.58,
         "rollLength": 0,
         "priceEur": 20.8
@@ -3371,7 +3371,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 77,
         "weight": 0.69,
         "rollLength": 0,
         "priceEur": 20.15
@@ -3382,7 +3382,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 71,
         "weight": 0.64,
         "rollLength": 0,
         "priceEur": 19.25
@@ -3393,7 +3393,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 63,
         "weight": 0.49,
         "rollLength": 0,
         "priceEur": 18.55
@@ -3404,7 +3404,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 56,
         "weight": 0.46,
         "rollLength": 0,
         "priceEur": 17.3
@@ -3415,7 +3415,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 53,
         "weight": 0.43,
         "rollLength": 0,
         "priceEur": 15.6
@@ -3426,7 +3426,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 49,
         "weight": 0.4,
         "rollLength": 0,
         "priceEur": 15.3
@@ -3437,7 +3437,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 47,
         "weight": 0.38,
         "rollLength": 0,
         "priceEur": 14.55
@@ -3448,7 +3448,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 45,
         "weight": 0.36,
         "rollLength": 0,
         "priceEur": 14.75
@@ -3459,7 +3459,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 42,
         "weight": 0.34,
         "rollLength": 0,
         "priceEur": 13.85
@@ -3470,7 +3470,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 38,
         "weight": 0.32,
         "rollLength": 0,
         "priceEur": 13.3
@@ -3481,7 +3481,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 35,
         "weight": 0.3,
         "rollLength": 0,
         "priceEur": 13
@@ -3492,7 +3492,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 31,
         "weight": 0.26,
         "rollLength": 0,
         "priceEur": 11.8
@@ -3503,7 +3503,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 28,
         "weight": 0.23,
         "rollLength": 0,
         "priceEur": 11
@@ -3514,7 +3514,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 21,
         "weight": 0.2,
         "rollLength": 0,
         "priceEur": 9.95
@@ -3525,7 +3525,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 19,
         "weight": 0.18,
         "rollLength": 0,
         "priceEur": 9.7
@@ -3536,7 +3536,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 21,
         "weight": 0.17,
         "rollLength": 0,
         "priceEur": 9.2
@@ -3547,7 +3547,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 18,
         "weight": 0.13,
         "rollLength": 0,
         "priceEur": 8.8
@@ -3558,7 +3558,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 18,
         "weight": 0.12,
         "rollLength": 0,
         "priceEur": 8.65
@@ -3638,7 +3638,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 400,
         "weight": 3.7,
         "rollLength": 0,
         "priceEur": 126.05
@@ -3649,7 +3649,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 350,
         "weight": 3.24,
         "rollLength": 0,
         "priceEur": 110.7
@@ -3660,7 +3660,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 300,
         "weight": 2.79,
         "rollLength": 0,
         "priceEur": 94.45
@@ -3671,7 +3671,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 275,
         "weight": 2.5,
         "rollLength": 0,
         "priceEur": 87.1
@@ -3682,7 +3682,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 250,
         "weight": 2.33,
         "rollLength": 0,
         "priceEur": 78.8
@@ -3693,7 +3693,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 225,
         "weight": 2.02,
         "rollLength": 0,
         "priceEur": 69.5
@@ -3704,7 +3704,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 200,
         "weight": 1.8,
         "rollLength": 0,
         "priceEur": 55.05
@@ -3715,7 +3715,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 180,
         "weight": 1.62,
         "rollLength": 0,
         "priceEur": 48.9
@@ -3726,7 +3726,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 175,
         "weight": 1.42,
         "rollLength": 0,
         "priceEur": 48.1
@@ -3737,7 +3737,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 170,
         "weight": 1.5,
         "rollLength": 0,
         "priceEur": 45.35
@@ -3748,7 +3748,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 160,
         "weight": 1.3,
         "rollLength": 0,
         "priceEur": 41.35
@@ -3759,7 +3759,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 150,
         "weight": 1.22,
         "rollLength": 0,
         "priceEur": 38.7
@@ -3770,7 +3770,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 140,
         "weight": 1.14,
         "rollLength": 0,
         "priceEur": 43.55
@@ -3781,7 +3781,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 130,
         "weight": 1.08,
         "rollLength": 0,
         "priceEur": 38.3
@@ -3792,7 +3792,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 125,
         "weight": 1.02,
         "rollLength": 0,
         "priceEur": 34.95
@@ -3803,7 +3803,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 120,
         "weight": 1.08,
         "rollLength": 0,
         "priceEur": 37
@@ -3814,7 +3814,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 66,
         "weight": 0.76,
         "rollLength": 0,
         "priceEur": 34.9
@@ -3825,7 +3825,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 110,
         "weight": 0.99,
         "rollLength": 0,
         "priceEur": 32.2
@@ -3836,7 +3836,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 100,
         "weight": 0.9,
         "rollLength": 0,
         "priceEur": 26.5
@@ -3847,7 +3847,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 90,
         "weight": 0.79,
         "rollLength": 0,
         "priceEur": 26.5
@@ -3858,7 +3858,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 80,
         "weight": 0.71,
         "rollLength": 0,
         "priceEur": 23.55
@@ -3869,7 +3869,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 75,
         "weight": 0.67,
         "rollLength": 0,
         "priceEur": 22.05
@@ -3880,7 +3880,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 70,
         "weight": 0.62,
         "rollLength": 0,
         "priceEur": 27.8
@@ -3891,7 +3891,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 65,
         "weight": 0.56,
         "rollLength": 0,
         "priceEur": 19.05
@@ -3902,7 +3902,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 63,
         "weight": 0.55,
         "rollLength": 0,
         "priceEur": 17.5
@@ -3913,7 +3913,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 63,
         "weight": 0.54,
         "rollLength": 0,
         "priceEur": 16.35
@@ -3924,7 +3924,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 55,
         "weight": 0.5,
         "rollLength": 0,
         "priceEur": 15.35
@@ -3935,7 +3935,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 50,
         "weight": 0.45,
         "rollLength": 0,
         "priceEur": 14
@@ -3946,7 +3946,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 45,
         "weight": 0.37,
         "rollLength": 0,
         "priceEur": 12.4
@@ -3957,7 +3957,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 40,
         "weight": 0.29,
         "rollLength": 0,
         "priceEur": 11.05
@@ -3968,7 +3968,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 35,
         "weight": 0.24,
         "rollLength": 0,
         "priceEur": 10.75
@@ -3979,7 +3979,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 32,
         "weight": 0.22,
         "rollLength": 0,
         "priceEur": 0
@@ -3990,7 +3990,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 30,
         "weight": 0.21,
         "rollLength": 0,
         "priceEur": 10.5
@@ -4001,7 +4001,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 25,
         "weight": 0.18,
         "rollLength": 0,
         "priceEur": 9.5
@@ -4012,7 +4012,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 20,
         "weight": 0.15,
         "rollLength": 0,
         "priceEur": 9.25
@@ -4062,8 +4062,8 @@ const CONFIG = {
       {
         "code": "ALFAGOMMA 155 AA-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "6\"",
+        "outerDb": 170,
         "pressure": 20,
         "bend": 0,
         "weight": 0,
@@ -4073,8 +4073,8 @@ const CONFIG = {
       {
         "code": "ALFAGOMMA 155 AA-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3.1/2\"",
+        "outerDb": 106,
         "pressure": 20,
         "bend": 0,
         "weight": 0,
@@ -4084,8 +4084,8 @@ const CONFIG = {
       {
         "code": "ALFAGOMMA 155 AA-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4\"",
+        "outerDb": 118,
         "pressure": 20,
         "bend": 0,
         "weight": 0,
@@ -4095,8 +4095,8 @@ const CONFIG = {
       {
         "code": "ALFAGOMMA 155 AA-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3\"",
+        "outerDb": 92,
         "pressure": 20,
         "bend": 0,
         "weight": 0,
@@ -4106,8 +4106,8 @@ const CONFIG = {
       {
         "code": "ALFAGOMMA 155 AA-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2.1/2\"",
+        "outerDb": 79,
         "pressure": 20,
         "bend": 0,
         "weight": 0,
@@ -4117,8 +4117,8 @@ const CONFIG = {
       {
         "code": "ALFAGOMMA 155 AA-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2.3/8\"",
+        "outerDb": 76,
         "pressure": 20,
         "bend": 0,
         "weight": 0,
@@ -4128,8 +4128,8 @@ const CONFIG = {
       {
         "code": "ALFAGOMMA 155 AA-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.7/8\"",
+        "outerDb": 60,
         "pressure": 20,
         "bend": 0,
         "weight": 0,
@@ -4139,8 +4139,8 @@ const CONFIG = {
       {
         "code": "ALFAGOMMA 155 AA-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 63,
         "pressure": 20,
         "bend": 0,
         "weight": 0,
@@ -4150,8 +4150,8 @@ const CONFIG = {
       {
         "code": "ALFAGOMMA 155 AA-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/4\"",
+        "outerDb": 44,
         "pressure": 20,
         "bend": 0,
         "weight": 0,
@@ -4161,8 +4161,8 @@ const CONFIG = {
       {
         "code": "ALFAGOMMA 155 AA-10",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/2\"",
+        "outerDb": 50,
         "pressure": 20,
         "bend": 0,
         "weight": 0,
@@ -4210,8 +4210,8 @@ const CONFIG = {
       {
         "code": "157АK – yellow-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 65,
         "pressure": 27,
         "bend": 0,
         "weight": 0,
@@ -4221,8 +4221,8 @@ const CONFIG = {
       {
         "code": "157АK – yellow-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/2\"",
+        "outerDb": 50,
         "pressure": 27,
         "bend": 0,
         "weight": 0,
@@ -4232,8 +4232,8 @@ const CONFIG = {
       {
         "code": "157АK – yellow-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/4\"",
+        "outerDb": 44,
         "pressure": 27,
         "bend": 0,
         "weight": 0,
@@ -4289,8 +4289,8 @@ const CONFIG = {
       {
         "code": "202AA-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "10\"",
+        "outerDb": 272,
         "pressure": 10,
         "bend": 0,
         "weight": 13.52,
@@ -4300,8 +4300,8 @@ const CONFIG = {
       {
         "code": "202AA-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "8\"",
+        "outerDb": 225,
         "pressure": 10,
         "bend": 0,
         "weight": 16.1,
@@ -4311,8 +4311,8 @@ const CONFIG = {
       {
         "code": "202AA-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "6\"",
+        "outerDb": 169,
         "pressure": 10,
         "bend": 0,
         "weight": 9.5,
@@ -4322,8 +4322,8 @@ const CONFIG = {
       {
         "code": "202AA-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5\"",
+        "outerDb": 142,
         "pressure": 10,
         "bend": 0,
         "weight": 5.8,
@@ -4333,8 +4333,8 @@ const CONFIG = {
       {
         "code": "202AA-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4.3/4\"",
+        "outerDb": 134,
         "pressure": 10,
         "bend": 0,
         "weight": 5.07,
@@ -4344,8 +4344,8 @@ const CONFIG = {
       {
         "code": "202AA-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4.1/2\"",
+        "outerDb": 127,
         "pressure": 10,
         "bend": 0,
         "weight": 3.86,
@@ -4355,8 +4355,8 @@ const CONFIG = {
       {
         "code": "202AA-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4.5/16\"",
+        "outerDb": 122,
         "pressure": 10,
         "bend": 0,
         "weight": 3.71,
@@ -4366,8 +4366,8 @@ const CONFIG = {
       {
         "code": "202AA-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3 17/32\"",
+        "outerDb": 103,
         "pressure": 10,
         "bend": 0,
         "weight": 3.47,
@@ -4377,8 +4377,8 @@ const CONFIG = {
       {
         "code": "202AA-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4\"",
+        "outerDb": 115,
         "pressure": 10,
         "bend": 0,
         "weight": 4,
@@ -4388,8 +4388,8 @@ const CONFIG = {
       {
         "code": "202AA-10",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3 5/32\"",
+        "outerDb": 92,
         "pressure": 10,
         "bend": 0,
         "weight": 3.15,
@@ -4399,8 +4399,8 @@ const CONFIG = {
       {
         "code": "202AA-11",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3\"",
+        "outerDb": 88,
         "pressure": 10,
         "bend": 0,
         "weight": 2.8,
@@ -4410,8 +4410,8 @@ const CONFIG = {
       {
         "code": "202AA-12",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2 ¾\"",
+        "outerDb": 82,
         "pressure": 10,
         "bend": 0,
         "weight": 2.62,
@@ -4421,8 +4421,8 @@ const CONFIG = {
       {
         "code": "202AA-13",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2 ½\"",
+        "outerDb": 79,
         "pressure": 10,
         "bend": 0,
         "weight": 2.5,
@@ -4432,8 +4432,8 @@ const CONFIG = {
       {
         "code": "202AA-14",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2.3/8\"",
+        "outerDb": 72,
         "pressure": 10,
         "bend": 0,
         "weight": 2,
@@ -4443,8 +4443,8 @@ const CONFIG = {
       {
         "code": "202AA-15",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 63,
         "pressure": 10,
         "bend": 0,
         "weight": 1.77,
@@ -4454,8 +4454,8 @@ const CONFIG = {
       {
         "code": "202AA-16",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.7/8\"",
+        "outerDb": 58,
         "pressure": 10,
         "bend": 0,
         "weight": 1.23,
@@ -4465,8 +4465,8 @@ const CONFIG = {
       {
         "code": "202AA-17",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ¾\"",
+        "outerDb": 57,
         "pressure": 10,
         "bend": 0,
         "weight": 1.62,
@@ -4476,8 +4476,8 @@ const CONFIG = {
       {
         "code": "202AA-18",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 9/16\"",
+        "outerDb": 51,
         "pressure": 10,
         "bend": 0,
         "weight": 1.3,
@@ -4487,8 +4487,8 @@ const CONFIG = {
       {
         "code": "202AA-19",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ½\"",
+        "outerDb": 49,
         "pressure": 10,
         "bend": 0,
         "weight": 1.21,
@@ -4498,8 +4498,8 @@ const CONFIG = {
       {
         "code": "202AA-20",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 3/8\"",
+        "outerDb": 46,
         "pressure": 10,
         "bend": 0,
         "weight": 1.09,
@@ -4509,8 +4509,8 @@ const CONFIG = {
       {
         "code": "202AA-21",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ¼\"",
+        "outerDb": 43,
         "pressure": 10,
         "bend": 0,
         "weight": 0.95,
@@ -4520,8 +4520,8 @@ const CONFIG = {
       {
         "code": "202AA-22",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 3/16\"",
+        "outerDb": 40,
         "pressure": 10,
         "bend": 0,
         "weight": 0.78,
@@ -4531,8 +4531,8 @@ const CONFIG = {
       {
         "code": "202AA-23",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 35,
         "pressure": 10,
         "bend": 0,
         "weight": 0.7,
@@ -4542,8 +4542,8 @@ const CONFIG = {
       {
         "code": "202AA-24",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "25/32\"",
+        "outerDb": 30,
         "pressure": 10,
         "bend": 0,
         "weight": 0.55,
@@ -4553,8 +4553,8 @@ const CONFIG = {
       {
         "code": "202AA-25",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 29,
         "pressure": 10,
         "bend": 0,
         "weight": 0.53,
@@ -4564,8 +4564,8 @@ const CONFIG = {
       {
         "code": "202AA-26",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "23/32\"",
+        "outerDb": 28,
         "pressure": 10,
         "bend": 0,
         "weight": 0.52,
@@ -4575,8 +4575,8 @@ const CONFIG = {
       {
         "code": "202AA-27",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 23,
         "pressure": 10,
         "bend": 0,
         "weight": 0.41,
@@ -4586,8 +4586,8 @@ const CONFIG = {
       {
         "code": "202AA-28",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 26,
         "pressure": 10,
         "bend": 0,
         "weight": 0.5,
@@ -4640,9 +4640,9 @@ const CONFIG = {
         "code": "PL0-1",
         "innerDb": 0,
         "inch": "1/4\"",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 20,
-        "bend": 0,
+        "bend": 60,
         "weight": 0.13,
         "rollLength": 20,
         "priceEur": 62.6
@@ -4651,9 +4651,9 @@ const CONFIG = {
         "code": "PL0-2",
         "innerDb": 0,
         "inch": "1/4\"",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 20,
-        "bend": 0,
+        "bend": 60,
         "weight": 0.13,
         "rollLength": 18,
         "priceEur": 57.75
@@ -4662,9 +4662,9 @@ const CONFIG = {
         "code": "PL0-3",
         "innerDb": 0,
         "inch": "1/4\"",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 20,
-        "bend": 0,
+        "bend": 60,
         "weight": 0.13,
         "rollLength": 12,
         "priceEur": 44.2
@@ -4673,9 +4673,9 @@ const CONFIG = {
         "code": "PL0-4",
         "innerDb": 0,
         "inch": "1/4\"",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 20,
-        "bend": 0,
+        "bend": 60,
         "weight": 0.13,
         "rollLength": 10,
         "priceEur": 39.1
@@ -4783,9 +4783,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "902LE-1",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 102,
+        "inch": "4\"",
+        "outerDb": 116,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -4794,9 +4794,9 @@ const CONFIG = {
       },
       {
         "code": "902LE-2",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 76,
+        "inch": "3\"",
+        "outerDb": 90,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -4805,9 +4805,9 @@ const CONFIG = {
       },
       {
         "code": "902LE-3",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 63,
+        "inch": "2.1/2\"",
+        "outerDb": 77,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -4816,9 +4816,9 @@ const CONFIG = {
       },
       {
         "code": "902LE-4",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 51,
+        "inch": "2\"",
+        "outerDb": 63,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -4870,10 +4870,10 @@ const CONFIG = {
       {
         "code": "IK25-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "11/4\"",
+        "outerDb": 48,
         "pressure": 0,
-        "bend": 0,
+        "bend": 150,
         "weight": 1.3,
         "rollLength": 0,
         "priceEur": 0
@@ -4881,10 +4881,10 @@ const CONFIG = {
       {
         "code": "IK25-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 39,
         "pressure": 0,
-        "bend": 0,
+        "bend": 110,
         "weight": 0.88,
         "rollLength": 0,
         "priceEur": 0
@@ -4892,10 +4892,10 @@ const CONFIG = {
       {
         "code": "IK25-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 25,
         "pressure": 0,
-        "bend": 0,
+        "bend": 70,
         "weight": 0.46,
         "rollLength": 0,
         "priceEur": 0
@@ -4903,10 +4903,10 @@ const CONFIG = {
       {
         "code": "IK25-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 31,
         "pressure": 0,
-        "bend": 0,
+        "bend": 95,
         "weight": 0.63,
         "rollLength": 0,
         "priceEur": 0
@@ -4965,7 +4965,7 @@ const CONFIG = {
         "code": "TEKNO-1",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 20,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -4976,7 +4976,7 @@ const CONFIG = {
         "code": "TEKNO-2",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -4987,7 +4987,7 @@ const CONFIG = {
         "code": "TEKNO-3",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -4998,7 +4998,7 @@ const CONFIG = {
         "code": "TEKNO-4",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -5009,7 +5009,7 @@ const CONFIG = {
         "code": "TEKNO-5",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 17,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -5020,7 +5020,7 @@ const CONFIG = {
         "code": "TEKNO-6",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 14,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -5206,7 +5206,7 @@ const CONFIG = {
       {
         "code": "Плосък маркуч INOVAFLAT-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "6\"",
         "outerDb": 0,
         "pressure": 2,
         "bend": 0,
@@ -5217,7 +5217,7 @@ const CONFIG = {
       {
         "code": "Плосък маркуч INOVAFLAT-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 3,
         "bend": 0,
@@ -5228,7 +5228,7 @@ const CONFIG = {
       {
         "code": "Плосък маркуч INOVAFLAT-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 3,
         "bend": 0,
@@ -5239,7 +5239,7 @@ const CONFIG = {
       {
         "code": "Плосък маркуч INOVAFLAT-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 3,
         "bend": 0,
@@ -5250,7 +5250,7 @@ const CONFIG = {
       {
         "code": "Плосък маркуч INOVAFLAT-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 3,
         "bend": 0,
@@ -5261,7 +5261,7 @@ const CONFIG = {
       {
         "code": "Плосък маркуч INOVAFLAT-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2 ½\"",
         "outerDb": 0,
         "pressure": 3,
         "bend": 0,
@@ -5272,7 +5272,7 @@ const CONFIG = {
       {
         "code": "Плосък маркуч INOVAFLAT-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 4,
         "bend": 0,
@@ -5283,7 +5283,7 @@ const CONFIG = {
       {
         "code": "Плосък маркуч INOVAFLAT-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1 ½\"",
         "outerDb": 0,
         "pressure": 4,
         "bend": 0,
@@ -5294,7 +5294,7 @@ const CONFIG = {
       {
         "code": "Плосък маркуч INOVAFLAT-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1 ¼\"",
         "outerDb": 0,
         "pressure": 6,
         "bend": 0,
@@ -5305,7 +5305,7 @@ const CONFIG = {
       {
         "code": "Плосък маркуч INOVAFLAT-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 7,
         "bend": 0,
@@ -5364,8 +5364,8 @@ const CONFIG = {
     "variants": [
       {
         "code": "TROY LD-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 76,
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -5375,8 +5375,8 @@ const CONFIG = {
       },
       {
         "code": "TROY LD-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 102,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -5386,8 +5386,8 @@ const CONFIG = {
       },
       {
         "code": "TROY LD-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 60,
+        "inch": "2.3/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -5397,8 +5397,8 @@ const CONFIG = {
       },
       {
         "code": "TROY LD-4",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 63,
+        "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -5408,8 +5408,8 @@ const CONFIG = {
       },
       {
         "code": "TROY LD-5",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 51,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -5419,7 +5419,7 @@ const CONFIG = {
       },
       {
         "code": "TROY LD-6",
-        "innerDb": 0,
+        "innerDb": 45,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -5430,7 +5430,7 @@ const CONFIG = {
       },
       {
         "code": "TROY LD-7",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -5441,8 +5441,8 @@ const CONFIG = {
       },
       {
         "code": "TROY LD-8",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 32,
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -5452,7 +5452,7 @@ const CONFIG = {
       },
       {
         "code": "TROY LD-9",
-        "innerDb": 0,
+        "innerDb": 35,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -5463,8 +5463,8 @@ const CONFIG = {
       },
       {
         "code": "TROY LD-10",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 38,
+        "inch": "1 1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -5474,8 +5474,8 @@ const CONFIG = {
       },
       {
         "code": "TROY LD-11",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 25,
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -5485,8 +5485,8 @@ const CONFIG = {
       },
       {
         "code": "TROY LD-12",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 30,
+        "inch": "1.3/16\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -5496,8 +5496,8 @@ const CONFIG = {
       },
       {
         "code": "TROY LD-13",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 19,
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -5555,7 +5555,7 @@ const CONFIG = {
         "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 400,
         "weight": 1.71,
         "rollLength": 20,
         "priceEur": 39.5
@@ -5566,7 +5566,7 @@ const CONFIG = {
         "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 300,
         "weight": 0.1,
         "rollLength": 30,
         "priceEur": 20.85
@@ -5577,7 +5577,7 @@ const CONFIG = {
         "inch": "11/4\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 115,
         "weight": 0.32,
         "rollLength": 30,
         "priceEur": 7.2
@@ -5588,7 +5588,7 @@ const CONFIG = {
         "inch": "1 1/2\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 135,
         "weight": 0.42,
         "rollLength": 30,
         "priceEur": 8.7
@@ -5599,7 +5599,7 @@ const CONFIG = {
         "inch": "2 1/2\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 250,
         "weight": 0,
         "rollLength": 30,
         "priceEur": 16.3
@@ -5610,7 +5610,7 @@ const CONFIG = {
         "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 190,
         "weight": 0.645,
         "rollLength": 30,
         "priceEur": 13.7
@@ -5621,7 +5621,7 @@ const CONFIG = {
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 100,
         "weight": 0.25,
         "rollLength": 30,
         "priceEur": 4.75
@@ -5632,7 +5632,7 @@ const CONFIG = {
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 70,
         "weight": 0.2,
         "rollLength": 30,
         "priceEur": 4.35
@@ -5683,7 +5683,7 @@ const CONFIG = {
         "code": "Smartflex SMT Comfort-1",
         "innerDb": 0,
         "inch": "1\"",
-        "outerDb": 0,
+        "outerDb": 32.8,
         "pressure": 7,
         "bend": 0,
         "weight": 0.43,
@@ -5694,7 +5694,7 @@ const CONFIG = {
         "code": "Smartflex SMT Comfort-2",
         "innerDb": 0,
         "inch": "3/4\"",
-        "outerDb": 0,
+        "outerDb": 25.4,
         "pressure": 9,
         "bend": 0,
         "weight": 0.27,
@@ -5705,7 +5705,7 @@ const CONFIG = {
         "code": "Smartflex SMT Comfort-3",
         "innerDb": 0,
         "inch": "1/2\"",
-        "outerDb": 0,
+        "outerDb": 17.4,
         "pressure": 14,
         "bend": 0,
         "weight": 0.15,
@@ -5716,7 +5716,7 @@ const CONFIG = {
         "code": "Smartflex SMT Comfort-4",
         "innerDb": 0,
         "inch": "5/8\"",
-        "outerDb": 0,
+        "outerDb": 21.3,
         "pressure": 12,
         "bend": 0,
         "weight": 0.12,
@@ -5775,7 +5775,7 @@ const CONFIG = {
         "inch": "5\"",
         "outerDb": 0,
         "pressure": 6,
-        "bend": 0,
+        "bend": 385,
         "weight": 4.7,
         "rollLength": 30,
         "priceEur": 0
@@ -5786,7 +5786,7 @@ const CONFIG = {
         "inch": "6\"",
         "outerDb": 0,
         "pressure": 6,
-        "bend": 0,
+        "bend": 460,
         "weight": 6.35,
         "rollLength": 30,
         "priceEur": 0
@@ -5794,10 +5794,10 @@ const CONFIG = {
       {
         "code": "BOSPHORUS-3",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 6,
-        "bend": 0,
+        "bend": 345,
         "weight": 4.38,
         "rollLength": 30,
         "priceEur": 0
@@ -5805,10 +5805,10 @@ const CONFIG = {
       {
         "code": "BOSPHORUS-4",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 6,
-        "bend": 0,
+        "bend": 315,
         "weight": 3.49,
         "rollLength": 30,
         "priceEur": 0
@@ -5819,7 +5819,7 @@ const CONFIG = {
         "inch": "4\"",
         "outerDb": 0,
         "pressure": 6,
-        "bend": 0,
+        "bend": 300,
         "weight": 3.4,
         "rollLength": 30,
         "priceEur": 63.45
@@ -5827,10 +5827,10 @@ const CONFIG = {
       {
         "code": "BOSPHORUS-6",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 6,
-        "bend": 0,
+        "bend": 260,
         "weight": 3,
         "rollLength": 30,
         "priceEur": 67.05
@@ -5838,10 +5838,10 @@ const CONFIG = {
       {
         "code": "BOSPHORUS-7",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 9,
-        "bend": 0,
+        "bend": 95,
         "weight": 0.87,
         "rollLength": 30,
         "priceEur": 19
@@ -5849,10 +5849,10 @@ const CONFIG = {
       {
         "code": "BOSPHORUS-8",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 9,
-        "bend": 0,
+        "bend": 105,
         "weight": 1.1,
         "rollLength": 30,
         "priceEur": 23.5
@@ -5860,10 +5860,10 @@ const CONFIG = {
       {
         "code": "BOSPHORUS-9",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 6,
-        "bend": 0,
+        "bend": 220,
         "weight": 2.7,
         "rollLength": 30,
         "priceEur": 58.85
@@ -5874,7 +5874,7 @@ const CONFIG = {
         "inch": "2\"",
         "outerDb": 0,
         "pressure": 9,
-        "bend": 0,
+        "bend": 125,
         "weight": 1.2,
         "rollLength": 30,
         "priceEur": 26.1
@@ -5885,7 +5885,7 @@ const CONFIG = {
         "inch": "1 ¼\"",
         "outerDb": 0,
         "pressure": 13,
-        "bend": 0,
+        "bend": 75,
         "weight": 0.65,
         "rollLength": 30,
         "priceEur": 13.8
@@ -5893,10 +5893,10 @@ const CONFIG = {
       {
         "code": "BOSPHORUS-12",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 12,
-        "bend": 0,
+        "bend": 80,
         "weight": 0.73,
         "rollLength": 30,
         "priceEur": 15.65
@@ -5907,7 +5907,7 @@ const CONFIG = {
         "inch": "1 ½\"",
         "outerDb": 0,
         "pressure": 12,
-        "bend": 0,
+        "bend": 90,
         "weight": 0.8,
         "rollLength": 30,
         "priceEur": 16.45
@@ -5918,7 +5918,7 @@ const CONFIG = {
         "inch": "3\"",
         "outerDb": 0,
         "pressure": 6,
-        "bend": 0,
+        "bend": 195,
         "weight": 2.5,
         "rollLength": 30,
         "priceEur": 47.05
@@ -5926,10 +5926,10 @@ const CONFIG = {
       {
         "code": "BOSPHORUS-15",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 6,
-        "bend": 0,
+        "bend": 180,
         "weight": 2.2,
         "rollLength": 30,
         "priceEur": 43.9
@@ -5940,7 +5940,7 @@ const CONFIG = {
         "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 150,
         "weight": 1.95,
         "rollLength": 30,
         "priceEur": 40.95
@@ -5948,10 +5948,10 @@ const CONFIG = {
       {
         "code": "BOSPHORUS-17",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 7,
-        "bend": 0,
+        "bend": 135,
         "weight": 1.8,
         "rollLength": 30,
         "priceEur": 39.2
@@ -5959,10 +5959,10 @@ const CONFIG = {
       {
         "code": "BOSPHORUS-18",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 13,
-        "bend": 0,
+        "bend": 70,
         "weight": 0.6,
         "rollLength": 30,
         "priceEur": 15.35
@@ -5973,7 +5973,7 @@ const CONFIG = {
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 15,
-        "bend": 0,
+        "bend": 60,
         "weight": 0.51,
         "rollLength": 30,
         "priceEur": 11.15
@@ -5984,7 +5984,7 @@ const CONFIG = {
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 15,
-        "bend": 0,
+        "bend": 50,
         "weight": 0.34,
         "rollLength": 30,
         "priceEur": 8.05
@@ -5992,10 +5992,10 @@ const CONFIG = {
       {
         "code": "BOSPHORUS-21",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 18,
-        "bend": 0,
+        "bend": 40,
         "weight": 0.28,
         "rollLength": 30,
         "priceEur": 0
@@ -6006,7 +6006,7 @@ const CONFIG = {
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 18,
-        "bend": 0,
+        "bend": 35,
         "weight": 0.225,
         "rollLength": 30,
         "priceEur": 5.95
@@ -6017,7 +6017,7 @@ const CONFIG = {
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 21,
-        "bend": 0,
+        "bend": 25,
         "weight": 0.18,
         "rollLength": 30,
         "priceEur": 5
@@ -6025,10 +6025,10 @@ const CONFIG = {
       {
         "code": "BOSPHORUS-24",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 18,
-        "bend": 0,
+        "bend": 30,
         "weight": 0.2,
         "rollLength": 30,
         "priceEur": 6.35
@@ -6039,7 +6039,7 @@ const CONFIG = {
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 21,
-        "bend": 0,
+        "bend": 20,
         "weight": 0.135,
         "rollLength": 30,
         "priceEur": 3.6
@@ -6050,7 +6050,7 @@ const CONFIG = {
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 21,
-        "bend": 0,
+        "bend": 20,
         "weight": 0.16,
         "rollLength": 30,
         "priceEur": 4.2
@@ -6100,7 +6100,7 @@ const CONFIG = {
       {
         "code": "-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 7,
         "bend": 0,
@@ -6111,7 +6111,7 @@ const CONFIG = {
       {
         "code": "-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -6122,7 +6122,7 @@ const CONFIG = {
       {
         "code": "-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -6176,8 +6176,8 @@ const CONFIG = {
       {
         "code": "253АА - Lay flat - плосък-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "8\"",
+        "outerDb": 215,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -6187,8 +6187,8 @@ const CONFIG = {
       {
         "code": "253АА - Lay flat - плосък-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "6\"",
+        "outerDb": 162,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -6198,8 +6198,8 @@ const CONFIG = {
       {
         "code": "253АА - Lay flat - плосък-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5\"",
+        "outerDb": 137,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -6209,8 +6209,8 @@ const CONFIG = {
       {
         "code": "253АА - Lay flat - плосък-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4\"",
+        "outerDb": 110,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -6220,8 +6220,8 @@ const CONFIG = {
       {
         "code": "253АА - Lay flat - плосък-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3\"",
+        "outerDb": 84,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -6231,8 +6231,8 @@ const CONFIG = {
       {
         "code": "253АА - Lay flat - плосък-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 59,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -6289,10 +6289,10 @@ const CONFIG = {
       {
         "code": "LAGINA-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "8\"",
         "outerDb": 0,
         "pressure": 4,
-        "bend": 0,
+        "bend": 810,
         "weight": 7.85,
         "rollLength": 10,
         "priceEur": 0
@@ -6300,10 +6300,10 @@ const CONFIG = {
       {
         "code": "LAGINA-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "6\"",
         "outerDb": 0,
         "pressure": 6,
-        "bend": 0,
+        "bend": 605,
         "weight": 5.1,
         "rollLength": 20,
         "priceEur": 122.7
@@ -6311,10 +6311,10 @@ const CONFIG = {
       {
         "code": "LAGINA-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "5\"",
         "outerDb": 0,
         "pressure": 6,
-        "bend": 0,
+        "bend": 510,
         "weight": 3.65,
         "rollLength": 20,
         "priceEur": 103.25
@@ -6325,7 +6325,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 7,
-        "bend": 0,
+        "bend": 415,
         "weight": 2.9,
         "rollLength": 20,
         "priceEur": 71.15
@@ -6336,7 +6336,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 7,
-        "bend": 0,
+        "bend": 490,
         "weight": 3.2,
         "rollLength": 20,
         "priceEur": 87.15
@@ -6344,10 +6344,10 @@ const CONFIG = {
       {
         "code": "LAGINA-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 7,
-        "bend": 0,
+        "bend": 365,
         "weight": 2.6,
         "rollLength": 20,
         "priceEur": 52.85
@@ -6358,7 +6358,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 7,
-        "bend": 0,
+        "bend": 330,
         "weight": 2.1,
         "rollLength": 20,
         "priceEur": 51.65
@@ -6369,7 +6369,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 9,
-        "bend": 0,
+        "bend": 285,
         "weight": 1.8,
         "rollLength": 20,
         "priceEur": 71.62
@@ -6377,10 +6377,10 @@ const CONFIG = {
       {
         "code": "LAGINA-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 9,
-        "bend": 0,
+        "bend": 275,
         "weight": 1.7,
         "rollLength": 30,
         "priceEur": 41
@@ -6391,7 +6391,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 9,
-        "bend": 0,
+        "bend": 250,
         "weight": 1.58,
         "rollLength": 30,
         "priceEur": 61.65
@@ -6399,10 +6399,10 @@ const CONFIG = {
       {
         "code": "LAGINA-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2 ½\"",
         "outerDb": 0,
         "pressure": 11,
-        "bend": 0,
+        "bend": 240,
         "weight": 1.35,
         "rollLength": 30,
         "priceEur": 53.64
@@ -6413,7 +6413,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 12,
-        "bend": 0,
+        "bend": 220,
         "weight": 1.25,
         "rollLength": 30,
         "priceEur": 48.1
@@ -6424,7 +6424,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 12,
-        "bend": 0,
+        "bend": 200,
         "weight": 1.08,
         "rollLength": 30,
         "priceEur": 40.3
@@ -6435,7 +6435,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 12,
-        "bend": 0,
+        "bend": 175,
         "weight": 0.85,
         "rollLength": 30,
         "priceEur": 32.8
@@ -6443,10 +6443,10 @@ const CONFIG = {
       {
         "code": "LAGINA-15",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 12,
-        "bend": 0,
+        "bend": 185,
         "weight": 0.97,
         "rollLength": 30,
         "priceEur": 35.7
@@ -6454,10 +6454,10 @@ const CONFIG = {
       {
         "code": "LAGINA-16",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1 ½\"",
         "outerDb": 0,
         "pressure": 13,
-        "bend": 0,
+        "bend": 140,
         "weight": 0.67,
         "rollLength": 30,
         "priceEur": 26.9
@@ -6468,7 +6468,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 12,
-        "bend": 0,
+        "bend": 155,
         "weight": 0.7,
         "rollLength": 30,
         "priceEur": 28.15
@@ -6479,7 +6479,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 13,
-        "bend": 0,
+        "bend": 130,
         "weight": 0.64,
         "rollLength": 30,
         "priceEur": 24.59
@@ -6487,10 +6487,10 @@ const CONFIG = {
       {
         "code": "LAGINA-19",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 17,
-        "bend": 0,
+        "bend": 105,
         "weight": 0.36,
         "rollLength": 30,
         "priceEur": 11.99
@@ -6498,10 +6498,10 @@ const CONFIG = {
       {
         "code": "LAGINA-20",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1 ¼\"",
         "outerDb": 0,
         "pressure": 14,
-        "bend": 0,
+        "bend": 125,
         "weight": 0.58,
         "rollLength": 30,
         "priceEur": 23.15
@@ -6512,7 +6512,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 15,
-        "bend": 0,
+        "bend": 120,
         "weight": 0.55,
         "rollLength": 30,
         "priceEur": 21.3
@@ -6520,10 +6520,10 @@ const CONFIG = {
       {
         "code": "LAGINA-22",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 17,
-        "bend": 0,
+        "bend": 115,
         "weight": 0.48,
         "rollLength": 30,
         "priceEur": 15.7
@@ -6561,9 +6561,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "-1",
-        "innerDb": 0,
+        "innerDb": 203,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 224,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -6572,9 +6572,9 @@ const CONFIG = {
       },
       {
         "code": "-2",
-        "innerDb": 0,
+        "innerDb": 152,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 169.6,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -6583,9 +6583,9 @@ const CONFIG = {
       },
       {
         "code": "-3",
-        "innerDb": 0,
+        "innerDb": 127,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 142.6,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -6594,9 +6594,9 @@ const CONFIG = {
       },
       {
         "code": "-4",
-        "innerDb": 0,
+        "innerDb": 102,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 114.6,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -6605,9 +6605,9 @@ const CONFIG = {
       },
       {
         "code": "-5",
-        "innerDb": 0,
+        "innerDb": 90,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 102.2,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -6616,9 +6616,9 @@ const CONFIG = {
       },
       {
         "code": "-6",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 88,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -6627,9 +6627,9 @@ const CONFIG = {
       },
       {
         "code": "-7",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 68.6,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -6638,9 +6638,9 @@ const CONFIG = {
       },
       {
         "code": "-8",
-        "innerDb": 0,
+        "innerDb": 51,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 61.4,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -6649,9 +6649,9 @@ const CONFIG = {
       },
       {
         "code": "-9",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 47.2,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -6660,9 +6660,9 @@ const CONFIG = {
       },
       {
         "code": "-10",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 40.4,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -6671,9 +6671,9 @@ const CONFIG = {
       },
       {
         "code": "-11",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 29,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -6713,9 +6713,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "-1",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 88,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -6762,9 +6762,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "Smartflex SMT Premium-1",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 25,
+        "inch": "1\"",
+        "outerDb": 33.2,
         "pressure": 7,
         "bend": 0,
         "weight": 0,
@@ -6773,9 +6773,9 @@ const CONFIG = {
       },
       {
         "code": "Smartflex SMT Premium-2",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 19,
+        "inch": "3/4\"",
+        "outerDb": 26,
         "pressure": 9,
         "bend": 0,
         "weight": 0,
@@ -6784,9 +6784,9 @@ const CONFIG = {
       },
       {
         "code": "Smartflex SMT Premium-3",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 12.5,
+        "inch": "1/2\"",
+        "outerDb": 17.7,
         "pressure": 14,
         "bend": 0,
         "weight": 0,
@@ -6795,9 +6795,9 @@ const CONFIG = {
       },
       {
         "code": "Smartflex SMT Premium-4",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 16,
+        "inch": "5/8\"",
+        "outerDb": 20.8,
         "pressure": 12,
         "bend": 0,
         "weight": 0,
@@ -6849,7 +6849,7 @@ const CONFIG = {
       {
         "code": "OneFlat -1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 7,
         "bend": 0,
@@ -6860,7 +6860,7 @@ const CONFIG = {
       {
         "code": "OneFlat -2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -6871,7 +6871,7 @@ const CONFIG = {
       {
         "code": "OneFlat -3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -6919,9 +6919,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "CALORAD 120ºC-1",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 127,
+        "inch": "5\"",
+        "outerDb": 141,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -6930,9 +6930,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-2",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 115,
+        "inch": "4.1/2\"",
+        "outerDb": 127,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -6941,9 +6941,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-3",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 110,
+        "inch": "4.5/16\"",
+        "outerDb": 122,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -6952,9 +6952,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-4",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 102,
+        "inch": "4\"",
+        "outerDb": 114,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -6963,9 +6963,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-5",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 80,
+        "inch": "3.1/8\"",
+        "outerDb": 90,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -6974,9 +6974,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-6",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 90,
+        "inch": "3.1/2\"",
+        "outerDb": 102,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -6985,9 +6985,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-7",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 75,
+        "inch": "3\"",
+        "outerDb": 86,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -6996,9 +6996,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-8",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 70,
+        "inch": "2.3/4\"",
+        "outerDb": 80,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -7007,9 +7007,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-9",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 63,
+        "inch": "2.1/2\"",
+        "outerDb": 73,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -7018,9 +7018,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-10",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 60,
+        "inch": "2.3/8\"",
+        "outerDb": 70,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -7029,9 +7029,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-11",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 57,
+        "inch": "2.1/4\"",
+        "outerDb": 67,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -7040,9 +7040,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-12",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 55,
+        "inch": "2.1/6\"",
+        "outerDb": 65,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -7051,9 +7051,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-13",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 50,
+        "inch": "2\"",
+        "outerDb": 60,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -7062,9 +7062,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-14",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 48,
+        "inch": "1.7/8\"",
+        "outerDb": 58,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -7073,9 +7073,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-15",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 45,
+        "inch": "1.3/4\"",
+        "outerDb": 55,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -7084,9 +7084,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-16",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 42,
+        "inch": "1.5/8\"",
+        "outerDb": 52,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -7095,9 +7095,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-17",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 40,
+        "inch": "1.9/16\"",
+        "outerDb": 50,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -7106,9 +7106,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-18",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 38,
+        "inch": "1.1/2\"",
+        "outerDb": 48,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -7117,9 +7117,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-19",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 35,
+        "inch": "1.3/8\"",
+        "outerDb": 43,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -7128,9 +7128,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-20",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 32,
+        "inch": "1.1/4\"",
+        "outerDb": 40,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -7139,9 +7139,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-21",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 30,
+        "inch": "1.3/16\"",
+        "outerDb": 38,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -7150,9 +7150,9 @@ const CONFIG = {
       },
       {
         "code": "CALORAD 120ºC-22",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 28,
+        "inch": "1.1/8\"",
+        "outerDb": 36,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -7339,10 +7339,10 @@ const CONFIG = {
       {
         "code": "TM 30-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "6\"",
+        "outerDb": 170.4,
         "pressure": 10,
-        "bend": 0,
+        "bend": 800,
         "weight": 0,
         "rollLength": 40,
         "priceEur": 0
@@ -7350,10 +7350,10 @@ const CONFIG = {
       {
         "code": "TM 30-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5\"",
+        "outerDb": 144,
         "pressure": 10,
-        "bend": 0,
+        "bend": 600,
         "weight": 0,
         "rollLength": 40,
         "priceEur": 0
@@ -7361,10 +7361,10 @@ const CONFIG = {
       {
         "code": "TM 30-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4\"",
+        "outerDb": 115.4,
         "pressure": 10,
-        "bend": 0,
+        "bend": 400,
         "weight": 0,
         "rollLength": 40,
         "priceEur": 145.2
@@ -7372,10 +7372,10 @@ const CONFIG = {
       {
         "code": "TM 30-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3\"",
+        "outerDb": 88,
         "pressure": 10,
-        "bend": 0,
+        "bend": 350,
         "weight": 0,
         "rollLength": 40,
         "priceEur": 91.7
@@ -7384,9 +7384,9 @@ const CONFIG = {
         "code": "TM 30-5",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 82,
         "pressure": 10,
-        "bend": 0,
+        "bend": 330,
         "weight": 0,
         "rollLength": 40,
         "priceEur": 0
@@ -7395,9 +7395,9 @@ const CONFIG = {
         "code": "TM 30-6",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 71,
         "pressure": 10,
-        "bend": 0,
+        "bend": 150,
         "weight": 0,
         "rollLength": 40,
         "priceEur": 0
@@ -7405,10 +7405,10 @@ const CONFIG = {
       {
         "code": "TM 30-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2 ½\"",
+        "outerDb": 75,
         "pressure": 10,
-        "bend": 0,
+        "bend": 180,
         "weight": 0,
         "rollLength": 40,
         "priceEur": 70.4
@@ -7416,10 +7416,10 @@ const CONFIG = {
       {
         "code": "TM 30-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 61.8,
         "pressure": 10,
-        "bend": 0,
+        "bend": 130,
         "weight": 0,
         "rollLength": 40,
         "priceEur": 55.05
@@ -7428,9 +7428,9 @@ const CONFIG = {
         "code": "TM 30-9",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 50,
         "pressure": 10,
-        "bend": 0,
+        "bend": 100,
         "weight": 0,
         "rollLength": 40,
         "priceEur": 44.45
@@ -7438,10 +7438,10 @@ const CONFIG = {
       {
         "code": "TM 30-10",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ½\"",
+        "outerDb": 48,
         "pressure": 10,
-        "bend": 0,
+        "bend": 80,
         "weight": 0,
         "rollLength": 40,
         "priceEur": 43.7
@@ -7450,9 +7450,9 @@ const CONFIG = {
         "code": "TM 30-11",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 45,
         "pressure": 10,
-        "bend": 0,
+        "bend": 75,
         "weight": 0,
         "rollLength": 40,
         "priceEur": 0
@@ -7460,10 +7460,10 @@ const CONFIG = {
       {
         "code": "TM 30-12",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ¼\"",
+        "outerDb": 42,
         "pressure": 10,
-        "bend": 0,
+        "bend": 65,
         "weight": 0,
         "rollLength": 40,
         "priceEur": 38.05
@@ -7472,9 +7472,9 @@ const CONFIG = {
         "code": "TM 30-13",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 40,
         "pressure": 10,
-        "bend": 0,
+        "bend": 60,
         "weight": 0,
         "rollLength": 40,
         "priceEur": 0
@@ -7482,10 +7482,10 @@ const CONFIG = {
       {
         "code": "TM 30-14",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 35,
         "pressure": 10,
-        "bend": 0,
+        "bend": 55,
         "weight": 0,
         "rollLength": 40,
         "priceEur": 29.6
@@ -7493,10 +7493,10 @@ const CONFIG = {
       {
         "code": "TM 30-15",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 29,
         "pressure": 10,
-        "bend": 0,
+        "bend": 45,
         "weight": 0,
         "rollLength": 40,
         "priceEur": 0
@@ -7504,10 +7504,10 @@ const CONFIG = {
       {
         "code": "TM 30-16",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 23,
         "pressure": 10,
-        "bend": 0,
+        "bend": 35,
         "weight": 0,
         "rollLength": 40,
         "priceEur": 0
@@ -7515,10 +7515,10 @@ const CONFIG = {
       {
         "code": "TM 30-17",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 26,
         "pressure": 10,
-        "bend": 0,
+        "bend": 40,
         "weight": 0,
         "rollLength": 40,
         "priceEur": 0
@@ -7562,7 +7562,7 @@ const CONFIG = {
         "code": "-1",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 145,
         "pressure": 10,
         "bend": 0,
         "weight": 5.82,
@@ -7573,7 +7573,7 @@ const CONFIG = {
         "code": "-2",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 138,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -7584,7 +7584,7 @@ const CONFIG = {
         "code": "-3",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 129,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -7595,7 +7595,7 @@ const CONFIG = {
         "code": "-4",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 124,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -7606,9 +7606,9 @@ const CONFIG = {
         "code": "-5",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 103,
         "pressure": 10,
-        "bend": 0,
+        "bend": 520,
         "weight": 3.47,
         "rollLength": 0,
         "priceEur": 122.4
@@ -7617,9 +7617,9 @@ const CONFIG = {
         "code": "-6",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 115,
         "pressure": 10,
-        "bend": 0,
+        "bend": 590,
         "weight": 4,
         "rollLength": 0,
         "priceEur": 137.25
@@ -7628,9 +7628,9 @@ const CONFIG = {
         "code": "-7",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 92,
         "pressure": 10,
-        "bend": 0,
+        "bend": 460,
         "weight": 3.15,
         "rollLength": 0,
         "priceEur": 104.3
@@ -7639,9 +7639,9 @@ const CONFIG = {
         "code": "-8",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 88,
         "pressure": 10,
-        "bend": 0,
+        "bend": 430,
         "weight": 2.8,
         "rollLength": 0,
         "priceEur": 86.7
@@ -7650,9 +7650,9 @@ const CONFIG = {
         "code": "-9",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 82,
         "pressure": 10,
-        "bend": 0,
+        "bend": 410,
         "weight": 2.62,
         "rollLength": 0,
         "priceEur": 82.05
@@ -7661,7 +7661,7 @@ const CONFIG = {
         "code": "-10",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 77,
         "pressure": 10,
         "bend": 0,
         "weight": 2.43,
@@ -7672,9 +7672,9 @@ const CONFIG = {
         "code": "-11",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 73,
         "pressure": 10,
-        "bend": 0,
+        "bend": 340,
         "weight": 2.1,
         "rollLength": 0,
         "priceEur": 62.85
@@ -7683,7 +7683,7 @@ const CONFIG = {
         "code": "-12",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 67,
         "pressure": 10,
         "bend": 0,
         "weight": 1.9,
@@ -7694,9 +7694,9 @@ const CONFIG = {
         "code": "-13",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 63,
         "pressure": 10,
-        "bend": 0,
+        "bend": 290,
         "weight": 1.8,
         "rollLength": 0,
         "priceEur": 52.05
@@ -7705,7 +7705,7 @@ const CONFIG = {
         "code": "-14",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 58,
         "pressure": 10,
         "bend": 0,
         "weight": 1.63,
@@ -7716,9 +7716,9 @@ const CONFIG = {
         "code": "-15",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 56,
         "pressure": 10,
-        "bend": 0,
+        "bend": 260,
         "weight": 1.49,
         "rollLength": 0,
         "priceEur": 46.1
@@ -7727,9 +7727,9 @@ const CONFIG = {
         "code": "-16",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 52,
         "pressure": 10,
-        "bend": 0,
+        "bend": 250,
         "weight": 1.35,
         "rollLength": 0,
         "priceEur": 44.3
@@ -7738,9 +7738,9 @@ const CONFIG = {
         "code": "-17",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 50,
         "pressure": 10,
-        "bend": 0,
+        "bend": 240,
         "weight": 1.28,
         "rollLength": 0,
         "priceEur": 42
@@ -7749,9 +7749,9 @@ const CONFIG = {
         "code": "-18",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 48,
         "pressure": 10,
-        "bend": 0,
+        "bend": 230,
         "weight": 1.2,
         "rollLength": 0,
         "priceEur": 41.35
@@ -7760,9 +7760,9 @@ const CONFIG = {
         "code": "-19",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 45,
         "pressure": 10,
-        "bend": 0,
+        "bend": 210,
         "weight": 1.08,
         "rollLength": 0,
         "priceEur": 39.5
@@ -7771,9 +7771,9 @@ const CONFIG = {
         "code": "-20",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 42,
         "pressure": 10,
-        "bend": 0,
+        "bend": 190,
         "weight": 0.97,
         "rollLength": 0,
         "priceEur": 35.95
@@ -7782,9 +7782,9 @@ const CONFIG = {
         "code": "-21",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 40,
         "pressure": 10,
-        "bend": 0,
+        "bend": 170,
         "weight": 0.91,
         "rollLength": 0,
         "priceEur": 40.75
@@ -7793,7 +7793,7 @@ const CONFIG = {
         "code": "-22",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 38,
         "pressure": 10,
         "bend": 0,
         "weight": 0.85,
@@ -7804,9 +7804,9 @@ const CONFIG = {
         "code": "-23",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 31,
         "pressure": 10,
-        "bend": 0,
+        "bend": 120,
         "weight": 0.72,
         "rollLength": 0,
         "priceEur": 33.65
@@ -7815,9 +7815,9 @@ const CONFIG = {
         "code": "-24",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 35,
         "pressure": 10,
-        "bend": 0,
+        "bend": 140,
         "weight": 0.77,
         "rollLength": 0,
         "priceEur": 27.95
@@ -7826,9 +7826,9 @@ const CONFIG = {
         "code": "-25",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 29,
         "pressure": 10,
-        "bend": 0,
+        "bend": 110,
         "weight": 0.67,
         "rollLength": 0,
         "priceEur": 26.65
@@ -7837,9 +7837,9 @@ const CONFIG = {
         "code": "-26",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 35,
         "pressure": 10,
-        "bend": 0,
+        "bend": 115,
         "weight": 0.62,
         "rollLength": 0,
         "priceEur": 27.65
@@ -7848,9 +7848,9 @@ const CONFIG = {
         "code": "-27",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 29,
         "pressure": 10,
-        "bend": 0,
+        "bend": 115,
         "weight": 0.57,
         "rollLength": 0,
         "priceEur": 27.4
@@ -7859,7 +7859,7 @@ const CONFIG = {
         "code": "-28",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 179,
         "pressure": 10,
         "bend": 0,
         "weight": 6.16,
@@ -7870,7 +7870,7 @@ const CONFIG = {
         "code": "-29",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 225,
         "pressure": 10,
         "bend": 0,
         "weight": 6.58,
@@ -7921,9 +7921,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "APDatec144-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 224,
         "pressure": 1,
         "bend": 0,
         "weight": 0,
@@ -7932,9 +7932,9 @@ const CONFIG = {
       },
       {
         "code": "APDatec144-2",
-        "innerDb": 0,
+        "innerDb": 152,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 170,
         "pressure": 2,
         "bend": 0,
         "weight": 0,
@@ -7943,9 +7943,9 @@ const CONFIG = {
       },
       {
         "code": "APDatec144-3",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 114.4,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -7954,9 +7954,9 @@ const CONFIG = {
       },
       {
         "code": "APDatec144-4",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 141,
         "pressure": 2,
         "bend": 0,
         "weight": 0,
@@ -7965,9 +7965,9 @@ const CONFIG = {
       },
       {
         "code": "APDatec144-5",
-        "innerDb": 0,
+        "innerDb": 90,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 102,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -7976,9 +7976,9 @@ const CONFIG = {
       },
       {
         "code": "APDatec144-6",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 92.2,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -7987,9 +7987,9 @@ const CONFIG = {
       },
       {
         "code": "APDatec144-7",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 88.4,
         "pressure": 4,
         "bend": 0,
         "weight": 0,
@@ -7998,9 +7998,9 @@ const CONFIG = {
       },
       {
         "code": "APDatec144-8",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 74,
         "pressure": 4,
         "bend": 0,
         "weight": 0,
@@ -8009,9 +8009,9 @@ const CONFIG = {
       },
       {
         "code": "APDatec144-9",
-        "innerDb": 0,
+        "innerDb": 60,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 71,
         "pressure": 4,
         "bend": 0,
         "weight": 0,
@@ -8020,9 +8020,9 @@ const CONFIG = {
       },
       {
         "code": "APDatec144-10",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 61.4,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
@@ -8068,7 +8068,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 190,
         "weight": 1.7,
         "rollLength": 0,
         "priceEur": 46.05
@@ -8076,10 +8076,10 @@ const CONFIG = {
       {
         "code": "-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "6\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 180,
         "weight": 1.5,
         "rollLength": 0,
         "priceEur": 31.65
@@ -8087,10 +8087,10 @@ const CONFIG = {
       {
         "code": "-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "5\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 170,
         "weight": 1.12,
         "rollLength": 0,
         "priceEur": 24.85
@@ -8101,7 +8101,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 160,
         "weight": 1,
         "rollLength": 0,
         "priceEur": 21.7
@@ -8112,7 +8112,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 150,
         "weight": 0.95,
         "rollLength": 0,
         "priceEur": 20.25
@@ -8120,10 +8120,10 @@ const CONFIG = {
       {
         "code": "-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 140,
         "weight": 0.76,
         "rollLength": 0,
         "priceEur": 17.3
@@ -8134,7 +8134,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 125,
         "weight": 0.68,
         "rollLength": 0,
         "priceEur": 14
@@ -8142,10 +8142,10 @@ const CONFIG = {
       {
         "code": "-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 100,
         "weight": 0.56,
         "rollLength": 0,
         "priceEur": 12.85
@@ -8156,7 +8156,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 90,
         "weight": 0.51,
         "rollLength": 0,
         "priceEur": 11.8
@@ -8164,10 +8164,10 @@ const CONFIG = {
       {
         "code": "-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 60,
         "weight": 0.3,
         "rollLength": 0,
         "priceEur": 6.55
@@ -8178,7 +8178,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 65,
         "weight": 0.43,
         "rollLength": 0,
         "priceEur": 9.75
@@ -8189,7 +8189,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 55,
         "weight": 0.25,
         "rollLength": 0,
         "priceEur": 6.05
@@ -8200,7 +8200,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 50,
         "weight": 0.205,
         "rollLength": 0,
         "priceEur": 5.15
@@ -8208,10 +8208,10 @@ const CONFIG = {
       {
         "code": "-14",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 45,
         "weight": 0.2,
         "rollLength": 0,
         "priceEur": 4.9
@@ -8222,7 +8222,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 40,
         "weight": 0.175,
         "rollLength": 0,
         "priceEur": 4.5
@@ -8230,10 +8230,10 @@ const CONFIG = {
       {
         "code": "-16",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 35,
         "weight": 0.16,
         "rollLength": 0,
         "priceEur": 4.2
@@ -8244,7 +8244,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 35,
         "weight": 0.145,
         "rollLength": 0,
         "priceEur": 3.1
@@ -8252,10 +8252,10 @@ const CONFIG = {
       {
         "code": "-18",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 30,
         "weight": 0.11,
         "rollLength": 0,
         "priceEur": 2.8
@@ -8266,7 +8266,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 110,
         "weight": 0.6,
         "rollLength": 0,
         "priceEur": 13.9
@@ -8308,10 +8308,10 @@ const CONFIG = {
       {
         "code": "Pegasus-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 250,
         "weight": 1.91,
         "rollLength": 0,
         "priceEur": 65.1
@@ -8355,10 +8355,10 @@ const CONFIG = {
       {
         "code": "PETROGAS /25 SD-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4\"",
+        "outerDb": 120,
         "pressure": 25,
-        "bend": 0,
+        "bend": 625,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 357.15
@@ -8366,10 +8366,10 @@ const CONFIG = {
       {
         "code": "PETROGAS /25 SD-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2 ½\"",
+        "outerDb": 81,
         "pressure": 25,
-        "bend": 0,
+        "bend": 380,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 0
@@ -8377,10 +8377,10 @@ const CONFIG = {
       {
         "code": "PETROGAS /25 SD-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3\"",
+        "outerDb": 94,
         "pressure": 25,
-        "bend": 0,
+        "bend": 460,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 247.95
@@ -8388,10 +8388,10 @@ const CONFIG = {
       {
         "code": "PETROGAS /25 SD-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 67,
         "pressure": 25,
-        "bend": 0,
+        "bend": 280,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 149.55
@@ -8399,10 +8399,10 @@ const CONFIG = {
       {
         "code": "PETROGAS /25 SD-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ½\"",
+        "outerDb": 52,
         "pressure": 25,
-        "bend": 0,
+        "bend": 200,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 115.7
@@ -8410,10 +8410,10 @@ const CONFIG = {
       {
         "code": "PETROGAS /25 SD-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ¼\"",
+        "outerDb": 45,
         "pressure": 25,
-        "bend": 0,
+        "bend": 190,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 82.65
@@ -8421,10 +8421,10 @@ const CONFIG = {
       {
         "code": "PETROGAS /25 SD-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 26,
         "pressure": 25,
-        "bend": 0,
+        "bend": 75,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 0
@@ -8432,10 +8432,10 @@ const CONFIG = {
       {
         "code": "PETROGAS /25 SD-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 38,
         "pressure": 25,
-        "bend": 0,
+        "bend": 140,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 70.4
@@ -8443,10 +8443,10 @@ const CONFIG = {
       {
         "code": "PETROGAS /25 SD-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 31,
         "pressure": 25,
-        "bend": 0,
+        "bend": 100,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 0
@@ -8454,10 +8454,10 @@ const CONFIG = {
       {
         "code": "PETROGAS /25 SD-10",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 23,
         "pressure": 25,
-        "bend": 0,
+        "bend": 55,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 0
@@ -11901,9 +11901,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "APDatec146-1",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 139,
         "pressure": 2,
         "bend": 0,
         "weight": 0,
@@ -11912,9 +11912,9 @@ const CONFIG = {
       },
       {
         "code": "APDatec146-2",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 116.4,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -11923,9 +11923,9 @@ const CONFIG = {
       },
       {
         "code": "APDatec146-3",
-        "innerDb": 0,
+        "innerDb": 90,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 102.4,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -11934,9 +11934,9 @@ const CONFIG = {
       },
       {
         "code": "APDatec146-4",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 91.8,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -11945,9 +11945,9 @@ const CONFIG = {
       },
       {
         "code": "APDatec146-5",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 87.6,
         "pressure": 4,
         "bend": 0,
         "weight": 0,
@@ -11956,9 +11956,9 @@ const CONFIG = {
       },
       {
         "code": "APDatec146-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 73.4,
         "pressure": 4,
         "bend": 0,
         "weight": 0,
@@ -11967,9 +11967,9 @@ const CONFIG = {
       },
       {
         "code": "APDatec146-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 59.4,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
@@ -11978,9 +11978,9 @@ const CONFIG = {
       },
       {
         "code": "APDatec146-8",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 169,
         "pressure": 1,
         "bend": 0,
         "weight": 0,
@@ -12041,10 +12041,10 @@ const CONFIG = {
       {
         "code": " Likya ST-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 215,
         "weight": 0.83,
         "rollLength": 0,
         "priceEur": 18.6
@@ -12052,10 +12052,10 @@ const CONFIG = {
       {
         "code": " Likya ST-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.9/16\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 165,
         "weight": 0.59,
         "rollLength": 0,
         "priceEur": 14.05
@@ -12063,10 +12063,10 @@ const CONFIG = {
       {
         "code": " Likya ST-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 130,
         "weight": 0.46,
         "rollLength": 0,
         "priceEur": 9.95
@@ -12105,7 +12105,7 @@ const CONFIG = {
       {
         "code": "PTFE с 2 метални оплетки-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 150,
         "bend": 0,
@@ -12116,7 +12116,7 @@ const CONFIG = {
       {
         "code": "PTFE с 2 метални оплетки-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 200,
         "bend": 0,
@@ -12127,7 +12127,7 @@ const CONFIG = {
       {
         "code": "PTFE с 2 метални оплетки-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 235,
         "bend": 0,
@@ -12138,7 +12138,7 @@ const CONFIG = {
       {
         "code": "PTFE с 2 метални оплетки-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 280,
         "bend": 0,
@@ -12149,7 +12149,7 @@ const CONFIG = {
       {
         "code": "PTFE с 2 метални оплетки-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 285,
         "bend": 0,
@@ -12160,7 +12160,7 @@ const CONFIG = {
       {
         "code": "PTFE с 2 метални оплетки-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 365,
         "bend": 0,
@@ -12171,7 +12171,7 @@ const CONFIG = {
       {
         "code": "PTFE с 2 метални оплетки-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 300,
         "bend": 0,
@@ -12222,10 +12222,10 @@ const CONFIG = {
       {
         "code": "SEMPERPAC 1SN-K-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/4\"",
+        "outerDb": 43.7,
         "pressure": 100,
-        "bend": 0,
+        "bend": 300,
         "weight": 1.29,
         "rollLength": 0,
         "priceEur": 0
@@ -12233,10 +12233,10 @@ const CONFIG = {
       {
         "code": "SEMPERPAC 1SN-K-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 3.1,
         "pressure": 110,
-        "bend": 0,
+        "bend": 160,
         "weight": 0.74,
         "rollLength": 0,
         "priceEur": 0
@@ -12244,10 +12244,10 @@ const CONFIG = {
       {
         "code": "SEMPERPAC 1SN-K-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 26.1,
         "pressure": 125,
-        "bend": 0,
+        "bend": 120,
         "weight": 0.5,
         "rollLength": 0,
         "priceEur": 0
@@ -12255,10 +12255,10 @@ const CONFIG = {
       {
         "code": "SEMPERPAC 1SN-K-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 22.3,
         "pressure": 150,
-        "bend": 0,
+        "bend": 105,
         "weight": 0.39,
         "rollLength": 0,
         "priceEur": 0
@@ -12266,10 +12266,10 @@ const CONFIG = {
       {
         "code": "SEMPERPAC 1SN-K-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 19.2,
         "pressure": 200,
-        "bend": 0,
+        "bend": 80,
         "weight": 0.34,
         "rollLength": 0,
         "priceEur": 0
@@ -12277,10 +12277,10 @@ const CONFIG = {
       {
         "code": "SEMPERPAC 1SN-K-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 15.9,
         "pressure": 230,
-        "bend": 0,
+        "bend": 65,
         "weight": 0.26,
         "rollLength": 0,
         "priceEur": 0
@@ -12288,10 +12288,10 @@ const CONFIG = {
       {
         "code": "SEMPERPAC 1SN-K-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/16\"",
+        "outerDb": 13.6,
         "pressure": 250,
-        "bend": 0,
+        "bend": 55,
         "weight": 0.21,
         "rollLength": 0,
         "priceEur": 0
@@ -12299,10 +12299,10 @@ const CONFIG = {
       {
         "code": "SEMPERPAC 1SN-K-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 12,
         "pressure": 290,
-        "bend": 0,
+        "bend": 40,
         "weight": 0.17,
         "rollLength": 0,
         "priceEur": 0
@@ -12351,9 +12351,9 @@ const CONFIG = {
         "code": "SEMPERPAC 2SN-K-1",
         "innerDb": 0,
         "inch": "1.1/4\"",
-        "outerDb": 0,
+        "outerDb": 43.5,
         "pressure": 175,
-        "bend": 0,
+        "bend": 300,
         "weight": 1.57,
         "rollLength": 0,
         "priceEur": 0
@@ -12362,9 +12362,9 @@ const CONFIG = {
         "code": "SEMPERPAC 2SN-K-2",
         "innerDb": 0,
         "inch": "1\"",
-        "outerDb": 0,
+        "outerDb": 35.6,
         "pressure": 200,
-        "bend": 0,
+        "bend": 210,
         "weight": 1.15,
         "rollLength": 0,
         "priceEur": 44.2
@@ -12373,9 +12373,9 @@ const CONFIG = {
         "code": "SEMPERPAC 2SN-K-3",
         "innerDb": 0,
         "inch": "3.4\"",
-        "outerDb": 0,
+        "outerDb": 27.7,
         "pressure": 280,
-        "bend": 0,
+        "bend": 160,
         "weight": 0.79,
         "rollLength": 0,
         "priceEur": 30.2
@@ -12384,9 +12384,9 @@ const CONFIG = {
         "code": "SEMPERPAC 2SN-K-4",
         "innerDb": 0,
         "inch": "5.8\"",
-        "outerDb": 0,
+        "outerDb": 23.6,
         "pressure": 290,
-        "bend": 0,
+        "bend": 130,
         "weight": 0.61,
         "rollLength": 0,
         "priceEur": 25.2
@@ -12395,9 +12395,9 @@ const CONFIG = {
         "code": "SEMPERPAC 2SN-K-5",
         "innerDb": 0,
         "inch": "1/2\"",
-        "outerDb": 0,
+        "outerDb": 20.7,
         "pressure": 345,
-        "bend": 0,
+        "bend": 90,
         "weight": 0.52,
         "rollLength": 0,
         "priceEur": 21.4
@@ -12406,9 +12406,9 @@ const CONFIG = {
         "code": "SEMPERPAC 2SN-K-6",
         "innerDb": 0,
         "inch": "3/8\"",
-        "outerDb": 0,
+        "outerDb": 17,
         "pressure": 385,
-        "bend": 0,
+        "bend": 70,
         "weight": 0.39,
         "rollLength": 0,
         "priceEur": 18.4
@@ -12417,9 +12417,9 @@ const CONFIG = {
         "code": "SEMPERPAC 2SN-K-7",
         "innerDb": 0,
         "inch": "1/4\"",
-        "outerDb": 0,
+        "outerDb": 13.4,
         "pressure": 450,
-        "bend": 0,
+        "bend": 45,
         "weight": 0.27,
         "rollLength": 0,
         "priceEur": 0
@@ -12428,9 +12428,9 @@ const CONFIG = {
         "code": "SEMPERPAC 2SN-K-8",
         "innerDb": 0,
         "inch": "5/16\"",
-        "outerDb": 0,
+        "outerDb": 15,
         "pressure": 420,
-        "bend": 0,
+        "bend": 60,
         "weight": 0.31,
         "rollLength": 0,
         "priceEur": 0
@@ -12478,10 +12478,10 @@ const CONFIG = {
       {
         "code": "SEMPERIT 1 SN-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 64.1,
         "pressure": 40,
-        "bend": 0,
+        "bend": 630,
         "weight": 2.01,
         "rollLength": 0,
         "priceEur": 64.5
@@ -12489,10 +12489,10 @@ const CONFIG = {
       {
         "code": "SEMPERIT 1 SN-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ½\"",
+        "outerDb": 50.1,
         "pressure": 50,
-        "bend": 0,
+        "bend": 500,
         "weight": 1.42,
         "rollLength": 0,
         "priceEur": 47.8
@@ -12500,10 +12500,10 @@ const CONFIG = {
       {
         "code": "SEMPERIT 1 SN-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 35.1,
         "pressure": 88,
-        "bend": 0,
+        "bend": 300,
         "weight": 0.83,
         "rollLength": 0,
         "priceEur": 23.5
@@ -12511,10 +12511,10 @@ const CONFIG = {
       {
         "code": "SEMPERIT 1 SN-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ¼\"",
+        "outerDb": 42.5,
         "pressure": 63,
-        "bend": 0,
+        "bend": 420,
         "weight": 1.07,
         "rollLength": 0,
         "priceEur": 39.75
@@ -12522,10 +12522,10 @@ const CONFIG = {
       {
         "code": "SEMPERIT 1 SN-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 27.1,
         "pressure": 105,
-        "bend": 0,
+        "bend": 240,
         "weight": 0.56,
         "rollLength": 0,
         "priceEur": 14.75
@@ -12533,10 +12533,10 @@ const CONFIG = {
       {
         "code": "SEMPERIT 1 SN-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 23.2,
         "pressure": 130,
-        "bend": 0,
+        "bend": 200,
         "weight": 0.44,
         "rollLength": 0,
         "priceEur": 13.05
@@ -12544,10 +12544,10 @@ const CONFIG = {
       {
         "code": "SEMPERIT 1 SN-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 20,
         "pressure": 160,
-        "bend": 0,
+        "bend": 180,
         "weight": 0.36,
         "rollLength": 0,
         "priceEur": 10.3
@@ -12555,10 +12555,10 @@ const CONFIG = {
       {
         "code": "SEMPERIT 1 SN-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 16,
         "pressure": 180,
-        "bend": 0,
+        "bend": 125,
         "weight": 0.28,
         "rollLength": 0,
         "priceEur": 9.1
@@ -12566,10 +12566,10 @@ const CONFIG = {
       {
         "code": "SEMPERIT 1 SN-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/16\"",
+        "outerDb": 14.77,
         "pressure": 215,
-        "bend": 0,
+        "bend": 115,
         "weight": 0.22,
         "rollLength": 0,
         "priceEur": 8.5
@@ -12577,10 +12577,10 @@ const CONFIG = {
       {
         "code": "SEMPERIT 1 SN-10",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 13,
         "pressure": 225,
-        "bend": 0,
+        "bend": 100,
         "weight": 0.19,
         "rollLength": 0,
         "priceEur": 7.5
@@ -12628,10 +12628,10 @@ const CONFIG = {
       {
         "code": "Semperit 2 SN-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 66.7,
         "pressure": 80,
-        "bend": 0,
+        "bend": 630,
         "weight": 2.79,
         "rollLength": 0,
         "priceEur": 18.2
@@ -12639,10 +12639,10 @@ const CONFIG = {
       {
         "code": "Semperit 2 SN-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ½\"",
+        "outerDb": 54.5,
         "pressure": 90,
-        "bend": 0,
+        "bend": 500,
         "weight": 2.17,
         "rollLength": 0,
         "priceEur": 77.1
@@ -12650,10 +12650,10 @@ const CONFIG = {
       {
         "code": "Semperit 2 SN-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ¼\"",
+        "outerDb": 46.7,
         "pressure": 125,
-        "bend": 0,
+        "bend": 420,
         "weight": 1.77,
         "rollLength": 0,
         "priceEur": 64.1
@@ -12661,10 +12661,10 @@ const CONFIG = {
       {
         "code": "Semperit 2 SN-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 37.1,
         "pressure": 165,
-        "bend": 0,
+        "bend": 300,
         "weight": 1.23,
         "rollLength": 0,
         "priceEur": 26.95
@@ -12672,10 +12672,10 @@ const CONFIG = {
       {
         "code": "Semperit 2 SN-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 28.6,
         "pressure": 215,
-        "bend": 0,
+        "bend": 240,
         "weight": 0.84,
         "rollLength": 0,
         "priceEur": 19.05
@@ -12683,10 +12683,10 @@ const CONFIG = {
       {
         "code": "Semperit 2 SN-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 24.6,
         "pressure": 250,
-        "bend": 0,
+        "bend": 200,
         "weight": 0.66,
         "rollLength": 0,
         "priceEur": 16.25
@@ -12694,10 +12694,10 @@ const CONFIG = {
       {
         "code": "Semperit 2 SN-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 18.4,
         "pressure": 330,
-        "bend": 0,
+        "bend": 125,
         "weight": 0.44,
         "rollLength": 0,
         "priceEur": 11.1
@@ -12705,10 +12705,10 @@ const CONFIG = {
       {
         "code": "Semperit 2 SN-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 21.4,
         "pressure": 275,
-        "bend": 0,
+        "bend": 180,
         "weight": 0.53,
         "rollLength": 0,
         "priceEur": 12.85
@@ -12716,10 +12716,10 @@ const CONFIG = {
       {
         "code": "Semperit 2 SN-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/16\"",
+        "outerDb": 16,
         "pressure": 350,
-        "bend": 0,
+        "bend": 115,
         "weight": 0.37,
         "rollLength": 0,
         "priceEur": 10.25
@@ -12727,10 +12727,10 @@ const CONFIG = {
       {
         "code": "Semperit 2 SN-10",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 14.4,
         "pressure": 400,
-        "bend": 0,
+        "bend": 100,
         "weight": 0.31,
         "rollLength": 0,
         "priceEur": 9.35
@@ -12769,10 +12769,10 @@ const CONFIG = {
       {
         "code": "PTFE гладък-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 29.3,
         "pressure": 65,
-        "bend": 0,
+        "bend": 270,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 78.35
@@ -12780,10 +12780,10 @@ const CONFIG = {
       {
         "code": "PTFE гладък-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "7/8\"",
+        "outerDb": 26.1,
         "pressure": 92,
-        "bend": 0,
+        "bend": 229,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 0
@@ -12791,10 +12791,10 @@ const CONFIG = {
       {
         "code": "PTFE гладък-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 22.2,
         "pressure": 90,
-        "bend": 0,
+        "bend": 190,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 59.8
@@ -12802,10 +12802,10 @@ const CONFIG = {
       {
         "code": "PTFE гладък-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 19.1,
         "pressure": 100,
-        "bend": 0,
+        "bend": 130,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 47.15
@@ -12813,10 +12813,10 @@ const CONFIG = {
       {
         "code": "PTFE гладък-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 15.7,
         "pressure": 120,
-        "bend": 0,
+        "bend": 70,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 38.4
@@ -12824,10 +12824,10 @@ const CONFIG = {
       {
         "code": "PTFE гладък-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 13.5,
         "pressure": 183,
-        "bend": 0,
+        "bend": 127,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 0
@@ -12835,10 +12835,10 @@ const CONFIG = {
       {
         "code": "PTFE гладък-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 12.4,
         "pressure": 135,
-        "bend": 0,
+        "bend": 55,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 28.8
@@ -12846,10 +12846,10 @@ const CONFIG = {
       {
         "code": "PTFE гладък-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/16\"",
+        "outerDb": 10.8,
         "pressure": 150,
-        "bend": 0,
+        "bend": 50,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 27.1
@@ -12857,10 +12857,10 @@ const CONFIG = {
       {
         "code": "PTFE гладък-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 9,
         "pressure": 175,
-        "bend": 0,
+        "bend": 45,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 23.35
@@ -12868,10 +12868,10 @@ const CONFIG = {
       {
         "code": "PTFE гладък-10",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/8\"",
+        "outerDb": 5.8,
         "pressure": 270,
-        "bend": 0,
+        "bend": 25,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 0
@@ -12879,10 +12879,10 @@ const CONFIG = {
       {
         "code": "PTFE гладък-11",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/16\"",
+        "outerDb": 7.4,
         "pressure": 200,
-        "bend": 0,
+        "bend": 35,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 0
@@ -12890,10 +12890,10 @@ const CONFIG = {
       {
         "code": "PTFE гладък-12",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/8\"",
+        "outerDb": 33.1,
         "pressure": 44,
-        "bend": 0,
+        "bend": 410,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 0
@@ -12936,8 +12936,8 @@ const CONFIG = {
       {
         "code": "4SH DUNLOP-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 68.1,
         "pressure": 250,
         "bend": 0,
         "weight": 4.67,
@@ -12947,8 +12947,8 @@ const CONFIG = {
       {
         "code": "4SH DUNLOP-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/4\"",
+        "outerDb": 45.5,
         "pressure": 350,
         "bend": 0,
         "weight": 2.47,
@@ -12958,8 +12958,8 @@ const CONFIG = {
       {
         "code": "4SH DUNLOP-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/2\"",
+        "outerDb": 53.5,
         "pressure": 290,
         "bend": 0,
         "weight": 3.27,
@@ -12969,10 +12969,10 @@ const CONFIG = {
       {
         "code": "4SH DUNLOP-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 31.8,
         "pressure": 420,
-        "bend": 0,
+        "bend": 280,
         "weight": 1.468,
         "rollLength": 0,
         "priceEur": 42.5
@@ -12980,8 +12980,8 @@ const CONFIG = {
       {
         "code": "4SH DUNLOP-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 38.4,
         "pressure": 385,
         "bend": 0,
         "weight": 2.026,
@@ -13022,10 +13022,10 @@ const CONFIG = {
       {
         "code": "PTFE гофриран-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 57,
         "pressure": 34,
-        "bend": 0,
+        "bend": 180,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 497.6
@@ -13033,10 +13033,10 @@ const CONFIG = {
       {
         "code": "PTFE гофриран-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 1/2\"",
+        "outerDb": 44.5,
         "pressure": 43,
-        "bend": 0,
+        "bend": 145,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 411.2
@@ -13044,10 +13044,10 @@ const CONFIG = {
       {
         "code": "PTFE гофриран-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 1/4\"",
+        "outerDb": 38.5,
         "pressure": 48,
-        "bend": 0,
+        "bend": 125,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 274.55
@@ -13055,10 +13055,10 @@ const CONFIG = {
       {
         "code": "PTFE гофриран-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 32,
         "pressure": 50,
-        "bend": 0,
+        "bend": 90,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 136.45
@@ -13066,10 +13066,10 @@ const CONFIG = {
       {
         "code": "PTFE гофриран-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "7/8\"",
+        "outerDb": 27.94,
         "pressure": 57,
-        "bend": 0,
+        "bend": 76,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 0
@@ -13077,10 +13077,10 @@ const CONFIG = {
       {
         "code": "PTFE гофриран-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 25,
         "pressure": 70,
-        "bend": 0,
+        "bend": 65,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 90.4
@@ -13088,10 +13088,10 @@ const CONFIG = {
       {
         "code": "PTFE гофриран-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 21.5,
         "pressure": 80,
-        "bend": 0,
+        "bend": 50,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 81.9
@@ -13099,10 +13099,10 @@ const CONFIG = {
       {
         "code": "PTFE гофриран-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 18,
         "pressure": 110,
-        "bend": 0,
+        "bend": 25,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 71.25
@@ -13110,10 +13110,10 @@ const CONFIG = {
       {
         "code": "PTFE гофриран-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 14.7,
         "pressure": 125,
-        "bend": 0,
+        "bend": 20,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 0
@@ -13121,10 +13121,10 @@ const CONFIG = {
       {
         "code": "PTFE гофриран-10",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 9.14,
         "pressure": 135,
-        "bend": 0,
+        "bend": 18,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 0
@@ -13132,10 +13132,10 @@ const CONFIG = {
       {
         "code": "PTFE гофриран-11",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/16\"",
+        "outerDb": 12.19,
         "pressure": 155,
-        "bend": 0,
+        "bend": 25,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 0
@@ -13188,7 +13188,7 @@ const CONFIG = {
         "inch": "3/8\"",
         "outerDb": 17,
         "pressure": 20,
-        "bend": 0,
+        "bend": 40,
         "weight": 0.21,
         "rollLength": 50,
         "priceEur": 4.35
@@ -13199,7 +13199,7 @@ const CONFIG = {
         "inch": "5/16\"",
         "outerDb": 15,
         "pressure": 20,
-        "bend": 0,
+        "bend": 40,
         "weight": 0.18,
         "rollLength": 50,
         "priceEur": 4.2
@@ -13210,7 +13210,7 @@ const CONFIG = {
         "inch": "1/4\"",
         "outerDb": 13,
         "pressure": 20,
-        "bend": 0,
+        "bend": 40,
         "weight": 0.15,
         "rollLength": 50,
         "priceEur": 3.5
@@ -13260,7 +13260,7 @@ const CONFIG = {
         "inch": "3/8\"",
         "outerDb": 17,
         "pressure": 20,
-        "bend": 0,
+        "bend": 40,
         "weight": 0.21,
         "rollLength": 50,
         "priceEur": 4.35
@@ -13271,7 +13271,7 @@ const CONFIG = {
         "inch": "5/16\"",
         "outerDb": 15,
         "pressure": 20,
-        "bend": 0,
+        "bend": 40,
         "weight": 0.18,
         "rollLength": 50,
         "priceEur": 4.2
@@ -13282,7 +13282,7 @@ const CONFIG = {
         "inch": "1/4\"",
         "outerDb": 13,
         "pressure": 20,
-        "bend": 0,
+        "bend": 40,
         "weight": 0.15,
         "rollLength": 50,
         "priceEur": 3.5
@@ -13329,10 +13329,10 @@ const CONFIG = {
       {
         "code": "LPG Uranus-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 22,
         "pressure": 20,
-        "bend": 0,
+        "bend": 65,
         "weight": 0,
         "rollLength": 100,
         "priceEur": 0
@@ -13340,10 +13340,10 @@ const CONFIG = {
       {
         "code": "LPG Uranus-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 17,
         "pressure": 20,
-        "bend": 0,
+        "bend": 50,
         "weight": 0,
         "rollLength": 100,
         "priceEur": 7.3
@@ -13351,10 +13351,10 @@ const CONFIG = {
       {
         "code": "LPG Uranus-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "23/64\"",
+        "outerDb": 16,
         "pressure": 20,
-        "bend": 0,
+        "bend": 45,
         "weight": 0,
         "rollLength": 100,
         "priceEur": 0
@@ -13362,10 +13362,10 @@ const CONFIG = {
       {
         "code": "LPG Uranus-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/16\"",
+        "outerDb": 15,
         "pressure": 20,
-        "bend": 0,
+        "bend": 40,
         "weight": 0,
         "rollLength": 100,
         "priceEur": 6.45
@@ -13373,10 +13373,10 @@ const CONFIG = {
       {
         "code": "LPG Uranus-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 13,
         "pressure": 20,
-        "bend": 0,
+        "bend": 30,
         "weight": 0,
         "rollLength": 100,
         "priceEur": 6.35
@@ -13477,7 +13477,7 @@ const CONFIG = {
       {
         "code": "Galaxy™ 4826-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -13488,7 +13488,7 @@ const CONFIG = {
       {
         "code": "Galaxy™ 4826-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -13499,7 +13499,7 @@ const CONFIG = {
       {
         "code": "Galaxy™ 4826-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "13/32\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -13510,7 +13510,7 @@ const CONFIG = {
       {
         "code": "Galaxy™ 4826-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -13551,10 +13551,10 @@ const CONFIG = {
       {
         "code": "Galaxy ® SLE G4890-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 23.6,
         "pressure": 0,
-        "bend": 0,
+        "bend": 104,
         "weight": 0.2,
         "rollLength": 0,
         "priceEur": 36.4
@@ -13562,10 +13562,10 @@ const CONFIG = {
       {
         "code": "Galaxy ® SLE G4890-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 19.4,
         "pressure": 0,
-        "bend": 0,
+        "bend": 63,
         "weight": 0.13,
         "rollLength": 0,
         "priceEur": 30.75
@@ -13573,10 +13573,10 @@ const CONFIG = {
       {
         "code": "Galaxy ® SLE G4890-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "13/32\"",
+        "outerDb": 17.3,
         "pressure": 0,
-        "bend": 0,
+        "bend": 38,
         "weight": 0.12,
         "rollLength": 0,
         "priceEur": 27.6
@@ -13584,10 +13584,10 @@ const CONFIG = {
       {
         "code": "Galaxy ® SLE G4890-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/16\"",
+        "outerDb": 14.7,
         "pressure": 0,
-        "bend": 0,
+        "bend": 25,
         "weight": 0.09,
         "rollLength": 0,
         "priceEur": 24.15
@@ -13637,8 +13637,8 @@ const CONFIG = {
       {
         "code": "CALORFOOD 120ºC-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 19.5,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -13648,8 +13648,8 @@ const CONFIG = {
       {
         "code": "CALORFOOD 120ºC-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 17,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -13659,8 +13659,8 @@ const CONFIG = {
       {
         "code": "CALORFOOD 120ºC-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/16\"",
+        "outerDb": 15,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -13670,8 +13670,8 @@ const CONFIG = {
       {
         "code": "CALORFOOD 120ºC-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 12,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -13723,8 +13723,8 @@ const CONFIG = {
       {
         "code": "350LE-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 67,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -13734,8 +13734,8 @@ const CONFIG = {
       {
         "code": "350LE-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/2\"",
+        "outerDb": 52,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -13745,8 +13745,8 @@ const CONFIG = {
       {
         "code": "350LE-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/4\"",
+        "outerDb": 46,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -13756,8 +13756,8 @@ const CONFIG = {
       {
         "code": "350LE-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 37,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -13767,8 +13767,8 @@ const CONFIG = {
       {
         "code": "350LE-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 31,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -13778,8 +13778,8 @@ const CONFIG = {
       {
         "code": "350LE-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 26,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -13789,8 +13789,8 @@ const CONFIG = {
       {
         "code": "350LE-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 23,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -13843,8 +13843,8 @@ const CONFIG = {
       {
         "code": "455LE-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 65,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -13854,8 +13854,8 @@ const CONFIG = {
       {
         "code": "455LE-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/2\"",
+        "outerDb": 50,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -13865,8 +13865,8 @@ const CONFIG = {
       {
         "code": "455LE-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/4\"",
+        "outerDb": 44,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -13876,8 +13876,8 @@ const CONFIG = {
       {
         "code": "455LE-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 31,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -13887,8 +13887,8 @@ const CONFIG = {
       {
         "code": "455LE-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 37,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -13898,8 +13898,8 @@ const CONFIG = {
       {
         "code": "455LE-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 23,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -13952,10 +13952,10 @@ const CONFIG = {
       {
         "code": "405LE-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3\"",
+        "outerDb": 88,
         "pressure": 0,
-        "bend": 0,
+        "bend": 228,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 114.85
@@ -13963,10 +13963,10 @@ const CONFIG = {
       {
         "code": "405LE-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2.1/2\"",
+        "outerDb": 75,
         "pressure": 0,
-        "bend": 0,
+        "bend": 189,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 96.4
@@ -13974,10 +13974,10 @@ const CONFIG = {
       {
         "code": "405LE-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/2\"",
+        "outerDb": 50,
         "pressure": 0,
-        "bend": 0,
+        "bend": 11,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 57.5
@@ -13985,10 +13985,10 @@ const CONFIG = {
       {
         "code": "405LE-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.9/16\"",
+        "outerDb": 57,
         "pressure": 0,
-        "bend": 0,
+        "bend": 125,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 68.05
@@ -13996,10 +13996,10 @@ const CONFIG = {
       {
         "code": "405LE-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 63,
         "pressure": 0,
-        "bend": 0,
+        "bend": 153,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 71.45
@@ -14007,10 +14007,10 @@ const CONFIG = {
       {
         "code": "405LE-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/4\"",
+        "outerDb": 44,
         "pressure": 0,
-        "bend": 0,
+        "bend": 96,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 51.6
@@ -14018,10 +14018,10 @@ const CONFIG = {
       {
         "code": "405LE-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 31,
         "pressure": 0,
-        "bend": 0,
+        "bend": 57,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 38.85
@@ -14029,8 +14029,8 @@ const CONFIG = {
       {
         "code": "405LE-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 37,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -14040,10 +14040,10 @@ const CONFIG = {
       {
         "code": "405LE-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4\"",
+        "outerDb": 116,
         "pressure": 0,
-        "bend": 0,
+        "bend": 306,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 152.5
@@ -14080,7 +14080,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "EOLO PU FOOD-1",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -14091,7 +14091,7 @@ const CONFIG = {
       },
       {
         "code": "EOLO PU FOOD-2",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -14102,7 +14102,7 @@ const CONFIG = {
       },
       {
         "code": "EOLO PU FOOD-3",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -14113,7 +14113,7 @@ const CONFIG = {
       },
       {
         "code": "EOLO PU FOOD-4",
-        "innerDb": 0,
+        "innerDb": 35,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -14124,7 +14124,7 @@ const CONFIG = {
       },
       {
         "code": "EOLO PU FOOD-5",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -14135,7 +14135,7 @@ const CONFIG = {
       },
       {
         "code": "EOLO PU FOOD-6",
-        "innerDb": 0,
+        "innerDb": 30,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -14146,7 +14146,7 @@ const CONFIG = {
       },
       {
         "code": "EOLO PU FOOD-7",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -14157,7 +14157,7 @@ const CONFIG = {
       },
       {
         "code": "EOLO PU FOOD-8",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -14221,7 +14221,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 45,
         "weight": 0.3,
         "rollLength": 0,
         "priceEur": 10
@@ -14232,7 +14232,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 40,
         "weight": 0.26,
         "rollLength": 0,
         "priceEur": 9.2
@@ -14243,7 +14243,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 35,
         "weight": 0.23,
         "rollLength": 0,
         "priceEur": 8.45
@@ -14251,10 +14251,10 @@ const CONFIG = {
       {
         "code": "SEMABLUE-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1 ¼\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 32,
         "weight": 0.21,
         "rollLength": 0,
         "priceEur": 8.05
@@ -14302,7 +14302,7 @@ const CONFIG = {
     "variants": [
       {
         "code": " EOLO PU EST-1",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -14313,7 +14313,7 @@ const CONFIG = {
       },
       {
         "code": " EOLO PU EST-2",
-        "innerDb": 0,
+        "innerDb": 30,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -14324,7 +14324,7 @@ const CONFIG = {
       },
       {
         "code": " EOLO PU EST-3",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -14335,7 +14335,7 @@ const CONFIG = {
       },
       {
         "code": " EOLO PU EST-4",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -14346,7 +14346,7 @@ const CONFIG = {
       },
       {
         "code": " EOLO PU EST-5",
-        "innerDb": 0,
+        "innerDb": 35,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -14357,7 +14357,7 @@ const CONFIG = {
       },
       {
         "code": " EOLO PU EST-6",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -14368,7 +14368,7 @@ const CONFIG = {
       },
       {
         "code": " EOLO PU EST-7",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -14379,7 +14379,7 @@ const CONFIG = {
       },
       {
         "code": " EOLO PU EST-8",
-        "innerDb": 0,
+        "innerDb": 45,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -14390,7 +14390,7 @@ const CONFIG = {
       },
       {
         "code": " EOLO PU EST-9",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -14401,7 +14401,7 @@ const CONFIG = {
       },
       {
         "code": " EOLO PU EST-10",
-        "innerDb": 0,
+        "innerDb": 55,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -14453,10 +14453,10 @@ const CONFIG = {
       {
         "code": "178AA-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2 3/4\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 60,
         "weight": 0.425,
         "rollLength": 0,
         "priceEur": 31.7
@@ -14464,10 +14464,10 @@ const CONFIG = {
       {
         "code": "178AA-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "14\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 203,
         "weight": 2.79,
         "rollLength": 0,
         "priceEur": 0
@@ -14475,10 +14475,10 @@ const CONFIG = {
       {
         "code": "178AA-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "16\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 345,
         "weight": 3.195,
         "rollLength": 0,
         "priceEur": 0
@@ -14486,10 +14486,10 @@ const CONFIG = {
       {
         "code": "178AA-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "12\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 259,
         "weight": 2.39,
         "rollLength": 0,
         "priceEur": 188.25
@@ -14497,10 +14497,10 @@ const CONFIG = {
       {
         "code": "178AA-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "10\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 216,
         "weight": 1.94,
         "rollLength": 0,
         "priceEur": 151.95
@@ -14508,10 +14508,10 @@ const CONFIG = {
       {
         "code": "178AA-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "8\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 173,
         "weight": 1.485,
         "rollLength": 0,
         "priceEur": 108
@@ -14519,10 +14519,10 @@ const CONFIG = {
       {
         "code": "178AA-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "7 1/8\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 15,
         "weight": 1.31,
         "rollLength": 0,
         "priceEur": 96.4
@@ -14530,10 +14530,10 @@ const CONFIG = {
       {
         "code": "178AA-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "5 9/16\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 119,
         "weight": 0.86,
         "rollLength": 0,
         "priceEur": 63.5
@@ -14541,10 +14541,10 @@ const CONFIG = {
       {
         "code": "178AA-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "6\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 129,
         "weight": 0.93,
         "rollLength": 0,
         "priceEur": 68.45
@@ -14552,10 +14552,10 @@ const CONFIG = {
       {
         "code": "178AA-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "6 5/16\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 136,
         "weight": 1.025,
         "rollLength": 0,
         "priceEur": 75.8
@@ -14563,10 +14563,10 @@ const CONFIG = {
       {
         "code": "178AA-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "5\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 108,
         "weight": 0.765,
         "rollLength": 0,
         "priceEur": 56.4
@@ -14574,10 +14574,10 @@ const CONFIG = {
       {
         "code": "178AA-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4 3/4\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 102,
         "weight": 0.68,
         "rollLength": 0,
         "priceEur": 52.25
@@ -14585,10 +14585,10 @@ const CONFIG = {
       {
         "code": "178AA-13",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4 5/16\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 94,
         "weight": 0.615,
         "rollLength": 0,
         "priceEur": 47.9
@@ -14596,10 +14596,10 @@ const CONFIG = {
       {
         "code": "178AA-14",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 85,
         "weight": 0.58,
         "rollLength": 0,
         "priceEur": 44.75
@@ -14607,10 +14607,10 @@ const CONFIG = {
       {
         "code": "178AA-15",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3 3/16\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 68,
         "weight": 0.485,
         "rollLength": 0,
         "priceEur": 35.95
@@ -14618,10 +14618,10 @@ const CONFIG = {
       {
         "code": "178AA-16",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3 3/16\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 77,
         "weight": 0.55,
         "rollLength": 0,
         "priceEur": 40.4
@@ -14629,10 +14629,10 @@ const CONFIG = {
       {
         "code": "178AA-17",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 65,
         "weight": 0.46,
         "rollLength": 0,
         "priceEur": 34.3
@@ -14640,10 +14640,10 @@ const CONFIG = {
       {
         "code": "178AA-18",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1 9/16\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 34,
         "weight": 0.175,
         "rollLength": 0,
         "priceEur": 15.35
@@ -14651,10 +14651,10 @@ const CONFIG = {
       {
         "code": "178AA-19",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 43,
         "weight": 0.225,
         "rollLength": 0,
         "priceEur": 20.1
@@ -14662,10 +14662,10 @@ const CONFIG = {
       {
         "code": "178AA-20",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2 ½\"",
         "outerDb": 0,
         "pressure": 0,
-        "bend": 0,
+        "bend": 54,
         "weight": 0.275,
         "rollLength": 0,
         "priceEur": 24.8
@@ -15062,7 +15062,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 514,
         "pressure": 0.26,
-        "bend": 0,
+        "bend": 367,
         "weight": 10,
         "rollLength": 0,
         "priceEur": 0
@@ -15073,7 +15073,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 413,
         "pressure": 0.325,
-        "bend": 0,
+        "bend": 296,
         "weight": 8.02,
         "rollLength": 0,
         "priceEur": 0
@@ -15084,7 +15084,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 463,
         "pressure": 0.29,
-        "bend": 0,
+        "bend": 331,
         "weight": 9,
         "rollLength": 0,
         "priceEur": 0
@@ -15095,7 +15095,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 363,
         "pressure": 0.37,
-        "bend": 0,
+        "bend": 261,
         "weight": 6,
         "rollLength": 0,
         "priceEur": 0
@@ -15106,7 +15106,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 343,
         "pressure": 0.395,
-        "bend": 0,
+        "bend": 247,
         "weight": 5.67,
         "rollLength": 0,
         "priceEur": 0
@@ -15117,7 +15117,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 338,
         "pressure": 0.4,
-        "bend": 0,
+        "bend": 244,
         "weight": 5.58,
         "rollLength": 0,
         "priceEur": 0
@@ -15128,7 +15128,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 318,
         "pressure": 0.425,
-        "bend": 0,
+        "bend": 230,
         "weight": 5.25,
         "rollLength": 0,
         "priceEur": 0
@@ -15139,7 +15139,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 328,
         "pressure": 0.41,
-        "bend": 0,
+        "bend": 244,
         "weight": 5.41,
         "rollLength": 0,
         "priceEur": 0
@@ -15150,7 +15150,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 313,
         "pressure": 0.435,
-        "bend": 0,
+        "bend": 226,
         "weight": 5.16,
         "rollLength": 0,
         "priceEur": 0
@@ -15161,7 +15161,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 293,
         "pressure": 0.465,
-        "bend": 0,
+        "bend": 212,
         "weight": 4.33,
         "rollLength": 0,
         "priceEur": 0
@@ -15172,7 +15172,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 288,
         "pressure": 0.47,
-        "bend": 0,
+        "bend": 209,
         "weight": 4.26,
         "rollLength": 0,
         "priceEur": 0
@@ -15183,7 +15183,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 267,
         "pressure": 0.51,
-        "bend": 0,
+        "bend": 194,
         "weight": 3.95,
         "rollLength": 0,
         "priceEur": 0
@@ -15194,7 +15194,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 238,
         "pressure": 0.575,
-        "bend": 0,
+        "bend": 174,
         "weight": 3.5,
         "rollLength": 0,
         "priceEur": 0
@@ -15205,7 +15205,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 263,
         "pressure": 0.52,
-        "bend": 0,
+        "bend": 191,
         "weight": 3.88,
         "rollLength": 0,
         "priceEur": 0
@@ -15216,7 +15216,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 213,
         "pressure": 0.645,
-        "bend": 0,
+        "bend": 156,
         "weight": 3.12,
         "rollLength": 0,
         "priceEur": 0
@@ -15227,7 +15227,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 191,
         "pressure": 0.715,
-        "bend": 0,
+        "bend": 139,
         "weight": 2.87,
         "rollLength": 0,
         "priceEur": 0
@@ -15238,7 +15238,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 186,
         "pressure": 0.735,
-        "bend": 0,
+        "bend": 136,
         "weight": 2.79,
         "rollLength": 0,
         "priceEur": 0
@@ -15249,7 +15249,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 181,
         "pressure": 0.76,
-        "bend": 0,
+        "bend": 132,
         "weight": 2.72,
         "rollLength": 0,
         "priceEur": 0
@@ -15260,7 +15260,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 161,
         "pressure": 0.86,
-        "bend": 0,
+        "bend": 118,
         "weight": 2.41,
         "rollLength": 0,
         "priceEur": 0
@@ -15271,7 +15271,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 171,
         "pressure": 0.805,
-        "bend": 0,
+        "bend": 125,
         "weight": 2.56,
         "rollLength": 0,
         "priceEur": 0
@@ -15282,7 +15282,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 151,
         "pressure": 0.92,
-        "bend": 0,
+        "bend": 11,
         "weight": 2.03,
         "rollLength": 0,
         "priceEur": 0
@@ -15293,7 +15293,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 141,
         "pressure": 0.985,
-        "bend": 0,
+        "bend": 104,
         "weight": 1.91,
         "rollLength": 0,
         "priceEur": 0
@@ -15304,7 +15304,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 136,
         "pressure": 1.025,
-        "bend": 0,
+        "bend": 101,
         "weight": 1.84,
         "rollLength": 0,
         "priceEur": 0
@@ -15315,7 +15315,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 131,
         "pressure": 1.07,
-        "bend": 0,
+        "bend": 97,
         "weight": 1.77,
         "rollLength": 0,
         "priceEur": 0
@@ -15326,7 +15326,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 121,
         "pressure": 1.16,
-        "bend": 0,
+        "bend": 90,
         "weight": 1.63,
         "rollLength": 0,
         "priceEur": 0
@@ -15337,7 +15337,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 126,
         "pressure": 1.115,
-        "bend": 0,
+        "bend": 94,
         "weight": 1.68,
         "rollLength": 0,
         "priceEur": 0
@@ -15348,7 +15348,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 111,
         "pressure": 1,
-        "bend": 0,
+        "bend": 83,
         "weight": 1.49,
         "rollLength": 0,
         "priceEur": 0
@@ -15359,7 +15359,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 91,
         "pressure": 1.585,
-        "bend": 0,
+        "bend": 69,
         "weight": 1.11,
         "rollLength": 0,
         "priceEur": 0
@@ -15370,7 +15370,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 101,
         "pressure": 1.415,
-        "bend": 0,
+        "bend": 76,
         "weight": 1.25,
         "rollLength": 0,
         "priceEur": 0
@@ -15381,7 +15381,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 86,
         "pressure": 1.685,
-        "bend": 0,
+        "bend": 66,
         "weight": 1.05,
         "rollLength": 0,
         "priceEur": 49.4
@@ -15392,7 +15392,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 81,
         "pressure": 1.8,
-        "bend": 0,
+        "bend": 62,
         "weight": 0.98,
         "rollLength": 0,
         "priceEur": 0
@@ -15403,7 +15403,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 86,
         "pressure": 1.685,
-        "bend": 0,
+        "bend": 66,
         "weight": 1.05,
         "rollLength": 0,
         "priceEur": 0
@@ -15414,7 +15414,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 75,
         "pressure": 1.935,
-        "bend": 0,
+        "bend": 43,
         "weight": 0.84,
         "rollLength": 0,
         "priceEur": 0
@@ -15425,7 +15425,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 70,
         "pressure": 2.09,
-        "bend": 0,
+        "bend": 40,
         "weight": 0.78,
         "rollLength": 0,
         "priceEur": 0
@@ -15436,7 +15436,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 65,
         "pressure": 2.27,
-        "bend": 0,
+        "bend": 38,
         "weight": 0.72,
         "rollLength": 0,
         "priceEur": 0
@@ -15447,7 +15447,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 60,
         "pressure": 2.485,
-        "bend": 0,
+        "bend": 35,
         "weight": 0.66,
         "rollLength": 0,
         "priceEur": 0
@@ -15458,7 +15458,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 45,
         "pressure": 3.47,
-        "bend": 0,
+        "bend": 28,
         "weight": 0.48,
         "rollLength": 0,
         "priceEur": 0
@@ -15469,7 +15469,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 48,
         "pressure": 3.215,
-        "bend": 0,
+        "bend": 29,
         "weight": 0.52,
         "rollLength": 0,
         "priceEur": 0
@@ -15480,7 +15480,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 50,
         "pressure": 3.065,
-        "bend": 0,
+        "bend": 30,
         "weight": 0.54,
         "rollLength": 0,
         "priceEur": 0
@@ -15491,7 +15491,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 55,
         "pressure": 2.745,
-        "bend": 0,
+        "bend": 33,
         "weight": 0.6,
         "rollLength": 0,
         "priceEur": 0
@@ -15502,7 +15502,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 52,
         "pressure": 2.905,
-        "bend": 0,
+        "bend": 31,
         "weight": 0.56,
         "rollLength": 0,
         "priceEur": 0
@@ -15513,7 +15513,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 27,
         "pressure": 4.72,
-        "bend": 0,
+        "bend": 17,
         "weight": 0.23,
         "rollLength": 0,
         "priceEur": 0
@@ -15524,7 +15524,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 29,
         "pressure": 4.33,
-        "bend": 0,
+        "bend": 18,
         "weight": 0.25,
         "rollLength": 0,
         "priceEur": 0
@@ -15535,7 +15535,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 32,
         "pressure": 3.855,
-        "bend": 0,
+        "bend": 20,
         "weight": 0.28,
         "rollLength": 0,
         "priceEur": 0
@@ -15546,7 +15546,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 40,
         "pressure": 4,
-        "bend": 0,
+        "bend": 25,
         "weight": 0.42,
         "rollLength": 0,
         "priceEur": 0
@@ -15557,7 +15557,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 42,
         "pressure": 3.77,
-        "bend": 0,
+        "bend": 26,
         "weight": 0.44,
         "rollLength": 0,
         "priceEur": 0
@@ -15568,7 +15568,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 25,
         "pressure": 4.405,
-        "bend": 0,
+        "bend": 16,
         "weight": 0.17,
         "rollLength": 0,
         "priceEur": 0
@@ -15579,7 +15579,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 20,
         "pressure": 5,
-        "bend": 0,
+        "bend": 14,
         "weight": 0.14,
         "rollLength": 0,
         "priceEur": 0
@@ -15590,7 +15590,7 @@ const CONFIG = {
         "inch": "",
         "outerDb": 23,
         "pressure": 4.9,
-        "bend": 0,
+        "bend": 15,
         "weight": 0.16,
         "rollLength": 0,
         "priceEur": 0
@@ -15640,9 +15640,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "PE LD MB-1",
-        "innerDb": 0,
+        "innerDb": 11,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 14,
         "pressure": 7,
         "bend": 0,
         "weight": 0,
@@ -15651,9 +15651,9 @@ const CONFIG = {
       },
       {
         "code": "PE LD MB-2",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
@@ -15662,9 +15662,9 @@ const CONFIG = {
       },
       {
         "code": "PE LD MB-3",
-        "innerDb": 0,
+        "innerDb": 9,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 9,
         "bend": 0,
         "weight": 0,
@@ -15673,9 +15673,9 @@ const CONFIG = {
       },
       {
         "code": "PE LD MB-4",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 7,
         "bend": 0,
         "weight": 0,
@@ -15684,9 +15684,9 @@ const CONFIG = {
       },
       {
         "code": "PE LD MB-5",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 9,
         "bend": 0,
         "weight": 0,
@@ -15695,9 +15695,9 @@ const CONFIG = {
       },
       {
         "code": "PE LD MB-6",
-        "innerDb": 0,
+        "innerDb": 4,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 12,
         "bend": 0,
         "weight": 0,
@@ -15706,9 +15706,9 @@ const CONFIG = {
       },
       {
         "code": "PE LD MB-7",
-        "innerDb": 0,
+        "innerDb": 2,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 21,
         "bend": 0,
         "weight": 0,
@@ -15756,9 +15756,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "PUX 98 MB-LONGLIFE-1",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 16,
         "pressure": 9,
         "bend": 0,
         "weight": 0,
@@ -15767,9 +15767,9 @@ const CONFIG = {
       },
       {
         "code": "PUX 98 MB-LONGLIFE-2",
-        "innerDb": 0,
+        "innerDb": 11,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 16,
         "pressure": 12,
         "bend": 0,
         "weight": 0,
@@ -15778,9 +15778,9 @@ const CONFIG = {
       },
       {
         "code": "PUX 98 MB-LONGLIFE-3",
-        "innerDb": 0,
+        "innerDb": 11,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 14,
         "pressure": 8,
         "bend": 0,
         "weight": 0,
@@ -15789,9 +15789,9 @@ const CONFIG = {
       },
       {
         "code": "PUX 98 MB-LONGLIFE-4",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 14,
         "pressure": 11,
         "bend": 0,
         "weight": 0,
@@ -15800,9 +15800,9 @@ const CONFIG = {
       },
       {
         "code": "PUX 98 MB-LONGLIFE-5",
-        "innerDb": 0,
+        "innerDb": 9,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 9,
         "bend": 0,
         "weight": 0,
@@ -15811,9 +15811,9 @@ const CONFIG = {
       },
       {
         "code": "PUX 98 MB-LONGLIFE-6",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 13,
         "bend": 0,
         "weight": 0,
@@ -15822,9 +15822,9 @@ const CONFIG = {
       },
       {
         "code": "PUX 98 MB-LONGLIFE-7",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 8,
         "bend": 0,
         "weight": 0,
@@ -15833,9 +15833,9 @@ const CONFIG = {
       },
       {
         "code": "PUX 98 MB-LONGLIFE-8",
-        "innerDb": 0,
+        "innerDb": 7.5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 9,
         "bend": 0,
         "weight": 0,
@@ -15844,9 +15844,9 @@ const CONFIG = {
       },
       {
         "code": "PUX 98 MB-LONGLIFE-9",
-        "innerDb": 0,
+        "innerDb": 7,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 11,
         "bend": 0,
         "weight": 0,
@@ -15855,9 +15855,9 @@ const CONFIG = {
       },
       {
         "code": "PUX 98 MB-LONGLIFE-10",
-        "innerDb": 0,
+        "innerDb": 6.5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 14,
         "bend": 0,
         "weight": 0,
@@ -15866,9 +15866,9 @@ const CONFIG = {
       },
       {
         "code": "PUX 98 MB-LONGLIFE-11",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 11,
         "bend": 0,
         "weight": 0,
@@ -15877,9 +15877,9 @@ const CONFIG = {
       },
       {
         "code": "PUX 98 MB-LONGLIFE-12",
-        "innerDb": 0,
+        "innerDb": 5.5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 12,
         "bend": 0,
         "weight": 0,
@@ -15888,9 +15888,9 @@ const CONFIG = {
       },
       {
         "code": "PUX 98 MB-LONGLIFE-13",
-        "innerDb": 0,
+        "innerDb": 4,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 14,
         "bend": 0,
         "weight": 0,
@@ -15899,9 +15899,9 @@ const CONFIG = {
       },
       {
         "code": "PUX 98 MB-LONGLIFE-14",
-        "innerDb": 0,
+        "innerDb": 2.7,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4.3,
         "pressure": 15,
         "bend": 0,
         "weight": 0,
@@ -15910,9 +15910,9 @@ const CONFIG = {
       },
       {
         "code": "PUX 98 MB-LONGLIFE-15",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 15,
         "bend": 0,
         "weight": 0,
@@ -15921,9 +15921,9 @@ const CONFIG = {
       },
       {
         "code": "PUX 98 MB-LONGLIFE-16",
-        "innerDb": 0,
+        "innerDb": 3,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 5,
         "pressure": 16,
         "bend": 0,
         "weight": 0,
@@ -15932,9 +15932,9 @@ const CONFIG = {
       },
       {
         "code": "PUX 98 MB-LONGLIFE-17",
-        "innerDb": 0,
+        "innerDb": 2.5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 15,
         "bend": 0,
         "weight": 0,
@@ -15943,9 +15943,9 @@ const CONFIG = {
       },
       {
         "code": "PUX 98 MB-LONGLIFE-18",
-        "innerDb": 0,
+        "innerDb": 2.3,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 17,
         "bend": 0,
         "weight": 0,
@@ -15954,9 +15954,9 @@ const CONFIG = {
       },
       {
         "code": "PUX 98 MB-LONGLIFE-19",
-        "innerDb": 0,
+        "innerDb": 2,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 22,
         "bend": 0,
         "weight": 0,
@@ -16008,9 +16008,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "PE LD-1",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 14,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
@@ -16019,9 +16019,9 @@ const CONFIG = {
       },
       {
         "code": "PE LD-2",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 7,
         "bend": 0,
         "weight": 0,
@@ -16030,9 +16030,9 @@ const CONFIG = {
       },
       {
         "code": "PE LD-3",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 7,
         "bend": 0,
         "weight": 0,
@@ -16041,9 +16041,9 @@ const CONFIG = {
       },
       {
         "code": "PE LD-4",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -16052,9 +16052,9 @@ const CONFIG = {
       },
       {
         "code": "PE LD-5",
-        "innerDb": 0,
+        "innerDb": 4,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 13,
         "bend": 0,
         "weight": 0,
@@ -16063,9 +16063,9 @@ const CONFIG = {
       },
       {
         "code": "PE LD-6",
-        "innerDb": 0,
+        "innerDb": 2,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 21,
         "bend": 0,
         "weight": 0,
@@ -16074,9 +16074,9 @@ const CONFIG = {
       },
       {
         "code": "PE LD-7",
-        "innerDb": 0,
+        "innerDb": 4.35,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6.35,
         "pressure": 12,
         "bend": 0,
         "weight": 0,
@@ -16125,9 +16125,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "PU - blue-1",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 18,
         "pressure": 8,
         "bend": 0,
         "weight": 0,
@@ -16136,9 +16136,9 @@ const CONFIG = {
       },
       {
         "code": "PU - blue-2",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 14,
         "pressure": 8,
         "bend": 0,
         "weight": 0,
@@ -16147,9 +16147,9 @@ const CONFIG = {
       },
       {
         "code": "PU - blue-3",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 14,
         "pressure": 8,
         "bend": 0,
         "weight": 0,
@@ -16158,9 +16158,9 @@ const CONFIG = {
       },
       {
         "code": "PU - blue-4",
-        "innerDb": 0,
+        "innerDb": 11,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 14,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
@@ -16169,9 +16169,9 @@ const CONFIG = {
       },
       {
         "code": "PU - blue-5",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -16180,9 +16180,9 @@ const CONFIG = {
       },
       {
         "code": "PU - blue-6",
-        "innerDb": 0,
+        "innerDb": 9,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -16191,9 +16191,9 @@ const CONFIG = {
       },
       {
         "code": "PU - blue-7",
-        "innerDb": 0,
+        "innerDb": 7,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -16202,9 +16202,9 @@ const CONFIG = {
       },
       {
         "code": "PU - blue-8",
-        "innerDb": 0,
+        "innerDb": 7.5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -16213,9 +16213,9 @@ const CONFIG = {
       },
       {
         "code": "PU - blue-9",
-        "innerDb": 0,
+        "innerDb": 5.7,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8.3,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -16224,9 +16224,9 @@ const CONFIG = {
       },
       {
         "code": "PU - blue-10",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 12,
         "bend": 0,
         "weight": 0,
@@ -16235,9 +16235,9 @@ const CONFIG = {
       },
       {
         "code": "PU - blue-11",
-        "innerDb": 0,
+        "innerDb": 5.5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -16246,9 +16246,9 @@ const CONFIG = {
       },
       {
         "code": "PU - blue-12",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -16257,9 +16257,9 @@ const CONFIG = {
       },
       {
         "code": "PU - blue-13",
-        "innerDb": 0,
+        "innerDb": 4,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -16268,9 +16268,9 @@ const CONFIG = {
       },
       {
         "code": "PU - blue-14",
-        "innerDb": 0,
+        "innerDb": 4.4,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -16279,9 +16279,9 @@ const CONFIG = {
       },
       {
         "code": "PU - blue-15",
-        "innerDb": 0,
+        "innerDb": 3,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 5,
         "pressure": 12,
         "bend": 0,
         "weight": 0,
@@ -16290,9 +16290,9 @@ const CONFIG = {
       },
       {
         "code": "PU - blue-16",
-        "innerDb": 0,
+        "innerDb": 2.8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4.4,
         "pressure": 12,
         "bend": 0,
         "weight": 0,
@@ -16301,9 +16301,9 @@ const CONFIG = {
       },
       {
         "code": "PU - blue-17",
-        "innerDb": 0,
+        "innerDb": 2.4,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 12,
         "bend": 0,
         "weight": 0,
@@ -16355,9 +16355,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "PA 6.6-1",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 33,
         "bend": 0,
         "weight": 0,
@@ -16366,9 +16366,9 @@ const CONFIG = {
       },
       {
         "code": "PA 6.6-2",
-        "innerDb": 0,
+        "innerDb": 7.5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 9.5,
         "pressure": 35,
         "bend": 0,
         "weight": 0,
@@ -16377,9 +16377,9 @@ const CONFIG = {
       },
       {
         "code": "PA 6.6-3",
-        "innerDb": 0,
+        "innerDb": 7,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 52,
         "bend": 0,
         "weight": 0,
@@ -16388,9 +16388,9 @@ const CONFIG = {
       },
       {
         "code": "PA 6.6-4",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 42,
         "bend": 0,
         "weight": 0,
@@ -16399,9 +16399,9 @@ const CONFIG = {
       },
       {
         "code": "PA 6.6-5",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 69,
         "bend": 0,
         "weight": 0,
@@ -16410,9 +16410,9 @@ const CONFIG = {
       },
       {
         "code": "PA 6.6-6",
-        "innerDb": 0,
+        "innerDb": 4,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 60,
         "bend": 0,
         "weight": 0,
@@ -16421,9 +16421,9 @@ const CONFIG = {
       },
       {
         "code": "PA 6.6-7",
-        "innerDb": 0,
+        "innerDb": 3.6,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 75,
         "bend": 0,
         "weight": 0,
@@ -16432,9 +16432,9 @@ const CONFIG = {
       },
       {
         "code": "PA 6.6-8",
-        "innerDb": 0,
+        "innerDb": 3,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 100,
         "bend": 0,
         "weight": 0,
@@ -16443,9 +16443,9 @@ const CONFIG = {
       },
       {
         "code": "PA 6.6-9",
-        "innerDb": 0,
+        "innerDb": 3,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 42,
         "bend": 0,
         "weight": 0,
@@ -16454,9 +16454,9 @@ const CONFIG = {
       },
       {
         "code": "PA 6.6-10",
-        "innerDb": 0,
+        "innerDb": 2,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 100,
         "bend": 0,
         "weight": 0,
@@ -16465,9 +16465,9 @@ const CONFIG = {
       },
       {
         "code": "PA 6.6-11",
-        "innerDb": 0,
+        "innerDb": 2.5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 69,
         "bend": 0,
         "weight": 0,
@@ -16476,9 +16476,9 @@ const CONFIG = {
       },
       {
         "code": "PA 6.6-12",
-        "innerDb": 0,
+        "innerDb": 1.5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 136,
         "bend": 0,
         "weight": 0,
@@ -16529,9 +16529,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "PA12 MB-Longlife E-HF-1",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 16,
         "pressure": 11,
         "bend": 0,
         "weight": 0,
@@ -16540,9 +16540,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 MB-Longlife E-HF-2",
-        "innerDb": 0,
+        "innerDb": 12.5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 15,
         "pressure": 9,
         "bend": 0,
         "weight": 0,
@@ -16551,9 +16551,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 MB-Longlife E-HF-3",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 15,
         "pressure": 11,
         "bend": 0,
         "weight": 0,
@@ -16562,9 +16562,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 MB-Longlife E-HF-4",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 14,
         "pressure": 8,
         "bend": 0,
         "weight": 0,
@@ -16573,9 +16573,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 MB-Longlife E-HF-5",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 14,
         "pressure": 12,
         "bend": 0,
         "weight": 0,
@@ -16584,9 +16584,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 MB-Longlife E-HF-6",
-        "innerDb": 0,
+        "innerDb": 9,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 15,
         "bend": 0,
         "weight": 0,
@@ -16595,9 +16595,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 MB-Longlife E-HF-7",
-        "innerDb": 0,
+        "innerDb": 7.5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 15,
         "bend": 0,
         "weight": 0,
@@ -16606,9 +16606,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 MB-Longlife E-HF-8",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 9,
         "bend": 0,
         "weight": 0,
@@ -16617,9 +16617,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 MB-Longlife E-HF-9",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 11,
         "bend": 0,
         "weight": 0,
@@ -16628,9 +16628,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 MB-Longlife E-HF-10",
-        "innerDb": 0,
+        "innerDb": 7,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 9.52,
         "pressure": 16,
         "bend": 0,
         "weight": 0,
@@ -16639,9 +16639,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 MB-Longlife E-HF-11",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 15,
         "bend": 0,
         "weight": 0,
@@ -16650,9 +16650,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 MB-Longlife E-HF-12",
-        "innerDb": 0,
+        "innerDb": 4,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 21,
         "bend": 0,
         "weight": 0,
@@ -16661,9 +16661,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 MB-Longlife E-HF-13",
-        "innerDb": 0,
+        "innerDb": 3,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 5,
         "pressure": 30,
         "bend": 0,
         "weight": 0,
@@ -16672,9 +16672,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 MB-Longlife E-HF-14",
-        "innerDb": 0,
+        "innerDb": 2.5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 24,
         "bend": 0,
         "weight": 0,
@@ -16683,9 +16683,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 MB-Longlife E-HF-15",
-        "innerDb": 0,
+        "innerDb": 2,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 35,
         "bend": 0,
         "weight": 0,
@@ -16739,9 +16739,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "PA12 PHL-1",
-        "innerDb": 0,
+        "innerDb": 9.53,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 1,
         "pressure": 19,
         "bend": 0,
         "weight": 0,
@@ -16750,9 +16750,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-2",
-        "innerDb": 0,
+        "innerDb": 6.98,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 3,
         "pressure": 21,
         "bend": 0,
         "weight": 0,
@@ -16761,9 +16761,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-3",
-        "innerDb": 0,
+        "innerDb": 5.9,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 5,
         "pressure": 23,
         "bend": 0,
         "weight": 0,
@@ -16772,9 +16772,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-4",
-        "innerDb": 0,
+        "innerDb": 4.3,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 1,
         "pressure": 28,
         "bend": 0,
         "weight": 0,
@@ -16783,9 +16783,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-5",
-        "innerDb": 0,
+        "innerDb": 2.97,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 3,
         "pressure": 28,
         "bend": 0,
         "weight": 0,
@@ -16794,9 +16794,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-6",
-        "innerDb": 0,
+        "innerDb": 2.38,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 5,
         "pressure": 28,
         "bend": 0,
         "weight": 0,
@@ -16805,9 +16805,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-7",
-        "innerDb": 0,
+        "innerDb": 2.02,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 1,
         "pressure": 23,
         "bend": 0,
         "weight": 0,
@@ -16816,9 +16816,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-8",
-        "innerDb": 0,
+        "innerDb": 18,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 22,
         "pressure": 13,
         "bend": 0,
         "weight": 0,
@@ -16827,9 +16827,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-9",
-        "innerDb": 0,
+        "innerDb": 15,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 18,
         "pressure": 12,
         "bend": 0,
         "weight": 0,
@@ -16838,9 +16838,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-10",
-        "innerDb": 0,
+        "innerDb": 14,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 16,
         "pressure": 9,
         "bend": 0,
         "weight": 0,
@@ -16849,9 +16849,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-11",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 16,
         "pressure": 20,
         "bend": 0,
         "weight": 0,
@@ -16860,9 +16860,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-12",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 15,
         "pressure": 16,
         "bend": 0,
         "weight": 0,
@@ -16871,9 +16871,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-13",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 15,
         "pressure": 16,
         "bend": 0,
         "weight": 0,
@@ -16882,9 +16882,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-14",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 14,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -16893,9 +16893,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-15",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 14,
         "pressure": 23,
         "bend": 0,
         "weight": 0,
@@ -16904,9 +16904,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-16",
-        "innerDb": 0,
+        "innerDb": 9,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 20,
         "bend": 0,
         "weight": 0,
@@ -16915,9 +16915,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-17",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 12,
         "bend": 0,
         "weight": 0,
@@ -16926,9 +16926,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-18",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 28,
         "bend": 0,
         "weight": 0,
@@ -16937,9 +16937,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-19",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 11,
         "pressure": 21,
         "bend": 0,
         "weight": 0,
@@ -16948,9 +16948,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-20",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 16,
         "bend": 0,
         "weight": 0,
@@ -16959,9 +16959,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-21",
-        "innerDb": 0,
+        "innerDb": 7,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 23,
         "bend": 0,
         "weight": 0,
@@ -16970,9 +16970,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-22",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 20,
         "bend": 0,
         "weight": 0,
@@ -16981,9 +16981,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-23",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 7,
         "pressure": 22,
         "bend": 0,
         "weight": 0,
@@ -16992,9 +16992,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-24",
-        "innerDb": 0,
+        "innerDb": 4,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 28,
         "bend": 0,
         "weight": 0,
@@ -17003,9 +17003,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-25",
-        "innerDb": 0,
+        "innerDb": 2,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 68,
         "bend": 0,
         "weight": 0,
@@ -17014,9 +17014,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-26",
-        "innerDb": 0,
+        "innerDb": 3,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 5,
         "pressure": 33,
         "bend": 0,
         "weight": 0,
@@ -17025,9 +17025,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-27",
-        "innerDb": 0,
+        "innerDb": 2.5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 31,
         "bend": 0,
         "weight": 0,
@@ -17036,9 +17036,9 @@ const CONFIG = {
       },
       {
         "code": "PA12 PHL-28",
-        "innerDb": 0,
+        "innerDb": 2,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 44,
         "bend": 0,
         "weight": 0,
@@ -17088,9 +17088,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "-1",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 16,
         "pressure": 17,
         "bend": 0,
         "weight": 0,
@@ -17099,9 +17099,9 @@ const CONFIG = {
       },
       {
         "code": "-2",
-        "innerDb": 0,
+        "innerDb": 11,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 15,
         "pressure": 20,
         "bend": 0,
         "weight": 0,
@@ -17110,9 +17110,9 @@ const CONFIG = {
       },
       {
         "code": "-3",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 14,
         "pressure": 22,
         "bend": 0,
         "weight": 0,
@@ -17121,9 +17121,9 @@ const CONFIG = {
       },
       {
         "code": "-4",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 15,
         "pressure": 15,
         "bend": 0,
         "weight": 0,
@@ -17132,9 +17132,9 @@ const CONFIG = {
       },
       {
         "code": "-5",
-        "innerDb": 0,
+        "innerDb": 9,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 17,
         "bend": 0,
         "weight": 0,
@@ -17143,9 +17143,9 @@ const CONFIG = {
       },
       {
         "code": "-6",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 28,
         "bend": 0,
         "weight": 0,
@@ -17154,9 +17154,9 @@ const CONFIG = {
       },
       {
         "code": "-7",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 11,
         "pressure": 21,
         "bend": 0,
         "weight": 0,
@@ -17165,9 +17165,9 @@ const CONFIG = {
       },
       {
         "code": "-8",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -17176,9 +17176,9 @@ const CONFIG = {
       },
       {
         "code": "-9",
-        "innerDb": 0,
+        "innerDb": 7.5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 19,
         "bend": 0,
         "weight": 0,
@@ -17187,9 +17187,9 @@ const CONFIG = {
       },
       {
         "code": "-10",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 17,
         "bend": 0,
         "weight": 0,
@@ -17198,9 +17198,9 @@ const CONFIG = {
       },
       {
         "code": "-11",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 9,
         "pressure": 27,
         "bend": 0,
         "weight": 0,
@@ -17209,9 +17209,9 @@ const CONFIG = {
       },
       {
         "code": "-12",
-        "innerDb": 0,
+        "innerDb": 4,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -17220,9 +17220,9 @@ const CONFIG = {
       },
       {
         "code": "-13",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 21,
         "bend": 0,
         "weight": 0,
@@ -17231,9 +17231,9 @@ const CONFIG = {
       },
       {
         "code": "-14",
-        "innerDb": 0,
+        "innerDb": 3,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 44,
         "bend": 0,
         "weight": 0,
@@ -17242,9 +17242,9 @@ const CONFIG = {
       },
       {
         "code": "-15",
-        "innerDb": 0,
+        "innerDb": 4,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 30,
         "bend": 0,
         "weight": 0,
@@ -17253,9 +17253,9 @@ const CONFIG = {
       },
       {
         "code": "-16",
-        "innerDb": 0,
+        "innerDb": 3,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 5,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -17264,9 +17264,9 @@ const CONFIG = {
       },
       {
         "code": "-17",
-        "innerDb": 0,
+        "innerDb": 2,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 50,
         "bend": 0,
         "weight": 0,
@@ -17319,9 +17319,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "PA12-inch-1",
-        "innerDb": 0,
+        "innerDb": 9.52,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 1,
         "pressure": 15,
         "bend": 0,
         "weight": 0,
@@ -17330,9 +17330,9 @@ const CONFIG = {
       },
       {
         "code": "PA12-inch-2",
-        "innerDb": 0,
+        "innerDb": 7,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 3,
         "pressure": 16,
         "bend": 0,
         "weight": 0,
@@ -17341,9 +17341,9 @@ const CONFIG = {
       },
       {
         "code": "PA12-inch-3",
-        "innerDb": 0,
+        "innerDb": 4.76,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 3,
         "pressure": 28,
         "bend": 0,
         "weight": 0,
@@ -17352,9 +17352,9 @@ const CONFIG = {
       },
       {
         "code": "PA12-inch-4",
-        "innerDb": 0,
+        "innerDb": 4.57,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 1,
         "pressure": 21,
         "bend": 0,
         "weight": 0,
@@ -17363,9 +17363,9 @@ const CONFIG = {
       },
       {
         "code": "PA12-inch-5",
-        "innerDb": 0,
+        "innerDb": 2.18,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 1,
         "pressure": 30,
         "bend": 0,
         "weight": 0,
@@ -17419,9 +17419,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "PA 6-1",
-        "innerDb": 0,
+        "innerDb": 14,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 16,
         "pressure": 11,
         "bend": 0,
         "weight": 0,
@@ -17430,9 +17430,9 @@ const CONFIG = {
       },
       {
         "code": "PA 6-2",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 15,
         "bend": 0,
         "weight": 0,
@@ -17441,9 +17441,9 @@ const CONFIG = {
       },
       {
         "code": "PA 6-3",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 19,
         "bend": 0,
         "weight": 0,
@@ -17452,9 +17452,9 @@ const CONFIG = {
       },
       {
         "code": "PA 6-4",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 23,
         "bend": 0,
         "weight": 0,
@@ -17463,9 +17463,9 @@ const CONFIG = {
       },
       {
         "code": "PA 6-5",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 39,
         "bend": 0,
         "weight": 0,
@@ -17474,9 +17474,9 @@ const CONFIG = {
       },
       {
         "code": "PA 6-6",
-        "innerDb": 0,
+        "innerDb": 4,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 33,
         "bend": 0,
         "weight": 0,
@@ -17485,9 +17485,9 @@ const CONFIG = {
       },
       {
         "code": "PA 6-7",
-        "innerDb": 0,
+        "innerDb": 2.5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 39,
         "bend": 0,
         "weight": 0,
@@ -17496,9 +17496,9 @@ const CONFIG = {
       },
       {
         "code": "PA 6-8",
-        "innerDb": 0,
+        "innerDb": 2,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 54,
         "bend": 0,
         "weight": 0,
@@ -17546,9 +17546,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "PUX-1",
-        "innerDb": 0,
+        "innerDb": 9,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 8,
         "bend": 0,
         "weight": 0,
@@ -17557,9 +17557,9 @@ const CONFIG = {
       },
       {
         "code": "PUX-2",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 9,
         "bend": 0,
         "weight": 0,
@@ -17568,9 +17568,9 @@ const CONFIG = {
       },
       {
         "code": "PUX-3",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 7,
         "bend": 0,
         "weight": 0,
@@ -17579,9 +17579,9 @@ const CONFIG = {
       },
       {
         "code": "PUX-4",
-        "innerDb": 0,
+        "innerDb": 7,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 11,
         "bend": 0,
         "weight": 0,
@@ -17590,9 +17590,9 @@ const CONFIG = {
       },
       {
         "code": "PUX-5",
-        "innerDb": 0,
+        "innerDb": 7.5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 9,
         "bend": 0,
         "weight": 0,
@@ -17601,9 +17601,9 @@ const CONFIG = {
       },
       {
         "code": "PUX-6",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 9,
         "bend": 0,
         "weight": 0,
@@ -17612,9 +17612,9 @@ const CONFIG = {
       },
       {
         "code": "PUX-7",
-        "innerDb": 0,
+        "innerDb": 5.5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 12,
         "bend": 0,
         "weight": 0,
@@ -17623,9 +17623,9 @@ const CONFIG = {
       },
       {
         "code": "PUX-8",
-        "innerDb": 0,
+        "innerDb": 4,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 13,
         "bend": 0,
         "weight": 0,
@@ -17634,9 +17634,9 @@ const CONFIG = {
       },
       {
         "code": "PUX-9",
-        "innerDb": 0,
+        "innerDb": 2,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 19,
         "bend": 0,
         "weight": 0,
@@ -17677,57 +17677,57 @@ const CONFIG = {
     "variants": [
       {
         "code": "-1",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 14,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
-        "rollLength": 0,
+        "rollLength": 30,
         "priceEur": 0
       },
       {
         "code": "-2",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 12,
         "bend": 0,
         "weight": 0,
-        "rollLength": 0,
+        "rollLength": 30,
         "priceEur": 0
       },
       {
         "code": "-3",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 16,
         "bend": 0,
         "weight": 0,
-        "rollLength": 0,
+        "rollLength": 30,
         "priceEur": 0
       },
       {
         "code": "-4",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 20,
         "bend": 0,
         "weight": 0,
-        "rollLength": 0,
+        "rollLength": 30,
         "priceEur": 0
       },
       {
         "code": "-5",
-        "innerDb": 0,
+        "innerDb": 4,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 28,
         "bend": 0,
         "weight": 0,
-        "rollLength": 0,
+        "rollLength": 30,
         "priceEur": 0
       }
     ]
@@ -17773,9 +17773,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "PTFE-transperant-1",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 8,
         "bend": 0,
         "weight": 0,
@@ -17784,9 +17784,9 @@ const CONFIG = {
       },
       {
         "code": "PTFE-transperant-2",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -17795,9 +17795,9 @@ const CONFIG = {
       },
       {
         "code": "PTFE-transperant-3",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 17,
         "bend": 0,
         "weight": 0,
@@ -17806,9 +17806,9 @@ const CONFIG = {
       },
       {
         "code": "PTFE-transperant-4",
-        "innerDb": 0,
+        "innerDb": 4,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 15,
         "bend": 0,
         "weight": 0,
@@ -17817,9 +17817,9 @@ const CONFIG = {
       },
       {
         "code": "PTFE-transperant-5",
-        "innerDb": 0,
+        "innerDb": 3,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 5,
         "pressure": 19,
         "bend": 0,
         "weight": 0,
@@ -17828,9 +17828,9 @@ const CONFIG = {
       },
       {
         "code": "PTFE-transperant-6",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -17839,9 +17839,9 @@ const CONFIG = {
       },
       {
         "code": "PTFE-transperant-7",
-        "innerDb": 0,
+        "innerDb": 2,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 25,
         "bend": 0,
         "weight": 0,
@@ -17893,9 +17893,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "PTFE-1",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 22,
         "pressure": 3,
         "bend": 0,
         "weight": 0,
@@ -17904,9 +17904,9 @@ const CONFIG = {
       },
       {
         "code": "PTFE-2",
-        "innerDb": 0,
+        "innerDb": 12.5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 15,
         "pressure": 9,
         "bend": 0,
         "weight": 0,
@@ -17915,9 +17915,9 @@ const CONFIG = {
       },
       {
         "code": "PTFE-3",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 14,
         "pressure": 8,
         "bend": 0,
         "weight": 0,
@@ -17926,9 +17926,9 @@ const CONFIG = {
       },
       {
         "code": "PTFE-4",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -17937,9 +17937,9 @@ const CONFIG = {
       },
       {
         "code": "PTFE-5",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 14,
         "bend": 0,
         "weight": 0,
@@ -17948,9 +17948,9 @@ const CONFIG = {
       },
       {
         "code": "PTFE-6",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 12,
         "bend": 0,
         "weight": 0,
@@ -17959,9 +17959,9 @@ const CONFIG = {
       },
       {
         "code": "PTFE-7",
-        "innerDb": 0,
+        "innerDb": 4,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 18,
         "bend": 0,
         "weight": 0,
@@ -17970,9 +17970,9 @@ const CONFIG = {
       },
       {
         "code": "PTFE-8",
-        "innerDb": 0,
+        "innerDb": 3,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 5,
         "pressure": 22,
         "bend": 0,
         "weight": 0,
@@ -17981,9 +17981,9 @@ const CONFIG = {
       },
       {
         "code": "PTFE-9",
-        "innerDb": 0,
+        "innerDb": 3,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -17992,9 +17992,9 @@ const CONFIG = {
       },
       {
         "code": "PTFE-10",
-        "innerDb": 0,
+        "innerDb": 2,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 27,
         "bend": 0,
         "weight": 0,
@@ -18051,90 +18051,90 @@ const CONFIG = {
     "variants": [
       {
         "code": " Spiral tube without nozzles-1",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 12,
         "bend": 0,
         "weight": 0,
-        "rollLength": 0,
+        "rollLength": 10,
         "priceEur": 45.1
       },
       {
         "code": " Spiral tube without nozzles-2",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 12,
         "bend": 0,
         "weight": 0,
-        "rollLength": 0,
+        "rollLength": 10,
         "priceEur": 40.8
       },
       {
         "code": " Spiral tube without nozzles-3",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 14,
         "bend": 0,
         "weight": 0,
-        "rollLength": 0,
+        "rollLength": 30,
         "priceEur": 40.45
       },
       {
         "code": " Spiral tube without nozzles-4",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 19,
         "bend": 0,
         "weight": 0,
-        "rollLength": 0,
+        "rollLength": 10,
         "priceEur": 32.7
       },
       {
         "code": " Spiral tube without nozzles-5",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 14,
         "bend": 0,
         "weight": 0,
-        "rollLength": 0,
+        "rollLength": 10,
         "priceEur": 35.6
       },
       {
         "code": " Spiral tube without nozzles-6",
-        "innerDb": 0,
+        "innerDb": 2.5,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 4,
         "pressure": 30,
         "bend": 0,
         "weight": 0,
-        "rollLength": 0,
+        "rollLength": 10,
         "priceEur": 17.05
       },
       {
         "code": " Spiral tube without nozzles-7",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 19,
         "bend": 0,
         "weight": 0,
-        "rollLength": 0,
+        "rollLength": 12,
         "priceEur": 28.9
       },
       {
         "code": " Spiral tube without nozzles-8",
-        "innerDb": 0,
+        "innerDb": 4,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 26,
         "bend": 0,
         "weight": 0,
-        "rollLength": 0,
+        "rollLength": 10,
         "priceEur": 26.9
       }
     ]
@@ -18180,46 +18180,46 @@ const CONFIG = {
     "variants": [
       {
         "code": "Spiral tube polyamide - 30 m-1",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 12,
         "pressure": 15,
         "bend": 0,
         "weight": 0,
-        "rollLength": 0,
+        "rollLength": 30,
         "priceEur": 120.3
       },
       {
         "code": "Spiral tube polyamide - 30 m-2",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 10,
         "pressure": 15,
         "bend": 0,
         "weight": 0,
-        "rollLength": 0,
+        "rollLength": 30,
         "priceEur": 101.35
       },
       {
         "code": "Spiral tube polyamide - 30 m-3",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 8,
         "pressure": 19,
         "bend": 0,
         "weight": 0,
-        "rollLength": 0,
+        "rollLength": 30,
         "priceEur": 82.15
       },
       {
         "code": "Spiral tube polyamide - 30 m-4",
-        "innerDb": 0,
+        "innerDb": 4,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 6,
         "pressure": 27,
         "bend": 0,
         "weight": 0,
-        "rollLength": 0,
+        "rollLength": 30,
         "priceEur": 64.3
       }
     ]
@@ -21969,7 +21969,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "PHC-1",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -21980,7 +21980,7 @@ const CONFIG = {
       },
       {
         "code": "PHC-2",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -21991,7 +21991,7 @@ const CONFIG = {
       },
       {
         "code": "PHC-3",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -22002,7 +22002,7 @@ const CONFIG = {
       },
       {
         "code": "PHC-4",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -22013,7 +22013,7 @@ const CONFIG = {
       },
       {
         "code": "PHC-5",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -22648,7 +22648,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "MPOT-1",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -22659,7 +22659,7 @@ const CONFIG = {
       },
       {
         "code": "MPOT-2",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -22670,7 +22670,7 @@ const CONFIG = {
       },
       {
         "code": "MPOT-3",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -22729,7 +22729,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "FPIT-1",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -22740,7 +22740,7 @@ const CONFIG = {
       },
       {
         "code": "FPIT-2",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -22751,7 +22751,7 @@ const CONFIG = {
       },
       {
         "code": "FPIT-3",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -25109,7 +25109,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "PNF-1",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -25120,7 +25120,7 @@ const CONFIG = {
       },
       {
         "code": "PNF-2",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -25131,7 +25131,7 @@ const CONFIG = {
       },
       {
         "code": "PNF-3",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -26757,7 +26757,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "MCOT-1",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -26768,7 +26768,7 @@ const CONFIG = {
       },
       {
         "code": "MCOT-2",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -26779,7 +26779,7 @@ const CONFIG = {
       },
       {
         "code": "MCOT-3",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -26842,7 +26842,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "FCIT-1",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -26853,7 +26853,7 @@ const CONFIG = {
       },
       {
         "code": "FCIT-2",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -26864,7 +26864,7 @@ const CONFIG = {
       },
       {
         "code": "FCIT-3",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -26927,7 +26927,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "CHC-1",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -26938,7 +26938,7 @@ const CONFIG = {
       },
       {
         "code": "CHC-2",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -26949,7 +26949,7 @@ const CONFIG = {
       },
       {
         "code": "CHC-3",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -27012,7 +27012,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "CNF-1",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -27023,7 +27023,7 @@ const CONFIG = {
       },
       {
         "code": "CNF-2",
-        "innerDb": 0,
+        "innerDb": 7.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -27279,7 +27279,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Camlock Тип - F - PP-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -27290,7 +27290,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - PP-2",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -27301,7 +27301,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - PP-3",
-        "innerDb": 0,
+        "innerDb": 127,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -27312,7 +27312,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - PP-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -27323,7 +27323,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - PP-5",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -27334,7 +27334,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - PP-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -27345,7 +27345,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - PP-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -27356,7 +27356,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - PP-8",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -27367,7 +27367,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - PP-9",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -27378,7 +27378,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - PP-10",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -27389,7 +27389,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - PP-11",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -27400,7 +27400,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - PP-12",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -27467,7 +27467,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Camlock Тип - A - PP-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -27478,7 +27478,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - PP-2",
-        "innerDb": 0,
+        "innerDb": 127,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -27489,7 +27489,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - PP-3",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -27500,7 +27500,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - PP-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -27511,7 +27511,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - PP-5",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -27522,7 +27522,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - PP-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -27533,7 +27533,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - PP-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -27544,7 +27544,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - PP-8",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -27555,7 +27555,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - PP-9",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -27566,7 +27566,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - PP-10",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -27577,7 +27577,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - PP-11",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -27588,7 +27588,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - PP-12",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -27655,7 +27655,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -27666,7 +27666,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-2",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -27677,7 +27677,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-3",
-        "innerDb": 0,
+        "innerDb": 127,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -27688,7 +27688,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -27699,7 +27699,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-5",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -27710,7 +27710,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -27721,7 +27721,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -27732,7 +27732,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-8",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -27743,7 +27743,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-9",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -27754,7 +27754,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-10",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -27765,7 +27765,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-11",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -27776,7 +27776,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-12",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -28088,7 +28088,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "CAMLOCK Тип DP (тапа) А - AL-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -28099,7 +28099,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK Тип DP (тапа) А - AL-2",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -28110,7 +28110,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK Тип DP (тапа) А - AL-3",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -28121,7 +28121,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK Тип DP (тапа) А - AL-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -28132,7 +28132,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK Тип DP (тапа) А - AL-5",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -28143,7 +28143,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK Тип DP (тапа) А - AL-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -28154,7 +28154,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK Тип DP (тапа) А - AL-7",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -28165,7 +28165,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK Тип DP (тапа) А - AL-8",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -28176,7 +28176,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK Тип DP (тапа) А - AL-9",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -28187,7 +28187,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK Тип DP (тапа) А - AL-10",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -28198,7 +28198,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK Тип DP (тапа) А - AL-11",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -28209,7 +28209,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK Тип DP (тапа) А - AL-12",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -28518,7 +28518,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Camlock Тип - A - AL-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -28529,7 +28529,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - AL-2",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -28540,7 +28540,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - AL-3",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -28551,7 +28551,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - AL-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -28562,7 +28562,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - AL-5",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -28573,7 +28573,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - AL-6",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -28584,7 +28584,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - AL-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -28595,7 +28595,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - AL-8",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -28606,7 +28606,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - AL-9",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -28617,7 +28617,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - AL-10",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -28628,7 +28628,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - AL-11",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -28639,7 +28639,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - AL-12",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -28961,7 +28961,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Camlock Тип - F - AL-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -28972,7 +28972,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - AL-2",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -28983,7 +28983,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - AL-3",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -28994,7 +28994,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - AL-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -29005,7 +29005,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - AL-5",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -29016,7 +29016,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - AL-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -29027,7 +29027,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - AL-7",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -29038,7 +29038,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - AL-8",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -29049,7 +29049,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - AL-9",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -29060,7 +29060,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - AL-10",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -29071,7 +29071,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - AL-11",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -29082,7 +29082,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - AL-12",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -29932,8 +29932,8 @@ const CONFIG = {
     "variants": [
       {
         "code": "CF-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 150,
+        "inch": "6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -29943,8 +29943,8 @@ const CONFIG = {
       },
       {
         "code": "CF-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 125,
+        "inch": "5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -29954,8 +29954,8 @@ const CONFIG = {
       },
       {
         "code": "CF-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 100,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -29965,8 +29965,8 @@ const CONFIG = {
       },
       {
         "code": "CF-4",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 75,
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -29976,8 +29976,8 @@ const CONFIG = {
       },
       {
         "code": "CF-5",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 65,
+        "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -29987,8 +29987,8 @@ const CONFIG = {
       },
       {
         "code": "CF-6",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -29998,8 +29998,8 @@ const CONFIG = {
       },
       {
         "code": "CF-7",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 38,
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -30009,8 +30009,8 @@ const CONFIG = {
       },
       {
         "code": "CF-8",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 32,
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -30020,8 +30020,8 @@ const CONFIG = {
       },
       {
         "code": "CF-9",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 25,
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -30031,8 +30031,8 @@ const CONFIG = {
       },
       {
         "code": "CF-10",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 20,
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -30042,8 +30042,8 @@ const CONFIG = {
       },
       {
         "code": "CF-11",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 16,
+        "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -30053,8 +30053,8 @@ const CONFIG = {
       },
       {
         "code": "CF-12",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 12,
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -30120,7 +30120,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Camlock Тип - B - PP-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -30131,7 +30131,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - PP-2",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -30142,7 +30142,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - PP-3",
-        "innerDb": 0,
+        "innerDb": 127,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -30153,7 +30153,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - PP-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -30164,7 +30164,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - PP-5",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -30175,7 +30175,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - PP-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -30186,7 +30186,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - PP-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -30197,7 +30197,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - PP-8",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -30208,7 +30208,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - PP-9",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -30219,7 +30219,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - PP-10",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -30230,7 +30230,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - PP-11",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -30241,7 +30241,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - PP-12",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -30979,7 +30979,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Camlock Тип - D - PP-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -30990,7 +30990,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - PP-2",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -31001,7 +31001,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - PP-3",
-        "innerDb": 0,
+        "innerDb": 127,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -31012,7 +31012,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - PP-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -31023,7 +31023,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - PP-5",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -31034,7 +31034,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - PP-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -31045,7 +31045,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - PP-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -31056,7 +31056,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - PP-8",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -31067,7 +31067,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - PP-9",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -31078,7 +31078,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - PP-10",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -31089,7 +31089,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - PP-11",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -31100,7 +31100,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - PP-12",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -31166,7 +31166,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -31177,7 +31177,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-2",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -31188,7 +31188,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-3",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -31199,7 +31199,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -31210,7 +31210,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-5",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -31221,7 +31221,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -31232,7 +31232,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-7",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -31243,7 +31243,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-8",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -31254,7 +31254,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-9",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -31265,7 +31265,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-10",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -31276,7 +31276,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-11",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -31287,7 +31287,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-12",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -31914,7 +31914,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Camlock Тип - B - AL-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -31925,7 +31925,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - AL-2",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -31936,7 +31936,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - AL-3",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -31947,7 +31947,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - AL-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -31958,7 +31958,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - AL-5",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -31969,7 +31969,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - AL-6",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -31980,7 +31980,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - AL-7",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -31991,7 +31991,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - AL-8",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -32002,7 +32002,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - AL-9",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -32013,7 +32013,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - AL-10",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -32024,7 +32024,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - AL-11",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -32035,7 +32035,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - AL-12",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -32195,9 +32195,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "ARIANNA TA-1",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 50,
+        "inch": "2\"",
+        "outerDb": 62,
         "pressure": 4,
         "bend": 0,
         "weight": 0,
@@ -32206,9 +32206,9 @@ const CONFIG = {
       },
       {
         "code": "ARIANNA TA-2",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 50,
         "pressure": 4,
         "bend": 0,
         "weight": 0,
@@ -32217,9 +32217,9 @@ const CONFIG = {
       },
       {
         "code": "ARIANNA TA-3",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 16,
+        "inch": "5/8\"",
+        "outerDb": 22,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -32228,9 +32228,9 @@ const CONFIG = {
       },
       {
         "code": "ARIANNA TA-4",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 19,
+        "inch": "3/4\"",
+        "outerDb": 26,
         "pressure": 9,
         "bend": 0,
         "weight": 0,
@@ -32239,9 +32239,9 @@ const CONFIG = {
       },
       {
         "code": "ARIANNA TA-5",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 25,
+        "inch": "1\"",
+        "outerDb": 33,
         "pressure": 8,
         "bend": 0,
         "weight": 0,
@@ -32250,9 +32250,9 @@ const CONFIG = {
       },
       {
         "code": "ARIANNA TA-6",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 32,
+        "inch": "1.1/4\"",
+        "outerDb": 42,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
@@ -32261,9 +32261,9 @@ const CONFIG = {
       },
       {
         "code": "ARIANNA TA-7",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 38,
+        "inch": "1.1/2\"",
+        "outerDb": 48,
         "pressure": 4,
         "bend": 0,
         "weight": 0,
@@ -32272,9 +32272,9 @@ const CONFIG = {
       },
       {
         "code": "ARIANNA TA-8",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 13,
+        "inch": "1/2\"",
+        "outerDb": 19,
         "pressure": 11,
         "bend": 0,
         "weight": 0,
@@ -32283,9 +32283,9 @@ const CONFIG = {
       },
       {
         "code": "ARIANNA TA-9",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 8,
+        "inch": "5/16\"",
+        "outerDb": 14,
         "pressure": 23,
         "bend": 0,
         "weight": 0,
@@ -32294,9 +32294,9 @@ const CONFIG = {
       },
       {
         "code": "ARIANNA TA-10",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 10,
+        "inch": "3/8\"",
+        "outerDb": 16,
         "pressure": 16,
         "bend": 0,
         "weight": 0,
@@ -32305,9 +32305,9 @@ const CONFIG = {
       },
       {
         "code": "ARIANNA TA-11",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 18,
         "pressure": 12,
         "bend": 0,
         "weight": 0,
@@ -32316,9 +32316,9 @@ const CONFIG = {
       },
       {
         "code": "ARIANNA TA-12",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 6,
+        "inch": "1/4\"",
+        "outerDb": 12,
         "pressure": 21,
         "bend": 0,
         "weight": 0,
@@ -32822,7 +32822,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Camlock Тип - D - AL-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -32833,7 +32833,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - AL-2",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -32844,7 +32844,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - AL-3",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -32855,7 +32855,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - AL-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -32866,7 +32866,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - AL-5",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -32877,7 +32877,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - AL-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -32888,7 +32888,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - AL-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -32899,7 +32899,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - AL-8",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -32910,7 +32910,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - AL-9",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -32921,7 +32921,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - AL-10",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -32932,7 +32932,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - AL-11",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -32943,7 +32943,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - AL-12",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -35066,9 +35066,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "Belinda AIR-1",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 6,
+        "inch": "1/4\"",
+        "outerDb": 13,
         "pressure": 20,
         "bend": 0,
         "weight": 0,
@@ -35122,7 +35122,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "-1",
-        "innerDb": 0,
+        "innerDb": 151,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.2,
@@ -35133,7 +35133,7 @@ const CONFIG = {
       },
       {
         "code": "-2",
-        "innerDb": 0,
+        "innerDb": 127,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.6,
@@ -35144,7 +35144,7 @@ const CONFIG = {
       },
       {
         "code": "-3",
-        "innerDb": 0,
+        "innerDb": 120,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.2,
@@ -35155,7 +35155,7 @@ const CONFIG = {
       },
       {
         "code": "-4",
-        "innerDb": 0,
+        "innerDb": 110,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.6,
@@ -35166,7 +35166,7 @@ const CONFIG = {
       },
       {
         "code": "-5",
-        "innerDb": 0,
+        "innerDb": 102,
         "inch": "",
         "outerDb": 0,
         "pressure": 2.4,
@@ -35177,7 +35177,7 @@ const CONFIG = {
       },
       {
         "code": "-6",
-        "innerDb": 0,
+        "innerDb": 90,
         "inch": "",
         "outerDb": 0,
         "pressure": 3.6,
@@ -35188,7 +35188,7 @@ const CONFIG = {
       },
       {
         "code": "-7",
-        "innerDb": 0,
+        "innerDb": 70,
         "inch": "",
         "outerDb": 0,
         "pressure": 3.6,
@@ -35199,7 +35199,7 @@ const CONFIG = {
       },
       {
         "code": "-8",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "",
         "outerDb": 0,
         "pressure": 3.6,
@@ -35210,7 +35210,7 @@ const CONFIG = {
       },
       {
         "code": "-9",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 3.6,
@@ -35221,7 +35221,7 @@ const CONFIG = {
       },
       {
         "code": "-10",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 3.6,
@@ -35232,7 +35232,7 @@ const CONFIG = {
       },
       {
         "code": "-11",
-        "innerDb": 0,
+        "innerDb": 60,
         "inch": "",
         "outerDb": 0,
         "pressure": 3.6,
@@ -35243,7 +35243,7 @@ const CONFIG = {
       },
       {
         "code": "-12",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -35254,7 +35254,7 @@ const CONFIG = {
       },
       {
         "code": "-13",
-        "innerDb": 0,
+        "innerDb": 45,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -35265,7 +35265,7 @@ const CONFIG = {
       },
       {
         "code": "-14",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -35276,7 +35276,7 @@ const CONFIG = {
       },
       {
         "code": "-15",
-        "innerDb": 0,
+        "innerDb": 35,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -35287,7 +35287,7 @@ const CONFIG = {
       },
       {
         "code": "-16",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -35298,7 +35298,7 @@ const CONFIG = {
       },
       {
         "code": "-17",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -35309,7 +35309,7 @@ const CONFIG = {
       },
       {
         "code": "-18",
-        "innerDb": 0,
+        "innerDb": 30,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -35320,7 +35320,7 @@ const CONFIG = {
       },
       {
         "code": "-19",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -35331,7 +35331,7 @@ const CONFIG = {
       },
       {
         "code": "-20",
-        "innerDb": 0,
+        "innerDb": 22,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -35342,7 +35342,7 @@ const CONFIG = {
       },
       {
         "code": "-21",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -35353,7 +35353,7 @@ const CONFIG = {
       },
       {
         "code": "-22",
-        "innerDb": 0,
+        "innerDb": 18,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -35364,7 +35364,7 @@ const CONFIG = {
       },
       {
         "code": "-23",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -35375,7 +35375,7 @@ const CONFIG = {
       },
       {
         "code": "-24",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -35386,7 +35386,7 @@ const CONFIG = {
       },
       {
         "code": "-25",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -35397,7 +35397,7 @@ const CONFIG = {
       },
       {
         "code": "-26",
-        "innerDb": 0,
+        "innerDb": 14,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -35408,7 +35408,7 @@ const CONFIG = {
       },
       {
         "code": "-27",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -35419,7 +35419,7 @@ const CONFIG = {
       },
       {
         "code": "-28",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -35464,8 +35464,8 @@ const CONFIG = {
     "variants": [
       {
         "code": "SATURNO L-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 100,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 3,
         "bend": 0,
@@ -35475,8 +35475,8 @@ const CONFIG = {
       },
       {
         "code": "SATURNO L-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 76,
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 4,
         "bend": 0,
@@ -35486,8 +35486,8 @@ const CONFIG = {
       },
       {
         "code": "SATURNO L-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 51,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -35497,8 +35497,8 @@ const CONFIG = {
       },
       {
         "code": "SATURNO L-4",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 60,
+        "inch": "2.3/8\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -35508,8 +35508,8 @@ const CONFIG = {
       },
       {
         "code": "SATURNO L-5",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 63,
+        "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -35519,7 +35519,7 @@ const CONFIG = {
       },
       {
         "code": "SATURNO L-6",
-        "innerDb": 0,
+        "innerDb": 45,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -35530,7 +35530,7 @@ const CONFIG = {
       },
       {
         "code": "SATURNO L-7",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -35541,8 +35541,8 @@ const CONFIG = {
       },
       {
         "code": "SATURNO L-8",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 38,
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -35552,7 +35552,7 @@ const CONFIG = {
       },
       {
         "code": "SATURNO L-9",
-        "innerDb": 0,
+        "innerDb": 35,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -35563,8 +35563,8 @@ const CONFIG = {
       },
       {
         "code": "SATURNO L-10",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 32,
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -35574,7 +35574,7 @@ const CONFIG = {
       },
       {
         "code": "SATURNO L-11",
-        "innerDb": 0,
+        "innerDb": 30,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -35585,8 +35585,8 @@ const CONFIG = {
       },
       {
         "code": "SATURNO L-12",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 25,
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -35596,8 +35596,8 @@ const CONFIG = {
       },
       {
         "code": "SATURNO L-13",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 20,
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -35660,8 +35660,8 @@ const CONFIG = {
     "variants": [
       {
         "code": "NETTUNO L-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 100,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -35671,8 +35671,8 @@ const CONFIG = {
       },
       {
         "code": "NETTUNO L-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 76,
+        "inch": "2/3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -35682,8 +35682,8 @@ const CONFIG = {
       },
       {
         "code": "NETTUNO L-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 63,
+        "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -35693,8 +35693,8 @@ const CONFIG = {
       },
       {
         "code": "NETTUNO L-4",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 30,
+        "inch": "1.1/16\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -35704,8 +35704,8 @@ const CONFIG = {
       },
       {
         "code": "NETTUNO L-5",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 35,
+        "inch": "1.3/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -35715,8 +35715,8 @@ const CONFIG = {
       },
       {
         "code": "NETTUNO L-6",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 60,
+        "inch": "2.3/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -35726,8 +35726,8 @@ const CONFIG = {
       },
       {
         "code": "NETTUNO L-7",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -35737,8 +35737,8 @@ const CONFIG = {
       },
       {
         "code": "NETTUNO L-8",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 45,
+        "inch": "1.3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -35748,8 +35748,8 @@ const CONFIG = {
       },
       {
         "code": "NETTUNO L-9",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 40,
+        "inch": "1.9/16\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -35759,8 +35759,8 @@ const CONFIG = {
       },
       {
         "code": "NETTUNO L-10",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 38,
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -35770,8 +35770,8 @@ const CONFIG = {
       },
       {
         "code": "NETTUNO L-11",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 32,
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -35781,8 +35781,8 @@ const CONFIG = {
       },
       {
         "code": "NETTUNO L-12",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 25,
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -35792,8 +35792,8 @@ const CONFIG = {
       },
       {
         "code": "NETTUNO L-13",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 19,
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -35850,8 +35850,8 @@ const CONFIG = {
     "variants": [
       {
         "code": "APOLLO SE-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 300,
+        "inch": "12\"",
         "outerDb": 0,
         "pressure": 1,
         "bend": 0,
@@ -35861,8 +35861,8 @@ const CONFIG = {
       },
       {
         "code": "APOLLO SE-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 152,
+        "inch": "6\"",
         "outerDb": 0,
         "pressure": 2,
         "bend": 0,
@@ -35872,8 +35872,8 @@ const CONFIG = {
       },
       {
         "code": "APOLLO SE-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 127,
+        "inch": "5\"",
         "outerDb": 0,
         "pressure": 2.5,
         "bend": 0,
@@ -35883,7 +35883,7 @@ const CONFIG = {
       },
       {
         "code": "APOLLO SE-4",
-        "innerDb": 0,
+        "innerDb": 120,
         "inch": "",
         "outerDb": 0,
         "pressure": 2.5,
@@ -35894,8 +35894,8 @@ const CONFIG = {
       },
       {
         "code": "APOLLO SE-5",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 102,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 3,
         "bend": 0,
@@ -35905,8 +35905,8 @@ const CONFIG = {
       },
       {
         "code": "APOLLO SE-6",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 4,
         "bend": 0,
@@ -35916,7 +35916,7 @@ const CONFIG = {
       },
       {
         "code": "APOLLO SE-7",
-        "innerDb": 0,
+        "innerDb": 90,
         "inch": "",
         "outerDb": 0,
         "pressure": 3,
@@ -35927,8 +35927,8 @@ const CONFIG = {
       },
       {
         "code": "APOLLO SE-8",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 76,
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 3,
         "bend": 0,
@@ -35938,8 +35938,8 @@ const CONFIG = {
       },
       {
         "code": "APOLLO SE-9",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 63,
+        "inch": "2 ½\"",
         "outerDb": 0,
         "pressure": 4,
         "bend": 0,
@@ -35949,7 +35949,7 @@ const CONFIG = {
       },
       {
         "code": "APOLLO SE-10",
-        "innerDb": 0,
+        "innerDb": 110,
         "inch": "",
         "outerDb": 0,
         "pressure": 3,
@@ -35960,7 +35960,7 @@ const CONFIG = {
       },
       {
         "code": "APOLLO SE-11",
-        "innerDb": 0,
+        "innerDb": 60,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -36005,10 +36005,10 @@ const CONFIG = {
       {
         "code": "EH360-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "12.0\"",
+        "outerDb": 329,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 1950,
         "weight": 20.52,
         "rollLength": 0,
         "priceEur": 0
@@ -36016,10 +36016,10 @@ const CONFIG = {
       {
         "code": "EH360-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "12.0\"",
+        "outerDb": 327,
         "pressure": 7,
-        "bend": 0,
+        "bend": 2015,
         "weight": 19.6,
         "rollLength": 0,
         "priceEur": 0
@@ -36027,10 +36027,10 @@ const CONFIG = {
       {
         "code": "EH360-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "10.0\"",
+        "outerDb": 279,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 1525,
         "weight": 18.17,
         "rollLength": 0,
         "priceEur": 429.8
@@ -36038,10 +36038,10 @@ const CONFIG = {
       {
         "code": "EH360-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "10.0\"",
+        "outerDb": 276,
         "pressure": 7,
-        "bend": 0,
+        "bend": 1625,
         "weight": 16.61,
         "rollLength": 0,
         "priceEur": 566.95
@@ -36049,10 +36049,10 @@ const CONFIG = {
       {
         "code": "EH360-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "8.0\"",
+        "outerDb": 224,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 1120,
         "weight": 12.54,
         "rollLength": 0,
         "priceEur": 268.55
@@ -36060,10 +36060,10 @@ const CONFIG = {
       {
         "code": "EH360-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "6.0\"",
+        "outerDb": 169,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 760,
         "weight": 8.2,
         "rollLength": 0,
         "priceEur": 138.55
@@ -36071,10 +36071,10 @@ const CONFIG = {
       {
         "code": "EH360-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5.0\"",
+        "outerDb": 142,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 650,
         "weight": 5.62,
         "rollLength": 0,
         "priceEur": 118.1
@@ -36082,10 +36082,10 @@ const CONFIG = {
       {
         "code": "EH360-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4.0\"",
+        "outerDb": 115,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 490,
         "weight": 4.02,
         "rollLength": 0,
         "priceEur": 85.45
@@ -36093,10 +36093,10 @@ const CONFIG = {
       {
         "code": "EH360-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3.00\"",
+        "outerDb": 89,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 350,
         "weight": 2.91,
         "rollLength": 0,
         "priceEur": 59.55
@@ -36104,10 +36104,10 @@ const CONFIG = {
       {
         "code": "EH360-10",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.0\"",
+        "outerDb": 34,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 320,
         "weight": 2.54,
         "rollLength": 0,
         "priceEur": 0
@@ -36115,10 +36115,10 @@ const CONFIG = {
       {
         "code": "EH360-11",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2.50\"",
+        "outerDb": 75,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 280,
         "weight": 2.22,
         "rollLength": 0,
         "priceEur": 51.3
@@ -36126,10 +36126,10 @@ const CONFIG = {
       {
         "code": "EH360-12",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2.00\"",
+        "outerDb": 62,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 215,
         "weight": 1.76,
         "rollLength": 0,
         "priceEur": 34
@@ -36137,10 +36137,10 @@ const CONFIG = {
       {
         "code": "EH360-13",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.75\"",
+        "outerDb": 55,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 185,
         "weight": 1.44,
         "rollLength": 0,
         "priceEur": 0
@@ -36148,10 +36148,10 @@ const CONFIG = {
       {
         "code": "EH360-14",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.50\"",
+        "outerDb": 48,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 150,
         "weight": 1.2,
         "rollLength": 0,
         "priceEur": 26.5
@@ -36159,10 +36159,10 @@ const CONFIG = {
       {
         "code": "EH360-15",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.25\"",
+        "outerDb": 42,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 125,
         "weight": 0.97,
         "rollLength": 0,
         "priceEur": 26.2
@@ -36170,10 +36170,10 @@ const CONFIG = {
       {
         "code": "EH360-16",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.00\"",
+        "outerDb": 34,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 95,
         "weight": 0.64,
         "rollLength": 0,
         "priceEur": 0
@@ -36214,8 +36214,8 @@ const CONFIG = {
       {
         "code": "EHA501-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2.00\"",
+        "outerDb": 65,
         "pressure": 20.7,
         "bend": 0,
         "weight": 1.66,
@@ -36225,8 +36225,8 @@ const CONFIG = {
       {
         "code": "EHA501-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3.00\"",
+        "outerDb": 92,
         "pressure": 20.7,
         "bend": 0,
         "weight": 2.65,
@@ -36236,8 +36236,8 @@ const CONFIG = {
       {
         "code": "EHA501-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4.00\"",
+        "outerDb": 118,
         "pressure": 20.7,
         "bend": 0,
         "weight": 3.81,
@@ -36247,8 +36247,8 @@ const CONFIG = {
       {
         "code": "EHA501-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3.00\"",
+        "outerDb": 92,
         "pressure": 20.7,
         "bend": 0,
         "weight": 2.65,
@@ -36258,8 +36258,8 @@ const CONFIG = {
       {
         "code": "EHA501-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.75\"",
+        "outerDb": 51,
         "pressure": 20.7,
         "bend": 0,
         "weight": 1.63,
@@ -36269,8 +36269,8 @@ const CONFIG = {
       {
         "code": "EHA501-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.50\"",
+        "outerDb": 51,
         "pressure": 20.7,
         "bend": 0,
         "weight": 1.18,
@@ -36280,8 +36280,8 @@ const CONFIG = {
       {
         "code": "EHA501-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.25\"",
+        "outerDb": 44,
         "pressure": 20.7,
         "bend": 0,
         "weight": 0.96,
@@ -36291,8 +36291,8 @@ const CONFIG = {
       {
         "code": "EHA501-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.00\"",
+        "outerDb": 36,
         "pressure": 20.7,
         "bend": 0,
         "weight": 0.67,
@@ -36302,8 +36302,8 @@ const CONFIG = {
       {
         "code": "EHA501-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "0.75\"",
+        "outerDb": 29,
         "pressure": 20.7,
         "bend": 0,
         "weight": 0.5,
@@ -36313,8 +36313,8 @@ const CONFIG = {
       {
         "code": "EHA501-10",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "0.62\"",
+        "outerDb": 25,
         "pressure": 20.7,
         "bend": 0,
         "weight": 0.37,
@@ -36324,8 +36324,8 @@ const CONFIG = {
       {
         "code": "EHA501-11",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "0.50\"",
+        "outerDb": 22,
         "pressure": 20.7,
         "bend": 0,
         "weight": 0.33,
@@ -36368,10 +36368,10 @@ const CONFIG = {
       {
         "code": "ALIZE 200°C-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4\"",
+        "outerDb": 120,
         "pressure": 10,
-        "bend": 0,
+        "bend": 1000,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 0
@@ -36379,10 +36379,10 @@ const CONFIG = {
       {
         "code": "ALIZE 200°C-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3\"",
+        "outerDb": 94,
         "pressure": 10,
-        "bend": 0,
+        "bend": 750,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 94.85
@@ -36390,10 +36390,10 @@ const CONFIG = {
       {
         "code": "ALIZE 200°C-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2 ½\"",
+        "outerDb": 81,
         "pressure": 10,
-        "bend": 0,
+        "bend": 600,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 80.7
@@ -36401,10 +36401,10 @@ const CONFIG = {
       {
         "code": "ALIZE 200°C-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 68,
         "pressure": 10,
-        "bend": 0,
+        "bend": 450,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 65.95
@@ -36412,10 +36412,10 @@ const CONFIG = {
       {
         "code": "ALIZE 200°C-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ½\"",
+        "outerDb": 54,
         "pressure": 10,
-        "bend": 0,
+        "bend": 350,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 0
@@ -36423,10 +36423,10 @@ const CONFIG = {
       {
         "code": "ALIZE 200°C-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ¼\"",
+        "outerDb": 46,
         "pressure": 10,
-        "bend": 0,
+        "bend": 250,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 0
@@ -36434,10 +36434,10 @@ const CONFIG = {
       {
         "code": "ALIZE 200°C-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 39,
         "pressure": 10,
-        "bend": 0,
+        "bend": 200,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 0
@@ -36478,8 +36478,8 @@ const CONFIG = {
       {
         "code": "EHA500-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3.0\"",
+        "outerDb": 93.9,
         "pressure": 41,
         "bend": 0,
         "weight": 4.49,
@@ -36489,8 +36489,8 @@ const CONFIG = {
       {
         "code": "EHA500-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2.50\"",
+        "outerDb": 80,
         "pressure": 41,
         "bend": 0,
         "weight": 3.36,
@@ -36500,8 +36500,8 @@ const CONFIG = {
       {
         "code": "EHA500-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2.00\"",
+        "outerDb": 66,
         "pressure": 41,
         "bend": 0,
         "weight": 2.51,
@@ -36511,8 +36511,8 @@ const CONFIG = {
       {
         "code": "EHA500-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.50\"",
+        "outerDb": 50,
         "pressure": 41,
         "bend": 0,
         "weight": 1.55,
@@ -36522,8 +36522,8 @@ const CONFIG = {
       {
         "code": "EHA500-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.25\"",
+        "outerDb": 43,
         "pressure": 41,
         "bend": 0,
         "weight": 1.12,
@@ -36533,8 +36533,8 @@ const CONFIG = {
       {
         "code": "EHA500-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "0.75\"",
+        "outerDb": 29.5,
         "pressure": 41,
         "bend": 0,
         "weight": 0.62,
@@ -36544,8 +36544,8 @@ const CONFIG = {
       {
         "code": "EHA500-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.0\"",
+        "outerDb": 36,
         "pressure": 41,
         "bend": 0,
         "weight": 0.88,
@@ -36555,8 +36555,8 @@ const CONFIG = {
       {
         "code": "EHA500-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "0.50\"",
+        "outerDb": 23,
         "pressure": 41,
         "bend": 0,
         "weight": 0.51,
@@ -36566,8 +36566,8 @@ const CONFIG = {
       {
         "code": "EHA500-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3.0\"",
+        "outerDb": 93.9,
         "pressure": 41,
         "bend": 0,
         "weight": 4.49,
@@ -36618,7 +36618,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "PLW20 - резервен-1",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -36665,8 +36665,8 @@ const CONFIG = {
     "variants": [
       {
         "code": "-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -36676,7 +36676,7 @@ const CONFIG = {
       },
       {
         "code": "-2",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -36687,8 +36687,8 @@ const CONFIG = {
       },
       {
         "code": "-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 32,
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -36698,8 +36698,8 @@ const CONFIG = {
       },
       {
         "code": "-4",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 25,
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -36742,9 +36742,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "SPIRALPRESS OIL-1",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 122.6,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -36753,9 +36753,9 @@ const CONFIG = {
       },
       {
         "code": "SPIRALPRESS OIL-2",
-        "innerDb": 0,
+        "innerDb": 70,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 95.8,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -36764,9 +36764,9 @@ const CONFIG = {
       },
       {
         "code": "SPIRALPRESS OIL-3",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 66.2,
         "pressure": 7,
         "bend": 0,
         "weight": 0,
@@ -36809,7 +36809,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "-1",
-        "innerDb": 0,
+        "innerDb": 160,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -36820,8 +36820,8 @@ const CONFIG = {
       },
       {
         "code": "-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 152,
+        "inch": "6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -36831,8 +36831,8 @@ const CONFIG = {
       },
       {
         "code": "-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 127,
+        "inch": "5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -36842,7 +36842,7 @@ const CONFIG = {
       },
       {
         "code": "-4",
-        "innerDb": 0,
+        "innerDb": 120,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -36853,7 +36853,7 @@ const CONFIG = {
       },
       {
         "code": "-5",
-        "innerDb": 0,
+        "innerDb": 110,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -36864,8 +36864,8 @@ const CONFIG = {
       },
       {
         "code": "-6",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 100,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -36875,7 +36875,7 @@ const CONFIG = {
       },
       {
         "code": "-7",
-        "innerDb": 0,
+        "innerDb": 90,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -36886,7 +36886,7 @@ const CONFIG = {
       },
       {
         "code": "-8",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -36897,8 +36897,8 @@ const CONFIG = {
       },
       {
         "code": "-9",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 76,
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -36908,7 +36908,7 @@ const CONFIG = {
       },
       {
         "code": "-10",
-        "innerDb": 0,
+        "innerDb": 70,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -36919,7 +36919,7 @@ const CONFIG = {
       },
       {
         "code": "-11",
-        "innerDb": 0,
+        "innerDb": 60,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -36930,8 +36930,8 @@ const CONFIG = {
       },
       {
         "code": "-12",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -36941,7 +36941,7 @@ const CONFIG = {
       },
       {
         "code": "-13",
-        "innerDb": 0,
+        "innerDb": 45,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -36952,7 +36952,7 @@ const CONFIG = {
       },
       {
         "code": "-14",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -36963,8 +36963,8 @@ const CONFIG = {
       },
       {
         "code": "-15",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 38,
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -36974,7 +36974,7 @@ const CONFIG = {
       },
       {
         "code": "-16",
-        "innerDb": 0,
+        "innerDb": 35,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -36985,8 +36985,8 @@ const CONFIG = {
       },
       {
         "code": "-17",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 32,
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -36996,7 +36996,7 @@ const CONFIG = {
       },
       {
         "code": "-18",
-        "innerDb": 0,
+        "innerDb": 30,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -37007,8 +37007,8 @@ const CONFIG = {
       },
       {
         "code": "-19",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 25,
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -37050,9 +37050,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "NAUTILUS ODORSAFE-1",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 50,
+        "inch": "2\"",
+        "outerDb": 61,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -37061,9 +37061,9 @@ const CONFIG = {
       },
       {
         "code": "NAUTILUS ODORSAFE-2",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 40,
+        "inch": "1.9/16\"",
+        "outerDb": 48,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -37072,9 +37072,9 @@ const CONFIG = {
       },
       {
         "code": "NAUTILUS ODORSAFE-3",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 38,
+        "inch": "1.1/2\"",
+        "outerDb": 46,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -37083,9 +37083,9 @@ const CONFIG = {
       },
       {
         "code": "NAUTILUS ODORSAFE-4",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 30,
+        "inch": "1.3/16\"",
+        "outerDb": 36.5,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -37094,9 +37094,9 @@ const CONFIG = {
       },
       {
         "code": "NAUTILUS ODORSAFE-5",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 32,
+        "inch": "1.1/4\"",
+        "outerDb": 38.5,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -37105,9 +37105,9 @@ const CONFIG = {
       },
       {
         "code": "NAUTILUS ODORSAFE-6",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 25,
+        "inch": "1\"",
+        "outerDb": 31,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -37116,9 +37116,9 @@ const CONFIG = {
       },
       {
         "code": "NAUTILUS ODORSAFE-7",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 20,
+        "inch": "3/4\"",
+        "outerDb": 25,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -37127,9 +37127,9 @@ const CONFIG = {
       },
       {
         "code": "NAUTILUS ODORSAFE-8",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 16,
+        "inch": "5/8\"",
+        "outerDb": 21,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -37189,8 +37189,8 @@ const CONFIG = {
     "variants": [
       {
         "code": "NETTUNO ENO-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 100,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -37200,7 +37200,7 @@ const CONFIG = {
       },
       {
         "code": "NETTUNO ENO-2",
-        "innerDb": 0,
+        "innerDb": 60,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -37211,8 +37211,8 @@ const CONFIG = {
       },
       {
         "code": "NETTUNO ENO-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -37222,8 +37222,8 @@ const CONFIG = {
       },
       {
         "code": "NETTUNO ENO-4",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 40,
+        "inch": "1.9/16\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -37233,8 +37233,8 @@ const CONFIG = {
       },
       {
         "code": "NETTUNO ENO-5",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 32,
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -37296,8 +37296,8 @@ const CONFIG = {
     "variants": [
       {
         "code": "SPIRALPRESS ENO-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 100,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -37307,8 +37307,8 @@ const CONFIG = {
       },
       {
         "code": "SPIRALPRESS ENO-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 80,
+        "inch": "3.1/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -37318,8 +37318,8 @@ const CONFIG = {
       },
       {
         "code": "SPIRALPRESS ENO-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 76,
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -37329,7 +37329,7 @@ const CONFIG = {
       },
       {
         "code": "SPIRALPRESS ENO-4",
-        "innerDb": 0,
+        "innerDb": 60,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -37340,8 +37340,8 @@ const CONFIG = {
       },
       {
         "code": "SPIRALPRESS ENO-5",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -37351,8 +37351,8 @@ const CONFIG = {
       },
       {
         "code": "SPIRALPRESS ENO-6",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 40,
+        "inch": "1.9/16\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -37362,8 +37362,8 @@ const CONFIG = {
       },
       {
         "code": "SPIRALPRESS ENO-7",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 38,
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -37405,8 +37405,8 @@ const CONFIG = {
       {
         "code": "TEKNOJET 1SN-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/16\"",
+        "outerDb": 14.7,
         "pressure": 0,
         "bend": 0,
         "weight": 0.27,
@@ -37416,8 +37416,8 @@ const CONFIG = {
       {
         "code": "TEKNOJET 1SN-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 13.1,
         "pressure": 0,
         "bend": 0,
         "weight": 0.21,
@@ -37427,8 +37427,8 @@ const CONFIG = {
       {
         "code": "TEKNOJET 1SN-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 13.1,
         "pressure": 0,
         "bend": 0,
         "weight": 0.21,
@@ -37438,8 +37438,8 @@ const CONFIG = {
       {
         "code": "TEKNOJET 1SN-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/16\"",
+        "outerDb": 14.7,
         "pressure": 0,
         "bend": 0,
         "weight": 0.27,
@@ -37484,10 +37484,10 @@ const CONFIG = {
       {
         "code": " PETROGAS /25 D-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4\"",
+        "outerDb": 120,
         "pressure": 25,
-        "bend": 0,
+        "bend": 800,
         "weight": 3.86,
         "rollLength": 0,
         "priceEur": 0
@@ -37495,10 +37495,10 @@ const CONFIG = {
       {
         "code": " PETROGAS /25 D-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3\"",
+        "outerDb": 94,
         "pressure": 25,
-        "bend": 0,
+        "bend": 650,
         "weight": 3.02,
         "rollLength": 0,
         "priceEur": 0
@@ -37506,10 +37506,10 @@ const CONFIG = {
       {
         "code": " PETROGAS /25 D-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2 ½\"",
+        "outerDb": 81,
         "pressure": 25,
-        "bend": 0,
+        "bend": 550,
         "weight": 2.5,
         "rollLength": 0,
         "priceEur": 0
@@ -37517,10 +37517,10 @@ const CONFIG = {
       {
         "code": " PETROGAS /25 D-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 67,
         "pressure": 25,
-        "bend": 0,
+        "bend": 400,
         "weight": 1.83,
         "rollLength": 0,
         "priceEur": 0
@@ -37528,10 +37528,10 @@ const CONFIG = {
       {
         "code": " PETROGAS /25 D-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ½\"",
+        "outerDb": 52,
         "pressure": 25,
-        "bend": 0,
+        "bend": 320,
         "weight": 1.2,
         "rollLength": 0,
         "priceEur": 0
@@ -37539,10 +37539,10 @@ const CONFIG = {
       {
         "code": " PETROGAS /25 D-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 1/4\"",
+        "outerDb": 45,
         "pressure": 25,
-        "bend": 0,
+        "bend": 250,
         "weight": 1.05,
         "rollLength": 0,
         "priceEur": 0
@@ -37550,10 +37550,10 @@ const CONFIG = {
       {
         "code": " PETROGAS /25 D-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 38,
         "pressure": 25,
-        "bend": 0,
+        "bend": 200,
         "weight": 0.84,
         "rollLength": 0,
         "priceEur": 0
@@ -37561,10 +37561,10 @@ const CONFIG = {
       {
         "code": " PETROGAS /25 D-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 31,
         "pressure": 25,
-        "bend": 0,
+        "bend": 160,
         "weight": 0.63,
         "rollLength": 0,
         "priceEur": 0
@@ -37572,10 +37572,10 @@ const CONFIG = {
       {
         "code": " PETROGAS /25 D-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 26,
         "pressure": 25,
-        "bend": 0,
+        "bend": 120,
         "weight": 0.47,
         "rollLength": 0,
         "priceEur": 0
@@ -37583,10 +37583,10 @@ const CONFIG = {
       {
         "code": " PETROGAS /25 D-10",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 23,
         "pressure": 25,
-        "bend": 0,
+        "bend": 100,
         "weight": 0.39,
         "rollLength": 0,
         "priceEur": 0
@@ -37628,10 +37628,10 @@ const CONFIG = {
       {
         "code": "Multipurpose Oil/Fuel/Air-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 14,
         "pressure": 20,
-        "bend": 0,
+        "bend": 60,
         "weight": 0.12,
         "rollLength": 0,
         "priceEur": 3
@@ -37669,8 +37669,8 @@ const CONFIG = {
       {
         "code": "-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 20,
         "pressure": 20,
         "bend": 0,
         "weight": 1.06,
@@ -37680,8 +37680,8 @@ const CONFIG = {
       {
         "code": "-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 17,
         "pressure": 20,
         "bend": 0,
         "weight": 0.595,
@@ -37691,8 +37691,8 @@ const CONFIG = {
       {
         "code": "-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5.16\"",
+        "outerDb": 15,
         "pressure": 20,
         "bend": 0,
         "weight": 0.47,
@@ -37702,8 +37702,8 @@ const CONFIG = {
       {
         "code": "-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 13,
         "pressure": 20,
         "bend": 0,
         "weight": 0.415,
@@ -37743,7 +37743,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "FPB-1",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 4.5,
@@ -37754,7 +37754,7 @@ const CONFIG = {
       },
       {
         "code": "FPB-2",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
         "outerDb": 0,
         "pressure": 4.5,
@@ -37765,7 +37765,7 @@ const CONFIG = {
       },
       {
         "code": "FPB-3",
-        "innerDb": 0,
+        "innerDb": 11,
         "inch": "",
         "outerDb": 0,
         "pressure": 4.5,
@@ -37776,7 +37776,7 @@ const CONFIG = {
       },
       {
         "code": "FPB-4",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
         "outerDb": 0,
         "pressure": 4.5,
@@ -37787,7 +37787,7 @@ const CONFIG = {
       },
       {
         "code": "FPB-5",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
         "outerDb": 0,
         "pressure": 4.5,
@@ -37798,7 +37798,7 @@ const CONFIG = {
       },
       {
         "code": "FPB-6",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
         "outerDb": 0,
         "pressure": 4.5,
@@ -37809,7 +37809,7 @@ const CONFIG = {
       },
       {
         "code": "FPB-7",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
         "outerDb": 0,
         "pressure": 4.5,
@@ -37820,7 +37820,7 @@ const CONFIG = {
       },
       {
         "code": "FPB-8",
-        "innerDb": 0,
+        "innerDb": 4,
         "inch": "",
         "outerDb": 0,
         "pressure": 4.5,
@@ -37861,8 +37861,8 @@ const CONFIG = {
     "variants": [
       {
         "code": "605AA-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 203,
+        "inch": "8\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -37872,9 +37872,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-2",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 152,
+        "inch": "6\"",
+        "outerDb": 170,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -37883,9 +37883,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-3",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 127,
+        "inch": "5\"",
+        "outerDb": 145,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -37894,9 +37894,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-4",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 120,
+        "inch": "4.3/4\"",
+        "outerDb": 138,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -37905,9 +37905,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-5",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 115,
+        "inch": "4.1/2\"",
+        "outerDb": 129,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -37916,9 +37916,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-6",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 110,
+        "inch": "4.5/16\"",
+        "outerDb": 124,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -37927,9 +37927,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-7",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 102,
+        "inch": "4\"",
+        "outerDb": 116,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -37938,9 +37938,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-8",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 90,
+        "inch": "3.1/2\"",
+        "outerDb": 104,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -37949,9 +37949,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-9",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 80,
+        "inch": "3.182\"",
+        "outerDb": 94,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -37960,9 +37960,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-10",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 76,
+        "inch": "3\"",
+        "outerDb": 88,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -37971,9 +37971,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-11",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 70,
+        "inch": "2.3/4\"",
+        "outerDb": 82,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -37982,9 +37982,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-12",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 63,
+        "inch": "2.1/2\"",
+        "outerDb": 75,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -37993,8 +37993,8 @@ const CONFIG = {
       },
       {
         "code": "605AA-13",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 60,
+        "inch": "2.3/8\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -38004,9 +38004,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-14",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 57,
+        "inch": "2.1/4\"",
+        "outerDb": 67,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -38015,9 +38015,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-15",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 51,
+        "inch": "2\"",
+        "outerDb": 61,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -38026,9 +38026,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-16",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 48,
+        "inch": "1.7/8\"",
+        "outerDb": 58,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -38037,9 +38037,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-17",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 45,
+        "inch": "1.3/4\"",
+        "outerDb": 55,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -38048,9 +38048,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-18",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 42,
+        "inch": "1.5/8\"",
+        "outerDb": 52,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -38059,9 +38059,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-19",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 40,
+        "inch": "1.9/16\"",
+        "outerDb": 50,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -38070,9 +38070,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-20",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 38,
+        "inch": "1.1/2\"",
+        "outerDb": 48,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -38081,9 +38081,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-21",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 35,
+        "inch": "1.3/8\"",
+        "outerDb": 45,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -38092,9 +38092,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-22",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 32,
+        "inch": "1.1/4\"",
+        "outerDb": 42,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -38103,9 +38103,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-23",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 30,
+        "inch": "1.3/16\"",
+        "outerDb": 40,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -38114,8 +38114,8 @@ const CONFIG = {
       },
       {
         "code": "605AA-24",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 28,
+        "inch": "1.1/8\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -38125,8 +38125,8 @@ const CONFIG = {
       },
       {
         "code": "605AA-25",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 22,
+        "inch": "7/8\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -38136,9 +38136,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-26",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 25,
+        "inch": "1\"",
+        "outerDb": 35,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -38147,9 +38147,9 @@ const CONFIG = {
       },
       {
         "code": "605AA-27",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 19,
+        "inch": "3/4\"",
+        "outerDb": 29,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -38189,10 +38189,10 @@ const CONFIG = {
       {
         "code": "PETROSPIR SD -1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "6\"",
+        "outerDb": 170,
         "pressure": 10,
-        "bend": 0,
+        "bend": 900,
         "weight": 7.7,
         "rollLength": 0,
         "priceEur": 0
@@ -38200,10 +38200,10 @@ const CONFIG = {
       {
         "code": "PETROSPIR SD -2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5\"",
+        "outerDb": 143,
         "pressure": 10,
-        "bend": 0,
+        "bend": 760,
         "weight": 6.07,
         "rollLength": 0,
         "priceEur": 0
@@ -38211,10 +38211,10 @@ const CONFIG = {
       {
         "code": "PETROSPIR SD -3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4 23/32\"",
+        "outerDb": 135,
         "pressure": 10,
-        "bend": 0,
+        "bend": 720,
         "weight": 4.98,
         "rollLength": 0,
         "priceEur": 0
@@ -38222,10 +38222,10 @@ const CONFIG = {
       {
         "code": "PETROSPIR SD -4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4\"",
+        "outerDb": 117,
         "pressure": 10,
-        "bend": 0,
+        "bend": 600,
         "weight": 4.4,
         "rollLength": 0,
         "priceEur": 0
@@ -38233,10 +38233,10 @@ const CONFIG = {
       {
         "code": "PETROSPIR SD -5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3 17/32\"",
+        "outerDb": 104,
         "pressure": 10,
-        "bend": 0,
+        "bend": 540,
         "weight": 3.64,
         "rollLength": 0,
         "priceEur": 0
@@ -38244,10 +38244,10 @@ const CONFIG = {
       {
         "code": "PETROSPIR SD -6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3 5/32\"",
+        "outerDb": 94,
         "pressure": 10,
-        "bend": 0,
+        "bend": 480,
         "weight": 3.2,
         "rollLength": 0,
         "priceEur": 0
@@ -38255,10 +38255,10 @@ const CONFIG = {
       {
         "code": "PETROSPIR SD -7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3\"",
+        "outerDb": 89,
         "pressure": 10,
-        "bend": 0,
+        "bend": 460,
         "weight": 2.95,
         "rollLength": 0,
         "priceEur": 0
@@ -38266,10 +38266,10 @@ const CONFIG = {
       {
         "code": "PETROSPIR SD -8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2 ½\"",
+        "outerDb": 76,
         "pressure": 10,
-        "bend": 0,
+        "bend": 380,
         "weight": 2.27,
         "rollLength": 0,
         "priceEur": 0
@@ -38277,10 +38277,10 @@ const CONFIG = {
       {
         "code": "PETROSPIR SD -9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2 3/8\"",
+        "outerDb": 72,
         "pressure": 10,
-        "bend": 0,
+        "bend": 360,
         "weight": 2.06,
         "rollLength": 0,
         "priceEur": 0
@@ -38288,10 +38288,10 @@ const CONFIG = {
       {
         "code": "PETROSPIR SD -10",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 62,
         "pressure": 10,
-        "bend": 0,
+        "bend": 300,
         "weight": 1.6,
         "rollLength": 0,
         "priceEur": 0
@@ -38299,10 +38299,10 @@ const CONFIG = {
       {
         "code": "PETROSPIR SD -11",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 63,
         "pressure": 10,
-        "bend": 0,
+        "bend": 300,
         "weight": 1.79,
         "rollLength": 0,
         "priceEur": 0
@@ -38310,10 +38310,10 @@ const CONFIG = {
       {
         "code": "PETROSPIR SD -12",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 25/32\"",
+        "outerDb": 56,
         "pressure": 10,
-        "bend": 0,
+        "bend": 270,
         "weight": 1.5,
         "rollLength": 0,
         "priceEur": 0
@@ -38321,10 +38321,10 @@ const CONFIG = {
       {
         "code": "PETROSPIR SD -13",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 21/32\"",
+        "outerDb": 53,
         "pressure": 10,
-        "bend": 0,
+        "bend": 255,
         "weight": 1.4,
         "rollLength": 0,
         "priceEur": 0
@@ -38332,10 +38332,10 @@ const CONFIG = {
       {
         "code": "PETROSPIR SD -14",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 9/16\"",
+        "outerDb": 51,
         "pressure": 10,
-        "bend": 0,
+        "bend": 240,
         "weight": 1.3,
         "rollLength": 0,
         "priceEur": 0
@@ -38343,10 +38343,10 @@ const CONFIG = {
       {
         "code": "PETROSPIR SD -15",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ½\"",
+        "outerDb": 49,
         "pressure": 10,
-        "bend": 0,
+        "bend": 240,
         "weight": 1.24,
         "rollLength": 0,
         "priceEur": 0
@@ -38354,10 +38354,10 @@ const CONFIG = {
       {
         "code": "PETROSPIR SD -16",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 3/8\"",
+        "outerDb": 46,
         "pressure": 10,
-        "bend": 0,
+        "bend": 210,
         "weight": 1.1,
         "rollLength": 0,
         "priceEur": 0
@@ -38365,10 +38365,10 @@ const CONFIG = {
       {
         "code": "PETROSPIR SD -17",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ¼\"",
+        "outerDb": 42,
         "pressure": 10,
-        "bend": 0,
+        "bend": 190,
         "weight": 1,
         "rollLength": 0,
         "priceEur": 0
@@ -38376,10 +38376,10 @@ const CONFIG = {
       {
         "code": "PETROSPIR SD -18",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 35,
         "pressure": 10,
-        "bend": 0,
+        "bend": 150,
         "weight": 0.8,
         "rollLength": 0,
         "priceEur": 0
@@ -38387,10 +38387,10 @@ const CONFIG = {
       {
         "code": "PETROSPIR SD -19",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 3/16\"",
+        "outerDb": 40,
         "pressure": 10,
-        "bend": 0,
+        "bend": 180,
         "weight": 0.92,
         "rollLength": 0,
         "priceEur": 0
@@ -38398,10 +38398,10 @@ const CONFIG = {
       {
         "code": "PETROSPIR SD -20",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 29,
         "pressure": 10,
-        "bend": 0,
+        "bend": 115,
         "weight": 0.67,
         "rollLength": 0,
         "priceEur": 0
@@ -38440,8 +38440,8 @@ const CONFIG = {
       {
         "code": "650AA-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 63,
         "pressure": 10,
         "bend": 0,
         "weight": 1.35,
@@ -38451,8 +38451,8 @@ const CONFIG = {
       {
         "code": "650AA-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/2\"",
+        "outerDb": 50,
         "pressure": 10,
         "bend": 0,
         "weight": 1.03,
@@ -38462,8 +38462,8 @@ const CONFIG = {
       {
         "code": "650AA-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.14\"",
+        "outerDb": 44,
         "pressure": 10,
         "bend": 0,
         "weight": 0.88,
@@ -38510,10 +38510,10 @@ const CONFIG = {
       {
         "code": "LPG DISCHARGE-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4\"",
+        "outerDb": 120,
         "pressure": 25,
-        "bend": 0,
+        "bend": 800,
         "weight": 3.865,
         "rollLength": 0,
         "priceEur": 0
@@ -38521,10 +38521,10 @@ const CONFIG = {
       {
         "code": "LPG DISCHARGE-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3\"",
+        "outerDb": 94,
         "pressure": 25,
-        "bend": 0,
+        "bend": 650,
         "weight": 3.02,
         "rollLength": 0,
         "priceEur": 205.2
@@ -38532,10 +38532,10 @@ const CONFIG = {
       {
         "code": "LPG DISCHARGE-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ¼\"",
+        "outerDb": 45,
         "pressure": 25,
-        "bend": 0,
+        "bend": 250,
         "weight": 1.051,
         "rollLength": 0,
         "priceEur": 88.3
@@ -38543,10 +38543,10 @@ const CONFIG = {
       {
         "code": "LPG DISCHARGE-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 67,
         "pressure": 25,
-        "bend": 0,
+        "bend": 400,
         "weight": 1.832,
         "rollLength": 0,
         "priceEur": 113.55
@@ -38554,10 +38554,10 @@ const CONFIG = {
       {
         "code": "LPG DISCHARGE-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ½\"",
+        "outerDb": 52,
         "pressure": 25,
-        "bend": 0,
+        "bend": 320,
         "weight": 1.21,
         "rollLength": 0,
         "priceEur": 83.15
@@ -38565,10 +38565,10 @@ const CONFIG = {
       {
         "code": "LPG DISCHARGE-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 38,
         "pressure": 25,
-        "bend": 0,
+        "bend": 200,
         "weight": 0.835,
         "rollLength": 0,
         "priceEur": 70.7
@@ -38576,10 +38576,10 @@ const CONFIG = {
       {
         "code": "LPG DISCHARGE-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 31,
         "pressure": 25,
-        "bend": 0,
+        "bend": 160,
         "weight": 0.63,
         "rollLength": 0,
         "priceEur": 43.65
@@ -38587,10 +38587,10 @@ const CONFIG = {
       {
         "code": "LPG DISCHARGE-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 26,
         "pressure": 25,
-        "bend": 0,
+        "bend": 125,
         "weight": 0.466,
         "rollLength": 0,
         "priceEur": 41.15
@@ -38598,10 +38598,10 @@ const CONFIG = {
       {
         "code": "LPG DISCHARGE-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 23,
         "pressure": 25,
-        "bend": 0,
+        "bend": 100,
         "weight": 0.392,
         "rollLength": 0,
         "priceEur": 0
@@ -38639,9 +38639,9 @@ const CONFIG = {
     "variants": [
       {
         "code": " 658AA-1",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 50,
+        "inch": "2\"",
+        "outerDb": 67,
         "pressure": 16,
         "bend": 0,
         "weight": 0,
@@ -38650,9 +38650,9 @@ const CONFIG = {
       },
       {
         "code": " 658AA-2",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 38,
+        "inch": "1.1/2\"",
+        "outerDb": 51,
         "pressure": 16,
         "bend": 0,
         "weight": 0,
@@ -38661,9 +38661,9 @@ const CONFIG = {
       },
       {
         "code": " 658AA-3",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 32,
+        "inch": "1.1/4\"",
+        "outerDb": 44,
         "pressure": 16,
         "bend": 0,
         "weight": 0,
@@ -38672,9 +38672,9 @@ const CONFIG = {
       },
       {
         "code": " 658AA-4",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 25,
+        "inch": "1\"",
+        "outerDb": 37,
         "pressure": 16,
         "bend": 0,
         "weight": 0,
@@ -38718,9 +38718,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "614AA-1",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 102,
+        "inch": "4\"",
+        "outerDb": 122,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -38729,9 +38729,9 @@ const CONFIG = {
       },
       {
         "code": "614AA-2",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 76,
+        "inch": "3\"",
+        "outerDb": 96,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -38740,9 +38740,9 @@ const CONFIG = {
       },
       {
         "code": "614AA-3",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 51,
+        "inch": "2\"",
+        "outerDb": 69,
         "pressure": 10,
         "bend": 0,
         "weight": 0,
@@ -38783,10 +38783,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 1SN-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 63.4,
         "pressure": 0,
-        "bend": 0,
+        "bend": 630,
         "weight": 2.3,
         "rollLength": 0,
         "priceEur": 0
@@ -38794,10 +38794,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 1SN-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/2\"",
+        "outerDb": 50.1,
         "pressure": 0,
-        "bend": 0,
+        "bend": 500,
         "weight": 1.55,
         "rollLength": 0,
         "priceEur": 0
@@ -38805,10 +38805,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 1SN-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/4\"",
+        "outerDb": 42.9,
         "pressure": 0,
-        "bend": 0,
+        "bend": 420,
         "weight": 1.3,
         "rollLength": 0,
         "priceEur": 0
@@ -38816,10 +38816,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 1SN-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 35.3,
         "pressure": 0,
-        "bend": 0,
+        "bend": 300,
         "weight": 0.935,
         "rollLength": 0,
         "priceEur": 0
@@ -38827,10 +38827,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 1SN-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 27.4,
         "pressure": 0,
-        "bend": 0,
+        "bend": 240,
         "weight": 0.62,
         "rollLength": 0,
         "priceEur": 16.3
@@ -38838,10 +38838,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 1SN-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 23.4,
         "pressure": 0,
-        "bend": 0,
+        "bend": 200,
         "weight": 0.51,
         "rollLength": 0,
         "priceEur": 13.4
@@ -38849,10 +38849,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 1SN-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 20.2,
         "pressure": 0,
-        "bend": 0,
+        "bend": 180,
         "weight": 0.43,
         "rollLength": 0,
         "priceEur": 11.2
@@ -38860,10 +38860,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 1SN-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 17.1,
         "pressure": 0,
-        "bend": 0,
+        "bend": 130,
         "weight": 0.36,
         "rollLength": 0,
         "priceEur": 9.7
@@ -38871,10 +38871,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 1SN-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/19\"",
+        "outerDb": 14.7,
         "pressure": 0,
-        "bend": 0,
+        "bend": 115,
         "weight": 0.28,
         "rollLength": 0,
         "priceEur": 8.8
@@ -38882,10 +38882,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 1SN-10",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 13.1,
         "pressure": 0,
-        "bend": 0,
+        "bend": 100,
         "weight": 0.23,
         "rollLength": 0,
         "priceEur": 7.9
@@ -38893,10 +38893,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 1SN-11",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/16\"",
+        "outerDb": 11.5,
         "pressure": 0,
-        "bend": 0,
+        "bend": 90,
         "weight": 0.18,
         "rollLength": 0,
         "priceEur": 0
@@ -38936,7 +38936,7 @@ const CONFIG = {
         "code": "Vulcan-1",
         "innerDb": 0,
         "inch": "1\"",
-        "outerDb": 0,
+        "outerDb": 36,
         "pressure": 88,
         "bend": 0,
         "weight": 0.97,
@@ -38947,7 +38947,7 @@ const CONFIG = {
         "code": "Vulcan-2",
         "innerDb": 0,
         "inch": "3/4\"",
-        "outerDb": 0,
+        "outerDb": 27.9,
         "pressure": 105,
         "bend": 0,
         "weight": 0.66,
@@ -38958,7 +38958,7 @@ const CONFIG = {
         "code": "Vulcan-3",
         "innerDb": 0,
         "inch": "5/8\"",
-        "outerDb": 0,
+        "outerDb": 23.8,
         "pressure": 130,
         "bend": 0,
         "weight": 0.52,
@@ -38969,7 +38969,7 @@ const CONFIG = {
         "code": "Vulcan-4",
         "innerDb": 0,
         "inch": "1/2\"",
-        "outerDb": 0,
+        "outerDb": 20.6,
         "pressure": 160,
         "bend": 0,
         "weight": 0.44,
@@ -38980,7 +38980,7 @@ const CONFIG = {
         "code": "Vulcan-5",
         "innerDb": 0,
         "inch": "3/8\"",
-        "outerDb": 0,
+        "outerDb": 17.5,
         "pressure": 180,
         "bend": 0,
         "weight": 0.36,
@@ -38991,7 +38991,7 @@ const CONFIG = {
         "code": "Vulcan-6",
         "innerDb": 0,
         "inch": "5/16\"",
-        "outerDb": 0,
+        "outerDb": 15.1,
         "pressure": 215,
         "bend": 0,
         "weight": 0.29,
@@ -39002,7 +39002,7 @@ const CONFIG = {
         "code": "Vulcan-7",
         "innerDb": 0,
         "inch": "1/4\"",
-        "outerDb": 0,
+        "outerDb": 13.5,
         "pressure": 225,
         "bend": 0,
         "weight": 0.23,
@@ -39013,7 +39013,7 @@ const CONFIG = {
         "code": "Vulcan-8",
         "innerDb": 0,
         "inch": "1.1/4\"",
-        "outerDb": 0,
+        "outerDb": 43.4,
         "pressure": 60,
         "bend": 0,
         "weight": 1.3,
@@ -39024,7 +39024,7 @@ const CONFIG = {
         "code": "Vulcan-9",
         "innerDb": 0,
         "inch": "1.1/2\"",
-        "outerDb": 0,
+        "outerDb": 50.1,
         "pressure": 50,
         "bend": 0,
         "weight": 1.53,
@@ -39035,7 +39035,7 @@ const CONFIG = {
         "code": "Vulcan-10",
         "innerDb": 0,
         "inch": "2\"",
-        "outerDb": 0,
+        "outerDb": 63.5,
         "pressure": 40,
         "bend": 0,
         "weight": 2.25,
@@ -39076,10 +39076,10 @@ const CONFIG = {
       {
         "code": "SEMPERJET 1SN-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 23.2,
         "pressure": 130,
-        "bend": 0,
+        "bend": 200,
         "weight": 0.42,
         "rollLength": 0,
         "priceEur": 0
@@ -39087,10 +39087,10 @@ const CONFIG = {
       {
         "code": "SEMPERJET 1SN-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 20,
         "pressure": 220,
-        "bend": 0,
+        "bend": 180,
         "weight": 0.36,
         "rollLength": 0,
         "priceEur": 0
@@ -39098,10 +39098,10 @@ const CONFIG = {
       {
         "code": "SEMPERJET 1SN-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 16.8,
         "pressure": 220,
-        "bend": 0,
+        "bend": 125,
         "weight": 0.28,
         "rollLength": 0,
         "priceEur": 0
@@ -39109,10 +39109,10 @@ const CONFIG = {
       {
         "code": "SEMPERJET 1SN-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 14.7,
         "pressure": 220,
-        "bend": 0,
+        "bend": 115,
         "weight": 0.22,
         "rollLength": 0,
         "priceEur": 10.8
@@ -39120,10 +39120,10 @@ const CONFIG = {
       {
         "code": "SEMPERJET 1SN-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 23.2,
         "pressure": 130,
-        "bend": 0,
+        "bend": 200,
         "weight": 0.42,
         "rollLength": 0,
         "priceEur": 0
@@ -39131,10 +39131,10 @@ const CONFIG = {
       {
         "code": "SEMPERJET 1SN-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 13,
         "pressure": 250,
-        "bend": 0,
+        "bend": 100,
         "weight": 0.19,
         "rollLength": 0,
         "priceEur": 10.5
@@ -39142,10 +39142,10 @@ const CONFIG = {
       {
         "code": "SEMPERJET 1SN-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 20,
         "pressure": 220,
-        "bend": 0,
+        "bend": 180,
         "weight": 0.36,
         "rollLength": 0,
         "priceEur": 0
@@ -39153,10 +39153,10 @@ const CONFIG = {
       {
         "code": "SEMPERJET 1SN-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 16.8,
         "pressure": 220,
-        "bend": 0,
+        "bend": 125,
         "weight": 0.28,
         "rollLength": 0,
         "priceEur": 0
@@ -39164,10 +39164,10 @@ const CONFIG = {
       {
         "code": "SEMPERJET 1SN-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 14.7,
         "pressure": 220,
-        "bend": 0,
+        "bend": 115,
         "weight": 0.22,
         "rollLength": 0,
         "priceEur": 10.15
@@ -39175,10 +39175,10 @@ const CONFIG = {
       {
         "code": "SEMPERJET 1SN-10",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 13,
         "pressure": 250,
-        "bend": 0,
+        "bend": 100,
         "weight": 0.19,
         "rollLength": 0,
         "priceEur": 9.75
@@ -39217,10 +39217,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 2SN-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 18.7,
         "pressure": 0,
-        "bend": 0,
+        "bend": 130,
         "weight": 0.53,
         "rollLength": 0,
         "priceEur": 11.45
@@ -39228,10 +39228,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 2SN-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 66.5,
         "pressure": 0,
-        "bend": 0,
+        "bend": 630,
         "weight": 3.2,
         "rollLength": 0,
         "priceEur": 0
@@ -39239,10 +39239,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 2SN-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/2\"",
+        "outerDb": 53.8,
         "pressure": 0,
-        "bend": 0,
+        "bend": 500,
         "weight": 2.25,
         "rollLength": 0,
         "priceEur": 0
@@ -39250,10 +39250,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 2SN-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/4\"",
+        "outerDb": 46.7,
         "pressure": 0,
-        "bend": 0,
+        "bend": 420,
         "weight": 1.9,
         "rollLength": 0,
         "priceEur": 0
@@ -39261,10 +39261,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 2SN-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 36.9,
         "pressure": 0,
-        "bend": 0,
+        "bend": 300,
         "weight": 1.34,
         "rollLength": 0,
         "priceEur": 0
@@ -39272,10 +39272,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 2SN-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 29,
         "pressure": 0,
-        "bend": 0,
+        "bend": 240,
         "weight": 0.955,
         "rollLength": 0,
         "priceEur": 19.7
@@ -39283,10 +39283,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 2SN-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 25,
         "pressure": 0,
-        "bend": 0,
+        "bend": 200,
         "weight": 0.735,
         "rollLength": 0,
         "priceEur": 16.8
@@ -39294,10 +39294,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 2SN-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 21.8,
         "pressure": 0,
-        "bend": 0,
+        "bend": 180,
         "weight": 0.63,
         "rollLength": 0,
         "priceEur": 13.2
@@ -39305,10 +39305,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 2SN-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/16\"",
+        "outerDb": 16.3,
         "pressure": 0,
-        "bend": 0,
+        "bend": 115,
         "weight": 0.42,
         "rollLength": 0,
         "priceEur": 10.55
@@ -39316,10 +39316,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 2SN-10",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/18\"",
+        "outerDb": 13.1,
         "pressure": 0,
-        "bend": 0,
+        "bend": 90,
         "weight": 0.28,
         "rollLength": 0,
         "priceEur": 0
@@ -39327,10 +39327,10 @@ const CONFIG = {
       {
         "code": "Tekno/AGRI 2SN-11",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 14.6,
         "pressure": 0,
-        "bend": 0,
+        "bend": 100,
         "weight": 0.355,
         "rollLength": 0,
         "priceEur": 9.8
@@ -39380,8 +39380,8 @@ const CONFIG = {
       {
         "code": "4SP DUNLOP-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 28.6,
         "pressure": 0,
         "bend": 0,
         "weight": 1.19,
@@ -39391,8 +39391,8 @@ const CONFIG = {
       {
         "code": "4SP DUNLOP-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 22.2,
         "pressure": 0,
         "bend": 0,
         "weight": 0.75,
@@ -39402,8 +39402,8 @@ const CONFIG = {
       {
         "code": "4SP DUNLOP-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 23.6,
         "pressure": 0,
         "bend": 0,
         "weight": 0.749,
@@ -39444,8 +39444,8 @@ const CONFIG = {
       {
         "code": "AEROQUIP 4 SP EH 856-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 32.2,
         "pressure": 0,
         "bend": 0,
         "weight": 1.5,
@@ -39455,8 +39455,8 @@ const CONFIG = {
       {
         "code": "AEROQUIP 4 SP EH 856-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 39.7,
         "pressure": 0,
         "bend": 0,
         "weight": 2.15,
@@ -39466,8 +39466,8 @@ const CONFIG = {
       {
         "code": "AEROQUIP 4 SP EH 856-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 28.2,
         "pressure": 0,
         "bend": 0,
         "weight": 1,
@@ -39477,8 +39477,8 @@ const CONFIG = {
       {
         "code": "AEROQUIP 4 SP EH 856-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 24.6,
         "pressure": 0,
         "bend": 0,
         "weight": 0.92,
@@ -39488,8 +39488,8 @@ const CONFIG = {
       {
         "code": "AEROQUIP 4 SP EH 856-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 21.4,
         "pressure": 0,
         "bend": 0,
         "weight": 0.8,
@@ -39539,8 +39539,8 @@ const CONFIG = {
       {
         "code": "AEROQUIP 4 SH EN 586-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 68.1,
         "pressure": 0,
         "bend": 0,
         "weight": 4.58,
@@ -39550,8 +39550,8 @@ const CONFIG = {
       {
         "code": "AEROQUIP 4 SH EN 586-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/2\"",
+        "outerDb": 53.6,
         "pressure": 0,
         "bend": 0,
         "weight": 3.27,
@@ -39561,8 +39561,8 @@ const CONFIG = {
       {
         "code": "AEROQUIP 4 SH EN 586-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/4\"",
+        "outerDb": 45.5,
         "pressure": 0,
         "bend": 0,
         "weight": 2.54,
@@ -39572,8 +39572,8 @@ const CONFIG = {
       {
         "code": "AEROQUIP 4 SH EN 586-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 32.3,
         "pressure": 0,
         "bend": 0,
         "weight": 1.49,
@@ -39583,8 +39583,8 @@ const CONFIG = {
       {
         "code": "AEROQUIP 4 SH EN 586-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 38.4,
         "pressure": 0,
         "bend": 0,
         "weight": 2.05,
@@ -39702,10 +39702,10 @@ const CONFIG = {
       {
         "code": "TEU/1360-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "7/8\"",
+        "outerDb": 32,
         "pressure": 16,
-        "bend": 0,
+        "bend": 130,
         "weight": 0.63,
         "rollLength": 0,
         "priceEur": 30.25
@@ -39713,10 +39713,10 @@ const CONFIG = {
       {
         "code": "TEU/1360-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 31,
         "pressure": 16,
-        "bend": 0,
+        "bend": 100,
         "weight": 0.66,
         "rollLength": 0,
         "priceEur": 23.65
@@ -39724,10 +39724,10 @@ const CONFIG = {
       {
         "code": "TEU/1360-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 26,
         "pressure": 16,
-        "bend": 0,
+        "bend": 80,
         "weight": 0.46,
         "rollLength": 0,
         "priceEur": 18.6
@@ -39777,10 +39777,10 @@ const CONFIG = {
       {
         "code": "AGRABREW /10-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4\"",
+        "outerDb": 132,
         "pressure": 10,
-        "bend": 0,
+        "bend": 580,
         "weight": 6.5,
         "rollLength": 0,
         "priceEur": 0
@@ -39788,10 +39788,10 @@ const CONFIG = {
       {
         "code": "AGRABREW /10-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2.9/16\"",
+        "outerDb": 87,
         "pressure": 10,
-        "bend": 0,
+        "bend": 350,
         "weight": 3.38,
         "rollLength": 0,
         "priceEur": 0
@@ -39799,10 +39799,10 @@ const CONFIG = {
       {
         "code": "AGRABREW /10-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3\"",
+        "outerDb": 101,
         "pressure": 10,
-        "bend": 0,
+        "bend": 410,
         "weight": 4.2,
         "rollLength": 0,
         "priceEur": 0
@@ -39810,10 +39810,10 @@ const CONFIG = {
       {
         "code": "AGRABREW /10-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2.1/2\"",
+        "outerDb": 84.5,
         "pressure": 10,
-        "bend": 0,
+        "bend": 340,
         "weight": 3.08,
         "rollLength": 0,
         "priceEur": 0
@@ -39821,10 +39821,10 @@ const CONFIG = {
       {
         "code": "AGRABREW /10-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 71,
         "pressure": 10,
-        "bend": 0,
+        "bend": 245,
         "weight": 2.3,
         "rollLength": 0,
         "priceEur": 0
@@ -39832,10 +39832,10 @@ const CONFIG = {
       {
         "code": "AGRABREW /10-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.5\"",
+        "outerDb": 56,
         "pressure": 10,
-        "bend": 0,
+        "bend": 180,
         "weight": 1.17,
         "rollLength": 0,
         "priceEur": 0
@@ -39843,10 +39843,10 @@ const CONFIG = {
       {
         "code": "AGRABREW /10-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "11/4\"",
+        "outerDb": 48,
         "pressure": 10,
-        "bend": 0,
+        "bend": 145,
         "weight": 1.17,
         "rollLength": 0,
         "priceEur": 0
@@ -39854,10 +39854,10 @@ const CONFIG = {
       {
         "code": "AGRABREW /10-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 37,
         "pressure": 10,
-        "bend": 0,
+        "bend": 115,
         "weight": 0.75,
         "rollLength": 0,
         "priceEur": 0
@@ -39865,10 +39865,10 @@ const CONFIG = {
       {
         "code": "AGRABREW /10-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 32,
         "pressure": 10,
-        "bend": 0,
+        "bend": 80,
         "weight": 0.63,
         "rollLength": 0,
         "priceEur": 0
@@ -39918,10 +39918,10 @@ const CONFIG = {
       {
         "code": "AGRABREW SD /10-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4\"",
+        "outerDb": 120,
         "pressure": 10,
-        "bend": 0,
+        "bend": 580,
         "weight": 4.55,
         "rollLength": 0,
         "priceEur": 0
@@ -39929,10 +39929,10 @@ const CONFIG = {
       {
         "code": "AGRABREW SD /10-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2.9/16\"",
+        "outerDb": 85,
         "pressure": 10,
-        "bend": 0,
+        "bend": 350,
         "weight": 2.81,
         "rollLength": 0,
         "priceEur": 0
@@ -39940,10 +39940,10 @@ const CONFIG = {
       {
         "code": "AGRABREW SD /10-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3\"",
+        "outerDb": 92,
         "pressure": 10,
-        "bend": 0,
+        "bend": 410,
         "weight": 3.28,
         "rollLength": 0,
         "priceEur": 0
@@ -39951,10 +39951,10 @@ const CONFIG = {
       {
         "code": "AGRABREW SD /10-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2.1/2\"",
+        "outerDb": 80,
         "pressure": 10,
-        "bend": 0,
+        "bend": 340,
         "weight": 2.74,
         "rollLength": 0,
         "priceEur": 0
@@ -39962,10 +39962,10 @@ const CONFIG = {
       {
         "code": "AGRABREW SD /10-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 64,
         "pressure": 10,
-        "bend": 0,
+        "bend": 245,
         "weight": 1.88,
         "rollLength": 0,
         "priceEur": 0
@@ -39973,10 +39973,10 @@ const CONFIG = {
       {
         "code": "AGRABREW SD /10-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "11/2\"",
+        "outerDb": 50,
         "pressure": 10,
-        "bend": 0,
+        "bend": 180,
         "weight": 1.45,
         "rollLength": 0,
         "priceEur": 0
@@ -39984,10 +39984,10 @@ const CONFIG = {
       {
         "code": "AGRABREW SD /10-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "11/4\"",
+        "outerDb": 44,
         "pressure": 10,
-        "bend": 0,
+        "bend": 145,
         "weight": 1.1,
         "rollLength": 0,
         "priceEur": 0
@@ -39995,10 +39995,10 @@ const CONFIG = {
       {
         "code": "AGRABREW SD /10-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 37,
         "pressure": 10,
-        "bend": 0,
+        "bend": 115,
         "weight": 0.87,
         "rollLength": 0,
         "priceEur": 0
@@ -40006,10 +40006,10 @@ const CONFIG = {
       {
         "code": "AGRABREW SD /10-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 31,
         "pressure": 10,
-        "bend": 0,
+        "bend": 80,
         "weight": 0.72,
         "rollLength": 0,
         "priceEur": 0
@@ -40049,8 +40049,8 @@ const CONFIG = {
       {
         "code": "Fortress-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/2\"",
+        "outerDb": 38.1,
         "pressure": 20.7,
         "bend": 0,
         "weight": 0.95,
@@ -40060,8 +40060,8 @@ const CONFIG = {
       {
         "code": "Fortress-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 30.2,
         "pressure": 20.7,
         "bend": 0,
         "weight": 0.65,
@@ -40071,8 +40071,8 @@ const CONFIG = {
       {
         "code": "Fortress-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 22.8,
         "pressure": 20.7,
         "bend": 0,
         "weight": 0.45,
@@ -40123,8 +40123,8 @@ const CONFIG = {
       {
         "code": "EHF001-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4\"",
+        "outerDb": 117.5,
         "pressure": 10.5,
         "bend": 0,
         "weight": 0,
@@ -40134,8 +40134,8 @@ const CONFIG = {
       {
         "code": "EHF001-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3\"",
+        "outerDb": 92,
         "pressure": 10.5,
         "bend": 0,
         "weight": 0,
@@ -40145,8 +40145,8 @@ const CONFIG = {
       {
         "code": "EHF001-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2.50\"",
+        "outerDb": 77.5,
         "pressure": 10.5,
         "bend": 0,
         "weight": 0,
@@ -40156,8 +40156,8 @@ const CONFIG = {
       {
         "code": "EHF001-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 65,
         "pressure": 10.5,
         "bend": 0,
         "weight": 0,
@@ -40167,8 +40167,8 @@ const CONFIG = {
       {
         "code": "EHF001-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.50\"",
+        "outerDb": 51,
         "pressure": 10.5,
         "bend": 0,
         "weight": 0,
@@ -40178,8 +40178,8 @@ const CONFIG = {
       {
         "code": "EHF001-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.75\"",
+        "outerDb": 57.5,
         "pressure": 10.5,
         "bend": 0,
         "weight": 0,
@@ -40189,8 +40189,8 @@ const CONFIG = {
       {
         "code": "EHF001-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.25\"",
+        "outerDb": 44,
         "pressure": 10.5,
         "bend": 0,
         "weight": 0,
@@ -40200,8 +40200,8 @@ const CONFIG = {
       {
         "code": "EHF001-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 37,
         "pressure": 10.5,
         "bend": 0,
         "weight": 0,
@@ -40211,8 +40211,8 @@ const CONFIG = {
       {
         "code": "EHF001-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "0.75\"",
+        "outerDb": 30,
         "pressure": 10.5,
         "bend": 0,
         "weight": 0,
@@ -40253,7 +40253,7 @@ const CONFIG = {
       {
         "code": "659AA-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 400,
@@ -40264,7 +40264,7 @@ const CONFIG = {
       {
         "code": "659AA-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 250,
@@ -40275,7 +40275,7 @@ const CONFIG = {
       {
         "code": "659AA-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 320,
@@ -40286,7 +40286,7 @@ const CONFIG = {
       {
         "code": "659AA-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 100,
@@ -40297,7 +40297,7 @@ const CONFIG = {
       {
         "code": "659AA-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 120,
@@ -40308,7 +40308,7 @@ const CONFIG = {
       {
         "code": "659AA-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 200,
@@ -40319,7 +40319,7 @@ const CONFIG = {
       {
         "code": "659AA-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 160,
@@ -40381,9 +40381,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "CRISTALLO-1",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 25,
+        "inch": "1\"",
+        "outerDb": 31,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -40392,9 +40392,9 @@ const CONFIG = {
       },
       {
         "code": "CRISTALLO-2",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 20,
+        "inch": "3/4\"",
+        "outerDb": 26,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -40403,9 +40403,9 @@ const CONFIG = {
       },
       {
         "code": "CRISTALLO-3",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 16,
+        "inch": "5/8\"",
+        "outerDb": 21,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -40414,9 +40414,9 @@ const CONFIG = {
       },
       {
         "code": "CRISTALLO-4",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 16,
+        "inch": "5/8\"",
+        "outerDb": 20,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -40425,9 +40425,9 @@ const CONFIG = {
       },
       {
         "code": "CRISTALLO-5",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 6,
+        "inch": "1/4\"",
+        "outerDb": 9,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -40436,9 +40436,9 @@ const CONFIG = {
       },
       {
         "code": "CRISTALLO-6",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 7,
+        "inch": "9/32\"",
+        "outerDb": 10,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -40447,9 +40447,9 @@ const CONFIG = {
       },
       {
         "code": "CRISTALLO-7",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 8,
+        "inch": "5/16\"",
+        "outerDb": 12,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -40458,9 +40458,9 @@ const CONFIG = {
       },
       {
         "code": "CRISTALLO-8",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 10,
+        "inch": "3/8\"",
+        "outerDb": 13,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -40469,9 +40469,9 @@ const CONFIG = {
       },
       {
         "code": "CRISTALLO-9",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 13,
+        "inch": "1/2\"",
+        "outerDb": 17,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -40480,9 +40480,9 @@ const CONFIG = {
       },
       {
         "code": "CRISTALLO-10",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 4,
+        "inch": "5/32\"",
+        "outerDb": 6,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -40491,9 +40491,9 @@ const CONFIG = {
       },
       {
         "code": "CRISTALLO-11",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 5,
+        "inch": "3/16\"",
+        "outerDb": 8,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
@@ -40774,9 +40774,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "IDROFLEX 18N-1",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 13,
+        "inch": "1/2\"",
+        "outerDb": 22,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -40785,9 +40785,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-2",
-        "innerDb": 0,
+        "innerDb": 102,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 114,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -40796,9 +40796,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-3",
-        "innerDb": 0,
+        "innerDb": 90,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 104,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -40807,9 +40807,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-4",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 87,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -40818,9 +40818,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-5",
-        "innerDb": 0,
+        "innerDb": 70,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 81,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -40829,9 +40829,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 74,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -40840,9 +40840,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-7",
-        "innerDb": 0,
+        "innerDb": 60,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 71,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -40851,9 +40851,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-8",
-        "innerDb": 0,
+        "innerDb": 55,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 66,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -40862,9 +40862,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-9",
-        "innerDb": 0,
+        "innerDb": 45,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 37,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -40873,9 +40873,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-10",
-        "innerDb": 0,
+        "innerDb": 51,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 61,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -40884,9 +40884,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-11",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 50,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -40895,9 +40895,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-12",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 48,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -40906,9 +40906,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-13",
-        "innerDb": 0,
+        "innerDb": 35,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 45,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -40917,9 +40917,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-14",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 41,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -40928,9 +40928,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-15",
-        "innerDb": 0,
+        "innerDb": 30,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 39,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -40939,9 +40939,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-16",
-        "innerDb": 0,
+        "innerDb": 28,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 37,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -40950,9 +40950,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-17",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 25,
+        "inch": "1\"",
+        "outerDb": 34,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -40961,9 +40961,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-18",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 20,
+        "inch": "3/4\"",
+        "outerDb": 29,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -40972,9 +40972,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-19",
-        "innerDb": 0,
+        "innerDb": 22,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 31,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -40983,9 +40983,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-20",
-        "innerDb": 0,
+        "innerDb": 18,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 27,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -40994,9 +40994,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-21",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 28,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -41005,9 +41005,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-22",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 16,
+        "inch": "5/8\"",
+        "outerDb": 25,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -41016,9 +41016,9 @@ const CONFIG = {
       },
       {
         "code": "IDROFLEX 18N-23",
-        "innerDb": 0,
+        "innerDb": 15,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 24,
         "pressure": 6,
         "bend": 0,
         "weight": 0,
@@ -41906,8 +41906,8 @@ const CONFIG = {
       {
         "code": "TEKNOJET 2SN-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 18.7,
         "pressure": 0,
         "bend": 0,
         "weight": 0.51,
@@ -41917,8 +41917,8 @@ const CONFIG = {
       {
         "code": "TEKNOJET 2SN-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/16\"",
+        "outerDb": 16.3,
         "pressure": 0,
         "bend": 0,
         "weight": 0.41,
@@ -41928,8 +41928,8 @@ const CONFIG = {
       {
         "code": "TEKNOJET 2SN-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 14.6,
         "pressure": 0,
         "bend": 0,
         "weight": 0.33,
@@ -41939,8 +41939,8 @@ const CONFIG = {
       {
         "code": "TEKNOJET 2SN-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/16\"",
+        "outerDb": 16.3,
         "pressure": 0,
         "bend": 0,
         "weight": 0.41,
@@ -41950,8 +41950,8 @@ const CONFIG = {
       {
         "code": "TEKNOJET 2SN-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 14.6,
         "pressure": 0,
         "bend": 0,
         "weight": 0.33,
@@ -41992,10 +41992,10 @@ const CONFIG = {
       {
         "code": "SEMPERJET 2SN-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 21.4,
         "pressure": 400,
-        "bend": 0,
+        "bend": 180,
         "weight": 0.56,
         "rollLength": 0,
         "priceEur": 0
@@ -42003,10 +42003,10 @@ const CONFIG = {
       {
         "code": "SEMPERJET 2SN-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 18.4,
         "pressure": 400,
-        "bend": 0,
+        "bend": 125,
         "weight": 0.44,
         "rollLength": 0,
         "priceEur": 15.8
@@ -42014,10 +42014,10 @@ const CONFIG = {
       {
         "code": "SEMPERJET 2SN-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/16\"",
+        "outerDb": 16,
         "pressure": 400,
-        "bend": 0,
+        "bend": 115,
         "weight": 0.37,
         "rollLength": 0,
         "priceEur": 14.1
@@ -42025,10 +42025,10 @@ const CONFIG = {
       {
         "code": "SEMPERJET 2SN-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 14.4,
         "pressure": 400,
-        "bend": 0,
+        "bend": 100,
         "weight": 0.31,
         "rollLength": 0,
         "priceEur": 12.2
@@ -42036,10 +42036,10 @@ const CONFIG = {
       {
         "code": "SEMPERJET 2SN-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 21.4,
         "pressure": 400,
-        "bend": 0,
+        "bend": 180,
         "weight": 0.56,
         "rollLength": 0,
         "priceEur": 0
@@ -42047,10 +42047,10 @@ const CONFIG = {
       {
         "code": "SEMPERJET 2SN-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 18.4,
         "pressure": 400,
-        "bend": 0,
+        "bend": 125,
         "weight": 0.44,
         "rollLength": 0,
         "priceEur": 0
@@ -42058,10 +42058,10 @@ const CONFIG = {
       {
         "code": "SEMPERJET 2SN-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/16\"",
+        "outerDb": 16,
         "pressure": 400,
-        "bend": 0,
+        "bend": 115,
         "weight": 0.37,
         "rollLength": 0,
         "priceEur": 14.15
@@ -42069,10 +42069,10 @@ const CONFIG = {
       {
         "code": "SEMPERJET 2SN-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 14.4,
         "pressure": 400,
-        "bend": 0,
+        "bend": 100,
         "weight": 0.31,
         "rollLength": 0,
         "priceEur": 13.35
@@ -42123,10 +42123,10 @@ const CONFIG = {
       {
         "code": "AGRA 4 ALL-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4\"",
+        "outerDb": 116,
         "pressure": 10,
-        "bend": 0,
+        "bend": 380,
         "weight": 4.6,
         "rollLength": 0,
         "priceEur": 210.05
@@ -42134,10 +42134,10 @@ const CONFIG = {
       {
         "code": "AGRA 4 ALL-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3.1/2\"",
+        "outerDb": 104,
         "pressure": 10,
-        "bend": 0,
+        "bend": 320,
         "weight": 4.08,
         "rollLength": 0,
         "priceEur": 0
@@ -42145,10 +42145,10 @@ const CONFIG = {
       {
         "code": "AGRA 4 ALL-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3.5/32\"",
+        "outerDb": 93,
         "pressure": 10,
-        "bend": 0,
+        "bend": 250,
         "weight": 3.17,
         "rollLength": 0,
         "priceEur": 0
@@ -42156,10 +42156,10 @@ const CONFIG = {
       {
         "code": "AGRA 4 ALL-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2.9/16\"",
+        "outerDb": 79,
         "pressure": 10,
-        "bend": 0,
+        "bend": 170,
         "weight": 2.66,
         "rollLength": 0,
         "priceEur": 0
@@ -42167,10 +42167,10 @@ const CONFIG = {
       {
         "code": "AGRA 4 ALL-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2.3/4\"",
+        "outerDb": 83,
         "pressure": 10,
-        "bend": 0,
+        "bend": 180,
         "weight": 2.86,
         "rollLength": 0,
         "priceEur": 0
@@ -42178,10 +42178,10 @@ const CONFIG = {
       {
         "code": "AGRA 4 ALL-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3\"",
+        "outerDb": 89,
         "pressure": 10,
-        "bend": 0,
+        "bend": 190,
         "weight": 3,
         "rollLength": 0,
         "priceEur": 152.3
@@ -42189,10 +42189,10 @@ const CONFIG = {
       {
         "code": "AGRA 4 ALL-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2.1/6\"",
+        "outerDb": 77,
         "pressure": 10,
-        "bend": 0,
+        "bend": 160,
         "weight": 2.6,
         "rollLength": 0,
         "priceEur": 0
@@ -42200,10 +42200,10 @@ const CONFIG = {
       {
         "code": "AGRA 4 ALL-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2.3/8\"",
+        "outerDb": 73,
         "pressure": 10,
-        "bend": 0,
+        "bend": 150,
         "weight": 2.24,
         "rollLength": 0,
         "priceEur": 0
@@ -42211,10 +42211,10 @@ const CONFIG = {
       {
         "code": "AGRA 4 ALL-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 64,
         "pressure": 10,
-        "bend": 0,
+        "bend": 102,
         "weight": 1.88,
         "rollLength": 0,
         "priceEur": 0
@@ -42222,10 +42222,10 @@ const CONFIG = {
       {
         "code": "AGRA 4 ALL-10",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.25/32\"",
+        "outerDb": 57,
         "pressure": 10,
-        "bend": 0,
+        "bend": 90,
         "weight": 1.62,
         "rollLength": 0,
         "priceEur": 89.4
@@ -42233,10 +42233,10 @@ const CONFIG = {
       {
         "code": "AGRA 4 ALL-11",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.9/16\"",
+        "outerDb": 52,
         "pressure": 10,
-        "bend": 0,
+        "bend": 80,
         "weight": 1.41,
         "rollLength": 0,
         "priceEur": 0
@@ -42244,10 +42244,10 @@ const CONFIG = {
       {
         "code": "AGRA 4 ALL-12",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/2\"",
+        "outerDb": 50,
         "pressure": 10,
-        "bend": 0,
+        "bend": 76,
         "weight": 1.38,
         "rollLength": 0,
         "priceEur": 74.95
@@ -42255,10 +42255,10 @@ const CONFIG = {
       {
         "code": "AGRA 4 ALL-13",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/4\"",
+        "outerDb": 44,
         "pressure": 10,
-        "bend": 0,
+        "bend": 64,
         "weight": 1.23,
         "rollLength": 0,
         "priceEur": 63.05
@@ -42266,10 +42266,10 @@ const CONFIG = {
       {
         "code": "AGRA 4 ALL-14",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.3/16\"",
+        "outerDb": 42,
         "pressure": 10,
-        "bend": 0,
+        "bend": 60,
         "weight": 1.11,
         "rollLength": 0,
         "priceEur": 0
@@ -42277,10 +42277,10 @@ const CONFIG = {
       {
         "code": "AGRA 4 ALL-15",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 35,
         "pressure": 10,
-        "bend": 0,
+        "bend": 50,
         "weight": 0.8,
         "rollLength": 0,
         "priceEur": 49
@@ -42288,10 +42288,10 @@ const CONFIG = {
       {
         "code": "AGRA 4 ALL-16",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 29,
         "pressure": 10,
-        "bend": 0,
+        "bend": 38,
         "weight": 0.67,
         "rollLength": 0,
         "priceEur": 39.05
@@ -42340,10 +42340,10 @@ const CONFIG = {
       {
         "code": "EHF002-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4\"",
+        "outerDb": 118.5,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 450,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 0
@@ -42351,10 +42351,10 @@ const CONFIG = {
       {
         "code": "EHF002-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3\"",
+        "outerDb": 93,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 360,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 0
@@ -42362,10 +42362,10 @@ const CONFIG = {
       {
         "code": "EHF002-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2.50\"",
+        "outerDb": 78.5,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 280,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 92.55
@@ -42373,10 +42373,10 @@ const CONFIG = {
       {
         "code": "EHF002-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 66,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 160,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 74.55
@@ -42384,10 +42384,10 @@ const CONFIG = {
       {
         "code": "EHF002-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.75\"",
+        "outerDb": 58.5,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 140,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 65.95
@@ -42395,10 +42395,10 @@ const CONFIG = {
       {
         "code": "EHF002-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.50\"",
+        "outerDb": 52,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 120,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 56.25
@@ -42406,10 +42406,10 @@ const CONFIG = {
       {
         "code": "EHF002-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.25\"",
+        "outerDb": 45,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 100,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 51.1
@@ -42417,10 +42417,10 @@ const CONFIG = {
       {
         "code": "EHF002-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 38,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 85,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 43.4
@@ -42428,10 +42428,10 @@ const CONFIG = {
       {
         "code": "EHF002-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "0.75\"",
+        "outerDb": 31,
         "pressure": 10.5,
-        "bend": 0,
+        "bend": 70,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 39.05
@@ -42471,9 +42471,9 @@ const CONFIG = {
         "code": " LM1-EPDM-1",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 130,
         "pressure": 12,
-        "bend": 0,
+        "bend": 750,
         "weight": 7.75,
         "rollLength": 0,
         "priceEur": 0
@@ -42482,9 +42482,9 @@ const CONFIG = {
         "code": " LM1-EPDM-2",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 110,
         "pressure": 12,
-        "bend": 0,
+        "bend": 650,
         "weight": 6.4,
         "rollLength": 0,
         "priceEur": 0
@@ -42492,10 +42492,10 @@ const CONFIG = {
       {
         "code": " LM1-EPDM-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3\"",
+        "outerDb": 105,
         "pressure": 12,
-        "bend": 0,
+        "bend": 600,
         "weight": 6,
         "rollLength": 0,
         "priceEur": 0
@@ -42504,9 +42504,9 @@ const CONFIG = {
         "code": " LM1-EPDM-4",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 89,
         "pressure": 12,
-        "bend": 0,
+        "bend": 450,
         "weight": 5.05,
         "rollLength": 0,
         "priceEur": 0
@@ -42515,9 +42515,9 @@ const CONFIG = {
         "code": " LM1-EPDM-5",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 82,
         "pressure": 12,
-        "bend": 0,
+        "bend": 420,
         "weight": 3.55,
         "rollLength": 0,
         "priceEur": 0
@@ -42526,9 +42526,9 @@ const CONFIG = {
         "code": " LM1-EPDM-6",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 72,
         "pressure": 12,
-        "bend": 0,
+        "bend": 350,
         "weight": 2.95,
         "rollLength": 0,
         "priceEur": 141.9
@@ -42537,9 +42537,9 @@ const CONFIG = {
         "code": " LM1-EPDM-7",
         "innerDb": 0,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 60,
         "pressure": 12,
-        "bend": 0,
+        "bend": 250,
         "weight": 2.25,
         "rollLength": 0,
         "priceEur": 0
@@ -42547,10 +42547,10 @@ const CONFIG = {
       {
         "code": " LM1-EPDM-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ½\"",
+        "outerDb": 56,
         "pressure": 12,
-        "bend": 0,
+        "bend": 200,
         "weight": 1.85,
         "rollLength": 0,
         "priceEur": 0
@@ -42558,10 +42558,10 @@ const CONFIG = {
       {
         "code": " LM1-EPDM-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1 ¼\"",
+        "outerDb": 48,
         "pressure": 12,
-        "bend": 0,
+        "bend": 170,
         "weight": 1.45,
         "rollLength": 0,
         "priceEur": 60.05
@@ -42569,10 +42569,10 @@ const CONFIG = {
       {
         "code": " LM1-EPDM-10",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 37,
         "pressure": 12,
-        "bend": 0,
+        "bend": 150,
         "weight": 0.85,
         "rollLength": 0,
         "priceEur": 0
@@ -42580,10 +42580,10 @@ const CONFIG = {
       {
         "code": " LM1-EPDM-11",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 29,
         "pressure": 12,
-        "bend": 0,
+        "bend": 100,
         "weight": 0.55,
         "rollLength": 0,
         "priceEur": 0
@@ -42591,10 +42591,10 @@ const CONFIG = {
       {
         "code": " LM1-EPDM-12",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 23,
         "pressure": 12,
-        "bend": 0,
+        "bend": 50,
         "weight": 0.4,
         "rollLength": 0,
         "priceEur": 60.05
@@ -43457,8 +43457,8 @@ const CONFIG = {
     "variants": [
       {
         "code": "VULCANO TPR-A 125°С-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 406,
+        "inch": "16\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43468,8 +43468,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 356,
+        "inch": "14\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43479,8 +43479,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 305,
+        "inch": "12\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43490,8 +43490,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-4",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 254,
+        "inch": "10\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43501,8 +43501,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-5",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 160,
+        "inch": "6.5/16\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43512,8 +43512,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-6",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 180,
+        "inch": "7.1/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43523,8 +43523,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-7",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 203,
+        "inch": "8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43534,8 +43534,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-8",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 152,
+        "inch": "6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43545,8 +43545,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-9",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 140,
+        "inch": "5.9/16\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43556,8 +43556,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-10",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 130,
+        "inch": "5 .1/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43567,8 +43567,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-11",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 127,
+        "inch": "5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43578,8 +43578,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-12",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 120,
+        "inch": "4.3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43589,8 +43589,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-13",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 110,
+        "inch": "4.5/16\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43600,8 +43600,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-14",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 102,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43611,8 +43611,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-15",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 90,
+        "inch": "3.9/16\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43622,8 +43622,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-16",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 80,
+        "inch": "3.3/16\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43633,8 +43633,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-17",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 76,
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43644,8 +43644,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-18",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 70,
+        "inch": "2.3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43655,8 +43655,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-19",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 63,
+        "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43666,8 +43666,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-20",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 60,
+        "inch": "2.3/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43677,8 +43677,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-21",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 51,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43688,8 +43688,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-22",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 45,
+        "inch": "1.3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43699,8 +43699,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-23",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 40,
+        "inch": "1.9/16\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43710,8 +43710,8 @@ const CONFIG = {
       },
       {
         "code": "VULCANO TPR-A 125°С-24",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 38,
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -43765,9 +43765,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "PUR 301-1",
-        "innerDb": 0,
+        "innerDb": 254,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 263,
         "pressure": 0.095,
         "bend": 0,
         "weight": 0,
@@ -43776,7 +43776,7 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-2",
-        "innerDb": 0,
+        "innerDb": 500,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.05,
@@ -43787,9 +43787,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-3",
-        "innerDb": 0,
+        "innerDb": 400,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 410,
         "pressure": 0.06,
         "bend": 0,
         "weight": 0,
@@ -43798,9 +43798,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-4",
-        "innerDb": 0,
+        "innerDb": 350,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 360,
         "pressure": 0.07,
         "bend": 0,
         "weight": 0,
@@ -43809,9 +43809,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-5",
-        "innerDb": 0,
+        "innerDb": 305,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 315,
         "pressure": 0.08,
         "bend": 0,
         "weight": 0,
@@ -43820,9 +43820,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-6",
-        "innerDb": 0,
+        "innerDb": 225,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 234,
         "pressure": 0.01,
         "bend": 0,
         "weight": 0,
@@ -43831,9 +43831,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-7",
-        "innerDb": 0,
+        "innerDb": 203,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 208,
         "pressure": 0.12,
         "bend": 0,
         "weight": 0,
@@ -43842,9 +43842,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-8",
-        "innerDb": 0,
+        "innerDb": 180,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 188,
         "pressure": 0.135,
         "bend": 0,
         "weight": 0,
@@ -43853,9 +43853,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-9",
-        "innerDb": 0,
+        "innerDb": 160,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 168,
         "pressure": 0.15,
         "bend": 0,
         "weight": 0,
@@ -43864,9 +43864,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-10",
-        "innerDb": 0,
+        "innerDb": 152,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 158,
         "pressure": 0.16,
         "bend": 0,
         "weight": 0,
@@ -43875,9 +43875,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-11",
-        "innerDb": 0,
+        "innerDb": 140,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 148,
         "pressure": 0.175,
         "bend": 0,
         "weight": 0,
@@ -43886,9 +43886,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-12",
-        "innerDb": 0,
+        "innerDb": 130,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 138,
         "pressure": 0.185,
         "bend": 0,
         "weight": 0,
@@ -43897,9 +43897,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-13",
-        "innerDb": 0,
+        "innerDb": 127,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 133,
         "pressure": 0.195,
         "bend": 0,
         "weight": 0,
@@ -43908,9 +43908,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-14",
-        "innerDb": 0,
+        "innerDb": 120,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 128,
         "pressure": 0.205,
         "bend": 0,
         "weight": 0,
@@ -43919,9 +43919,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-15",
-        "innerDb": 0,
+        "innerDb": 115,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 123,
         "pressure": 0.21,
         "bend": 0,
         "weight": 0,
@@ -43930,9 +43930,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-16",
-        "innerDb": 0,
+        "innerDb": 110,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 118,
         "pressure": 0.22,
         "bend": 0,
         "weight": 0,
@@ -43941,9 +43941,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-17",
-        "innerDb": 0,
+        "innerDb": 102,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 108,
         "pressure": 0.245,
         "bend": 0,
         "weight": 0,
@@ -43952,9 +43952,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-18",
-        "innerDb": 0,
+        "innerDb": 90,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 98,
         "pressure": 0.27,
         "bend": 0,
         "weight": 0,
@@ -43963,9 +43963,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-19",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 88,
         "pressure": 0.305,
         "bend": 0,
         "weight": 0,
@@ -43974,9 +43974,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-20",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 83,
         "pressure": 0.325,
         "bend": 0,
         "weight": 0,
@@ -43985,9 +43985,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-21",
-        "innerDb": 0,
+        "innerDb": 70,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 78,
         "pressure": 0.345,
         "bend": 0,
         "weight": 0,
@@ -43996,9 +43996,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-22",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 73,
         "pressure": 0.37,
         "bend": 0,
         "weight": 0,
@@ -44007,9 +44007,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-23",
-        "innerDb": 0,
+        "innerDb": 60,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 68,
         "pressure": 0.405,
         "bend": 0,
         "weight": 0,
@@ -44018,9 +44018,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-24",
-        "innerDb": 0,
+        "innerDb": 51,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 58,
         "pressure": 0.48,
         "bend": 0,
         "weight": 0,
@@ -44029,7 +44029,7 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-25",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.6,
@@ -44040,9 +44040,9 @@ const CONFIG = {
       },
       {
         "code": "PUR 301-26",
-        "innerDb": 0,
+        "innerDb": 275,
         "inch": "",
-        "outerDb": 0,
+        "outerDb": 289,
         "pressure": 0.085,
         "bend": 0,
         "weight": 0,
@@ -44231,7 +44231,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "GENESIS TOI VAC N-1",
-        "innerDb": 0,
+        "innerDb": 102,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44242,7 +44242,7 @@ const CONFIG = {
       },
       {
         "code": "GENESIS TOI VAC N-2",
-        "innerDb": 0,
+        "innerDb": 102,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44253,7 +44253,7 @@ const CONFIG = {
       },
       {
         "code": "GENESIS TOI VAC N-3",
-        "innerDb": 0,
+        "innerDb": 102,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44264,7 +44264,7 @@ const CONFIG = {
       },
       {
         "code": "GENESIS TOI VAC N-4",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44275,7 +44275,7 @@ const CONFIG = {
       },
       {
         "code": "GENESIS TOI VAC N-5",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44286,7 +44286,7 @@ const CONFIG = {
       },
       {
         "code": "GENESIS TOI VAC N-6",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44297,7 +44297,7 @@ const CONFIG = {
       },
       {
         "code": "GENESIS TOI VAC N-7",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44308,7 +44308,7 @@ const CONFIG = {
       },
       {
         "code": "GENESIS TOI VAC N-8",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44319,7 +44319,7 @@ const CONFIG = {
       },
       {
         "code": "GENESIS TOI VAC N-9",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44330,7 +44330,7 @@ const CONFIG = {
       },
       {
         "code": "GENESIS TOI VAC N-10",
-        "innerDb": 0,
+        "innerDb": 51,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44341,7 +44341,7 @@ const CONFIG = {
       },
       {
         "code": "GENESIS TOI VAC N-11",
-        "innerDb": 0,
+        "innerDb": 51,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44352,7 +44352,7 @@ const CONFIG = {
       },
       {
         "code": "GENESIS TOI VAC N-12",
-        "innerDb": 0,
+        "innerDb": 51,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44412,7 +44412,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "MNPNF-1",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44423,7 +44423,7 @@ const CONFIG = {
       },
       {
         "code": "MNPNF-2",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44486,7 +44486,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "MNCHC-1",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44497,7 +44497,7 @@ const CONFIG = {
       },
       {
         "code": "MNCHC-2",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44648,7 +44648,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "MNMCOT-1",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44659,7 +44659,7 @@ const CONFIG = {
       },
       {
         "code": "MNMCOT-2",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44724,7 +44724,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "MNFCIT-1",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44735,7 +44735,7 @@ const CONFIG = {
       },
       {
         "code": "MNFCIT-2",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44800,7 +44800,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "MNCNF-1",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44811,7 +44811,7 @@ const CONFIG = {
       },
       {
         "code": "MNCNF-2",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -44997,7 +44997,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "MNPHC-1",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -45008,7 +45008,7 @@ const CONFIG = {
       },
       {
         "code": "MNPHC-2",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -45067,7 +45067,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "MNMPOT-1",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -45078,7 +45078,7 @@ const CONFIG = {
       },
       {
         "code": "MNMPOT-2",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -45139,7 +45139,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "MNFPIT-1",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -45150,7 +45150,7 @@ const CONFIG = {
       },
       {
         "code": "MNFPIT-2",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -46116,7 +46116,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "RM LPSS-1",
-        "innerDb": 0,
+        "innerDb": "ф52",
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -46127,7 +46127,7 @@ const CONFIG = {
       },
       {
         "code": "RM LPSS-2",
-        "innerDb": 0,
+        "innerDb": "ф40",
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -46138,7 +46138,7 @@ const CONFIG = {
       },
       {
         "code": "RM LPSS-3",
-        "innerDb": 0,
+        "innerDb": "ф32",
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -46149,7 +46149,7 @@ const CONFIG = {
       },
       {
         "code": "RM LPSS-4",
-        "innerDb": 0,
+        "innerDb": "ф25",
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -46160,7 +46160,7 @@ const CONFIG = {
       },
       {
         "code": "RM LPSS-5",
-        "innerDb": 0,
+        "innerDb": "ф20",
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -46171,7 +46171,7 @@ const CONFIG = {
       },
       {
         "code": "RM LPSS-6",
-        "innerDb": 0,
+        "innerDb": "ф15",
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -46182,7 +46182,7 @@ const CONFIG = {
       },
       {
         "code": "RM LPSS-7",
-        "innerDb": 0,
+        "innerDb": "ф10",
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -46193,7 +46193,7 @@ const CONFIG = {
       },
       {
         "code": "RM LPSS-8",
-        "innerDb": 0,
+        "innerDb": "ф12",
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -46204,7 +46204,7 @@ const CONFIG = {
       },
       {
         "code": "RM LPSS-9",
-        "innerDb": 0,
+        "innerDb": "ф6",
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -46747,7 +46747,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "ANKK LPSS-1",
-        "innerDb": 0,
+        "innerDb": 90,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -46758,7 +46758,7 @@ const CONFIG = {
       },
       {
         "code": "ANKK LPSS-2",
-        "innerDb": 0,
+        "innerDb": 78.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -46769,7 +46769,7 @@ const CONFIG = {
       },
       {
         "code": "ANKK LPSS-3",
-        "innerDb": 0,
+        "innerDb": 70,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -46791,7 +46791,7 @@ const CONFIG = {
       },
       {
         "code": "ANKK LPSS-5",
-        "innerDb": 0,
+        "innerDb": 62,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -46813,7 +46813,7 @@ const CONFIG = {
       },
       {
         "code": "ANKK LPSS-7",
-        "innerDb": 0,
+        "innerDb": 46,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -46824,7 +46824,7 @@ const CONFIG = {
       },
       {
         "code": "ANKK LPSS-8",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -46835,7 +46835,7 @@ const CONFIG = {
       },
       {
         "code": "ANKK LPSS-9",
-        "innerDb": 0,
+        "innerDb": 34,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -46846,7 +46846,7 @@ const CONFIG = {
       },
       {
         "code": "ANKK LPSS-10",
-        "innerDb": 0,
+        "innerDb": 28,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -46857,7 +46857,7 @@ const CONFIG = {
       },
       {
         "code": "ANKK LPSS-11",
-        "innerDb": 0,
+        "innerDb": 23.6,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -46868,7 +46868,7 @@ const CONFIG = {
       },
       {
         "code": "ANKK LPSS-12",
-        "innerDb": 0,
+        "innerDb": 27.8,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -46925,7 +46925,7 @@ const CONFIG = {
       {
         "code": "FLATGREEN-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 2,
         "bend": 0,
@@ -46936,7 +46936,7 @@ const CONFIG = {
       {
         "code": "FLATGREEN-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 3,
         "bend": 0,
@@ -46947,7 +46947,7 @@ const CONFIG = {
       {
         "code": "FLATGREEN-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 4,
         "bend": 0,
@@ -46958,7 +46958,7 @@ const CONFIG = {
       {
         "code": "FLATGREEN-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1 ½\"",
         "outerDb": 0,
         "pressure": 4,
         "bend": 0,
@@ -46969,7 +46969,7 @@ const CONFIG = {
       {
         "code": "FLATGREEN-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 4,
         "bend": 0,
@@ -46980,7 +46980,7 @@ const CONFIG = {
       {
         "code": "FLATGREEN-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2 ½\"",
         "outerDb": 0,
         "pressure": 4,
         "bend": 0,
@@ -46991,7 +46991,7 @@ const CONFIG = {
       {
         "code": "FLATGREEN-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1 ¼\"",
         "outerDb": 0,
         "pressure": 4,
         "bend": 0,
@@ -47043,10 +47043,10 @@ const CONFIG = {
       {
         "code": "185AH-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/2\"",
+        "outerDb": 21,
         "pressure": 20,
-        "bend": 0,
+        "bend": 104,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 5.05
@@ -47054,10 +47054,10 @@ const CONFIG = {
       {
         "code": "185AH-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1/4\"",
+        "outerDb": 12,
         "pressure": 20,
-        "bend": 0,
+        "bend": 48,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 2.75
@@ -47065,10 +47065,10 @@ const CONFIG = {
       {
         "code": "185AH-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/8\"",
+        "outerDb": 17,
         "pressure": 20,
-        "bend": 0,
+        "bend": 80,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 3.7
@@ -47076,10 +47076,10 @@ const CONFIG = {
       {
         "code": "185AH-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/16\"",
+        "outerDb": 14,
         "pressure": 20,
-        "bend": 0,
+        "bend": 64,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 3.35
@@ -47131,9 +47131,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "Arianna 40 bar-1",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 16,
+        "inch": "5/8\"",
+        "outerDb": 24,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
@@ -47142,9 +47142,9 @@ const CONFIG = {
       },
       {
         "code": "Arianna 40 bar-2",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 13,
+        "inch": "1/2\"",
+        "outerDb": 21,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
@@ -47153,9 +47153,9 @@ const CONFIG = {
       },
       {
         "code": "Arianna 40 bar-3",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 8,
+        "inch": "5/16\"",
+        "outerDb": 14,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
@@ -47164,9 +47164,9 @@ const CONFIG = {
       },
       {
         "code": "Arianna 40 bar-4",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 10,
+        "inch": "3/8\"",
+        "outerDb": 16.5,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
@@ -47286,7 +47286,7 @@ const CONFIG = {
       {
         "code": "INOVAFLAT M-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 6,
         "bend": 0,
@@ -47297,7 +47297,7 @@ const CONFIG = {
       {
         "code": "INOVAFLAT M-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 6,
         "bend": 0,
@@ -47349,8 +47349,8 @@ const CONFIG = {
     "variants": [
       {
         "code": "AGROFLAT-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 125,
+        "inch": "4.59/64\"",
         "outerDb": 0,
         "pressure": 15,
         "bend": 0,
@@ -47360,8 +47360,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 152,
+        "inch": "5.63/64\"",
         "outerDb": 0,
         "pressure": 15,
         "bend": 0,
@@ -47371,8 +47371,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 204,
+        "inch": "8.1/32\"",
         "outerDb": 0,
         "pressure": 15,
         "bend": 0,
@@ -47382,8 +47382,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-4",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 254,
+        "inch": "10\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -47393,8 +47393,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-5",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 115,
+        "inch": "4.1/2\"",
         "outerDb": 0,
         "pressure": 15,
         "bend": 0,
@@ -47404,8 +47404,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-6",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 110,
+        "inch": "4.5/16\"",
         "outerDb": 0,
         "pressure": 15,
         "bend": 0,
@@ -47415,8 +47415,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-7",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 70,
+        "inch": "2.3/4\"",
         "outerDb": 0,
         "pressure": 17,
         "bend": 0,
@@ -47426,8 +47426,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-8",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 102,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 17,
         "bend": 0,
@@ -47437,8 +47437,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-9",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 90,
+        "inch": "3.1/2\"",
         "outerDb": 0,
         "pressure": 17,
         "bend": 0,
@@ -47448,8 +47448,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-10",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 80,
+        "inch": "3.1/8\"",
         "outerDb": 0,
         "pressure": 15,
         "bend": 0,
@@ -47459,8 +47459,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-11",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 76,
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 17,
         "bend": 0,
@@ -47470,8 +47470,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-12",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 64,
+        "inch": "2.33/64\"",
         "outerDb": 0,
         "pressure": 17,
         "bend": 0,
@@ -47481,8 +47481,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-13",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 55,
+        "inch": "2.1/6\"",
         "outerDb": 0,
         "pressure": 20,
         "bend": 0,
@@ -47492,8 +47492,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-14",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 52,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 20,
         "bend": 0,
@@ -47503,8 +47503,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-15",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 45,
+        "inch": "1.3/4\"",
         "outerDb": 0,
         "pressure": 20,
         "bend": 0,
@@ -47514,8 +47514,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-16",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 42,
+        "inch": "1.5/8\"",
         "outerDb": 0,
         "pressure": 20,
         "bend": 0,
@@ -47525,8 +47525,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-17",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 38,
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 20,
         "bend": 0,
@@ -47536,8 +47536,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-18",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 32,
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 25,
         "bend": 0,
@@ -47547,8 +47547,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-19",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 20,
+        "inch": "25/32\"",
         "outerDb": 0,
         "pressure": 30,
         "bend": 0,
@@ -47558,8 +47558,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-20",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 25,
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 30,
         "bend": 0,
@@ -47569,8 +47569,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-21",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 22,
+        "inch": "7/8\"",
         "outerDb": 0,
         "pressure": 30,
         "bend": 0,
@@ -47580,8 +47580,8 @@ const CONFIG = {
       },
       {
         "code": "AGROFLAT-22",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 304,
+        "inch": "11.31/32\"",
         "outerDb": 0,
         "pressure": 8,
         "bend": 0,
@@ -47638,7 +47638,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "APOLLO SUPERFLEX-1",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 3,
@@ -47649,7 +47649,7 @@ const CONFIG = {
       },
       {
         "code": "APOLLO SUPERFLEX-2",
-        "innerDb": 0,
+        "innerDb": 102,
         "inch": "",
         "outerDb": 0,
         "pressure": 2.2,
@@ -47699,7 +47699,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "SBS-1",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 8,
@@ -47710,7 +47710,7 @@ const CONFIG = {
       },
       {
         "code": "SBS-2",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 8,
@@ -47881,7 +47881,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "PLUTONE A-1",
-        "innerDb": 0,
+        "innerDb": 151,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.2,
@@ -47892,7 +47892,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-2",
-        "innerDb": 0,
+        "innerDb": 127,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.6,
@@ -47903,7 +47903,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-3",
-        "innerDb": 0,
+        "innerDb": 120,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.2,
@@ -47914,7 +47914,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-4",
-        "innerDb": 0,
+        "innerDb": 102,
         "inch": "",
         "outerDb": 0,
         "pressure": 2.4,
@@ -47925,7 +47925,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-5",
-        "innerDb": 0,
+        "innerDb": 110,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.6,
@@ -47936,7 +47936,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-6",
-        "innerDb": 0,
+        "innerDb": 70,
         "inch": "",
         "outerDb": 0,
         "pressure": 3.6,
@@ -47947,7 +47947,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-7",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 3.6,
@@ -47958,7 +47958,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-8",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "",
         "outerDb": 0,
         "pressure": 3.6,
@@ -47969,7 +47969,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-9",
-        "innerDb": 0,
+        "innerDb": 90,
         "inch": "",
         "outerDb": 0,
         "pressure": 3.6,
@@ -47980,7 +47980,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-10",
-        "innerDb": 0,
+        "innerDb": 60,
         "inch": "",
         "outerDb": 0,
         "pressure": 3.6,
@@ -47991,7 +47991,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-11",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 3.6,
@@ -48002,7 +48002,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-12",
-        "innerDb": 0,
+        "innerDb": 35,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -48013,7 +48013,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-13",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -48024,7 +48024,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-14",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -48035,7 +48035,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-15",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -48046,7 +48046,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-16",
-        "innerDb": 0,
+        "innerDb": 45,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -48057,7 +48057,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-17",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -48068,7 +48068,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-18",
-        "innerDb": 0,
+        "innerDb": 30,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -48079,7 +48079,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-19",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
@@ -48090,7 +48090,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-20",
-        "innerDb": 0,
+        "innerDb": 22,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -48101,7 +48101,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-21",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -48112,7 +48112,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-22",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -48123,7 +48123,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-23",
-        "innerDb": 0,
+        "innerDb": 18,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -48134,7 +48134,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-24",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -48145,7 +48145,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-25",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -48156,7 +48156,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-26",
-        "innerDb": 0,
+        "innerDb": 14,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -48167,7 +48167,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-27",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -48178,7 +48178,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-28",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -48189,7 +48189,7 @@ const CONFIG = {
       },
       {
         "code": "PLUTONE A-29",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -48387,7 +48387,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "SILDUCT 2S-1",
-        "innerDb": 0,
+        "innerDb": 305,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48398,7 +48398,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-2",
-        "innerDb": 0,
+        "innerDb": 254,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48409,7 +48409,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-3",
-        "innerDb": 0,
+        "innerDb": 230,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48420,7 +48420,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-4",
-        "innerDb": 0,
+        "innerDb": 203,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48431,7 +48431,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-5",
-        "innerDb": 0,
+        "innerDb": 180,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48442,7 +48442,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-6",
-        "innerDb": 0,
+        "innerDb": 160,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48453,7 +48453,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-7",
-        "innerDb": 0,
+        "innerDb": 165,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48464,7 +48464,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-8",
-        "innerDb": 0,
+        "innerDb": 178,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48475,7 +48475,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-9",
-        "innerDb": 0,
+        "innerDb": 152,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48486,7 +48486,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-10",
-        "innerDb": 0,
+        "innerDb": 140,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48497,7 +48497,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-11",
-        "innerDb": 0,
+        "innerDb": 130,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48508,7 +48508,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-12",
-        "innerDb": 0,
+        "innerDb": 127,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48519,7 +48519,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-13",
-        "innerDb": 0,
+        "innerDb": 120,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48530,7 +48530,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-14",
-        "innerDb": 0,
+        "innerDb": 114,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48541,7 +48541,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-15",
-        "innerDb": 0,
+        "innerDb": 102,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48552,7 +48552,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-16",
-        "innerDb": 0,
+        "innerDb": 108,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48563,7 +48563,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-17",
-        "innerDb": 0,
+        "innerDb": 110,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48574,7 +48574,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-18",
-        "innerDb": 0,
+        "innerDb": 95,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48585,7 +48585,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-19",
-        "innerDb": 0,
+        "innerDb": 90,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48596,7 +48596,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-20",
-        "innerDb": 0,
+        "innerDb": 70,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48607,7 +48607,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-21",
-        "innerDb": 0,
+        "innerDb": 83,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48618,7 +48618,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-22",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48629,7 +48629,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-23",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48640,7 +48640,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-24",
-        "innerDb": 0,
+        "innerDb": 65,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48651,7 +48651,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-25",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48662,7 +48662,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-26",
-        "innerDb": 0,
+        "innerDb": 60,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48673,7 +48673,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-27",
-        "innerDb": 0,
+        "innerDb": 57,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48684,7 +48684,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-28",
-        "innerDb": 0,
+        "innerDb": 55,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48695,7 +48695,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-29",
-        "innerDb": 0,
+        "innerDb": 51,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48706,7 +48706,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-30",
-        "innerDb": 0,
+        "innerDb": 44,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48717,7 +48717,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-31",
-        "innerDb": 0,
+        "innerDb": 41,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48728,7 +48728,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-32",
-        "innerDb": 0,
+        "innerDb": 39,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48739,7 +48739,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-33",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48750,7 +48750,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-34",
-        "innerDb": 0,
+        "innerDb": 36,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48761,7 +48761,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-35",
-        "innerDb": 0,
+        "innerDb": 35,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48772,7 +48772,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-36",
-        "innerDb": 0,
+        "innerDb": 34,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48783,7 +48783,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-37",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48794,7 +48794,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-38",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48805,7 +48805,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-39",
-        "innerDb": 0,
+        "innerDb": 30,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48816,7 +48816,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-40",
-        "innerDb": 0,
+        "innerDb": 22,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48827,7 +48827,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-41",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48838,7 +48838,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-42",
-        "innerDb": 0,
+        "innerDb": 18,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48849,7 +48849,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-43",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48860,7 +48860,7 @@ const CONFIG = {
       },
       {
         "code": "SILDUCT 2S-44",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48915,7 +48915,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "FLEXADUX® P4 SIL I-1",
-        "innerDb": 0,
+        "innerDb": 127,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.8,
@@ -48926,7 +48926,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-2",
-        "innerDb": 0,
+        "innerDb": 83,
         "inch": "",
         "outerDb": 0,
         "pressure": 1,
@@ -48937,7 +48937,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-3",
-        "innerDb": 0,
+        "innerDb": 90,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.9,
@@ -48948,7 +48948,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-4",
-        "innerDb": 0,
+        "innerDb": 95,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48959,7 +48959,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-5",
-        "innerDb": 0,
+        "innerDb": 102,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.9,
@@ -48970,7 +48970,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-6",
-        "innerDb": 0,
+        "innerDb": 108,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -48981,7 +48981,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-7",
-        "innerDb": 0,
+        "innerDb": 110,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.8,
@@ -48992,7 +48992,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-8",
-        "innerDb": 0,
+        "innerDb": 114,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49003,7 +49003,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-9",
-        "innerDb": 0,
+        "innerDb": 120,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.8,
@@ -49014,7 +49014,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-10",
-        "innerDb": 0,
+        "innerDb": 254,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.4,
@@ -49025,7 +49025,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-11",
-        "innerDb": 0,
+        "innerDb": 305,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.2,
@@ -49036,7 +49036,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-12",
-        "innerDb": 0,
+        "innerDb": 229,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.4,
@@ -49047,7 +49047,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-13",
-        "innerDb": 0,
+        "innerDb": 203,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.5,
@@ -49058,7 +49058,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-14",
-        "innerDb": 0,
+        "innerDb": 180,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.6,
@@ -49069,7 +49069,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-15",
-        "innerDb": 0,
+        "innerDb": 178,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.6,
@@ -49080,7 +49080,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-16",
-        "innerDb": 0,
+        "innerDb": 152,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.7,
@@ -49091,7 +49091,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-17",
-        "innerDb": 0,
+        "innerDb": 160,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.6,
@@ -49102,7 +49102,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-18",
-        "innerDb": 0,
+        "innerDb": 165,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49113,7 +49113,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-19",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "",
         "outerDb": 0,
         "pressure": 1,
@@ -49124,7 +49124,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-20",
-        "innerDb": 0,
+        "innerDb": 130,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49135,7 +49135,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-21",
-        "innerDb": 0,
+        "innerDb": 140,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.7,
@@ -49146,7 +49146,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-22",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.1,
@@ -49157,7 +49157,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-23",
-        "innerDb": 0,
+        "innerDb": 70,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.1,
@@ -49168,7 +49168,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-24",
-        "innerDb": 0,
+        "innerDb": 65,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.1,
@@ -49179,7 +49179,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-25",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.1,
@@ -49190,7 +49190,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-26",
-        "innerDb": 0,
+        "innerDb": 60,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.1,
@@ -49201,7 +49201,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-27",
-        "innerDb": 0,
+        "innerDb": 57,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49212,7 +49212,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-28",
-        "innerDb": 0,
+        "innerDb": 55,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.1,
@@ -49223,7 +49223,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-29",
-        "innerDb": 0,
+        "innerDb": 51,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.2,
@@ -49234,7 +49234,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-30",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.3,
@@ -49245,7 +49245,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-31",
-        "innerDb": 0,
+        "innerDb": 44,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49256,7 +49256,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-32",
-        "innerDb": 0,
+        "innerDb": 41,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.3,
@@ -49267,7 +49267,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-33",
-        "innerDb": 0,
+        "innerDb": 39,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49278,7 +49278,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-34",
-        "innerDb": 0,
+        "innerDb": 36,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49289,7 +49289,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-35",
-        "innerDb": 0,
+        "innerDb": 35,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49300,7 +49300,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-36",
-        "innerDb": 0,
+        "innerDb": 34,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49311,7 +49311,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-37",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.4,
@@ -49322,7 +49322,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-38",
-        "innerDb": 0,
+        "innerDb": 30,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49333,7 +49333,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-39",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.5,
@@ -49344,7 +49344,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-40",
-        "innerDb": 0,
+        "innerDb": 22,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49355,7 +49355,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-41",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.6,
@@ -49366,7 +49366,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-42",
-        "innerDb": 0,
+        "innerDb": 18,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49377,7 +49377,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-43",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49388,7 +49388,7 @@ const CONFIG = {
       },
       {
         "code": "FLEXADUX® P4 SIL I-44",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.5,
@@ -49444,7 +49444,7 @@ const CONFIG = {
       {
         "code": "Oregon-2",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -49510,7 +49510,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-1",
-        "innerDb": 0,
+        "innerDb": 305,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.3,
@@ -49521,7 +49521,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-2",
-        "innerDb": 0,
+        "innerDb": 229,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.5,
@@ -49532,7 +49532,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-3",
-        "innerDb": 0,
+        "innerDb": 254,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.5,
@@ -49543,7 +49543,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-4",
-        "innerDb": 0,
+        "innerDb": 203,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.7,
@@ -49554,7 +49554,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-5",
-        "innerDb": 0,
+        "innerDb": 180,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.8,
@@ -49565,7 +49565,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-6",
-        "innerDb": 0,
+        "innerDb": 178,
         "inch": "",
         "outerDb": 0,
         "pressure": 1,
@@ -49576,7 +49576,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-7",
-        "innerDb": 0,
+        "innerDb": 165,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49587,7 +49587,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-8",
-        "innerDb": 0,
+        "innerDb": 160,
         "inch": "",
         "outerDb": 0,
         "pressure": 0.9,
@@ -49598,7 +49598,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-9",
-        "innerDb": 0,
+        "innerDb": 140,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.3,
@@ -49609,7 +49609,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-10",
-        "innerDb": 0,
+        "innerDb": 152,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.2,
@@ -49620,7 +49620,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-11",
-        "innerDb": 0,
+        "innerDb": 130,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49631,7 +49631,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-12",
-        "innerDb": 0,
+        "innerDb": 127,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.4,
@@ -49642,7 +49642,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-13",
-        "innerDb": 0,
+        "innerDb": 120,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.5,
@@ -49653,7 +49653,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-14",
-        "innerDb": 0,
+        "innerDb": 114,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49664,7 +49664,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-15",
-        "innerDb": 0,
+        "innerDb": 95,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49675,7 +49675,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-16",
-        "innerDb": 0,
+        "innerDb": 102,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.9,
@@ -49686,7 +49686,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-17",
-        "innerDb": 0,
+        "innerDb": 108,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49697,7 +49697,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-18",
-        "innerDb": 0,
+        "innerDb": 90,
         "inch": "",
         "outerDb": 0,
         "pressure": 2,
@@ -49708,7 +49708,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-19",
-        "innerDb": 0,
+        "innerDb": 30,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49719,7 +49719,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-20",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 2.8,
@@ -49730,7 +49730,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-21",
-        "innerDb": 0,
+        "innerDb": 34,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49741,7 +49741,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-22",
-        "innerDb": 0,
+        "innerDb": 35,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49752,7 +49752,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-23",
-        "innerDb": 0,
+        "innerDb": 36,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49763,7 +49763,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-24",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 2.6,
@@ -49774,7 +49774,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-25",
-        "innerDb": 0,
+        "innerDb": 39,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49785,7 +49785,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-26",
-        "innerDb": 0,
+        "innerDb": 41,
         "inch": "",
         "outerDb": 0,
         "pressure": 2.4,
@@ -49796,7 +49796,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-27",
-        "innerDb": 0,
+        "innerDb": 44,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49807,7 +49807,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-28",
-        "innerDb": 0,
+        "innerDb": 51,
         "inch": "",
         "outerDb": 0,
         "pressure": 2.6,
@@ -49818,7 +49818,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-29",
-        "innerDb": 0,
+        "innerDb": 55,
         "inch": "",
         "outerDb": 0,
         "pressure": 2.3,
@@ -49829,7 +49829,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-30",
-        "innerDb": 0,
+        "innerDb": 57,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49840,7 +49840,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-31",
-        "innerDb": 0,
+        "innerDb": 60,
         "inch": "",
         "outerDb": 0,
         "pressure": 2.2,
@@ -49851,7 +49851,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-32",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 2.4,
@@ -49862,7 +49862,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-33",
-        "innerDb": 0,
+        "innerDb": 65,
         "inch": "",
         "outerDb": 0,
         "pressure": 2.2,
@@ -49873,7 +49873,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-34",
-        "innerDb": 0,
+        "innerDb": 70,
         "inch": "",
         "outerDb": 0,
         "pressure": 2.3,
@@ -49884,7 +49884,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-35",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 2.2,
@@ -49895,7 +49895,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-36",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "",
         "outerDb": 0,
         "pressure": 2.1,
@@ -49906,7 +49906,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-37",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 2.6,
@@ -49917,7 +49917,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-38",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49928,7 +49928,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-39",
-        "innerDb": 0,
+        "innerDb": 18,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49939,7 +49939,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-40",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 2.8,
@@ -49950,7 +49950,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-41",
-        "innerDb": 0,
+        "innerDb": 22,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -49961,7 +49961,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-42",
-        "innerDb": 0,
+        "innerDb": 83,
         "inch": "",
         "outerDb": 0,
         "pressure": 2.1,
@@ -49972,7 +49972,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-43",
-        "innerDb": 0,
+        "innerDb": 110,
         "inch": "",
         "outerDb": 0,
         "pressure": 1.7,
@@ -49983,7 +49983,7 @@ const CONFIG = {
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-44",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 2.8,
@@ -50034,7 +50034,7 @@ const CONFIG = {
       {
         "code": "FBD-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "7/16\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -50045,7 +50045,7 @@ const CONFIG = {
       {
         "code": "FBD-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -50102,8 +50102,8 @@ const CONFIG = {
       {
         "code": "Pacer-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "5/8\"",
+        "outerDb": 24.9,
         "pressure": 16,
         "bend": 96,
         "weight": 0.42,
@@ -50113,8 +50113,8 @@ const CONFIG = {
       {
         "code": "Pacer-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 29.2,
         "pressure": 16,
         "bend": 114,
         "weight": 0.55,
@@ -50124,8 +50124,8 @@ const CONFIG = {
       {
         "code": "Pacer-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 38.1,
         "pressure": 16,
         "bend": 150,
         "weight": 0.89,
@@ -50192,7 +50192,7 @@ const CONFIG = {
       {
         "code": "FMO-2",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 15,
         "bend": 0,
@@ -50214,7 +50214,7 @@ const CONFIG = {
       {
         "code": "FMO-4",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 15,
         "bend": 0,
@@ -50247,7 +50247,7 @@ const CONFIG = {
       {
         "code": "FMO-7",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 15,
         "bend": 0,
@@ -50258,7 +50258,7 @@ const CONFIG = {
       {
         "code": "FMO-8",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 15,
         "bend": 0,
@@ -50280,7 +50280,7 @@ const CONFIG = {
       {
         "code": "FMO-10",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -50291,7 +50291,7 @@ const CONFIG = {
       {
         "code": "FMO-11",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -50302,7 +50302,7 @@ const CONFIG = {
       {
         "code": "FMO-12",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -50324,7 +50324,7 @@ const CONFIG = {
       {
         "code": "FMO-14",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -50346,7 +50346,7 @@ const CONFIG = {
       {
         "code": "FMO-16",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -50357,7 +50357,7 @@ const CONFIG = {
       {
         "code": "FMO-17",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -50390,7 +50390,7 @@ const CONFIG = {
       {
         "code": "FMO-20",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 15,
         "bend": 0,
@@ -50401,7 +50401,7 @@ const CONFIG = {
       {
         "code": "FMO-21",
         "innerDb": 0,
-        "inch": "-\"",
+        "inch": "",
         "outerDb": 0,
         "pressure": 15,
         "bend": 0,
@@ -50682,9 +50682,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "591AE-1",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 25,
+        "inch": "1\"",
+        "outerDb": 34,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
@@ -50693,9 +50693,9 @@ const CONFIG = {
       },
       {
         "code": "591AE-2",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 19,
+        "inch": "3/4\"",
+        "outerDb": 27,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
@@ -50704,9 +50704,9 @@ const CONFIG = {
       },
       {
         "code": "591AE-3",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 16,
+        "inch": "5/8\"",
+        "outerDb": 24,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
@@ -50715,9 +50715,9 @@ const CONFIG = {
       },
       {
         "code": "591AE-4",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 8,
+        "inch": "5/16\"",
+        "outerDb": 14,
         "pressure": 50,
         "bend": 0,
         "weight": 0,
@@ -50726,9 +50726,9 @@ const CONFIG = {
       },
       {
         "code": "591AE-5",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 10,
+        "inch": "3/8\"",
+        "outerDb": 16,
         "pressure": 50,
         "bend": 0,
         "weight": 0,
@@ -50737,9 +50737,9 @@ const CONFIG = {
       },
       {
         "code": "591AE-6",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 13,
+        "inch": "1/2\"",
+        "outerDb": 20,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
@@ -50780,7 +50780,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "URANO PU-1",
-        "innerDb": 0,
+        "innerDb": 152.4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -50791,7 +50791,7 @@ const CONFIG = {
       },
       {
         "code": "URANO PU-2",
-        "innerDb": 0,
+        "innerDb": 120,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -50802,7 +50802,7 @@ const CONFIG = {
       },
       {
         "code": "URANO PU-3",
-        "innerDb": 0,
+        "innerDb": 127,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -50813,7 +50813,7 @@ const CONFIG = {
       },
       {
         "code": "URANO PU-4",
-        "innerDb": 0,
+        "innerDb": 151.5,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -50824,7 +50824,7 @@ const CONFIG = {
       },
       {
         "code": "URANO PU-5",
-        "innerDb": 0,
+        "innerDb": 102,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -50835,7 +50835,7 @@ const CONFIG = {
       },
       {
         "code": "URANO PU-6",
-        "innerDb": 0,
+        "innerDb": 110,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -50846,7 +50846,7 @@ const CONFIG = {
       },
       {
         "code": "URANO PU-7",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -50857,7 +50857,7 @@ const CONFIG = {
       },
       {
         "code": "URANO PU-8",
-        "innerDb": 0,
+        "innerDb": 90,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -50868,7 +50868,7 @@ const CONFIG = {
       },
       {
         "code": "URANO PU-9",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -50879,7 +50879,7 @@ const CONFIG = {
       },
       {
         "code": "URANO PU-10",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -50890,7 +50890,7 @@ const CONFIG = {
       },
       {
         "code": "URANO PU-11",
-        "innerDb": 0,
+        "innerDb": 70,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -50901,7 +50901,7 @@ const CONFIG = {
       },
       {
         "code": "URANO PU-12",
-        "innerDb": 0,
+        "innerDb": 63.5,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -50912,7 +50912,7 @@ const CONFIG = {
       },
       {
         "code": "URANO PU-13",
-        "innerDb": 0,
+        "innerDb": 60,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -50923,7 +50923,7 @@ const CONFIG = {
       },
       {
         "code": "URANO PU-14",
-        "innerDb": 0,
+        "innerDb": 50.8,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -50934,7 +50934,7 @@ const CONFIG = {
       },
       {
         "code": "URANO PU-15",
-        "innerDb": 0,
+        "innerDb": 45,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -50945,7 +50945,7 @@ const CONFIG = {
       },
       {
         "code": "URANO PU-16",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -50956,7 +50956,7 @@ const CONFIG = {
       },
       {
         "code": "URANO PU-17",
-        "innerDb": 0,
+        "innerDb": 31.8,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -50967,7 +50967,7 @@ const CONFIG = {
       },
       {
         "code": "URANO PU-18",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -50978,7 +50978,7 @@ const CONFIG = {
       },
       {
         "code": "URANO PU-19",
-        "innerDb": 0,
+        "innerDb": 38.1,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -51020,9 +51020,9 @@ const CONFIG = {
     "variants": [
       {
         "code": "TEKNOJET 2SN PLUS 600-1",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 10,
+        "inch": "3/8\"",
+        "outerDb": 18.7,
         "pressure": 600,
         "bend": 0,
         "weight": 0,
@@ -51031,9 +51031,9 @@ const CONFIG = {
       },
       {
         "code": "TEKNOJET 2SN PLUS 600-2",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 12,
+        "inch": "1/2\"",
+        "outerDb": 22.2,
         "pressure": 600,
         "bend": 0,
         "weight": 0,
@@ -51778,66 +51778,66 @@ const CONFIG = {
     "variants": [
       {
         "code": "MANULI ULTRASTAR-1",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 8,
+        "inch": "5/16\"",
+        "outerDb": 15.4,
         "pressure": 0,
-        "bend": 0,
+        "bend": 85,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 25.65
       },
       {
         "code": "MANULI ULTRASTAR-2",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 10,
+        "inch": "13/32\"",
+        "outerDb": 17.5,
         "pressure": 0,
-        "bend": 0,
+        "bend": 95,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 27.1
       },
       {
         "code": "MANULI ULTRASTAR-3",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 12,
+        "inch": "1/2\"",
+        "outerDb": 21.6,
         "pressure": 0,
-        "bend": 0,
+        "bend": 115,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 36.9
       },
       {
         "code": "MANULI ULTRASTAR-4",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 16,
+        "inch": "5/8\"",
+        "outerDb": 25.5,
         "pressure": 0,
-        "bend": 0,
+        "bend": 135,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 39.25
       },
       {
         "code": "MANULI ULTRASTAR-5",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 22,
+        "inch": "7/8\"",
+        "outerDb": 29.5,
         "pressure": 0,
-        "bend": 0,
+        "bend": 100,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 56.4
       },
       {
         "code": "MANULI ULTRASTAR-6",
-        "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "innerDb": 28,
+        "inch": "1.1/8\"",
+        "outerDb": 36.1,
         "pressure": 0,
-        "bend": 0,
+        "bend": 120,
         "weight": 0,
         "rollLength": 0,
         "priceEur": 59.8
@@ -52062,10 +52062,10 @@ const CONFIG = {
       {
         "code": "509OE-1",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "4\"",
+        "outerDb": 118,
         "pressure": 16,
-        "bend": 0,
+        "bend": 675,
         "weight": 3.87,
         "rollLength": 0,
         "priceEur": 213.6
@@ -52073,10 +52073,10 @@ const CONFIG = {
       {
         "code": "509OE-2",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3\"",
+        "outerDb": 92,
         "pressure": 16,
-        "bend": 0,
+        "bend": 525,
         "weight": 2.84,
         "rollLength": 0,
         "priceEur": 162.3
@@ -52084,10 +52084,10 @@ const CONFIG = {
       {
         "code": "509OE-3",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2\"",
+        "outerDb": 63,
         "pressure": 16,
-        "bend": 0,
+        "bend": 413,
         "weight": 1.34,
         "rollLength": 0,
         "priceEur": 83.6
@@ -52095,10 +52095,10 @@ const CONFIG = {
       {
         "code": "509OE-4",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "2.1/2\"",
+        "outerDb": 77,
         "pressure": 16,
-        "bend": 0,
+        "bend": 450,
         "weight": 3.09,
         "rollLength": 0,
         "priceEur": 126.9
@@ -52106,10 +52106,10 @@ const CONFIG = {
       {
         "code": "509OE-5",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.9/16\"",
+        "outerDb": 52,
         "pressure": 16,
-        "bend": 0,
+        "bend": 338,
         "weight": 1.06,
         "rollLength": 0,
         "priceEur": 0
@@ -52117,10 +52117,10 @@ const CONFIG = {
       {
         "code": "509OE-6",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1/2\"",
+        "outerDb": 50,
         "pressure": 16,
-        "bend": 0,
+        "bend": 338,
         "weight": 1.01,
         "rollLength": 0,
         "priceEur": 66.2
@@ -52128,10 +52128,10 @@ const CONFIG = {
       {
         "code": "509OE-7",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1.1//4\"",
+        "outerDb": 44,
         "pressure": 16,
-        "bend": 0,
+        "bend": 263,
         "weight": 0.88,
         "rollLength": 0,
         "priceEur": 59.55
@@ -52139,10 +52139,10 @@ const CONFIG = {
       {
         "code": "509OE-8",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "1\"",
+        "outerDb": 37,
         "pressure": 16,
-        "bend": 0,
+        "bend": 225,
         "weight": 0.73,
         "rollLength": 0,
         "priceEur": 51.55
@@ -52150,10 +52150,10 @@ const CONFIG = {
       {
         "code": "509OE-9",
         "innerDb": 0,
-        "inch": "",
-        "outerDb": 0,
+        "inch": "3/4\"",
+        "outerDb": 31,
         "pressure": 16,
-        "bend": 0,
+        "bend": 188,
         "weight": 0.6,
         "rollLength": 0,
         "priceEur": 44.7
@@ -55336,7 +55336,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Предпазни текстилни ръкави залепващи-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -55347,7 +55347,7 @@ const CONFIG = {
       },
       {
         "code": "Предпазни текстилни ръкави залепващи-2",
-        "innerDb": 0,
+        "innerDb": 177,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -55358,7 +55358,7 @@ const CONFIG = {
       },
       {
         "code": "Предпазни текстилни ръкави залепващи-3",
-        "innerDb": 0,
+        "innerDb": 152,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -55369,7 +55369,7 @@ const CONFIG = {
       },
       {
         "code": "Предпазни текстилни ръкави залепващи-4",
-        "innerDb": 0,
+        "innerDb": 127,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -55380,7 +55380,7 @@ const CONFIG = {
       },
       {
         "code": "Предпазни текстилни ръкави залепващи-5",
-        "innerDb": 0,
+        "innerDb": 102,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -55391,7 +55391,7 @@ const CONFIG = {
       },
       {
         "code": "Предпазни текстилни ръкави залепващи-6",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -55402,7 +55402,7 @@ const CONFIG = {
       },
       {
         "code": "Предпазни текстилни ръкави залепващи-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -55413,7 +55413,7 @@ const CONFIG = {
       },
       {
         "code": "Предпазни текстилни ръкави залепващи-8",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -58974,7 +58974,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "RTRIL ISO-1",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -58985,7 +58985,7 @@ const CONFIG = {
       },
       {
         "code": "RTRIL ISO-2",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -58996,7 +58996,7 @@ const CONFIG = {
       },
       {
         "code": "RTRIL ISO-3",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59007,7 +59007,7 @@ const CONFIG = {
       },
       {
         "code": "RTRIL ISO-4",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59018,7 +59018,7 @@ const CONFIG = {
       },
       {
         "code": "RTRIL ISO-5",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59029,7 +59029,7 @@ const CONFIG = {
       },
       {
         "code": "RTRIL ISO-6",
-        "innerDb": 0,
+        "innerDb": 15,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59040,7 +59040,7 @@ const CONFIG = {
       },
       {
         "code": "RTRIL ISO-7",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59051,7 +59051,7 @@ const CONFIG = {
       },
       {
         "code": "RTRIL ISO-8",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60514,7 +60514,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Уплътнение за CAMLOCK материал NBR-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60525,7 +60525,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за CAMLOCK материал NBR-2",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60536,7 +60536,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за CAMLOCK материал NBR-3",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60547,7 +60547,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за CAMLOCK материал NBR-4",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60558,7 +60558,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за CAMLOCK материал NBR-5",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60569,7 +60569,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за CAMLOCK материал NBR-6",
-        "innerDb": 0,
+        "innerDb": 65,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60580,7 +60580,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за CAMLOCK материал NBR-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60591,7 +60591,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за CAMLOCK материал NBR-8",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60602,7 +60602,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за CAMLOCK материал NBR-9",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60613,7 +60613,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за CAMLOCK материал NBR-10",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60624,7 +60624,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за CAMLOCK материал NBR-11",
-        "innerDb": 0,
+        "innerDb": 15,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60635,7 +60635,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за CAMLOCK материал NBR-12",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -61143,7 +61143,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Уплътнение за GUILLEMIN материал NBR-1",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -61154,7 +61154,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за GUILLEMIN материал NBR-2",
-        "innerDb": 0,
+        "innerDb": 65,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -61165,7 +61165,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за GUILLEMIN материал NBR-3",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -61176,7 +61176,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за GUILLEMIN материал NBR-4",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -61187,7 +61187,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за GUILLEMIN материал NBR-5",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -61198,7 +61198,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за GUILLEMIN материал NBR-6",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -61541,7 +61541,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Уплътнение за TW NBR - черен-1",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -61552,7 +61552,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за TW NBR - черен-2",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -61563,7 +61563,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за TW NBR - черен-3",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -61605,7 +61605,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Уплътнение за CARDAN - PERROT материал NBR-1",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -61616,7 +61616,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за CARDAN - PERROT материал NBR-2",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -61627,7 +61627,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за CARDAN - PERROT материал NBR-3",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -61638,7 +61638,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за CARDAN - PERROT материал NBR-4",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -61649,7 +61649,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за CARDAN - PERROT материал NBR-5",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -62560,7 +62560,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Уплътнение за TW HYPALON - зелен-1",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -62571,7 +62571,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за TW HYPALON - зелен-2",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -62582,7 +62582,7 @@ const CONFIG = {
       },
       {
         "code": "Уплътнение за TW HYPALON - зелен-3",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -62636,8 +62636,8 @@ const CONFIG = {
     "variants": [
       {
         "code": "KY-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 150,
+        "inch": "6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62647,8 +62647,8 @@ const CONFIG = {
       },
       {
         "code": "KY-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 150,
+        "inch": "6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62658,8 +62658,8 @@ const CONFIG = {
       },
       {
         "code": "KY-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 125,
+        "inch": "5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62669,8 +62669,8 @@ const CONFIG = {
       },
       {
         "code": "KY-4",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 100,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62680,8 +62680,8 @@ const CONFIG = {
       },
       {
         "code": "KY-5",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 100,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62691,8 +62691,8 @@ const CONFIG = {
       },
       {
         "code": "KY-6",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 76,
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62702,8 +62702,8 @@ const CONFIG = {
       },
       {
         "code": "KY-7",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 76,
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62713,8 +62713,8 @@ const CONFIG = {
       },
       {
         "code": "KY-8",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 63,
+        "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62724,8 +62724,8 @@ const CONFIG = {
       },
       {
         "code": "KY-9",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 63,
+        "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62735,8 +62735,8 @@ const CONFIG = {
       },
       {
         "code": "KY-10",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62746,8 +62746,8 @@ const CONFIG = {
       },
       {
         "code": "KY-11",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 38,
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62757,8 +62757,8 @@ const CONFIG = {
       },
       {
         "code": "KY-12",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62768,8 +62768,8 @@ const CONFIG = {
       },
       {
         "code": "KY-13",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 32,
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62779,8 +62779,8 @@ const CONFIG = {
       },
       {
         "code": "KY-14",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 38,
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62790,8 +62790,8 @@ const CONFIG = {
       },
       {
         "code": "KY-15",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 32,
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62801,8 +62801,8 @@ const CONFIG = {
       },
       {
         "code": "KY-16",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 25,
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62812,8 +62812,8 @@ const CONFIG = {
       },
       {
         "code": "KY-17",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 12,
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62823,8 +62823,8 @@ const CONFIG = {
       },
       {
         "code": "KY-18",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 16,
+        "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62834,8 +62834,8 @@ const CONFIG = {
       },
       {
         "code": "KY-19",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 20,
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62845,8 +62845,8 @@ const CONFIG = {
       },
       {
         "code": "KY-20",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 25,
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -65278,7 +65278,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "ZFIG заваряване-1",
-        "innerDb": 0,
+        "innerDb": 4,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -65289,7 +65289,7 @@ const CONFIG = {
       },
       {
         "code": "ZFIG заваряване-2",
-        "innerDb": 0,
+        "innerDb": 3,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -65300,7 +65300,7 @@ const CONFIG = {
       },
       {
         "code": "ZFIG заваряване-3",
-        "innerDb": 0,
+        "innerDb": 2.1,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -65311,7 +65311,7 @@ const CONFIG = {
       },
       {
         "code": "ZFIG заваряване-4",
-        "innerDb": 0,
+        "innerDb": 2,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -65322,7 +65322,7 @@ const CONFIG = {
       },
       {
         "code": "ZFIG заваряване-5",
-        "innerDb": 0,
+        "innerDb": 1.1,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -65333,7 +65333,7 @@ const CONFIG = {
       },
       {
         "code": "ZFIG заваряване-6",
-        "innerDb": 0,
+        "innerDb": 1.1,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -65344,7 +65344,7 @@ const CONFIG = {
       },
       {
         "code": "ZFIG заваряване-7",
-        "innerDb": 0,
+        "innerDb": 1,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -65355,7 +65355,7 @@ const CONFIG = {
       },
       {
         "code": "ZFIG заваряване-8",
-        "innerDb": 0,
+        "innerDb": 3,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -65366,7 +65366,7 @@ const CONFIG = {
       },
       {
         "code": "ZFIG заваряване-9",
-        "innerDb": 0,
+        "innerDb": 1,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -65377,7 +65377,7 @@ const CONFIG = {
       },
       {
         "code": "ZFIG заваряване-10",
-        "innerDb": 0,
+        "innerDb": 3,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -65388,7 +65388,7 @@ const CONFIG = {
       },
       {
         "code": "ZFIG заваряване-11",
-        "innerDb": 0,
+        "innerDb": 1,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -65399,7 +65399,7 @@ const CONFIG = {
       },
       {
         "code": "ZFIG заваряване-12",
-        "innerDb": 0,
+        "innerDb": 1,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -66459,7 +66459,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "VB тапа за МK - AISI 316-1",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -66470,7 +66470,7 @@ const CONFIG = {
       },
       {
         "code": "VB тапа за МK - AISI 316-2",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -66481,7 +66481,7 @@ const CONFIG = {
       },
       {
         "code": "VB тапа за МK - AISI 316-3",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -66541,7 +66541,7 @@ const CONFIG = {
       {
         "code": "DINHF-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -66552,7 +66552,7 @@ const CONFIG = {
       {
         "code": "DINHF-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -66563,7 +66563,7 @@ const CONFIG = {
       {
         "code": "DINHF-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -66574,7 +66574,7 @@ const CONFIG = {
       {
         "code": "DINHF-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -66585,7 +66585,7 @@ const CONFIG = {
       {
         "code": "DINHF-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -66596,7 +66596,7 @@ const CONFIG = {
       {
         "code": "DINHF-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -66607,7 +66607,7 @@ const CONFIG = {
       {
         "code": "DINHF-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -66618,7 +66618,7 @@ const CONFIG = {
       {
         "code": "DINHF-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -66961,7 +66961,7 @@ const CONFIG = {
       {
         "code": "DINHM-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -66972,7 +66972,7 @@ const CONFIG = {
       {
         "code": "DINHM-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -66983,7 +66983,7 @@ const CONFIG = {
       {
         "code": "DINHM-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -66994,7 +66994,7 @@ const CONFIG = {
       {
         "code": "DINHM-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -67005,7 +67005,7 @@ const CONFIG = {
       {
         "code": "DINHM-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -67016,7 +67016,7 @@ const CONFIG = {
       {
         "code": "DINHM-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -67027,7 +67027,7 @@ const CONFIG = {
       {
         "code": "DINHM-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -67038,7 +67038,7 @@ const CONFIG = {
       {
         "code": "DINHM-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -67163,7 +67163,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "TW мъжки VK MS-1",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67174,7 +67174,7 @@ const CONFIG = {
       },
       {
         "code": "TW мъжки VK MS-2",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67185,7 +67185,7 @@ const CONFIG = {
       },
       {
         "code": "TW мъжки VK MS-3",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67433,7 +67433,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Спирателен кран, неръждаем-1",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67444,7 +67444,7 @@ const CONFIG = {
       },
       {
         "code": "Спирателен кран, неръждаем-2",
-        "innerDb": 0,
+        "innerDb": 65,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67455,7 +67455,7 @@ const CONFIG = {
       },
       {
         "code": "Спирателен кран, неръждаем-3",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67466,7 +67466,7 @@ const CONFIG = {
       },
       {
         "code": "Спирателен кран, неръждаем-4",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67477,7 +67477,7 @@ const CONFIG = {
       },
       {
         "code": "Спирателен кран, неръждаем-5",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67488,7 +67488,7 @@ const CONFIG = {
       },
       {
         "code": "Спирателен кран, неръждаем-6",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67499,7 +67499,7 @@ const CONFIG = {
       },
       {
         "code": "Спирателен кран, неръждаем-7",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67510,7 +67510,7 @@ const CONFIG = {
       },
       {
         "code": "Спирателен кран, неръждаем-8",
-        "innerDb": 0,
+        "innerDb": 15,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67521,7 +67521,7 @@ const CONFIG = {
       },
       {
         "code": "Спирателен кран, неръждаем-9",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67532,7 +67532,7 @@ const CONFIG = {
       },
       {
         "code": "Спирателен кран, неръждаем-10",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67833,7 +67833,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "MB тапа за VK MS-1",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67844,7 +67844,7 @@ const CONFIG = {
       },
       {
         "code": "MB тапа за VK MS-2",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67855,7 +67855,7 @@ const CONFIG = {
       },
       {
         "code": "MB тапа за VK MS-3",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67900,7 +67900,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "VB тапа за МK MS-1",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67911,7 +67911,7 @@ const CONFIG = {
       },
       {
         "code": "VB тапа за МK MS-2",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67922,7 +67922,7 @@ const CONFIG = {
       },
       {
         "code": "VB тапа за МK MS-3",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68145,7 +68145,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "TW мъжки VK - AISI 316-1",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68156,7 +68156,7 @@ const CONFIG = {
       },
       {
         "code": "TW мъжки VK - AISI 316-2",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68167,7 +68167,7 @@ const CONFIG = {
       },
       {
         "code": "TW мъжки VK - AISI 316-3",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68221,8 +68221,8 @@ const CONFIG = {
     "variants": [
       {
         "code": "CF SS-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 150,
+        "inch": "6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68232,8 +68232,8 @@ const CONFIG = {
       },
       {
         "code": "CF SS-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 125,
+        "inch": "5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68243,8 +68243,8 @@ const CONFIG = {
       },
       {
         "code": "CF SS-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 100,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68254,8 +68254,8 @@ const CONFIG = {
       },
       {
         "code": "CF SS-4",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 75,
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68265,8 +68265,8 @@ const CONFIG = {
       },
       {
         "code": "CF SS-5",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 65,
+        "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68276,8 +68276,8 @@ const CONFIG = {
       },
       {
         "code": "CF SS-6",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68287,8 +68287,8 @@ const CONFIG = {
       },
       {
         "code": "CF SS-7",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 38,
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68298,8 +68298,8 @@ const CONFIG = {
       },
       {
         "code": "CF SS-8",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 32,
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68309,8 +68309,8 @@ const CONFIG = {
       },
       {
         "code": "CF SS-9",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 25,
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68320,8 +68320,8 @@ const CONFIG = {
       },
       {
         "code": "CF SS-10",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 20,
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68331,8 +68331,8 @@ const CONFIG = {
       },
       {
         "code": "CF SS-11",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 16,
+        "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68342,8 +68342,8 @@ const CONFIG = {
       },
       {
         "code": "CF SS-12",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 12,
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68451,7 +68451,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "MB тапа за VK AISI 316-1",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68462,7 +68462,7 @@ const CONFIG = {
       },
       {
         "code": "MB тапа за VK AISI 316-2",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68473,7 +68473,7 @@ const CONFIG = {
       },
       {
         "code": "MB тапа за VK AISI 316-3",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69420,7 +69420,7 @@ const CONFIG = {
       {
         "code": "DINHF AG-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -69431,7 +69431,7 @@ const CONFIG = {
       {
         "code": "DINHF AG-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -69442,7 +69442,7 @@ const CONFIG = {
       {
         "code": "DINHF AG-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -69453,7 +69453,7 @@ const CONFIG = {
       {
         "code": "DINHF AG-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -69464,7 +69464,7 @@ const CONFIG = {
       {
         "code": "DINHF AG-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -69475,7 +69475,7 @@ const CONFIG = {
       {
         "code": "DINHF AG-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -69842,8 +69842,8 @@ const CONFIG = {
     "variants": [
       {
         "code": "KY SS-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -69853,8 +69853,8 @@ const CONFIG = {
       },
       {
         "code": "KY SS-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -69864,8 +69864,8 @@ const CONFIG = {
       },
       {
         "code": "KY SS-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 25,
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -70013,7 +70013,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "TW женски MK MS-1",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70024,7 +70024,7 @@ const CONFIG = {
       },
       {
         "code": "TW женски MK MS-2",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70035,7 +70035,7 @@ const CONFIG = {
       },
       {
         "code": "TW женски MK MS-3",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70638,7 +70638,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "TW женски MK SS AISI 316-1",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70649,7 +70649,7 @@ const CONFIG = {
       },
       {
         "code": "TW женски MK SS AISI 316-2",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70660,7 +70660,7 @@ const CONFIG = {
       },
       {
         "code": "TW женски MK SS AISI 316-3",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -71198,7 +71198,7 @@ const CONFIG = {
       {
         "code": "DINHF IG-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -71209,7 +71209,7 @@ const CONFIG = {
       {
         "code": "DINHF IG-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -71220,7 +71220,7 @@ const CONFIG = {
       {
         "code": "DINHF IG-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -71231,7 +71231,7 @@ const CONFIG = {
       {
         "code": "DINHF IG-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -71242,7 +71242,7 @@ const CONFIG = {
       {
         "code": "DINHF IG-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -71253,7 +71253,7 @@ const CONFIG = {
       {
         "code": "DINHF IG-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
@@ -72704,7 +72704,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "BOM 90-1",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 350,
@@ -72715,7 +72715,7 @@ const CONFIG = {
       },
       {
         "code": "BOM 90-2",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 250,
@@ -72726,7 +72726,7 @@ const CONFIG = {
       },
       {
         "code": "BOM 90-3",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 250,
@@ -72737,7 +72737,7 @@ const CONFIG = {
       },
       {
         "code": "BOM 90-4",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 250,
@@ -72748,7 +72748,7 @@ const CONFIG = {
       },
       {
         "code": "BOM 90-5",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 250,
@@ -72759,7 +72759,7 @@ const CONFIG = {
       },
       {
         "code": "BOM 90-6",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 250,
@@ -72770,7 +72770,7 @@ const CONFIG = {
       },
       {
         "code": "BOM 90-7",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 250,
@@ -72781,7 +72781,7 @@ const CONFIG = {
       },
       {
         "code": "BOM 90-8",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 200,
@@ -72792,7 +72792,7 @@ const CONFIG = {
       },
       {
         "code": "BOM 90-9",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 200,
@@ -72803,7 +72803,7 @@ const CONFIG = {
       },
       {
         "code": "BOM 90-10",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 200,
@@ -72814,7 +72814,7 @@ const CONFIG = {
       },
       {
         "code": "BOM 90-11",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 200,
@@ -72825,7 +72825,7 @@ const CONFIG = {
       },
       {
         "code": "BOM 90-12",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 200,
@@ -72836,7 +72836,7 @@ const CONFIG = {
       },
       {
         "code": "BOM 90-13",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 160,
@@ -72847,7 +72847,7 @@ const CONFIG = {
       },
       {
         "code": "BOM 90-14",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 160,
@@ -72858,7 +72858,7 @@ const CONFIG = {
       },
       {
         "code": "BOM 90-15",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 125,
@@ -72869,7 +72869,7 @@ const CONFIG = {
       },
       {
         "code": "BOM 90-16",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 100,
@@ -72910,7 +72910,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "BOG 90-1",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 350,
@@ -72921,7 +72921,7 @@ const CONFIG = {
       },
       {
         "code": "BOG 90-2",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 280,
@@ -72932,7 +72932,7 @@ const CONFIG = {
       },
       {
         "code": "BOG 90-3",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 200,
@@ -72943,7 +72943,7 @@ const CONFIG = {
       },
       {
         "code": "BOG 90-4",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 200,
@@ -72954,7 +72954,7 @@ const CONFIG = {
       },
       {
         "code": "BOG 90-5",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 160,
@@ -72965,7 +72965,7 @@ const CONFIG = {
       },
       {
         "code": "BOG 90-6",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 125,
@@ -72976,7 +72976,7 @@ const CONFIG = {
       },
       {
         "code": "BOG 90-7",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 100,
@@ -73017,7 +73017,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "BEL/BES-1",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 210,
@@ -73028,7 +73028,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-2",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 100,
@@ -73039,7 +73039,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-3",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 100,
@@ -73050,7 +73050,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-4",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -73061,7 +73061,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-5",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 250,
@@ -73072,7 +73072,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-6",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 100,
@@ -73083,7 +73083,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-7",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 165,
@@ -73094,7 +73094,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-8",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 350,
@@ -73105,7 +73105,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-9",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 160,
@@ -73116,7 +73116,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-10",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "",
         "outerDb": 0,
         "pressure": 160,
@@ -73127,7 +73127,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-11",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "",
         "outerDb": 0,
         "pressure": 350,
@@ -73138,7 +73138,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-12",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "",
         "outerDb": 0,
         "pressure": 160,
@@ -73149,7 +73149,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-13",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 215,
@@ -73160,7 +73160,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-14",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -73171,7 +73171,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-15",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
         "outerDb": 0,
         "pressure": 160,
@@ -73182,7 +73182,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-16",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
         "outerDb": 0,
         "pressure": 415,
@@ -73193,7 +73193,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-17",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
         "outerDb": 0,
         "pressure": 250,
@@ -73204,7 +73204,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-18",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
         "outerDb": 0,
         "pressure": 275,
@@ -73215,7 +73215,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-19",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
         "outerDb": 0,
         "pressure": 250,
@@ -73226,7 +73226,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-20",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
         "outerDb": 0,
         "pressure": 250,
@@ -73237,7 +73237,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-21",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
         "outerDb": 0,
         "pressure": 445,
@@ -73248,7 +73248,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-22",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
         "outerDb": 0,
         "pressure": 445,
@@ -73259,7 +73259,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-23",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
         "outerDb": 0,
         "pressure": 330,
@@ -73270,7 +73270,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-24",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
         "outerDb": 0,
         "pressure": 350,
@@ -73281,7 +73281,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-25",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
         "outerDb": 0,
         "pressure": 450,
@@ -73292,7 +73292,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-26",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
         "outerDb": 0,
         "pressure": 450,
@@ -73303,7 +73303,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-27",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "",
         "outerDb": 0,
         "pressure": 350,
@@ -73314,7 +73314,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-28",
-        "innerDb": 0,
+        "innerDb": 4,
         "inch": "",
         "outerDb": 0,
         "pressure": 415,
@@ -73325,7 +73325,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-29",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
         "outerDb": 0,
         "pressure": 450,
@@ -73336,7 +73336,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-30",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
         "outerDb": 0,
         "pressure": 450,
@@ -73347,7 +73347,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-31",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "",
         "outerDb": 0,
         "pressure": 320,
@@ -73358,7 +73358,7 @@ const CONFIG = {
       },
       {
         "code": "BEL/BES-32",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -73410,8 +73410,8 @@ const CONFIG = {
     "variants": [
       {
         "code": "Чаша R7/MTH 1/R6-1",
-        "innerDb": 0,
-        "inch": "-\"",
+        "innerDb": 4,
+        "inch": "",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -73421,7 +73421,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша R7/MTH 1/R6-2",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "3/16\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73432,7 +73432,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша R7/MTH 1/R6-3",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73443,7 +73443,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша R7/MTH 1/R6-4",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73454,7 +73454,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша R7/MTH 1/R6-5",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73465,7 +73465,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша R7/MTH 1/R6-6",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73476,7 +73476,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша R7/MTH 1/R6-7",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73487,7 +73487,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша R7/MTH 1/R6-8",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73498,7 +73498,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша R7/MTH 1/R6-9",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73553,7 +73553,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Чаша KY-1",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73564,7 +73564,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KY-2",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73575,7 +73575,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KY-3",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73586,7 +73586,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KY-4",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73597,7 +73597,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KY-5",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73608,7 +73608,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KY-6",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73619,7 +73619,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KY-7",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73630,7 +73630,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KY-8",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73641,7 +73641,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KY-9",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73652,7 +73652,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KY-10",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73702,7 +73702,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Чаша 2SN/R2AT-1",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73713,7 +73713,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша 2SN/R2AT-2",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73724,7 +73724,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша 2SN/R2AT-3",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73735,7 +73735,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша 2SN/R2AT-4",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73746,7 +73746,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша 2SN/R2AT-5",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73757,7 +73757,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша 2SN/R2AT-6",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73812,7 +73812,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Чаша KYV-1",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73823,7 +73823,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KYV-2",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73834,7 +73834,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KYV-3",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73845,7 +73845,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KYV-4",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73856,7 +73856,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KYV-5",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73867,7 +73867,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KYV-6",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73878,7 +73878,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KYV-7",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73889,7 +73889,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KYV-8",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73900,7 +73900,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KYV-9",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73953,7 +73953,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Чаша 1SN/1SC/2SC-1",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73964,7 +73964,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша 1SN/1SC/2SC-2",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73975,7 +73975,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша 1SN/1SC/2SC-3",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73986,7 +73986,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша 1SN/1SC/2SC-4",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -73997,7 +73997,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша 1SN/1SC/2SC-5",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74008,7 +74008,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша 1SN/1SC/2SC-6",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74064,7 +74064,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Чаша KATH-1",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74075,7 +74075,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KATH-2",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74086,7 +74086,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KATH-3",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74097,7 +74097,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KATH-4",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74108,7 +74108,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KATH-5",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74119,7 +74119,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KATH-6",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74130,7 +74130,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KATH-7",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74141,7 +74141,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KATH-8",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74152,7 +74152,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KATH-9",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74163,7 +74163,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KATH-10",
-        "innerDb": 0,
+        "innerDb": 51,
         "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74174,8 +74174,8 @@ const CONFIG = {
       },
       {
         "code": "Чаша KATH-11",
-        "innerDb": 0,
-        "inch": "-\"",
+        "innerDb": 60,
+        "inch": "",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -74185,8 +74185,8 @@ const CONFIG = {
       },
       {
         "code": "Чаша KATH-12",
-        "innerDb": 0,
-        "inch": "-\"",
+        "innerDb": 63,
+        "inch": "",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -74196,8 +74196,8 @@ const CONFIG = {
       },
       {
         "code": "Чаша KATH-13",
-        "innerDb": 0,
-        "inch": "-\"",
+        "innerDb": 76,
+        "inch": "",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -74251,7 +74251,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Чаша KYA-1",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74262,7 +74262,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KYA-2",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74273,7 +74273,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KYA-3",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74284,7 +74284,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KYA-4",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74295,7 +74295,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KYA-5",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74306,7 +74306,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KYA-6",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74317,7 +74317,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KYA-7",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74328,7 +74328,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KYA-8",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74339,7 +74339,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша KYA-9",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
@@ -74398,7 +74398,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "DKR-прав-1",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 185,
@@ -74409,7 +74409,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-2",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 210,
@@ -74420,7 +74420,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-3",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 210,
@@ -74431,7 +74431,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-4",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 280,
@@ -74442,7 +74442,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-5",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 280,
@@ -74453,7 +74453,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-6",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 350,
@@ -74464,7 +74464,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-7",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 350,
@@ -74475,7 +74475,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-8",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 350,
@@ -74486,7 +74486,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-9",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 350,
@@ -74497,7 +74497,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-10",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 350,
@@ -74508,7 +74508,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-11",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 350,
@@ -74519,7 +74519,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-12",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 415,
@@ -74530,7 +74530,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-13",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 415,
@@ -74541,7 +74541,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-14",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 415,
@@ -74552,7 +74552,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-15",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 415,
@@ -74563,7 +74563,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-16",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 450,
@@ -74574,7 +74574,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-17",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 450,
@@ -74585,7 +74585,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-18",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 450,
@@ -74596,7 +74596,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-19",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 350,
@@ -74607,7 +74607,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-20",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 350,
@@ -74618,7 +74618,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-21",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 350,
@@ -74629,7 +74629,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-22",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 450,
@@ -74640,7 +74640,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-23",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 450,
@@ -74651,7 +74651,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-24",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 450,
@@ -74662,7 +74662,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-25",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 350,
@@ -74673,7 +74673,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-26",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "3/16\"",
         "outerDb": 0,
         "pressure": 415,
@@ -74684,7 +74684,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-27",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "3/16\"",
         "outerDb": 0,
         "pressure": 350,
@@ -74695,7 +74695,7 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-28",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 185,
@@ -74706,8 +74706,8 @@ const CONFIG = {
       },
       {
         "code": "DKR-прав-29",
-        "innerDb": 0,
-        "inch": "-\"",
+        "innerDb": 50,
+        "inch": "",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -75076,7 +75076,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "DKJ-прав-1",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "3/16\"",
         "outerDb": 0,
         "pressure": 350,
@@ -75087,7 +75087,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-2",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 350,
@@ -75098,7 +75098,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-3",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 350,
@@ -75109,7 +75109,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-4",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75120,7 +75120,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-5",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 350,
@@ -75131,7 +75131,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-6",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75142,7 +75142,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-7",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75153,7 +75153,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-8",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75164,7 +75164,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-9",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75175,7 +75175,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-10",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75186,7 +75186,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-11",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75197,7 +75197,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-12",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 200,
@@ -75208,7 +75208,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-13",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75219,7 +75219,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-14",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 200,
@@ -75230,7 +75230,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-15",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 200,
@@ -75241,7 +75241,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-16",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 200,
@@ -75252,7 +75252,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-17",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 200,
@@ -75263,7 +75263,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-18",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 200,
@@ -75274,7 +75274,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-19",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 200,
@@ -75285,7 +75285,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-20",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 160,
@@ -75296,7 +75296,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-21",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 160,
@@ -75307,7 +75307,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-22",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 200,
@@ -75318,7 +75318,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-23",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 125,
@@ -75329,7 +75329,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-24",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 125,
@@ -75340,7 +75340,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-25",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 100,
@@ -75351,7 +75351,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-26",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 100,
@@ -75362,7 +75362,7 @@ const CONFIG = {
       },
       {
         "code": "DKJ-прав-27",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
@@ -75421,7 +75421,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "DKOL-прав-1",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "3/16\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75432,7 +75432,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-2",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75443,7 +75443,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-3",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75454,7 +75454,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-4",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75465,7 +75465,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-5",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75476,7 +75476,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-6",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75487,7 +75487,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-7",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75498,7 +75498,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-8",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75509,7 +75509,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-9",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75520,7 +75520,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-10",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75531,7 +75531,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-11",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75542,7 +75542,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-12",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75553,7 +75553,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-13",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75564,7 +75564,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-14",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 250,
@@ -75575,7 +75575,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-15",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 160,
@@ -75586,7 +75586,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-16",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 160,
@@ -75597,7 +75597,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-17",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 160,
@@ -75608,7 +75608,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-18",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 160,
@@ -75619,7 +75619,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-19",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 160,
@@ -75630,7 +75630,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-20",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 160,
@@ -75641,7 +75641,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-21",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 160,
@@ -75652,7 +75652,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-22",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 100,
@@ -75663,7 +75663,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-23",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 100,
@@ -75674,7 +75674,7 @@ const CONFIG = {
       },
       {
         "code": "DKOL-прав-24",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 100,
@@ -75733,7 +75733,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "DKL-прав-1",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -75744,7 +75744,7 @@ const CONFIG = {
       },
       {
         "code": "DKL-прав-2",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -75755,7 +75755,7 @@ const CONFIG = {
       },
       {
         "code": "DKL-прав-3",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 0,
@@ -75766,7 +75766,7 @@ const CONFIG = {
       },
       {
         "code": "DKL-прав-4",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -75777,7 +75777,7 @@ const CONFIG = {
       },
       {
         "code": "DKL-прав-5",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
@@ -75788,7 +75788,7 @@ const CONFIG = {
       },
       {
         "code": "DKL-прав-6",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -75799,7 +75799,7 @@ const CONFIG = {
       },
       {
         "code": "DKL-прав-7",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -75810,7 +75810,7 @@ const CONFIG = {
       },
       {
         "code": "DKL-прав-8",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -75821,7 +75821,7 @@ const CONFIG = {
       },
       {
         "code": "DKL-прав-9",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -75832,7 +75832,7 @@ const CONFIG = {
       },
       {
         "code": "DKL-прав-10",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -75843,7 +75843,7 @@ const CONFIG = {
       },
       {
         "code": "DKL-прав-11",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -75854,7 +75854,7 @@ const CONFIG = {
       },
       {
         "code": "DKL-прав-12",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -75865,7 +75865,7 @@ const CONFIG = {
       },
       {
         "code": "DKL-прав-13",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
@@ -75876,7 +75876,7 @@ const CONFIG = {
       },
       {
         "code": "DKL-прав-14",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
@@ -75887,7 +75887,7 @@ const CONFIG = {
       },
       {
         "code": "DKL-прав-15",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
@@ -75898,7 +75898,7 @@ const CONFIG = {
       },
       {
         "code": "DKL-прав-16",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -75909,7 +75909,7 @@ const CONFIG = {
       },
       {
         "code": "DKL-прав-17",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
@@ -75967,7 +75967,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "AGR-1",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "2\"",
         "outerDb": 0,
         "pressure": 165,
@@ -75978,7 +75978,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-2",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 185,
@@ -75989,7 +75989,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-3",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 210,
@@ -76000,7 +76000,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-4",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 185,
@@ -76011,7 +76011,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-5",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 210,
@@ -76022,7 +76022,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-6",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 280,
@@ -76033,7 +76033,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-7",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 280,
@@ -76044,7 +76044,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-8",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76055,7 +76055,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-9",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76066,7 +76066,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-10",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76077,7 +76077,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-11",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76088,7 +76088,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-12",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76099,7 +76099,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-13",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76110,7 +76110,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-14",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 415,
@@ -76121,7 +76121,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-15",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 415,
@@ -76132,7 +76132,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-16",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 415,
@@ -76143,7 +76143,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-17",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 415,
@@ -76154,7 +76154,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-18",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 450,
@@ -76165,7 +76165,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-19",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 450,
@@ -76176,7 +76176,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-20",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 450,
@@ -76187,7 +76187,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-21",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76198,7 +76198,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-22",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76209,7 +76209,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-23",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76220,7 +76220,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-24",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 450,
@@ -76231,7 +76231,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-25",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 450,
@@ -76242,7 +76242,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-26",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 450,
@@ -76253,7 +76253,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-27",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "3/16\"",
         "outerDb": 0,
         "pressure": 415,
@@ -76264,7 +76264,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-28",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76275,7 +76275,7 @@ const CONFIG = {
       },
       {
         "code": "AGR-29",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "3/16\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76316,7 +76316,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "Чаша TF-1",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -76327,7 +76327,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша TF-2",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 0,
@@ -76338,7 +76338,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша TF-3",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -76349,7 +76349,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша TF-4",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
@@ -76360,7 +76360,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша TF-5",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -76371,7 +76371,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша TF-6",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
@@ -76382,7 +76382,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша TF-7",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
@@ -76423,7 +76423,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "AGJ-1",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 450,
@@ -76434,7 +76434,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-2",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 450,
@@ -76445,7 +76445,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-3",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 450,
@@ -76456,7 +76456,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-4",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76467,7 +76467,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-5",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76478,7 +76478,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-6",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76489,7 +76489,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-7",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76500,7 +76500,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-8",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 450,
@@ -76511,7 +76511,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-9",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 450,
@@ -76522,7 +76522,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-10",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 415,
@@ -76533,7 +76533,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-11",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76544,7 +76544,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-12",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 415,
@@ -76555,7 +76555,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-13",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76566,7 +76566,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-14",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76577,7 +76577,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-15",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76588,7 +76588,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-16",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76599,7 +76599,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-17",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76610,7 +76610,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-18",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76621,7 +76621,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-19",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 280,
@@ -76632,7 +76632,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-20",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 280,
@@ -76643,7 +76643,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-21",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 280,
@@ -76654,7 +76654,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-22",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 280,
@@ -76665,7 +76665,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-23",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 280,
@@ -76676,7 +76676,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-24",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 140,
@@ -76687,7 +76687,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-25",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 140,
@@ -76698,7 +76698,7 @@ const CONFIG = {
       },
       {
         "code": "AGJ-26",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "2\"",
         "outerDb": 0,
         "pressure": 105,
@@ -76739,7 +76739,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "AGM-1",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "3/16\"",
         "outerDb": 0,
         "pressure": 400,
@@ -76750,7 +76750,7 @@ const CONFIG = {
       },
       {
         "code": "AGM-2",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "3/16\"",
         "outerDb": 0,
         "pressure": 400,
@@ -76761,7 +76761,7 @@ const CONFIG = {
       },
       {
         "code": "AGM-3",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 400,
@@ -76772,7 +76772,7 @@ const CONFIG = {
       },
       {
         "code": "AGM-4",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 400,
@@ -76783,7 +76783,7 @@ const CONFIG = {
       },
       {
         "code": "AGM-5",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 400,
@@ -76794,7 +76794,7 @@ const CONFIG = {
       },
       {
         "code": "AGM-6",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 400,
@@ -76805,7 +76805,7 @@ const CONFIG = {
       },
       {
         "code": "AGM-7",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 400,
@@ -76816,7 +76816,7 @@ const CONFIG = {
       },
       {
         "code": "AGM-8",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 0,
@@ -76827,7 +76827,7 @@ const CONFIG = {
       },
       {
         "code": "AGM-9",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76838,7 +76838,7 @@ const CONFIG = {
       },
       {
         "code": "AGM-10",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76849,7 +76849,7 @@ const CONFIG = {
       },
       {
         "code": "AGM-11",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 400,
@@ -76860,7 +76860,7 @@ const CONFIG = {
       },
       {
         "code": "AGM-12",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76871,7 +76871,7 @@ const CONFIG = {
       },
       {
         "code": "AGM-13",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76882,7 +76882,7 @@ const CONFIG = {
       },
       {
         "code": "AGM-14",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 0,
@@ -76893,7 +76893,7 @@ const CONFIG = {
       },
       {
         "code": "AGM-15",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76904,7 +76904,7 @@ const CONFIG = {
       },
       {
         "code": "AGM-16",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 350,
@@ -76915,7 +76915,7 @@ const CONFIG = {
       },
       {
         "code": "AGM-17",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
@@ -76926,7 +76926,7 @@ const CONFIG = {
       },
       {
         "code": "AGM-18",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 200,
@@ -76937,7 +76937,7 @@ const CONFIG = {
       },
       {
         "code": "AGM-19",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 125,
@@ -76978,7 +76978,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "CST-1",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -76989,8 +76989,8 @@ const CONFIG = {
       },
       {
         "code": "CST-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 6,
+        "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -77000,8 +77000,8 @@ const CONFIG = {
       },
       {
         "code": "CST-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 8,
+        "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -77011,8 +77011,8 @@ const CONFIG = {
       },
       {
         "code": "CST-4",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 10,
+        "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -77022,8 +77022,8 @@ const CONFIG = {
       },
       {
         "code": "CST-5",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 12,
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -77033,8 +77033,8 @@ const CONFIG = {
       },
       {
         "code": "CST-6",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 16,
+        "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -77044,8 +77044,8 @@ const CONFIG = {
       },
       {
         "code": "CST-7",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 20,
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -77055,8 +77055,8 @@ const CONFIG = {
       },
       {
         "code": "CST-8",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 25,
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -77066,8 +77066,8 @@ const CONFIG = {
       },
       {
         "code": "CST-9",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 32,
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -77077,8 +77077,8 @@ const CONFIG = {
       },
       {
         "code": "CST-10",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 38,
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -77088,8 +77088,8 @@ const CONFIG = {
       },
       {
         "code": "CST-11",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -77130,7 +77130,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "DKOS-прав-1",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 210,
@@ -77141,7 +77141,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-2",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 210,
@@ -77152,7 +77152,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-3",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 280,
@@ -77163,7 +77163,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-4",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 280,
@@ -77174,7 +77174,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-5",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 280,
@@ -77185,7 +77185,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-6",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 350,
@@ -77196,7 +77196,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-7",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 350,
@@ -77207,7 +77207,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-8",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 350,
@@ -77218,7 +77218,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-9",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 350,
@@ -77229,7 +77229,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-10",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 350,
@@ -77240,7 +77240,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-11",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 350,
@@ -77251,7 +77251,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-12",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 420,
@@ -77262,7 +77262,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-13",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 420,
@@ -77273,7 +77273,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-14",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 420,
@@ -77284,7 +77284,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-15",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 420,
@@ -77295,7 +77295,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-16",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 450,
@@ -77306,7 +77306,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-17",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 450,
@@ -77317,7 +77317,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-18",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 450,
@@ -77328,7 +77328,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-19",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 450,
@@ -77339,7 +77339,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-20",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 350,
@@ -77350,7 +77350,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-21",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 350,
@@ -77361,7 +77361,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-22",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 450,
@@ -77372,7 +77372,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-23",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 450,
@@ -77383,7 +77383,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-24",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 450,
@@ -77394,7 +77394,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-25",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 450,
@@ -77405,7 +77405,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-26",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "3/16\"",
         "outerDb": 0,
         "pressure": 420,
@@ -77416,7 +77416,7 @@ const CONFIG = {
       },
       {
         "code": "DKOS-прав-27",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 185,
@@ -77458,7 +77458,7 @@ const CONFIG = {
     "variants": [
       {
         "code": "CEL-1",
-        "innerDb": 0,
+        "innerDb": 4,
         "inch": "5/32\"",
         "outerDb": 0,
         "pressure": 250,
@@ -77469,7 +77469,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-2",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "3/16\"",
         "outerDb": 0,
         "pressure": 250,
@@ -77480,7 +77480,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-3",
-        "innerDb": 0,
+        "innerDb": 5,
         "inch": "3/16\"",
         "outerDb": 0,
         "pressure": 250,
@@ -77491,7 +77491,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-4",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 250,
@@ -77502,7 +77502,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-5",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 250,
@@ -77513,7 +77513,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-6",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 250,
@@ -77524,7 +77524,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-7",
-        "innerDb": 0,
+        "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 250,
@@ -77535,7 +77535,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-8",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 250,
@@ -77546,7 +77546,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-9",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 250,
@@ -77557,7 +77557,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-10",
-        "innerDb": 0,
+        "innerDb": 8,
         "inch": "5/16\"",
         "outerDb": 0,
         "pressure": 250,
@@ -77568,7 +77568,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-11",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 250,
@@ -77579,7 +77579,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-12",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 250,
@@ -77590,7 +77590,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-13",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 250,
@@ -77601,7 +77601,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-14",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 250,
@@ -77612,7 +77612,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-15",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 250,
@@ -77623,7 +77623,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-16",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 160,
@@ -77634,7 +77634,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-17",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 160,
@@ -77645,7 +77645,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-18",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 160,
@@ -77656,7 +77656,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-19",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 160,
@@ -77667,7 +77667,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-20",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 160,
@@ -77678,7 +77678,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-21",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 160,
@@ -77689,7 +77689,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-22",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 160,
@@ -77700,7 +77700,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-23",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 160,
@@ -77711,7 +77711,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-24",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 160,
@@ -77722,7 +77722,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-25",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 160,
@@ -77733,7 +77733,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-26",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 100,
@@ -77744,7 +77744,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-27",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 100,
@@ -77755,7 +77755,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-28",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 100,
@@ -77766,7 +77766,7 @@ const CONFIG = {
       },
       {
         "code": "CEL-29",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 100,
@@ -78142,6 +78142,7 @@ CONFIG.resetToDefaults = function() {
   localStorage.removeItem("hydrolux_builder_options");
   window.location.reload();
 };
+
 
 
 

@@ -43,7 +43,7 @@ function getCategoryIcon(name) {
   return "📁";
 }
 
-const csvPath = "/Users/bozhidarbelchev/Downloads/hydrolux_ocar740 (1).csv";
+const csvPath = "/Users/bozhidarbelchev/Downloads/hydrolux_ocar740 (2).csv";
 if (!fs.existsSync(csvPath)) {
   console.error("Error: CSV file not found at " + csvPath);
   process.exit(1);
@@ -54,7 +54,16 @@ const csvData = fs.readFileSync(csvPath, 'utf-8');
 const lines = csvData.split(/\r?\n/);
 
 let currentTable = null;
-const tables = {};
+const tables = {
+  manufacturer: [],
+  category_description: [],
+  category: [],
+  product_to_category: [],
+  product_image: [],
+  product_description: [],
+  product_option_value: [],
+  product: []
+};
 
 for (let line of lines) {
   if (!line.trim()) continue;
@@ -127,6 +136,18 @@ for (let line of lines) {
 }
 
 console.log("Parsing metadata tables...");
+
+// Load previously extracted brands as fallback
+let extractedBrands = {};
+try {
+  const brandsPath = path.join(__dirname, 'js', 'extracted_brands.json');
+  if (fs.existsSync(brandsPath)) {
+    extractedBrands = JSON.parse(fs.readFileSync(brandsPath, 'utf-8'));
+    console.log(`Loaded ${Object.keys(extractedBrands).length} extracted brands from backup.`);
+  }
+} catch (e) {
+  console.log("Warning: could not load extracted brands:", e.message);
+}
 
 function resolveImageUrl(img) {
   if (!img) return "";
@@ -298,7 +319,23 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
     return isNaN(f) ? 0 : f;
   };
 
-  let inner = params["Вътрешен диаметър (мм)"] || params["Вътрешен диаметър (цол)"] || params["Вътрешен диаметър (inch)"];
+  // Normalize all keys of the params object to lowercase, trimmed
+  const norm = {};
+  for (let key in params) {
+    if (params[key] !== undefined && params[key] !== null) {
+      norm[key.trim().toLowerCase().replace(/\s+/g, ' ')] = params[key].toString().trim();
+    }
+  }
+
+  // 1. Inner diameter / Вътрешен диаметър
+  let inner = norm["вътрешен диаметър (мм)"] || 
+               norm["вътрешен размер (mm)"] || 
+               norm["вътрешен диаметър (цол)"] || 
+               norm["вътрешен диаметър (inch)"] || 
+               norm["dn"] || 
+               norm["inmm"] || 
+               norm["idmm"] ||
+               norm["вътр. ø (мм)"];
   if (inner) {
     const f = parseFloat(inner);
     v.innerDb = isNaN(f) ? inner : f;
@@ -306,42 +343,76 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
     v.innerDb = 0;
   }
   
-  let inch = params["Inch"] || params["Вътрешен диаметър (цол)"] || params["Вътрешен диаметър (inch)"];
+  // 2. Inch size / Инчов размер
+  let inch = norm["inch"] || 
+             norm["цол"] || 
+             norm["инч"] || 
+             norm["ininch"] || 
+             norm["вътрешен диаметър (цол)"] || 
+             norm["вътрешен диаметър (inch)"];
   if (inch) {
-    v.inch = inch.toString().includes('"') ? inch : `${inch}"`;
+    if (inch === "-") {
+      v.inch = "";
+    } else {
+      v.inch = inch.toString().includes('"') ? inch : `${inch}"`;
+    }
   } else {
     v.inch = "";
   }
   
-  let outer = params["Външен диаметър (мм)"] || params["Външен диаметър (inch)"];
+  // 3. Outer diameter / Външен диаметър
+  let outer = norm["външен диаметър (мм)"] || 
+              norm["външен размер (mm)"] || 
+              norm["външен размер (мм)"] ||
+              norm["външен диаметър (inch)"] || 
+              norm["outmm"] || 
+              norm["odmm"] ||
+              norm["външ. ø (мм)"];
   if (outer) {
     v.outerDb = pFloat(outer);
   } else {
     v.outerDb = 0;
   }
   
-  let pressure = params["Работно налягане (bar)"] || params["Работно налягане (Bar)"];
+  // 4. Pressure / Работно налягане
+  let pressure = norm["работно налягане (bar)"] || 
+                 norm["работно налягане"] || 
+                 norm["работно нал."] || 
+                 norm["wpbar"] || 
+                 norm["maxbar"];
   if (pressure) {
     v.pressure = pFloat(pressure);
   } else {
     v.pressure = 0;
   }
   
-  let bend = params["Радиус на огъване"] || params["Радиус огъване"];
+  // 5. Bending radius / Радиус огъване
+  let bend = norm["радиус на огъване (мм)"] || 
+             norm["радиус на огъване"] || 
+             norm["радиус огъване"] || 
+             norm["radiusog"];
   if (bend) {
     v.bend = pFloat(bend);
   } else {
     v.bend = 0;
   }
   
-  let weight = params["Тегло (кг/м)"] || params["Тегло"];
+  // 6. Weight / Тегло
+  let weight = norm["тегло (кг/м)"] || 
+               norm["тегло"] || 
+               norm["wgm"];
   if (weight) {
     v.weight = pFloat(weight);
   } else {
     v.weight = 0;
   }
   
-  let rollLength = params["L"] || params["Дължина на ролката"] || params["Дълж. ролка"];
+  // 7. Roll length / Дължина на ролката
+  let rollLength = norm["дължина линейна (m)"] || 
+                   norm["дължина на ролката"] || 
+                   norm["дълж. ролка"] || 
+                   norm["l"] || 
+                   norm["sizeroll"];
   if (rollLength) {
     v.rollLength = pFloat(rollLength);
   } else {
@@ -396,7 +467,12 @@ for (let row of tables.product) {
 
   const descObj = productDescMap.get(id) || { name: `Продукт ${model}`, desc: "", tags: "" };
   const categories = prodToCatMap.get(id) || [];
-  const brand = manufacturerMap.get(mfrId) || "Хидролукс";
+  let brand = "Хидролукс";
+  if (extractedBrands[`prod-${id}`]) {
+    brand = extractedBrands[`prod-${id}`];
+  } else if (manufacturerMap.has(mfrId)) {
+    brand = manufacturerMap.get(mfrId);
+  }
   const mainImage = resolveImageUrl(image) || "assets/logo.webp";
   const addImages = (additionalImagesMap.get(id) || []).map(resolveImageUrl).filter(Boolean);
   const images = [mainImage, ...addImages];
