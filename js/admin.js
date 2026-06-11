@@ -898,6 +898,22 @@ const Admin = {
         75% { transform: rotate(4deg); }
         85% { transform: rotate(-4deg); }
       }
+
+      .category-draggable-row.dragging {
+        background-color: rgba(2, 132, 199, 0.08) !important;
+        opacity: 0.7;
+        outline: 2px dashed #0284c7;
+      }
+      .subcategory-draggable-item.dragging {
+        opacity: 0.6;
+        border: 2px dashed var(--primary) !important;
+        background-color: #f8fafc !important;
+      }
+      .subsubcategory-draggable-item.dragging {
+        opacity: 0.6;
+        border: 1.5px dashed var(--accent) !important;
+        background-color: #f8fafc !important;
+      }
     `;
     document.head.appendChild(style);
   },
@@ -1974,7 +1990,15 @@ const Admin = {
         }
         
         const touch = e.touches[0];
+        
+        // Disable pointer events temporarily on the dragged item
+        const origPE = draggedItem.style.pointerEvents;
+        draggedItem.style.pointerEvents = "none";
+        
         const element = document.elementFromPoint(touch.clientX, touch.clientY);
+        
+        draggedItem.style.pointerEvents = origPE;
+        
         if (!element) return;
         
         const hoverItem = element.closest(".image-preview-wrapper");
@@ -2727,8 +2751,11 @@ const Admin = {
 
     listContainer.innerHTML = this.tempSubcategories.map(sub => {
       const nestedList = (sub.subcategories || []).map(ss => `
-        <div style="display: flex; justify-content: space-between; align-items: center; padding: 4px 8px; background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 0.8rem; margin-bottom: 4px;">
-          <span>📄 ${ss.name}</span>
+        <div class="subsubcategory-draggable-item" draggable="true" data-sub-id="${sub.id}" data-id="${ss.id}" style="display: flex; justify-content: space-between; align-items: center; padding: 6px 10px; background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 0.8rem; margin-bottom: 4px; cursor: move; user-select: none;">
+          <span style="display: flex; align-items: center; gap: 6px;">
+            <span style="color: #94a3b8; cursor: move; user-select: none;">⠿</span>
+            📄 ${ss.name}
+          </span>
           <button type="button" class="btn-icon-danger" onclick="Admin.deleteSubSubcategory('${sub.id}', '${ss.id}')" style="width: 20px; height: 20px; font-size: 0.75rem; line-height: 1; padding: 0; display: flex; align-items: center; justify-content: center;">✕</button>
         </div>
       `).join("");
@@ -2746,7 +2773,9 @@ const Admin = {
           <!-- Nested Sub-subcategories list -->
           <div style="padding-left: 15px; border-left: 2px solid var(--accent); margin-bottom: 8px;">
             <div style="font-size: 0.75rem; font-weight: bold; text-transform: uppercase; color: #64748b; margin-bottom: 6px;">Под-подкатегории:</div>
-            ${nestedList || `<span class="text-muted font-xs" style="font-style: italic; display: block; margin-bottom: 4px;">Няма въведени под-подкатегории.</span>`}
+            <div class="subsubcategory-list-container" data-sub-id="${sub.id}">
+              ${nestedList || `<span class="text-muted font-xs" style="font-style: italic; display: block; margin-bottom: 4px;">Няма въведени под-подкатегории.</span>`}
+            </div>
           </div>
 
           <!-- Add Nested Sub-subcategory form -->
@@ -2759,6 +2788,7 @@ const Admin = {
     }).join("");
 
     this.setupSubcategoriesDragAndDrop();
+    this.setupSubSubcategoriesDragAndDrop();
   },
 
   setupCategoriesDragAndDrop() {
@@ -2824,7 +2854,15 @@ const Admin = {
         if (e.cancelable) e.preventDefault();
 
         const touch = e.touches[0];
+        
+        // Disable pointer events temporarily on the dragged item
+        const origPE = draggedItem.style.pointerEvents;
+        draggedItem.style.pointerEvents = "none";
+        
         const element = document.elementFromPoint(touch.clientX, touch.clientY);
+        
+        draggedItem.style.pointerEvents = origPE;
+        
         if (!element) return;
 
         const hoverItem = element.closest(".category-draggable-row");
@@ -2922,7 +2960,15 @@ const Admin = {
         if (e.cancelable) e.preventDefault();
 
         const touch = e.touches[0];
+        
+        // Disable pointer events temporarily on the dragged item
+        const origPE = draggedItem.style.pointerEvents;
+        draggedItem.style.pointerEvents = "none";
+        
         const element = document.elementFromPoint(touch.clientX, touch.clientY);
+        
+        draggedItem.style.pointerEvents = origPE;
+        
         if (!element) return;
 
         const hoverItem = element.closest(".subcategory-draggable-item");
@@ -2953,6 +2999,116 @@ const Admin = {
 
         Admin.tempSubcategories = reorderedSubs;
         Admin.renderSubcategoriesList();
+      });
+    });
+  },
+
+  setupSubSubcategoriesDragAndDrop() {
+    const listContainers = document.querySelectorAll(".subsubcategory-list-container");
+    if (listContainers.length === 0 || this.activeTab !== "categories" || !this.tempSubcategories) return;
+
+    let draggedItem = null;
+
+    listContainers.forEach(container => {
+      const subId = container.getAttribute("data-sub-id");
+      const subObj = this.tempSubcategories.find(s => s.id === subId);
+      if (!subObj) return;
+
+      container.querySelectorAll(".subsubcategory-draggable-item").forEach(item => {
+        // 1. Mouse Drag (Desktop)
+        item.addEventListener("dragstart", (e) => {
+          draggedItem = item;
+          item.classList.add("dragging");
+          e.dataTransfer.effectAllowed = "move";
+        });
+
+        item.addEventListener("dragover", (e) => {
+          e.preventDefault();
+          e.dataTransfer.dropEffect = "move";
+        });
+
+        item.addEventListener("drop", (e) => {
+          e.preventDefault();
+          if (item !== draggedItem) {
+            const children = Array.from(container.children);
+            const draggedIdx = children.indexOf(draggedItem);
+            const targetIdx = children.indexOf(item);
+
+            if (draggedIdx < targetIdx) {
+              container.insertBefore(draggedItem, item.nextSibling);
+            } else {
+              container.insertBefore(draggedItem, item);
+            }
+
+            // Sync order with tempSubcategories' sub.subcategories
+            const reorderedSubSubs = [];
+            Array.from(container.children).forEach(node => {
+              const subsubId = node.getAttribute("data-id");
+              const subsubObj = subObj.subcategories.find(ss => ss.id === subsubId);
+              if (subsubObj) reorderedSubSubs.push(subsubObj);
+            });
+
+            subObj.subcategories = reorderedSubSubs;
+            Admin.renderSubcategoriesList();
+          }
+        });
+
+        item.addEventListener("dragend", () => {
+          item.classList.remove("dragging");
+          draggedItem = null;
+        });
+
+        // 2. Touch Drag (Mobile)
+        item.addEventListener("touchstart", (e) => {
+          draggedItem = item;
+          item.classList.add("dragging");
+        }, { passive: true });
+
+        item.addEventListener("touchmove", (e) => {
+          if (!draggedItem) return;
+          if (e.cancelable) e.preventDefault();
+
+          const touch = e.touches[0];
+          
+          // Disable pointer events temporarily on the dragged item
+          const origPE = draggedItem.style.pointerEvents;
+          draggedItem.style.pointerEvents = "none";
+          
+          const element = document.elementFromPoint(touch.clientX, touch.clientY);
+          
+          draggedItem.style.pointerEvents = origPE;
+          
+          if (!element) return;
+
+          const hoverItem = element.closest(".subsubcategory-draggable-item");
+          if (hoverItem && hoverItem !== draggedItem && hoverItem.parentNode === container) {
+            const children = Array.from(container.children);
+            const draggedIdx = children.indexOf(draggedItem);
+            const hoverIdx = children.indexOf(hoverItem);
+
+            if (draggedIdx < hoverIdx) {
+              container.insertBefore(draggedItem, hoverItem.nextSibling);
+            } else {
+              container.insertBefore(draggedItem, hoverItem);
+            }
+          }
+        }, { passive: false });
+
+        item.addEventListener("touchend", () => {
+          if (!draggedItem) return;
+          item.classList.remove("dragging");
+
+          // Sync order with tempSubcategories' sub.subcategories
+          const reorderedSubSubs = [];
+          Array.from(container.children).forEach(node => {
+            const subsubId = node.getAttribute("data-id");
+            const subsubObj = subObj.subcategories.find(ss => ss.id === subsubId);
+            if (subsubObj) reorderedSubSubs.push(subsubObj);
+          });
+
+          subObj.subcategories = reorderedSubSubs;
+          Admin.renderSubcategoriesList();
+        });
       });
     });
   },
