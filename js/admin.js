@@ -997,6 +997,7 @@ const Admin = {
     }
     if (this.activeTab === "categories") {
       this.renderSubcategoriesList();
+      this.setupCategoriesDragAndDrop();
     }
     if (this.activeTab === "orders") {
       this.loadOrders();
@@ -2253,8 +2254,8 @@ const Admin = {
         return productCats.includes(c.id);
       }).length;
       return `
-        <tr class="admin-table-row">
-          <td data-label="Икона"><span style="font-size: 1.4rem;">${c.icon || '📦'}</span></td>
+        <tr class="admin-table-row category-draggable-row" draggable="true" data-id="${c.id}" style="cursor: move;">
+          <td data-label="Икона"><span style="font-size: 1.4rem; display: flex; align-items: center; gap: 8px;"><span style="color: #94a3b8; cursor: move; user-select: none; font-size: 0.95rem;">⠿</span> ${c.icon || '📦'}</span></td>
           <td data-label="Име"><strong>${c.name}</strong></td>
           <td data-label="Брой продукти"><span class="admin-badge admin-badge-success">${productCount} продукта</span></td>
           <td data-label="Действия">
@@ -2733,9 +2734,12 @@ const Admin = {
       `).join("");
 
       return `
-        <div style="background-color: #f1f5f9; border-radius: 8px; padding: 12px; margin-bottom: 10px; border: 1px solid #cbd5e1;">
+        <div class="subcategory-draggable-item" draggable="true" data-id="${sub.id}" style="background-color: #f1f5f9; border-radius: 8px; padding: 12px; margin-bottom: 10px; border: 1px solid #cbd5e1; cursor: move;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-            <span style="font-weight: 700; font-size: 0.9rem; color: var(--primary);">📂 ${sub.name}</span>
+            <span style="font-weight: 700; font-size: 0.9rem; color: var(--primary); display: flex; align-items: center; gap: 6px;">
+              <span style="color: #94a3b8; cursor: move; user-select: none;">⠿</span>
+              📂 ${sub.name}
+            </span>
             <button type="button" class="btn-admin-action btn-admin-danger" onclick="Admin.deleteSubcategory('${sub.id}')" style="padding: 4px 8px; font-size: 0.75rem; border-radius: 6px;">✕ Изтрий</button>
           </div>
           
@@ -2753,6 +2757,204 @@ const Admin = {
         </div>
       `;
     }).join("");
+
+    this.setupSubcategoriesDragAndDrop();
+  },
+
+  setupCategoriesDragAndDrop() {
+    const tableBody = document.querySelector(".admin-table tbody");
+    if (!tableBody || this.activeTab !== "categories") return;
+
+    let draggedItem = null;
+
+    tableBody.querySelectorAll(".category-draggable-row").forEach(item => {
+      // 1. Mouse Drag (Desktop)
+      item.addEventListener("dragstart", (e) => {
+        draggedItem = item;
+        item.classList.add("dragging");
+        e.dataTransfer.effectAllowed = "move";
+      });
+
+      item.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = "move";
+      });
+
+      item.addEventListener("drop", (e) => {
+        e.preventDefault();
+        if (item !== draggedItem) {
+          const children = Array.from(tableBody.children);
+          const draggedIdx = children.indexOf(draggedItem);
+          const targetIdx = children.indexOf(item);
+
+          if (draggedIdx < targetIdx) {
+            tableBody.insertBefore(draggedItem, item.nextSibling);
+          } else {
+            tableBody.insertBefore(draggedItem, item);
+          }
+
+          // Sync order with CONFIG.categories
+          const reorderedCats = [];
+          Array.from(tableBody.children).forEach(row => {
+            const catId = row.getAttribute("data-id");
+            const catObj = CONFIG.categories.find(c => c.id === catId);
+            if (catObj) reorderedCats.push(catObj);
+          });
+
+          CONFIG.categories = reorderedCats;
+          CONFIG.saveState();
+          Admin.propagateStateChanges();
+          Admin.render();
+        }
+      });
+
+      item.addEventListener("dragend", () => {
+        item.classList.remove("dragging");
+        draggedItem = null;
+      });
+
+      // 2. Touch Drag (Mobile)
+      item.addEventListener("touchstart", (e) => {
+        draggedItem = item;
+        item.classList.add("dragging");
+      }, { passive: true });
+
+      item.addEventListener("touchmove", (e) => {
+        if (!draggedItem) return;
+        if (e.cancelable) e.preventDefault();
+
+        const touch = e.touches[0];
+        const element = document.elementFromPoint(touch.clientX, touch.clientY);
+        if (!element) return;
+
+        const hoverItem = element.closest(".category-draggable-row");
+        if (hoverItem && hoverItem !== draggedItem && hoverItem.parentNode === tableBody) {
+          const children = Array.from(tableBody.children);
+          const draggedIdx = children.indexOf(draggedItem);
+          const hoverIdx = children.indexOf(hoverItem);
+
+          if (draggedIdx < hoverIdx) {
+            tableBody.insertBefore(draggedItem, hoverItem.nextSibling);
+          } else {
+            tableBody.insertBefore(draggedItem, hoverItem);
+          }
+        }
+      }, { passive: false });
+
+      item.addEventListener("touchend", () => {
+        if (!draggedItem) return;
+        item.classList.remove("dragging");
+
+        // Sync order with CONFIG.categories
+        const reorderedCats = [];
+        Array.from(tableBody.children).forEach(row => {
+          const catId = row.getAttribute("data-id");
+          const catObj = CONFIG.categories.find(c => c.id === catId);
+          if (catObj) reorderedCats.push(catObj);
+        });
+
+        CONFIG.categories = reorderedCats;
+        CONFIG.saveState();
+        Admin.propagateStateChanges();
+        Admin.render();
+      });
+    });
+  },
+
+  setupSubcategoriesDragAndDrop() {
+    const listContainer = document.getElementById("admin-subcategories-list");
+    if (!listContainer || this.activeTab !== "categories" || !this.tempSubcategories) return;
+
+    let draggedItem = null;
+
+    listContainer.querySelectorAll(".subcategory-draggable-item").forEach(item => {
+      // 1. Mouse Drag (Desktop)
+      item.addEventListener("dragstart", (e) => {
+        draggedItem = item;
+        item.classList.add("dragging");
+        e.dataTransfer.effectAllowed = "move";
+      });
+
+      item.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = "move";
+      });
+
+      item.addEventListener("drop", (e) => {
+        e.preventDefault();
+        if (item !== draggedItem) {
+          const children = Array.from(listContainer.children);
+          const draggedIdx = children.indexOf(draggedItem);
+          const targetIdx = children.indexOf(item);
+
+          if (draggedIdx < targetIdx) {
+            listContainer.insertBefore(draggedItem, item.nextSibling);
+          } else {
+            listContainer.insertBefore(draggedItem, item);
+          }
+
+          // Sync order with tempSubcategories
+          const reorderedSubs = [];
+          Array.from(listContainer.children).forEach(node => {
+            const subId = node.getAttribute("data-id");
+            const subObj = Admin.tempSubcategories.find(s => s.id === subId);
+            if (subObj) reorderedSubs.push(subObj);
+          });
+
+          Admin.tempSubcategories = reorderedSubs;
+          Admin.renderSubcategoriesList();
+        }
+      });
+
+      item.addEventListener("dragend", () => {
+        item.classList.remove("dragging");
+        draggedItem = null;
+      });
+
+      // 2. Touch Drag (Mobile)
+      item.addEventListener("touchstart", (e) => {
+        draggedItem = item;
+        item.classList.add("dragging");
+      }, { passive: true });
+
+      item.addEventListener("touchmove", (e) => {
+        if (!draggedItem) return;
+        if (e.cancelable) e.preventDefault();
+
+        const touch = e.touches[0];
+        const element = document.elementFromPoint(touch.clientX, touch.clientY);
+        if (!element) return;
+
+        const hoverItem = element.closest(".subcategory-draggable-item");
+        if (hoverItem && hoverItem !== draggedItem && hoverItem.parentNode === listContainer) {
+          const children = Array.from(listContainer.children);
+          const draggedIdx = children.indexOf(draggedItem);
+          const hoverIdx = children.indexOf(hoverItem);
+
+          if (draggedIdx < hoverIdx) {
+            listContainer.insertBefore(draggedItem, hoverItem.nextSibling);
+          } else {
+            listContainer.insertBefore(draggedItem, hoverItem);
+          }
+        }
+      }, { passive: false });
+
+      item.addEventListener("touchend", () => {
+        if (!draggedItem) return;
+        item.classList.remove("dragging");
+
+        // Sync order with tempSubcategories
+        const reorderedSubs = [];
+        Array.from(listContainer.children).forEach(node => {
+          const subId = node.getAttribute("data-id");
+          const subObj = Admin.tempSubcategories.find(s => s.id === subId);
+          if (subObj) reorderedSubs.push(subObj);
+        });
+
+        Admin.tempSubcategories = reorderedSubs;
+        Admin.renderSubcategoriesList();
+      });
+    });
   },
 
   addSubcategory() {
