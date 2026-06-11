@@ -362,6 +362,31 @@ function parseParams(paramStr) {
   return params;
 }
 
+function parseInchToFloat(inchStr) {
+  if (!inchStr) return 0;
+  let s = inchStr.replace(/"/g, '').trim();
+  if (!s || s === '-') return 0;
+  if (/^\d+(\.\d+)?$/.test(s)) {
+    return parseFloat(s);
+  }
+  let parts = s.split(/[\s-]+/);
+  if (parts.length === 2) {
+    let whole = parseFloat(parts[0]);
+    let frac = parts[1].split('/');
+    if (frac.length === 2) {
+      return whole + (parseFloat(frac[0]) / parseFloat(frac[1]));
+    }
+  }
+  if (s.includes('/')) {
+    let frac = s.split('/');
+    if (frac.length === 2) {
+      return parseFloat(frac[0]) / parseFloat(frac[1]);
+    }
+  }
+  let val = parseFloat(s);
+  return isNaN(val) ? 0 : val;
+}
+
 // Helper to extract variant
 function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
   const v = {
@@ -767,7 +792,11 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
     "оплетки (nr)",
     "брой оплетки",
     "брой на оплетките",
-    "оплетки краища (nr)"
+    "оплетки краища (nr)",
+    "брой вложки",
+    "брой вложки (nr)",
+    "вложки",
+    "брои вложки"
   ]);
   if (braidsVal && braidsVal !== "-") {
     v.braidsDb = braidsVal;
@@ -870,8 +899,40 @@ for (let row of tables.product) {
 
   // Parse variants
   const optValues = productOptionValuesMap.get(id) || [];
-  const variants = optValues.map((opt, vIdx) => {
-    return extractVariant(opt.params, price, opt.price, opt.prefix, `${sku || model || ('prod-' + id)}-${vIdx + 1}`);
+  let variants = optValues.map((opt) => {
+    return extractVariant(opt.params, price, opt.price, opt.prefix, "");
+  });
+
+  // Sort variants: inner diameter -> outer diameter -> inch fraction -> pressure
+  variants.sort((a, b) => {
+    if (a.innerDb !== b.innerDb) {
+      return (a.innerDb || 0) - (b.innerDb || 0);
+    }
+    if (a.outerDb !== b.outerDb) {
+      return (a.outerDb || 0) - (b.outerDb || 0);
+    }
+    const aInch = parseInchToFloat(a.inch);
+    const bInch = parseInchToFloat(b.inch);
+    if (aInch !== bInch) {
+      return aInch - bInch;
+    }
+    if (a.pressure !== b.pressure) {
+      return (a.pressure || 0) - (b.pressure || 0);
+    }
+    return 0;
+  });
+
+  // Assign variant codes (SKU / Code generation)
+  variants.forEach((v, vIdx) => {
+    const baseCode = sku || model || `prod-${id}`;
+    if (sku && v.innerDb > 0) {
+      // Reconstruct original OpenCart SKU (e.g., base code + inner size + outer size)
+      const innerStr = String(v.innerDb).replace(/\.0$/, '').replace('.', '');
+      const outerStr = v.outerDb > 0 ? String(v.outerDb).replace(/\.0$/, '').replace('.', '') : '';
+      v.code = `${baseCode}${innerStr}${outerStr}`;
+    } else {
+      v.code = `${baseCode}-${vIdx + 1}`;
+    }
   });
   
   // If no variants, create a single default variant
