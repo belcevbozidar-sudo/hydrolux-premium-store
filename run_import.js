@@ -151,10 +151,11 @@ try {
 
 function resolveImageUrl(img) {
   if (!img) return "";
+  let url = img;
   if (img.startsWith("catalog/")) {
-    return `https://hydrolux.bg/image/${img}`;
+    url = `https://hydrolux.bg/image/${img}`;
   }
-  return img;
+  return encodeURI(url);
 }
 
 // 1. Manufacturers / Brands
@@ -375,7 +376,10 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
     "inmm",
     "idmm",
     "вътр. ø (мм)",
-    "id mm"
+    "id mm",
+    "маркуч dn",
+    "размер dn",
+    "dn (мм)"
   ]);
   if (inner) {
     const f = parseFloat(inner);
@@ -392,7 +396,14 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
     "ininch",
     "вътрешен диаметър (цол)",
     "вътрешен диаметър (inch)",
-    "id inch"
+    "id inch",
+    "резба",
+    "резба g",
+    "g",
+    "резба bspp",
+    "bspp",
+    "резба npt",
+    "npt"
   ]);
   if (inch) {
     if (inch === "-") {
@@ -483,6 +494,9 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
     price += diff;
   } else if (optPrefix === '-') {
     price -= diff;
+  }
+  if (price <= 0 && basePrice > 0) {
+    price = basePrice;
   }
   v.priceEur = parseFloat(price.toFixed(2));
   

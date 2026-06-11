@@ -487,7 +487,7 @@ const CONFIG = {
     "id": "70",
     "name": "Полиуретанови маркучи",
     "icon": "🌀",
-    "image": "https://hydrolux.bg/image/catalog/PUR Hose.png",
+    "image": "https://hydrolux.bg/image/catalog/PUR%20Hose.png",
     "subcategories": [
       {
         "id": "86",
@@ -573,7 +573,7 @@ const CONFIG = {
     "id": "67",
     "name": "Машини за Кербоване",
     "icon": "📁",
-    "image": "https://hydrolux.bg/image/catalog/Pressing .png",
+    "image": "https://hydrolux.bg/image/catalog/Pressing%20.png",
     "subcategories": [
       {
         "id": "148",
@@ -790,7 +790,7 @@ const CONFIG = {
     "description": "Гумен маркуч&nbsp; за транспорт на омаслен въздух от компресори, въздух, топла вода до &nbsp; 60°С и други неагресивни течности. Лек и гъвкав, подходящ за помпене на гуми, изграждане на въздушни пътища, маркуч за въздух в автомобили и други. Подси...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/markuch-za-vyzduh-voda-ALFAGOMMA-185-АА-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/markuch-za-vyzduh-voda-ALFAGOMMA-185-%D0%90%D0%90-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -866,7 +866,7 @@ const CONFIG = {
     "description": "Приложение: &nbsp;минерални масла, дизелово гориво и бензин с ароматно съдържание до 50% Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;черен, гладък NBR каучук Подсилване: &nbsp;високоякостни синтетични слоеве Покритие: &nbsp;черен, NBR/PVC ка...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-dizel-i-benzin-oil-p14-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/markuch-za-dizel-i-benzin-oil-p14-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -951,11 +951,11 @@ const CONFIG = {
     "description": "Армиран гъвкав маркуч&nbsp; за транспорт на въздух и вода, за индустриални и битови нужди, пренос на сгъстен и омаслен въздух.Произведен изцяло от каучук, осигуряващо му дълъг живот на екслоатация. Режим на работа:&nbsp; нагнетателен Вложка: &nbsp...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-vazduh-voda-20bar-PLW20-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ за въздух/markuch-za-vyzduh-i-voda-plw-20-bar-semperit-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ за въздух/semperit_gumen-markuch-vazduh-voda-20bar-PLW20_opletka-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-vazduh-voda-20bar-PLW20-1-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-vazduh-voda-20bar-PLW202-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/gumen-markuch-vazduh-voda-20bar-PLW20-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/markuch-za-vyzduh-i-voda-plw-20-bar-semperit-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/semperit_gumen-markuch-vazduh-voda-20bar-PLW20_opletka-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/gumen-markuch-vazduh-voda-20bar-PLW20-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/gumen-markuch-vazduh-voda-20bar-PLW202-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -1083,7 +1083,7 @@ const CONFIG = {
     "description": "PVC маркуч, тип шлаух е подходящ за транспортиране на течности, въздух, храни и фармацевтичната индустрия. Използва за пренасяне на алкохол до 20%. Използва се и в химическата промишленост.&nbsp; Режим на работа: &nbsp;агнетателен Конструкция:&nbs...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/pvc-shlauh-prozrachen-apd840-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/pvc-shlauh-prozrachen-apd840-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -1236,7 +1236,7 @@ const CONFIG = {
     "description": "Каучуков маркуч с маслоустойчиво покритие, за минерални масла, дизелово и бензиново гориво. Използва се за потопяеми помпи. &nbsp; Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;черен, гладък електропроводим NBR каучук Подсилване: &nbsp;високоя...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/markuch-s-masloustoichovo-pokritie-petrocar-20-l-l-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/markuch-s-masloustoichovo-pokritie-petrocar-20-l-l-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -1400,7 +1400,7 @@ const CONFIG = {
     "description": "Маркуч за въздух и вода при средно - високо налягане, пренос на сгъстен въздух. Подходящ за компресори, транспорт на омаслен сгъстен въздух при работно налягане на 20 bar. Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;черен, гладък синтетичен ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-vazduh-voda-20bar-LLAirWater-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/gumen-markuch-vazduh-voda-20bar-LLAirWater-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -1412,7 +1412,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 160,
         "rollLength": 100,
-        "priceEur": 0
+        "priceEur": 2.1
       },
       {
         "code": "LL air water -2",
@@ -1509,7 +1509,7 @@ const CONFIG = {
     "description": "Маркуч предназначен за отвеждане на излишното гориво в дизелови двигатели, гумена оплетка, обвит в текстил за обратна нафта. Режим на работа:&nbsp; нагнетателен Вложка:&nbsp; черна, гладка, озоно и маслоустойчива естествена гума - NBR Покритие:&nb...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/markuch-gorivo-tekstil-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/markuch-gorivo-tekstil-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -1585,8 +1585,8 @@ const CONFIG = {
     "description": "Армиран гъвкав маркуч &nbsp;предназначен за пренос на горива и минерални масла, въздух и вода. Приложение - в строителството, земеделието и други, подходящ за всички превозни средства. Подсилване: две вградени текстилни оплетки. Вътрешна камера: &...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-bezolovni-goriva-fub-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ и масло/gumen-markuch-gorivo-20bar-tuc20-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/markuch-za-bezolovni-goriva-fub-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/gumen-markuch-gorivo-20bar-tuc20-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -1673,7 +1673,7 @@ const CONFIG = {
     "description": "Маркуч за пренос на горива и масла в бензинови и дизелови автомобили. Не е подходящ за биогорива. Режим на работа:&nbsp; нагнетателен Вложка:&nbsp; NBR гума, устойчива на бензинови, дизелови, газови и етанолови горива Покритие:&nbsp; гума с патент...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/gumen-markuch-goriva-masla-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/gumen-markuch-goriva-masla-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -1782,8 +1782,8 @@ const CONFIG = {
     "description": "Армиран маркуч за пренос на минарални горива и масла, вода, въздух и други. Подходящ за автомобили, камиони, автобуси и други. Външна обвивка:&nbsp; маслоустойчива гума, антистатична, устоичива на износване и климатични условия. Подсилване: &nbsp;...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-bezolovni-goriva-fub-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ и масло/gumen-markuch-gorivo-20bar-tuc20-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/markuch-za-bezolovni-goriva-fub-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/gumen-markuch-gorivo-20bar-tuc20-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -1867,7 +1867,7 @@ const CONFIG = {
     "description": "Армиран маркуч за транспортиране на течности, вода, въздух, хранителни продукти на прах, лека химия и пестициди. Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;гладка, прозрачна от нетоксично PVC Подсилване: &nbsp;текстилна армировка от силнора...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/armiran-pvc-markuch-za-voda-OLYMPOSLD-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/armiran-pvc-markuch-za-voda-OLYMPOSLD-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -1981,7 +1981,7 @@ const CONFIG = {
     "description": "Маркучът за антифриз подходящ за пренасяне на гореща вода и охлаждащи течности със средна агресивност, прилагани в охладителните системи на двигателя и различни отоплителни системи. Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;черна, гладка&n...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ течност/markuch-za-antifriz-goreshta-voda-CALORWATER-120°C-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D1%82%D0%B5%D1%87%D0%BD%D0%BE%D1%81%D1%82/markuch-za-antifriz-goreshta-voda-CALORWATER-120%C2%B0C-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -2026,7 +2026,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0.39,
         "rollLength": 100,
-        "priceEur": 0
+        "priceEur": 7.05
       },
       {
         "code": "CWLL-5",
@@ -2059,7 +2059,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0.32,
         "rollLength": 100,
-        "priceEur": 0
+        "priceEur": 7.05
       },
       {
         "code": "CWLL-8",
@@ -2103,7 +2103,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0.22,
         "rollLength": 100,
-        "priceEur": 0
+        "priceEur": 7.05
       },
       {
         "code": "CWLL-12",
@@ -2114,7 +2114,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0.17,
         "rollLength": 100,
-        "priceEur": 0
+        "priceEur": 7.05
       },
       {
         "code": "CWLL-13",
@@ -2125,7 +2125,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0.14,
         "rollLength": 100,
-        "priceEur": 0
+        "priceEur": 7.05
       },
       {
         "code": "CWLL-14",
@@ -2136,7 +2136,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0.12,
         "rollLength": 100,
-        "priceEur": 0
+        "priceEur": 7.05
       }
     ]
   },
@@ -2168,7 +2168,7 @@ const CONFIG = {
     "description": "Маркуч за каналопочистване с вода под високо налягане &nbsp; - 250 bar. Вътрешна камера:&nbsp; синтетична гумена смес с вградени усилени текстилни оплетки&nbsp; Външна обвивка: &nbsp;синтетична гумена смес Температурен режим: &nbsp;-40°С +70°С",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/markuch-za-kanalopochistvane-25CAA-250bar-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/markuch-za-kanalopochistvane-25CAA-250bar-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -2239,9 +2239,9 @@ const CONFIG = {
     "description": "Маркуч за транспортиране на гореща вода, антифриз и други охладителни течности в двигателите на автомобили и други превозни средство. Режим на работа:&nbsp; нагнетателен Вложка:&nbsp; E PDM черен каучук Подсилване:&nbsp; синтетична текстилна оплет...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ течност/markuch-za-antifriz-goreshta-voda-Semperit-FKD-R-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ течност/markuch-za-antifriz-goreshta-voda-Semperit-FKD-R1-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ течност/markuch-za-antifriz-goreshta-voda-Semperit-FKD-R2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D1%82%D0%B5%D1%87%D0%BD%D0%BE%D1%81%D1%82/markuch-za-antifriz-goreshta-voda-Semperit-FKD-R-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D1%82%D0%B5%D1%87%D0%BD%D0%BE%D1%81%D1%82/markuch-za-antifriz-goreshta-voda-Semperit-FKD-R1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D1%82%D0%B5%D1%87%D0%BD%D0%BE%D1%81%D1%82/markuch-za-antifriz-goreshta-voda-Semperit-FKD-R2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -2319,7 +2319,7 @@ const CONFIG = {
         "bend": 80,
         "weight": 0.27,
         "rollLength": 50,
-        "priceEur": 0
+        "priceEur": 7.95
       },
       {
         "code": "FKDR-8",
@@ -2396,8 +2396,8 @@ const CONFIG = {
     "description": "Гъвкав каучуков маркуч за транспорт на безоловни горива, дизелови масла, биодизели за автомобили и други. Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;Черен гладък NBR каучук, устойчив на масла Подсилване: &nbsp;текстилна оплетка Покритие:&nb...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-bezolovni-goriva-fub-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-bezolovni-goriva-fub1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/markuch-za-bezolovni-goriva-fub-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/markuch-za-bezolovni-goriva-fub1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -2431,7 +2431,7 @@ const CONFIG = {
         "bend": 95,
         "weight": 0.15,
         "rollLength": 50,
-        "priceEur": 0
+        "priceEur": 4.2
       },
       {
         "code": "FUB-4",
@@ -2442,7 +2442,7 @@ const CONFIG = {
         "bend": 90,
         "weight": 0.14,
         "rollLength": 50,
-        "priceEur": 0
+        "priceEur": 4.2
       },
       {
         "code": "FUB-5",
@@ -2475,7 +2475,7 @@ const CONFIG = {
         "bend": 75,
         "weight": 0.13,
         "rollLength": 50,
-        "priceEur": 0
+        "priceEur": 4.2
       },
       {
         "code": "FUB-8",
@@ -2486,7 +2486,7 @@ const CONFIG = {
         "bend": 63,
         "weight": 0.1,
         "rollLength": 50,
-        "priceEur": 0
+        "priceEur": 4.2
       },
       {
         "code": "FUB-9",
@@ -2508,7 +2508,7 @@ const CONFIG = {
         "bend": 55,
         "weight": 0.11,
         "rollLength": 50,
-        "priceEur": 0
+        "priceEur": 4.2
       },
       {
         "code": "FUB-11",
@@ -2576,7 +2576,7 @@ const CONFIG = {
     "description": "МАРКУЧ ЗА АСПИРАЦИЯ&nbsp; &nbsp; &nbsp; &nbsp; Приложение:&nbsp; за транспортиране на въздух, прах и др. Режим на работа: &nbsp;смукателен Вложка: &nbsp;еластично PVC Подсилване: &nbsp;PVC спирала Температурен обхват: &nbsp;-10ºС до +60ºС Маркучит...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/pvc-markuch-za-zasmukvane-na-vyv-vyzduh-prah-abrazivni-chastici-urartu-st-white-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/pvc-markuch-za-zasmukvane-na-vyv-vyzduh-prah-abrazivni-chastici-urartu-st-white-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -2694,9 +2694,9 @@ const CONFIG = {
     "description": "Маркуч за транспортиране на вода, пестициди, препарати за растителна защита в течно състояние, течни торове и др. PVC маркучът за пестициди е усилен с якостна текстилна оплетка и издържа на високо налягане - 40 bar. Маркуч за пръскачки. Вътрешна к...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/markuch-za-pesticidi-Vinylfrut-40bar-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ за въздух/markuch-za-pesticidi-Vinylfrut-40bar2-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/ за въздух/markuch-za-pesticidi-Vinylfrut-40bar3-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/markuch-za-pesticidi-Vinylfrut-40bar-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/markuch-za-pesticidi-Vinylfrut-40bar2-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/markuch-za-pesticidi-Vinylfrut-40bar3-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -2803,11 +2803,11 @@ const CONFIG = {
     "description": "Армиран маркуч&nbsp; подходящ за пренос на въздух и вода, индустриални и битови нужди, маркуч за поливане, миене, използван в земеделието и строителството. Маркучът PLW10 се използва за пълнене и разтоварване на резервоари. Режим на работа:&nbsp; ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-vazduh-voda-20bar-PLW202-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-voda-10bar-PLW102-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-voda-10bar-PLW10-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-voda-10bar-PLW10_ROLKA-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-voda-10bar-PLW10-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/gumen-markuch-vazduh-voda-20bar-PLW202-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/gumen-markuch-voda-10bar-PLW102-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/gumen-markuch-voda-10bar-PLW10-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/gumen-markuch-voda-10bar-PLW10_ROLKA-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/gumen-markuch-voda-10bar-PLW10-1-1200x1200.png"
     ],
     "variants": [
       {
@@ -2852,7 +2852,7 @@ const CONFIG = {
         "bend": 130,
         "weight": 0.24,
         "rollLength": 50,
-        "priceEur": 0
+        "priceEur": 6.1
       }
     ]
   },
@@ -2893,7 +2893,7 @@ const CONFIG = {
     "description": "Гумен маркуч &nbsp;за транспортиране на студена и гореща вода, транспорт на омаслен въздух и много химически продукти. Подходящ за пестициди и торове. Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;EPDM гума, черна, гладка, електропроводима Под...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-torove-pesticidi-vyzduh-MP20EPDM-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/gumen-markuch-torove-pesticidi-vyzduh-MP20EPDM-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -3040,7 +3040,7 @@ const CONFIG = {
     "description": "PVC маркучът OLYMPOS ST е армиран маркуч подходящ за транспортиране на вода, течности, въздух, хранителни продукти на прах, сол, пестициди и лека химия. Маркуч за хранителни цели. Вложка: &nbsp;гладка, прозрачна от нетоксично PVC Покритие: &nbsp;п...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/armiran-pvc-markuch-za-voda-OLYMPOSLD-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/armiran-pvc-markuch-za-voda-OLYMPOSLD-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -3142,7 +3142,7 @@ const CONFIG = {
     "description": "Полиуретанов маркуч с метална спирала за засмукване на прах, въздух, маслени и бензинови пари. Подходящ за използване в&nbsp; хартиената, дървообработващата, текстилната, хранително-вкусовата и фармацевтичната промишленост. Режим на работа:&nbsp; ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/poliuretanov-markuch-za-zasmukvane-na-vyzduh-prah-P2PU-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/poliuretanov-markuch-za-zasmukvane-na-vyzduh-prah-P2PU-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -3176,7 +3176,7 @@ const CONFIG = {
         "bend": 315,
         "weight": 2.35,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 8.65
       },
       {
         "code": "P 2 PU-4",
@@ -3607,7 +3607,7 @@ const CONFIG = {
     "description": "Полиуретанов маркуч с помеднена метална спирала за засмукване на въздух, прах, маслени и бензинови пари, абразивни дребни частици, маркуч за аспирация, дървени стружки.&nbsp; Режим на работа:&nbsp; смукателно-нагнетателен Конструкция: &nbsp; Полие...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/poliuretanov-markuch-za-zasmukvane-na-vyzduh-prah-P2PU-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/poliuretanov-markuch-za-zasmukvane-na-vyzduh-prah-P2PU-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -3619,7 +3619,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.25
       },
       {
         "code": "P1N PU A-2",
@@ -3630,7 +3630,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.25
       },
       {
         "code": "P1N PU A-3",
@@ -3982,7 +3982,7 @@ const CONFIG = {
         "bend": 32,
         "weight": 0.22,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.25
       },
       {
         "code": "P1N PU A-35",
@@ -4056,7 +4056,7 @@ const CONFIG = {
     "description": "Маркуч предназначен за отвеждане на вода и неагресивни течности в различни промишлени и селскостопански приложение, транспорт на сгъстен въздух. Устойчив на високи натоварвания. Подсилен е с две текстилни оплетки между слоевете, което го прави уст...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/markuch-za-vyzduh-voda-ALFAGOMMA-155AA-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/markuch-za-vyzduh-voda-ALFAGOMMA-155AA-1200x1200.png"
     ],
     "variants": [
       {
@@ -4204,7 +4204,7 @@ const CONFIG = {
     "description": "Гумен маркуч за транспорт на гореща вода до &nbsp; 80°С &nbsp;, въздух, омаслен въздух от компресори и въздух при много високо налягане -&nbsp; 27 Bar. Вътрешна камера: &nbsp;SBR/NBR, устойчива на маслени изпарения&nbsp; Подсилване: &nbsp;две вгра...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/markuch-za-vyzduh-voda-ALFAGOMMA-157АK–yellow-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/markuch-za-vyzduh-voda-ALFAGOMMA-157%D0%90K%E2%80%93yellow-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -4282,8 +4282,8 @@ const CONFIG = {
     "description": "MULTIPURPOSE-202AA е гумен маркуч за транспортиране на вода и въздух, подходящ за средно агресивни химикали и гореща вода до&nbsp; 120°C. Режим на работа: &nbsp;смукателно-нагнетателен Вложка:&nbsp; черна гладка EPDM гума, електропроводима Подсилв...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/gimen-markuch-za-voda-vyzduh-i-leki-himikali-202АА-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ за въздух/gimen-markuch-za-voda-vyzduh-i-leki-himikali-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/gimen-markuch-za-voda-vyzduh-i-leki-himikali-202%D0%90%D0%90-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/gimen-markuch-za-voda-vyzduh-i-leki-himikali-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -4504,7 +4504,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 1.09,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 24.7
       },
       {
         "code": "202AA-21",
@@ -4526,7 +4526,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0.78,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 24.7
       },
       {
         "code": "202AA-23",
@@ -4548,7 +4548,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0.55,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 24.7
       },
       {
         "code": "202AA-25",
@@ -4559,7 +4559,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0.53,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 24.7
       },
       {
         "code": "202AA-26",
@@ -4570,7 +4570,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0.52,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 24.7
       },
       {
         "code": "202AA-27",
@@ -4581,7 +4581,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0.41,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 24.7
       },
       {
         "code": "202AA-28",
@@ -4592,7 +4592,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0.5,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 24.7
       }
     ]
   },
@@ -4629,11 +4629,11 @@ const CONFIG = {
     "description": "Армиран маркуч за помпене на гуми. За пренос на сгъстен и обезмаслен въздух. С UV защита и специално покритие, което не се напуква. Вложка: &nbsp;каучукова смес Подсилване: &nbsp; две вградени текстилни оплетки Покритие:&nbsp; каучукова смес, усто...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/_за помпене на гуми на камиони-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ за въздух/_за помпене на гуми - гайка1-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ за въздух/_за помпене на гуми - щипка-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ за въздух/_за помпене на гуми на камиони Semperit-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ за въздух/_за помпене на гуми - гайка-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/_%D0%B7%D0%B0%20%D0%BF%D0%BE%D0%BC%D0%BF%D0%B5%D0%BD%D0%B5%20%D0%BD%D0%B0%20%D0%B3%D1%83%D0%BC%D0%B8%20%D0%BD%D0%B0%20%D0%BA%D0%B0%D0%BC%D0%B8%D0%BE%D0%BD%D0%B8-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/_%D0%B7%D0%B0%20%D0%BF%D0%BE%D0%BC%D0%BF%D0%B5%D0%BD%D0%B5%20%D0%BD%D0%B0%20%D0%B3%D1%83%D0%BC%D0%B8%20-%20%D0%B3%D0%B0%D0%B9%D0%BA%D0%B01-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/_%D0%B7%D0%B0%20%D0%BF%D0%BE%D0%BC%D0%BF%D0%B5%D0%BD%D0%B5%20%D0%BD%D0%B0%20%D0%B3%D1%83%D0%BC%D0%B8%20-%20%D1%89%D0%B8%D0%BF%D0%BA%D0%B0-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/_%D0%B7%D0%B0%20%D0%BF%D0%BE%D0%BC%D0%BF%D0%B5%D0%BD%D0%B5%20%D0%BD%D0%B0%20%D0%B3%D1%83%D0%BC%D0%B8%20%D0%BD%D0%B0%20%D0%BA%D0%B0%D0%BC%D0%B8%D0%BE%D0%BD%D0%B8%20Semperit-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/_%D0%B7%D0%B0%20%D0%BF%D0%BE%D0%BC%D0%BF%D0%B5%D0%BD%D0%B5%20%D0%BD%D0%B0%20%D0%B3%D1%83%D0%BC%D0%B8%20-%20%D0%B3%D0%B0%D0%B9%D0%BA%D0%B0-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -4721,7 +4721,7 @@ const CONFIG = {
     "description": "Гумен плосък маркуч с накрайници за подаване на сгъстен въздух от мобилни компресори до пневматични чукове. Устойчив на горива, масла и слабо агресивни химически продукти с широк температурен диапазон. Режим на работа:&nbsp; нагнетателен Вложка:&n...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/plosyk-gumen-markuch-za-sgysten-vyzduh-s-nakrainici-za-pnevmochuk-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/plosyk-gumen-markuch-za-sgysten-vyzduh-s-nakrainici-za-pnevmochuk-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -4778,7 +4778,7 @@ const CONFIG = {
     "description": "Маркуч подходящ за транспорт на горещ въздух в цистерни за разтоварване на сухи смеси и насипни храни. Вътрешна камера: &nbsp;EPDM Подсилване: &nbsp;Една вградена текстилна оплетка, и метална спирала Външна обвивка: &nbsp;синя EPDM, устойчива на а...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/markuch-za-transport-na-goresht-vyzduh-hot-air-blower-902-le-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/markuch-za-transport-na-goresht-vyzduh-hot-air-blower-902-le-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -4864,7 +4864,7 @@ const CONFIG = {
     "description": "Каучуков маркуч, &nbsp; подходящ за почистване на канали под високо налягане, за оборудване на ВиК и комунални автомобили. Икономичен и надежден, с дълъг експлоатационен живот, дължащо се на високоабразивното и устойчиво на атмосферни влияния покр...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/markuch-za-visoko-nalqhane-gumen-markuch-za-kanalopochistvane-ik25-semperit-500x500-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/markuch-za-visoko-nalqhane-gumen-markuch-za-kanalopochistvane-ik25-semperit-500x500-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -4958,7 +4958,7 @@ const CONFIG = {
     "description": "Маркучът се използва за пренос на вода, масла, други течности, въздух и неагресивни химикали, с гладка вътрешна повърхност. Режим на работа: &nbsp;нагнетателен Конструкция:&nbsp; еднослойно гъвкаво прозрачно PVC, изключително гладко и маслоустойчи...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/pvc-masloustoichiv-markuch-TEKNO-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pvc-masloustoichiv-markuch-TEKNO-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -5064,11 +5064,11 @@ const CONFIG = {
     "description": "Немски PVC градински маркуч за поливане и напояване. Устойчив на абразия и на влиянията на околната среда.&nbsp; Маркуч за градински чешми на 1/2\", 3/4\" и 1\" Вътрешен слой: &nbsp;черно и пластично PVC Армировка: &nbsp;високоякостен синтетичен текс...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/gradinski-markuch-za-poliane-APD80-classic-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/gradinski-markuch-za-poliane-APD80-classic-1 (4)-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/gradinski-markuch-za-poliane-APD80-classic-1 (3)-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/gradinski-markuch-za-poliane-APD80-classic-1 (1)-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/gradinski-markuch-za-poliane-APD80-classic-1 (2)-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/gradinski-markuch-za-poliane-APD80-classic-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/gradinski-markuch-za-poliane-APD80-classic-1%20(4)-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/gradinski-markuch-za-poliane-APD80-classic-1%20(3)-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/gradinski-markuch-za-poliane-APD80-classic-1%20(1)-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/gradinski-markuch-za-poliane-APD80-classic-1%20(2)-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -5200,7 +5200,7 @@ const CONFIG = {
     "description": "Двуслоен плосък маркуч&nbsp; за поливане и отвеждане на вода&nbsp; изпомпена от потопяеми помпи, за промишлени, битови и селскостопански приложения. Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;гладко черно PVC Подсилване:&nbsp; полиестерни в...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/plosyk-markuch-inovaflat-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/plosyk-markuch-inovaflat-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -5359,7 +5359,7 @@ const CONFIG = {
     "description": "PVC смукателен маркуч за засмукване и пренос течности, вода, плодови сокове и други течности, леки химикали и други.&nbsp; &nbsp;Намира приложение за пневмо -транспорт на семена в сеялки, маркуч за сеялка, семепровод. Режим на работа:&nbsp; смукат...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/smukatelen-markuch-za-voda-troy-ld-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/smukatelen-markuch-za-voda-troy-ld-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -5546,7 +5546,7 @@ const CONFIG = {
     "description": "Смукателно - нагнетателен маркуч за вода, леки химикали в земеделски приложения и конструкции. Използва се за пренос и засмукване на вода, плодови сокове и други течности в хранително-вкусовата промишленост, селскостопански и индустриални машини и...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/pvc-markuchi-troy-sld-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pvc-markuchi-troy-sld-1200x1200.png"
     ],
     "variants": [
       {
@@ -5673,10 +5673,10 @@ const CONFIG = {
     "description": "SMARTFLEX SMT Comfort&nbsp; е 5-слоен PVC маркуч, подходящ за градинарство и напояване. Удобен, гъвкав и при ниски температури с висока устойчивост на смачкване и огъване.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Режим на работа:&nbsp; нагнетателен...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/pvc-markuch-za-polivane-SMARTFLEX-SMT-Comfort-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/pvc-markuch-za-polivane-SMARTFLEX-SMT-Comfort3-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/pvc-markuch-za-polivane-SMARTFLEX-SMT-Comfort2-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/ вода/pvc-markuch-za-polivane-SMARTFLEX-SMT-Comfort1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pvc-markuch-za-polivane-SMARTFLEX-SMT-Comfort-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pvc-markuch-za-polivane-SMARTFLEX-SMT-Comfort3-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pvc-markuch-za-polivane-SMARTFLEX-SMT-Comfort2-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pvc-markuch-za-polivane-SMARTFLEX-SMT-Comfort1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -5766,7 +5766,7 @@ const CONFIG = {
     "description": "Маркуч &nbsp;с метална спирала устойчив на налягане, подходящ за транспортиране и засмукване на питейна и минерална вода, мляко, плодови сокове, прахообразни храни, течности в индустриални и селскостопански машини. Режим на работа: &nbsp; смукател...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/pvc-markuch-metalna-spirala-BOSPHORUS-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pvc-markuch-metalna-spirala-BOSPHORUS-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -5778,7 +5778,7 @@ const CONFIG = {
         "bend": 385,
         "weight": 4.7,
         "rollLength": 30,
-        "priceEur": 0
+        "priceEur": 3.6
       },
       {
         "code": "BOSPHORUS-2",
@@ -5789,7 +5789,7 @@ const CONFIG = {
         "bend": 460,
         "weight": 6.35,
         "rollLength": 30,
-        "priceEur": 0
+        "priceEur": 3.6
       },
       {
         "code": "BOSPHORUS-3",
@@ -5800,7 +5800,7 @@ const CONFIG = {
         "bend": 345,
         "weight": 4.38,
         "rollLength": 30,
-        "priceEur": 0
+        "priceEur": 3.6
       },
       {
         "code": "BOSPHORUS-4",
@@ -5811,7 +5811,7 @@ const CONFIG = {
         "bend": 315,
         "weight": 3.49,
         "rollLength": 30,
-        "priceEur": 0
+        "priceEur": 3.6
       },
       {
         "code": "BOSPHORUS-5",
@@ -5998,7 +5998,7 @@ const CONFIG = {
         "bend": 40,
         "weight": 0.28,
         "rollLength": 30,
-        "priceEur": 0
+        "priceEur": 3.6
       },
       {
         "code": "BOSPHORUS-22",
@@ -6094,7 +6094,7 @@ const CONFIG = {
     "description": "Пожарникарски маркуч с текстил за отводняване и напояване, с висока устойчивост на налягане и абразия. Режим на работа:&nbsp; нагнетателен Вложка:&nbsp; гладко черно PVC Подсилване: &nbsp;полиестерни влакна Покритие:&nbsp; Полиестерни влакна.&nbsp...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/plosyk-markuch-bez-nakrajnici-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/plosyk-markuch-bez-nakrajnici-1200x1200.png"
     ],
     "variants": [
       {
@@ -6169,8 +6169,8 @@ const CONFIG = {
     "description": "Г умен плосък маркуч &nbsp;за транспорт на вода в напоителни системи. Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;черна EPDM гума&nbsp; Подсилване: &nbsp;вградени текстилни оплетки Покритие:&nbsp; черна EPDM гума, устойчива на абразия и мете...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/plosyk-gumen-markuch-za-voda-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/plosyk-gumen-markuch-za-voda1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/plosyk-gumen-markuch-za-voda-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/plosyk-gumen-markuch-za-voda1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -6281,9 +6281,9 @@ const CONFIG = {
     "description": "Маркучът е подходящ за транспортиране и засмукване на вода, химикали и други течности в строителството, селското стопанство, индустрията, каналопочистване, пясък, чакъл и отпадни води.&nbsp; Подходящ е за оборудване на цистерни, комунални автомоби...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/pvc-markuch-za-zasmukvane-voda-LAGINA-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/pvc-markuch-za-zasmukvane-voda-LAGINA3-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/pvc-markuch-za-zasmukvane-voda-LAGINA2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pvc-markuch-za-zasmukvane-voda-LAGINA-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pvc-markuch-za-zasmukvane-voda-LAGINA3-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pvc-markuch-za-zasmukvane-voda-LAGINA2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -6295,7 +6295,7 @@ const CONFIG = {
         "bend": 810,
         "weight": 7.85,
         "rollLength": 10,
-        "priceEur": 0
+        "priceEur": 11.99
       },
       {
         "code": "LAGINA-2",
@@ -6556,7 +6556,7 @@ const CONFIG = {
     "description": "Смукателен PVC маркуч за средно натоварване.&nbsp; Подходящ за вода, солена вода, каши, химикали и абразиви Подсилване: &nbsp;удароустойчива PVC спирала Порърхност: &nbsp;леко гофрирана, абразивоустойчива Работна темпера: -30 ° C +60 ° C",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/smukatelen-pvc-markuch-za-otpadychni-vodi-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/smukatelen-pvc-markuch-za-otpadychni-vodi-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -6708,7 +6708,7 @@ const CONFIG = {
     "description": "Смукателен PVC маркуч за средно натоварване.&nbsp; Подходящ за вода, солена вода, каши, химикали и абразиви Подсилване: &nbsp;удароустойчива PVC спирала Порърхност: &nbsp;леко гофрирана, абразивоустойчива Работна темпера: -30 ° C +60 ° C",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/smukatelen-pvc-markuch-za-otpadychni-vodi-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/smukatelen-pvc-markuch-za-otpadychni-vodi-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -6755,9 +6755,9 @@ const CONFIG = {
     "description": "Smartflex SMT&nbsp; е 5-слоен PVC маркуч, подходящ за градинарство и напояване. Удобен, гъвкав и при ниски температури с висока устойчивост на смачкване и огъване. Режим на работа:&nbsp; нагнетателен Материал: &nbsp;меко PVC Подсилване: &nbsp;Висо...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/gradinski-markuch-za-polivane-Smartflex-smt-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/gradinski-markuch-za-polivane-Smartflex-smt-1-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/gradinski-markuch-za-polivane-Smartflex-smt-2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/gradinski-markuch-za-polivane-Smartflex-smt-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/gradinski-markuch-za-polivane-Smartflex-smt-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/gradinski-markuch-za-polivane-Smartflex-smt-2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -6843,7 +6843,7 @@ const CONFIG = {
     "description": "Пожарникарски маркуч с текстил за отводняване и напояване, с висока устойчивост на налягане и абразия. Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;гладко черно PVC Подсилване: &nbsp;полиестерни влакна Покритие: &nbsp;Полиестерни влакна.&nbsp...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/pojarnikarski-markuch-OneFlat-Germany-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pojarnikarski-markuch-OneFlat-Germany-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -6914,7 +6914,7 @@ const CONFIG = {
     "description": "Маркучът за антифриз подходящ за пренасяне на гореща вода и охлаждащи течности със средна агресивност, прилагани в охладителните системи на двигателя и различни отоплителни системи. Водно съединение за камиони, трактори и други превозни средства. ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ течност/markuch-za-ohlajdane-antifriz-i-goreshta-voda-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D1%82%D0%B5%D1%87%D0%BD%D0%BE%D1%81%D1%82/markuch-za-ohlajdane-antifriz-i-goreshta-voda-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -7191,9 +7191,9 @@ const CONFIG = {
     "description": "Горивен маркуч с външна метална оплетка, подходящ за дизелово гориво и бензин, минерални масла и други. Режим на работа:&nbsp; нагнетателен Вложка:&nbsp; черен, гладък електропроводим NBR каучук, устойчив на масла и горива Покритие: &nbsp;метална ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/goriven-markuch-s-metalna-opletka-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ и масло/goriven-markuch-s-metalna-opletka-1-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ и масло/goriven-markuch-s-metalna-opletka-2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/goriven-markuch-s-metalna-opletka-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/goriven-markuch-s-metalna-opletka-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/goriven-markuch-s-metalna-opletka-2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -7333,7 +7333,7 @@ const CONFIG = {
     "description": "Маркуч &nbsp;подходящ за безоловни горива с ароматно съдържание до 50%, индустриални масла, дизелово гориво, пълнене и разтоварване на цистерни и други. Режим на работа:&nbsp; всмукателно-нагнетателен Вложка: &nbsp;черен, гладък, електропроводим N...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/gumen-markuch-zasmukvane-goriva-masla-benzin-TM30Tanker-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/gumen-markuch-zasmukvane-goriva-masla-benzin-TM30Tanker-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -7345,7 +7345,7 @@ const CONFIG = {
         "bend": 800,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 28.2
       },
       {
         "code": "TM 30-2",
@@ -7356,7 +7356,7 @@ const CONFIG = {
         "bend": 600,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 28.2
       },
       {
         "code": "TM 30-3",
@@ -7389,7 +7389,7 @@ const CONFIG = {
         "bend": 330,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 28.2
       },
       {
         "code": "TM 30-6",
@@ -7400,7 +7400,7 @@ const CONFIG = {
         "bend": 150,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 28.2
       },
       {
         "code": "TM 30-7",
@@ -7455,7 +7455,7 @@ const CONFIG = {
         "bend": 75,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 28.2
       },
       {
         "code": "TM 30-12",
@@ -7477,7 +7477,7 @@ const CONFIG = {
         "bend": 60,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 28.2
       },
       {
         "code": "TM 30-14",
@@ -7499,7 +7499,7 @@ const CONFIG = {
         "bend": 45,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 28.2
       },
       {
         "code": "TM 30-16",
@@ -7510,7 +7510,7 @@ const CONFIG = {
         "bend": 35,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 28.2
       },
       {
         "code": "TM 30-17",
@@ -7521,7 +7521,7 @@ const CONFIG = {
         "bend": 40,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 28.2
       }
     ]
   },
@@ -7555,7 +7555,7 @@ const CONFIG = {
     "description": "Каучуков маркуч за пренос на горива и масла. Режим на работа:&nbsp; смукателно-нагнетателен Вложка: &nbsp;черен синтетичен каучук Подсилване: &nbsp;високоякостна синтетична текстилна уплетка и метална спирала Покритие: &nbsp;синтетичен каучук&nbsp...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/kauchukov-markuch-za-goriva-i-masla-Petrofor-SD-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/kauchukov-markuch-za-goriva-i-masla-Petrofor-SD-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -7578,7 +7578,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 27.4
       },
       {
         "code": "-3",
@@ -7589,7 +7589,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 27.4
       },
       {
         "code": "-4",
@@ -8302,7 +8302,7 @@ const CONFIG = {
     "description": "PVC гъвкав маркуч за пренос на горива, индустриално масло и течности. Режим на работа: &nbsp;смукателно-нагнетателен Вложка: &nbsp;здрава, гъвкава и гладка маслоустойчива PVC/NBR смес Подсилване:&nbsp; удароустойчива PVC спирала Покритие: &nbsp;ус...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/gyvkav-pvc-nbr-markuch-za-goriva-Pegasus-hd-se-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/gyvkav-pvc-nbr-markuch-za-goriva-Pegasus-hd-se-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -8349,7 +8349,7 @@ const CONFIG = {
     "description": "Маркуч подходящ за засмукване и доставка на течна газ. Режим на работа: &nbsp;смукателно-нагнетателен Вложка: &nbsp;черен, гладък електропроводим NBR каучук Подсилване: &nbsp;високоякостни синтетични слоеве със стоманена спирала Покритие: &nbsp;че...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-lpg-gaz-petrogas-25-sd-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/markuch-za-lpg-gaz-petrogas-25-sd-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -8372,7 +8372,7 @@ const CONFIG = {
         "bend": 380,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 70.4
       },
       {
         "code": "PETROGAS /25 SD-3",
@@ -8427,7 +8427,7 @@ const CONFIG = {
         "bend": 75,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 70.4
       },
       {
         "code": "PETROGAS /25 SD-8",
@@ -8449,7 +8449,7 @@ const CONFIG = {
         "bend": 100,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 70.4
       },
       {
         "code": "PETROGAS /25 SD-10",
@@ -8460,7 +8460,7 @@ const CONFIG = {
         "bend": 55,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 70.4
       }
     ]
   },
@@ -8969,7 +8969,7 @@ const CONFIG = {
     "description": "Силиконов маркуч се използва в автомобилната индустрия. &nbsp;Подходящи за охладителни системи, турбо пътища, вакуумни системи и други. Устойчивост на високи температури, термичнии електрически изолационни свойства. Силиконовият маркуч е идеално р...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/silikoni/Sin silionov markuch.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/Sin%20silionov%20markuch.jpg"
     ],
     "variants": [
       {
@@ -9171,7 +9171,7 @@ const CONFIG = {
     "description": "Свързваща втулка неръждаема",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/silikoni/svyrzvashta-vtulka-neryjdaema-1-1200x1200 (1).jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/svyrzvashta-vtulka-neryjdaema-1-1200x1200%20(1).jpg",
       "https://hydrolux.bg/image/catalog/silikoni/svyrzvashta-vtulka-neryjdaema-AISI-hose-joiner-1-1200x1200.jpg"
     ],
     "variants": [
@@ -9184,7 +9184,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 5.65
       },
       {
         "code": "AISI-hose-joiner-2",
@@ -9228,7 +9228,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 5.65
       },
       {
         "code": "AISI-hose-joiner-6",
@@ -9239,7 +9239,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 5.65
       },
       {
         "code": "AISI-hose-joiner-7",
@@ -9492,7 +9492,7 @@ const CONFIG = {
     "description": "Силиконовото съединение редукция се използва в автомобилната индустрия.&nbsp; Прилага се за свързване на системи с различни диаметри - използва се като редукия. Подходящи за охладителни системи, турбо пътища, вакуумни системи и други.Устойчивост н...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/silikoni/silikonovo syedinenie redukciq.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovo%20syedinenie%20redukciq.jpg"
     ],
     "variants": [
       {
@@ -9608,10 +9608,10 @@ const CONFIG = {
     "description": "Силиконовото коляно 45° се използва в автомобилната индустрия. Подходящи за охладителни системи, турбо пътища, вакуумни системи и други. Устойчивост на високи температури, термичнии електрически изолационни свойства. Оплетка:&nbsp; подсилена текст...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/silikoni/silikonovi saedinenya 45°.jpg",
-      "https://hydrolux.bg/image/catalog/silikoni/silikonovo syedinenie kolyano 45°.jpg",
-      "https://hydrolux.bg/image/catalog/silikoni/silikonovi syedineniq.jpg",
-      "https://hydrolux.bg/image/catalog/silikoni/silikonovo-syedinenie-kolyano-45°-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovi%20saedinenya%2045%C2%B0.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovo%20syedinenie%20kolyano%2045%C2%B0.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovi%20syedineniq.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovo-syedinenie-kolyano-45%C2%B0-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -9623,7 +9623,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 14.45
       },
       {
         "code": "SILA45-2",
@@ -9634,7 +9634,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 14.45
       },
       {
         "code": "SILA45-3",
@@ -9656,7 +9656,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 14.45
       },
       {
         "code": "SILA45-5",
@@ -9766,7 +9766,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 14.45
       },
       {
         "code": "SILA45-15",
@@ -9854,7 +9854,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 14.45
       },
       {
         "code": "SILA45-23",
@@ -10024,8 +10024,8 @@ const CONFIG = {
     "description": "Силиконовото коляно 90° се използва в автомобилната индустрия. Подходящи за охладителни системи, турбо пътища, вакуумни системи и други. Устойчивост на високи температури, термичнии електрически изолационни свойства. Оплетка:&nbsp; подсилена текст...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/silikoni/silikonovi saedinenya 90°.jpg",
-      "https://hydrolux.bg/image/catalog/silikoni/silikonovi syedineniq.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovi%20saedinenya%2090%C2%B0.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovi%20syedineniq.jpg"
     ],
     "variants": [
       {
@@ -10048,7 +10048,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 14.45
       },
       {
         "code": "SILA90-3",
@@ -10070,7 +10070,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 14.45
       },
       {
         "code": "SILA90-5",
@@ -10418,7 +10418,7 @@ const CONFIG = {
     "description": "Силиконовото коляно 90° се използва в автомобилната индустрия.&nbsp; Прилага се за свързване на системи с различни диаметри - използва се като редукия. Подходящи за охладителни системи, турбо пътища, вакуумни системи и други. Устойчивост на високи...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/silikoni/silikonovo kolqno prehodno 90.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovo%20kolqno%20prehodno%2090.jpg"
     ],
     "variants": [
       {
@@ -10741,8 +10741,8 @@ const CONFIG = {
     "description": "Силиконов съединител с демпфер&nbsp; се използва в автомобилната индустрия. Използва се за автомобили с по-висока степен на вибрации.&nbsp;Подходящи за охладителни системи, турбо пътища, вакуумни системи и други.&nbsp; Устойчивост на високи темпер...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/silikoni/silikonovo syedinenie dumpfer1.jpg",
-      "https://hydrolux.bg/image/catalog/silikoni/silikonovo syedinenie dumpfer.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovo%20syedinenie%20dumpfer1.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovo%20syedinenie%20dumpfer.jpg"
     ],
     "variants": [
       {
@@ -11015,8 +11015,8 @@ const CONFIG = {
     "description": "Силиконовото коляно 180° се използва в автомобилната индустрия. С &nbsp;U-образна форма има еднакъв вътрешен диаметър в двата края.&nbsp; Подходящи за охладителни системи, турбо пътища, вакуумни системи,въздушни пътища на турбини и други. Устойчви...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/silikoni/silikonovo syedinenie 180.jpg",
-      "https://hydrolux.bg/image/catalog/silikoni/silikonovi syedineniq.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovo%20syedinenie%20180.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovi%20syedineniq.jpg"
     ],
     "variants": [
       {
@@ -11201,8 +11201,8 @@ const CONFIG = {
     "description": "Силиконовото съединение&nbsp; се използва в автомобилната индустрия . Подходящи за охладителни системи, турбо пътища, вакуумни системи и други.Устойчивост на високи температури, термичнии електрически изолационни свойства. Оплетка:&nbsp; подсилена...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/silikoni/silikonovo saedinenie 1m.jpg",
-      "https://hydrolux.bg/image/catalog/silikoni/silikonovi syedineniq.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovo%20saedinenie%201m.jpg",
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovi%20syedineniq.jpg"
     ],
     "variants": [
       {
@@ -11588,8 +11588,8 @@ const CONFIG = {
     "description": "Силиконова Т-снадка",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/silikoni/silikonova t snadka.png",
-      "https://hydrolux.bg/image/catalog/silikoni/t snadka.png"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonova%20t%20snadka.png",
+      "https://hydrolux.bg/image/catalog/silikoni/t%20snadka.png"
     ],
     "variants": [
       {
@@ -11668,7 +11668,7 @@ const CONFIG = {
     "description": "Силиконово съединие за турбо / интеркулер се използва в автомобилната индустрия. Намира приложение като изпускателна - всмукателна тръба, маркуч за обезвъздушаване, турбокомпресор и други. Подходящи за охладителни системи, турбо пътища, вакуумни с...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/silikoni/silikonovo syedinenie za turbo intercooler.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovo%20syedinenie%20za%20turbo%20intercooler.jpg"
     ],
     "variants": [
       {
@@ -11808,7 +11808,7 @@ const CONFIG = {
     "description": "Силиконовото коляно 45° се използва в автомобилната индустрия.&nbsp; Прилага се за свързване на системи с различни диаметри - използва се като редукия. Подходящи за охладителни системи, турбо пътища, вакуумни системи и други. Устойчивост на високи...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/silikoni/silikonovo kolqno prehodno 45.jpg"
+      "https://hydrolux.bg/image/catalog/silikoni/silikonovo%20kolqno%20prehodno%2045.jpg"
     ],
     "variants": [
       {
@@ -12099,7 +12099,7 @@ const CONFIG = {
     "description": "Тефлонов маркуч&nbsp; предназначен за транспорт на сгъстен въздух, газ, пара, запалителни вещества, масла, химически, хранителни и фармацевтични продукти. Работна температура: &nbsp;-60°&nbsp; +205°/220° Подсилване: &nbsp;2 метални оплетки&nbsp;AI...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/teflonov-markuch-sdve-stomaneni-opletki-ptfe-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/teflonov-markuch-sdve-stomaneni-opletki-ptfe-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -12216,7 +12216,7 @@ const CONFIG = {
     "description": "Маркуч подходящ за пренос на хидравлично масло под високо налягане. Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;Синтетичен каучук, устойчив на хидравлични течности Подсилване: &nbsp;една оплетка от силно разтеглива стомана Покритие: &nbsp;си...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-1sn-k-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-1sn-k-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -12344,7 +12344,7 @@ const CONFIG = {
     "description": "Маркуч&nbsp; подходящ за пренос на хидравлично масло под високо налягане. Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;Синтетичен каучук, устойчив на хидравлични течности Подсилване: &nbsp;две оплетки от силно разтеглива стомана Покритие:&nbs...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-2sn-k-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-2sn-k-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -12356,7 +12356,7 @@ const CONFIG = {
         "bend": 300,
         "weight": 1.57,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 18.4
       },
       {
         "code": "SEMPERPAC 2SN-K-2",
@@ -12422,7 +12422,7 @@ const CONFIG = {
         "bend": 45,
         "weight": 0.27,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 18.4
       },
       {
         "code": "SEMPERPAC 2SN-K-8",
@@ -12433,7 +12433,7 @@ const CONFIG = {
         "bend": 60,
         "weight": 0.31,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 18.4
       }
     ]
   },
@@ -12472,7 +12472,7 @@ const CONFIG = {
     "description": "Маркуч подходящ за пренос на хидравлично масло под високо налягане. &nbsp; Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;Синтетичен каучук, устойчив на хидравлични течности Подсилване: &nbsp;една оплетка от силно разтеглива стомана Покритие:&n...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-1sn-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-1sn-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -12622,7 +12622,7 @@ const CONFIG = {
     "description": "Маркуч&nbsp; подходящ за пренос на хидравлично масло под високо налягане. Режим на работа : нагнетателен Вложка: &nbsp;Синтетичен каучук, устойчив на хидравлични течности Подсилване: &nbsp;две оплетки от силно разтеглива стомана Покритие: &nbsp;си...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-2sn-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-2sn-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -12763,7 +12763,7 @@ const CONFIG = {
     "description": "Тефлонов маркуч предназначен за транспорт на сгъстен въздух, газ, пара, запалителни вещества, масла, химически, хранителни и фармацевтични продукти. Подсилване: &nbsp;Една оплетка от неръждаема стомана Покритие:&nbsp; гладко вътрешно покритие от т...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/teflonov-markuch-ptfe-gladyk-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/teflonov-markuch-ptfe-gladyk-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -12786,7 +12786,7 @@ const CONFIG = {
         "bend": 229,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 23.35
       },
       {
         "code": "PTFE гладък-3",
@@ -12830,7 +12830,7 @@ const CONFIG = {
         "bend": 127,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 23.35
       },
       {
         "code": "PTFE гладък-7",
@@ -12874,7 +12874,7 @@ const CONFIG = {
         "bend": 25,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 23.35
       },
       {
         "code": "PTFE гладък-11",
@@ -12885,7 +12885,7 @@ const CONFIG = {
         "bend": 35,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 23.35
       },
       {
         "code": "PTFE гладък-12",
@@ -12896,7 +12896,7 @@ const CONFIG = {
         "bend": 410,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 23.35
       }
     ]
   },
@@ -12930,7 +12930,7 @@ const CONFIG = {
     "description": "Маркуч за транспортиране на хидравлично масло под високо налпгане.&nbsp; Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;Синтетичен каучук, устойчив на биоразградими хидравлични течности Подсилване: &nbsp;4 метални оплетки с висока якост, устойч...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-DUNLOP-4SH-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/hidravlichen-markuch-visoko-nalyagane-DUNLOP-4SH-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -13016,7 +13016,7 @@ const CONFIG = {
     "description": "Тефлонов маркуч подходящ за транспорт на&nbsp; с гъстен въздух, газ, пара, запалителни вещества, масла, химически, хранителни и фармацевтични продукти. Подсилване: &nbsp;една оплетка от неръждаема стомана Покритие:&nbsp; безшевно гофрирано вътрешн...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/teflonov-markuch-ptfe-gofriran-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/teflonov-markuch-ptfe-gofriran-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -13072,7 +13072,7 @@ const CONFIG = {
         "bend": 76,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 71.25
       },
       {
         "code": "PTFE гофриран-6",
@@ -13116,7 +13116,7 @@ const CONFIG = {
         "bend": 20,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 71.25
       },
       {
         "code": "PTFE гофриран-10",
@@ -13127,7 +13127,7 @@ const CONFIG = {
         "bend": 18,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 71.25
       },
       {
         "code": "PTFE гофриран-11",
@@ -13138,7 +13138,7 @@ const CONFIG = {
         "bend": 25,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 71.25
       }
     ]
   },
@@ -13176,10 +13176,10 @@ const CONFIG = {
     "description": "SEMPERIT - GAC е гъвкав маркуч за ацетилен, използващ се за заваръчни и отрезни инструменти, битови и индустриални приложения. Подходящ за въглищен газ, въглероден диоксид, водород, аргон и други. Режим на работа: &nbsp;нагнетателен Вложка:&nbsp; ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/gazove/gumen-markuch-acetilen-SEMPERIT- GAC-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/gazove/gumen-markuch-acetilen-SEMPERIT- GAC3-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/gazove/gumen-markuch-acetilen-SEMPERIT- GAC4-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/gazove/gumen-markuch-acetilen-SEMPERIT- GAC2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/gazove/gumen-markuch-acetilen-SEMPERIT-%20GAC-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/gazove/gumen-markuch-acetilen-SEMPERIT-%20GAC3-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/gazove/gumen-markuch-acetilen-SEMPERIT-%20GAC4-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/gazove/gumen-markuch-acetilen-SEMPERIT-%20GAC2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -13335,7 +13335,7 @@ const CONFIG = {
         "bend": 65,
         "weight": 0,
         "rollLength": 100,
-        "priceEur": 0
+        "priceEur": 6.35
       },
       {
         "code": "LPG Uranus-2",
@@ -13357,7 +13357,7 @@ const CONFIG = {
         "bend": 45,
         "weight": 0,
         "rollLength": 100,
-        "priceEur": 0
+        "priceEur": 6.35
       },
       {
         "code": "LPG Uranus-4",
@@ -13904,7 +13904,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 30.5,
-        "priceEur": 0
+        "priceEur": 38.95
       }
     ]
   },
@@ -14213,7 +14213,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 8.05
       },
       {
         "code": "SEMABLUE-2",
@@ -14268,7 +14268,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 8.05
       }
     ]
   },
@@ -14470,7 +14470,7 @@ const CONFIG = {
         "bend": 203,
         "weight": 2.79,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 15.35
       },
       {
         "code": "178AA-3",
@@ -14481,7 +14481,7 @@ const CONFIG = {
         "bend": 345,
         "weight": 3.195,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 15.35
       },
       {
         "code": "178AA-4",
@@ -14717,7 +14717,7 @@ const CONFIG = {
         "bend": 530,
         "weight": 0,
         "rollLength": 10,
-        "priceEur": 0
+        "priceEur": 20.6
       },
       {
         "code": "NEXT 09 PU-2",
@@ -14728,7 +14728,7 @@ const CONFIG = {
         "bend": 300,
         "weight": 0,
         "rollLength": 15,
-        "priceEur": 0
+        "priceEur": 20.6
       },
       {
         "code": "NEXT 09 PU-3",
@@ -14783,7 +14783,7 @@ const CONFIG = {
         "bend": 185,
         "weight": 0,
         "rollLength": 20,
-        "priceEur": 0
+        "priceEur": 20.6
       },
       {
         "code": "NEXT 09 PU-8",
@@ -14838,7 +14838,7 @@ const CONFIG = {
         "bend": 105,
         "weight": 0,
         "rollLength": 20,
-        "priceEur": 0
+        "priceEur": 20.6
       },
       {
         "code": "NEXT 09 PU-13",
@@ -14871,7 +14871,7 @@ const CONFIG = {
         "bend": 75,
         "weight": 0,
         "rollLength": 20,
-        "priceEur": 0
+        "priceEur": 20.6
       },
       {
         "code": "NEXT 09 PU-16",
@@ -14915,7 +14915,7 @@ const CONFIG = {
         "bend": 45,
         "weight": 0,
         "rollLength": 20,
-        "priceEur": 0
+        "priceEur": 20.6
       },
       {
         "code": "NEXT 09 PU-20",
@@ -14937,7 +14937,7 @@ const CONFIG = {
         "bend": 40,
         "weight": 0,
         "rollLength": 20,
-        "priceEur": 0
+        "priceEur": 20.6
       }
     ]
   },
@@ -15065,7 +15065,7 @@ const CONFIG = {
         "bend": 367,
         "weight": 10,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-2",
@@ -15076,7 +15076,7 @@ const CONFIG = {
         "bend": 296,
         "weight": 8.02,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-3",
@@ -15087,7 +15087,7 @@ const CONFIG = {
         "bend": 331,
         "weight": 9,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-4",
@@ -15098,7 +15098,7 @@ const CONFIG = {
         "bend": 261,
         "weight": 6,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-5",
@@ -15109,7 +15109,7 @@ const CONFIG = {
         "bend": 247,
         "weight": 5.67,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-6",
@@ -15120,7 +15120,7 @@ const CONFIG = {
         "bend": 244,
         "weight": 5.58,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-7",
@@ -15131,7 +15131,7 @@ const CONFIG = {
         "bend": 230,
         "weight": 5.25,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-8",
@@ -15142,7 +15142,7 @@ const CONFIG = {
         "bend": 244,
         "weight": 5.41,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-9",
@@ -15153,7 +15153,7 @@ const CONFIG = {
         "bend": 226,
         "weight": 5.16,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-10",
@@ -15164,7 +15164,7 @@ const CONFIG = {
         "bend": 212,
         "weight": 4.33,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-11",
@@ -15175,7 +15175,7 @@ const CONFIG = {
         "bend": 209,
         "weight": 4.26,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-12",
@@ -15186,7 +15186,7 @@ const CONFIG = {
         "bend": 194,
         "weight": 3.95,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-13",
@@ -15197,7 +15197,7 @@ const CONFIG = {
         "bend": 174,
         "weight": 3.5,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-14",
@@ -15208,7 +15208,7 @@ const CONFIG = {
         "bend": 191,
         "weight": 3.88,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-15",
@@ -15219,7 +15219,7 @@ const CONFIG = {
         "bend": 156,
         "weight": 3.12,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-16",
@@ -15230,7 +15230,7 @@ const CONFIG = {
         "bend": 139,
         "weight": 2.87,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-17",
@@ -15241,7 +15241,7 @@ const CONFIG = {
         "bend": 136,
         "weight": 2.79,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-18",
@@ -15252,7 +15252,7 @@ const CONFIG = {
         "bend": 132,
         "weight": 2.72,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-19",
@@ -15263,7 +15263,7 @@ const CONFIG = {
         "bend": 118,
         "weight": 2.41,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-20",
@@ -15274,7 +15274,7 @@ const CONFIG = {
         "bend": 125,
         "weight": 2.56,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-21",
@@ -15285,7 +15285,7 @@ const CONFIG = {
         "bend": 11,
         "weight": 2.03,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-22",
@@ -15296,7 +15296,7 @@ const CONFIG = {
         "bend": 104,
         "weight": 1.91,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-23",
@@ -15307,7 +15307,7 @@ const CONFIG = {
         "bend": 101,
         "weight": 1.84,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-24",
@@ -15318,7 +15318,7 @@ const CONFIG = {
         "bend": 97,
         "weight": 1.77,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-25",
@@ -15329,7 +15329,7 @@ const CONFIG = {
         "bend": 90,
         "weight": 1.63,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-26",
@@ -15340,7 +15340,7 @@ const CONFIG = {
         "bend": 94,
         "weight": 1.68,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-27",
@@ -15351,7 +15351,7 @@ const CONFIG = {
         "bend": 83,
         "weight": 1.49,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-28",
@@ -15362,7 +15362,7 @@ const CONFIG = {
         "bend": 69,
         "weight": 1.11,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-29",
@@ -15373,7 +15373,7 @@ const CONFIG = {
         "bend": 76,
         "weight": 1.25,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-30",
@@ -15395,7 +15395,7 @@ const CONFIG = {
         "bend": 62,
         "weight": 0.98,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-32",
@@ -15406,7 +15406,7 @@ const CONFIG = {
         "bend": 66,
         "weight": 1.05,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-33",
@@ -15417,7 +15417,7 @@ const CONFIG = {
         "bend": 43,
         "weight": 0.84,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-34",
@@ -15428,7 +15428,7 @@ const CONFIG = {
         "bend": 40,
         "weight": 0.78,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-35",
@@ -15439,7 +15439,7 @@ const CONFIG = {
         "bend": 38,
         "weight": 0.72,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-36",
@@ -15450,7 +15450,7 @@ const CONFIG = {
         "bend": 35,
         "weight": 0.66,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-37",
@@ -15461,7 +15461,7 @@ const CONFIG = {
         "bend": 28,
         "weight": 0.48,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-38",
@@ -15472,7 +15472,7 @@ const CONFIG = {
         "bend": 29,
         "weight": 0.52,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-39",
@@ -15483,7 +15483,7 @@ const CONFIG = {
         "bend": 30,
         "weight": 0.54,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-40",
@@ -15494,7 +15494,7 @@ const CONFIG = {
         "bend": 33,
         "weight": 0.6,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-41",
@@ -15505,7 +15505,7 @@ const CONFIG = {
         "bend": 31,
         "weight": 0.56,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-42",
@@ -15516,7 +15516,7 @@ const CONFIG = {
         "bend": 17,
         "weight": 0.23,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-43",
@@ -15527,7 +15527,7 @@ const CONFIG = {
         "bend": 18,
         "weight": 0.25,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-44",
@@ -15538,7 +15538,7 @@ const CONFIG = {
         "bend": 20,
         "weight": 0.28,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-45",
@@ -15549,7 +15549,7 @@ const CONFIG = {
         "bend": 25,
         "weight": 0.42,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-46",
@@ -15560,7 +15560,7 @@ const CONFIG = {
         "bend": 26,
         "weight": 0.44,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-47",
@@ -15571,7 +15571,7 @@ const CONFIG = {
         "bend": 16,
         "weight": 0.17,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-48",
@@ -15582,7 +15582,7 @@ const CONFIG = {
         "bend": 14,
         "weight": 0.14,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       },
       {
         "code": "AIRDUC 355 AS-49",
@@ -15593,7 +15593,7 @@ const CONFIG = {
         "bend": 15,
         "weight": 0.16,
         "rollLength": 5,
-        "priceEur": 0
+        "priceEur": 49.4
       }
     ]
   },
@@ -15647,7 +15647,7 @@ const CONFIG = {
         "bend": 150,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1
       },
       {
         "code": "PE LD MB-2",
@@ -15785,7 +15785,7 @@ const CONFIG = {
         "bend": 100,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.15
       },
       {
         "code": "PUX 98 MB-LONGLIFE-4",
@@ -15796,7 +15796,7 @@ const CONFIG = {
         "bend": 70,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.15
       },
       {
         "code": "PUX 98 MB-LONGLIFE-5",
@@ -15840,7 +15840,7 @@ const CONFIG = {
         "bend": 60,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.15
       },
       {
         "code": "PUX 98 MB-LONGLIFE-9",
@@ -15906,7 +15906,7 @@ const CONFIG = {
         "bend": 20,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.15
       },
       {
         "code": "PUX 98 MB-LONGLIFE-15",
@@ -15917,7 +15917,7 @@ const CONFIG = {
         "bend": 30,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.15
       },
       {
         "code": "PUX 98 MB-LONGLIFE-16",
@@ -15950,7 +15950,7 @@ const CONFIG = {
         "bend": 15,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.15
       },
       {
         "code": "PUX 98 MB-LONGLIFE-19",
@@ -16132,7 +16132,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.1
       },
       {
         "code": "PU - blue-2",
@@ -16165,7 +16165,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.1
       },
       {
         "code": "PU - blue-5",
@@ -16187,7 +16187,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.1
       },
       {
         "code": "PU - blue-7",
@@ -16220,7 +16220,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.1
       },
       {
         "code": "PU - blue-10",
@@ -16275,7 +16275,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.1
       },
       {
         "code": "PU - blue-15",
@@ -16286,7 +16286,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.1
       },
       {
         "code": "PU - blue-16",
@@ -16297,7 +16297,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.1
       },
       {
         "code": "PU - blue-17",
@@ -16373,7 +16373,7 @@ const CONFIG = {
         "bend": 95,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.7
       },
       {
         "code": "PA 6.6-3",
@@ -16384,7 +16384,7 @@ const CONFIG = {
         "bend": 70,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.7
       },
       {
         "code": "PA 6.6-4",
@@ -16406,7 +16406,7 @@ const CONFIG = {
         "bend": 45,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.7
       },
       {
         "code": "PA 6.6-6",
@@ -16428,7 +16428,7 @@ const CONFIG = {
         "bend": 30,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.7
       },
       {
         "code": "PA 6.6-8",
@@ -16450,7 +16450,7 @@ const CONFIG = {
         "bend": 35,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.7
       },
       {
         "code": "PA 6.6-10",
@@ -16472,7 +16472,7 @@ const CONFIG = {
         "bend": 25,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.7
       },
       {
         "code": "PA 6.6-12",
@@ -16483,7 +16483,7 @@ const CONFIG = {
         "bend": 15,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.7
       }
     ]
   },
@@ -16569,7 +16569,7 @@ const CONFIG = {
         "bend": 155,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.7
       },
       {
         "code": "PA12 MB-Longlife E-HF-5",
@@ -16602,7 +16602,7 @@ const CONFIG = {
         "bend": 60,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.7
       },
       {
         "code": "PA12 MB-Longlife E-HF-8",
@@ -16613,7 +16613,7 @@ const CONFIG = {
         "bend": 115,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.7
       },
       {
         "code": "PA12 MB-Longlife E-HF-9",
@@ -16635,7 +16635,7 @@ const CONFIG = {
         "bend": 55,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.7
       },
       {
         "code": "PA12 MB-Longlife E-HF-11",
@@ -17314,7 +17314,7 @@ const CONFIG = {
     "description": "Полиамиден шлаух за въздух, подходящ за транспорт на вода, въздух, масла и слаби химикали. Устойчив на UV лъчи и атмосфретни влияния. Температурен обхват: &nbsp;-40°C до +110°C;&nbsp; Макс.работна температура за флуиди съдържащи вода +70°C Шлаухит...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/shlauhi/poliamiden-shlauh-pa12-cheren-1200x1200 (1).jpg"
+      "https://hydrolux.bg/image/catalog/shlauhi/poliamiden-shlauh-pa12-cheren-1200x1200%20(1).jpg"
     ],
     "variants": [
       {
@@ -18278,7 +18278,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за метрична резба - медна-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "М38х1.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18289,7 +18289,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за метрична резба - медна-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "М30х1.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18300,7 +18300,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за метрична резба - медна-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "М26х1.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18311,7 +18311,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за метрична резба - медна-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "М24х1.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18322,7 +18322,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за метрична резба - медна-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "М22х1.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18333,7 +18333,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за метрична резба - медна-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "М20х1.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18344,7 +18344,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за метрична резба - медна-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "М18х1.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18355,7 +18355,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за метрична резба - медна-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "М16х1.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18366,7 +18366,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за метрична резба - медна-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "М14х1.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18377,7 +18377,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за метрична резба - медна-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "М12х1.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18388,7 +18388,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за метрична резба - медна-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "М10х1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18399,7 +18399,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за метрична резба - медна-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "М45х1.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18410,7 +18410,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за метрична резба - медна-13",
         "innerDb": 0,
-        "inch": "",
+        "inch": "М8х1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18475,7 +18475,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за цолова резба - медна-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18486,7 +18486,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за цолова резба - медна-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18497,7 +18497,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за цолова резба - медна-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18508,7 +18508,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за цолова резба - медна-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18519,7 +18519,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за цолова резба - медна-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18530,7 +18530,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за цолова резба - медна-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18541,7 +18541,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за цолова резба - медна-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18552,7 +18552,7 @@ const CONFIG = {
       {
         "code": "Дифтунга за цолова резба - медна-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -18612,7 +18612,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 0.75
       },
       {
         "code": "POM съединител - прав-2",
@@ -19082,7 +19082,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.2
       },
       {
         "code": "POM съединител - тройник с редукция-2",
@@ -19159,7 +19159,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.2
       },
       {
         "code": "POM съединител - тройник с редукция-9",
@@ -19181,7 +19181,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.2
       },
       {
         "code": "POM съединител - тройник с редукция-11",
@@ -19225,7 +19225,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.2
       },
       {
         "code": "POM съединител - тройник с редукция-15",
@@ -19236,7 +19236,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.2
       }
     ]
   },
@@ -19290,7 +19290,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.7
       },
       {
         "code": "POM съединител - коляно-2",
@@ -19476,7 +19476,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.3
       },
       {
         "code": "POM съединител за маркуч - тройник-2",
@@ -19745,7 +19745,7 @@ const CONFIG = {
     "description": "Защитните силиконови ръкави са произведени от плътно фибростъкло, покрито с тънък слой самогасящ се термоустойчив силикон. Силиконовите протектори за маркучи се използват за да предпазват маркучи, кабели и снопове от жици от потенциална повреда, п...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/predpazen-slikonov-rykav-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/predpazen-slikonov-rykav-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -19874,7 +19874,7 @@ const CONFIG = {
       {
         "code": "ABG-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/4\"",
         "outerDb": 0,
         "pressure": 6,
         "bend": 0,
@@ -19958,7 +19958,7 @@ const CONFIG = {
     "description": "Маслоустойчиви о-пръстени за уплътняване на системи с хидравлични течности на минерална основа и масла. Предимства: &nbsp;сигурно уплътняване, устойчивост на удар и химикали, лесни за употреба Материал: &nbsp;Нитрил бутадиенова гума (NBR) Твърдост...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/aksesoari/kleshti-za-skobi-sys-stranichno-i-predno-zatvarqne-1200x1200 (1).jpg",
+      "https://hydrolux.bg/image/catalog/aksesoari/kleshti-za-skobi-sys-stranichno-i-predno-zatvarqne-1200x1200%20(1).jpg",
       "https://hydrolux.bg/image/catalog/aksesoari/komplekt-masloustoichivi-o-prysteni-bsp1-1200x1200.png"
     ],
     "variants": [
@@ -20162,7 +20162,7 @@ const CONFIG = {
       {
         "code": "Уплътнение RA44-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "0.31\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20173,7 +20173,7 @@ const CONFIG = {
       {
         "code": "Уплътнение RA44-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "0.28\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20184,7 +20184,7 @@ const CONFIG = {
       {
         "code": "Уплътнение RA44-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "0.19\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20195,7 +20195,7 @@ const CONFIG = {
       {
         "code": "Уплътнение RA44-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "0.08\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20206,7 +20206,7 @@ const CONFIG = {
       {
         "code": "Уплътнение RA44-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "0.42\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20261,18 +20261,18 @@ const CONFIG = {
       {
         "code": "CRO-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 0.45
       },
       {
         "code": "CRO-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20283,7 +20283,7 @@ const CONFIG = {
       {
         "code": "CRO-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20294,7 +20294,7 @@ const CONFIG = {
       {
         "code": "CRO-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20305,7 +20305,7 @@ const CONFIG = {
       {
         "code": "CRO-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20316,7 +20316,7 @@ const CONFIG = {
       {
         "code": "CRO-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20327,18 +20327,18 @@ const CONFIG = {
       {
         "code": "CRO-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 0.45
       },
       {
         "code": "CRO-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "0.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20395,18 +20395,18 @@ const CONFIG = {
       {
         "code": "NUT-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "43\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 0.8
       },
       {
         "code": "NUT-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "26\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20417,7 +20417,7 @@ const CONFIG = {
       {
         "code": "NUT-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "19\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20428,7 +20428,7 @@ const CONFIG = {
       {
         "code": "NUT-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "7\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20439,18 +20439,18 @@ const CONFIG = {
       {
         "code": "NUT-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 0.8
       },
       {
         "code": "NUT-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20461,7 +20461,7 @@ const CONFIG = {
       {
         "code": "NUT-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20512,7 +20512,7 @@ const CONFIG = {
       {
         "code": "OLV-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20523,7 +20523,7 @@ const CONFIG = {
       {
         "code": "OLV-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20534,7 +20534,7 @@ const CONFIG = {
       {
         "code": "OLV-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20545,7 +20545,7 @@ const CONFIG = {
       {
         "code": "OLV-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20556,7 +20556,7 @@ const CONFIG = {
       {
         "code": "OLV-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20567,7 +20567,7 @@ const CONFIG = {
       {
         "code": "OLV-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20625,7 +20625,7 @@ const CONFIG = {
       {
         "code": "PLUG технополимер-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4.20\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20636,7 +20636,7 @@ const CONFIG = {
       {
         "code": "PLUG технополимер-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3.30\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20647,7 +20647,7 @@ const CONFIG = {
       {
         "code": "PLUG технополимер-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.99\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20658,7 +20658,7 @@ const CONFIG = {
       {
         "code": "PLUG технополимер-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.26\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20669,7 +20669,7 @@ const CONFIG = {
       {
         "code": "PLUG технополимер-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "0.90\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20680,7 +20680,7 @@ const CONFIG = {
       {
         "code": "PLUG технополимер-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "0.34\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20734,7 +20734,7 @@ const CONFIG = {
       {
         "code": "PP0-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "13.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20745,7 +20745,7 @@ const CONFIG = {
       {
         "code": "PP0-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "31\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20756,7 +20756,7 @@ const CONFIG = {
       {
         "code": "PP0-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "18\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20767,7 +20767,7 @@ const CONFIG = {
       {
         "code": "PP0-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "7.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20778,13 +20778,13 @@ const CONFIG = {
       {
         "code": "PP0-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.15
       }
     ]
   },
@@ -20831,7 +20831,7 @@ const CONFIG = {
       {
         "code": "JP0-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "100\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20842,7 +20842,7 @@ const CONFIG = {
       {
         "code": "JP0-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "78.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20853,7 +20853,7 @@ const CONFIG = {
       {
         "code": "JP0-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "48.4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20864,7 +20864,7 @@ const CONFIG = {
       {
         "code": "JP0-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "34.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20875,7 +20875,7 @@ const CONFIG = {
       {
         "code": "JP0-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "18.7\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20886,7 +20886,7 @@ const CONFIG = {
       {
         "code": "JP0-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "10.6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20897,13 +20897,13 @@ const CONFIG = {
       {
         "code": "JP0-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.3
       }
     ]
   },
@@ -20952,7 +20952,7 @@ const CONFIG = {
       {
         "code": "AMF-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "7\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20963,7 +20963,7 @@ const CONFIG = {
       {
         "code": "AMF-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "13\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20974,7 +20974,7 @@ const CONFIG = {
       {
         "code": "AMF-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "17\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20985,7 +20985,7 @@ const CONFIG = {
       {
         "code": "AMF-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "30\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -20996,7 +20996,7 @@ const CONFIG = {
       {
         "code": "AMF-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "19\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21007,7 +21007,7 @@ const CONFIG = {
       {
         "code": "AMF-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "32\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21018,7 +21018,7 @@ const CONFIG = {
       {
         "code": "AMF-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "37\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21029,7 +21029,7 @@ const CONFIG = {
       {
         "code": "AMF-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "36\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21040,7 +21040,7 @@ const CONFIG = {
       {
         "code": "AMF-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "37\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21051,7 +21051,7 @@ const CONFIG = {
       {
         "code": "AMF-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "43\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21110,7 +21110,7 @@ const CONFIG = {
       {
         "code": "HC-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "43\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21121,18 +21121,18 @@ const CONFIG = {
       {
         "code": "HC-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "38\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.6
       },
       {
         "code": "HC-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "38\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21143,7 +21143,7 @@ const CONFIG = {
       {
         "code": "HC-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "24\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21154,7 +21154,7 @@ const CONFIG = {
       {
         "code": "HC-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "21\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21165,7 +21165,7 @@ const CONFIG = {
       {
         "code": "HC-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "22\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21176,7 +21176,7 @@ const CONFIG = {
       {
         "code": "HC-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "18\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21187,18 +21187,18 @@ const CONFIG = {
       {
         "code": "HC-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "11\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.6
       },
       {
         "code": "HC-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "11.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21209,7 +21209,7 @@ const CONFIG = {
       {
         "code": "HC-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "17\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21220,7 +21220,7 @@ const CONFIG = {
       {
         "code": "HC-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "10.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21231,35 +21231,35 @@ const CONFIG = {
       {
         "code": "HC-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.6
       },
       {
         "code": "HC-13",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.6
       },
       {
         "code": "HC-14",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.6
       }
     ]
   },
@@ -21309,7 +21309,7 @@ const CONFIG = {
       {
         "code": "NT-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "128\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21320,7 +21320,7 @@ const CONFIG = {
       {
         "code": "NT-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "112\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21331,7 +21331,7 @@ const CONFIG = {
       {
         "code": "NT-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "78\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21342,7 +21342,7 @@ const CONFIG = {
       {
         "code": "NT-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "69\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21353,7 +21353,7 @@ const CONFIG = {
       {
         "code": "NT-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "44\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21364,7 +21364,7 @@ const CONFIG = {
       {
         "code": "NT-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "40\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21375,7 +21375,7 @@ const CONFIG = {
       {
         "code": "NT-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "23\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21386,7 +21386,7 @@ const CONFIG = {
       {
         "code": "NT-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "38\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21397,7 +21397,7 @@ const CONFIG = {
       {
         "code": "NT-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "20\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21408,7 +21408,7 @@ const CONFIG = {
       {
         "code": "NT-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "17.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21419,7 +21419,7 @@ const CONFIG = {
       {
         "code": "NT-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "20\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21430,7 +21430,7 @@ const CONFIG = {
       {
         "code": "NT-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "12\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21441,7 +21441,7 @@ const CONFIG = {
       {
         "code": "NT-13",
         "innerDb": 0,
-        "inch": "",
+        "inch": "8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21485,7 +21485,7 @@ const CONFIG = {
       {
         "code": "SA-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "38.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21496,7 +21496,7 @@ const CONFIG = {
       {
         "code": "SA-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "23.6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21507,7 +21507,7 @@ const CONFIG = {
       {
         "code": "SA-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "22.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21518,7 +21518,7 @@ const CONFIG = {
       {
         "code": "SA-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "15.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21529,7 +21529,7 @@ const CONFIG = {
       {
         "code": "SA-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "14.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21540,7 +21540,7 @@ const CONFIG = {
       {
         "code": "SA-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "9.4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21551,7 +21551,7 @@ const CONFIG = {
       {
         "code": "SA-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "13.7\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21562,7 +21562,7 @@ const CONFIG = {
       {
         "code": "SA-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "8.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21573,29 +21573,29 @@ const CONFIG = {
       {
         "code": "SA-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "5.9\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.5
       },
       {
         "code": "SA-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "12.4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 1.5
       },
       {
         "code": "SA-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "7.2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21606,7 +21606,7 @@ const CONFIG = {
       {
         "code": "SA-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3.2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21660,29 +21660,29 @@ const CONFIG = {
       {
         "code": "MFE-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "196.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.2
       },
       {
         "code": "MFE-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "125.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.2
       },
       {
         "code": "MFE-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "79.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21693,7 +21693,7 @@ const CONFIG = {
       {
         "code": "MFE-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "26.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21704,7 +21704,7 @@ const CONFIG = {
       {
         "code": "MFE-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "45.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21715,7 +21715,7 @@ const CONFIG = {
       {
         "code": "MFE-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "14.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21769,7 +21769,7 @@ const CONFIG = {
       {
         "code": "FE-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "78.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21780,7 +21780,7 @@ const CONFIG = {
       {
         "code": "FE-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "47.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21791,7 +21791,7 @@ const CONFIG = {
       {
         "code": "FE-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "29.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21802,7 +21802,7 @@ const CONFIG = {
       {
         "code": "FE-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "16.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21856,7 +21856,7 @@ const CONFIG = {
       {
         "code": "MME-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "175.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21867,7 +21867,7 @@ const CONFIG = {
       {
         "code": "MME-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "105.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21878,29 +21878,29 @@ const CONFIG = {
       {
         "code": "MME-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "78.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.2
       },
       {
         "code": "MME-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "42.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.2
       },
       {
         "code": "MME-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "24.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21911,7 +21911,7 @@ const CONFIG = {
       {
         "code": "MME-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "12.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21970,7 +21970,7 @@ const CONFIG = {
       {
         "code": "PHC-1",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "34\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21981,7 +21981,7 @@ const CONFIG = {
       {
         "code": "PHC-2",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "17\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -21992,7 +21992,7 @@ const CONFIG = {
       {
         "code": "PHC-3",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "21\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22003,7 +22003,7 @@ const CONFIG = {
       {
         "code": "PHC-4",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "16\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22014,7 +22014,7 @@ const CONFIG = {
       {
         "code": "PHC-5",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "15\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22071,29 +22071,29 @@ const CONFIG = {
       {
         "code": "SFNPT-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "39.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.3
       },
       {
         "code": "SFNPT-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "40.1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.3
       },
       {
         "code": "SFNPT-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "42.3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22104,7 +22104,7 @@ const CONFIG = {
       {
         "code": "SFNPT-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "24.1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22115,7 +22115,7 @@ const CONFIG = {
       {
         "code": "SFNPT-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "24.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22126,7 +22126,7 @@ const CONFIG = {
       {
         "code": "SFNPT-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "20.2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22137,7 +22137,7 @@ const CONFIG = {
       {
         "code": "SFNPT-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "47.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22148,7 +22148,7 @@ const CONFIG = {
       {
         "code": "SFNPT-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "20.2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22159,7 +22159,7 @@ const CONFIG = {
       {
         "code": "SFNPT-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "23.6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22170,7 +22170,7 @@ const CONFIG = {
       {
         "code": "SFNPT-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "13.9\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22181,7 +22181,7 @@ const CONFIG = {
       {
         "code": "SFNPT-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "13.2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22192,7 +22192,7 @@ const CONFIG = {
       {
         "code": "SFNPT-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "14.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22203,7 +22203,7 @@ const CONFIG = {
       {
         "code": "SFNPT-13",
         "innerDb": 0,
-        "inch": "",
+        "inch": "8.7\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22214,18 +22214,18 @@ const CONFIG = {
       {
         "code": "SFNPT-14",
         "innerDb": 0,
-        "inch": "",
+        "inch": "16.1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.3
       },
       {
         "code": "SFNPT-15",
         "innerDb": 0,
-        "inch": "",
+        "inch": "5.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22282,7 +22282,7 @@ const CONFIG = {
       {
         "code": "TFFF-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "108\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22293,7 +22293,7 @@ const CONFIG = {
       {
         "code": "TFFF-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "23\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22304,7 +22304,7 @@ const CONFIG = {
       {
         "code": "TFFF-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "66\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22315,7 +22315,7 @@ const CONFIG = {
       {
         "code": "TFFF-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "40\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22377,7 +22377,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.6
       },
       {
         "code": "SNG-2",
@@ -22388,12 +22388,12 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.6
       },
       {
         "code": "SNG-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "42.4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22404,18 +22404,18 @@ const CONFIG = {
       {
         "code": "SNG-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "37.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.6
       },
       {
         "code": "SNG-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "29.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22426,7 +22426,7 @@ const CONFIG = {
       {
         "code": "SNG-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "36.1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22437,7 +22437,7 @@ const CONFIG = {
       {
         "code": "SNG-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "26.2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22448,7 +22448,7 @@ const CONFIG = {
       {
         "code": "SNG-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "34.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22459,7 +22459,7 @@ const CONFIG = {
       {
         "code": "SNG-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "22.6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22470,7 +22470,7 @@ const CONFIG = {
       {
         "code": "SNG-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "17.4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22481,7 +22481,7 @@ const CONFIG = {
       {
         "code": "SNG-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "34.3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22492,7 +22492,7 @@ const CONFIG = {
       {
         "code": "SNG-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "20.1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22503,7 +22503,7 @@ const CONFIG = {
       {
         "code": "SNG-13",
         "innerDb": 0,
-        "inch": "",
+        "inch": "13.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22514,7 +22514,7 @@ const CONFIG = {
       {
         "code": "SNG-14",
         "innerDb": 0,
-        "inch": "",
+        "inch": "11.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22525,7 +22525,7 @@ const CONFIG = {
       {
         "code": "SNG-15",
         "innerDb": 0,
-        "inch": "",
+        "inch": "12.7\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22536,7 +22536,7 @@ const CONFIG = {
       {
         "code": "SNG-16",
         "innerDb": 0,
-        "inch": "",
+        "inch": "9.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22547,7 +22547,7 @@ const CONFIG = {
       {
         "code": "SNG-17",
         "innerDb": 0,
-        "inch": "",
+        "inch": "8.6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22558,7 +22558,7 @@ const CONFIG = {
       {
         "code": "SNG-18",
         "innerDb": 0,
-        "inch": "",
+        "inch": "12.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22569,7 +22569,7 @@ const CONFIG = {
       {
         "code": "SNG-19",
         "innerDb": 0,
-        "inch": "",
+        "inch": "6.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22580,7 +22580,7 @@ const CONFIG = {
       {
         "code": "SNG-20",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4.6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22591,13 +22591,13 @@ const CONFIG = {
       {
         "code": "SNG-21",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2.3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.6
       }
     ]
   },
@@ -22649,7 +22649,7 @@ const CONFIG = {
       {
         "code": "MPOT-1",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "22\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22660,7 +22660,7 @@ const CONFIG = {
       {
         "code": "MPOT-2",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "50\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22671,7 +22671,7 @@ const CONFIG = {
       {
         "code": "MPOT-3",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "30\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22730,7 +22730,7 @@ const CONFIG = {
       {
         "code": "FPIT-1",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "24\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22741,7 +22741,7 @@ const CONFIG = {
       {
         "code": "FPIT-2",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "40\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22752,7 +22752,7 @@ const CONFIG = {
       {
         "code": "FPIT-3",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "25\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22808,18 +22808,18 @@ const CONFIG = {
       {
         "code": "TMMM-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "242.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.15
       },
       {
         "code": "TMMM-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "107.51\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22830,18 +22830,18 @@ const CONFIG = {
       {
         "code": "TMMM-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "147.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.15
       },
       {
         "code": "TMMM-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "58.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22852,7 +22852,7 @@ const CONFIG = {
       {
         "code": "TMMM-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "34.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22863,7 +22863,7 @@ const CONFIG = {
       {
         "code": "TMMM-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "16.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22919,29 +22919,29 @@ const CONFIG = {
       {
         "code": "TFMF-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "254.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.15
       },
       {
         "code": "TFMF-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "164.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.15
       },
       {
         "code": "TFMF-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "108.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22952,7 +22952,7 @@ const CONFIG = {
       {
         "code": "TFMF-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "64.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22963,7 +22963,7 @@ const CONFIG = {
       {
         "code": "TFMF-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "38.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -22974,7 +22974,7 @@ const CONFIG = {
       {
         "code": "TFMF-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "21.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23030,7 +23030,7 @@ const CONFIG = {
       {
         "code": "TMFM-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "60.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23041,7 +23041,7 @@ const CONFIG = {
       {
         "code": "TMFM-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "36.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23052,7 +23052,7 @@ const CONFIG = {
       {
         "code": "TMFM-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "18.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23063,7 +23063,7 @@ const CONFIG = {
       {
         "code": "TMFM-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "95.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23118,7 +23118,7 @@ const CONFIG = {
       {
         "code": "TSM-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "104\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23129,7 +23129,7 @@ const CONFIG = {
       {
         "code": "TSM-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "83\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23140,7 +23140,7 @@ const CONFIG = {
       {
         "code": "TSM-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "60\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23151,7 +23151,7 @@ const CONFIG = {
       {
         "code": "TSM-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "56\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23162,7 +23162,7 @@ const CONFIG = {
       {
         "code": "TSM-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "40\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23173,7 +23173,7 @@ const CONFIG = {
       {
         "code": "TSM-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "46\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23184,7 +23184,7 @@ const CONFIG = {
       {
         "code": "TSM-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "24\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23195,7 +23195,7 @@ const CONFIG = {
       {
         "code": "TSM-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "19\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23206,7 +23206,7 @@ const CONFIG = {
       {
         "code": "TSM-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "26\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23217,7 +23217,7 @@ const CONFIG = {
       {
         "code": "TSM-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "16\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23228,18 +23228,18 @@ const CONFIG = {
       {
         "code": "TSM-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "16.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.25
       },
       {
         "code": "TSM-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "12\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23404,7 +23404,7 @@ const CONFIG = {
       {
         "code": "PSM-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "62\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23415,7 +23415,7 @@ const CONFIG = {
       {
         "code": "PSM-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "50\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23426,68 +23426,68 @@ const CONFIG = {
       {
         "code": "PSM-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "33\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.75
       },
       {
         "code": "PSM-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "24.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.75
       },
       {
         "code": "PSM-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "24.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.75
       },
       {
         "code": "PSM-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "18\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.75
       },
       {
         "code": "PSM-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "20\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.75
       },
       {
         "code": "PSM-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "17\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.75
       }
     ]
   },
@@ -23746,34 +23746,34 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.15
       },
       {
         "code": "RED-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "24\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.15
       },
       {
         "code": "RED-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "29.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.15
       },
       {
         "code": "RED-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "20\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23784,18 +23784,18 @@ const CONFIG = {
       {
         "code": "RED-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "31.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.15
       },
       {
         "code": "RED-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "23\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23806,7 +23806,7 @@ const CONFIG = {
       {
         "code": "RED-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "15\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23817,40 +23817,40 @@ const CONFIG = {
       {
         "code": "RED-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "13.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.15
       },
       {
         "code": "RED-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "25\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.15
       },
       {
         "code": "RED-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "22.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.15
       },
       {
         "code": "RED-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "16.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23861,7 +23861,7 @@ const CONFIG = {
       {
         "code": "RED-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "11.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23872,40 +23872,40 @@ const CONFIG = {
       {
         "code": "RED-13",
         "innerDb": 0,
-        "inch": "",
+        "inch": "10\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.15
       },
       {
         "code": "RED-14",
         "innerDb": 0,
-        "inch": "",
+        "inch": "24.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.15
       },
       {
         "code": "RED-15",
         "innerDb": 0,
-        "inch": "",
+        "inch": "15\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.15
       },
       {
         "code": "RED-16",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23916,7 +23916,7 @@ const CONFIG = {
       {
         "code": "RED-17",
         "innerDb": 0,
-        "inch": "",
+        "inch": "7\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -23927,13 +23927,13 @@ const CONFIG = {
       {
         "code": "RED-18",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.15
       }
     ]
   },
@@ -23982,40 +23982,40 @@ const CONFIG = {
       {
         "code": "TEF-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "102\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.45
       },
       {
         "code": "TEF-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "78\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.45
       },
       {
         "code": "TEF-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "67\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.45
       },
       {
         "code": "TEF-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "52\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24026,7 +24026,7 @@ const CONFIG = {
       {
         "code": "TEF-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "52\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24037,7 +24037,7 @@ const CONFIG = {
       {
         "code": "TEF-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "25.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24048,7 +24048,7 @@ const CONFIG = {
       {
         "code": "TEF-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "22\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24059,7 +24059,7 @@ const CONFIG = {
       {
         "code": "TEF-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "20\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24070,7 +24070,7 @@ const CONFIG = {
       {
         "code": "TEF-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "16\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24081,18 +24081,18 @@ const CONFIG = {
       {
         "code": "TEF-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "17.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.45
       },
       {
         "code": "TEF-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "15\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24149,7 +24149,7 @@ const CONFIG = {
       {
         "code": "INSFNPT-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "45.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24160,7 +24160,7 @@ const CONFIG = {
       {
         "code": "INSFNPT-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "9.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24171,7 +24171,7 @@ const CONFIG = {
       {
         "code": "INSFNPT-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "25.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24182,7 +24182,7 @@ const CONFIG = {
       {
         "code": "INSFNPT-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "18.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24193,7 +24193,7 @@ const CONFIG = {
       {
         "code": "INSFNPT-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "10.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24248,18 +24248,18 @@ const CONFIG = {
       {
         "code": "US-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "148\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.85
       },
       {
         "code": "US-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "102\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24270,7 +24270,7 @@ const CONFIG = {
       {
         "code": "US-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "89\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24281,7 +24281,7 @@ const CONFIG = {
       {
         "code": "US-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "70\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24292,7 +24292,7 @@ const CONFIG = {
       {
         "code": "US-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "28\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24303,7 +24303,7 @@ const CONFIG = {
       {
         "code": "US-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "21\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24314,18 +24314,18 @@ const CONFIG = {
       {
         "code": "US-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "23\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 3.85
       },
       {
         "code": "US-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "12\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24485,7 +24485,7 @@ const CONFIG = {
       {
         "code": "CON-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "36.6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24496,7 +24496,7 @@ const CONFIG = {
       {
         "code": "CON-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "36.6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24507,7 +24507,7 @@ const CONFIG = {
       {
         "code": "CON-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "22.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24518,7 +24518,7 @@ const CONFIG = {
       {
         "code": "CON-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "25.2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24529,7 +24529,7 @@ const CONFIG = {
       {
         "code": "CON-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "21.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24540,7 +24540,7 @@ const CONFIG = {
       {
         "code": "CON-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "18.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24551,7 +24551,7 @@ const CONFIG = {
       {
         "code": "CON-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "14.7\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24562,7 +24562,7 @@ const CONFIG = {
       {
         "code": "CON-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "15.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24573,7 +24573,7 @@ const CONFIG = {
       {
         "code": "CON-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "6.8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24584,7 +24584,7 @@ const CONFIG = {
       {
         "code": "CON-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2.7\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24653,12 +24653,12 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.45
       },
       {
         "code": "SWEG-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "61.6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24669,7 +24669,7 @@ const CONFIG = {
       {
         "code": "SWEG-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "69.9\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24686,12 +24686,12 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.45
       },
       {
         "code": "SWEG-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "64.1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24702,7 +24702,7 @@ const CONFIG = {
       {
         "code": "SWEG-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "57.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24713,7 +24713,7 @@ const CONFIG = {
       {
         "code": "SWEG-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "39.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24724,7 +24724,7 @@ const CONFIG = {
       {
         "code": "SWEG-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "43.2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24735,7 +24735,7 @@ const CONFIG = {
       {
         "code": "SWEG-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "39.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24746,7 +24746,7 @@ const CONFIG = {
       {
         "code": "SWEG-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "34.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24757,7 +24757,7 @@ const CONFIG = {
       {
         "code": "SWEG-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "41.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24768,7 +24768,7 @@ const CONFIG = {
       {
         "code": "SWEG-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "41.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24779,7 +24779,7 @@ const CONFIG = {
       {
         "code": "SWEG-13",
         "innerDb": 0,
-        "inch": "",
+        "inch": "22.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24790,7 +24790,7 @@ const CONFIG = {
       {
         "code": "SWEG-14",
         "innerDb": 0,
-        "inch": "",
+        "inch": "25.3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24801,7 +24801,7 @@ const CONFIG = {
       {
         "code": "SWEG-15",
         "innerDb": 0,
-        "inch": "",
+        "inch": "21.8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24812,7 +24812,7 @@ const CONFIG = {
       {
         "code": "SWEG-16",
         "innerDb": 0,
-        "inch": "",
+        "inch": "18.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24823,40 +24823,40 @@ const CONFIG = {
       {
         "code": "SWEG-17",
         "innerDb": 0,
-        "inch": "",
+        "inch": "22.1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.45
       },
       {
         "code": "SWEG-18",
         "innerDb": 0,
-        "inch": "",
+        "inch": "22.2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.45
       },
       {
         "code": "SWEG-19",
         "innerDb": 0,
-        "inch": "",
+        "inch": "12.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.45
       },
       {
         "code": "SWEG-20",
         "innerDb": 0,
-        "inch": "",
+        "inch": "11.9\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24867,7 +24867,7 @@ const CONFIG = {
       {
         "code": "SWEG-21",
         "innerDb": 0,
-        "inch": "",
+        "inch": "19.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24878,7 +24878,7 @@ const CONFIG = {
       {
         "code": "SWEG-22",
         "innerDb": 0,
-        "inch": "",
+        "inch": "15.7\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24889,29 +24889,29 @@ const CONFIG = {
       {
         "code": "SWEG-23",
         "innerDb": 0,
-        "inch": "",
+        "inch": "8.7\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.45
       },
       {
         "code": "SWEG-24",
         "innerDb": 0,
-        "inch": "",
+        "inch": "7.1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.45
       },
       {
         "code": "SWEG-25",
         "innerDb": 0,
-        "inch": "",
+        "inch": "8.8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24980,12 +24980,12 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.25
       },
       {
         "code": "EL-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "58.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -24996,7 +24996,7 @@ const CONFIG = {
       {
         "code": "EL-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "48.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25007,7 +25007,7 @@ const CONFIG = {
       {
         "code": "EL-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "29.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25018,7 +25018,7 @@ const CONFIG = {
       {
         "code": "EL-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "22.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25029,7 +25029,7 @@ const CONFIG = {
       {
         "code": "EL-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "16.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25040,7 +25040,7 @@ const CONFIG = {
       {
         "code": "EL-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "9.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25051,13 +25051,13 @@ const CONFIG = {
       {
         "code": "EL-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.25
       }
     ]
   },
@@ -25110,7 +25110,7 @@ const CONFIG = {
       {
         "code": "PNF-1",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "29\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25121,7 +25121,7 @@ const CONFIG = {
       {
         "code": "PNF-2",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "21\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25132,7 +25132,7 @@ const CONFIG = {
       {
         "code": "PNF-3",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "20\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25281,40 +25281,40 @@ const CONFIG = {
       {
         "code": "TMT-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "168\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 5.25
       },
       {
         "code": "TMT-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "128\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 5.25
       },
       {
         "code": "TMT-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "118\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 5.25
       },
       {
         "code": "TMT-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "92\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25325,7 +25325,7 @@ const CONFIG = {
       {
         "code": "TMT-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "87\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25336,7 +25336,7 @@ const CONFIG = {
       {
         "code": "TMT-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "40\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25347,7 +25347,7 @@ const CONFIG = {
       {
         "code": "TMT-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "38\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25358,7 +25358,7 @@ const CONFIG = {
       {
         "code": "TMT-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "28\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25369,7 +25369,7 @@ const CONFIG = {
       {
         "code": "TMT-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "29\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25380,7 +25380,7 @@ const CONFIG = {
       {
         "code": "TMT-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "22\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25391,13 +25391,13 @@ const CONFIG = {
       {
         "code": "TMT-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "28\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 5.25
       }
     ]
   },
@@ -25455,7 +25455,7 @@ const CONFIG = {
       {
         "code": "INCON-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "7.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25466,7 +25466,7 @@ const CONFIG = {
       {
         "code": "INCON-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "40.9\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25477,7 +25477,7 @@ const CONFIG = {
       {
         "code": "INCON-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "25.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25488,7 +25488,7 @@ const CONFIG = {
       {
         "code": "INCON-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "13.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25543,18 +25543,18 @@ const CONFIG = {
       {
         "code": "UE-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "145\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 5.1
       },
       {
         "code": "UE-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "98\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25565,7 +25565,7 @@ const CONFIG = {
       {
         "code": "UE-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "76\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25576,7 +25576,7 @@ const CONFIG = {
       {
         "code": "UE-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "32\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25587,7 +25587,7 @@ const CONFIG = {
       {
         "code": "UE-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "22\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25598,18 +25598,18 @@ const CONFIG = {
       {
         "code": "UE-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "22\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 5.1
       },
       {
         "code": "UE-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "19\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25679,12 +25679,12 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 5.65
       },
       {
         "code": "TEE-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "77.1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25695,7 +25695,7 @@ const CONFIG = {
       {
         "code": "TEE-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "61.3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25706,7 +25706,7 @@ const CONFIG = {
       {
         "code": "TEE-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "39.2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25717,7 +25717,7 @@ const CONFIG = {
       {
         "code": "TEE-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "28.4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25728,7 +25728,7 @@ const CONFIG = {
       {
         "code": "TEE-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "22.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25739,7 +25739,7 @@ const CONFIG = {
       {
         "code": "TEE-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "12.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25750,13 +25750,13 @@ const CONFIG = {
       {
         "code": "TEE-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "5.6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 5.65
       }
     ]
   },
@@ -25891,7 +25891,7 @@ const CONFIG = {
       {
         "code": "INTEE-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "42.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25902,7 +25902,7 @@ const CONFIG = {
       {
         "code": "INTEE-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "69.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25913,7 +25913,7 @@ const CONFIG = {
       {
         "code": "INTEE-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "5.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25924,7 +25924,7 @@ const CONFIG = {
       {
         "code": "INTEE-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "20.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -25985,18 +25985,18 @@ const CONFIG = {
       {
         "code": "UT-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "212\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 6.2
       },
       {
         "code": "UT-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "144\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26007,7 +26007,7 @@ const CONFIG = {
       {
         "code": "UT-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "112\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26018,7 +26018,7 @@ const CONFIG = {
       {
         "code": "UT-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "42\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26029,7 +26029,7 @@ const CONFIG = {
       {
         "code": "UT-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "34\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26040,18 +26040,18 @@ const CONFIG = {
       {
         "code": "UT-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "36\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 6.2
       },
       {
         "code": "UT-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "21\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26114,29 +26114,29 @@ const CONFIG = {
       {
         "code": "BU-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "60.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 6.85
       },
       {
         "code": "BU-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "51.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 6.85
       },
       {
         "code": "BU-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "39.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26147,7 +26147,7 @@ const CONFIG = {
       {
         "code": "BU-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "33.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26158,7 +26158,7 @@ const CONFIG = {
       {
         "code": "BU-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "23.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26169,13 +26169,13 @@ const CONFIG = {
       {
         "code": "BU-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "14.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 6.85
       }
     ]
   },
@@ -26233,7 +26233,7 @@ const CONFIG = {
       {
         "code": "STF-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "82.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26244,7 +26244,7 @@ const CONFIG = {
       {
         "code": "STF-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "75.3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26255,7 +26255,7 @@ const CONFIG = {
       {
         "code": "STF-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "44.4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26266,7 +26266,7 @@ const CONFIG = {
       {
         "code": "STF-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "49.7\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26277,7 +26277,7 @@ const CONFIG = {
       {
         "code": "STF-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "46.4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26288,7 +26288,7 @@ const CONFIG = {
       {
         "code": "STF-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "33.6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26299,7 +26299,7 @@ const CONFIG = {
       {
         "code": "STF-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "30.7\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26310,7 +26310,7 @@ const CONFIG = {
       {
         "code": "STF-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "29.1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26321,7 +26321,7 @@ const CONFIG = {
       {
         "code": "STF-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "25.2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26332,7 +26332,7 @@ const CONFIG = {
       {
         "code": "STF-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "20.2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26343,7 +26343,7 @@ const CONFIG = {
       {
         "code": "STF-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "23.9\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26401,7 +26401,7 @@ const CONFIG = {
       {
         "code": "SDMCOT-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "188\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26412,7 +26412,7 @@ const CONFIG = {
       {
         "code": "SDMCOT-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "92\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26423,7 +26423,7 @@ const CONFIG = {
       {
         "code": "SDMCOT-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "88\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26466,7 +26466,7 @@ const CONFIG = {
       {
         "code": "POTMT-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "108.3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26526,7 +26526,7 @@ const CONFIG = {
       {
         "code": "SDCHC-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "93\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26537,7 +26537,7 @@ const CONFIG = {
       {
         "code": "SDCHC-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "107\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26548,7 +26548,7 @@ const CONFIG = {
       {
         "code": "SDCHC-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "92\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26590,13 +26590,13 @@ const CONFIG = {
     "description": "Бързосменник MK TYPE DIN 28450 за композитни и каучукови маркучи - месинг",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-mk-type-din28450-za-kompozitni-i-kaucukovi-markuchi-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmennik-mk-type-din28450-za-kompozitni-i-kaucukovi-markuchi-1200x1200.png"
     ],
     "variants": [
       {
         "code": "MK MS-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 100,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26606,8 +26606,8 @@ const CONFIG = {
       },
       {
         "code": "MK MS-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 75,
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26617,8 +26617,8 @@ const CONFIG = {
       },
       {
         "code": "MK MS-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26676,7 +26676,7 @@ const CONFIG = {
       {
         "code": "SDFCIT-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "134\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26687,7 +26687,7 @@ const CONFIG = {
       {
         "code": "SDFCIT-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "104\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26698,7 +26698,7 @@ const CONFIG = {
       {
         "code": "SDFCIT-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "109\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26758,7 +26758,7 @@ const CONFIG = {
       {
         "code": "MCOT-1",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "107\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26769,7 +26769,7 @@ const CONFIG = {
       {
         "code": "MCOT-2",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "89\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26780,7 +26780,7 @@ const CONFIG = {
       {
         "code": "MCOT-3",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "82\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26843,7 +26843,7 @@ const CONFIG = {
       {
         "code": "FCIT-1",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "105.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26854,7 +26854,7 @@ const CONFIG = {
       {
         "code": "FCIT-2",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "90.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26865,7 +26865,7 @@ const CONFIG = {
       {
         "code": "FCIT-3",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "91.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26928,7 +26928,7 @@ const CONFIG = {
       {
         "code": "CHC-1",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "94\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26939,7 +26939,7 @@ const CONFIG = {
       {
         "code": "CHC-2",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "91\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -26950,7 +26950,7 @@ const CONFIG = {
       {
         "code": "CHC-3",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "89\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -27013,7 +27013,7 @@ const CONFIG = {
       {
         "code": "CNF-1",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "103\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -27024,7 +27024,7 @@ const CONFIG = {
       {
         "code": "CNF-2",
         "innerDb": 7.4,
-        "inch": "",
+        "inch": "89\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -27085,46 +27085,46 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK с край за маркуч Използва се за транспорт на чисти и отпадни води, торове, химикали, разтворители и други. Има приложение в редица индустрии за бързо свързване и разкачване на маркучи и тръби.&nbsp; Материал: &nbsp;полипроп...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-e-polipropilen-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrza-vryzka-camlock-tip-e-polipropilen-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
         "code": "Camlock Тип - E - PP-1",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.25
       },
       {
         "code": "Camlock Тип - E - PP-2",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.25
       },
       {
         "code": "Camlock Тип - E - PP-3",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.25
       },
       {
         "code": "Camlock Тип - E - PP-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "3\"",
         "outerDb": 0,
         "pressure": 5,
@@ -27135,7 +27135,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - PP-5",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "3\"",
         "outerDb": 0,
         "pressure": 5,
@@ -27146,7 +27146,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - PP-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 6.5,
@@ -27157,7 +27157,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - PP-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "2\"",
         "outerDb": 0,
         "pressure": 6.5,
@@ -27168,7 +27168,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - PP-8",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 6.5,
@@ -27179,7 +27179,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - PP-9",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 6.5,
@@ -27190,7 +27190,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - PP-10",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 8.5,
@@ -27201,7 +27201,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - PP-11",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 8.5,
@@ -27212,7 +27212,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - PP-12",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 8.5,
@@ -27273,47 +27273,47 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK с мъжка резба Използва се в индустрии за бързо свързване и разкачване на маркучи и тръби. Използват се главно за транспорт на чисти и отпадни води, химикали, торове и други. Материал: &nbsp;полипропилен Работна температура:...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-f-polipropilen-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrza-vryzka-camlock-tip-f-polipropilen-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
         "code": "Camlock Тип - F - PP-1",
         "innerDb": 200,
-        "inch": "",
+        "inch": "G8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.25
       },
       {
         "code": "Camlock Тип - F - PP-2",
         "innerDb": 150,
-        "inch": "",
+        "inch": "G6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.25
       },
       {
         "code": "Camlock Тип - F - PP-3",
         "innerDb": 127,
-        "inch": "",
+        "inch": "G5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.25
       },
       {
         "code": "Camlock Тип - F - PP-4",
         "innerDb": 100,
-        "inch": "",
+        "inch": "G4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -27324,7 +27324,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - F - PP-5",
         "innerDb": 76,
-        "inch": "",
+        "inch": "G3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -27335,7 +27335,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - F - PP-6",
         "innerDb": 63,
-        "inch": "",
+        "inch": "G2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -27346,7 +27346,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - F - PP-7",
         "innerDb": 50,
-        "inch": "",
+        "inch": "G2\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -27357,7 +27357,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - F - PP-8",
         "innerDb": 25,
-        "inch": "",
+        "inch": "G1\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -27368,7 +27368,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - F - PP-9",
         "innerDb": 32,
-        "inch": "",
+        "inch": "G1.1/4\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -27379,7 +27379,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - F - PP-10",
         "innerDb": 38,
-        "inch": "",
+        "inch": "G1.1/2\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -27390,7 +27390,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - F - PP-11",
         "innerDb": 12,
-        "inch": "",
+        "inch": "G1/2\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -27401,7 +27401,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - F - PP-12",
         "innerDb": 19,
-        "inch": "",
+        "inch": "G3/4\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -27461,47 +27461,47 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK с женска резба Използват се за транспорт на отпадни води, торове, химикали, разтвори и други. Използва се в индустриите за бързо свързване и разкачване на маркучи и тръби. Присъединява се към всички типове женски камлок нак...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-a-polipropilen-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrza-vryzka-camlock-tip-a-polipropilen-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
         "code": "Camlock Тип - A - PP-1",
         "innerDb": 200,
-        "inch": "",
+        "inch": "G8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.6
       },
       {
         "code": "Camlock Тип - A - PP-2",
         "innerDb": 127,
-        "inch": "",
+        "inch": "G5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.6
       },
       {
         "code": "Camlock Тип - A - PP-3",
         "innerDb": 150,
-        "inch": "",
+        "inch": "G6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.6
       },
       {
         "code": "Camlock Тип - A - PP-4",
         "innerDb": 100,
-        "inch": "",
+        "inch": "G4\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -27512,7 +27512,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - A - PP-5",
         "innerDb": 76,
-        "inch": "",
+        "inch": "G3\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -27523,7 +27523,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - A - PP-6",
         "innerDb": 63,
-        "inch": "",
+        "inch": "G2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -27534,7 +27534,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - A - PP-7",
         "innerDb": 50,
-        "inch": "",
+        "inch": "G2\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -27545,7 +27545,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - A - PP-8",
         "innerDb": 32,
-        "inch": "",
+        "inch": "G1.1/4\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -27556,7 +27556,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - A - PP-9",
         "innerDb": 38,
-        "inch": "",
+        "inch": "G1.1/2\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -27567,7 +27567,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - A - PP-10",
         "innerDb": 12,
-        "inch": "",
+        "inch": "G1/2\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -27578,7 +27578,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - A - PP-11",
         "innerDb": 25,
-        "inch": "",
+        "inch": "G1\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -27589,7 +27589,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - A - PP-12",
         "innerDb": 19,
-        "inch": "",
+        "inch": "G3/4\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -27649,47 +27649,47 @@ const CONFIG = {
     "description": "Накрайник CAMLOCK под формата на капачка Използва се в индустрии за бързо свързване и разкачване на маркучи и тръби. Използват се главно за транспорт на чисти и отпадни води, торове, химикали и други. Материал: &nbsp;полипропилен Работна температу...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-dc-tapa-a-pp-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrza-vryzka-camlock-tip-dc-tapa-a-pp-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-1",
         "innerDb": 200,
-        "inch": "",
+        "inch": "G8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.4
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-2",
         "innerDb": 150,
-        "inch": "",
+        "inch": "G6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.4
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-3",
         "innerDb": 127,
-        "inch": "",
+        "inch": "G5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.4
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-4",
         "innerDb": 100,
-        "inch": "",
+        "inch": "G4\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -27700,7 +27700,7 @@ const CONFIG = {
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-5",
         "innerDb": 76,
-        "inch": "",
+        "inch": "G3\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -27711,7 +27711,7 @@ const CONFIG = {
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-6",
         "innerDb": 63,
-        "inch": "",
+        "inch": "G2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -27722,7 +27722,7 @@ const CONFIG = {
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-7",
         "innerDb": 50,
-        "inch": "",
+        "inch": "G2\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -27733,7 +27733,7 @@ const CONFIG = {
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-8",
         "innerDb": 38,
-        "inch": "",
+        "inch": "G1.1/2\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -27744,7 +27744,7 @@ const CONFIG = {
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-9",
         "innerDb": 32,
-        "inch": "",
+        "inch": "G1.1/4\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -27755,7 +27755,7 @@ const CONFIG = {
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-10",
         "innerDb": 25,
-        "inch": "",
+        "inch": "G1\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -27766,7 +27766,7 @@ const CONFIG = {
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-11",
         "innerDb": 12,
-        "inch": "",
+        "inch": "G1/2\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -27777,7 +27777,7 @@ const CONFIG = {
       {
         "code": "CAMLOCK тип DP (тапа) А - PP-12",
         "innerDb": 19,
-        "inch": "",
+        "inch": "G3/4\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -27828,9 +27828,9 @@ const CONFIG = {
     "description": "Капачка за IBC бидон с женска резба S60x6 Присъединяване: &nbsp;женска резба S60x6 Материал: &nbsp;корпус от Полипропилен,&nbsp; уплътнение от Полиетилен Работно налягане: &nbsp;7 bar Работна температура: &nbsp;-10°C до +70°C",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kapachka-za-IBC- bidoni-jenska-S60x6-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kapachka-za-IBC- bidoni-jenska-S60x6_2-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kapachka-za-IBC- bidoni-jenska-S60x6_3-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/kapachka-za-IBC-%20bidoni-jenska-S60x6-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/kapachka-za-IBC-%20bidoni-jenska-S60x6_2-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/kapachka-za-IBC-%20bidoni-jenska-S60x6_3-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -27898,14 +27898,14 @@ const CONFIG = {
     "description": "Неръждаема муфа кръгла - AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/gyvkav-silikonov-markuch-750mm-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaema-mufa-krygla-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/gyvkav-silikonov-markuch-750mm-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaema-mufa-krygla-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
         "code": "MU LPSS 316-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -27916,7 +27916,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 316-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -27927,7 +27927,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 316-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -27938,7 +27938,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 316-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -27949,7 +27949,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 316-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -27960,7 +27960,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 316-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -27971,7 +27971,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 316-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -27982,7 +27982,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 316-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -27993,7 +27993,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 316-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -28004,7 +28004,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 316-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -28015,7 +28015,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 316-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -28026,7 +28026,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 316-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -28082,8 +28082,8 @@ const CONFIG = {
     "description": "Накрайник CAMLOCK под формата на капачка Алуминиевите адаптери се използват за транспорт на чисти и отпадни води, вода, хидравлично масло, бензин и петролни продукти, охлаждащи течности. Има приложение в редица индустрии за бързо свързване и разка...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-camlock-dc-a-al-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-camlock-dc-a-al-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -28095,7 +28095,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.85
       },
       {
         "code": "CAMLOCK Тип DP (тапа) А - AL-2",
@@ -28106,7 +28106,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.85
       },
       {
         "code": "CAMLOCK Тип DP (тапа) А - AL-3",
@@ -28117,7 +28117,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.85
       },
       {
         "code": "CAMLOCK Тип DP (тапа) А - AL-4",
@@ -28252,13 +28252,13 @@ const CONFIG = {
     "description": "Бързосменник за въздух EUROPEAN DIN3489",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-european-din3489-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmennik-za-vyzduh-european-din3489-1-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "EUROPEAN DIN3489 - 1-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -28269,7 +28269,7 @@ const CONFIG = {
       {
         "code": "EUROPEAN DIN3489 - 1-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -28280,7 +28280,7 @@ const CONFIG = {
       {
         "code": "EUROPEAN DIN3489 - 1-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -28291,7 +28291,7 @@ const CONFIG = {
       {
         "code": "EUROPEAN DIN3489 - 1-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -28333,7 +28333,7 @@ const CONFIG = {
     "description": "Бързосменник за въздух EUROPEAN DIN3489",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-european-din3489-2-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmennik-za-vyzduh-european-din3489-2-1200x1200.png"
     ],
     "variants": [
       {
@@ -28413,12 +28413,12 @@ const CONFIG = {
     "description": "Бързосменник за въздух EUROPEAN DIN3489",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-european-din-3489-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmennik-za-vyzduh-european-din-3489-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "EUROPEAN DIN3489-1",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -28429,7 +28429,7 @@ const CONFIG = {
       },
       {
         "code": "EUROPEAN DIN3489-2",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -28440,7 +28440,7 @@ const CONFIG = {
       },
       {
         "code": "EUROPEAN DIN3489-3",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -28451,7 +28451,7 @@ const CONFIG = {
       },
       {
         "code": "EUROPEAN DIN3489-4",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -28512,8 +28512,8 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK с женска резба. Използва се в индустрии за бързо свързване и разкачване на маркучи и тръби. Използват се главно за транспорт на неагресивни течности: чисти и отпадни води, вода, смеси масло-вода, хидравлично масло, охлаждащ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-a-al-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-a-al-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -28525,7 +28525,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.25
       },
       {
         "code": "Camlock Тип - A - AL-2",
@@ -28536,7 +28536,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.25
       },
       {
         "code": "Camlock Тип - A - AL-3",
@@ -28547,7 +28547,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.25
       },
       {
         "code": "Camlock Тип - A - AL-4",
@@ -28700,46 +28700,46 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK със щуцер за маркуч Алуминиевите адаптери се използват за транспорт на чисти и отпадни води, вода, хидравлично масло, бензин и петролни продукти, охлаждащи течности. Има приложение в редица индустрии за бързо свързване и ра...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-camlock-tip-e-aluminii-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-camlock-tip-e-aluminii-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Camlock Тип - E - AL-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "8\"",
         "outerDb": 0,
         "pressure": 4,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.5
       },
       {
         "code": "Camlock Тип - E - AL-2",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "6\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.5
       },
       {
         "code": "Camlock Тип - E - AL-3",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "5\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.5
       },
       {
         "code": "Camlock Тип - E - AL-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "4\"",
         "outerDb": 0,
         "pressure": 6.5,
@@ -28750,7 +28750,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - AL-5",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "3\"",
         "outerDb": 0,
         "pressure": 8.5,
@@ -28761,7 +28761,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - AL-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 10,
@@ -28772,7 +28772,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - AL-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "2\"",
         "outerDb": 0,
         "pressure": 17,
@@ -28783,7 +28783,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - AL-8",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 17,
@@ -28794,7 +28794,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - AL-9",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 17,
@@ -28805,7 +28805,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - AL-10",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 17,
@@ -28816,7 +28816,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - AL-11",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 10,
@@ -28827,7 +28827,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - AL-12",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 17,
@@ -28878,7 +28878,7 @@ const CONFIG = {
     "description": "Адаптер за IBC бидони Накрайника, се монтира на Ibc контейнерите, посредством&nbsp; капачка за IBC &nbsp; бидон и се използва при изпразване на контейнерите. Материал:&nbsp; - Полипропилен Работно налягане:&nbsp; 7 bar Работна температура:&nbsp; -...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/adapter-chuchur-za-ibc-bidoni-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/adapter-chuchur-za-ibc-bidoni-1200x1200.png"
     ],
     "variants": [
       {
@@ -28955,8 +28955,8 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK с мъжка резба Алуминиевите адаптери се използват за транспорт на чисти и отпадни води, вода, хидравлично масло, бензин и петролни продукти, охлаждащи течности. Има приложение в редица индустрии за бързо свързване и разкачва...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-f-al-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrza-vryzka-camlock-tip-f-al-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -28968,7 +28968,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 5
       },
       {
         "code": "Camlock Тип - F - AL-2",
@@ -28979,7 +28979,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 5
       },
       {
         "code": "Camlock Тип - F - AL-3",
@@ -28990,7 +28990,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 5
       },
       {
         "code": "Camlock Тип - F - AL-4",
@@ -29138,9 +29138,9 @@ const CONFIG = {
     "description": "Капачка за IBC бидон преходна с мъжка резба M80x3 или инчова 2\" BSPP. Присъединяване: - страна 1 - мъжка резба S60 x 6 - страна 2 - женска IBC резба M80x3 или инчова 2\" BSPP Материал:&nbsp; - корпус от Полипропилен - уплътнение от Полиетилен Работ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-myjka-i-jenska-rezba-polipropilen-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-myjka-i-jenska-rezba-polipropilen-2-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-myjka-i-jenska-rezba-polipropilen-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakrainik-za-bidon-myjka-i-jenska-rezba-polipropilen-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakrainik-za-bidon-myjka-i-jenska-rezba-polipropilen-2-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakrainik-za-bidon-myjka-i-jenska-rezba-polipropilen-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -29207,12 +29207,12 @@ const CONFIG = {
     "description": "Съединител месинг за маркуч - бърза връзка за вода GEKA",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/syedinitel-mesing-za-markuch-byrza-vryzka-za-voda-geka-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/syedinitel-mesing-za-markuch-byrza-vryzka-za-voda-geka-1200x1200.png"
     ],
     "variants": [
       {
         "code": "GEKA GH-1",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 25,
@@ -29223,7 +29223,7 @@ const CONFIG = {
       },
       {
         "code": "GEKA GH-2",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 25,
@@ -29234,7 +29234,7 @@ const CONFIG = {
       },
       {
         "code": "GEKA GH-3",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "5/8\"",
         "outerDb": 0,
         "pressure": 25,
@@ -29245,7 +29245,7 @@ const CONFIG = {
       },
       {
         "code": "GEKA GH-4",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 25,
@@ -29256,7 +29256,7 @@ const CONFIG = {
       },
       {
         "code": "GEKA GH-5",
-        "innerDb": 0,
+        "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 25,
@@ -29267,7 +29267,7 @@ const CONFIG = {
       },
       {
         "code": "GEKA GH-6",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 25,
@@ -29323,10 +29323,10 @@ const CONFIG = {
     "description": "Капачка за IBC бидон с извод за накрайник CAMLOCK. Присъединяване: - страна 1 - женска резба S60 x 6 / S100 x 8 - страна 2 - извод за присъединяване към накрайник тип CAMLOCK Материал:&nbsp; корпус от Полипропилен,&nbsp; уплътнение от Полиетилен Р...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-za-myjki-camlock-polipropilen-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-za-myjki-camlock-polipropilen-2-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-za-myjki-camlock-polipropilen-1-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-za-myjki-camlock-polipropilen-3-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakrainik-za-bidon-za-myjki-camlock-polipropilen-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakrainik-za-bidon-za-myjki-camlock-polipropilen-2-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakrainik-za-bidon-za-myjki-camlock-polipropilen-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakrainik-za-bidon-za-myjki-camlock-polipropilen-3-1200x1200.png"
     ],
     "variants": [
       {
@@ -29406,7 +29406,7 @@ const CONFIG = {
     "description": "Дръжка за Camlock накрайник, неръждаема стомана",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/rezervna-dryjka-za-camlock-nakrainik-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/rezervna-dryjka-za-camlock-nakrainik-1200x1200.png"
     ],
     "variants": [
       {
@@ -29418,7 +29418,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 7.95
       },
       {
         "code": "CHSS-2",
@@ -29440,7 +29440,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 7.95
       }
     ]
   },
@@ -29469,7 +29469,7 @@ const CONFIG = {
     "description": "Материал: &nbsp;Неръждаема стомана Посочените цени са за 1 л.м. / 1 бр.",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/veriga-s-prysten-neryjdaema-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/veriga-s-prysten-neryjdaema-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -29516,9 +29516,9 @@ const CONFIG = {
     "description": "Материал: &nbsp;Месинг Верига: 30 cm. Дължина с куките: 36 cm Посочените цени са за 1 л.м. / 1 бр.",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/veriga-s-kuka-mesing-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/veriga-s-kuka-mesing-camlock-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/veriga-s-kuka-mesing-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/veriga-s-kuka-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/veriga-s-kuka-mesing-camlock-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/veriga-s-kuka-mesing-1200x1200.png"
     ],
     "variants": [
       {
@@ -29564,7 +29564,7 @@ const CONFIG = {
     "description": "Материал: &nbsp;Неръждаема стомана Посочените цени са за 1 л.м. / 1 бр.",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/veriga-s-kuka-neryjdaema-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/veriga-s-kuka-neryjdaema-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -29625,15 +29625,15 @@ const CONFIG = {
     "description": "Капачка за IBC бидон с женска резба BSPP Присъединяване: - страна 1 - женска резба S60 x 6 - страна 2 -&nbsp; женска резба инчова резба BSPP Материал:&nbsp; - корпус от Полипропилен - уплътнение от Полиетилен Работно налягане: &nbsp;7 bar Работна ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspp-jenska-rezba-polipropilen-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspp-jenska-rezba-polipropilen-1-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspp-jenska-rezba-polipropilen-2-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspp-jenska-rezba-polipropilen-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspp-jenska-rezba-polipropilen-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspp-jenska-rezba-polipropilen-2-1200x1200.jpeg"
     ],
     "variants": [
       {
         "code": "IBCPF-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -29644,7 +29644,7 @@ const CONFIG = {
       {
         "code": "IBCPF-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -29655,7 +29655,7 @@ const CONFIG = {
       {
         "code": "IBCPF-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -29666,7 +29666,7 @@ const CONFIG = {
       {
         "code": "IBCPF-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -29677,7 +29677,7 @@ const CONFIG = {
       {
         "code": "IBCPF-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -29717,7 +29717,7 @@ const CONFIG = {
     "description": "Размери: &nbsp;3ММ X 300MM",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/veriga-s-prysten-neryjdaema-ss316-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/veriga-s-prysten-neryjdaema-ss316-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -29774,13 +29774,13 @@ const CONFIG = {
     "description": "Накрайник с тръбна цолова резба външна резба - месинг",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/rezbovi-nakrainik-s-trybna-colova-rezba-vynshna-rezba-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/rezbovi-nakrainik-s-trybna-colova-rezba-vynshna-rezba-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "RM MS-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 100,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 25,
         "bend": 0,
@@ -29790,8 +29790,8 @@ const CONFIG = {
       },
       {
         "code": "RM MS-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 75,
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 25,
         "bend": 0,
@@ -29801,8 +29801,8 @@ const CONFIG = {
       },
       {
         "code": "RM MS-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 63,
+        "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 25,
         "bend": 0,
@@ -29812,8 +29812,8 @@ const CONFIG = {
       },
       {
         "code": "RM MS-4",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 25,
         "bend": 0,
@@ -29823,8 +29823,8 @@ const CONFIG = {
       },
       {
         "code": "RM MS-5",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 38,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 25,
         "bend": 0,
@@ -29834,8 +29834,8 @@ const CONFIG = {
       },
       {
         "code": "RM MS-6",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 38,
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 25,
         "bend": 0,
@@ -29845,8 +29845,8 @@ const CONFIG = {
       },
       {
         "code": "RM MS-7",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 25,
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 25,
         "bend": 0,
@@ -29856,8 +29856,8 @@ const CONFIG = {
       },
       {
         "code": "RM MS-8",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 32,
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 25,
         "bend": 0,
@@ -29867,8 +29867,8 @@ const CONFIG = {
       },
       {
         "code": "RM MS-9",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 20,
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 25,
         "bend": 0,
@@ -29878,8 +29878,8 @@ const CONFIG = {
       },
       {
         "code": "RM MS-10",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 12,
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 25,
         "bend": 0,
@@ -29927,7 +29927,7 @@ const CONFIG = {
     "description": "Чаша поцинкована за индустриални каучукови маркучи до 25 bar",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pocinkovana-chasha-za-industrialni-kauchokovi-markuchi-do-41bar-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/pocinkovana-chasha-za-industrialni-kauchokovi-markuchi-do-41bar-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -29939,7 +29939,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.85
       },
       {
         "code": "CF-2",
@@ -29950,7 +29950,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.85
       },
       {
         "code": "CF-3",
@@ -30114,47 +30114,47 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK с мъжка резба. Използва се за транспорт на чисти и отпадни води, торове, химикали, разтворители и други. Има приложение в редица индустрии за бързо свързване и разкачване на маркучи и тръби.&nbsp; Материал: &nbsp;полипропи...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-b-polipropilen-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrza-vryzka-camlock-tip-b-polipropilen-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
         "code": "Camlock Тип - B - PP-1",
         "innerDb": 200,
-        "inch": "",
+        "inch": "G8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.9
       },
       {
         "code": "Camlock Тип - B - PP-2",
         "innerDb": 150,
-        "inch": "",
+        "inch": "G6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.9
       },
       {
         "code": "Camlock Тип - B - PP-3",
         "innerDb": 127,
-        "inch": "",
+        "inch": "G5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.9
       },
       {
         "code": "Camlock Тип - B - PP-4",
         "innerDb": 100,
-        "inch": "",
+        "inch": "G4\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -30165,7 +30165,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - B - PP-5",
         "innerDb": 76,
-        "inch": "",
+        "inch": "G3\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -30176,7 +30176,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - B - PP-6",
         "innerDb": 63,
-        "inch": "",
+        "inch": "G2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -30187,7 +30187,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - B - PP-7",
         "innerDb": 50,
-        "inch": "",
+        "inch": "G2\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -30198,7 +30198,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - B - PP-8",
         "innerDb": 25,
-        "inch": "",
+        "inch": "G1\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -30209,7 +30209,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - B - PP-9",
         "innerDb": 32,
-        "inch": "",
+        "inch": "G1.1/4\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -30220,7 +30220,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - B - PP-10",
         "innerDb": 38,
-        "inch": "",
+        "inch": "G1.1/2\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -30231,7 +30231,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - B - PP-11",
         "innerDb": 19,
-        "inch": "",
+        "inch": "G3/4\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -30242,7 +30242,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - B - PP-12",
         "innerDb": 13,
-        "inch": "",
+        "inch": "G1/2\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -30302,46 +30302,46 @@ const CONFIG = {
     "description": "Накрайник CAMLOCK под формата на капачка Приложение: &nbsp;мъжката камлок тапа, тип DP се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединява с...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-camlock-dc-a-al-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-camlock-dc-a-al-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "CAMLOCK тип DP (тапа) А - SS-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.95
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - SS-2",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.95
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - SS-3",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.95
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - SS-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -30352,7 +30352,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - SS-5",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -30363,7 +30363,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - SS-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -30374,7 +30374,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - SS-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -30385,7 +30385,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - SS-8",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -30396,7 +30396,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - SS-9",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -30407,7 +30407,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - SS-10",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -30418,7 +30418,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - SS-11",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -30429,7 +30429,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - SS-12",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -30490,24 +30490,24 @@ const CONFIG = {
     "description": "Накрайник CAMLOCK под формата на капачка Приложение: &nbsp;мъжката камлок тапа, тип DP се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединява с...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-dci-tapa-a-mesing-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-dci-tapa-a-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "CAMLOCK тип DP (тапа) А - MS-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 11.35
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - MS-2",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -30518,7 +30518,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - MS-3",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -30529,7 +30529,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - MS-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -30540,7 +30540,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - MS-5",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -30551,7 +30551,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - MS-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -30562,7 +30562,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - MS-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -30573,7 +30573,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - MS-8",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -30584,7 +30584,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - MS-9",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -30595,7 +30595,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - MS-10",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -30606,7 +30606,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - MS-11",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -30617,7 +30617,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DP (тапа) А - MS-12",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -30673,15 +30673,15 @@ const CONFIG = {
     "description": "Капачка за IBC бидон с мъжка резба BSPT. Присъединяване: - страна 1 - женска резба S60 x 6 / S100 x 8 - страна 2 -&nbsp; мъжка резба инчова резба BSPT Материал:&nbsp; - корпус от Полипропилен - уплътнение от Полиетилен Работно налягане: &nbsp;7 ba...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspt-myjka-rezba-polipropilen-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspt-myjka-rezba-polipropilen-1-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspt-myjka-rezba-polipropilen-2-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspt-myjka-rezba-polipropilen-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspt-myjka-rezba-polipropilen-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakraink-za-bidon-s-bspt-myjka-rezba-polipropilen-2-1200x1200.jpeg"
     ],
     "variants": [
       {
         "code": "IBCBSPM-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -30692,7 +30692,7 @@ const CONFIG = {
       {
         "code": "IBCBSPM-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -30703,7 +30703,7 @@ const CONFIG = {
       {
         "code": "IBCBSPM-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -30714,7 +30714,7 @@ const CONFIG = {
       {
         "code": "IBCBSPM-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -30725,7 +30725,7 @@ const CONFIG = {
       {
         "code": "IBCBSPM-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -30785,46 +30785,46 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK с женска резба Полипропиленовите адаптери се използват за транспортиране на чисти и отпадни води, химикали, торове, разтворители и други.&nbsp; Има приложение в редица индустрии за бързо свързване и разкачване на маркучи и ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-c-pp-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrza-vryzka-camlock-tip-c-pp-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
         "code": "Camlock Тип - C - PP-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.15
       },
       {
         "code": "Camlock Тип - C - PP-2",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.15
       },
       {
         "code": "Camlock Тип - C - PP-3",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.15
       },
       {
         "code": "Camlock Тип - C - PP-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "4\"",
         "outerDb": 0,
         "pressure": 5,
@@ -30835,7 +30835,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - PP-5",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "3\"",
         "outerDb": 0,
         "pressure": 5,
@@ -30846,7 +30846,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - PP-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
@@ -30857,7 +30857,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - PP-7",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 8.5,
@@ -30868,7 +30868,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - PP-8",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 6.5,
@@ -30879,7 +30879,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - PP-9",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 8.5,
@@ -30890,7 +30890,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - PP-10",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "2\"",
         "outerDb": 0,
         "pressure": 6.5,
@@ -30901,7 +30901,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - PP-11",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 6.5,
@@ -30912,7 +30912,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - PP-12",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 8.5,
@@ -30973,47 +30973,47 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK с женска резба Използва се за транспорт на чисти и отпадни води, торове, химикали, разтворители и други. Има приложение в редица индустрии за бързо свързване и разкачване на маркучи и тръби.&nbsp; Camlock връзките имат нис...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-d-polipropilen-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrza-vryzka-camlock-tip-d-polipropilen-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
         "code": "Camlock Тип - D - PP-1",
         "innerDb": 200,
-        "inch": "",
+        "inch": "G8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.25
       },
       {
         "code": "Camlock Тип - D - PP-2",
         "innerDb": 150,
-        "inch": "",
+        "inch": "G6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.25
       },
       {
         "code": "Camlock Тип - D - PP-3",
         "innerDb": 127,
-        "inch": "",
+        "inch": "G5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.25
       },
       {
         "code": "Camlock Тип - D - PP-4",
         "innerDb": 100,
-        "inch": "",
+        "inch": "G4\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -31024,7 +31024,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - D - PP-5",
         "innerDb": 76,
-        "inch": "",
+        "inch": "G3\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -31035,18 +31035,18 @@ const CONFIG = {
       {
         "code": "Camlock Тип - D - PP-6",
         "innerDb": 63,
-        "inch": "",
+        "inch": "G2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.25
       },
       {
         "code": "Camlock Тип - D - PP-7",
         "innerDb": 50,
-        "inch": "",
+        "inch": "G2\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -31057,7 +31057,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - D - PP-8",
         "innerDb": 32,
-        "inch": "",
+        "inch": "G1.1/4\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -31068,7 +31068,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - D - PP-9",
         "innerDb": 38,
-        "inch": "",
+        "inch": "G1.1/2\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -31079,7 +31079,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - D - PP-10",
         "innerDb": 25,
-        "inch": "",
+        "inch": "G1\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -31090,7 +31090,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - D - PP-11",
         "innerDb": 19,
-        "inch": "",
+        "inch": "G3/4\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -31101,7 +31101,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - D - PP-12",
         "innerDb": 13,
-        "inch": "",
+        "inch": "G1/2\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -31160,47 +31160,47 @@ const CONFIG = {
     "description": "Накрайник CAMLOCK под формата на капачка Използва се в индустрии за бързо свързване и разкачване на маркучи и тръби. Използват се главно за транспорт на неагресивни течности: чисти и отпадни води, вода, торове, химикали и други. Материал: &nbsp;по...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-dc-tapa-b-polipropilen-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrza-vryzka-camlock-tip-dc-tapa-b-polipropilen-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-1",
         "innerDb": 200,
-        "inch": "",
+        "inch": "G8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.85
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-2",
         "innerDb": 150,
-        "inch": "",
+        "inch": "G6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.85
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-3",
         "innerDb": 125,
-        "inch": "",
+        "inch": "G5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.85
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-4",
         "innerDb": 100,
-        "inch": "",
+        "inch": "G4\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -31211,7 +31211,7 @@ const CONFIG = {
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-5",
         "innerDb": 76,
-        "inch": "",
+        "inch": "G3\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -31222,7 +31222,7 @@ const CONFIG = {
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-6",
         "innerDb": 63,
-        "inch": "",
+        "inch": "G2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -31233,7 +31233,7 @@ const CONFIG = {
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-7",
         "innerDb": 32,
-        "inch": "",
+        "inch": "G1.1/4\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -31244,7 +31244,7 @@ const CONFIG = {
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-8",
         "innerDb": 38,
-        "inch": "",
+        "inch": "G1.1/2\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -31255,7 +31255,7 @@ const CONFIG = {
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-9",
         "innerDb": 50,
-        "inch": "",
+        "inch": "G2\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -31266,7 +31266,7 @@ const CONFIG = {
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-10",
         "innerDb": 25,
-        "inch": "",
+        "inch": "G1\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -31277,7 +31277,7 @@ const CONFIG = {
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-11",
         "innerDb": 19,
-        "inch": "",
+        "inch": "G3/4\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -31288,7 +31288,7 @@ const CONFIG = {
       {
         "code": "CAMLOCK тип DC (тапа) B - PP-12",
         "innerDb": 13,
-        "inch": "",
+        "inch": "G1/2\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -31349,45 +31349,45 @@ const CONFIG = {
     "description": "Мъжкият Camlock накрайник, тип E се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединява се към всички типове женски камлок накрайници от същия ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-e-ss-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrza-vryzka-camlock-tip-e-ss-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Camlock тип - E - SS-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 8.9
       },
       {
         "code": "Camlock тип - E - SS-2",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 8.9
       },
       {
         "code": "Camlock тип - E - SS-3",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 8.9
       },
       {
         "code": "Camlock тип - E - SS-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -31398,7 +31398,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - E - SS-5",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -31409,7 +31409,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - E - SS-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -31420,7 +31420,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - E - SS-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -31431,7 +31431,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - E - SS-8",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -31442,7 +31442,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - E - SS-9",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -31453,7 +31453,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - E - SS-10",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -31464,7 +31464,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - E - SS-11",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -31475,7 +31475,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - E - SS-12",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -31535,25 +31535,25 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK с женска резба Приложение: &nbsp;мъжкият камлок накрайник, тип А се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединява...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-camlock-tip-a-aluminii-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-camlock-tip-a-aluminii-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Camlock тип - A - SS-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 200,
+        "inch": "G8\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.95
       },
       {
         "code": "Camlock тип - A - SS-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 100,
+        "inch": "G4\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -31563,30 +31563,30 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - A - SS-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 150,
+        "inch": "G6\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.95
       },
       {
         "code": "Camlock тип - A - SS-4",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 125,
+        "inch": "G5\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.95
       },
       {
         "code": "Camlock тип - A - SS-5",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 63,
+        "inch": "G2.1/2\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -31596,8 +31596,8 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - A - SS-6",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 76,
+        "inch": "G3\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -31607,8 +31607,8 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - A - SS-7",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "G2\"",
         "outerDb": 0,
         "pressure": 17,
         "bend": 0,
@@ -31618,8 +31618,8 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - A - SS-8",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 38,
+        "inch": "G1.1/2\"",
         "outerDb": 0,
         "pressure": 17,
         "bend": 0,
@@ -31629,8 +31629,8 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - A - SS-9",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 13,
+        "inch": "G1/2\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -31640,8 +31640,8 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - A - SS-10",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 32,
+        "inch": "G1.1/4\"",
         "outerDb": 0,
         "pressure": 17,
         "bend": 0,
@@ -31651,8 +31651,8 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - A - SS-11",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 19,
+        "inch": "G3/4\"",
         "outerDb": 0,
         "pressure": 17,
         "bend": 0,
@@ -31662,8 +31662,8 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - A - SS-12",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 25,
+        "inch": "G1\"",
         "outerDb": 0,
         "pressure": 17,
         "bend": 0,
@@ -31723,46 +31723,46 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK със щуцер за маркуч Алуминиевите адаптери се използват за транспорт на чисти и отпадни води, вода, хидравлично масло, бензин и петролни продукти, охлаждащи течности. Има приложение в редица индустрии за бързо свързване и р...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-c-al-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrza-vryzka-camlock-tip-c-al-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Camlock Тип - C - AL-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 4,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.15
       },
       {
         "code": "Camlock Тип - C - AL-2",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.15
       },
       {
         "code": "Camlock Тип - C - AL-3",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.15
       },
       {
         "code": "Camlock Тип - C - AL-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -31773,7 +31773,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - AL-5",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -31784,7 +31784,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - AL-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -31795,7 +31795,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - AL-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -31806,7 +31806,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - AL-8",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -31817,7 +31817,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - AL-9",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -31828,7 +31828,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - AL-10",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -31839,7 +31839,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - AL-11",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -31850,7 +31850,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - AL-12",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -31908,8 +31908,8 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK с мъжка резба Използва се в индустрии за бързо свързване и разкачване на маркучи и тръби. Използват се за транспорт на неагресивни течности, чисти и отпадни води, смеси масло - вода, хидравлично масло, бензин, петролни про...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-b-aluminii-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-b-aluminii-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -31921,7 +31921,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.15
       },
       {
         "code": "Camlock Тип - B - AL-2",
@@ -31932,7 +31932,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.15
       },
       {
         "code": "Camlock Тип - B - AL-3",
@@ -31943,7 +31943,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.15
       },
       {
         "code": "Camlock Тип - B - AL-4",
@@ -32084,13 +32084,13 @@ const CONFIG = {
     "description": "Накрайник с тръбна конусна резба без борд AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-rezbovi-nakrainik-s-trybna-konusna-rezba-bez-bord-aisi316-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-rezbovi-nakrainik-s-trybna-konusna-rezba-bez-bord-aisi-316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-rezbovi-nakrainik-s-trybna-konusna-rezba-bez-bord-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-rezbovi-nakrainik-s-trybna-konusna-rezba-bez-bord-aisi-316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
         "code": "ZFIG-1",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -32101,7 +32101,7 @@ const CONFIG = {
       },
       {
         "code": "ZFIG-2",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -32112,7 +32112,7 @@ const CONFIG = {
       },
       {
         "code": "ZFIG-3",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -32123,7 +32123,7 @@ const CONFIG = {
       },
       {
         "code": "ZFIG-4",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -32134,7 +32134,7 @@ const CONFIG = {
       },
       {
         "code": "ZFIG-5",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -32189,8 +32189,8 @@ const CONFIG = {
     "description": "Използва се за пренос на течности, въздух, леки химикали и други. Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;нетоксично, прозрачно PVC Подсилване: &nbsp;високоякостни полиестерни влакна Покритие: &nbsp;прозрачно PVC, което позволява лесно и...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/pvc-armiran-markuch-za-voda-hrani-i-himikali-arianna-ta-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/pvc-armiran-markuch-za-voda-hrani-i-himikali-arianna-ta-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pvc-armiran-markuch-za-voda-hrani-i-himikali-arianna-ta-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pvc-armiran-markuch-za-voda-hrani-i-himikali-arianna-ta-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -32372,15 +32372,15 @@ const CONFIG = {
     "description": "Капачка за IBC бидон с щуцер за маркуч. Присъединяване: *страна 1 - женска резба S60 x 6 *страна 2 - извод за присъединяване с опашка за маркуч Материал:&nbsp; * корпус от Полипропилен * уплътнение от Полиетилен Работно налягане: &nbsp;7 bar Работ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/ibc-nakrainik-s-opashka-za-markuch-polipropilen-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-s-opashka-za-markuch-polipropilen-3-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-s-opashka-za-markuch-polipropilen-2-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-s-opashka-za-markuch-polipropilen-1-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/ibc-nakrainik-s-opashka-za-markuch-polipropilen-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakrainik-s-opashka-za-markuch-polipropilen-3-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakrainik-s-opashka-za-markuch-polipropilen-2-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakrainik-s-opashka-za-markuch-polipropilen-1-1200x1200.jpeg"
     ],
     "variants": [
       {
         "code": "IBCHT-1",
-        "innerDb": 0,
+        "innerDb": 2,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -32391,7 +32391,7 @@ const CONFIG = {
       },
       {
         "code": "IBCHT-2",
-        "innerDb": 0,
+        "innerDb": 1.1,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -32402,7 +32402,7 @@ const CONFIG = {
       },
       {
         "code": "IBCHT-3",
-        "innerDb": 0,
+        "innerDb": 1.1,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -32413,7 +32413,7 @@ const CONFIG = {
       },
       {
         "code": "IBCHT-4",
-        "innerDb": 0,
+        "innerDb": 1,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -32424,7 +32424,7 @@ const CONFIG = {
       },
       {
         "code": "IBCHT-5",
-        "innerDb": 0,
+        "innerDb": 3,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -32435,7 +32435,7 @@ const CONFIG = {
       },
       {
         "code": "IBCHT-6",
-        "innerDb": 0,
+        "innerDb": 1,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -32481,7 +32481,7 @@ const CONFIG = {
     "description": "Уплътнения за клампови накрайници Silicone",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytneniq-za-klampovi-nakrainici-nbr-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/uplytneniq-za-klampovi-nakrainici-nbr-1200x1200.png"
     ],
     "variants": [
       {
@@ -32631,47 +32631,47 @@ const CONFIG = {
     "description": "Накрайник CAMLOCK под формата на капачка Алуминиевите адаптери се използват за транспорт на чисти и отпадни води, вода, хидравлично масло, бензин и петролни продукти, охлаждащи течности. Има приложение в редица индустрии за бързо свързване и разка...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-dc-tapa-b-aluminii-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-dc-tapa-b-aluminii-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "CAMLOCK тип DC (тапа) B - AL-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 200,
+        "inch": "G8\"",
         "outerDb": 0,
         "pressure": 4,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.2
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - AL-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 150,
+        "inch": "G6\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.2
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - AL-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 125,
+        "inch": "G5\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.2
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - AL-4",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 100,
+        "inch": "G4\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -32681,8 +32681,8 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - AL-5",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 76,
+        "inch": "G3\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -32692,8 +32692,8 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - AL-6",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 63,
+        "inch": "G2.1/2\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -32703,8 +32703,8 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - AL-7",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "G2\"",
         "outerDb": 0,
         "pressure": 17,
         "bend": 0,
@@ -32714,8 +32714,8 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - AL-8",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 38,
+        "inch": "G1.1/2\"",
         "outerDb": 0,
         "pressure": 17,
         "bend": 0,
@@ -32725,8 +32725,8 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - AL-9",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 25,
+        "inch": "G1\"",
         "outerDb": 0,
         "pressure": 17,
         "bend": 0,
@@ -32736,8 +32736,8 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - AL-10",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 32,
+        "inch": "G1.1/4\"",
         "outerDb": 0,
         "pressure": 17,
         "bend": 0,
@@ -32747,8 +32747,8 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - AL-11",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 19,
+        "inch": "G3/4\"",
         "outerDb": 0,
         "pressure": 17,
         "bend": 0,
@@ -32758,8 +32758,8 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - AL-12",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 13,
+        "inch": "G1/2\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -32816,47 +32816,47 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK с женска резба Алуминиевите адаптери се използват за транспорт на чисти и отпадни води, вода, хидравлично масло, бензин и петролни продукти, охлаждащи течности. Има приложение в редица индустрии за бързо свързване и разкач...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-d-aluminii-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-d-aluminii-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Camlock Тип - D - AL-1",
         "innerDb": 200,
-        "inch": "",
+        "inch": "G8\"",
         "outerDb": 0,
         "pressure": 4,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.2
       },
       {
         "code": "Camlock Тип - D - AL-2",
         "innerDb": 150,
-        "inch": "",
+        "inch": "G6\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.2
       },
       {
         "code": "Camlock Тип - D - AL-3",
         "innerDb": 125,
-        "inch": "",
+        "inch": "G5\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 10.2
       },
       {
         "code": "Camlock Тип - D - AL-4",
         "innerDb": 100,
-        "inch": "",
+        "inch": "G4\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -32867,7 +32867,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - D - AL-5",
         "innerDb": 76,
-        "inch": "",
+        "inch": "G3\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -32878,7 +32878,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - D - AL-6",
         "innerDb": 63,
-        "inch": "",
+        "inch": "G2.1/2\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -32889,7 +32889,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - D - AL-7",
         "innerDb": 50,
-        "inch": "",
+        "inch": "G2\"",
         "outerDb": 0,
         "pressure": 17,
         "bend": 0,
@@ -32900,7 +32900,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - D - AL-8",
         "innerDb": 38,
-        "inch": "",
+        "inch": "G1.1/2\"",
         "outerDb": 0,
         "pressure": 17,
         "bend": 0,
@@ -32911,7 +32911,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - D - AL-9",
         "innerDb": 32,
-        "inch": "",
+        "inch": "G1.1/4\"",
         "outerDb": 0,
         "pressure": 17,
         "bend": 0,
@@ -32922,7 +32922,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - D - AL-10",
         "innerDb": 19,
-        "inch": "",
+        "inch": "G3/4\"",
         "outerDb": 0,
         "pressure": 17,
         "bend": 0,
@@ -32933,7 +32933,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - D - AL-11",
         "innerDb": 25,
-        "inch": "",
+        "inch": "G1\"",
         "outerDb": 0,
         "pressure": 17,
         "bend": 0,
@@ -32944,7 +32944,7 @@ const CONFIG = {
       {
         "code": "Camlock Тип - D - AL-12",
         "innerDb": 13,
-        "inch": "",
+        "inch": "G1/2\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -32993,24 +32993,24 @@ const CONFIG = {
     "description": "Накрайник тип GUILLEMIN, с контра с външна резба, алуминий, 16bar",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-tip=guillemin-s-kontra-s-vynshna-rezba-aluminii-16-bar-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nakrainik-tip=guillemin-s-kontra-s-vynshna-rezba-aluminii-16-bar-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Guillemin GMS - AL-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 13.5
       },
       {
         "code": "Guillemin GMS - AL-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -33021,7 +33021,7 @@ const CONFIG = {
       {
         "code": "Guillemin GMS - AL-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2 1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -33032,7 +33032,7 @@ const CONFIG = {
       {
         "code": "Guillemin GMS - AL-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -33043,18 +33043,18 @@ const CONFIG = {
       {
         "code": "Guillemin GMS - AL-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 13.5
       },
       {
         "code": "Guillemin GMS - AL-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -33065,18 +33065,18 @@ const CONFIG = {
       {
         "code": "Guillemin GMS - AL-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 13.5
       },
       {
         "code": "Guillemin GMS - AL-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -33136,24 +33136,24 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK с мъжка резба Приложение: &nbsp;мъжкият камлок накрайник, тип F се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединява ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-f-neryjdaema-stomana-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrza-vryzka-camlock-tip-f-neryjdaema-stomana-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Camlock Тип - F - SS-1",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 11.35
       },
       {
         "code": "Camlock Тип - F - SS-2",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -33164,18 +33164,18 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - SS-3",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 11.35
       },
       {
         "code": "Camlock Тип - F - SS-4",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -33186,7 +33186,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - SS-5",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -33197,7 +33197,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - SS-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -33208,7 +33208,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - SS-7",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -33219,7 +33219,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - SS-8",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -33230,7 +33230,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - SS-9",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -33241,18 +33241,18 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - SS-10",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 11.35
       },
       {
         "code": "Camlock Тип - F - SS-11",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -33263,7 +33263,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - SS-12",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -33325,13 +33325,13 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK със щуцер за маркуч Приложение: &nbsp;мъжкият камлок накрайник, тип E се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъед...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-e-ms-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrza-vryzka-camlock-tip-e-ms-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Camlock Тип - E - MS-1",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -33342,18 +33342,18 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - MS-2",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 14.35
       },
       {
         "code": "Camlock Тип - E - MS-3",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -33364,7 +33364,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - MS-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -33375,7 +33375,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - MS-5",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -33386,7 +33386,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - MS-6",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -33397,7 +33397,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - MS-7",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -33408,7 +33408,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - MS-8",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -33419,7 +33419,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - MS-9",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -33430,7 +33430,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - MS-10",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -33441,7 +33441,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - MS-11",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -33452,7 +33452,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - E - MS-12",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -33512,13 +33512,13 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK с женска резба Приложение: &nbsp;мъжкият камлок накрайник, тип А се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединява...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-a-mesing-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-a-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Camlock Тип - A - MS-1",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -33529,18 +33529,18 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - MS-2",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 15.05
       },
       {
         "code": "Camlock Тип - A - MS-3",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -33551,7 +33551,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - MS-4",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -33562,7 +33562,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - MS-5",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -33573,7 +33573,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - MS-6",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -33584,7 +33584,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - MS-7",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -33595,7 +33595,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - MS-8",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -33606,7 +33606,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - MS-9",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -33617,7 +33617,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - MS-10",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -33628,7 +33628,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - MS-11",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -33639,7 +33639,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - A - MS-12",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -33691,11 +33691,11 @@ const CONFIG = {
     "description": "Капак за IBC бидон с женска резба DN 150 mm Присъединяване:&nbsp; женска резба DN 150 mm Материал:&nbsp; корпус от Полипропилен,&nbsp; уплътнение от Полиетилен Работно налягане: &nbsp;7 bar Работна температура: &nbsp;-10°C до +70°C",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kapachka-za-ibc-bidon-jenska-150-mm-markuchite-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kapachka-za-ibc-bidon-jenska-150-mm-cherna-1-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kapachka-za-ibc-bidon-jenska-150-mm-cherna-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kapachka-za-ibc-bidon-jenska-150-mm-cherna-2-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kapachka-za-ibc-bidon-jenska-150-mm-chervena-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/kapachka-za-ibc-bidon-jenska-150-mm-markuchite-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/kapachka-za-ibc-bidon-jenska-150-mm-cherna-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/kapachka-za-ibc-bidon-jenska-150-mm-cherna-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/kapachka-za-ibc-bidon-jenska-150-mm-cherna-2-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/kapachka-za-ibc-bidon-jenska-150-mm-chervena-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -33763,8 +33763,8 @@ const CONFIG = {
     "description": "Тапа за Triclamp DIN32676",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/tapa-din32676-1-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/tapa-din32676-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/tapa-din32676-1-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/tapa-din32676-1200x1200.png"
     ],
     "variants": [
       {
@@ -33906,12 +33906,12 @@ const CONFIG = {
     "description": "Накрайник тип STORZ с опашка за маркуч, алуминий, 16bar",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-stroz-s-opashka-za-markuch-aluminii-16-bar-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-stroz-s-opashka-za-markuch-aluminii-16-bar-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "STORZ STZ - AL-1",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -33922,7 +33922,7 @@ const CONFIG = {
       },
       {
         "code": "STORZ STZ - AL-2",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -33933,7 +33933,7 @@ const CONFIG = {
       },
       {
         "code": "STORZ STZ - AL-3",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -33944,7 +33944,7 @@ const CONFIG = {
       },
       {
         "code": "STORZ STZ - AL-4",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -33955,7 +33955,7 @@ const CONFIG = {
       },
       {
         "code": "STORZ STZ - AL-5",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -33966,7 +33966,7 @@ const CONFIG = {
       },
       {
         "code": "STORZ STZ - AL-6",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -33977,7 +33977,7 @@ const CONFIG = {
       },
       {
         "code": "STORZ STZ - AL-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -33988,7 +33988,7 @@ const CONFIG = {
       },
       {
         "code": "STORZ STZ - AL-8",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -33999,7 +33999,7 @@ const CONFIG = {
       },
       {
         "code": "STORZ STZ - AL-9",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -34010,7 +34010,7 @@ const CONFIG = {
       },
       {
         "code": "STORZ STZ - AL-10",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -34021,7 +34021,7 @@ const CONFIG = {
       },
       {
         "code": "STORZ STZ - AL-11",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -34032,7 +34032,7 @@ const CONFIG = {
       },
       {
         "code": "STORZ STZ - AL-12",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -34082,8 +34082,8 @@ const CONFIG = {
     "description": "Кран-канелка за IBC бидон с вътрешна резба S60x6 PP. Подходящи за питейна вода, отпадна вода, леки химикали, торове и пестициди. Присъединяване: &nbsp;Женска резба S 60x6 Материал: - корпус от полипропилен - уплътнение от полиетилен",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kran-za-ibc-bidon-s-kanelka-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kran-za-ibc-bidon-s-kanelka-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/kran-za-ibc-bidon-s-kanelka-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/kran-za-ibc-bidon-s-kanelka-1-1200x1200.png"
     ],
     "variants": [
       {
@@ -34144,36 +34144,36 @@ const CONFIG = {
     "description": "Неръждаем четирипътник муфа - AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-chetiripytnik-mufa-aisi316-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-chetiripytnik-mufa-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaem-chetiripytnik-mufa-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaem-chetiripytnik-mufa-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
         "code": "FFF LPSS-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.8
       },
       {
         "code": "FFF LPSS-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.8
       },
       {
         "code": "FFF LPSS-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -34184,7 +34184,7 @@ const CONFIG = {
       {
         "code": "FFF LPSS-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -34195,7 +34195,7 @@ const CONFIG = {
       {
         "code": "FFF LPSS-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -34206,7 +34206,7 @@ const CONFIG = {
       {
         "code": "FFF LPSS-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -34217,7 +34217,7 @@ const CONFIG = {
       {
         "code": "FFF LPSS-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -34228,7 +34228,7 @@ const CONFIG = {
       {
         "code": "FFF LPSS-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -34239,7 +34239,7 @@ const CONFIG = {
       {
         "code": "FFF LPSS-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -34250,7 +34250,7 @@ const CONFIG = {
       {
         "code": "FFF LPSS-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -34261,7 +34261,7 @@ const CONFIG = {
       {
         "code": "FFF LPSS-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -34272,7 +34272,7 @@ const CONFIG = {
       {
         "code": "FFF LPSS-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -34332,46 +34332,46 @@ const CONFIG = {
     "description": "Накрайник CAMLOCK под формата на капачка Приложение: &nbsp;женската камлок тапа, тип DC се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединява ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-dc-tapa-b-neryjdaema-stomana-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrza-vryzka-camlock-tip-dc-tapa-b-neryjdaema-stomana-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "CAMLOCK тип DC (тапа) B - SS-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 18.8
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - SS-2",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 18.8
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - SS-3",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 18.8
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - SS-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -34382,7 +34382,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - SS-5",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -34393,7 +34393,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - SS-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -34404,7 +34404,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - SS-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -34415,7 +34415,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - SS-8",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -34426,7 +34426,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - SS-9",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -34437,7 +34437,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - SS-10",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -34448,7 +34448,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - SS-11",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -34459,7 +34459,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B - SS-12",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -34520,24 +34520,24 @@ const CONFIG = {
     "description": "Накрайник CAMLOCK под формата на капачка Приложение: &nbsp;женската камлок тапа, тип DC се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединява ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-dc-tapa-b-mesing-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrza-vryzka-camlock-tip-dc-tapa-b-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "CAMLOCK тип DC (тапа) B MS-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 18
       },
       {
         "code": "CAMLOCK тип DC (тапа) B MS-2",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -34548,7 +34548,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B MS-3",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -34559,7 +34559,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B MS-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -34570,7 +34570,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B MS-5",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -34581,7 +34581,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B MS-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -34592,7 +34592,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B MS-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -34603,7 +34603,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B MS-8",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -34614,7 +34614,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B MS-9",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -34625,7 +34625,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B MS-10",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -34636,7 +34636,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B MS-11",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -34647,7 +34647,7 @@ const CONFIG = {
       },
       {
         "code": "CAMLOCK тип DC (тапа) B MS-12",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -34707,46 +34707,46 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK със щуцер за маркуч Приложение: &nbsp;женският&nbsp;камлок накрайник, тип C се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-c-neryjdaema-stomana-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrza-vryzka-camlock-tip-c-neryjdaema-stomana-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Camlock тип - C - SS-1",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 20.6
       },
       {
         "code": "Camlock тип - C - SS-2",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 20.6
       },
       {
         "code": "Camlock тип - C - SS-3",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 20.6
       },
       {
         "code": "Camlock тип - C - SS-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -34757,7 +34757,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - C - SS-5",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -34768,7 +34768,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - C - SS-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -34779,7 +34779,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - C - SS-7",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -34790,7 +34790,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - C - SS-8",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -34801,7 +34801,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - C - SS-9",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -34812,7 +34812,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - C - SS-10",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -34823,7 +34823,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - C - SS-11",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -34834,7 +34834,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - C - SS-12",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -34895,13 +34895,13 @@ const CONFIG = {
     "description": "Мъжки накрайник CAMLOCK с мъжка резба Приложение: &nbsp;мъжкият камлок накрайник, тип F се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединява ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-f-mesing-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-f-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Camlock Тип - F - MS-1",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -34912,7 +34912,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - MS-2",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -34923,7 +34923,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - MS-3",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -34934,7 +34934,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - MS-4",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -34945,7 +34945,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - MS-5",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -34956,7 +34956,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - MS-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -34967,7 +34967,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - MS-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -34978,7 +34978,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - MS-8",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -34989,7 +34989,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - MS-9",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -35000,7 +35000,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - MS-10",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -35011,7 +35011,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - MS-11",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -35022,14 +35022,14 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - F - MS-12",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 19.55
       }
     ]
   },
@@ -35061,7 +35061,7 @@ const CONFIG = {
     "description": "Гъвкав нагнетателен маркуч за въздух и вода, използван за битови и индустриални приложения, строителство, селско стопанство и други. Вложка: &nbsp;NR-SBR каучук Подсилване:&nbsp; една вградена текстилна оплетка. Покритие: &nbsp;NR-SBR каучук каучу...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/markuch-za-vyzduh-i-voda-belinda-air-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/markuch-za-vyzduh-i-voda-belinda-air-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -35115,9 +35115,9 @@ const CONFIG = {
     "description": "Използва се за пренос на минерална вода, индустриални, строителни и селскостопански машини. Режим на работа: &nbsp;смукателно-нагнетателен Вложка: &nbsp;много гъвкав и гладък, нетоксичен, прозрачен, омекотен PVC материал Подсилване: &nbsp;устойчив...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/pcv-markuch-s-metalna-spirala-plutone-a-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/pcv-markuch-s-metalna-spirala-plutone-a-1-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/pcv-markuch-s-metalna-spirala-plutone-a-2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pcv-markuch-s-metalna-spirala-plutone-a-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pcv-markuch-s-metalna-spirala-plutone-a-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pcv-markuch-s-metalna-spirala-plutone-a-2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -35338,7 +35338,7 @@ const CONFIG = {
         "bend": 100,
         "weight": 0,
         "rollLength": 60,
-        "priceEur": 0
+        "priceEur": 3.75
       },
       {
         "code": "-21",
@@ -35458,8 +35458,8 @@ const CONFIG = {
     "description": "Приложение: &nbsp;в селското стопанство - за напояване и засмукване на течности и торове, леки химикали; подходящ за използване на машини за суспензия. Режим на работа: &nbsp;смукателно-нагнетателен Вложка: &nbsp;здраво, гъвкаво, гладко, пластифиц...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/smukatelen-markuch-za-technosti-i-semena-saturno-l-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/smukatelen-markuch-za-technosti-i-semena-saturno-l-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/smukatelen-markuch-za-technosti-i-semena-saturno-l-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/smukatelen-markuch-za-technosti-i-semena-saturno-l-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -35526,7 +35526,7 @@ const CONFIG = {
         "bend": 250,
         "weight": 0,
         "rollLength": 50,
-        "priceEur": 0
+        "priceEur": 3.7
       },
       {
         "code": "SATURNO L-7",
@@ -35559,7 +35559,7 @@ const CONFIG = {
         "bend": 195,
         "weight": 0,
         "rollLength": 50,
-        "priceEur": 0
+        "priceEur": 3.7
       },
       {
         "code": "SATURNO L-10",
@@ -35654,8 +35654,8 @@ const CONFIG = {
     "description": "Предназначен за всмукване и доставка на прахообразни храни, замразени и сушени храни, брашна, течности, сокове и други. Вложка: &nbsp;напълно гладко, гъвкаво, нетоксично PVC Подсилване: &nbsp;бяла, твърда, ударо устойчива PVC спирала Покритие: &nb...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/smukatelen-markuch-za-technosti-i-semena-netunno-ff-standart-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/smukatelen-markuch-za-technosti-i-semena-netunno-ff-standart-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/smukatelen-markuch-za-technosti-i-semena-netunno-ff-standart-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/smukatelen-markuch-za-technosti-i-semena-netunno-ff-standart-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -35844,8 +35844,8 @@ const CONFIG = {
     "description": "Предназначен за засмукване и транспорт на отпадни води, химикали, и други течности в селското стопанство, индустрията и строителството. Особено подходящ за оборудване на цистерни Режим на работа: &nbsp;смукателно-нагнетателен Конструкция: &nbsp;Гл...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/smukatelen-pvc-markuch-za-kanalopochistvane-appolo-se-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/smukatelen-pvc-markuch-za-kanalopochistvane-appolo-se-2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/smukatelen-pvc-markuch-za-kanalopochistvane-appolo-se-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/smukatelen-pvc-markuch-za-kanalopochistvane-appolo-se-2-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -35857,7 +35857,7 @@ const CONFIG = {
         "bend": 1800,
         "weight": 0,
         "rollLength": 10,
-        "priceEur": 0
+        "priceEur": 28.75
       },
       {
         "code": "APOLLO SE-2",
@@ -35999,7 +35999,7 @@ const CONFIG = {
     "description": "Използва се за изпомпване , засмукване и отвеждане на вода, кал и други субстанции. Режим на работа: &nbsp;смукателно-нагнетателен Вложка: &nbsp;синтетичен каучук Подсилване: &nbsp;текстилна оплетка и стоманена спирала (двойна стоманена спирала на...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/gumen-markuch-za-voda-eh360-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/gumen-markuch-za-voda-eh360-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -36011,7 +36011,7 @@ const CONFIG = {
         "bend": 1950,
         "weight": 20.52,
         "rollLength": 10,
-        "priceEur": 0
+        "priceEur": 26.2
       },
       {
         "code": "EH360-2",
@@ -36022,7 +36022,7 @@ const CONFIG = {
         "bend": 2015,
         "weight": 19.6,
         "rollLength": 10,
-        "priceEur": 0
+        "priceEur": 26.2
       },
       {
         "code": "EH360-3",
@@ -36110,7 +36110,7 @@ const CONFIG = {
         "bend": 320,
         "weight": 2.54,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 26.2
       },
       {
         "code": "EH360-11",
@@ -36143,7 +36143,7 @@ const CONFIG = {
         "bend": 185,
         "weight": 1.44,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 26.2
       },
       {
         "code": "EH360-14",
@@ -36176,7 +36176,7 @@ const CONFIG = {
         "bend": 95,
         "weight": 0.64,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 26.2
       }
     ]
   },
@@ -36208,7 +36208,7 @@ const CONFIG = {
     "description": "Приложение: &nbsp;въздух под средно високо налягане Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;синтетичен каучук, устойчив на маслени изпарения Подсилване: &nbsp;високоякостна синтетична текстилна оплетка Покритие: &nbsp;синтетичен каучук у...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/gumen-markuch-za-vyzduh-eha501-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/gumen-markuch-za-vyzduh-eha501-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -36264,7 +36264,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 1.63,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 26.2
       },
       {
         "code": "EHA501-6",
@@ -36297,7 +36297,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0.67,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 26.2
       },
       {
         "code": "EHA501-9",
@@ -36308,7 +36308,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0.5,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 26.2
       },
       {
         "code": "EHA501-10",
@@ -36319,7 +36319,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0.37,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 26.2
       },
       {
         "code": "EHA501-11",
@@ -36330,7 +36330,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0.33,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 26.2
       }
     ]
   },
@@ -36362,7 +36362,7 @@ const CONFIG = {
     "description": "За прехвърляне на горещ въздух от компресори към цистерни. Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;топлоустойчив бял EPDM каучук Подсилване: &nbsp;силно разтеглив синтетичен текстил Покритие: &nbsp;специален EPDM каучук устойчив на износ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/gumen-markuch-za-goresht-vyzduh-alize-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/gumen-markuch-za-goresht-vyzduh-alize-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -36374,7 +36374,7 @@ const CONFIG = {
         "bend": 1000,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 65.95
       },
       {
         "code": "ALIZE 200°C-2",
@@ -36418,7 +36418,7 @@ const CONFIG = {
         "bend": 350,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 65.95
       },
       {
         "code": "ALIZE 200°C-6",
@@ -36429,7 +36429,7 @@ const CONFIG = {
         "bend": 250,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 65.95
       },
       {
         "code": "ALIZE 200°C-7",
@@ -36440,7 +36440,7 @@ const CONFIG = {
         "bend": 200,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 65.95
       }
     ]
   },
@@ -36472,7 +36472,7 @@ const CONFIG = {
     "description": "За въздух под високо налягане. Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;маслоустойчива Подсилване: &nbsp;високоякостни метални нишки Покритие: &nbsp;микроперфориран синтетичен каучук, устойчив на износване, озон и атмосферни влияния Работ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/gumen-markuch-za-vyzduh-eha501-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/gumen-markuch-za-vyzduh-eha501-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -36609,17 +36609,17 @@ const CONFIG = {
     "description": "Резервен маркуч с накрайници за помпане на гуми. Подходящ е за монтиране към пистолет с манометър за помпане на гуми, както и за въздушни компресори за гуми.",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/rezerven-markuch-za-pompene-na-gumi (1)-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ за въздух/rezerven-markuch-za-pompene-na-gumi (5)-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ за въздух/rezerven-markuch-za-pompene-na-gumi (4)-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ за въздух/rezerven-markuch-za-pompene-na-gumi (3)-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ за въздух/rezerven-markuch-za-pompene-na-gumi (2)-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/rezerven-markuch-za-pompene-na-gumi%20(1)-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/rezerven-markuch-za-pompene-na-gumi%20(5)-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/rezerven-markuch-za-pompene-na-gumi%20(4)-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/rezerven-markuch-za-pompene-na-gumi%20(3)-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/rezerven-markuch-za-pompene-na-gumi%20(2)-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "PLW20 - резервен-1",
         "innerDb": 6,
-        "inch": "",
+        "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -36659,8 +36659,8 @@ const CONFIG = {
     "description": "МАРКУЧ ЗА АСПИРАЦИЯ и КЛИМАТИЗАЦИЯ за засмукване и транспортиране на въздух, прах, пари, газове и дребни абразивни частици;&nbsp; Вложка: &nbsp;изцяло гладко еластично PVC Подсилване: &nbsp;бяла ударо-устойчива PVC спирала Покритие: &nbsp;гофриран...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/eolo-l-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ за въздух/eolo-l-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/eolo-l-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/eolo-l-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -36749,7 +36749,7 @@ const CONFIG = {
         "bend": 360,
         "weight": 0,
         "rollLength": 30,
-        "priceEur": 0
+        "priceEur": 72.25
       },
       {
         "code": "SPIRALPRESS OIL-2",
@@ -37314,7 +37314,7 @@ const CONFIG = {
         "bend": 400,
         "weight": 0,
         "rollLength": 30,
-        "priceEur": 0
+        "priceEur": 19.4
       },
       {
         "code": "SPIRALPRESS ENO-3",
@@ -37325,7 +37325,7 @@ const CONFIG = {
         "bend": 380,
         "weight": 0,
         "rollLength": 30,
-        "priceEur": 0
+        "priceEur": 19.4
       },
       {
         "code": "SPIRALPRESS ENO-4",
@@ -37336,7 +37336,7 @@ const CONFIG = {
         "bend": 300,
         "weight": 0,
         "rollLength": 30,
-        "priceEur": 0
+        "priceEur": 19.4
       },
       {
         "code": "SPIRALPRESS ENO-5",
@@ -37369,7 +37369,7 @@ const CONFIG = {
         "bend": 140,
         "weight": 0,
         "rollLength": 30,
-        "priceEur": 0
+        "priceEur": 19.4
       }
     ]
   },
@@ -37399,7 +37399,7 @@ const CONFIG = {
     "description": "Вложка:&nbsp; &nbsp;водоустойчив синтетичен каучук Подсилване: &nbsp;една стоманена оплетка с висока якост Покритие: &nbsp;черен, сив или син устойчив синтетичен каучук Работната температура: &nbsp;- 10°C / + 135°C с връх от + 150°C",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/markuch-za-parostruiki-i-vodostruiki-teknojet-1sn-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/markuch-za-parostruiki-i-vodostruiki-teknojet-1sn-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -37478,7 +37478,7 @@ const CONFIG = {
     "description": "Предназначен за доставка на течна газ. Вложка: &nbsp;черен, гладък електропроводим NBR каучук Подсилване: &nbsp;високоякостни синтетични слоеве Покритие: &nbsp;черен, гладък, микроперфориран, огнеопорен, антистатичен, противохлъзгав, CR каучукова ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-lpg-gaz-petrogas-25-sd-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/markuch-za-lpg-gaz-petrogas-25-sd-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -37622,7 +37622,7 @@ const CONFIG = {
     "description": "Маркуч за транспортиране на въздух, вода, гориво както и химически продукти в промишлеността и селското стопанство. Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;синтетичен каучук, устойчив на масло, гориво и бензин Подсилване: &nbsp;високоуст...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/BALFLEX-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/BALFLEX-1200x1200.png"
     ],
     "variants": [
       {
@@ -37663,7 +37663,7 @@ const CONFIG = {
     "description": "Вложка: &nbsp;Силна, гъвкава, и гладка масло устойчива смес от PVC/NBR Подсилване: &nbsp;Силно разтеглив синтетичен текстил Покритие: &nbsp;Химически агенти, протъркване и външни атмосферни условия Работната температура: &nbsp;– 10° до +60° C",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-goriva-i-masla-dis-fuel-oil-hose-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/markuch-za-goriva-i-masla-dis-fuel-oil-hose-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -37738,7 +37738,7 @@ const CONFIG = {
     "description": "Армиран маркуч за пренос на газ в газови системи на автомобили. Температурен обхват: &nbsp;-40°C / +125°C Вътрешна обвивка: &nbsp;синтетична, гладка, изолираща черна гума, устойчива на LPG и CNG. Външна обвивка: &nbsp;маслоустойчива черна гума, ан...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-bezolovni-goriva-fub-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/markuch-za-bezolovni-goriva-fub-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -37856,7 +37856,7 @@ const CONFIG = {
     "description": "Смукателно-нагнетателен маркуч за горива и масла. Вложка: &nbsp;NВR гума - електропроводима Подсилване: &nbsp;Две вградени текстилни оплетки и една вградена метална спирала Покритие: &nbsp;черна СR - електропроводима устойчива на масла, абразии и ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/smukatelno-nagnetatelen-markuch-za-goriva-i-masla-605aa-sae-100-r4-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/smukatelno-nagnetatelen-markuch-za-goriva-i-masla-605aa-sae-100-r4-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -38183,7 +38183,7 @@ const CONFIG = {
     "description": "Режим на работа: &nbsp;смукателно-нагнетателен Вложка: &nbsp;черен, гладък NBR каучук Подсилване: &nbsp;високоякостни синтетични слоеве със стоманена спирала и 1 меден проводник за заземяване на маркуча Покритие: &nbsp;черен, гладък, противохлъзга...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-lpg-gaz-petrogas-25-sd-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/markuch-za-lpg-gaz-petrogas-25-sd-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -38434,7 +38434,7 @@ const CONFIG = {
     "description": "Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;Черен електропроводим NBR Подсилване: &nbsp;Високоякостни текстилни оплетки Покритие: &nbsp;Черен електропроводим CR - устойчив на абразия, озон, въглеводород и огън Работна температура: &nbsp;-30°...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-cisterni-i-svetli-goriva-650aa-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/markuch-za-cisterni-i-svetli-goriva-650aa-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -38504,7 +38504,7 @@ const CONFIG = {
     "description": "Режим на работа: &nbsp;нагнетателен Вложка:&nbsp; черен, електропроводим, газоустойчив NBR каучук Подсилване: &nbsp;синтетичен текстил с висока якост на опън Покритие: &nbsp;озоно, климатично, топло, огне и маслоустойчив, специалномикро перфориран...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/gumen-markuch-za-goresht-vyzduh-alize-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/gumen-markuch-za-goresht-vyzduh-alize-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -38516,7 +38516,7 @@ const CONFIG = {
         "bend": 800,
         "weight": 3.865,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 41.15
       },
       {
         "code": "LPG DISCHARGE-2",
@@ -38604,7 +38604,7 @@ const CONFIG = {
         "bend": 100,
         "weight": 0.392,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 41.15
       }
     ]
   },
@@ -38634,7 +38634,7 @@ const CONFIG = {
     "description": "Режим на работа: &nbsp;нагнетателен Вътрешна камера: &nbsp;NВR електропроводима Подсилване: &nbsp;Две вградени текстилни оплетки и една медна антистатична нишка Външна обвивка: &nbsp;CR Работна температура: &nbsp;-30°C/+70°C",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-cisterni-svetli-goriva-makara-658aa-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/markuch-za-cisterni-svetli-goriva-makara-658aa-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -38713,7 +38713,7 @@ const CONFIG = {
     "description": "Приложение: &nbsp; смукателно-нагнетателен маркуч за битум. Подходящ за товарене и разтоварване на битум, асфалт, горещи масла и др. Вложка: &nbsp; NВR гума Подсилване: &nbsp; Една вградена текстилна оплетка и метална спирала Покритие: &nbsp; черн...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-bitum-hot-tar-614aa-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/markuch-za-bitum-hot-tar-614aa-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -38777,7 +38777,7 @@ const CONFIG = {
     "description": "Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;маслоустойчив синтетичен каучук Подсилване: &nbsp;една стоманена оплетка с висока якост Покритие: &nbsp;черен, устойчив на масло и околна среда синтетичен каучук Работна температура: &nbsp;-40°C /+...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-s-edna-opletka-tekno-agri-1sn-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/hidravlichen-markuch-s-edna-opletka-tekno-agri-1sn-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -38789,7 +38789,7 @@ const CONFIG = {
         "bend": 630,
         "weight": 2.3,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 7.9
       },
       {
         "code": "Tekno/AGRI 1SN-2",
@@ -38800,7 +38800,7 @@ const CONFIG = {
         "bend": 500,
         "weight": 1.55,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 7.9
       },
       {
         "code": "Tekno/AGRI 1SN-3",
@@ -38811,7 +38811,7 @@ const CONFIG = {
         "bend": 420,
         "weight": 1.3,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 7.9
       },
       {
         "code": "Tekno/AGRI 1SN-4",
@@ -38822,7 +38822,7 @@ const CONFIG = {
         "bend": 300,
         "weight": 0.935,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 7.9
       },
       {
         "code": "Tekno/AGRI 1SN-5",
@@ -38899,7 +38899,7 @@ const CONFIG = {
         "bend": 90,
         "weight": 0.18,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 7.9
       }
     ]
   },
@@ -38929,7 +38929,7 @@ const CONFIG = {
     "description": "Хидравличен маркуч за горещо масло и пароструйки, устойчив до +135°C. Вложка: &nbsp;водоустойчив синтетичен каучук Подсилване: &nbsp;една стоманена оплетка с висока якост Покритие: &nbsp;син устойчив синтетичен каучук Работната температура: &nbsp;...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/markuch-za-goreshto-maslo-vulcan-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/markuch-za-goreshto-maslo-vulcan-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -39070,7 +39070,7 @@ const CONFIG = {
     "description": "Вложка: &nbsp;синтетична гума, устойчива на студена и топла вода Подсилване: &nbsp;една оплетка с висока якост на огъване Покритие: &nbsp;устойчив на абразия и на озон синтетичен каучук Температурен диапазон: &nbsp;-10 ° С до 155 ° С / 14 ° F до +...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-1sn-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-1sn-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -39082,7 +39082,7 @@ const CONFIG = {
         "bend": 200,
         "weight": 0.42,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.75
       },
       {
         "code": "SEMPERJET 1SN-2",
@@ -39093,7 +39093,7 @@ const CONFIG = {
         "bend": 180,
         "weight": 0.36,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.75
       },
       {
         "code": "SEMPERJET 1SN-3",
@@ -39104,7 +39104,7 @@ const CONFIG = {
         "bend": 125,
         "weight": 0.28,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.75
       },
       {
         "code": "SEMPERJET 1SN-4",
@@ -39126,7 +39126,7 @@ const CONFIG = {
         "bend": 200,
         "weight": 0.42,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.75
       },
       {
         "code": "SEMPERJET 1SN-6",
@@ -39148,7 +39148,7 @@ const CONFIG = {
         "bend": 180,
         "weight": 0.36,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.75
       },
       {
         "code": "SEMPERJET 1SN-8",
@@ -39159,7 +39159,7 @@ const CONFIG = {
         "bend": 125,
         "weight": 0.28,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.75
       },
       {
         "code": "SEMPERJET 1SN-9",
@@ -39211,7 +39211,7 @@ const CONFIG = {
     "description": "Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;маслоустойчив синтетичен каучук Подсилване: &nbsp;две стоманени оплетки с висока якост Покритие: &nbsp;черен, устойчив на масло и околна среда синтетичен каучук Работна температура: &nbsp;-40° C /+...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-s-edna-opletka-tekno-agri-1sn-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/hidravlichen-markuch-s-edna-opletka-tekno-agri-1sn-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -39234,7 +39234,7 @@ const CONFIG = {
         "bend": 630,
         "weight": 3.2,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.8
       },
       {
         "code": "Tekno/AGRI 2SN-3",
@@ -39245,7 +39245,7 @@ const CONFIG = {
         "bend": 500,
         "weight": 2.25,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.8
       },
       {
         "code": "Tekno/AGRI 2SN-4",
@@ -39256,7 +39256,7 @@ const CONFIG = {
         "bend": 420,
         "weight": 1.9,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.8
       },
       {
         "code": "Tekno/AGRI 2SN-5",
@@ -39267,7 +39267,7 @@ const CONFIG = {
         "bend": 300,
         "weight": 1.34,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.8
       },
       {
         "code": "Tekno/AGRI 2SN-6",
@@ -39322,7 +39322,7 @@ const CONFIG = {
         "bend": 90,
         "weight": 0.28,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 9.8
       },
       {
         "code": "Tekno/AGRI 2SN-11",
@@ -39374,7 +39374,7 @@ const CONFIG = {
     "description": "Специален синтетичен каучук, устойчив на минерални, растителни и гликол базирани хидравлични масла. Армировка: &nbsp;4 метални оплетки с висока якост Външно покритие: &nbsp;специален синтетичен каучук, устойчив на хидравлични масла, абразия и атмо...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-visoko-nalyagane-dunlop-4sp-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/hidravlichen-markuch-visoko-nalyagane-dunlop-4sp-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -39438,7 +39438,7 @@ const CONFIG = {
     "description": "За хидравлични системи с високи пикови налягания и екстремни условия на работа. Покритие: &nbsp;специален синтетичен каучук устойчив на минерални, растителни и гликол базирани хидравлични масла Подсилване:&nbsp; 4 метални оплетки с висока якост Въ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-s-chetiri-metalni-opletki-aeroquip-4-sp-en-586-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/hidravlichen-markuch-s-chetiri-metalni-opletki-aeroquip-4-sp-en-586-1200x1200.png"
     ],
     "variants": [
       {
@@ -39450,7 +39450,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 1.5,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 29.2
       },
       {
         "code": "AEROQUIP 4 SP EH 856-2",
@@ -39461,7 +39461,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 2.15,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 29.2
       },
       {
         "code": "AEROQUIP 4 SP EH 856-3",
@@ -39533,7 +39533,7 @@ const CONFIG = {
     "description": "Покритие: &nbsp;специален синтетичен каучук устойчив на минерални, растителни и гликол базирани хидравлични масла Подсилване:&nbsp; 4 метални оплетки с висока якост Външно покритие:&nbsp; специален синтетичен каучук, устойчив на хидравлични масла,...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-s-chetiri-metalni-opletki-aeroquip-4-sp-en-586-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/hidravlichen-markuch-s-chetiri-metalni-opletki-aeroquip-4-sp-en-586-1200x1200.png"
     ],
     "variants": [
       {
@@ -39632,8 +39632,8 @@ const CONFIG = {
     "specs": [],
     "images": [
       "https://hydrolux.bg/image/catalog/gazove/markuch-za-zarejdane-na-freon-continental-ct5-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/gazove/markuch-za-zarejdane-na-freon-continental-ct5 (1.1)-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/gazove/markuch-za-zarejdane-na-freon-continental-ct5 (2)-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/gazove/markuch-za-zarejdane-na-freon-continental-ct5%20(1.1)-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/gazove/markuch-za-zarejdane-na-freon-continental-ct5%20(2)-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -40129,7 +40129,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 31.7
       },
       {
         "code": "EHF001-2",
@@ -40140,7 +40140,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 31.7
       },
       {
         "code": "EHF001-3",
@@ -40151,7 +40151,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 31.7
       },
       {
         "code": "EHF001-4",
@@ -40184,7 +40184,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 31.7
       },
       {
         "code": "EHF001-7",
@@ -40247,7 +40247,7 @@ const CONFIG = {
     "description": "Вътрешна камера: &nbsp;NВR 1 електропроводима. Две вградени текстилни оплетки Външна обвивка: &nbsp;СR - устойчива на абразии и климатични условия, електропроводима, незапалима. Температурен режим: &nbsp;-30°С +70°С Работно налягане &nbsp;25 bar П...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-gaz-propan-butan-lpg-659aa-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/markuch-za-gaz-propan-butan-lpg-659aa-1200x1200.png"
     ],
     "variants": [
       {
@@ -40375,8 +40375,8 @@ const CONFIG = {
     "description": "PVC маркуч, тип шлаух е подходящ за транспортиране на течности, въздух, храни и фармацевтичната индустрия. Използва за пренасяне на алкохол до 20%. Използва се и в химическата промишленост.&nbsp; Режим на работа: &nbsp;агнетателен Конструкция:&nbs...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/IMG_6916.JPG",
-      "https://hydrolux.bg/image/catalog/ вода/markuch-cristallo-prozrachen-pvc-shlauh-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/IMG_6916.JPG",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/markuch-cristallo-prozrachen-pvc-shlauh-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -40410,7 +40410,7 @@ const CONFIG = {
         "bend": 96,
         "weight": 0,
         "rollLength": 50,
-        "priceEur": 0
+        "priceEur": 0.5
       },
       {
         "code": "CRISTALLO-4",
@@ -40769,7 +40769,7 @@ const CONFIG = {
     "description": "Маркуч за гореща вода, премесена с антифриз в охладителната система на автомобилите Режим на работа: &nbsp;смукателно-нагнетателен, черен каучук, гладък, устойчив на топлина и антифриз, черен гладък каучук устойчив на масло, атмосферни влияния и т...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/smukatelen-gofriran-markuch-za-antifriz-idroflex-18n-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/smukatelen-gofriran-markuch-za-antifriz-idroflex-18n-1200x1200.png"
     ],
     "variants": [
       {
@@ -40792,7 +40792,7 @@ const CONFIG = {
         "bend": 255,
         "weight": 0,
         "rollLength": 20,
-        "priceEur": 0
+        "priceEur": 24.15
       },
       {
         "code": "IDROFLEX 18N-3",
@@ -40803,7 +40803,7 @@ const CONFIG = {
         "bend": 225,
         "weight": 0,
         "rollLength": 20,
-        "priceEur": 0
+        "priceEur": 24.15
       },
       {
         "code": "IDROFLEX 18N-4",
@@ -40814,7 +40814,7 @@ const CONFIG = {
         "bend": 190,
         "weight": 0,
         "rollLength": 20,
-        "priceEur": 0
+        "priceEur": 24.15
       },
       {
         "code": "IDROFLEX 18N-5",
@@ -40825,7 +40825,7 @@ const CONFIG = {
         "bend": 175,
         "weight": 0,
         "rollLength": 20,
-        "priceEur": 0
+        "priceEur": 24.15
       },
       {
         "code": "IDROFLEX 18N-6",
@@ -40836,7 +40836,7 @@ const CONFIG = {
         "bend": 158,
         "weight": 0,
         "rollLength": 20,
-        "priceEur": 0
+        "priceEur": 24.15
       },
       {
         "code": "IDROFLEX 18N-7",
@@ -40847,7 +40847,7 @@ const CONFIG = {
         "bend": 150,
         "weight": 0,
         "rollLength": 20,
-        "priceEur": 0
+        "priceEur": 24.15
       },
       {
         "code": "IDROFLEX 18N-8",
@@ -40858,7 +40858,7 @@ const CONFIG = {
         "bend": 138,
         "weight": 0,
         "rollLength": 20,
-        "priceEur": 0
+        "priceEur": 24.15
       },
       {
         "code": "IDROFLEX 18N-9",
@@ -41900,7 +41900,7 @@ const CONFIG = {
     "description": "Маркуч за пароструйки, водоустойчив синтетичен каучук, стоманени оплетки. Работната температура: &nbsp;- 10°C / + 135°C с връх от + 150°C Вложка: &nbsp; водоустойчив синтетичен каучук Подсилване: &nbsp; две стоманени оплетки с висока якост Покрити...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/markuch-za-parostruiki-i-vodostruiki-teknojet-2sn-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/markuch-za-parostruiki-i-vodostruiki-teknojet-2sn-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -41986,7 +41986,7 @@ const CONFIG = {
     "description": "Маркуч за водоструйки, синтетична гума, устойчива на студена и топла вода, с две оплетки. Вложка: &nbsp; синтетична гума, устойчива на студена и топла вода Подсилване: две оплетки с висока якост на огъване Покритие: &nbsp; устойчив на абразия и на...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-za-vodostruiki-2sn-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/hidravlichen-markuch-za-vodostruiki-2sn-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -41998,7 +41998,7 @@ const CONFIG = {
         "bend": 180,
         "weight": 0.56,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 13.35
       },
       {
         "code": "SEMPERJET 2SN-2",
@@ -42042,7 +42042,7 @@ const CONFIG = {
         "bend": 180,
         "weight": 0.56,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 13.35
       },
       {
         "code": "SEMPERJET 2SN-6",
@@ -42053,7 +42053,7 @@ const CONFIG = {
         "bend": 125,
         "weight": 0.44,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 13.35
       },
       {
         "code": "SEMPERJET 2SN-7",
@@ -42140,7 +42140,7 @@ const CONFIG = {
         "bend": 320,
         "weight": 4.08,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 39.05
       },
       {
         "code": "AGRA 4 ALL-3",
@@ -42151,7 +42151,7 @@ const CONFIG = {
         "bend": 250,
         "weight": 3.17,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 39.05
       },
       {
         "code": "AGRA 4 ALL-4",
@@ -42162,7 +42162,7 @@ const CONFIG = {
         "bend": 170,
         "weight": 2.66,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 39.05
       },
       {
         "code": "AGRA 4 ALL-5",
@@ -42173,7 +42173,7 @@ const CONFIG = {
         "bend": 180,
         "weight": 2.86,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 39.05
       },
       {
         "code": "AGRA 4 ALL-6",
@@ -42195,7 +42195,7 @@ const CONFIG = {
         "bend": 160,
         "weight": 2.6,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 39.05
       },
       {
         "code": "AGRA 4 ALL-8",
@@ -42206,7 +42206,7 @@ const CONFIG = {
         "bend": 150,
         "weight": 2.24,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 39.05
       },
       {
         "code": "AGRA 4 ALL-9",
@@ -42217,7 +42217,7 @@ const CONFIG = {
         "bend": 102,
         "weight": 1.88,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 39.05
       },
       {
         "code": "AGRA 4 ALL-10",
@@ -42239,7 +42239,7 @@ const CONFIG = {
         "bend": 80,
         "weight": 1.41,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 39.05
       },
       {
         "code": "AGRA 4 ALL-12",
@@ -42272,7 +42272,7 @@ const CONFIG = {
         "bend": 60,
         "weight": 1.11,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 39.05
       },
       {
         "code": "AGRA 4 ALL-15",
@@ -42346,7 +42346,7 @@ const CONFIG = {
         "bend": 450,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 39.05
       },
       {
         "code": "EHF002-2",
@@ -42357,7 +42357,7 @@ const CONFIG = {
         "bend": 360,
         "weight": 0,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 39.05
       },
       {
         "code": "EHF002-3",
@@ -42464,7 +42464,7 @@ const CONFIG = {
     "description": "Маркуч за засмукване и транспортиране на течни храни и напитки. Смукателно - нагнетателен с текстилна оплетка.&nbsp; Работна температура:&nbsp; -35°C/+95°C (-31°F + 203°F) При почистване с пара: &nbsp;до +130°С (+266°F) за 30 мин Режим на работа: ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/hrani/smukatelen-markuch-za-techni-hrani-i-napitki-lm1-epdm-1200x1200 (1).jpg"
+      "https://hydrolux.bg/image/catalog/hrani/smukatelen-markuch-za-techni-hrani-i-napitki-lm1-epdm-1200x1200%20(1).jpg"
     ],
     "variants": [
       {
@@ -42476,7 +42476,7 @@ const CONFIG = {
         "bend": 750,
         "weight": 7.75,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 60.05
       },
       {
         "code": " LM1-EPDM-2",
@@ -42487,7 +42487,7 @@ const CONFIG = {
         "bend": 650,
         "weight": 6.4,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 60.05
       },
       {
         "code": " LM1-EPDM-3",
@@ -42498,7 +42498,7 @@ const CONFIG = {
         "bend": 600,
         "weight": 6,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 60.05
       },
       {
         "code": " LM1-EPDM-4",
@@ -42509,7 +42509,7 @@ const CONFIG = {
         "bend": 450,
         "weight": 5.05,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 60.05
       },
       {
         "code": " LM1-EPDM-5",
@@ -42520,7 +42520,7 @@ const CONFIG = {
         "bend": 420,
         "weight": 3.55,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 60.05
       },
       {
         "code": " LM1-EPDM-6",
@@ -42542,7 +42542,7 @@ const CONFIG = {
         "bend": 250,
         "weight": 2.25,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 60.05
       },
       {
         "code": " LM1-EPDM-8",
@@ -42553,7 +42553,7 @@ const CONFIG = {
         "bend": 200,
         "weight": 1.85,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 60.05
       },
       {
         "code": " LM1-EPDM-9",
@@ -42575,7 +42575,7 @@ const CONFIG = {
         "bend": 150,
         "weight": 0.85,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 60.05
       },
       {
         "code": " LM1-EPDM-11",
@@ -42586,7 +42586,7 @@ const CONFIG = {
         "bend": 100,
         "weight": 0.55,
         "rollLength": 40,
-        "priceEur": 0
+        "priceEur": 60.05
       },
       {
         "code": " LM1-EPDM-12",
@@ -43028,7 +43028,7 @@ const CONFIG = {
         "bend": 315,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 8.65
       },
       {
         "code": "VULCANO S1-4",
@@ -43464,7 +43464,7 @@ const CONFIG = {
         "bend": 350,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 12.45
       },
       {
         "code": "VULCANO TPR-A 125°С-2",
@@ -43475,7 +43475,7 @@ const CONFIG = {
         "bend": 300,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 12.45
       },
       {
         "code": "VULCANO TPR-A 125°С-3",
@@ -44108,7 +44108,7 @@ const CONFIG = {
         "bend": 230,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 23.75
       },
       {
         "code": "NEXT 07 PU-3",
@@ -44130,7 +44130,7 @@ const CONFIG = {
         "bend": 160,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 23.75
       },
       {
         "code": "NEXT 07 PU-5",
@@ -44141,7 +44141,7 @@ const CONFIG = {
         "bend": 135,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 23.75
       },
       {
         "code": "NEXT 07 PU-6",
@@ -44185,7 +44185,7 @@ const CONFIG = {
         "bend": 50,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 23.75
       },
       {
         "code": "NEXT 07 PU-10",
@@ -44413,7 +44413,7 @@ const CONFIG = {
       {
         "code": "MNPNF-1",
         "innerDb": 5,
-        "inch": "",
+        "inch": "15\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -44424,7 +44424,7 @@ const CONFIG = {
       {
         "code": "MNPNF-2",
         "innerDb": 5,
-        "inch": "",
+        "inch": "18\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -44487,7 +44487,7 @@ const CONFIG = {
       {
         "code": "MNCHC-1",
         "innerDb": 5,
-        "inch": "",
+        "inch": "32\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -44498,7 +44498,7 @@ const CONFIG = {
       {
         "code": "MNCHC-2",
         "innerDb": 5,
-        "inch": "",
+        "inch": "25\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -44649,7 +44649,7 @@ const CONFIG = {
       {
         "code": "MNMCOT-1",
         "innerDb": 5,
-        "inch": "",
+        "inch": "37\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -44660,7 +44660,7 @@ const CONFIG = {
       {
         "code": "MNMCOT-2",
         "innerDb": 5,
-        "inch": "",
+        "inch": "27\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -44725,7 +44725,7 @@ const CONFIG = {
       {
         "code": "MNFCIT-1",
         "innerDb": 5,
-        "inch": "",
+        "inch": "44.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -44736,7 +44736,7 @@ const CONFIG = {
       {
         "code": "MNFCIT-2",
         "innerDb": 5,
-        "inch": "",
+        "inch": "35\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -44801,7 +44801,7 @@ const CONFIG = {
       {
         "code": "MNCNF-1",
         "innerDb": 5,
-        "inch": "",
+        "inch": "37\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -44812,7 +44812,7 @@ const CONFIG = {
       {
         "code": "MNCNF-2",
         "innerDb": 5,
-        "inch": "",
+        "inch": "38\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -44938,7 +44938,7 @@ const CONFIG = {
       {
         "code": "POUS-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "74.6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -44998,7 +44998,7 @@ const CONFIG = {
       {
         "code": "MNPHC-1",
         "innerDb": 5,
-        "inch": "",
+        "inch": "6.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45009,7 +45009,7 @@ const CONFIG = {
       {
         "code": "MNPHC-2",
         "innerDb": 5,
-        "inch": "",
+        "inch": "6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45068,7 +45068,7 @@ const CONFIG = {
       {
         "code": "MNMPOT-1",
         "innerDb": 5,
-        "inch": "",
+        "inch": "19\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45079,7 +45079,7 @@ const CONFIG = {
       {
         "code": "MNMPOT-2",
         "innerDb": 5,
-        "inch": "",
+        "inch": "11\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45140,7 +45140,7 @@ const CONFIG = {
       {
         "code": "MNFPIT-1",
         "innerDb": 5,
-        "inch": "",
+        "inch": "19\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45151,7 +45151,7 @@ const CONFIG = {
       {
         "code": "MNFPIT-2",
         "innerDb": 5,
-        "inch": "",
+        "inch": "13\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45311,14 +45311,14 @@ const CONFIG = {
     "description": "Неръждаема тапа с вътрешна резба - AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaema-tapa-s-vytreshna-rezba-aisi-316-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaema-tapa-s-vytreshna-rezba-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaema-tapa-s-vytreshna-rezba-aisi-316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaema-tapa-s-vytreshna-rezba-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
         "code": "TA16-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45329,7 +45329,7 @@ const CONFIG = {
       {
         "code": "TA16-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45340,7 +45340,7 @@ const CONFIG = {
       {
         "code": "TA16-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45351,7 +45351,7 @@ const CONFIG = {
       {
         "code": "TA16-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45362,7 +45362,7 @@ const CONFIG = {
       {
         "code": "TA16-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45373,7 +45373,7 @@ const CONFIG = {
       {
         "code": "TA16-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45384,7 +45384,7 @@ const CONFIG = {
       {
         "code": "TA16-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45395,7 +45395,7 @@ const CONFIG = {
       {
         "code": "TA16-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45406,7 +45406,7 @@ const CONFIG = {
       {
         "code": "TA16-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45417,7 +45417,7 @@ const CONFIG = {
       {
         "code": "TA16-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45428,7 +45428,7 @@ const CONFIG = {
       {
         "code": "TA16-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45439,7 +45439,7 @@ const CONFIG = {
       {
         "code": "TA16-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45491,8 +45491,8 @@ const CONFIG = {
     "description": "Неръждаем нипел-муфа ВРН - AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-niple-mufa-bph-aisi316-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-niple-mufa-bph-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaem-niple-mufa-bph-aisi316-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaem-niple-mufa-bph-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -45766,14 +45766,14 @@ const CONFIG = {
     "description": "Неръждаема тапа с външна резба - AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaema-tapa-aisi316-s-vynshna-rezba-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaema-tapa-s-vynshna-rezba-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaema-tapa-aisi316-s-vynshna-rezba-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaema-tapa-s-vynshna-rezba-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
         "code": "TA15-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45784,7 +45784,7 @@ const CONFIG = {
       {
         "code": "TA15-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45795,7 +45795,7 @@ const CONFIG = {
       {
         "code": "TA15-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45806,7 +45806,7 @@ const CONFIG = {
       {
         "code": "TA15-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45817,7 +45817,7 @@ const CONFIG = {
       {
         "code": "TA15-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45828,7 +45828,7 @@ const CONFIG = {
       {
         "code": "TA15-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45839,7 +45839,7 @@ const CONFIG = {
       {
         "code": "TA15-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45850,7 +45850,7 @@ const CONFIG = {
       {
         "code": "TA15-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45861,7 +45861,7 @@ const CONFIG = {
       {
         "code": "TA15-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45872,7 +45872,7 @@ const CONFIG = {
       {
         "code": "TA15-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45883,7 +45883,7 @@ const CONFIG = {
       {
         "code": "TA15-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R3/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45894,7 +45894,7 @@ const CONFIG = {
       {
         "code": "TA15-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R1/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45945,14 +45945,14 @@ const CONFIG = {
     "description": "Неръждаема муфа кръгла - AISI 304",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/gyvkav-silikonov-markuch-750mm-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaema-mufa-krygla-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/gyvkav-silikonov-markuch-750mm-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaema-mufa-krygla-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
         "code": "MU LPSS 304-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45963,7 +45963,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 304-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45974,7 +45974,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 304-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45985,7 +45985,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 304-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -45996,7 +45996,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 304-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46007,7 +46007,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 304-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46018,7 +46018,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 304-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46029,7 +46029,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 304-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46040,7 +46040,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 304-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46051,7 +46051,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 304-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46062,7 +46062,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 304-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46073,7 +46073,7 @@ const CONFIG = {
       {
         "code": "MU LPSS 304-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46110,14 +46110,14 @@ const CONFIG = {
     "description": "Неръждаем щуцер с мъжка резба и опашка за маркуч - AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-shtucer-myjka-rezba-i-opashka-za-markuch-aisi316-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-shtucer-myjka-rezba-i-opashka-za-markuch-aisi316-diagrama-1200x1200 (1).png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaem-shtucer-myjka-rezba-i-opashka-za-markuch-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaem-shtucer-myjka-rezba-i-opashka-za-markuch-aisi316-diagrama-1200x1200%20(1).png"
     ],
     "variants": [
       {
         "code": "RM LPSS-1",
         "innerDb": "ф52",
-        "inch": "",
+        "inch": "R2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46128,7 +46128,7 @@ const CONFIG = {
       {
         "code": "RM LPSS-2",
         "innerDb": "ф40",
-        "inch": "",
+        "inch": "R1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46139,7 +46139,7 @@ const CONFIG = {
       {
         "code": "RM LPSS-3",
         "innerDb": "ф32",
-        "inch": "",
+        "inch": "R1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46150,7 +46150,7 @@ const CONFIG = {
       {
         "code": "RM LPSS-4",
         "innerDb": "ф25",
-        "inch": "",
+        "inch": "R1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46161,7 +46161,7 @@ const CONFIG = {
       {
         "code": "RM LPSS-5",
         "innerDb": "ф20",
-        "inch": "",
+        "inch": "R3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46172,7 +46172,7 @@ const CONFIG = {
       {
         "code": "RM LPSS-6",
         "innerDb": "ф15",
-        "inch": "",
+        "inch": "R1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46183,7 +46183,7 @@ const CONFIG = {
       {
         "code": "RM LPSS-7",
         "innerDb": "ф10",
-        "inch": "",
+        "inch": "R1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46194,7 +46194,7 @@ const CONFIG = {
       {
         "code": "RM LPSS-8",
         "innerDb": "ф12",
-        "inch": "",
+        "inch": "R3/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46205,7 +46205,7 @@ const CONFIG = {
       {
         "code": "RM LPSS-9",
         "innerDb": "ф6",
-        "inch": "",
+        "inch": "R1/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46258,8 +46258,8 @@ const CONFIG = {
     "description": "Неръждаем нипел редуктивен шестограмен - AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-nipel-reduktiven-shestogram-aisi316-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-nipel-reduktiven-shestogram-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaem-nipel-reduktiven-shestogram-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaem-nipel-reduktiven-shestogram-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -46282,7 +46282,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.15
       },
       {
         "code": "ANKK LPSS reducer-3",
@@ -46561,14 +46561,14 @@ const CONFIG = {
     "description": "Неръждаемо коляно муфа 90° - AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaemo-kolqno-mufa-90-aisi316-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaemo-kolqno-mufa-90-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaemo-kolqno-mufa-90-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaemo-kolqno-mufa-90-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
         "code": "LFF LPSS-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46579,18 +46579,18 @@ const CONFIG = {
       {
         "code": "LFF LPSS-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.3
       },
       {
         "code": "LFF LPSS-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46601,7 +46601,7 @@ const CONFIG = {
       {
         "code": "LFF LPSS-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46612,7 +46612,7 @@ const CONFIG = {
       {
         "code": "LFF LPSS-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46623,7 +46623,7 @@ const CONFIG = {
       {
         "code": "LFF LPSS-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46634,7 +46634,7 @@ const CONFIG = {
       {
         "code": "LFF LPSS-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46645,7 +46645,7 @@ const CONFIG = {
       {
         "code": "LFF LPSS-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46656,7 +46656,7 @@ const CONFIG = {
       {
         "code": "LFF LPSS-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46667,7 +46667,7 @@ const CONFIG = {
       {
         "code": "LFF LPSS-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46678,7 +46678,7 @@ const CONFIG = {
       {
         "code": "LFF LPSS-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46689,7 +46689,7 @@ const CONFIG = {
       {
         "code": "LFF LPSS-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -46741,8 +46741,8 @@ const CONFIG = {
     "description": "Неръждаем нипел шестограмен - AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-nipel-shestogramen-aisi316-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-nipel-shestogramen-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaem-nipel-shestogramen-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaem-nipel-shestogramen-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -46918,8 +46918,8 @@ const CONFIG = {
     "description": "Приложение: &nbsp;плосък двуслоен маркуч, тип Layflat за отвеждане на вода за промишлени, битови и селскостопански приложения. Плоският PVC маркуч (ръкав) за поливане се използва за отвеждане на водата, изпомпена от потопяеми помпи. Режим на работ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/plosyk-pvc-markuch-flatgreen-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/ вода/plosyk-markuch-flatgreen-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/plosyk-pvc-markuch-flatgreen-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/plosyk-markuch-flatgreen-1-1200x1200.png"
     ],
     "variants": [
       {
@@ -47037,7 +47037,7 @@ const CONFIG = {
     "description": "Приложение: &nbsp;гумен маркуч за транспорт на въздух, омаслен въздух от компресори, топла вода до 60°С и др неагресивни течности. Изключително лек и гъвкав, намира широко приложение за битови и индустриални нужди - помпене на гуми, изграждане на ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/markuch-za-vyzduh-voda-185ah-Alfagomma-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/markuch-za-vyzduh-voda-185ah-Alfagomma-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -47125,8 +47125,8 @@ const CONFIG = {
     "description": "Mаркуч под налягане за доставка на фунгицидни разтвори, торове и хербициди в селското стопанство. Използва се за теглени пулверизатори за обработка на торове и пестициди. Въздух под налягане. Вътрешна камера: &nbsp;еластично PVC Подсилване: &nbsp;...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/markuch-za-pesticidi-arianna-40bar-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/ вода/markuch-za-pesticidi-arianna-40bar-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/markuch-za-pesticidi-arianna-40bar-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/markuch-za-pesticidi-arianna-40bar-1-1200x1200.png"
     ],
     "variants": [
       {
@@ -47213,8 +47213,8 @@ const CONFIG = {
     "description": "Маркуч за транспортиране на вода, сгъстен въздух, фунгициди, торове, хербициди и други препарати за растителна защита в течно състояние. PVC маркучът за пестициди е усилен с якостна текстилна оплетка и издържа на високо налягане - 20 bar. Маркуч з...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/markuch-za-pesticidi-markuch-za-pryskachki-arianna-20bar-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/markuch-za-pesticidi-markuch-za-pryskachki-arianna-20bar-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/markuch-za-pesticidi-markuch-za-pryskachki-arianna-20bar-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/markuch-za-pesticidi-markuch-za-pryskachki-arianna-20bar-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -47280,7 +47280,7 @@ const CONFIG = {
     "description": "Приложение: &nbsp;плосък двуслоен маркуч, тип Layflat за отвеждане на вода за промишлени, битови и селскостопански приложения. Плоският PVC маркуч (ръкав) за поливане се използва за отвеждане на водата, изпомпена от потопяеми помпи. Режим на работ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/plosyk-pvc-markuch-za-voda-inovaflat-m-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/plosyk-pvc-markuch-za-voda-inovaflat-m-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -47344,7 +47344,7 @@ const CONFIG = {
     "description": "Кучуков плосък маркуч с отлична устойчивост на абразия, армиран с двоен слой от полиестерни влакна. Материал: &nbsp;2 слоя специално формован черен нитрилен каучук Подсилване: &nbsp;оплетка от полиестерни влакна Свойства и приложение:&nbsp; за тра...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/plosyk-pvc-markuch-za-voda-agroflat-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/plosyk-pvc-markuch-za-voda-agroflat-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -47356,7 +47356,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22.7
       },
       {
         "code": "AGROFLAT-2",
@@ -47367,7 +47367,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22.7
       },
       {
         "code": "AGROFLAT-3",
@@ -47378,7 +47378,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22.7
       },
       {
         "code": "AGROFLAT-4",
@@ -47389,7 +47389,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22.7
       },
       {
         "code": "AGROFLAT-5",
@@ -47400,7 +47400,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22.7
       },
       {
         "code": "AGROFLAT-6",
@@ -47411,7 +47411,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22.7
       },
       {
         "code": "AGROFLAT-7",
@@ -47422,7 +47422,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22.7
       },
       {
         "code": "AGROFLAT-8",
@@ -47444,7 +47444,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22.7
       },
       {
         "code": "AGROFLAT-10",
@@ -47455,7 +47455,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22.7
       },
       {
         "code": "AGROFLAT-11",
@@ -47477,7 +47477,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22.7
       },
       {
         "code": "AGROFLAT-13",
@@ -47488,7 +47488,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22.7
       },
       {
         "code": "AGROFLAT-14",
@@ -47510,7 +47510,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22.7
       },
       {
         "code": "AGROFLAT-16",
@@ -47521,7 +47521,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22.7
       },
       {
         "code": "AGROFLAT-17",
@@ -47532,7 +47532,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22.7
       },
       {
         "code": "AGROFLAT-18",
@@ -47543,7 +47543,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22.7
       },
       {
         "code": "AGROFLAT-19",
@@ -47554,7 +47554,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22.7
       },
       {
         "code": "AGROFLAT-20",
@@ -47565,7 +47565,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22.7
       },
       {
         "code": "AGROFLAT-21",
@@ -47576,7 +47576,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22.7
       },
       {
         "code": "AGROFLAT-22",
@@ -47587,7 +47587,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22.7
       }
     ]
   },
@@ -47632,8 +47632,8 @@ const CONFIG = {
     "description": "За засмукване и транспорт на течности като отпадни води, химикали, абразивни флуиди и частици и други течности в селското стопанство, индустрията, строителството, каналопочистване. Особено подходящ за оборудване на цистерни. Режим на работа: &nbsp...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/smukatelen-pvc-markuch-za-kanalopochistvane-apollo-superflex-2-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/smukatelen-pvc-markuch-za-kanalopochistvane-apollo-superflex-3-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/smukatelen-pvc-markuch-za-kanalopochistvane-apollo-superflex-2-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/smukatelen-pvc-markuch-za-kanalopochistvane-apollo-superflex-3-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -47694,7 +47694,7 @@ const CONFIG = {
     "description": "Пожарникарски плосък маркуч за отвеждане на вода в строителството, промишлеността и селското стопанство. Пожарникарският маркуч с текстил се използва и за отводняване и напояване. Маркуч за потопяеми помпи. Режим на работа: &nbsp;нагнетателен Влож...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/pojarnikarski-markuch-mcc-germany-s-nakrainici-storz-8bar-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pojarnikarski-markuch-mcc-germany-s-nakrainici-storz-8bar-1200x1200.png"
     ],
     "variants": [
       {
@@ -47760,8 +47760,8 @@ const CONFIG = {
     "description": "Приложение: &nbsp;за изсмукване и доставка на течности и отпадъчни води като цяло; идеален за използване на камиони-цистерни, дори при изключително ниски температури. Режим на работа: &nbsp;смукателно-нагнетателен Конструкция: &nbsp;гладка PVC-NBR...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/pvc-markuch-podsilen-sys-zelena-protivoudarna-pvc-spirala-apollo-total-1-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/ вода/pvc-markuch-podsilen-sys-zelena-protivoudarna-pvc-spirala-apollo-total-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pvc-markuch-podsilen-sys-zelena-protivoudarna-pvc-spirala-apollo-total-1-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pvc-markuch-podsilen-sys-zelena-protivoudarna-pvc-spirala-apollo-total-1200x1200.png"
     ],
     "variants": [
       {
@@ -47784,7 +47784,7 @@ const CONFIG = {
         "bend": 225,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 61.7
       },
       {
         "code": "APOLLO TOTAL-3",
@@ -47795,7 +47795,7 @@ const CONFIG = {
         "bend": 225,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 61.7
       },
       {
         "code": "APOLLO TOTAL-4",
@@ -47806,7 +47806,7 @@ const CONFIG = {
         "bend": 225,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 61.7
       },
       {
         "code": "APOLLO TOTAL-5",
@@ -47817,7 +47817,7 @@ const CONFIG = {
         "bend": 200,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 61.7
       },
       {
         "code": "APOLLO TOTAL-6",
@@ -47828,7 +47828,7 @@ const CONFIG = {
         "bend": 145,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 61.7
       }
     ]
   },
@@ -47874,9 +47874,9 @@ const CONFIG = {
     "description": "Използва се за пренос на минерална вода, течни храни и напитки, сокове, вино с до 20% алкохолно съдържание и други течности в хранително - вкусовата индустрия, в индустриални, строителни и селскостопански машини. Режим на работа: &nbsp;смукателно-...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/pcv-markuch-s-metalna-spirala-plutone-a-2-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/pcv-markuch-s-metalna-spirala-plutone-a-1-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/pcv-markuch-s-metalna-spirala-plutone-a-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pcv-markuch-s-metalna-spirala-plutone-a-2-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pcv-markuch-s-metalna-spirala-plutone-a-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/pcv-markuch-s-metalna-spirala-plutone-a-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -48097,7 +48097,7 @@ const CONFIG = {
         "bend": 100,
         "weight": 0,
         "rollLength": 60,
-        "priceEur": 0
+        "priceEur": 3.75
       },
       {
         "code": "PLUTONE A-21",
@@ -48237,9 +48237,9 @@ const CONFIG = {
     "description": "Приложение: &nbsp;Изключително гъвкав многоцелев маркуч с много добра устойчивост на стареене, атмосферни влияния и абразия. Подходящ за пренос на въздух и вода, както и много химически продукти в промишлеността и селско стопанство. Вложка: &nbsp;...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ вода/markuch-za-voda-ohlajdashti-technosti-i-himikali-colorflex-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/ вода/markuch-za-voda-ohlajdashti-technosti-i-himikali-colorflex-red-blue-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ вода/markuch-za-voda-ohlajdashti-technosti-i-himikali-colorflex-red-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/markuch-za-voda-ohlajdashti-technosti-i-himikali-colorflex-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/markuch-za-voda-ohlajdashti-technosti-i-himikali-colorflex-red-blue-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B2%D0%BE%D0%B4%D0%B0/markuch-za-voda-ohlajdashti-technosti-i-himikali-colorflex-red-1200x1200.png"
     ],
     "variants": [
       {
@@ -48251,7 +48251,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 50,
-        "priceEur": 0
+        "priceEur": 12.15
       },
       {
         "code": "Colorflex-2",
@@ -48262,7 +48262,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 50,
-        "priceEur": 0
+        "priceEur": 12.15
       },
       {
         "code": "Colorflex-3",
@@ -48273,7 +48273,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 50,
-        "priceEur": 0
+        "priceEur": 12.15
       },
       {
         "code": "Colorflex-4",
@@ -48284,7 +48284,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 50,
-        "priceEur": 0
+        "priceEur": 12.15
       },
       {
         "code": "Colorflex-5",
@@ -48295,7 +48295,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 100,
-        "priceEur": 0
+        "priceEur": 12.15
       },
       {
         "code": "Colorflex-6",
@@ -48317,7 +48317,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 100,
-        "priceEur": 0
+        "priceEur": 12.15
       },
       {
         "code": "Colorflex-8",
@@ -48328,7 +48328,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 100,
-        "priceEur": 0
+        "priceEur": 12.15
       },
       {
         "code": "Colorflex-9",
@@ -48339,7 +48339,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 100,
-        "priceEur": 0
+        "priceEur": 12.15
       }
     ]
   },
@@ -48416,7 +48416,7 @@ const CONFIG = {
         "bend": 125,
         "weight": 0,
         "rollLength": 4,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-4",
@@ -48438,7 +48438,7 @@ const CONFIG = {
         "bend": 90,
         "weight": 0,
         "rollLength": 4,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-6",
@@ -48460,7 +48460,7 @@ const CONFIG = {
         "bend": 83,
         "weight": 0,
         "rollLength": 4,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-8",
@@ -48471,7 +48471,7 @@ const CONFIG = {
         "bend": 75,
         "weight": 0,
         "rollLength": 4,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-9",
@@ -48559,7 +48559,7 @@ const CONFIG = {
         "bend": 55,
         "weight": 0,
         "rollLength": 4,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-17",
@@ -48570,7 +48570,7 @@ const CONFIG = {
         "bend": 57,
         "weight": 0,
         "rollLength": 4,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-18",
@@ -48581,7 +48581,7 @@ const CONFIG = {
         "bend": 48,
         "weight": 0,
         "rollLength": 4,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-19",
@@ -48614,7 +48614,7 @@ const CONFIG = {
         "bend": 42,
         "weight": 0,
         "rollLength": 4,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-22",
@@ -48647,7 +48647,7 @@ const CONFIG = {
         "bend": 31,
         "weight": 0,
         "rollLength": 4,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-25",
@@ -48680,7 +48680,7 @@ const CONFIG = {
         "bend": 28,
         "weight": 0,
         "rollLength": 4,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-28",
@@ -48691,7 +48691,7 @@ const CONFIG = {
         "bend": 27,
         "weight": 0,
         "rollLength": 4,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-29",
@@ -48713,7 +48713,7 @@ const CONFIG = {
         "bend": 21,
         "weight": 0,
         "rollLength": 4,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-31",
@@ -48724,7 +48724,7 @@ const CONFIG = {
         "bend": 19,
         "weight": 0,
         "rollLength": 4,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-32",
@@ -48735,7 +48735,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-33",
@@ -48757,7 +48757,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-35",
@@ -48768,7 +48768,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-36",
@@ -48779,7 +48779,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-37",
@@ -48823,7 +48823,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-41",
@@ -48834,7 +48834,7 @@ const CONFIG = {
         "bend": 15,
         "weight": 0,
         "rollLength": 4,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-42",
@@ -48845,7 +48845,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-43",
@@ -48856,7 +48856,7 @@ const CONFIG = {
         "bend": 15,
         "weight": 0,
         "rollLength": 4,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "SILDUCT 2S-44",
@@ -48867,7 +48867,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       }
     ]
   },
@@ -49427,7 +49427,7 @@ const CONFIG = {
     "description": "Приложения: &nbsp;PVC маркуч с PVC твърда спирала, за засмукване и отвеждане на въздух, дим, стружки, прах, текстилни нишки и вентилация. Самозагасващ в съответствие с UL 94 V2 Режим на работа: &nbsp;смукателен СВОЙСТВА: Добра устойчивост на абраз...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/pvc-markuch-za-aspiraciq-oregon-continental-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/pvc-markuch-za-aspiraciq-oregon-continental-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -49528,7 +49528,7 @@ const CONFIG = {
         "bend": 229,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-3",
@@ -49561,7 +49561,7 @@ const CONFIG = {
         "bend": 180,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-6",
@@ -49572,7 +49572,7 @@ const CONFIG = {
         "bend": 178,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-7",
@@ -49583,7 +49583,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-8",
@@ -49671,7 +49671,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-16",
@@ -49693,7 +49693,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-18",
@@ -49737,7 +49737,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-22",
@@ -49748,7 +49748,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-23",
@@ -49759,7 +49759,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-24",
@@ -49781,7 +49781,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-26",
@@ -49792,7 +49792,7 @@ const CONFIG = {
         "bend": 41,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-27",
@@ -49803,7 +49803,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-28",
@@ -49825,7 +49825,7 @@ const CONFIG = {
         "bend": 55,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-30",
@@ -49836,7 +49836,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-31",
@@ -49869,7 +49869,7 @@ const CONFIG = {
         "bend": 65,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-34",
@@ -49913,7 +49913,7 @@ const CONFIG = {
         "bend": 13,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-38",
@@ -49924,7 +49924,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-39",
@@ -49935,7 +49935,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-40",
@@ -49946,7 +49946,7 @@ const CONFIG = {
         "bend": 19,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-41",
@@ -49957,7 +49957,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-42",
@@ -49968,7 +49968,7 @@ const CONFIG = {
         "bend": 83,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-43",
@@ -49979,7 +49979,7 @@ const CONFIG = {
         "bend": 110,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 56.2
       },
       {
         "code": "Силиконов маркуч FLEXADUX® P4 SIL II-44",
@@ -50028,7 +50028,7 @@ const CONFIG = {
     "description": "Приложение: &nbsp;маркучът за автомобилни въздушни спирачки се използва в спирачните системи на автомобили, автобуси и ремаркета и в други пневматични системи Защитен фактор: &nbsp;5 : 1 Вложка: &nbsp;EPDM, черен, гладък каучук Подсилване: &nbsp;Т...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ за въздух/gumen-markuch-za-vyzdushni-spirachki-fbd-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%B4%D1%83%D1%85/gumen-markuch-za-vyzdushni-spirachki-fbd-1200x1200.png"
     ],
     "variants": [
       {
@@ -50096,7 +50096,7 @@ const CONFIG = {
     "description": "Маркуч&nbsp; за горивоколонки и горивопренасящи системи. Подходящ за дизел, газ, биодизел, горива. Режим на работа:&nbsp; нагнетателен Вложка: &nbsp;Нитрилен синтетичен каучук (ORS) Подсилване: &nbsp;Спирално навита синтетична оплетка със статичен...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-benzinokolonki-pacer-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/markuch-za-benzinokolonki-pacer-1200x1200.png"
     ],
     "variants": [
       {
@@ -50174,8 +50174,8 @@ const CONFIG = {
     "description": "Подходящ за безоловни горива (EN 228: 2017), дизелови масла (EN 590: 2017), биодизел за автомобили, камиони и трактори. Подходящ за използване в двигателни отделения на камиони. Режим на работа: &nbsp;нагнетателен Вложка: &nbsp;Черен гладък NBR ка...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-bezolovnigoriva-i-biodizel-semperit-fmo-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ и масло/markuch-za-bezolovnigoriva-i-biodizel-semperit-fmo-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/markuch-za-bezolovnigoriva-i-biodizel-semperit-fmo-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B8%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE/markuch-za-bezolovnigoriva-i-biodizel-semperit-fmo-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -50187,7 +50187,7 @@ const CONFIG = {
         "bend": 2,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.3
       },
       {
         "code": "FMO-2",
@@ -50198,7 +50198,7 @@ const CONFIG = {
         "bend": 4,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.3
       },
       {
         "code": "FMO-3",
@@ -50209,7 +50209,7 @@ const CONFIG = {
         "bend": 4,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.3
       },
       {
         "code": "FMO-4",
@@ -50220,7 +50220,7 @@ const CONFIG = {
         "bend": 4,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.3
       },
       {
         "code": "FMO-5",
@@ -50231,7 +50231,7 @@ const CONFIG = {
         "bend": 4,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.3
       },
       {
         "code": "FMO-6",
@@ -50242,7 +50242,7 @@ const CONFIG = {
         "bend": 4,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.3
       },
       {
         "code": "FMO-7",
@@ -50253,7 +50253,7 @@ const CONFIG = {
         "bend": 4,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.3
       },
       {
         "code": "FMO-8",
@@ -50264,7 +50264,7 @@ const CONFIG = {
         "bend": 4,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.3
       },
       {
         "code": "FMO-9",
@@ -50275,7 +50275,7 @@ const CONFIG = {
         "bend": 4,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.3
       },
       {
         "code": "FMO-10",
@@ -50286,7 +50286,7 @@ const CONFIG = {
         "bend": 2,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.3
       },
       {
         "code": "FMO-11",
@@ -50308,7 +50308,7 @@ const CONFIG = {
         "bend": 2,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.3
       },
       {
         "code": "FMO-13",
@@ -50319,7 +50319,7 @@ const CONFIG = {
         "bend": 2,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.3
       },
       {
         "code": "FMO-14",
@@ -50330,7 +50330,7 @@ const CONFIG = {
         "bend": 2,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.3
       },
       {
         "code": "FMO-15",
@@ -50341,7 +50341,7 @@ const CONFIG = {
         "bend": 2,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.3
       },
       {
         "code": "FMO-16",
@@ -50352,7 +50352,7 @@ const CONFIG = {
         "bend": 2,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.3
       },
       {
         "code": "FMO-17",
@@ -50363,7 +50363,7 @@ const CONFIG = {
         "bend": 2,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.3
       },
       {
         "code": "FMO-18",
@@ -50374,7 +50374,7 @@ const CONFIG = {
         "bend": 2,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.3
       },
       {
         "code": "FMO-19",
@@ -50385,7 +50385,7 @@ const CONFIG = {
         "bend": 2,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.3
       },
       {
         "code": "FMO-20",
@@ -50396,7 +50396,7 @@ const CONFIG = {
         "bend": 4,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.3
       },
       {
         "code": "FMO-21",
@@ -50407,7 +50407,7 @@ const CONFIG = {
         "bend": 4,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.3
       }
     ]
   },
@@ -50447,9 +50447,9 @@ const CONFIG = {
     "description": "&nbsp;Високотемпературният маркуч се използва за транспорт на охлаждаща вода в стоманодобивни заводи, стомано-преработвателни предприятия, леярни, стъкларски заводи и във случаи, когато е наложително да работи близо до източници на много висока те...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ течност/markuch-s-pokritie-ot-fibrostyklo-forno25-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ течност/markuch-s-pokritie-ot-fibrostyklo-forno25-1-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/ течност/markuch-s-pokritie-ot-fibrostyklo-forno25-2-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D1%82%D0%B5%D1%87%D0%BD%D0%BE%D1%81%D1%82/markuch-s-pokritie-ot-fibrostyklo-forno25-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D1%82%D0%B5%D1%87%D0%BD%D0%BE%D1%81%D1%82/markuch-s-pokritie-ot-fibrostyklo-forno25-1-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/%20%D1%82%D0%B5%D1%87%D0%BD%D0%BE%D1%81%D1%82/markuch-s-pokritie-ot-fibrostyklo-forno25-2-1200x1200.png"
     ],
     "variants": [
       {
@@ -50676,7 +50676,7 @@ const CONFIG = {
     "description": "Приложение: &nbsp; Маркуч за транспортиране на вода, пестициди, препарати за растителна защита в течно състояние, течни торове и др. PVC маркучът за пестициди е усилен с якостна текстилна оплетка и издържа на високо налягане - 40 bar. Маркуч за пр...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/PVCC/markuch-za-pesticidi-alfagomma-591ae-1200x1200 (1).png",
+      "https://hydrolux.bg/image/catalog/PVCC/markuch-za-pesticidi-alfagomma-591ae-1200x1200%20(1).png",
       "https://hydrolux.bg/image/catalog/PVCC/markuch-za-pesticidi-alfagomma-591ae-1-1200x1200.png"
     ],
     "variants": [
@@ -50787,7 +50787,7 @@ const CONFIG = {
         "bend": 610,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 77.7
       },
       {
         "code": "URANO PU-2",
@@ -50798,7 +50798,7 @@ const CONFIG = {
         "bend": 480,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 77.7
       },
       {
         "code": "URANO PU-3",
@@ -50809,7 +50809,7 @@ const CONFIG = {
         "bend": 510,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 77.7
       },
       {
         "code": "URANO PU-4",
@@ -50820,7 +50820,7 @@ const CONFIG = {
         "bend": 610,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 77.7
       },
       {
         "code": "URANO PU-5",
@@ -50842,7 +50842,7 @@ const CONFIG = {
         "bend": 450,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 77.7
       },
       {
         "code": "URANO PU-7",
@@ -50853,7 +50853,7 @@ const CONFIG = {
         "bend": 410,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 77.7
       },
       {
         "code": "URANO PU-8",
@@ -50864,7 +50864,7 @@ const CONFIG = {
         "bend": 360,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 77.7
       },
       {
         "code": "URANO PU-9",
@@ -50875,7 +50875,7 @@ const CONFIG = {
         "bend": 320,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 77.7
       },
       {
         "code": "URANO PU-10",
@@ -50886,7 +50886,7 @@ const CONFIG = {
         "bend": 310,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 77.7
       },
       {
         "code": "URANO PU-11",
@@ -50897,7 +50897,7 @@ const CONFIG = {
         "bend": 280,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 77.7
       },
       {
         "code": "URANO PU-12",
@@ -50908,7 +50908,7 @@ const CONFIG = {
         "bend": 260,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 77.7
       },
       {
         "code": "URANO PU-13",
@@ -50919,7 +50919,7 @@ const CONFIG = {
         "bend": 240,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 77.7
       },
       {
         "code": "URANO PU-14",
@@ -50930,7 +50930,7 @@ const CONFIG = {
         "bend": 200,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 77.7
       },
       {
         "code": "URANO PU-15",
@@ -50941,7 +50941,7 @@ const CONFIG = {
         "bend": 180,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 77.7
       },
       {
         "code": "URANO PU-16",
@@ -50952,7 +50952,7 @@ const CONFIG = {
         "bend": 200,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 77.7
       },
       {
         "code": "URANO PU-17",
@@ -50963,7 +50963,7 @@ const CONFIG = {
         "bend": 125,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 77.7
       },
       {
         "code": "URANO PU-18",
@@ -50974,7 +50974,7 @@ const CONFIG = {
         "bend": 160,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 77.7
       },
       {
         "code": "URANO PU-19",
@@ -50985,7 +50985,7 @@ const CONFIG = {
         "bend": 155,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 77.7
       }
     ]
   },
@@ -51015,7 +51015,7 @@ const CONFIG = {
     "description": "Маркуч за пароструйки Вложка: &nbsp;водоустойчив синтетичен каучук Подсилване: &nbsp;две стоманени оплетки с висока якост Покритие: &nbsp;синтетичен каучук с изключителна устойчивост на абразия Работната температура: &nbsp;- 10°C / + 135°C с връх ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/markuch-za-vodostruiki-i-parostruiki-teknojet-2sn-plus-600-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/markuch-za-vodostruiki-i-parostruiki-teknojet-2sn-plus-600-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -51068,7 +51068,7 @@ const CONFIG = {
     "description": "За пренос на течности на водна основа, разтворители, бои, хидравлични масла при високо налягане. Защитен фактор: &nbsp;1:4 Вложка: &nbsp;Термопластичен полиамид Подсилване: &nbsp;&nbsp;Eдна стоманена и две кевларени оплетки Покритие: &nbsp;Микропе...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/termoplastov-markuch-s-ena-stomanena-i-dve-kevalerni-opletki-re7d00-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/termoplastov-markuch-s-ena-stomanena-i-dve-kevalerni-opletki-re7d00-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -51165,7 +51165,7 @@ const CONFIG = {
     "description": "Защитен фактор: &nbsp;1:4 Вложка: &nbsp;Термопластичен полиамид Подсилване: &nbsp;Две стоманени оплетки Покритие: &nbsp; Температурен диапазон: &nbsp;-40°C - +93°C.&nbsp; Маркучът е подходящ за кербоване с стандартни фитинги и се изпозлва в следни...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/termoplastov-markuch-s-edna-stomanena-opletka-i-edna-kevlarena-opletka-sk0100-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/termoplastov-markuch-s-edna-stomanena-opletka-i-edna-kevlarena-opletka-sk0100-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -51284,7 +51284,7 @@ const CONFIG = {
     "description": "Термопластичен маркуч за транспорт на хидравлични течности със средно до високо налягане Защитен фактор: &nbsp;1:4 Вложка: &nbsp;Термопластичен полиестер Подсилване: &nbsp;Една стоманена оплетка Покритие: &nbsp;Микроперфориран полиуретан, устойчив...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/termoplastov-markuch-sys-stomanena-opletka-sae-100r8-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/termoplastov-markuch-sys-stomanena-opletka-sae-100r8-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -51370,7 +51370,7 @@ const CONFIG = {
     "description": "Термопластичен маркуч за транспорт на хидравлични течности със средно до високо налягане Защитен фактор: &nbsp;1:4 Вложка: &nbsp;Термопластичен полиестер Подсилване: &nbsp;Две текстилни оплетки Покритие: &nbsp;Микроперфориран полиуретан, устойчив ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/termoplastov-markuch-s-dve-tekstilni-opletki-sae-100r7-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/termoplastov-markuch-s-dve-tekstilni-opletki-sae-100r7-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -51445,8 +51445,8 @@ const CONFIG = {
     "description": "Вътрешен слой: &nbsp;маслоустойчива синтетична гума Армировка: &nbsp;две стоманени оплетки с голяма якост Външно покритие: &nbsp;гладка, лъскава, синтетична гума, устойчива нa масла, въглеводороди, абразия и озон Приложение: &nbsp;изключително гъв...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/markuch-za-vodostruiki-i-parostruiki-teknojet-2sn-plus-600-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ налягане/hidravlichen-markuch-za-visoko-nalqgane-dunlop-slimline-pluse-2sc-221t-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/markuch-za-vodostruiki-i-parostruiki-teknojet-2sn-plus-600-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/hidravlichen-markuch-za-visoko-nalqgane-dunlop-slimline-pluse-2sc-221t-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -51554,7 +51554,7 @@ const CONFIG = {
     "description": "За пренос на течности на водна основа, разтворители, бои, хидравлични масла при високо налягане. Защитен фактор: &nbsp;1:4 Вложка: &nbsp;Термопластичен полиамид Подсилване: &nbsp;Две стоманени оплетки Покритие: &nbsp;Микроперфориран полиуретан, ус...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/termoplastov-markuch-mt2-s-dve-stomaneni-opletki-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/termoplastov-markuch-mt2-s-dve-stomaneni-opletki-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -51607,7 +51607,7 @@ const CONFIG = {
     "description": "Сдвоен термопластичен маркуч за транспорт на хидравлични течности със средно до високо налягане Защитен фактор: &nbsp;1:4 Вложка: &nbsp;Термопластичен полиестер Подсилване: &nbsp;Две текстилни оплетки Покритие: &nbsp;Микроперфориран полиуретан, ус...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/sdvoen-termoplastov-markuch-s-dve-teskstilni-opletki-sae-100r7-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/sdvoen-termoplastov-markuch-s-dve-teskstilni-opletki-sae-100r7-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -51682,7 +51682,7 @@ const CONFIG = {
     "description": "Сдвоен термопластичен маркуч за транспорт на хидравлични течности със средно до високо налягане Защитен фактор: &nbsp;1:4 Вложка: &nbsp;Термопластичен полиестер Подсилване: &nbsp;Една стоманена оплетка Покритие: &nbsp;Микроперфориран полиуретан, у...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/sdvoen-termoplastov-markuch-s-edna-stomanena-opletka-sae-100r8-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/sdvoen-termoplastov-markuch-s-edna-stomanena-opletka-sae-100r8-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -51694,7 +51694,7 @@ const CONFIG = {
         "bend": 30,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 20.9
       },
       {
         "code": "FM040-twin-2",
@@ -51773,7 +51773,7 @@ const CONFIG = {
     "description": "Климатични системи за автобусна техника Препоръчителни смазочни материали: PAG, POE Не се препоръчва за хладилни газове, използващи минерал смазочни масла Охладителни течности: R134a R1234yf Много гъвкав Подсилване: &nbsp;една метална оплетка Покр...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ налягане/markuch-za-freon-s-metalna-opletka-manuli-ultrastar-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/markuch-za-freon-s-metalna-opletka-manuli-ultrastar-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -52112,7 +52112,7 @@ const CONFIG = {
         "bend": 338,
         "weight": 1.06,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 44.7
       },
       {
         "code": "509OE-6",
@@ -52617,7 +52617,7 @@ const CONFIG = {
         "bend": 100,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 7.5
       },
       {
         "code": "1185 CRT-3",
@@ -52628,7 +52628,7 @@ const CONFIG = {
         "bend": 75,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 7.5
       },
       {
         "code": "1185 CRT-4",
@@ -52639,7 +52639,7 @@ const CONFIG = {
         "bend": 70,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 7.5
       },
       {
         "code": "1185 CRT-5",
@@ -52650,7 +52650,7 @@ const CONFIG = {
         "bend": 55,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 7.5
       },
       {
         "code": "1185 CRT-6",
@@ -52672,7 +52672,7 @@ const CONFIG = {
         "bend": 40,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 7.5
       },
       {
         "code": "1185 CRT-8",
@@ -52683,7 +52683,7 @@ const CONFIG = {
         "bend": 40,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 7.5
       }
     ]
   },
@@ -52724,8 +52724,8 @@ const CONFIG = {
     "description": "Предимства:&nbsp; Здравина, лекота, устойчиви на удар, устойчиви на надраскване Материал на изработка: &nbsp; Аcetalcopolymerisat (POM)",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/pvc-syedinitel-za-markuch-y-obrazen-redukciq-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/ аксесоари/pvc-syedinitel-za-markuch-y-obrazen-redukciq-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/pvc-syedinitel-za-markuch-y-obrazen-redukciq-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/pvc-syedinitel-za-markuch-y-obrazen-redukciq-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -52790,7 +52790,7 @@ const CONFIG = {
     "description": "Предимства: &nbsp;Здравина, лекота, устойчиви на удар, устойчиви на надраскване Материал на изработка: &nbsp;Аcetalcopolymerisat (POM)",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/pom-syedinitel-za-markuch-chetvornik-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/pom-syedinitel-za-markuch-chetvornik-1200x1200.png"
     ],
     "variants": [
       {
@@ -52874,8 +52874,8 @@ const CONFIG = {
     "description": "Коляно с мъжка резба - технополимер",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/kolqno-s-myjka-rezba-tehnopolimer-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ аксесоари/kolqno-s-myjka-rezba-tehnopolimer-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/kolqno-s-myjka-rezba-tehnopolimer-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/kolqno-s-myjka-rezba-tehnopolimer-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -53080,8 +53080,8 @@ const CONFIG = {
     "description": "Тапа с мъжка резба - технополимер",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/tapa-s-myjka-rezba-tehnopolimer-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ аксесоари/tapa-s-myjka-rezba-tehnopolimer-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/tapa-s-myjka-rezba-tehnopolimer-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/tapa-s-myjka-rezba-tehnopolimer-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -53165,8 +53165,8 @@ const CONFIG = {
     "description": "Тройник с мъжка резба за маркуч - технополимер",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/troinik-s-myjka-rezba-za-marhuch-tehnopolimer-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ аксесоари/troinik-s-myjka-rezba-za-marhuch-tehnopolimer-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/troinik-s-myjka-rezba-za-marhuch-tehnopolimer-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/troinik-s-myjka-rezba-za-marhuch-tehnopolimer-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -53272,8 +53272,8 @@ const CONFIG = {
     "description": "Щуцер с мъжка резба за маркуч - технополимер",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/shtucer-s-myvka-rezba-za-markuch-tehnopolimer-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ аксесоари/shtucer-s-myjka-rezba-za-markuch-tehnopolimer-diagrama-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/shtucer-s-myvka-rezba-za-markuch-tehnopolimer-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/shtucer-s-myjka-rezba-za-markuch-tehnopolimer-diagrama-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -53470,14 +53470,14 @@ const CONFIG = {
     "description": "Материал на метала: &nbsp;въглеродна стомана AISI 1008 -1010 Уплътнение: &nbsp;NBR 85 +/- 5 Sh A Повърхностна обработка: &nbsp;цинкова плоча (Cr3) Работна температура: &nbsp;От -30°C до +100°C",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/gumeno-metalni-uplytneniq-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ аксесоари/gumeno-metalni-uplytneniq-metrichna-rezba-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/gumeno-metalni-uplytneniq-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/gumeno-metalni-uplytneniq-metrichna-rezba-diagrama-1200x1200.png"
     ],
     "variants": [
       {
         "code": "T21-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/8BSP\"",
         "outerDb": 0,
         "pressure": 900,
         "bend": 0,
@@ -53488,7 +53488,7 @@ const CONFIG = {
       {
         "code": "T21-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/4BSP\"",
         "outerDb": 0,
         "pressure": 930,
         "bend": 0,
@@ -53499,7 +53499,7 @@ const CONFIG = {
       {
         "code": "T21-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/8BSP\"",
         "outerDb": 0,
         "pressure": 756,
         "bend": 0,
@@ -53510,7 +53510,7 @@ const CONFIG = {
       {
         "code": "T21-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/2BSP\"",
         "outerDb": 0,
         "pressure": 690,
         "bend": 0,
@@ -53521,7 +53521,7 @@ const CONFIG = {
       {
         "code": "T21-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/4BSP\"",
         "outerDb": 0,
         "pressure": 636,
         "bend": 0,
@@ -53532,7 +53532,7 @@ const CONFIG = {
       {
         "code": "T21-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1BSP\"",
         "outerDb": 0,
         "pressure": 420,
         "bend": 0,
@@ -53543,7 +53543,7 @@ const CONFIG = {
       {
         "code": "T21-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/4BSP\"",
         "outerDb": 0,
         "pressure": 410,
         "bend": 0,
@@ -53554,7 +53554,7 @@ const CONFIG = {
       {
         "code": "T21-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/2BSP\"",
         "outerDb": 0,
         "pressure": 410,
         "bend": 0,
@@ -53565,7 +53565,7 @@ const CONFIG = {
       {
         "code": "T21-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2BSP\"",
         "outerDb": 0,
         "pressure": 400,
         "bend": 0,
@@ -53613,14 +53613,14 @@ const CONFIG = {
     "description": "Материал на метала: &nbsp;въглеродна стомана AISI 1008 -1010 Уплътнение: &nbsp;NBR 85 +/- 5 Sh A Повърхностна обработка: &nbsp;цинкова плоча (Cr3) Работна температура: &nbsp;От -30°C до +100°C",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/gumeno-metalni-uplytneniq-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ аксесоари/gumeno-metalni-uplytneniq-metrichna-rezba-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/gumeno-metalni-uplytneniq-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/gumeno-metalni-uplytneniq-metrichna-rezba-diagrama-1200x1200.png"
     ],
     "variants": [
       {
         "code": "T32-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "M6\"",
         "outerDb": 0,
         "pressure": 650,
         "bend": 0,
@@ -53631,7 +53631,7 @@ const CONFIG = {
       {
         "code": "T32-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "M8\"",
         "outerDb": 0,
         "pressure": 750,
         "bend": 0,
@@ -53642,7 +53642,7 @@ const CONFIG = {
       {
         "code": "T32-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "M10\"",
         "outerDb": 0,
         "pressure": 810,
         "bend": 0,
@@ -53653,7 +53653,7 @@ const CONFIG = {
       {
         "code": "T32-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "M12\"",
         "outerDb": 0,
         "pressure": 750,
         "bend": 0,
@@ -53664,7 +53664,7 @@ const CONFIG = {
       {
         "code": "T32-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "M14\"",
         "outerDb": 0,
         "pressure": 900,
         "bend": 0,
@@ -53675,7 +53675,7 @@ const CONFIG = {
       {
         "code": "T32-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "M16\"",
         "outerDb": 0,
         "pressure": 840,
         "bend": 0,
@@ -53686,7 +53686,7 @@ const CONFIG = {
       {
         "code": "T32-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "M18\"",
         "outerDb": 0,
         "pressure": 760,
         "bend": 0,
@@ -53697,7 +53697,7 @@ const CONFIG = {
       {
         "code": "T32-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "M20\"",
         "outerDb": 0,
         "pressure": 690,
         "bend": 0,
@@ -53708,7 +53708,7 @@ const CONFIG = {
       {
         "code": "T32-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "M22\"",
         "outerDb": 0,
         "pressure": 660,
         "bend": 0,
@@ -53719,7 +53719,7 @@ const CONFIG = {
       {
         "code": "T32-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "M24\"",
         "outerDb": 0,
         "pressure": 630,
         "bend": 0,
@@ -53730,7 +53730,7 @@ const CONFIG = {
       {
         "code": "T32-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "M26\"",
         "outerDb": 0,
         "pressure": 636,
         "bend": 0,
@@ -53741,7 +53741,7 @@ const CONFIG = {
       {
         "code": "T32-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "M27\"",
         "outerDb": 0,
         "pressure": 650,
         "bend": 0,
@@ -53752,7 +53752,7 @@ const CONFIG = {
       {
         "code": "T32-13",
         "innerDb": 0,
-        "inch": "",
+        "inch": "M30\"",
         "outerDb": 0,
         "pressure": 500,
         "bend": 0,
@@ -53763,7 +53763,7 @@ const CONFIG = {
       {
         "code": "T32-14",
         "innerDb": 0,
-        "inch": "",
+        "inch": "M33\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -53800,7 +53800,7 @@ const CONFIG = {
     "description": "Месингов съединител за маркуч - прав",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/pravo-syedinenie-za-markuch-mesing-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/pravo-syedinenie-za-markuch-mesing-1200x1200.png"
     ],
     "variants": [
       {
@@ -53931,7 +53931,7 @@ const CONFIG = {
     "description": "Месингов съединител за маркуч - редукция",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/mesingovo-pravo-syedinenie-za-markuch-redukciq-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/mesingovo-pravo-syedinenie-za-markuch-redukciq-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -54039,7 +54039,7 @@ const CONFIG = {
     "description": "Абразиво-устойчив предпазен ръкав Приложение: &nbsp;предпазва от протриване на&nbsp;маркуча и преобразува в облак струята,при спукан маркуч, обхваща сноп маркучи.",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/predpazni-tekstilni-rykavi-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/predpazni-tekstilni-rykavi-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -54187,7 +54187,7 @@ const CONFIG = {
     "description": "Месингов съединиетел за маркуч - тройник с редукция",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/mesingovo-syedinenie-za-markuch-troinik-s-redukciq-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/mesingovo-syedinenie-za-markuch-troinik-s-redukciq-1200x1200.png"
     ],
     "variants": [
       {
@@ -54387,7 +54387,7 @@ const CONFIG = {
     "description": "Работна темпeратура: &nbsp;-0 до 60°C Работно налягане: &nbsp;10 bar",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/pvc-syedinitel-za-markuch-nipel-reducir-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/pvc-syedinitel-za-markuch-nipel-reducir-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -54508,7 +54508,7 @@ const CONFIG = {
     "description": "Месингов съединиетел за маркуч - тройник",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/mesingovo-syedinenie-za-markuch-troinik-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/mesingovo-syedinenie-za-markuch-troinik-1200x1200.png"
     ],
     "variants": [
       {
@@ -54638,7 +54638,7 @@ const CONFIG = {
     "description": "Абразиво-устойчива предпазна спирала Предпазните HDPE спирали са предназначени да предпазват хидравлични и пневматични маркучи против удар и абразия. Подходящи са за защита на единични или снопове от маркучи. Може да се използва за единични маркуч...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/predpazni-pvc-spirali-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/predpazni-pvc-spirali-1200x1200.png"
     ],
     "variants": [
       {
@@ -54796,8 +54796,8 @@ const CONFIG = {
     "description": "Комплект бързи връзки за градински маркуч Адаптор с резба 1/2\" &amp; 3/4\" Накрайник за маркуч 1/2\" &amp; 5/8\" Конектор за маркуч, със стоп клапан, 1/2\" &amp; 5/8\" Струйник за пръскане с регулируема струя Водният струйник е предназначен за поливане...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/struinik-kompl ekt-byrzi-vryz ki-gradinski-m arkuch1.jpg-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/ аксесоари/struinik-kompl ekt-byrzi-vryz ki-gradinski-m arkuch.jpg-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/struinik-kompl%20ekt-byrzi-vryz%20ki-gradinski-m%20arkuch1.jpg-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/struinik-kompl%20ekt-byrzi-vryz%20ki-gradinski-m%20arkuch.jpg-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -54848,7 +54848,7 @@ const CONFIG = {
     "description": "Резервни остриета: &nbsp;ø 2-20 мм Тип: &nbsp;Инструменти Конфигурация: &nbsp;Резервни ножове Материал: &nbsp;стомана",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/rezci-za-kleshti-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/rezci-za-kleshti-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -54894,7 +54894,7 @@ const CONFIG = {
     "description": "Бандажна спирала",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/bandajna-spirala-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/bandajna-spirala-1200x1200.png"
     ],
     "variants": [
       {
@@ -54928,7 +54928,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 7.25
       }
     ]
   },
@@ -54965,7 +54965,7 @@ const CONFIG = {
     "description": "Еднопосочен възвратен клапан",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/ednoposochen-vyzvraten-klapan-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/ednoposochen-vyzvraten-klapan-1200x1200.png"
     ],
     "variants": [
       {
@@ -55040,7 +55040,7 @@ const CONFIG = {
     "description": "Ръчна подкачваща помпа за гориво",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/rychna-podkachvashta-pompa-za-gorivo-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/rychna-podkachvashta-pompa-za-gorivo-1200x1200.png"
     ],
     "variants": [
       {
@@ -55115,7 +55115,7 @@ const CONFIG = {
     "description": "Ръчна подкачваща помпа за гориво 90°",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/rychna-podkachvashta-pompa-za-gorivo-90-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/rychna-podkachvashta-pompa-za-gorivo-90-1200x1200.png"
     ],
     "variants": [
       {
@@ -55179,7 +55179,7 @@ const CONFIG = {
     "description": "Ръкав от неръждаема стомана AISI 304",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/rykav-ot-neryjdaema-stomana-aisi-304-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/rykav-ot-neryjdaema-stomana-aisi-304-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -55202,7 +55202,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 13.75
       },
       {
         "code": " Предпазен ръкав - неръждаема стомана AISI 304-3",
@@ -55213,7 +55213,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 13.75
       },
       {
         "code": " Предпазен ръкав - неръждаема стомана AISI 304-4",
@@ -55224,7 +55224,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 13.75
       },
       {
         "code": " Предпазен ръкав - неръждаема стомана AISI 304-5",
@@ -55268,7 +55268,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 13.75
       },
       {
         "code": " Предпазен ръкав - неръждаема стомана AISI 304-9",
@@ -55279,7 +55279,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 13.75
       },
       {
         "code": " Предпазен ръкав - неръждаема стомана AISI 304-10",
@@ -55290,7 +55290,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 13.75
       },
       {
         "code": " Предпазен ръкав - неръждаема стомана AISI 304-11",
@@ -55301,7 +55301,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 13.75
       }
     ]
   },
@@ -55331,7 +55331,7 @@ const CONFIG = {
     "description": "Предпазни текстилни ръкави залепващи Абразиво-устойчив предпазен ръкав Приложение: &nbsp; предпазва от протриване на маркуча и преобразува в облак струята при спукан маркуч, обхваща сноп маркучи.",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/predpazni-tekstilni-rykavi-zalepvashti-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/predpazni-tekstilni-rykavi-zalepvashti-1200x1200.png"
     ],
     "variants": [
       {
@@ -55458,8 +55458,8 @@ const CONFIG = {
     "description": "Елeĸтpичecĸa гopивнa пoмпa 12V вoлтa зa ниcĸo нaлягaнe зa бeнзин и дизeл с бутало на принципа на електромагнит. Bxoдящo нaпpeжeниe: &nbsp;12V вoлтa DС Дължинa: &nbsp;14.5сm Диaмeтъp нa ĸopпyca: &nbsp;4сm Haлягaнe: &nbsp;3-6 рѕі",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/ аксесоари/elektricheska-pompa-za-gorivo-12v-100-120lh-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/ аксесоари/elektricheska-pompa-za-gorivo-12v-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/elektricheska-pompa-za-gorivo-12v-100-120lh-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/%20%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D0%BE%D0%B0%D1%80%D0%B8/elektricheska-pompa-za-gorivo-12v-1-1200x1200.png"
     ],
     "variants": [
       {
@@ -55516,7 +55516,7 @@ const CONFIG = {
       {
         "code": "Уплътнение RA99-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2.7\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -55569,7 +55569,7 @@ const CONFIG = {
       {
         "code": "PPO-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "33\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -55580,7 +55580,7 @@ const CONFIG = {
       {
         "code": "PPO-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "17.8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -55591,7 +55591,7 @@ const CONFIG = {
       {
         "code": "PPO-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "11.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -55602,7 +55602,7 @@ const CONFIG = {
       {
         "code": "PPO-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "5.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -55769,7 +55769,7 @@ const CONFIG = {
       {
         "code": "FMRC-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "132\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -55780,7 +55780,7 @@ const CONFIG = {
       {
         "code": "FMRC-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "60\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -55791,7 +55791,7 @@ const CONFIG = {
       {
         "code": "FMRC-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "42\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -55802,7 +55802,7 @@ const CONFIG = {
       {
         "code": "FMRC-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "54\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -55813,7 +55813,7 @@ const CONFIG = {
       {
         "code": "FMRC-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "22\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -55824,7 +55824,7 @@ const CONFIG = {
       {
         "code": "FMRC-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "32\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -55835,7 +55835,7 @@ const CONFIG = {
       {
         "code": "FMRC-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "13\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -55846,7 +55846,7 @@ const CONFIG = {
       {
         "code": "FMRC-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "38\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -55857,7 +55857,7 @@ const CONFIG = {
       {
         "code": "FMRC-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "19\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -55868,7 +55868,7 @@ const CONFIG = {
       {
         "code": "FMRC-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "10\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -56209,7 +56209,7 @@ const CONFIG = {
       {
         "code": "POFS-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "32.2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -56544,7 +56544,7 @@ const CONFIG = {
       {
         "code": "POTEF-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "69.6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -56555,7 +56555,7 @@ const CONFIG = {
       {
         "code": "POTEF-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "30.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -57258,40 +57258,40 @@ const CONFIG = {
       {
         "code": "PER-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "30\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4
       },
       {
         "code": "PER-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "20.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4
       },
       {
         "code": "PER-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "20.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4
       },
       {
         "code": "PER-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "17\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -57302,46 +57302,46 @@ const CONFIG = {
       {
         "code": "PER-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "17\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4
       },
       {
         "code": "PER-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "17\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4
       },
       {
         "code": "PER-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "15\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4
       },
       {
         "code": "PER-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "14\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4
       }
     ]
   },
@@ -57498,7 +57498,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.2
       },
       {
         "code": "LSTP-2",
@@ -57509,7 +57509,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.2
       },
       {
         "code": "LSTP-3",
@@ -57520,7 +57520,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.2
       },
       {
         "code": "LSTP-4",
@@ -57531,7 +57531,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.2
       },
       {
         "code": "LSTP-5",
@@ -57542,7 +57542,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.2
       },
       {
         "code": "LSTP-6",
@@ -57553,7 +57553,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.2
       },
       {
         "code": "LSTP-7",
@@ -57564,7 +57564,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.2
       },
       {
         "code": "LSTP-8",
@@ -57586,7 +57586,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.2
       },
       {
         "code": "LSTP-10",
@@ -57597,7 +57597,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.2
       }
     ]
   },
@@ -57849,7 +57849,7 @@ const CONFIG = {
       {
         "code": "RJP-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "46.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -57860,7 +57860,7 @@ const CONFIG = {
       {
         "code": "RJP-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "46.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -57871,7 +57871,7 @@ const CONFIG = {
       {
         "code": "RJP-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "41.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -57882,7 +57882,7 @@ const CONFIG = {
       {
         "code": "RJP-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "36.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -57893,7 +57893,7 @@ const CONFIG = {
       {
         "code": "RJP-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "18.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -57904,7 +57904,7 @@ const CONFIG = {
       {
         "code": "RJP-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "10.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -57967,7 +57967,7 @@ const CONFIG = {
       {
         "code": "INEL-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4.50\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -57978,7 +57978,7 @@ const CONFIG = {
       {
         "code": "INEL-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "51.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -57989,7 +57989,7 @@ const CONFIG = {
       {
         "code": "INEL-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "15.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -58000,7 +58000,7 @@ const CONFIG = {
       {
         "code": "INEL-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "32.0\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -58133,7 +58133,7 @@ const CONFIG = {
       {
         "code": "POSNG-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "60.9\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -58175,7 +58175,7 @@ const CONFIG = {
       {
         "code": "POUE-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "84.3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -58239,7 +58239,7 @@ const CONFIG = {
       {
         "code": "YET-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "62.7\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -58250,7 +58250,7 @@ const CONFIG = {
       {
         "code": "YET-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "95.8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -58261,7 +58261,7 @@ const CONFIG = {
       {
         "code": "YET-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "13.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -58272,7 +58272,7 @@ const CONFIG = {
       {
         "code": "YET-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "42.5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -58283,7 +58283,7 @@ const CONFIG = {
       {
         "code": "YET-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "32\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -58622,12 +58622,12 @@ const CONFIG = {
     "description": "Бързосменник MK TYPE DIN 28450 за композитни и каучукови маркучи - неръждаем",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-mk-type-din28450-za-kompozitni-i-kaucukovi-markuchi-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmennik-mk-type-din28450-za-kompozitni-i-kaucukovi-markuchi-1200x1200.png"
     ],
     "variants": [
       {
         "code": "MK SS-1",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -58638,7 +58638,7 @@ const CONFIG = {
       },
       {
         "code": "MK SS-2",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -58649,7 +58649,7 @@ const CONFIG = {
       },
       {
         "code": "MK SS-3",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -58692,13 +58692,13 @@ const CONFIG = {
     "description": "Бързосменник VK TYPE DIN 28450 за композитни и каучукови маркучи - месинг",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-vk-type-din28450-za-kompozitni-i-kaucukovi-markuchi-mesing-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmennik-vk-type-din28450-za-kompozitni-i-kaucukovi-markuchi-mesing-1200x1200.png"
     ],
     "variants": [
       {
         "code": "VK MS-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 100,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -58708,8 +58708,8 @@ const CONFIG = {
       },
       {
         "code": "VK MS-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 75,
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -58719,8 +58719,8 @@ const CONFIG = {
       },
       {
         "code": "VK MS-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -58762,13 +58762,13 @@ const CONFIG = {
     "description": "Бързосменник VK TYPE DIN 28450 за композитни и каучукови маркучи - неръждаем",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-vk-type-din28450-za-kompozitni-i-kaucukovi-markuchi-mesing-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmennik-vk-type-din28450-za-kompozitni-i-kaucukovi-markuchi-mesing-1200x1200.png"
     ],
     "variants": [
       {
         "code": "VK SS-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 100,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -58778,8 +58778,8 @@ const CONFIG = {
       },
       {
         "code": "VK SS-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 75,
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -58789,8 +58789,8 @@ const CONFIG = {
       },
       {
         "code": "VK SS-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -58838,7 +58838,7 @@ const CONFIG = {
     "description": "Накрайник Triclamp за заварка INCH, неръждаема стомана AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-triclamp-za-zavarka-iso-aisi316-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nakrainik-triclamp-za-zavarka-iso-aisi316-1200x1200.png"
     ],
     "variants": [
       {
@@ -58969,7 +58969,7 @@ const CONFIG = {
     "description": "Накрайник Triclamp за заварка ISO, неръждаема стомана AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-triclamp-za-zavarka-iso-aisi316-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nakrainik-triclamp-za-zavarka-iso-aisi316-1200x1200.png"
     ],
     "variants": [
       {
@@ -59095,12 +59095,12 @@ const CONFIG = {
     "description": "Неподвижен фланец ANSI 150",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nepodvijen-fiksiran-flanec-ansi150-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nepodvijen-fiksiran-flanec-ansi150-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "FFA ANSI 150-1",
-        "innerDb": 0,
+        "innerDb": 250,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59111,7 +59111,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 150-2",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59122,7 +59122,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 150-3",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59133,7 +59133,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 150-4",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59144,7 +59144,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 150-5",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59155,7 +59155,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 150-6",
-        "innerDb": 0,
+        "innerDb": 65,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59166,7 +59166,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 150-7",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59177,7 +59177,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 150-8",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59188,7 +59188,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 150-9",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59199,7 +59199,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 150-10",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59210,7 +59210,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 150-11",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59221,7 +59221,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 150-12",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59232,7 +59232,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 150-13",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59276,12 +59276,12 @@ const CONFIG = {
     "description": "Неподвижен фланец ANSI 300",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nepodvijen-fiksiran-flanec-ansi150-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nepodvijen-fiksiran-flanec-ansi150-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "FFA ANSI 300-1",
-        "innerDb": 0,
+        "innerDb": 250,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59292,7 +59292,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 300-2",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59303,7 +59303,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 300-3",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59314,7 +59314,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 300-4",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59325,7 +59325,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 300-5",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59336,7 +59336,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 300-6",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59347,7 +59347,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 300-7",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59358,7 +59358,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 300-8",
-        "innerDb": 0,
+        "innerDb": 65,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59369,7 +59369,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 300-9",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59380,7 +59380,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 300-10",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59391,7 +59391,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 300-11",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59402,7 +59402,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 300-12",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59413,7 +59413,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 300-13",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59457,12 +59457,12 @@ const CONFIG = {
     "description": "Неподвижен фланец ANSI 600",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nepodvijen-fiksiran-flanec-ansi150-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nepodvijen-fiksiran-flanec-ansi150-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "FFA ANSI 600-1",
-        "innerDb": 0,
+        "innerDb": 250,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59473,7 +59473,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 600-2",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59484,7 +59484,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 600-3",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59495,7 +59495,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 600-4",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59506,7 +59506,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 600-5",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59517,7 +59517,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 600-6",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59528,7 +59528,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 600-7",
-        "innerDb": 0,
+        "innerDb": 65,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59539,7 +59539,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 600-8",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59550,7 +59550,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 600-9",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59561,7 +59561,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 600-10",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59572,7 +59572,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 600-11",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59583,7 +59583,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 600-12",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59594,7 +59594,7 @@ const CONFIG = {
       },
       {
         "code": "FFA ANSI 600-13",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59638,12 +59638,12 @@ const CONFIG = {
     "description": "Неподвижен фланец DIN PN10/16",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nepodvijen-fiksiran-flanec-ansi150-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nepodvijen-fiksiran-flanec-ansi150-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "FFD DIN PN10/16-1",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59654,7 +59654,7 @@ const CONFIG = {
       },
       {
         "code": "FFD DIN PN10/16-2",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59665,7 +59665,7 @@ const CONFIG = {
       },
       {
         "code": "FFD DIN PN10/16-3",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59676,7 +59676,7 @@ const CONFIG = {
       },
       {
         "code": "FFD DIN PN10/16-4",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59687,7 +59687,7 @@ const CONFIG = {
       },
       {
         "code": "FFD DIN PN10/16-5",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59698,7 +59698,7 @@ const CONFIG = {
       },
       {
         "code": "FFD DIN PN10/16-6",
-        "innerDb": 0,
+        "innerDb": 65,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59709,7 +59709,7 @@ const CONFIG = {
       },
       {
         "code": "FFD DIN PN10/16-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59720,7 +59720,7 @@ const CONFIG = {
       },
       {
         "code": "FFD DIN PN10/16-8",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59731,7 +59731,7 @@ const CONFIG = {
       },
       {
         "code": "FFD DIN PN10/16-9",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59742,7 +59742,7 @@ const CONFIG = {
       },
       {
         "code": "FFD DIN PN10/16-10",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59753,7 +59753,7 @@ const CONFIG = {
       },
       {
         "code": "FFD DIN PN10/16-11",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59797,12 +59797,12 @@ const CONFIG = {
     "description": "Неподвижен фланец DIN PN25/40",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nepodvijen-fiksiran-flanec-ansi150-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nepodvijen-fiksiran-flanec-ansi150-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "FFD DIN PN25/40-1",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59813,7 +59813,7 @@ const CONFIG = {
       },
       {
         "code": "FFD DIN PN25/40-2",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59824,7 +59824,7 @@ const CONFIG = {
       },
       {
         "code": "FFD DIN PN25/40-3",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59835,7 +59835,7 @@ const CONFIG = {
       },
       {
         "code": "FFD DIN PN25/40-4",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59846,7 +59846,7 @@ const CONFIG = {
       },
       {
         "code": "FFD DIN PN25/40-5",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59857,7 +59857,7 @@ const CONFIG = {
       },
       {
         "code": "FFD DIN PN25/40-6",
-        "innerDb": 0,
+        "innerDb": 65,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59868,7 +59868,7 @@ const CONFIG = {
       },
       {
         "code": "FFD DIN PN25/40-7",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59879,7 +59879,7 @@ const CONFIG = {
       },
       {
         "code": "FFD DIN PN25/40-8",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59923,14 +59923,14 @@ const CONFIG = {
     "description": "Подвижен фланец ANSI 150",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/podvijen-flanec-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/podvijen-flanec-1-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "FSA ANSI 150-1",
-        "innerDb": 0,
+        "innerDb": 250,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59941,7 +59941,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 150-2",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59952,7 +59952,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 150-3",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59963,7 +59963,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 150-4",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59974,7 +59974,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 150-5",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59985,7 +59985,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 150-6",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -59996,7 +59996,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 150-7",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60007,7 +60007,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 150-8",
-        "innerDb": 0,
+        "innerDb": 65,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60018,7 +60018,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 150-9",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60029,7 +60029,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 150-10",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60040,7 +60040,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 150-11",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60051,7 +60051,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 150-12",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60062,7 +60062,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 150-13",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60106,14 +60106,14 @@ const CONFIG = {
     "description": "Подвижен фланец ANSI 300",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/podvijen-flanec-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/podvijen-flanec-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "FSA ANSI 300-1",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60157,14 +60157,14 @@ const CONFIG = {
     "description": "Подвижен фланец ANSI 600",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/podvijen-flanec-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/podvijen-flanec-1-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "FSA ANSI 600-1",
-        "innerDb": 0,
+        "innerDb": 250,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60175,7 +60175,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 600-2",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60186,7 +60186,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 600-3",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60197,7 +60197,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 600-4",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60208,7 +60208,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 600-5",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60219,7 +60219,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 600-6",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60230,7 +60230,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 600-7",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60241,7 +60241,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 600-8",
-        "innerDb": 0,
+        "innerDb": 65,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60252,7 +60252,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 600-9",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60263,7 +60263,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 600-10",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60274,7 +60274,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 600-11",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60285,7 +60285,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 600-12",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60296,7 +60296,7 @@ const CONFIG = {
       },
       {
         "code": "FSA ANSI 600-13",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60340,14 +60340,14 @@ const CONFIG = {
     "description": "Подвижен фланец DIN PN10/16",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/podvijen-flanec-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/podvijen-flanec-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "FSD DIN PN10/16-1",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60391,14 +60391,14 @@ const CONFIG = {
     "description": "Подвижен фланец DIN PN40",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/podvijen-flanec-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/podvijen-flanec-1-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "FSD DIN PN40-1",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60409,7 +60409,7 @@ const CONFIG = {
       },
       {
         "code": "FSD DIN PN40-2",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60420,7 +60420,7 @@ const CONFIG = {
       },
       {
         "code": "FSD DIN PN40-3",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60464,14 +60464,14 @@ const CONFIG = {
     "description": "Подвижен фланец DIN PN6",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/podvijen-flanec-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/podvijen-flanec-ansi-150-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/podvijen-flanec-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/podvijen-flanec-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "FSD DIN PN6-1",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -60509,7 +60509,7 @@ const CONFIG = {
     "description": "Уплътнение за накрайник CAMLOCK материал NBR",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytnenie-za-nakrainici-geka-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/uplytnenie-za-nakrainici-geka-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -60521,7 +60521,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 0.85
       },
       {
         "code": "Уплътнение за CAMLOCK материал NBR-2",
@@ -60532,7 +60532,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 0.85
       },
       {
         "code": "Уплътнение за CAMLOCK материал NBR-3",
@@ -60554,7 +60554,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 0.85
       },
       {
         "code": "Уплътнение за CAMLOCK материал NBR-5",
@@ -60672,7 +60672,7 @@ const CONFIG = {
     "description": "Уплътнението е подходящо за всички размери бързосменници за въздух EUROPEAN DIN3489: DN10, DN13, DN15,&nbsp;&nbsp;DN19, DN20, DN25, DN32,&nbsp; 3/8\",&nbsp;1/2\", 3/4\", 1\", 1 1/4\"",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytnenie-za-nakrainici-za-kompresor-express-nbr-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/uplytnenie-za-nakrainici-za-kompresor-express-nbr-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -60720,7 +60720,7 @@ const CONFIG = {
     "description": "Полипропилен, подходящ е за всички видове накрайници за IBC бидони с женска IBC резба. Външен диаметър: &nbsp;55mm Вътрешен диаметър: &nbsp;45mm Дебелина: &nbsp;3mm",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytnenie-za-ibc-adapteri-bqlo-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/uplytnenie-za-ibc-adapteri-bqlo-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -60762,7 +60762,7 @@ const CONFIG = {
     "description": "Уплътнение за накрайник GEKA материал NBR",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytnenie-za-nakrainici-geka-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/uplytnenie-za-nakrainici-geka-1200x1200.png"
     ],
     "variants": [
       {
@@ -60809,7 +60809,7 @@ const CONFIG = {
     "description": "Челно уплътнение за вътрешни резби полиуретан PU",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/chelno-uplytnenie-za-vytreshni-rezbi-poliuretan-pu-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/chelno-uplytnenie-za-vytreshni-rezbi-poliuretan-pu-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -60944,13 +60944,13 @@ const CONFIG = {
     "description": "Уплътнение за STORZ материал NBR",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytnenie-za-storz-nbr-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/uplytnenie-za-storz-nbr-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Уплътнение за STORZ материал NBR-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -60961,7 +60961,7 @@ const CONFIG = {
       {
         "code": "Уплътнение за STORZ материал NBR-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -60972,7 +60972,7 @@ const CONFIG = {
       {
         "code": "Уплътнение за STORZ материал NBR-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -60983,7 +60983,7 @@ const CONFIG = {
       {
         "code": "Уплътнение за STORZ материал NBR-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -60994,7 +60994,7 @@ const CONFIG = {
       {
         "code": "Уплътнение за STORZ материал NBR-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -61005,7 +61005,7 @@ const CONFIG = {
       {
         "code": "Уплътнение за STORZ материал NBR-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -61016,7 +61016,7 @@ const CONFIG = {
       {
         "code": "Уплътнение за STORZ материал NBR-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -61057,8 +61057,8 @@ const CONFIG = {
     "description": "Пинче за дръжка за Mortar накрайник",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pinche-za-dryjka-mortart-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pinche-za-dryjka-mortart-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/pinche-za-dryjka-mortart-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/pinche-za-dryjka-mortart-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -61138,7 +61138,7 @@ const CONFIG = {
     "description": "Уплътнение за GUILLEMIN материал NBR",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytnenie-za-nakrainici-guillemin-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/uplytnenie-za-nakrainici-guillemin-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -61242,7 +61242,7 @@ const CONFIG = {
     "description": "Уплътнение за накрайници за хранителновкусовата промишленост DIN 11851",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytnenie-za-nakrainici-za-hranitelno-vkusovata-promishlenost-din11851-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/uplytnenie-za-nakrainici-za-hranitelno-vkusovata-promishlenost-din11851-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -61265,7 +61265,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.95
       },
       {
         "code": "DINJEP-3",
@@ -61276,7 +61276,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.95
       },
       {
         "code": "DINJEP-4",
@@ -61287,7 +61287,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.95
       },
       {
         "code": "DINJEP-5",
@@ -61309,7 +61309,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 2.95
       },
       {
         "code": "DINJEP-7",
@@ -61368,7 +61368,7 @@ const CONFIG = {
     "description": "Максимално препоръчително работно налягане до 10-12 bar.",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/opashka-za-zavarka-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/opashka-za-zavarka-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -61536,7 +61536,7 @@ const CONFIG = {
     "description": "Уплътнение за TW NBR - черен",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytnenie-za-tw-nbr-cherno-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/uplytnenie-za-tw-nbr-cherno-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -61600,7 +61600,7 @@ const CONFIG = {
     "description": "Уплътнение за CARDAN - PERROT материал NBR",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytnenie-za-cardan-perrot-material-nbr-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/uplytnenie-za-cardan-perrot-material-nbr-1200x1200.png"
     ],
     "variants": [
       {
@@ -61704,14 +61704,14 @@ const CONFIG = {
     "description": "Неръждаемо коляно нипел-муфа 90° - AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaemo-kolqno-nipel-mufa-90-aisi316-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaemo-kolqno-nipel-mufa-90-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaemo-kolqno-nipel-mufa-90-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaemo-kolqno-nipel-mufa-90-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
         "code": "LMF LPSS-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -61722,18 +61722,18 @@ const CONFIG = {
       {
         "code": "LMF LPSS-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 5
       },
       {
         "code": "LMF LPSS-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -61744,7 +61744,7 @@ const CONFIG = {
       {
         "code": "LMF LPSS-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -61755,7 +61755,7 @@ const CONFIG = {
       {
         "code": "LMF LPSS-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -61766,7 +61766,7 @@ const CONFIG = {
       {
         "code": "LMF LPSS-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -61777,7 +61777,7 @@ const CONFIG = {
       {
         "code": "LMF LPSS-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -61788,7 +61788,7 @@ const CONFIG = {
       {
         "code": "LMF LPSS-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -61799,7 +61799,7 @@ const CONFIG = {
       {
         "code": "LMF LPSS-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -61810,7 +61810,7 @@ const CONFIG = {
       {
         "code": "LMF LPSS-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -61821,7 +61821,7 @@ const CONFIG = {
       {
         "code": "LMF LPSS-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -61832,7 +61832,7 @@ const CONFIG = {
       {
         "code": "LMF LPSS-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -61873,7 +61873,7 @@ const CONFIG = {
     "description": "Дръжка за Mortar накрайник, месинг",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/dryjka-za-mortar-nakrainik-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/dryjka-za-mortar-nakrainik-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -61921,7 +61921,7 @@ const CONFIG = {
     "description": "Челно уплътнение за вътрешни резби тефлон PTFE",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/chelno-uplytnenie-za-vytreshni-rezbi-teflon-ptfe-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/chelno-uplytnenie-za-vytreshni-rezbi-teflon-ptfe-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -62068,7 +62068,7 @@ const CONFIG = {
     "description": "Смyĸaтeлят с възвратна клапа и неръждаема решетка e пpeднaзнaчeн дa предотвратява вpъщaнeтo нa засмукана вoдa или дpyг флyид в oбpaтнa пocoĸa и поддържа пълна смукателната линия на помпата с течност. Нepъждaeмият филтъp възпрепятства пpoниĸвaнeтo ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/smukatel-cedka-vyzvraten-klapan-s-filtyr-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/smukatel-cedka-vyzvraten-klapan-s-filtyr-1200x1200.png"
     ],
     "variants": [
       {
@@ -62208,25 +62208,25 @@ const CONFIG = {
     "description": "Неръждаем тройник муфа - AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-troinik-mufa-aisi316-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-troinik-mufa-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaem-troinik-mufa-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaem-troinik-mufa-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
         "code": "TFF LPSS-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 6.25
       },
       {
         "code": "TFF LPSS-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62237,7 +62237,7 @@ const CONFIG = {
       {
         "code": "TFF LPSS-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62248,7 +62248,7 @@ const CONFIG = {
       {
         "code": "TFF LPSS-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62259,7 +62259,7 @@ const CONFIG = {
       {
         "code": "TFF LPSS-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62270,7 +62270,7 @@ const CONFIG = {
       {
         "code": "TFF LPSS-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62281,7 +62281,7 @@ const CONFIG = {
       {
         "code": "TFF LPSS-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62292,7 +62292,7 @@ const CONFIG = {
       {
         "code": "TFF LPSS-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62303,7 +62303,7 @@ const CONFIG = {
       {
         "code": "TFF LPSS-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62314,7 +62314,7 @@ const CONFIG = {
       {
         "code": "TFF LPSS-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62325,7 +62325,7 @@ const CONFIG = {
       {
         "code": "TFF LPSS-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62336,7 +62336,7 @@ const CONFIG = {
       {
         "code": "TFF LPSS-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -62386,7 +62386,7 @@ const CONFIG = {
     "description": "Съединител с външна резба месинг - бърза връзка за вода GEKA",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/syedinitel-s-vynshna-rezba-mesing-byrza-vryzka-za-voda-geka-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/syedinitel-s-vynshna-rezba-mesing-byrza-vryzka-za-voda-geka-1200x1200.png"
     ],
     "variants": [
       {
@@ -62475,7 +62475,7 @@ const CONFIG = {
     "description": "Съединител с вътрешна резба месинг - бърза връзка за вода GEKA",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/syedinitel-s-vytreshna-rezba-mesing-byrza-vryzka-za-voda-geka-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/syedinitel-s-vytreshna-rezba-mesing-byrza-vryzka-za-voda-geka-1200x1200.png"
     ],
     "variants": [
       {
@@ -62555,7 +62555,7 @@ const CONFIG = {
     "description": "Уплътнение за TW HYPALON - зелен",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytnenie-za-tw-hypalon-zeleno-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/uplytnenie-za-tw-hypalon-zeleno-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -62631,7 +62631,7 @@ const CONFIG = {
     "description": "Чаша поцинкована за индустриални каучукови маркучи до 41 bar",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pocinkovana-chasha-za-industrialni-kauchokovi-markuchi-do-41bar-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/pocinkovana-chasha-za-industrialni-kauchokovi-markuchi-do-41bar-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -62893,8 +62893,8 @@ const CONFIG = {
     "description": "Неръждаема муфа редуцир - AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaema-mufa-reducir-aisi316-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaema-mufa-reducir-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaema-mufa-reducir-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaema-mufa-reducir-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -62906,7 +62906,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 8.65
       },
       {
         "code": "MU LPSS reducer-2",
@@ -63176,7 +63176,7 @@ const CONFIG = {
     "description": "Уплътнения за клампови накрайници EPDM",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/klampovi-uplytneniq-epdm-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/klampovi-uplytneniq-epdm-1200x1200.png"
     ],
     "variants": [
       {
@@ -63324,14 +63324,14 @@ const CONFIG = {
     "description": "Неръждаемо коляно муфа 45° - AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaemo-kolqno-mufa45-aisi316-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaemo-kolqno-mufa-45-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaemo-kolqno-mufa45-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaemo-kolqno-mufa-45-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
         "code": "LFF LPSS 45-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -63342,7 +63342,7 @@ const CONFIG = {
       {
         "code": "LFF LPSS 45-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -63353,18 +63353,18 @@ const CONFIG = {
       {
         "code": "LFF LPSS 45-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 8.75
       },
       {
         "code": "LFF LPSS 45-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -63375,7 +63375,7 @@ const CONFIG = {
       {
         "code": "LFF LPSS 45-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -63386,7 +63386,7 @@ const CONFIG = {
       {
         "code": "LFF LPSS 45-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -63397,7 +63397,7 @@ const CONFIG = {
       {
         "code": "LFF LPSS 45-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -63408,7 +63408,7 @@ const CONFIG = {
       {
         "code": "LFF LPSS 45-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -63419,7 +63419,7 @@ const CONFIG = {
       {
         "code": "LFF LPSS 45-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -63430,7 +63430,7 @@ const CONFIG = {
       {
         "code": "LFF LPSS 45-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -63441,7 +63441,7 @@ const CONFIG = {
       {
         "code": "LFF LPSS 45-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -63452,7 +63452,7 @@ const CONFIG = {
       {
         "code": "LFF LPSS 45-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -63497,7 +63497,7 @@ const CONFIG = {
     "description": "Уплътнения за клампови накрайници NBR",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/uplytneniq-za-klampovi-nakrainici-nbr-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/uplytneniq-za-klampovi-nakrainici-nbr-1200x1200.png"
     ],
     "variants": [
       {
@@ -63637,14 +63637,14 @@ const CONFIG = {
     "description": "Накрайник тип STORZ с вътрешна резба, алуминий, 16bar",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-stroz-s-vytreshna-rezba-aluminii-16bar-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-stroz-s-vytreshna-rezba-aluminii-16-bar-1-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-stroz-s-vytreshna-rezba-aluminii-16bar-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-stroz-s-vytreshna-rezba-aluminii-16-bar-1-1200x1200.jpeg"
     ],
     "variants": [
       {
         "code": "STORZ STI - AL-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -63655,7 +63655,7 @@ const CONFIG = {
       {
         "code": "STORZ STI - AL-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -63666,7 +63666,7 @@ const CONFIG = {
       {
         "code": "STORZ STI - AL-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -63677,7 +63677,7 @@ const CONFIG = {
       {
         "code": "STORZ STI - AL-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -63688,7 +63688,7 @@ const CONFIG = {
       {
         "code": "STORZ STI - AL-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -63699,7 +63699,7 @@ const CONFIG = {
       {
         "code": "STORZ STI - AL-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -63710,7 +63710,7 @@ const CONFIG = {
       {
         "code": "STORZ STI - AL-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -63721,7 +63721,7 @@ const CONFIG = {
       {
         "code": "STORZ STI - AL-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -63732,7 +63732,7 @@ const CONFIG = {
       {
         "code": "STORZ STI - AL-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -63783,13 +63783,13 @@ const CONFIG = {
     "description": "Накрайник с тръбна цолова резба с гайка - месинг",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/rezbovi-nakrainik-s-trybna-colova-rezba-s-gaika-mesing-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-rezbovi-nakrainik-s-trybna-colova-rezba-s-gaika-mesing-1-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/rezbovi-nakrainik-s-trybna-colova-rezba-s-gaika-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-rezbovi-nakrainik-s-trybna-colova-rezba-s-gaika-mesing-1-1200x1200.jpeg"
     ],
     "variants": [
       {
         "code": "RF MS-1",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -63800,7 +63800,7 @@ const CONFIG = {
       },
       {
         "code": "RF MS-2",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -63811,7 +63811,7 @@ const CONFIG = {
       },
       {
         "code": "RF MS-3",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -63822,7 +63822,7 @@ const CONFIG = {
       },
       {
         "code": "RF MS-4",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -63833,7 +63833,7 @@ const CONFIG = {
       },
       {
         "code": "RF MS-5",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -63844,7 +63844,7 @@ const CONFIG = {
       },
       {
         "code": "RF MS-6",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -63855,7 +63855,7 @@ const CONFIG = {
       },
       {
         "code": "RF MS-7",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -63866,7 +63866,7 @@ const CONFIG = {
       },
       {
         "code": "RF MS-8",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -63877,7 +63877,7 @@ const CONFIG = {
       },
       {
         "code": "RF MS-9",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -63888,7 +63888,7 @@ const CONFIG = {
       },
       {
         "code": "RF MS-10",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -63933,12 +63933,12 @@ const CONFIG = {
     "description": "Чаша пресова за SM40/757AA тип MORTAR / PLASTER",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/presova-chasha-za-sm40-757aa-tip-mortar-plaster-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/presova-chasha-za-sm40-757aa-tip-mortar-plaster-1200x1200.png"
     ],
     "variants": [
       {
         "code": "Чаша MORTAR / PLASTER-1",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -63949,7 +63949,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша MORTAR / PLASTER-2",
-        "innerDb": 0,
+        "innerDb": 35,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -63960,7 +63960,7 @@ const CONFIG = {
       },
       {
         "code": "Чаша MORTAR / PLASTER-3",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -64009,36 +64009,36 @@ const CONFIG = {
     "description": "Неръждаем холендър конусен вътрешни резби - AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-holendyr-konusen-vytreshni-rezbi-aisi316-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-holendyr-konusen-vytreshni-rezbi-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaem-holendyr-konusen-vytreshni-rezbi-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaem-holendyr-konusen-vytreshni-rezbi-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
         "code": "ZFIG-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 14.95
       },
       {
         "code": "ZFIG-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 14.95
       },
       {
         "code": "ZFIG-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -64049,7 +64049,7 @@ const CONFIG = {
       {
         "code": "ZFIG-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -64060,7 +64060,7 @@ const CONFIG = {
       {
         "code": "ZFIG-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -64071,7 +64071,7 @@ const CONFIG = {
       {
         "code": "ZFIG-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -64082,7 +64082,7 @@ const CONFIG = {
       {
         "code": "ZFIG-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -64093,7 +64093,7 @@ const CONFIG = {
       {
         "code": "ZFIG-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -64104,7 +64104,7 @@ const CONFIG = {
       {
         "code": "ZFIG-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -64115,7 +64115,7 @@ const CONFIG = {
       {
         "code": "ZFIG-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -64126,7 +64126,7 @@ const CONFIG = {
       {
         "code": "ZFIG-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -64137,7 +64137,7 @@ const CONFIG = {
       {
         "code": "ZFIG-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -64184,12 +64184,12 @@ const CONFIG = {
     "description": "Накрайник за маркуч за бластиране SANDBLAST - AL",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-za-markuch-za-blastirane-sandblast-al-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nakrainik-za-markuch-za-blastirane-sandblast-al-1200x1200.png"
     ],
     "variants": [
       {
         "code": "SANDBLAST SB - AL-1",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -64200,7 +64200,7 @@ const CONFIG = {
       },
       {
         "code": "SANDBLAST SB - AL-2",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -64211,7 +64211,7 @@ const CONFIG = {
       },
       {
         "code": "SANDBLAST SB - AL-3",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -64222,7 +64222,7 @@ const CONFIG = {
       },
       {
         "code": "SANDBLAST SB - AL-4",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -64271,36 +64271,36 @@ const CONFIG = {
     "description": "Неръждаем холендър конусен вътрешна и външна резба - AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-holender-konusen-s-vytreshna-i-vynshna-rezba-aisi316-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-holender-konusen-vytreshna-i-vynshna-rezba-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaem-holender-konusen-s-vytreshna-i-vynshna-rezba-aisi316-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaem-holender-konusen-vytreshna-i-vynshna-rezba-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
         "code": "ZFIG SS-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R3-G3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 17.5
       },
       {
         "code": "ZFIG SS-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R2.1/2-G2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 17.5
       },
       {
         "code": "ZFIG SS-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R2-G2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -64311,7 +64311,7 @@ const CONFIG = {
       {
         "code": "ZFIG SS-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R1.1/4-G1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -64322,7 +64322,7 @@ const CONFIG = {
       {
         "code": "ZFIG SS-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R1.1/4-G1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -64333,7 +64333,7 @@ const CONFIG = {
       {
         "code": "ZFIG SS-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R1-G1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -64344,7 +64344,7 @@ const CONFIG = {
       {
         "code": "ZFIG SS-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R3/4-G3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -64355,7 +64355,7 @@ const CONFIG = {
       {
         "code": "ZFIG SS-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R1/2-G1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -64366,7 +64366,7 @@ const CONFIG = {
       {
         "code": "ZFIG SS-9",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R3/8-G3/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -64377,7 +64377,7 @@ const CONFIG = {
       {
         "code": "ZFIG SS-10",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R1/4-G1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -64388,7 +64388,7 @@ const CONFIG = {
       {
         "code": "ZFIG SS-11",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R1/8-G1/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -64399,13 +64399,13 @@ const CONFIG = {
       {
         "code": "ZFIG SS-12",
         "innerDb": 0,
-        "inch": "",
+        "inch": "R4-G4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 17.5
       }
     ]
   },
@@ -64443,14 +64443,14 @@ const CONFIG = {
     "description": "Мъжки накрайник за маркучи за мазилки MORTAR /PLASTER с опашка за маркуч",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-opashka-za-markuch-4-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-opashka-za-markuch-3-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-opashka-za-markuch-2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-opashka-za-markuch-4-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-opashka-za-markuch-3-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-opashka-za-markuch-2-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "MORTAR /PLASTER MRЕ-1",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -64461,7 +64461,7 @@ const CONFIG = {
       },
       {
         "code": "MORTAR /PLASTER MRЕ-2",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -64472,7 +64472,7 @@ const CONFIG = {
       },
       {
         "code": "MORTAR /PLASTER MRЕ-3",
-        "innerDb": 0,
+        "innerDb": 35,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -64529,9 +64529,9 @@ const CONFIG = {
     "description": "Капачка за IBC бидон, редуктивна&nbsp; Присъединяване: *страна 1 - женска резба S100 x 8 *страна 2 -&nbsp; мъжка резба S60 x 6 Материал:&nbsp; * корпус от Полипропилен * уплътнение от Полиетилен Работно налягане: &nbsp;7 bar Работна температура: &...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-reductor-polipropilen-1-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-reductor-polipropilen-2-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-reductor-polipropilen-3-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakrainik-za-bidon-reductor-polipropilen-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakrainik-za-bidon-reductor-polipropilen-2-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakrainik-za-bidon-reductor-polipropilen-3-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -64593,14 +64593,14 @@ const CONFIG = {
     "description": "Накрайник за IBC бидон с щуцер за маркуч Присъединяване: *страна 1 - мъжка резба S100 x 8 *страна 2 - извод за присъединяване с опашка за маркуч 2\" Материал: &nbsp; * Полипропилен Работно налягане:&nbsp; 7 bar Работна температура: &nbsp;-10°C до +...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-s-myjka-rezba-s-opashka-za-markuch-polipropilen-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-s-myjka-rezba-s-opashka-za-markuch-polipropilen-1-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-ibc-nakrainik-za-bidon-s-myjka-rezba-s-opashka-za-markuch-polipropilen-3-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakrainik-za-bidon-s-myjka-rezba-s-opashka-za-markuch-polipropilen-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakrainik-za-bidon-s-myjka-rezba-s-opashka-za-markuch-polipropilen-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-ibc-nakrainik-za-bidon-s-myjka-rezba-s-opashka-za-markuch-polipropilen-3-1200x1200.jpeg"
     ],
     "variants": [
       {
         "code": "IBCM60HT-1",
-        "innerDb": 0,
+        "innerDb": 2,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -64650,12 +64650,12 @@ const CONFIG = {
     "description": "Бързосменен съединител мъжки CARDAN - PERROT с опашка за маркуч",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmenen-syedinitel-cardan-perot-kvs-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmenen-syedinitel-cardan-perot-kvs-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "CARDAN - PERROT KVS-1",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -64666,7 +64666,7 @@ const CONFIG = {
       },
       {
         "code": "CARDAN - PERROT KVS-2",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -64677,7 +64677,7 @@ const CONFIG = {
       },
       {
         "code": "CARDAN - PERROT KVS-3",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -64688,7 +64688,7 @@ const CONFIG = {
       },
       {
         "code": "CARDAN - PERROT KVS-4",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -64699,7 +64699,7 @@ const CONFIG = {
       },
       {
         "code": "CARDAN - PERROT KVS-5",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -64761,46 +64761,46 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK с женска резба Приложение: &nbsp;женският камлок накрайник, тип D се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединя...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-d-neryjdaema-stomana-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrza-vryzka-camlock-d-neryjdaema-stomana-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Camlock тип - D - SS-1",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 21.3
       },
       {
         "code": "Camlock тип - D - SS-2",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 21.3
       },
       {
         "code": "Camlock тип - D - SS-3",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 21.3
       },
       {
         "code": "Camlock тип - D - SS-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -64811,7 +64811,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - D - SS-5",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -64822,7 +64822,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - D - SS-6",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -64833,7 +64833,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - D - SS-7",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -64844,7 +64844,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - D - SS-8",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -64855,7 +64855,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - D - SS-9",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -64866,7 +64866,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - D - SS-10",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -64877,7 +64877,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - D - SS-11",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -64888,7 +64888,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock тип - D - SS-12",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -64949,13 +64949,13 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK с мъжка резба Приложение: &nbsp;женският камлок накрайник, тип B се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединяв...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-b-mesing-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-byrza-vryzka-camlock-tip-b-mesing-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Camlock Тип - B - MS-1",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -64966,7 +64966,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - MS-2",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -64977,7 +64977,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - MS-3",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -64988,7 +64988,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - MS-4",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -64999,7 +64999,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - MS-5",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -65010,7 +65010,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - MS-6",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -65021,7 +65021,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - MS-7",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -65032,7 +65032,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - MS-8",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -65043,7 +65043,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - MS-9",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -65054,7 +65054,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - MS-10",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -65065,7 +65065,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - MS-11",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -65076,7 +65076,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - MS-12",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -65128,12 +65128,12 @@ const CONFIG = {
     "description": "Накрайник с тръбна цолова резба външна резба - неръждаем",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-rezbovi-nakrainik-s-trybna-colova-rezba-vynshna-rezba-neryjdaem-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-rezbovi-nakrainik-s-trybna-colova-rezba-vynshna-rezba-neryjdaem-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "RM SS-1",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -65144,7 +65144,7 @@ const CONFIG = {
       },
       {
         "code": "RM SS-2",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -65155,7 +65155,7 @@ const CONFIG = {
       },
       {
         "code": "RM SS-3",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -65166,7 +65166,7 @@ const CONFIG = {
       },
       {
         "code": "RM SS-4",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -65177,7 +65177,7 @@ const CONFIG = {
       },
       {
         "code": "RM SS-5",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -65188,7 +65188,7 @@ const CONFIG = {
       },
       {
         "code": "RM SS-6",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -65199,7 +65199,7 @@ const CONFIG = {
       },
       {
         "code": "RM SS-7",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -65210,7 +65210,7 @@ const CONFIG = {
       },
       {
         "code": "RM SS-8",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -65221,7 +65221,7 @@ const CONFIG = {
       },
       {
         "code": "RM SS-9",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -65272,8 +65272,8 @@ const CONFIG = {
     "description": "Неръждаем холендър за заваряване - AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-holendyr-za-zavarqvavane-aisi316-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/neryjdaem-holender-konusen-vytreshna-i-vynshna-rezba-aisi316-diagrama-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaem-holendyr-za-zavarqvavane-aisi316-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/neryjdaem-holender-konusen-vytreshna-i-vynshna-rezba-aisi316-diagrama-1200x1200.png"
     ],
     "variants": [
       {
@@ -65285,7 +65285,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 21.7
       },
       {
         "code": "ZFIG заваряване-2",
@@ -65296,7 +65296,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 21.7
       },
       {
         "code": "ZFIG заваряване-3",
@@ -65307,7 +65307,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 21.7
       },
       {
         "code": "ZFIG заваряване-4",
@@ -65448,7 +65448,7 @@ const CONFIG = {
     "description": "Тапа за STORZ алуминий, 10bar",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/tapa-za-storz-aluminii-10-bar-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/tapa-za-storz-aluminii-10-bar-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -65525,24 +65525,24 @@ const CONFIG = {
     "description": "Накрайник тип GUILLEMIN, с контра с вътрешна резба, алуминий, 16bar",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-guillemin-s-kontra-s-vytreshna-rezba-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nakrainik-guillemin-s-kontra-s-vytreshna-rezba-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Guillemin GMI - AL-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22
       },
       {
         "code": "Guillemin GMI - AL-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -65553,7 +65553,7 @@ const CONFIG = {
       {
         "code": "Guillemin GMI - AL-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -65564,7 +65564,7 @@ const CONFIG = {
       {
         "code": "Guillemin GMI - AL-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -65575,7 +65575,7 @@ const CONFIG = {
       {
         "code": "Guillemin GMI - AL-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -65586,29 +65586,29 @@ const CONFIG = {
       {
         "code": "Guillemin GMI - AL-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22
       },
       {
         "code": "Guillemin GMI - AL-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22
       },
       {
         "code": "Guillemin GMI - AL-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -65668,35 +65668,35 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK с мъжка резба Приложение: &nbsp;женският&nbsp;камлок накрайник, тип B се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъе...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-b-neryjdaema-stomana-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrza-vryzka-camlock-tip-b-neryjdaema-stomana-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Camlock Тип - B - SS-1",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22
       },
       {
         "code": "Camlock Тип - B - SS-2",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22
       },
       {
         "code": "Camlock Тип - B - SS-3",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -65707,7 +65707,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - SS-4",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -65718,7 +65718,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - SS-5",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -65729,7 +65729,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - SS-6",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -65740,7 +65740,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - SS-7",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -65751,7 +65751,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - SS-8",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -65762,7 +65762,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - SS-9",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -65773,7 +65773,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - SS-10",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -65784,7 +65784,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - SS-11",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -65795,14 +65795,14 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - B - SS-12",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 22
       }
     ]
   },
@@ -65847,13 +65847,13 @@ const CONFIG = {
     "description": "Накрайник с тръбна цолова резба с гайка - неръжд. стомана AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/rezbovi-nakrainik-s-trybna-colova-rezba-s-gaika-neryjdaema-stomana-aisi-316-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/rezbovi-nakrainik-s-trybna-colova-rezba-s-gaika-neryjdaema-stomana-aisi-316-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/rezbovi-nakrainik-s-trybna-colova-rezba-s-gaika-neryjdaema-stomana-aisi-316-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/rezbovi-nakrainik-s-trybna-colova-rezba-s-gaika-neryjdaema-stomana-aisi-316-1-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "RF SS-1",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -65864,7 +65864,7 @@ const CONFIG = {
       },
       {
         "code": "RF SS-2",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -65875,7 +65875,7 @@ const CONFIG = {
       },
       {
         "code": "RF SS-3",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -65886,7 +65886,7 @@ const CONFIG = {
       },
       {
         "code": "RF SS-4",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -65897,7 +65897,7 @@ const CONFIG = {
       },
       {
         "code": "RF SS-5",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -65908,7 +65908,7 @@ const CONFIG = {
       },
       {
         "code": "RF SS-6",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -65919,7 +65919,7 @@ const CONFIG = {
       },
       {
         "code": "RF SS-7",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -65930,7 +65930,7 @@ const CONFIG = {
       },
       {
         "code": "RF SS-8",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -65941,7 +65941,7 @@ const CONFIG = {
       },
       {
         "code": "RF SS-9",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
         "outerDb": 0,
         "pressure": 25,
@@ -66003,13 +66003,13 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK със щуцер за маркуч Приложение: &nbsp;женският камлок накрайник, тип C се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъ...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-c-ms-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrza-vryzka-camlock-tip-c-ms-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Camlock Тип - C - MS-1",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -66020,7 +66020,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - MS-2",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -66031,7 +66031,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - MS-3",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -66042,7 +66042,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - MS-4",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -66053,7 +66053,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - MS-5",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -66064,7 +66064,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - MS-6",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -66075,7 +66075,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - MS-7",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -66086,7 +66086,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - MS-8",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -66097,7 +66097,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - MS-9",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -66108,7 +66108,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - MS-10",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -66119,7 +66119,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - MS-11",
-        "innerDb": 0,
+        "innerDb": 12,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -66130,14 +66130,14 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - C - MS-12",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 23.35
       }
     ]
   },
@@ -66191,13 +66191,13 @@ const CONFIG = {
     "description": "Женски накрайник CAMLOCK с женска резба Приложение: &nbsp;женският камлок накрайник, тип D се използва в редица индустрии за бързо свързване и разкачване на маркучи и тръби, като средство за предотвратяване на нежелани течове на флуида. Присъединя...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrza-vryzka-camlock-tip-d-ms-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrza-vryzka-camlock-tip-d-ms-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzi-vryzki-camlock-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Camlock Тип - D - MS-1",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -66208,7 +66208,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - MS-2",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
@@ -66219,7 +66219,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - MS-3",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 6.5,
@@ -66230,7 +66230,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - MS-4",
-        "innerDb": 0,
+        "innerDb": 76,
         "inch": "",
         "outerDb": 0,
         "pressure": 8.5,
@@ -66241,7 +66241,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - MS-5",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -66252,7 +66252,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - MS-6",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -66263,7 +66263,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - MS-7",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -66274,7 +66274,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - MS-8",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -66285,7 +66285,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - MS-9",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -66296,7 +66296,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - MS-10",
-        "innerDb": 0,
+        "innerDb": 19,
         "inch": "",
         "outerDb": 0,
         "pressure": 17,
@@ -66307,7 +66307,7 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - MS-11",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 10,
@@ -66318,14 +66318,14 @@ const CONFIG = {
       },
       {
         "code": "Camlock Тип - D - MS-12",
-        "innerDb": 0,
+        "innerDb": 200,
         "inch": "",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 23.5
       }
     ]
   },
@@ -66365,12 +66365,12 @@ const CONFIG = {
     "description": "Капачка за CARDAN - PERROT накрайник, мъжка",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kapachka-za-cardan-perrot-nakrainik-myjka-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/kapachka-za-cardan-perrot-nakrainik-myjka-1200x1200.png"
     ],
     "variants": [
       {
         "code": "CARDAN - PERROT PRM-1",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -66381,7 +66381,7 @@ const CONFIG = {
       },
       {
         "code": "CARDAN - PERROT PRM-2",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -66392,7 +66392,7 @@ const CONFIG = {
       },
       {
         "code": "CARDAN - PERROT PRM-3",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -66403,7 +66403,7 @@ const CONFIG = {
       },
       {
         "code": "CARDAN - PERROT PRM-4",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -66414,7 +66414,7 @@ const CONFIG = {
       },
       {
         "code": "CARDAN - PERROT PRM-5",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -66454,13 +66454,13 @@ const CONFIG = {
     "description": "VB тапа за МK неръждаема стомана AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/vb-tapa-za-mk-neryjdaema-stomana-aisi316-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/vb-tapa-za-mk-neryjdaema-stomana-aisi316-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "VB тапа за МK - AISI 316-1",
         "innerDb": 100,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -66471,7 +66471,7 @@ const CONFIG = {
       {
         "code": "VB тапа за МK - AISI 316-2",
         "innerDb": 75,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -66482,7 +66482,7 @@ const CONFIG = {
       {
         "code": "VB тапа за МK - AISI 316-3",
         "innerDb": 50,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -66535,12 +66535,12 @@ const CONFIG = {
     "description": "Накрайник нерезбови за хранително вкусовата промишленост за заварка DIN 11851",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-nerezbovi-za-hranitelno-vkusovata-promishlenost-din11851-za-zavarka-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nakrainik-nerezbovi-za-hranitelno-vkusovata-promishlenost-din11851-za-zavarka-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "DINHF-1",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "4\"",
         "outerDb": 0,
         "pressure": 40,
@@ -66551,7 +66551,7 @@ const CONFIG = {
       },
       {
         "code": "DINHF-2",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "3\"",
         "outerDb": 0,
         "pressure": 40,
@@ -66562,18 +66562,18 @@ const CONFIG = {
       },
       {
         "code": "DINHF-3",
-        "innerDb": 0,
+        "innerDb": 60,
         "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 24.9
       },
       {
         "code": "DINHF-4",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "2\"",
         "outerDb": 0,
         "pressure": 40,
@@ -66584,18 +66584,18 @@ const CONFIG = {
       },
       {
         "code": "DINHF-5",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 24.9
       },
       {
         "code": "DINHF-6",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 40,
@@ -66606,25 +66606,25 @@ const CONFIG = {
       },
       {
         "code": "DINHF-7",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 24.9
       },
       {
         "code": "DINHF-8",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 24.9
       }
     ]
   },
@@ -66667,12 +66667,12 @@ const CONFIG = {
     "description": "Гайка за хранително вкусова промишленост, DIN 11851",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/gaika-hranitelno-vkusova-promishlenost-din11851-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/gaika-hranitelno-vkusova-promishlenost-din11851-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "DINE-1",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 40,
@@ -66683,7 +66683,7 @@ const CONFIG = {
       },
       {
         "code": "DINE-2",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "",
         "outerDb": 0,
         "pressure": 40,
@@ -66694,18 +66694,18 @@ const CONFIG = {
       },
       {
         "code": "DINE-3",
-        "innerDb": 0,
+        "innerDb": 65,
         "inch": "",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 25.7
       },
       {
         "code": "DINE-4",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 40,
@@ -66716,18 +66716,18 @@ const CONFIG = {
       },
       {
         "code": "DINE-5",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 25.7
       },
       {
         "code": "DINE-6",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 40,
@@ -66738,25 +66738,25 @@ const CONFIG = {
       },
       {
         "code": "DINE-7",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 25.7
       },
       {
         "code": "DINE-8",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 25.7
       }
     ]
   },
@@ -66796,8 +66796,8 @@ const CONFIG = {
     "description": "PVC многофункционален противопожарен струйник с дълга дюза 52 mm (1\"\"),&nbsp; за плътна и разпръскаваща струя. Приложение: &nbsp;пожарни хидранти",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/reguliruem-struinik-storz-pvc-52cm-1-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/reguliruem-pvc-struinik-storz-52cm-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/reguliruem-struinik-storz-pvc-52cm-1-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/reguliruem-pvc-struinik-storz-52cm-1200x1200.png"
     ],
     "variants": [
       {
@@ -66850,9 +66850,9 @@ const CONFIG = {
     "description": "Накрайник STORZ намалител, алуминий, 16 bar",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-storz-promenitel-1-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-storz-promenitel-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-storz-promenitel-2-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nakrainik-storz-promenitel-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nakrainik-storz-promenitel-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nakrainik-storz-promenitel-2-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -66886,7 +66886,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 28.5
       },
       {
         "code": "STORZ ST-4",
@@ -66955,12 +66955,12 @@ const CONFIG = {
     "description": "Накрайник резбови за хранително вкусовата промишленост за заварка DIN 11851",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-rezbovi-za-hranitelno-vkusovata-promishlenost-din11851-za-zavarka-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nakrainik-rezbovi-za-hranitelno-vkusovata-promishlenost-din11851-za-zavarka-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "DINHM-1",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "4\"",
         "outerDb": 0,
         "pressure": 40,
@@ -66971,7 +66971,7 @@ const CONFIG = {
       },
       {
         "code": "DINHM-2",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "3\"",
         "outerDb": 0,
         "pressure": 40,
@@ -66982,18 +66982,18 @@ const CONFIG = {
       },
       {
         "code": "DINHM-3",
-        "innerDb": 0,
+        "innerDb": 65,
         "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 28.9
       },
       {
         "code": "DINHM-4",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "2\"",
         "outerDb": 0,
         "pressure": 40,
@@ -67004,18 +67004,18 @@ const CONFIG = {
       },
       {
         "code": "DINHM-5",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 28.9
       },
       {
         "code": "DINHM-6",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 40,
@@ -67026,25 +67026,25 @@ const CONFIG = {
       },
       {
         "code": "DINHM-7",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 28.9
       },
       {
         "code": "DINHM-8",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 28.9
       }
     ]
   },
@@ -67083,16 +67083,16 @@ const CONFIG = {
     "description": "Мъжки накрайник за маркучи за мазилки MORTAR /PLASTER с вътрешна резба",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-1-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-3-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-2-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-4-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-3-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-2-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/myjki-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-4-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "MORTAR /PLASTER MRА-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67103,7 +67103,7 @@ const CONFIG = {
       {
         "code": "MORTAR /PLASTER MRА-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67114,7 +67114,7 @@ const CONFIG = {
       {
         "code": "MORTAR /PLASTER MRА-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67158,7 +67158,7 @@ const CONFIG = {
     "description": "TW с вътрешна резба мъжки VK месинг",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/tw-s-vytreshna-rezba-mejki-vk-mesing1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/tw-s-vytreshna-rezba-mejki-vk-mesing1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -67186,7 +67186,7 @@ const CONFIG = {
       {
         "code": "TW мъжки VK MS-3",
         "innerDb": 50,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67235,7 +67235,7 @@ const CONFIG = {
     "description": "Кламп скоба",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/clamp-skoba-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/clamp-skoba-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -67373,7 +67373,7 @@ const CONFIG = {
     "description": "Гаечният ключ се изпозлва за лесно разединяване и свързване на съединители Storz. Изработен от лек материал, с дълга дръжка за допълнителен лост.",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kluch-za-storz-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/kluch-za-storz-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -67426,15 +67426,15 @@ const CONFIG = {
     "description": "Тяло и сфера от неръждаема стомана AISI 316 Температурен режим: &nbsp;-10 +150°C",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/spiratelen-kran-neryjdaem-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/spiratelen-kran-1-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/spiratelen-kran-2-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/spiratelen-kran-neryjdaem-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/spiratelen-kran-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/spiratelen-kran-2-1200x1200.jpeg"
     ],
     "variants": [
       {
         "code": "Спирателен кран, неръждаем-1",
         "innerDb": 80,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67445,7 +67445,7 @@ const CONFIG = {
       {
         "code": "Спирателен кран, неръждаем-2",
         "innerDb": 65,
-        "inch": "",
+        "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67456,7 +67456,7 @@ const CONFIG = {
       {
         "code": "Спирателен кран, неръждаем-3",
         "innerDb": 50,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67467,7 +67467,7 @@ const CONFIG = {
       {
         "code": "Спирателен кран, неръждаем-4",
         "innerDb": 40,
-        "inch": "",
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67478,7 +67478,7 @@ const CONFIG = {
       {
         "code": "Спирателен кран, неръждаем-5",
         "innerDb": 32,
-        "inch": "",
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67489,7 +67489,7 @@ const CONFIG = {
       {
         "code": "Спирателен кран, неръждаем-6",
         "innerDb": 25,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67500,7 +67500,7 @@ const CONFIG = {
       {
         "code": "Спирателен кран, неръждаем-7",
         "innerDb": 20,
-        "inch": "",
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67511,7 +67511,7 @@ const CONFIG = {
       {
         "code": "Спирателен кран, неръждаем-8",
         "innerDb": 15,
-        "inch": "",
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67522,7 +67522,7 @@ const CONFIG = {
       {
         "code": "Спирателен кран, неръждаем-9",
         "innerDb": 10,
-        "inch": "",
+        "inch": "3/8\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67533,7 +67533,7 @@ const CONFIG = {
       {
         "code": "Спирателен кран, неръждаем-10",
         "innerDb": 8,
-        "inch": "",
+        "inch": "1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67580,14 +67580,14 @@ const CONFIG = {
     "description": "Бързосменен съединител FERRARI мъжки с опашка за маркуч",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/myjki-byrzosmenen-syedinitel-ferrari-s-opashka-za-markuc-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialni-nakrainici-ferrari-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialni-nakrainici-ferrari-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/myjki-byrzosmenen-syedinitel-ferrari-s-opashka-za-markuc-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialni-nakrainici-ferrari-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialni-nakrainici-ferrari-1-1200x1200.png"
     ],
     "variants": [
       {
         "code": "FERRARIM-1",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67598,7 +67598,7 @@ const CONFIG = {
       },
       {
         "code": "FERRARIM-2",
-        "innerDb": 0,
+        "innerDb": 120,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67609,7 +67609,7 @@ const CONFIG = {
       },
       {
         "code": "FERRARIM-3",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67620,7 +67620,7 @@ const CONFIG = {
       },
       {
         "code": "FERRARIM-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67631,7 +67631,7 @@ const CONFIG = {
       },
       {
         "code": "FERRARIM-5",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67642,7 +67642,7 @@ const CONFIG = {
       },
       {
         "code": "FERRARIM-6",
-        "innerDb": 0,
+        "innerDb": 60,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -67695,7 +67695,7 @@ const CONFIG = {
     "description": "Берт за заварка DIN32676",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/bert-za-zavarka-din32676-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/bert-za-zavarka-din32676-1200x1200.png"
     ],
     "variants": [
       {
@@ -67828,7 +67828,7 @@ const CONFIG = {
     "description": "MB тапа за VK месинг",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/mb-tapa-za-vk-mesing-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/mb-tapa-za-vk-mesing-1-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -67845,7 +67845,7 @@ const CONFIG = {
       {
         "code": "MB тапа за VK MS-2",
         "innerDb": 75,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67856,7 +67856,7 @@ const CONFIG = {
       {
         "code": "MB тапа за VK MS-3",
         "innerDb": 50,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67895,13 +67895,13 @@ const CONFIG = {
     "description": "VB тапа за МK месинг",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/vb-tapa-za-mk-mesing-tw-nakrainici-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/vb-tapa-za-mk-mesing-tw-nakrainici-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "VB тапа за МK MS-1",
         "innerDb": 100,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67912,7 +67912,7 @@ const CONFIG = {
       {
         "code": "VB тапа за МK MS-2",
         "innerDb": 75,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67923,7 +67923,7 @@ const CONFIG = {
       {
         "code": "VB тапа за МK MS-3",
         "innerDb": 50,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67968,14 +67968,14 @@ const CONFIG = {
     "description": "Женски накрайник за маркучи за мазилки MORTAR /PLASTER с вътрешна резба",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jenski-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-1-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jenski-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/jenski-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/jenski-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-vytreshna-rezba-2-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "MORTAR /PLASTER MRD-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67986,7 +67986,7 @@ const CONFIG = {
       {
         "code": "MORTAR /PLASTER MRD-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -67997,7 +67997,7 @@ const CONFIG = {
       {
         "code": "MORTAR /PLASTER MRD-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68045,7 +68045,7 @@ const CONFIG = {
     "description": "Капачка за CARDAN - PERROT накрайник, женска",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kapachka-za-cardan-perrot-nakrainik-jenska-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/kapachka-za-cardan-perrot-nakrainik-jenska-1200x1200.png"
     ],
     "variants": [
       {
@@ -68139,14 +68139,14 @@ const CONFIG = {
     "description": "TW с вътрешна резба мъжки VK неръждаема стомана AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/tw-s-vytreshna-rezba-myjki-vk-neryjdaema-stomana-aisi-316-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/tw-s-vytreshna-rezba-myjki-vk-neryjdaema-stomana-aisi316-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/tw-s-vytreshna-rezba-myjki-vk-neryjdaema-stomana-aisi-316-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/tw-s-vytreshna-rezba-myjki-vk-neryjdaema-stomana-aisi316-1200x1200.png"
     ],
     "variants": [
       {
         "code": "TW мъжки VK - AISI 316-1",
         "innerDb": 100,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68157,7 +68157,7 @@ const CONFIG = {
       {
         "code": "TW мъжки VK - AISI 316-2",
         "innerDb": 75,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68168,7 +68168,7 @@ const CONFIG = {
       {
         "code": "TW мъжки VK - AISI 316-3",
         "innerDb": 50,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68216,7 +68216,7 @@ const CONFIG = {
     "description": "Чаша неръждаема за индустриални каучукови маркучи до 25 bar",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pocinkovana-chasha-za-industrialni-kauchokovi-markuchi-do-41bar-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/pocinkovana-chasha-za-industrialni-kauchokovi-markuchi-do-41bar-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -68390,12 +68390,12 @@ const CONFIG = {
     "description": "Накрайник за маркуч за бластиране SANDBLAST - PVC",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pvc-nakrainik-za-markuch-za-blastirane-sandblast-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/pvc-nakrainik-za-markuch-za-blastirane-sandblast-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "SANDBLAST SB - PVC-1",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68406,7 +68406,7 @@ const CONFIG = {
       },
       {
         "code": "SANDBLAST SB - PVC-2",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68446,13 +68446,13 @@ const CONFIG = {
     "description": "MB тапа за VK неръждаема стомана AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/mb-tapa-za-vk-neryjdaema-stomana-aisi316-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/mb-tapa-za-vk-neryjdaema-stomana-aisi316-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "MB тапа за VK AISI 316-1",
         "innerDb": 100,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68463,7 +68463,7 @@ const CONFIG = {
       {
         "code": "MB тапа за VK AISI 316-2",
         "innerDb": 75,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68474,7 +68474,7 @@ const CONFIG = {
       {
         "code": "MB тапа за VK AISI 316-3",
         "innerDb": 50,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68519,13 +68519,13 @@ const CONFIG = {
     "description": "Женски накрайник за маркучи за мазилки MORTAR /PLASTER с опашка за маркуч",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jenski-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-opashka-za-markuch-2-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jenski-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-opashka-za-markuch-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/jenski-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-opashka-za-markuch-2-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/jenski-nakrainik-za-markuchi-za-mazilki-mortar-plaster-s-opashka-za-markuch-1-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "MORTAR /PLASTER MRC-1",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68536,7 +68536,7 @@ const CONFIG = {
       },
       {
         "code": "MORTAR /PLASTER MRC-2",
-        "innerDb": 0,
+        "innerDb": 35,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68547,7 +68547,7 @@ const CONFIG = {
       },
       {
         "code": "MORTAR /PLASTER MRC-3",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68597,13 +68597,13 @@ const CONFIG = {
     "description": "Накрайник тип GUILLEMIN, без контра с външна резба, алуминий, 16bar",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-guillemin-bez-kontra-s-vynshna-rezba-aluminii-16-bar-1200x1200.gif"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nakrainik-guillemin-bez-kontra-s-vynshna-rezba-aluminii-16-bar-1200x1200.gif"
     ],
     "variants": [
       {
         "code": "Guillemin GM - AL-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68653,10 +68653,10 @@ const CONFIG = {
     "description": "Сферичен кран за IBC бидон, тип Пеперуда, женска резба S60x6 и мъжка резба с капачка S60x6. Намират приложение за питейна вода, отпадни води, леки химикали, торове и пестициди. Присъединяване: * страна 1 - женска резба S60x6 * страна 2 - мъжка рез...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jenski-bql-izpuskatelen-kran-za-ibc-bidon-obiknoven-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/sferichen-bql-izpuskatelen-kran-za-ibc-bidon-obiknoven-3-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/sferichen-bql-izpuskatelen-kran-za-ibc-bidon-obiknoven-2-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/sferichen-bql-izpuskatelen-kran-za-ibc-bidon-obiknoven-1-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/jenski-bql-izpuskatelen-kran-za-ibc-bidon-obiknoven-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/sferichen-bql-izpuskatelen-kran-za-ibc-bidon-obiknoven-3-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/sferichen-bql-izpuskatelen-kran-za-ibc-bidon-obiknoven-2-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/sferichen-bql-izpuskatelen-kran-za-ibc-bidon-obiknoven-1-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -68709,14 +68709,14 @@ const CONFIG = {
     "description": "Бързосменен съединител FERRARI женски с опашка за маркуч",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-jenski-ferrari-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialni-nakrainici-ferrari-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialni-nakrainici-ferrari-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-jenski-ferrari-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialni-nakrainici-ferrari-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialni-nakrainici-ferrari-1-1200x1200.png"
     ],
     "variants": [
       {
         "code": "FERRARIF-1",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68727,7 +68727,7 @@ const CONFIG = {
       },
       {
         "code": "FERRARIF-2",
-        "innerDb": 0,
+        "innerDb": 120,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68738,7 +68738,7 @@ const CONFIG = {
       },
       {
         "code": "FERRARIF-3",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68749,7 +68749,7 @@ const CONFIG = {
       },
       {
         "code": "FERRARIF-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68760,7 +68760,7 @@ const CONFIG = {
       },
       {
         "code": "FERRARIF-5",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68771,7 +68771,7 @@ const CONFIG = {
       },
       {
         "code": "FERRARIF-6",
-        "innerDb": 0,
+        "innerDb": 60,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68821,23 +68821,23 @@ const CONFIG = {
     "description": "Накрайник тип GUILLEMIN, с контра с опашка за маркуч, алуминий, 16bar",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-za-markuch-s-kontra-s-opashka-za-markuch-aluminii-16-bar-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nakrainik-za-markuch-s-kontra-s-opashka-za-markuch-aluminii-16-bar-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Guillemin GMZ - AL-1",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 43
       },
       {
         "code": "Guillemin GMZ - AL-2",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68848,7 +68848,7 @@ const CONFIG = {
       },
       {
         "code": "Guillemin GMZ - AL-3",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68859,7 +68859,7 @@ const CONFIG = {
       },
       {
         "code": "Guillemin GMZ - AL-4",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68870,7 +68870,7 @@ const CONFIG = {
       },
       {
         "code": "Guillemin GMZ - AL-5",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -68881,36 +68881,36 @@ const CONFIG = {
       },
       {
         "code": "Guillemin GMZ - AL-6",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 43
       },
       {
         "code": "Guillemin GMZ - AL-7",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 43
       },
       {
         "code": "Guillemin GMZ - AL-8",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 43
       }
     ]
   },
@@ -68953,13 +68953,13 @@ const CONFIG = {
     "description": "Накрайник с тръбна цолова резба външна резба - алуминий",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-rezbovi-nakrainik-s-trybna-colova-rezba-vynshna-rezba-aluminii-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-rezbovi-nakrainik-s-trybna-colova-rezba-vynshna-rezba-aluminii-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "RM AL-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 100,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68969,8 +68969,8 @@ const CONFIG = {
       },
       {
         "code": "RM AL-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 63,
+        "inch": "2.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68980,8 +68980,8 @@ const CONFIG = {
       },
       {
         "code": "RM AL-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 75,
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -68991,8 +68991,8 @@ const CONFIG = {
       },
       {
         "code": "RM AL-4",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -69039,12 +69039,12 @@ const CONFIG = {
     "description": "Накрайник с вътрешна резба разглобяем месинг челно уплътнение",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jenski-nakrainik-s-vytreshna-rezba-razglobqem-mesing-chelno-upravlenie-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/jenski-nakrainik-s-vytreshna-rezba-razglobqem-mesing-chelno-upravlenie-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "BPK2-1",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69055,7 +69055,7 @@ const CONFIG = {
       },
       {
         "code": "BPK2-2",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69066,7 +69066,7 @@ const CONFIG = {
       },
       {
         "code": "BPK2-3",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69077,7 +69077,7 @@ const CONFIG = {
       },
       {
         "code": "BPK2-4",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69088,7 +69088,7 @@ const CONFIG = {
       },
       {
         "code": "BPK2-5",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69099,7 +69099,7 @@ const CONFIG = {
       },
       {
         "code": "BPK2-6",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69110,7 +69110,7 @@ const CONFIG = {
       },
       {
         "code": "BPK2-7",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69121,7 +69121,7 @@ const CONFIG = {
       },
       {
         "code": "BPK2-8",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69174,7 +69174,7 @@ const CONFIG = {
     "description": "Сферичен кран за IBC бидон с EPDM уплътнение, S60x6 външна резба с капачка за бидон. Използва се за топла вода и пара, силиконови масла, полярни разтворители, спирачни течности на основата на гликол (антифриз). Присъединяване: * страна 1 - алумини...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/izpuskatelen-kran-za-ibc-bidoni-s-epdm-uplatnenie-i-al-jenska-rezba-IBCBVM60-E-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/izpuskatelen-kran-za-ibc-bidoni-s-epdm-uplatnenie-i-al-jenska-rezba-IBCBVM60-E-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -69232,11 +69232,11 @@ const CONFIG = {
     "description": "Сферичен кран за IBC бидон с PTFE уплътнение, S60x6 външна резба с капачка за бидон.&nbsp; Използва се за м инерални и растителни масла, бензин, алкали и ароматни въглеводороди. Присъединяване: * страна 1 - алуминиева женска резба S75 x 6 * страна...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/sferichen-izpuskatelen-kran-za-ibc-bidoni-s-epdm-uplatnenie-i-al-jenska-rezba-1-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/izpuskatelen-kran-za-ibc-bidoni-s-ptfe-ulytnenie-i-al-jenska-rezba-IBCBVM60-P-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/sferichen-izpuskatelen-kran-za-ibc-bidoni-s-epdm-uplatnenie-i-al-jenska-rezba-4-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/sferichen-izpuskatelen-kran-za-ibc-bidoni-s-epdm-uplatnenie-i-al-jenska-rezba-3-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/sferichen-izpuskatelen-kran-za-ibc-bidoni-s-epdm-uplatnenie-i-al-jenska-rezba-2-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/sferichen-izpuskatelen-kran-za-ibc-bidoni-s-epdm-uplatnenie-i-al-jenska-rezba-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/izpuskatelen-kran-za-ibc-bidoni-s-ptfe-ulytnenie-i-al-jenska-rezba-IBCBVM60-P-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/sferichen-izpuskatelen-kran-za-ibc-bidoni-s-epdm-uplatnenie-i-al-jenska-rezba-4-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/sferichen-izpuskatelen-kran-za-ibc-bidoni-s-epdm-uplatnenie-i-al-jenska-rezba-3-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/sferichen-izpuskatelen-kran-za-ibc-bidoni-s-epdm-uplatnenie-i-al-jenska-rezba-2-1200x1200.jpeg"
     ],
     "variants": [
       {
@@ -69294,16 +69294,16 @@ const CONFIG = {
     "description": "Сферичен кран за IBC бидон с PTFE уплътнение, DN50 NPT + опция за присъединяване към женска бърза връзка тип CAMLOCK 2\". Използва се за пренос на минерални и растителни масла, бензин, алкали и ароматни въглеводороди. Присъединяване: * страна 1 - а...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jylt-izpuskatelen-kran-za-ibc-bidoni-s-ptfe-uplytnenie-premium-npt-c-g-1-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/izpuskatelen-kran-za-ibc-bidoni-s-ptfe-uplytnenie-premium-npt-cg-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jylt-izpuskatelen-kran-za-ibc-bidoni-s-ptfe-uplytnenie-premium-npt-c-g-3-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jylt-izpuskatelen-kran-za-ibc-bidoni-s-ptfe-uplytnenie-premium-npt-c-g-2-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/jylt-izpuskatelen-kran-za-ibc-bidoni-s-ptfe-uplytnenie-premium-npt-c-g-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/izpuskatelen-kran-za-ibc-bidoni-s-ptfe-uplytnenie-premium-npt-cg-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/jylt-izpuskatelen-kran-za-ibc-bidoni-s-ptfe-uplytnenie-premium-npt-c-g-3-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/jylt-izpuskatelen-kran-za-ibc-bidoni-s-ptfe-uplytnenie-premium-npt-c-g-2-1200x1200.jpeg"
     ],
     "variants": [
       {
         "code": "IBCBVNPTM50-P-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "DN50\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -69355,7 +69355,7 @@ const CONFIG = {
     "description": "Сферичен кран за IBC бидон с FKM уплътнение, S60x6 външна резба с капачка за бидон. Използва се за пренос на минерални и растителни масла, бензин, алкали и ароматни въглеводороди. Присъединяване: * страна 1 - алуминиева женска резба S75 x 6 * стра...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/sferichen-izpuskatelen-kran-za-ibc-bidoni-s-fkm-viton-uplytnenie-i-al-jenska-rezba-IBCBVM60-V-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/sferichen-izpuskatelen-kran-za-ibc-bidoni-s-fkm-viton-uplytnenie-i-al-jenska-rezba-IBCBVM60-V-1200x1200.png"
     ],
     "variants": [
       {
@@ -69414,12 +69414,12 @@ const CONFIG = {
     "description": "Накрайник нерезбови за хранително вкусова промишленост, с външна резба DIN 11851",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-nerezbovi-za-hranitelno-vkusovata-promishlenost-s-vynshna-rezba-din11851-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nakrainik-nerezbovi-za-hranitelno-vkusovata-promishlenost-s-vynshna-rezba-din11851-1200x1200.png"
     ],
     "variants": [
       {
         "code": "DINHF AG-1",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "2\"",
         "outerDb": 0,
         "pressure": 40,
@@ -69430,7 +69430,7 @@ const CONFIG = {
       },
       {
         "code": "DINHF AG-2",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 40,
@@ -69441,47 +69441,47 @@ const CONFIG = {
       },
       {
         "code": "DINHF AG-3",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 50.25
       },
       {
         "code": "DINHF AG-4",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 50.25
       },
       {
         "code": "DINHF AG-5",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 50.25
       },
       {
         "code": "DINHF AG-6",
-        "innerDb": 0,
+        "innerDb": 15,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 50.25
       }
     ]
   },
@@ -69522,12 +69522,12 @@ const CONFIG = {
     "description": "Накрайник с външна резба разглобяем месинг",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jenski-nakrainik-s-vytreshna-rezba-razglobqem-mesing-chelno-upravlenie-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/jenski-nakrainik-s-vytreshna-rezba-razglobqem-mesing-chelno-upravlenie-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "BPK1-1",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69538,7 +69538,7 @@ const CONFIG = {
       },
       {
         "code": "BPK1-2",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69549,7 +69549,7 @@ const CONFIG = {
       },
       {
         "code": "BPK1-3",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69560,7 +69560,7 @@ const CONFIG = {
       },
       {
         "code": "BPK1-4",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69571,7 +69571,7 @@ const CONFIG = {
       },
       {
         "code": "BPK1-5",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69582,7 +69582,7 @@ const CONFIG = {
       },
       {
         "code": "BPK1-6",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69593,7 +69593,7 @@ const CONFIG = {
       },
       {
         "code": "BPK1-7",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69604,7 +69604,7 @@ const CONFIG = {
       },
       {
         "code": "BPK1-8",
-        "innerDb": 0,
+        "innerDb": 16,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69653,35 +69653,35 @@ const CONFIG = {
     "description": "Бързосменен съединител мъжки CARDAN - PERROT с външна резба",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmenen-syedinitel-myjki-cardan-perrot-s-vynshna-rezba-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmenen-syedinitel-myjki-cardan-perrot-s-vynshna-rezba-1200x1200.png"
     ],
     "variants": [
       {
         "code": "CARDAN - PERROT PRM-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 150,
+        "inch": "6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 25.2
       },
       {
         "code": "CARDAN - PERROT PRM-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 125,
+        "inch": "5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 25.2
       },
       {
         "code": "CARDAN - PERROT PRM-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 100,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -69691,8 +69691,8 @@ const CONFIG = {
       },
       {
         "code": "CARDAN - PERROT PRM-4",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 75,
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -69702,8 +69702,8 @@ const CONFIG = {
       },
       {
         "code": "CARDAN - PERROT PRM-5",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -69748,14 +69748,14 @@ const CONFIG = {
     "description": "Бауер накрайниците се използват предимно в селскостопанската, строителната и водопреработвателната промишленост за пренасяне на широк спектър от течности, включително: химикали,отпадни води, суспензия и чиста вода.",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmenen-syedinitel-bauer-jenski-s-opashka-za-markuch-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmenen-syedinitel-bauer-jenski-s-opashka-za-markuch-1-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmenen-syedinitel-bauer-jenski-s-opashka-za-markuch-2-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmenen-syedinitel-bauer-jenski-s-opashka-za-markuch-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmenen-syedinitel-bauer-jenski-s-opashka-za-markuch-1-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmenen-syedinitel-bauer-jenski-s-opashka-za-markuch-2-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "BAUERF-1",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69766,7 +69766,7 @@ const CONFIG = {
       },
       {
         "code": "BAUERF-2",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69777,7 +69777,7 @@ const CONFIG = {
       },
       {
         "code": "BAUERF-3",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69788,7 +69788,7 @@ const CONFIG = {
       },
       {
         "code": "BAUERF-4",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69837,7 +69837,7 @@ const CONFIG = {
     "description": "Чаша неръждаема за индустриални каучукови маркучи до 41 bar",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pocinkovana-chasha-za-industrialni-kauchokovi-markuchi-do-41bar-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/pocinkovana-chasha-za-industrialni-kauchokovi-markuchi-do-41bar-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -69914,12 +69914,12 @@ const CONFIG = {
     "description": "Бързосменен съединител женски CARDAN - PERROT с опашка за маркуч",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmenen-syedinitel-cardan-perot-kms-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmenen-syedinitel-cardan-perot-kms-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "CARDAN - PERROT KMS-1",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69930,7 +69930,7 @@ const CONFIG = {
       },
       {
         "code": "CARDAN - PERROT KMS-2",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69941,7 +69941,7 @@ const CONFIG = {
       },
       {
         "code": "CARDAN - PERROT KMS-3",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69952,7 +69952,7 @@ const CONFIG = {
       },
       {
         "code": "CARDAN - PERROT KMS-4",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -69963,7 +69963,7 @@ const CONFIG = {
       },
       {
         "code": "CARDAN - PERROT KMS-5",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70008,7 +70008,7 @@ const CONFIG = {
     "description": "TW с вътрешна резба женски MK месинг",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/tw-s-vytreshna-rezba-jenski-mk-mesing-1-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/tw-s-vytreshna-rezba-jenski-mk-mesing-1-1200x1200.png"
     ],
     "variants": [
       {
@@ -70025,7 +70025,7 @@ const CONFIG = {
       {
         "code": "TW женски MK MS-2",
         "innerDb": 50,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -70036,7 +70036,7 @@ const CONFIG = {
       {
         "code": "TW женски MK MS-3",
         "innerDb": 75,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -70086,13 +70086,13 @@ const CONFIG = {
     "description": "Накрайник с външна резба DIN 11851",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-s-vynshna-rezba-hranitelno-vkusowata-promishlenost-din11851-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-s-vynshna-rezba-hranitelno-vkusowata-promishlenost-din-11851-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nakrainik-s-vynshna-rezba-hranitelno-vkusowata-promishlenost-din11851-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nakrainik-s-vynshna-rezba-hranitelno-vkusowata-promishlenost-din-11851-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "DIN 11851 DX-1",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70103,18 +70103,18 @@ const CONFIG = {
       },
       {
         "code": "DIN 11851 DX-2",
-        "innerDb": 0,
+        "innerDb": 80,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 74.55
       },
       {
         "code": "DIN 11851 DX-3",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70125,18 +70125,18 @@ const CONFIG = {
       },
       {
         "code": "DIN 11851 DX-4",
-        "innerDb": 0,
+        "innerDb": 65,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 74.55
       },
       {
         "code": "DIN 11851 DX-5",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70147,7 +70147,7 @@ const CONFIG = {
       },
       {
         "code": "DIN 11851 DX-6",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70158,7 +70158,7 @@ const CONFIG = {
       },
       {
         "code": "DIN 11851 DX-7",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70169,7 +70169,7 @@ const CONFIG = {
       },
       {
         "code": "DIN 11851 DX-8",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70180,7 +70180,7 @@ const CONFIG = {
       },
       {
         "code": "DIN 11851 DX-9",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70191,25 +70191,25 @@ const CONFIG = {
       },
       {
         "code": "DIN 11851 DX-10",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 74.55
       },
       {
         "code": "DIN 11851 DX-11",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 74.55
       }
     ]
   },
@@ -70256,12 +70256,12 @@ const CONFIG = {
     "description": "Накрайник Triclamp DIN 32676",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-triclamp-din-32676-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nakrainik-triclamp-din-32676-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "DIN 32676 TRIC-1",
-        "innerDb": 0,
+        "innerDb": 63,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70272,18 +70272,18 @@ const CONFIG = {
       },
       {
         "code": "DIN 32676 TRIC-2",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.7
       },
       {
         "code": "DIN 32676 TRIC-3",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70294,18 +70294,18 @@ const CONFIG = {
       },
       {
         "code": "DIN 32676 TRIC-4",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.7
       },
       {
         "code": "DIN 32676 TRIC-5",
-        "innerDb": 0,
+        "innerDb": 38,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70316,7 +70316,7 @@ const CONFIG = {
       },
       {
         "code": "DIN 32676 TRIC-6",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70327,7 +70327,7 @@ const CONFIG = {
       },
       {
         "code": "DIN 32676 TRIC-7",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70338,47 +70338,47 @@ const CONFIG = {
       },
       {
         "code": "DIN 32676 TRIC-8",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.7
       },
       {
         "code": "DIN 32676 TRIC-9",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.7
       },
       {
         "code": "DIN 32676 TRIC-10",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.7
       },
       {
         "code": "DIN 32676 TRIC-11",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 78.7
       }
     ]
   },
@@ -70425,14 +70425,14 @@ const CONFIG = {
     "description": "Накрайник с гайка хранително вкусова промишленост DIN 11851",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-s-gaika-hranitelno-vkusova-promishlenost-din11851-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/gaika-hranitelno-vkusova-promishlenost-din11851-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nakrainik-s-gaika-hranitelno-vkusova-promishlenost-din-11851-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nakrainik-s-gaika-hranitelno-vkusova-promishlenost-din11851-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/gaika-hranitelno-vkusova-promishlenost-din11851-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nakrainik-s-gaika-hranitelno-vkusova-promishlenost-din-11851-1200x1200.png"
     ],
     "variants": [
       {
         "code": "DIN 11851 CX-1",
-        "innerDb": 0,
+        "innerDb": 13,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70469,13 +70469,13 @@ const CONFIG = {
     "description": "Дръжка за TW накрайник, неръждаема стомана",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/dryjka-za-tw-nakrainik-neryjdaema-stomana-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/dryjka-za-tw-nakrainik-neryjdaema-stomana-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "MKSS-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 16,
         "bend": 0,
@@ -70486,13 +70486,13 @@ const CONFIG = {
       {
         "code": "MKSS-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 16,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 83.4
       }
     ]
   },
@@ -70532,7 +70532,7 @@ const CONFIG = {
     "description": "Регулируем струйник STORZ, алуминий φ52 cm",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/reguliruem-struinik-storz-aluminii-52cm-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/reguliruem-struinik-storz-aluminii-52cm-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -70583,12 +70583,12 @@ const CONFIG = {
     "description": "Бързосменник за въздух женски",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-jenski-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmennik-za-vyzduh-jenski-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Бързосменник за въздух женски-1",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70633,13 +70633,13 @@ const CONFIG = {
     "description": "TW с вътрешна резба женски MK неръждаема стомана AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/tw-s-vytreshna-rezba-jenski-mk-neryjdaema-stomana-aisi316-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/tw-s-vytreshna-rezba-jenski-mk-neryjdaema-stomana-aisi316-1200x1200.png"
     ],
     "variants": [
       {
         "code": "TW женски MK SS AISI 316-1",
         "innerDb": 100,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -70650,7 +70650,7 @@ const CONFIG = {
       {
         "code": "TW женски MK SS AISI 316-2",
         "innerDb": 75,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -70661,7 +70661,7 @@ const CONFIG = {
       {
         "code": "TW женски MK SS AISI 316-3",
         "innerDb": 50,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -70703,13 +70703,13 @@ const CONFIG = {
     "description": "Бързосменник за въздух женски DIXON",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-jenski-dixon-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmennik-za-vyzduh-jenski-dixon-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Бързосменник за въздух женски DIXON-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -70720,7 +70720,7 @@ const CONFIG = {
       {
         "code": "Бързосменник за въздух женски DIXON-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -70765,12 +70765,12 @@ const CONFIG = {
     "description": "Бързосменник за въздух мъжки",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-myjki-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmennik-za-vyzduh-myjki-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Бързосменник за въздух мъжки с опашка за маркуч-1",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -70819,13 +70819,13 @@ const CONFIG = {
     "description": "Накрайник с тръбна конусна резба без борд AISI 316",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-s-trybna-konusna-rezba-bez-bord-aisi-316-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-s-trybna-konusna-rezba-bez-bord-aisi-316-1200x1200.png"
     ],
     "variants": [
       {
         "code": "CN SS-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 75,
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -70870,13 +70870,13 @@ const CONFIG = {
     "description": "Бързосменник за въздух мъжки DIXON",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmennik-za-vyzduh-dixon-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmennik-za-vyzduh-dixon-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "Бързосменник за въздух мъжки с вътрешна резба DIXON-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -70887,7 +70887,7 @@ const CONFIG = {
       {
         "code": "Бързосменник за въздух мъжки с вътрешна резба DIXON-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -70935,15 +70935,15 @@ const CONFIG = {
     "description": "Пистолет с ръкохватка за измиване в мандри, пивоварни, месопреработвателни и други ХВП сектори Месинговият пистолет със силиконово покритие е подходящ за окомплектоване на&nbsp; маркучи за почистващи дейности &nbsp;в хранително-преработвателните п...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pistolet-za-miene-v-hranitelno-vkusovi-predpriqtiq-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/shema-pistolet-za-hranitelno-vkusovata-promishlenost-mesing-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pistolet-za-miene-v-hranitelno-vkusovi-predpriqtiq-coladge-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/pistolet-za-miene-v-hranitelno-vkusovi-predpriqtiq-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/shema-pistolet-za-hranitelno-vkusovata-promishlenost-mesing-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/pistolet-za-miene-v-hranitelno-vkusovi-predpriqtiq-coladge-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "CDG75B-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -70988,14 +70988,14 @@ const CONFIG = {
     "description": "Съединителите Bauer са специални сферични накрайници ,тип бърза връзка, които осигуряват бързо и лесно решение за свързване на маркучи с различни дължини. Намират приложение в изграждането на тръбопроводи, помпени станции, пречиствателни странции,...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmenen-syedinitel-bauer-myjki-s-opashka-za-markuch-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmenen-syedinitel-bauer-jenski-s-opashka-za-markuch-2-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmenen-syedinitel-bauer-myjki-s-opashka-za-markuch-1-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmenen-syedinitel-bauer-myjki-s-opashka-za-markuch-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmenen-syedinitel-bauer-jenski-s-opashka-za-markuch-2-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmenen-syedinitel-bauer-myjki-s-opashka-za-markuch-1-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "BAUERM-1",
-        "innerDb": 0,
+        "innerDb": 150,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -71006,7 +71006,7 @@ const CONFIG = {
       },
       {
         "code": "BAUERM-2",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -71017,7 +71017,7 @@ const CONFIG = {
       },
       {
         "code": "BAUERM-3",
-        "innerDb": 0,
+        "innerDb": 125,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -71028,7 +71028,7 @@ const CONFIG = {
       },
       {
         "code": "BAUERM-4",
-        "innerDb": 0,
+        "innerDb": 100,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -71039,7 +71039,7 @@ const CONFIG = {
       },
       {
         "code": "BAUERM-5",
-        "innerDb": 0,
+        "innerDb": 75,
         "inch": "",
         "outerDb": 0,
         "pressure": 0,
@@ -71088,35 +71088,35 @@ const CONFIG = {
     "description": "Бързосменен съединител женски CARDAN - PERROT с външна резба",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/byrzosmenen-syedinitel-cardan-perrot-s-vysnhna-rezba-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/byrzosmenen-syedinitel-cardan-perrot-s-vysnhna-rezba-1200x1200.png"
     ],
     "variants": [
       {
         "code": "CARDAN - PERROT PRF-1",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 150,
+        "inch": "6\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 59.1
       },
       {
         "code": "CARDAN - PERROT PRF-2",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 125,
+        "inch": "5\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 59.1
       },
       {
         "code": "CARDAN - PERROT PRF-3",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 100,
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -71126,8 +71126,8 @@ const CONFIG = {
       },
       {
         "code": "CARDAN - PERROT PRF-4",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 75,
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -71137,8 +71137,8 @@ const CONFIG = {
       },
       {
         "code": "CARDAN - PERROT PRF-5",
-        "innerDb": 0,
-        "inch": "",
+        "innerDb": 50,
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -71191,13 +71191,13 @@ const CONFIG = {
     "description": "Женски накрайник с гайка за хранително вкусова промишленост, с вътрешна резба DIN 11851",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/jenski-nakrainik-s-gaika-za-hranitelno-vkusovata-promishlenost-s-vytreshna-rezba-din11851-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/gaika-hranitelno-vkusova-promishlenost-din11851-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/jenski-nakrainik-s-gaika-za-hranitelno-vkusovata-promishlenost-s-vytreshna-rezba-din11851-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/gaika-hranitelno-vkusova-promishlenost-din11851-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "DINHF IG-1",
-        "innerDb": 0,
+        "innerDb": 50,
         "inch": "2\"",
         "outerDb": 0,
         "pressure": 40,
@@ -71208,58 +71208,58 @@ const CONFIG = {
       },
       {
         "code": "DINHF IG-2",
-        "innerDb": 0,
+        "innerDb": 40,
         "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 152.95
       },
       {
         "code": "DINHF IG-3",
-        "innerDb": 0,
+        "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 152.95
       },
       {
         "code": "DINHF IG-4",
-        "innerDb": 0,
+        "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 152.95
       },
       {
         "code": "DINHF IG-5",
-        "innerDb": 0,
+        "innerDb": 20,
         "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 152.95
       },
       {
         "code": "DINHF IG-6",
-        "innerDb": 0,
+        "innerDb": 15,
         "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 40,
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 152.95
       }
     ]
   },
@@ -71301,15 +71301,15 @@ const CONFIG = {
     "description": "Пистолет с ръкохватка за измиване в мандри, пивоварни, месопреработвателни и други ХВП сектори Неръждаемият пистолет за миене със силиконово покритие е подходящ за окомплектоване на&nbsp; маркучи за почистващи дейности &nbsp;в хранително-преработв...",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pistolet-za-miene-v-hranitelno-vkusovi-predpriqtiq-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/shema-pistolet-za-hranitelno-vkusovata-promishlenost-mesing-1200x1200.png",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/pistolet-za-miene-v-hranitelno-vkusovi-predpriqtiq-coladge-mesing-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/pistolet-za-miene-v-hranitelno-vkusovi-predpriqtiq-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/shema-pistolet-za-hranitelno-vkusovata-promishlenost-mesing-1200x1200.png",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/pistolet-za-miene-v-hranitelno-vkusovi-predpriqtiq-coladge-mesing-1200x1200.jpg"
     ],
     "variants": [
       {
         "code": "CDG75SS-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -71351,8 +71351,8 @@ const CONFIG = {
     "description": "Индустриален накрайник TODO мъжки",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-myjki-todo-1-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-myjki-todo-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-myjki-todo-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-myjki-todo-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -71411,8 +71411,8 @@ const CONFIG = {
     "description": "Материали: &nbsp;316L специална неръждаема стомана Уплътнения: &nbsp;NBR / FKM / FPM Свързване: &nbsp;BSP / NPT / фланец",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-jenski-todo-1-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/industrialen-nakrainik-myjki-todo-1200x1200.jpg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-jenski-todo-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/industrialen-nakrainik-myjki-todo-1200x1200.jpg"
     ],
     "variants": [
       {
@@ -71484,7 +71484,7 @@ const CONFIG = {
     "description": "Нипел редуктивен - полипропилен",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nipel-reduktiven-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nipel-reduktiven-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -71666,7 +71666,7 @@ const CONFIG = {
     "description": "Нипел мъжка резба - полипропилен",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nipel-myjka-rezba-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nipel-myjka-rezba-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -71797,13 +71797,13 @@ const CONFIG = {
     "description": "Муфа - полипропилен",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/mufa-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/mufa-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
         "code": "MU PP-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 6,
         "bend": 0,
@@ -71814,7 +71814,7 @@ const CONFIG = {
       {
         "code": "MU PP-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 6,
         "bend": 0,
@@ -71825,7 +71825,7 @@ const CONFIG = {
       {
         "code": "MU PP-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 6,
         "bend": 0,
@@ -71836,7 +71836,7 @@ const CONFIG = {
       {
         "code": "MU PP-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -71847,7 +71847,7 @@ const CONFIG = {
       {
         "code": "MU PP-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -71858,7 +71858,7 @@ const CONFIG = {
       {
         "code": "MU PP-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -71869,7 +71869,7 @@ const CONFIG = {
       {
         "code": "MU PP-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -71921,7 +71921,7 @@ const CONFIG = {
     "description": "Нипел муфа - полипропилен",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/nipel-mufa-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/nipel-mufa-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -72056,7 +72056,7 @@ const CONFIG = {
     "description": "Муфа редуктивна - полипропилен",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/mufa-reduktivna-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/mufa-reduktivna-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -72115,15 +72115,15 @@ const CONFIG = {
     "description": "Работна температура: &nbsp;-10° C до +70° C",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/shtucer-za-markuch-s-vynshna-rezba-polipropilen-1-1200x1200.jpg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/shtucer-za-markuch-s-vynshna-rezba-polipropilen-3-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/shtucer-za-markuch-s-vynshna-rezba-polipropilen-2-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/shtucer-za-markuch-s-vynshna-rezba-polipropilen-1-1200x1200.jpg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/shtucer-za-markuch-s-vynshna-rezba-polipropilen-3-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/shtucer-za-markuch-s-vynshna-rezba-polipropilen-2-1200x1200.jpeg"
     ],
     "variants": [
       {
         "code": "SMPP-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -72134,7 +72134,7 @@ const CONFIG = {
       {
         "code": "SMPP-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -72145,7 +72145,7 @@ const CONFIG = {
       {
         "code": "SMPP-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -72156,7 +72156,7 @@ const CONFIG = {
       {
         "code": "SMPP-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -72167,7 +72167,7 @@ const CONFIG = {
       {
         "code": "SMPP-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -72178,7 +72178,7 @@ const CONFIG = {
       {
         "code": "SMPP-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -72189,7 +72189,7 @@ const CONFIG = {
       {
         "code": "SMPP-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -72200,7 +72200,7 @@ const CONFIG = {
       {
         "code": "SMPP-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -72256,13 +72256,13 @@ const CONFIG = {
     "description": "Тройник мъжки външна резба - полипропилен",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/troinik-vynshna-rezba-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/troinik-vynshna-rezba-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
         "code": "TE PP-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -72273,7 +72273,7 @@ const CONFIG = {
       {
         "code": "TE PP-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -72284,7 +72284,7 @@ const CONFIG = {
       {
         "code": "TE PP-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -72295,7 +72295,7 @@ const CONFIG = {
       {
         "code": "TE PP-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -72306,7 +72306,7 @@ const CONFIG = {
       {
         "code": "TE PP-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 0,
         "bend": 0,
@@ -72359,7 +72359,7 @@ const CONFIG = {
     "description": "Коляно вътрешна резба - полипропилен",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/kolqno-vytreshna-rezba-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/kolqno-vytreshna-rezba-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
@@ -72462,15 +72462,15 @@ const CONFIG = {
     "description": "Щуцер за маркуч с вътрешна резба - полипропилен",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/shtucer-za-markuch-s-vytreshna-rezba-polipropilen-1-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/shtucer-za-markuch-s-vytreshna-rezba-polipropilen-3-1200x1200.jpeg",
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/shtucer-za-markuch-s-vytreshna-rezba-polipropilen-2-1200x1200.jpeg"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/shtucer-za-markuch-s-vytreshna-rezba-polipropilen-1-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/shtucer-za-markuch-s-vytreshna-rezba-polipropilen-3-1200x1200.jpeg",
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/shtucer-za-markuch-s-vytreshna-rezba-polipropilen-2-1200x1200.jpeg"
     ],
     "variants": [
       {
         "code": "SFPP-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -72481,7 +72481,7 @@ const CONFIG = {
       {
         "code": "SFPP-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -72492,7 +72492,7 @@ const CONFIG = {
       {
         "code": "SFPP-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 8.5,
         "bend": 0,
@@ -72503,7 +72503,7 @@ const CONFIG = {
       {
         "code": "SFPP-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -72514,7 +72514,7 @@ const CONFIG = {
       {
         "code": "SFPP-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -72525,7 +72525,7 @@ const CONFIG = {
       {
         "code": "SFPP-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 6.5,
         "bend": 0,
@@ -72536,7 +72536,7 @@ const CONFIG = {
       {
         "code": "SFPP-7",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -72547,7 +72547,7 @@ const CONFIG = {
       {
         "code": "SFPP-8",
         "innerDb": 0,
-        "inch": "",
+        "inch": "4\"",
         "outerDb": 0,
         "pressure": 5,
         "bend": 0,
@@ -72603,13 +72603,13 @@ const CONFIG = {
     "description": "Тройник женски вътрешна резба - полипропилен",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/indystrialni nakrainici/troinik-myjki-vytreshna-rezba-polipropilen-1200x1200.png"
+      "https://hydrolux.bg/image/catalog/indystrialni%20nakrainici/troinik-myjki-vytreshna-rezba-polipropilen-1200x1200.png"
     ],
     "variants": [
       {
         "code": "TEE PP-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1/2\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -72620,7 +72620,7 @@ const CONFIG = {
       {
         "code": "TEE PP-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "3/4\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -72631,7 +72631,7 @@ const CONFIG = {
       {
         "code": "TEE PP-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -72642,7 +72642,7 @@ const CONFIG = {
       {
         "code": "TEE PP-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/4\"",
         "outerDb": 0,
         "pressure": 10,
         "bend": 0,
@@ -72653,7 +72653,7 @@ const CONFIG = {
       {
         "code": "TEE PP-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "1.1/2\"",
         "outerDb": 0,
         "pressure": 6,
         "bend": 0,
@@ -72664,7 +72664,7 @@ const CONFIG = {
       {
         "code": "TEE PP-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "2\"",
         "outerDb": 0,
         "pressure": 6,
         "bend": 0,
@@ -74482,7 +74482,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.35
       },
       {
         "code": "DKR-прав-9",
@@ -74964,7 +74964,7 @@ const CONFIG = {
       {
         "code": "Болт холендров, цолова резба BSPP-1",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/8\"",
         "outerDb": 0,
         "pressure": 350,
         "bend": 0,
@@ -74975,7 +74975,7 @@ const CONFIG = {
       {
         "code": "Болт холендров, цолова резба BSPP-2",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/4\"",
         "outerDb": 0,
         "pressure": 350,
         "bend": 0,
@@ -74986,7 +74986,7 @@ const CONFIG = {
       {
         "code": "Болт холендров, цолова резба BSPP-3",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3/8\"",
         "outerDb": 0,
         "pressure": 350,
         "bend": 0,
@@ -74997,7 +74997,7 @@ const CONFIG = {
       {
         "code": "Болт холендров, цолова резба BSPP-4",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1/2\"",
         "outerDb": 0,
         "pressure": 315,
         "bend": 0,
@@ -75008,7 +75008,7 @@ const CONFIG = {
       {
         "code": "Болт холендров, цолова резба BSPP-5",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G3/4\"",
         "outerDb": 0,
         "pressure": 250,
         "bend": 0,
@@ -75019,7 +75019,7 @@ const CONFIG = {
       {
         "code": "Болт холендров, цолова резба BSPP-6",
         "innerDb": 0,
-        "inch": "",
+        "inch": "G1\"",
         "outerDb": 0,
         "pressure": 200,
         "bend": 0,
@@ -76823,7 +76823,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.05
       },
       {
         "code": "AGM-9",
@@ -76889,7 +76889,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.05
       },
       {
         "code": "AGM-15",
@@ -76922,7 +76922,7 @@ const CONFIG = {
         "bend": 0,
         "weight": 0,
         "rollLength": 0,
-        "priceEur": 0
+        "priceEur": 4.05
       },
       {
         "code": "AGM-18",
@@ -77452,8 +77452,8 @@ const CONFIG = {
     "description": "Накрайник за хидравличен маркуч с метрична мъжка резба, конус 24°, лека серия Резба: &nbsp;метрична, мъжки",
     "specs": [],
     "images": [
-      "https://hydrolux.bg/image/catalog/hydraulics/ накрайник с мет резба cel лека серия конус.png",
-      "https://hydrolux.bg/image/catalog/hydraulics/ накрайник с мет резба cel лека серия конус 1.png"
+      "https://hydrolux.bg/image/catalog/hydraulics/%20%D0%BD%D0%B0%D0%BA%D1%80%D0%B0%D0%B9%D0%BD%D0%B8%D0%BA%20%D1%81%20%D0%BC%D0%B5%D1%82%20%D1%80%D0%B5%D0%B7%D0%B1%D0%B0%20cel%20%D0%BB%D0%B5%D0%BA%D0%B0%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%D0%BA%D0%BE%D0%BD%D1%83%D1%81.png",
+      "https://hydrolux.bg/image/catalog/hydraulics/%20%D0%BD%D0%B0%D0%BA%D1%80%D0%B0%D0%B9%D0%BD%D0%B8%D0%BA%20%D1%81%20%D0%BC%D0%B5%D1%82%20%D1%80%D0%B5%D0%B7%D0%B1%D0%B0%20cel%20%D0%BB%D0%B5%D0%BA%D0%B0%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%D0%BA%D0%BE%D0%BD%D1%83%D1%81%201.png"
     ],
     "variants": [
       {
@@ -77854,6 +77854,14 @@ const CONFIG = {
 // Helper function to format prices (EUR + BGN Dual Currency)
 function formatPrice(price, isPerMeter = false) {
   price = parseFloat(price) || 0;
+  if (price <= 0) {
+    return {
+      eur: "По запитване",
+      bgn: "По запитване",
+      eurRaw: 0,
+      bgnRaw: 0
+    };
+  }
   const bgnPrice = price * 1.95583;
   const suffixEur = isPerMeter ? " €/м" : " €";
   const suffixBgn = isPerMeter ? " лв./м" : " лв.";
@@ -78142,6 +78150,7 @@ CONFIG.resetToDefaults = function() {
   localStorage.removeItem("hydrolux_builder_options");
   window.location.reload();
 };
+
 
 
 

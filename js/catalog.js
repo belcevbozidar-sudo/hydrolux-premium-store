@@ -572,17 +572,17 @@ const Catalog = {
     // 🔥 Dynamic Variants Table strictly in EUR €
     const tableContainer = document.querySelector(".table-responsive");
     if (tableContainer) {
-      const cols = product.columns || [
+      const cols = (product.columns || [
         { key: "code", label: "Код на размер" },
-        { key: "innerDb", label: "Вътр. ø (мм)", suffix: " мм" },
-        { key: "inch", label: "Инч" },
-        { key: "outerDb", label: "Външ. ø (мм)", suffix: " мм" },
-        { key: "pressure", label: "Работно нал.", suffix: " Bar" },
-        { key: "bend", label: "Радиус огъване", suffix: " мм" },
-        { key: "weight", label: "Тегло", suffix: " кг/м" },
-        { key: "rollLength", label: "Дълж. ролка", suffix: " м" },
+        { key: "innerDb", label: "Вътр. ø (мм)", suffix: " мм", check: (v) => parseFloat(v.innerDb) > 0 },
+        { key: "inch", label: "Инч", check: (v) => v.inch && v.inch !== "-" },
+        { key: "outerDb", label: "Външ. ø (мм)", suffix: " мм", check: (v) => parseFloat(v.outerDb) > 0 },
+        { key: "pressure", label: "Работно нал.", suffix: " Bar", check: (v) => parseFloat(v.pressure) > 0 },
+        { key: "bend", label: "Радиус огъване", suffix: " мм", check: (v) => parseFloat(v.bend) > 0 },
+        { key: "weight", label: "Тегло", suffix: " кг/м", check: (v) => parseFloat(v.weight) > 0 },
+        { key: "rollLength", label: "Дълж. ролка", suffix: " м", check: (v) => parseFloat(v.rollLength) > 0 },
         { key: "priceEur", label: "Цена" }
-      ];
+      ]).filter(c => !c.check || product.variants.some(v => c.check(v)));
 
       tableContainer.innerHTML = `
         <table class="table">
