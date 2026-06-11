@@ -560,12 +560,16 @@ const Catalog = {
     }
 
     const mainImg = document.getElementById("prod-main-image");
+    mainImg.onerror = function() {
+      this.src = "assets/logo.webp";
+    };
     mainImg.src = product.images[0];
     mainImg.alt = `${product.name} - ${product.brand} | Хидролукс Груп`;
     
     const thumbsContainer = document.getElementById("prod-thumbnails");
     thumbsContainer.innerHTML = product.images.map((img, idx) => `
       <img src="${img}" alt="${product.name} - детайлно изображение ${idx + 1}" class="thumb-img ${idx === 0 ? 'active' : ''}" 
+           onerror="this.src='assets/logo.webp'"
            onclick="Catalog.changeMainImage('${img}', this)">
     `).join("");
 

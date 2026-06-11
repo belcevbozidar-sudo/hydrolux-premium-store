@@ -6790,7 +6790,7 @@ const CONFIG = {
     ],
     "variants": [
       {
-        "code": "-1",
+        "code": "Пожарникарски маркуч OneFlat Germany-1",
         "innerDb": 100,
         "inch": "4\"",
         "outerDb": 0,
@@ -6803,7 +6803,7 @@ const CONFIG = {
         "priceEur": 11.7
       },
       {
-        "code": "-2",
+        "code": "Пожарникарски маркуч OneFlat Germany-2",
         "innerDb": 75,
         "inch": "3\"",
         "outerDb": 0,
@@ -6816,7 +6816,7 @@ const CONFIG = {
         "priceEur": 6.4
       },
       {
-        "code": "-3",
+        "code": "Пожарникарски маркуч OneFlat Germany-3",
         "innerDb": 50,
         "inch": "2\"",
         "outerDb": 0,
@@ -7314,7 +7314,7 @@ const CONFIG = {
     ],
     "variants": [
       {
-        "code": "-1",
+        "code": "S633-1",
         "innerDb": 203,
         "inch": "",
         "outerDb": 224,
@@ -7327,7 +7327,7 @@ const CONFIG = {
         "priceEur": 0
       },
       {
-        "code": "-2",
+        "code": "S633-2",
         "innerDb": 152,
         "inch": "",
         "outerDb": 169.6,
@@ -7340,7 +7340,7 @@ const CONFIG = {
         "priceEur": 0
       },
       {
-        "code": "-3",
+        "code": "S633-3",
         "innerDb": 127,
         "inch": "",
         "outerDb": 142.6,
@@ -7353,7 +7353,7 @@ const CONFIG = {
         "priceEur": 0
       },
       {
-        "code": "-4",
+        "code": "S633-4",
         "innerDb": 102,
         "inch": "",
         "outerDb": 114.6,
@@ -7366,7 +7366,7 @@ const CONFIG = {
         "priceEur": 0
       },
       {
-        "code": "-5",
+        "code": "S633-5",
         "innerDb": 90,
         "inch": "",
         "outerDb": 102.2,
@@ -7379,7 +7379,7 @@ const CONFIG = {
         "priceEur": 0
       },
       {
-        "code": "-6",
+        "code": "S633-6",
         "innerDb": 76,
         "inch": "",
         "outerDb": 88,
@@ -7392,7 +7392,7 @@ const CONFIG = {
         "priceEur": 0
       },
       {
-        "code": "-7",
+        "code": "S633-7",
         "innerDb": 63,
         "inch": "",
         "outerDb": 68.6,
@@ -7405,7 +7405,7 @@ const CONFIG = {
         "priceEur": 0
       },
       {
-        "code": "-8",
+        "code": "S633-8",
         "innerDb": 51,
         "inch": "",
         "outerDb": 61.4,
@@ -7418,7 +7418,7 @@ const CONFIG = {
         "priceEur": 0
       },
       {
-        "code": "-9",
+        "code": "S633-9",
         "innerDb": 38,
         "inch": "",
         "outerDb": 47.2,
@@ -7431,7 +7431,7 @@ const CONFIG = {
         "priceEur": 0
       },
       {
-        "code": "-10",
+        "code": "S633-10",
         "innerDb": 32,
         "inch": "",
         "outerDb": 40.4,
@@ -7444,7 +7444,7 @@ const CONFIG = {
         "priceEur": 0
       },
       {
-        "code": "-11",
+        "code": "S633-11",
         "innerDb": 25,
         "inch": "",
         "outerDb": 29,
@@ -7488,7 +7488,7 @@ const CONFIG = {
     ],
     "variants": [
       {
-        "code": "-1",
+        "code": "promo S633-1",
         "innerDb": 76,
         "inch": "",
         "outerDb": 88,
@@ -8447,7 +8447,7 @@ const CONFIG = {
     ],
     "variants": [
       {
-        "code": "-1",
+        "code": "Petrofor SD-1",
         "innerDb": 127,
         "inch": "",
         "outerDb": 145,
@@ -8460,7 +8460,7 @@ const CONFIG = {
         "priceEur": 194.95
       },
       {
-        "code": "-2",
+        "code": "Petrofor SD-2",
         "innerDb": 120,
         "inch": "",
         "outerDb": 138,
@@ -8473,7 +8473,7 @@ const CONFIG = {
         "priceEur": 27.4
       },
       {
-        "code": "-3",
+        "code": "Petrofor SD-3",
         "innerDb": 115,
         "inch": "",
         "outerDb": 129,
@@ -8486,7 +8486,7 @@ const CONFIG = {
         "priceEur": 27.4
       },
       {
-        "code": "-4",
+        "code": "Petrofor SD-4",
         "innerDb": 110,
         "inch": "",
         "outerDb": 124,
@@ -8499,7 +8499,7 @@ const CONFIG = {
         "priceEur": 165.7
       },
       {
-        "code": "-5",
+        "code": "Petrofor SD-5",
         "innerDb": 90,
         "inch": "",
         "outerDb": 103,
@@ -8512,7 +8512,7 @@ const CONFIG = {
         "priceEur": 122.4
       },
       {
-        "code": "-6",
+        "code": "Petrofor SD-6",
         "innerDb": 102,
         "inch": "",
         "outerDb": 115,
@@ -8525,7 +8525,7 @@ const CONFIG = {
         "priceEur": 137.25
       },
       {
-        "code": "-7",
+        "code": "Petrofor SD-7",
         "innerDb": 80,
         "inch": "",
         "outerDb": 92,
@@ -8538,7 +8538,7 @@ const CONFIG = {
         "priceEur": 104.3
       },
       {
-        "code": "-8",
+        "code": "Petrofor SD-8",
         "innerDb": 76,
         "inch": "",
         "outerDb": 88,
@@ -8551,7 +8551,7 @@ const CONFIG = {
         "priceEur": 86.7
       },
       {
-        "code": "-9",
+        "code": "Petrofor SD-9",
         "innerDb": 70,
         "inch": "",
         "outerDb": 82,
@@ -8564,7 +8564,7 @@ const CONFIG = {
         "priceEur": 82.05
       },
       {
-        "code": "-10",
+        "code": "Petrofor SD-10",
         "innerDb": 63,
         "inch": "",
         "outerDb": 77,
@@ -8577,7 +8577,7 @@ const CONFIG = {
         "priceEur": 66.55
       },
       {
-        "code": "-11",
+        "code": "Petrofor SD-11",
         "innerDb": 60,
         "inch": "",
         "outerDb": 73,
@@ -8590,7 +8590,7 @@ const CONFIG = {
         "priceEur": 62.85
       },
       {
-        "code": "-12",
+        "code": "Petrofor SD-12",
         "innerDb": 57,
         "inch": "",
         "outerDb": 67,
@@ -8603,7 +8603,7 @@ const CONFIG = {
         "priceEur": 87.9
       },
       {
-        "code": "-13",
+        "code": "Petrofor SD-13",
         "innerDb": 51,
         "inch": "",
         "outerDb": 63,
@@ -8616,7 +8616,7 @@ const CONFIG = {
         "priceEur": 52.05
       },
       {
-        "code": "-14",
+        "code": "Petrofor SD-14",
         "innerDb": 48,
         "inch": "",
         "outerDb": 58,
@@ -8629,7 +8629,7 @@ const CONFIG = {
         "priceEur": 57.6
       },
       {
-        "code": "-15",
+        "code": "Petrofor SD-15",
         "innerDb": 45,
         "inch": "",
         "outerDb": 56,
@@ -8642,7 +8642,7 @@ const CONFIG = {
         "priceEur": 46.1
       },
       {
-        "code": "-16",
+        "code": "Petrofor SD-16",
         "innerDb": 42,
         "inch": "",
         "outerDb": 52,
@@ -8655,7 +8655,7 @@ const CONFIG = {
         "priceEur": 44.3
       },
       {
-        "code": "-17",
+        "code": "Petrofor SD-17",
         "innerDb": 40,
         "inch": "",
         "outerDb": 50,
@@ -8668,7 +8668,7 @@ const CONFIG = {
         "priceEur": 42
       },
       {
-        "code": "-18",
+        "code": "Petrofor SD-18",
         "innerDb": 38,
         "inch": "",
         "outerDb": 48,
@@ -8681,7 +8681,7 @@ const CONFIG = {
         "priceEur": 41.35
       },
       {
-        "code": "-19",
+        "code": "Petrofor SD-19",
         "innerDb": 35,
         "inch": "",
         "outerDb": 45,
@@ -8694,7 +8694,7 @@ const CONFIG = {
         "priceEur": 39.5
       },
       {
-        "code": "-20",
+        "code": "Petrofor SD-20",
         "innerDb": 32,
         "inch": "",
         "outerDb": 42,
@@ -8707,7 +8707,7 @@ const CONFIG = {
         "priceEur": 35.95
       },
       {
-        "code": "-21",
+        "code": "Petrofor SD-21",
         "innerDb": 30,
         "inch": "",
         "outerDb": 40,
@@ -8720,7 +8720,7 @@ const CONFIG = {
         "priceEur": 40.75
       },
       {
-        "code": "-22",
+        "code": "Petrofor SD-22",
         "innerDb": 28,
         "inch": "",
         "outerDb": 38,
@@ -8733,7 +8733,7 @@ const CONFIG = {
         "priceEur": 36.45
       },
       {
-        "code": "-23",
+        "code": "Petrofor SD-23",
         "innerDb": 22,
         "inch": "",
         "outerDb": 31,
@@ -8746,7 +8746,7 @@ const CONFIG = {
         "priceEur": 33.65
       },
       {
-        "code": "-24",
+        "code": "Petrofor SD-24",
         "innerDb": 25,
         "inch": "",
         "outerDb": 35,
@@ -8759,7 +8759,7 @@ const CONFIG = {
         "priceEur": 27.95
       },
       {
-        "code": "-25",
+        "code": "Petrofor SD-25",
         "innerDb": 19,
         "inch": "",
         "outerDb": 29,
@@ -8772,7 +8772,7 @@ const CONFIG = {
         "priceEur": 26.65
       },
       {
-        "code": "-26",
+        "code": "Petrofor SD-26",
         "innerDb": 16,
         "inch": "",
         "outerDb": 35,
@@ -8785,7 +8785,7 @@ const CONFIG = {
         "priceEur": 27.65
       },
       {
-        "code": "-27",
+        "code": "Petrofor SD-27",
         "innerDb": 13,
         "inch": "",
         "outerDb": 29,
@@ -8798,7 +8798,7 @@ const CONFIG = {
         "priceEur": 27.4
       },
       {
-        "code": "-28",
+        "code": "Petrofor SD-28",
         "innerDb": 152,
         "inch": "",
         "outerDb": 179,
@@ -8811,7 +8811,7 @@ const CONFIG = {
         "priceEur": 231.65
       },
       {
-        "code": "-29",
+        "code": "Petrofor SD-29",
         "innerDb": 203,
         "inch": "",
         "outerDb": 225,
@@ -9029,7 +9029,7 @@ const CONFIG = {
     ],
     "variants": [
       {
-        "code": "-1",
+        "code": "URARTU LD – BLUE-1",
         "innerDb": 160,
         "inch": "",
         "outerDb": 0,
@@ -9042,7 +9042,7 @@ const CONFIG = {
         "priceEur": 46.05
       },
       {
-        "code": "-2",
+        "code": "URARTU LD – BLUE-2",
         "innerDb": 152,
         "inch": "6\"",
         "outerDb": 0,
@@ -9055,7 +9055,7 @@ const CONFIG = {
         "priceEur": 31.65
       },
       {
-        "code": "-3",
+        "code": "URARTU LD – BLUE-3",
         "innerDb": 127,
         "inch": "5\"",
         "outerDb": 0,
@@ -9068,7 +9068,7 @@ const CONFIG = {
         "priceEur": 24.85
       },
       {
-        "code": "-4",
+        "code": "URARTU LD – BLUE-4",
         "innerDb": 120,
         "inch": "",
         "outerDb": 0,
@@ -9081,7 +9081,7 @@ const CONFIG = {
         "priceEur": 21.7
       },
       {
-        "code": "-5",
+        "code": "URARTU LD – BLUE-5",
         "innerDb": 110,
         "inch": "",
         "outerDb": 0,
@@ -9094,7 +9094,7 @@ const CONFIG = {
         "priceEur": 20.25
       },
       {
-        "code": "-6",
+        "code": "URARTU LD – BLUE-6",
         "innerDb": 102,
         "inch": "4\"",
         "outerDb": 0,
@@ -9107,7 +9107,7 @@ const CONFIG = {
         "priceEur": 17.3
       },
       {
-        "code": "-7",
+        "code": "URARTU LD – BLUE-7",
         "innerDb": 90,
         "inch": "",
         "outerDb": 0,
@@ -9120,7 +9120,7 @@ const CONFIG = {
         "priceEur": 14
       },
       {
-        "code": "-8",
+        "code": "URARTU LD – BLUE-8",
         "innerDb": 76,
         "inch": "3\"",
         "outerDb": 0,
@@ -9133,7 +9133,7 @@ const CONFIG = {
         "priceEur": 12.85
       },
       {
-        "code": "-9",
+        "code": "URARTU LD – BLUE-9",
         "innerDb": 70,
         "inch": "",
         "outerDb": 0,
@@ -9146,7 +9146,7 @@ const CONFIG = {
         "priceEur": 11.8
       },
       {
-        "code": "-10",
+        "code": "URARTU LD – BLUE-10",
         "innerDb": 50,
         "inch": "2\"",
         "outerDb": 0,
@@ -9159,7 +9159,7 @@ const CONFIG = {
         "priceEur": 6.55
       },
       {
-        "code": "-11",
+        "code": "URARTU LD – BLUE-11",
         "innerDb": 60,
         "inch": "",
         "outerDb": 0,
@@ -9172,7 +9172,7 @@ const CONFIG = {
         "priceEur": 9.75
       },
       {
-        "code": "-12",
+        "code": "URARTU LD – BLUE-12",
         "innerDb": 45,
         "inch": "",
         "outerDb": 0,
@@ -9185,7 +9185,7 @@ const CONFIG = {
         "priceEur": 6.05
       },
       {
-        "code": "-13",
+        "code": "URARTU LD – BLUE-13",
         "innerDb": 40,
         "inch": "",
         "outerDb": 0,
@@ -9198,7 +9198,7 @@ const CONFIG = {
         "priceEur": 5.15
       },
       {
-        "code": "-14",
+        "code": "URARTU LD – BLUE-14",
         "innerDb": 38,
         "inch": "1.1/2\"",
         "outerDb": 0,
@@ -9211,7 +9211,7 @@ const CONFIG = {
         "priceEur": 4.9
       },
       {
-        "code": "-15",
+        "code": "URARTU LD – BLUE-15",
         "innerDb": 35,
         "inch": "",
         "outerDb": 0,
@@ -9224,7 +9224,7 @@ const CONFIG = {
         "priceEur": 4.5
       },
       {
-        "code": "-16",
+        "code": "URARTU LD – BLUE-16",
         "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
@@ -9237,7 +9237,7 @@ const CONFIG = {
         "priceEur": 4.2
       },
       {
-        "code": "-17",
+        "code": "URARTU LD – BLUE-17",
         "innerDb": 30,
         "inch": "",
         "outerDb": 0,
@@ -9250,7 +9250,7 @@ const CONFIG = {
         "priceEur": 3.1
       },
       {
-        "code": "-18",
+        "code": "URARTU LD – BLUE-18",
         "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
@@ -9263,7 +9263,7 @@ const CONFIG = {
         "priceEur": 2.8
       },
       {
-        "code": "-19",
+        "code": "URARTU LD – BLUE-19",
         "innerDb": 80,
         "inch": "",
         "outerDb": 0,
@@ -19307,7 +19307,7 @@ const CONFIG = {
     ],
     "variants": [
       {
-        "code": "-1",
+        "code": "PA12-1",
         "innerDb": 12,
         "inch": "",
         "outerDb": 16,
@@ -19320,7 +19320,7 @@ const CONFIG = {
         "priceEur": 12
       },
       {
-        "code": "-2",
+        "code": "PA12-2",
         "innerDb": 11,
         "inch": "",
         "outerDb": 15,
@@ -19333,7 +19333,7 @@ const CONFIG = {
         "priceEur": 10.7
       },
       {
-        "code": "-3",
+        "code": "PA12-3",
         "innerDb": 10,
         "inch": "",
         "outerDb": 14,
@@ -19346,7 +19346,7 @@ const CONFIG = {
         "priceEur": 10.85
       },
       {
-        "code": "-4",
+        "code": "PA12-4",
         "innerDb": 12,
         "inch": "",
         "outerDb": 15,
@@ -19359,7 +19359,7 @@ const CONFIG = {
         "priceEur": 9.05
       },
       {
-        "code": "-5",
+        "code": "PA12-5",
         "innerDb": 9,
         "inch": "",
         "outerDb": 12,
@@ -19372,7 +19372,7 @@ const CONFIG = {
         "priceEur": 6.55
       },
       {
-        "code": "-6",
+        "code": "PA12-6",
         "innerDb": 8,
         "inch": "",
         "outerDb": 12,
@@ -19385,7 +19385,7 @@ const CONFIG = {
         "priceEur": 8.25
       },
       {
-        "code": "-7",
+        "code": "PA12-7",
         "innerDb": 8,
         "inch": "",
         "outerDb": 11,
@@ -19398,7 +19398,7 @@ const CONFIG = {
         "priceEur": 6.55
       },
       {
-        "code": "-8",
+        "code": "PA12-8",
         "innerDb": 6,
         "inch": "",
         "outerDb": 10,
@@ -19411,7 +19411,7 @@ const CONFIG = {
         "priceEur": 6.85
       },
       {
-        "code": "-9",
+        "code": "PA12-9",
         "innerDb": 7.5,
         "inch": "",
         "outerDb": 10,
@@ -19424,7 +19424,7 @@ const CONFIG = {
         "priceEur": 4.7
       },
       {
-        "code": "-10",
+        "code": "PA12-10",
         "innerDb": 8,
         "inch": "",
         "outerDb": 10,
@@ -19437,7 +19437,7 @@ const CONFIG = {
         "priceEur": 3.3
       },
       {
-        "code": "-11",
+        "code": "PA12-11",
         "innerDb": 6,
         "inch": "",
         "outerDb": 9,
@@ -19450,7 +19450,7 @@ const CONFIG = {
         "priceEur": 5
       },
       {
-        "code": "-12",
+        "code": "PA12-12",
         "innerDb": 4,
         "inch": "",
         "outerDb": 8,
@@ -19463,7 +19463,7 @@ const CONFIG = {
         "priceEur": 5.65
       },
       {
-        "code": "-13",
+        "code": "PA12-13",
         "innerDb": 6,
         "inch": "",
         "outerDb": 8,
@@ -19476,7 +19476,7 @@ const CONFIG = {
         "priceEur": 2.6
       },
       {
-        "code": "-14",
+        "code": "PA12-14",
         "innerDb": 3,
         "inch": "",
         "outerDb": 6,
@@ -19489,7 +19489,7 @@ const CONFIG = {
         "priceEur": 3.55
       },
       {
-        "code": "-15",
+        "code": "PA12-15",
         "innerDb": 4,
         "inch": "",
         "outerDb": 6,
@@ -19502,7 +19502,7 @@ const CONFIG = {
         "priceEur": 1.75
       },
       {
-        "code": "-16",
+        "code": "PA12-16",
         "innerDb": 3,
         "inch": "",
         "outerDb": 5,
@@ -19515,7 +19515,7 @@ const CONFIG = {
         "priceEur": 1.55
       },
       {
-        "code": "-17",
+        "code": "PA12-17",
         "innerDb": 2,
         "inch": "",
         "outerDb": 4,
@@ -19974,7 +19974,7 @@ const CONFIG = {
     ],
     "variants": [
       {
-        "code": "-1",
+        "code": "Spiral poliamid RILSAN PA 11 PHL-1",
         "innerDb": 12,
         "inch": "",
         "outerDb": 14,
@@ -19987,7 +19987,7 @@ const CONFIG = {
         "priceEur": 0
       },
       {
-        "code": "-2",
+        "code": "Spiral poliamid RILSAN PA 11 PHL-2",
         "innerDb": 10,
         "inch": "",
         "outerDb": 12,
@@ -20000,7 +20000,7 @@ const CONFIG = {
         "priceEur": 0
       },
       {
-        "code": "-3",
+        "code": "Spiral poliamid RILSAN PA 11 PHL-3",
         "innerDb": 8,
         "inch": "",
         "outerDb": 10,
@@ -20013,7 +20013,7 @@ const CONFIG = {
         "priceEur": 0
       },
       {
-        "code": "-4",
+        "code": "Spiral poliamid RILSAN PA 11 PHL-4",
         "innerDb": 6,
         "inch": "",
         "outerDb": 8,
@@ -20026,7 +20026,7 @@ const CONFIG = {
         "priceEur": 0
       },
       {
-        "code": "-5",
+        "code": "Spiral poliamid RILSAN PA 11 PHL-5",
         "innerDb": 4,
         "inch": "",
         "outerDb": 6,
@@ -39471,7 +39471,7 @@ const CONFIG = {
     ],
     "variants": [
       {
-        "code": "-1",
+        "code": "PLUTONE A-1",
         "innerDb": 151,
         "inch": "",
         "outerDb": 0,
@@ -39484,7 +39484,7 @@ const CONFIG = {
         "priceEur": 160
       },
       {
-        "code": "-2",
+        "code": "PLUTONE A-2",
         "innerDb": 127,
         "inch": "",
         "outerDb": 0,
@@ -39497,7 +39497,7 @@ const CONFIG = {
         "priceEur": 115.65
       },
       {
-        "code": "-3",
+        "code": "PLUTONE A-3",
         "innerDb": 120,
         "inch": "",
         "outerDb": 0,
@@ -39510,7 +39510,7 @@ const CONFIG = {
         "priceEur": 111.6
       },
       {
-        "code": "-4",
+        "code": "PLUTONE A-4",
         "innerDb": 110,
         "inch": "",
         "outerDb": 0,
@@ -39523,7 +39523,7 @@ const CONFIG = {
         "priceEur": 88.1
       },
       {
-        "code": "-5",
+        "code": "PLUTONE A-5",
         "innerDb": 102,
         "inch": "",
         "outerDb": 0,
@@ -39536,7 +39536,7 @@ const CONFIG = {
         "priceEur": 64.85
       },
       {
-        "code": "-6",
+        "code": "PLUTONE A-6",
         "innerDb": 90,
         "inch": "",
         "outerDb": 0,
@@ -39549,7 +39549,7 @@ const CONFIG = {
         "priceEur": 59.95
       },
       {
-        "code": "-7",
+        "code": "PLUTONE A-7",
         "innerDb": 70,
         "inch": "",
         "outerDb": 0,
@@ -39562,7 +39562,7 @@ const CONFIG = {
         "priceEur": 43.25
       },
       {
-        "code": "-8",
+        "code": "PLUTONE A-8",
         "innerDb": 80,
         "inch": "",
         "outerDb": 0,
@@ -39575,7 +39575,7 @@ const CONFIG = {
         "priceEur": 52.6
       },
       {
-        "code": "-9",
+        "code": "PLUTONE A-9",
         "innerDb": 76,
         "inch": "",
         "outerDb": 0,
@@ -39588,7 +39588,7 @@ const CONFIG = {
         "priceEur": 48.1
       },
       {
-        "code": "-10",
+        "code": "PLUTONE A-10",
         "innerDb": 63,
         "inch": "",
         "outerDb": 0,
@@ -39601,7 +39601,7 @@ const CONFIG = {
         "priceEur": 37.25
       },
       {
-        "code": "-11",
+        "code": "PLUTONE A-11",
         "innerDb": 60,
         "inch": "",
         "outerDb": 0,
@@ -39614,7 +39614,7 @@ const CONFIG = {
         "priceEur": 35.9
       },
       {
-        "code": "-12",
+        "code": "PLUTONE A-12",
         "innerDb": 50,
         "inch": "",
         "outerDb": 0,
@@ -39627,7 +39627,7 @@ const CONFIG = {
         "priceEur": 23.5
       },
       {
-        "code": "-13",
+        "code": "PLUTONE A-13",
         "innerDb": 45,
         "inch": "",
         "outerDb": 0,
@@ -39640,7 +39640,7 @@ const CONFIG = {
         "priceEur": 22.5
       },
       {
-        "code": "-14",
+        "code": "PLUTONE A-14",
         "innerDb": 40,
         "inch": "",
         "outerDb": 0,
@@ -39653,7 +39653,7 @@ const CONFIG = {
         "priceEur": 18.25
       },
       {
-        "code": "-15",
+        "code": "PLUTONE A-15",
         "innerDb": 35,
         "inch": "",
         "outerDb": 0,
@@ -39666,7 +39666,7 @@ const CONFIG = {
         "priceEur": 16
       },
       {
-        "code": "-16",
+        "code": "PLUTONE A-16",
         "innerDb": 38,
         "inch": "",
         "outerDb": 0,
@@ -39679,7 +39679,7 @@ const CONFIG = {
         "priceEur": 15.7
       },
       {
-        "code": "-17",
+        "code": "PLUTONE A-17",
         "innerDb": 32,
         "inch": "",
         "outerDb": 0,
@@ -39692,7 +39692,7 @@ const CONFIG = {
         "priceEur": 12.9
       },
       {
-        "code": "-18",
+        "code": "PLUTONE A-18",
         "innerDb": 30,
         "inch": "",
         "outerDb": 0,
@@ -39705,7 +39705,7 @@ const CONFIG = {
         "priceEur": 13.7
       },
       {
-        "code": "-19",
+        "code": "PLUTONE A-19",
         "innerDb": 25,
         "inch": "",
         "outerDb": 0,
@@ -39718,7 +39718,7 @@ const CONFIG = {
         "priceEur": 10.4
       },
       {
-        "code": "-20",
+        "code": "PLUTONE A-20",
         "innerDb": 22,
         "inch": "",
         "outerDb": 0,
@@ -39731,7 +39731,7 @@ const CONFIG = {
         "priceEur": 3.75
       },
       {
-        "code": "-21",
+        "code": "PLUTONE A-21",
         "innerDb": 20,
         "inch": "",
         "outerDb": 0,
@@ -39744,7 +39744,7 @@ const CONFIG = {
         "priceEur": 7.2
       },
       {
-        "code": "-22",
+        "code": "PLUTONE A-22",
         "innerDb": 18,
         "inch": "",
         "outerDb": 0,
@@ -39757,7 +39757,7 @@ const CONFIG = {
         "priceEur": 5.95
       },
       {
-        "code": "-23",
+        "code": "PLUTONE A-23",
         "innerDb": 16,
         "inch": "",
         "outerDb": 0,
@@ -39770,7 +39770,7 @@ const CONFIG = {
         "priceEur": 6.1
       },
       {
-        "code": "-24",
+        "code": "PLUTONE A-24",
         "innerDb": 10,
         "inch": "",
         "outerDb": 0,
@@ -39783,7 +39783,7 @@ const CONFIG = {
         "priceEur": 4.25
       },
       {
-        "code": "-25",
+        "code": "PLUTONE A-25",
         "innerDb": 12,
         "inch": "",
         "outerDb": 0,
@@ -39796,7 +39796,7 @@ const CONFIG = {
         "priceEur": 5.1
       },
       {
-        "code": "-26",
+        "code": "PLUTONE A-26",
         "innerDb": 14,
         "inch": "",
         "outerDb": 0,
@@ -39809,7 +39809,7 @@ const CONFIG = {
         "priceEur": 5.65
       },
       {
-        "code": "-27",
+        "code": "PLUTONE A-27",
         "innerDb": 6,
         "inch": "",
         "outerDb": 0,
@@ -39822,7 +39822,7 @@ const CONFIG = {
         "priceEur": 3.75
       },
       {
-        "code": "-28",
+        "code": "PLUTONE A-28",
         "innerDb": 8,
         "inch": "",
         "outerDb": 0,
@@ -41232,7 +41232,7 @@ const CONFIG = {
     ],
     "variants": [
       {
-        "code": "-1",
+        "code": "EOLO L Transparent-1",
         "innerDb": 50,
         "inch": "2\"",
         "outerDb": 0,
@@ -41245,7 +41245,7 @@ const CONFIG = {
         "priceEur": 7.65
       },
       {
-        "code": "-2",
+        "code": "EOLO L Transparent-2",
         "innerDb": 40,
         "inch": "",
         "outerDb": 0,
@@ -41258,7 +41258,7 @@ const CONFIG = {
         "priceEur": 5.6
       },
       {
-        "code": "-3",
+        "code": "EOLO L Transparent-3",
         "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
@@ -41271,7 +41271,7 @@ const CONFIG = {
         "priceEur": 4
       },
       {
-        "code": "-4",
+        "code": "EOLO L Transparent-4",
         "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
@@ -41390,7 +41390,7 @@ const CONFIG = {
     ],
     "variants": [
       {
-        "code": "-1",
+        "code": "EOLO SL-1",
         "innerDb": 160,
         "inch": "",
         "outerDb": 0,
@@ -41403,7 +41403,7 @@ const CONFIG = {
         "priceEur": 41.15
       },
       {
-        "code": "-2",
+        "code": "EOLO SL-2",
         "innerDb": 152,
         "inch": "6\"",
         "outerDb": 0,
@@ -41416,7 +41416,7 @@ const CONFIG = {
         "priceEur": 28.3
       },
       {
-        "code": "-3",
+        "code": "EOLO SL-3",
         "innerDb": 127,
         "inch": "5\"",
         "outerDb": 0,
@@ -41429,7 +41429,7 @@ const CONFIG = {
         "priceEur": 21.45
       },
       {
-        "code": "-4",
+        "code": "EOLO SL-4",
         "innerDb": 120,
         "inch": "",
         "outerDb": 0,
@@ -41442,7 +41442,7 @@ const CONFIG = {
         "priceEur": 19.1
       },
       {
-        "code": "-5",
+        "code": "EOLO SL-5",
         "innerDb": 110,
         "inch": "",
         "outerDb": 0,
@@ -41455,7 +41455,7 @@ const CONFIG = {
         "priceEur": 18.1
       },
       {
-        "code": "-6",
+        "code": "EOLO SL-6",
         "innerDb": 100,
         "inch": "4\"",
         "outerDb": 0,
@@ -41468,7 +41468,7 @@ const CONFIG = {
         "priceEur": 15.5
       },
       {
-        "code": "-7",
+        "code": "EOLO SL-7",
         "innerDb": 90,
         "inch": "",
         "outerDb": 0,
@@ -41481,7 +41481,7 @@ const CONFIG = {
         "priceEur": 12.7
       },
       {
-        "code": "-8",
+        "code": "EOLO SL-8",
         "innerDb": 80,
         "inch": "",
         "outerDb": 0,
@@ -41494,7 +41494,7 @@ const CONFIG = {
         "priceEur": 12.45
       },
       {
-        "code": "-9",
+        "code": "EOLO SL-9",
         "innerDb": 76,
         "inch": "3\"",
         "outerDb": 0,
@@ -41507,7 +41507,7 @@ const CONFIG = {
         "priceEur": 11.45
       },
       {
-        "code": "-10",
+        "code": "EOLO SL-10",
         "innerDb": 70,
         "inch": "",
         "outerDb": 0,
@@ -41520,7 +41520,7 @@ const CONFIG = {
         "priceEur": 10.55
       },
       {
-        "code": "-11",
+        "code": "EOLO SL-11",
         "innerDb": 60,
         "inch": "",
         "outerDb": 0,
@@ -41533,7 +41533,7 @@ const CONFIG = {
         "priceEur": 8.7
       },
       {
-        "code": "-12",
+        "code": "EOLO SL-12",
         "innerDb": 50,
         "inch": "2\"",
         "outerDb": 0,
@@ -41546,7 +41546,7 @@ const CONFIG = {
         "priceEur": 5.85
       },
       {
-        "code": "-13",
+        "code": "EOLO SL-13",
         "innerDb": 45,
         "inch": "",
         "outerDb": 0,
@@ -41559,7 +41559,7 @@ const CONFIG = {
         "priceEur": 5.45
       },
       {
-        "code": "-14",
+        "code": "EOLO SL-14",
         "innerDb": 40,
         "inch": "",
         "outerDb": 0,
@@ -41572,7 +41572,7 @@ const CONFIG = {
         "priceEur": 4.6
       },
       {
-        "code": "-15",
+        "code": "EOLO SL-15",
         "innerDb": 38,
         "inch": "1.1/2\"",
         "outerDb": 0,
@@ -41585,7 +41585,7 @@ const CONFIG = {
         "priceEur": 4.4
       },
       {
-        "code": "-16",
+        "code": "EOLO SL-16",
         "innerDb": 35,
         "inch": "",
         "outerDb": 0,
@@ -41598,7 +41598,7 @@ const CONFIG = {
         "priceEur": 4.05
       },
       {
-        "code": "-17",
+        "code": "EOLO SL-17",
         "innerDb": 32,
         "inch": "1.1/4\"",
         "outerDb": 0,
@@ -41611,7 +41611,7 @@ const CONFIG = {
         "priceEur": 3.7
       },
       {
-        "code": "-18",
+        "code": "EOLO SL-18",
         "innerDb": 30,
         "inch": "",
         "outerDb": 0,
@@ -41624,7 +41624,7 @@ const CONFIG = {
         "priceEur": 3.05
       },
       {
-        "code": "-19",
+        "code": "EOLO SL-19",
         "innerDb": 25,
         "inch": "1\"",
         "outerDb": 0,
@@ -42357,7 +42357,7 @@ const CONFIG = {
     ],
     "variants": [
       {
-        "code": "-1",
+        "code": "DIS FUEL/OIL HOSE-1",
         "innerDb": 13,
         "inch": "1/2\"",
         "outerDb": 20,
@@ -42370,7 +42370,7 @@ const CONFIG = {
         "priceEur": 0
       },
       {
-        "code": "-2",
+        "code": "DIS FUEL/OIL HOSE-2",
         "innerDb": 10,
         "inch": "3/8\"",
         "outerDb": 17,
@@ -42383,7 +42383,7 @@ const CONFIG = {
         "priceEur": 0
       },
       {
-        "code": "-3",
+        "code": "DIS FUEL/OIL HOSE-3",
         "innerDb": 8,
         "inch": "5.16\"",
         "outerDb": 15,
@@ -42396,7 +42396,7 @@ const CONFIG = {
         "priceEur": 0
       },
       {
-        "code": "-4",
+        "code": "DIS FUEL/OIL HOSE-4",
         "innerDb": 6,
         "inch": "1/4\"",
         "outerDb": 13,
@@ -44593,7 +44593,7 @@ const CONFIG = {
     ],
     "variants": [
       {
-        "code": "-1",
+        "code": "FREONCT5-1",
         "innerDb": 5.7,
         "inch": "",
         "outerDb": 11.4,
@@ -44606,7 +44606,7 @@ const CONFIG = {
         "priceEur": 9.8
       },
       {
-        "code": "-2",
+        "code": "FREONCT5-2",
         "innerDb": 5.7,
         "inch": "",
         "outerDb": 11.4,
@@ -44619,7 +44619,7 @@ const CONFIG = {
         "priceEur": 9.8
       },
       {
-        "code": "-3",
+        "code": "FREONCT5-3",
         "innerDb": 5.7,
         "inch": "",
         "outerDb": 11.4,
@@ -87870,6 +87870,7 @@ CONFIG.resetToDefaults = function() {
   localStorage.removeItem("hydrolux_builder_options");
   window.location.reload();
 };
+
 
 
 

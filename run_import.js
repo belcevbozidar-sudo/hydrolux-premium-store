@@ -750,7 +750,7 @@ for (let row of tables.product) {
   // Parse variants
   const optValues = productOptionValuesMap.get(id) || [];
   const variants = optValues.map((opt, vIdx) => {
-    return extractVariant(opt.params, price, opt.price, opt.prefix, `${sku}-${vIdx + 1}`);
+    return extractVariant(opt.params, price, opt.price, opt.prefix, `${sku || model || ('prod-' + id)}-${vIdx + 1}`);
   });
   
   // If no variants, create a single default variant
