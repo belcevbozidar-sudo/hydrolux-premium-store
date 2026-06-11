@@ -292,6 +292,21 @@ for (let row of tables.product_description) {
   }
 }
 
+function normalizeKey(str) {
+  return str
+    .trim()
+    .toLowerCase()
+    .replace(/[\s\/]/g, '')
+    .replace(/м/g, 'm')
+    .replace(/а/g, 'a')
+    .replace(/о/g, 'o')
+    .replace(/е/g, 'e')
+    .replace(/х/g, 'x')
+    .replace(/р/g, 'p')
+    .replace(/с/g, 'c')
+    .replace(/у/g, 'y');
+}
+
 // Helper to parse parameter string
 function parseParams(paramStr) {
   const params = {};
@@ -299,10 +314,24 @@ function parseParams(paramStr) {
   
   const parts = paramStr.split(',');
   for (let part of parts) {
+    if (!part.trim()) continue;
+    
+    let key = '';
+    let val = '';
     const sepIdx = part.indexOf(':');
-    if (sepIdx === -1) continue;
-    const key = part.substring(0, sepIdx).trim();
-    const val = part.substring(sepIdx + 1).trim();
+    if (sepIdx !== -1) {
+      key = part.substring(0, sepIdx).trim();
+      val = part.substring(sepIdx + 1).trim();
+    } else {
+      // Fallback for missing colon: split text and numeric/dash value at the end
+      const match = part.trim().match(/^([\s\S]*?)(-|\d+(?:\.\d+)?)\s*$/);
+      if (match) {
+        key = match[1].trim();
+        val = match[2].trim();
+      } else {
+        continue;
+      }
+    }
     params[key] = val;
   }
   return params;
@@ -319,18 +348,17 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
     return isNaN(f) ? 0 : f;
   };
 
-  // Normalize all keys of the params object to lowercase, stripped of spaces and slashes
+  // Normalize all keys of the params object using normalizeKey
   const norm = {};
   for (let key in params) {
     if (params[key] !== undefined && params[key] !== null) {
-      const cleanKey = key.trim().toLowerCase().replace(/[\s\/]/g, '');
-      norm[cleanKey] = params[key].toString().trim();
+      norm[normalizeKey(key)] = params[key].toString().trim();
     }
   }
 
   const getVal = (list) => {
     for (let k of list) {
-      const clean = k.toLowerCase().replace(/[\s\/]/g, '');
+      const clean = normalizeKey(k);
       if (norm[clean] !== undefined) return norm[clean];
     }
     return null;
@@ -339,6 +367,7 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
   // 1. Inner diameter / Вътрешен диаметър
   let inner = getVal([
     "вътрешен диаметър (мм)",
+    "вътрешен размер (мм)",
     "вътрешен размер (mm)",
     "вътрешен диаметър (цол)",
     "вътрешен диаметър (inch)",
@@ -378,8 +407,8 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
   // 3. Outer diameter / Външен диаметър
   let outer = getVal([
     "външен диаметър (мм)",
-    "външен размер (mm)",
     "външен размер (мм)",
+    "външен размер (mm)",
     "външен диаметър (inch)",
     "outmm",
     "odmm",
@@ -439,7 +468,8 @@ function extractVariant(params, basePrice, optPrice, optPrefix, optSku) {
     "дължина на ролката",
     "дълж. ролка",
     "l",
-    "sizeroll"
+    "sizeroll",
+    "размер на ролка (м)"
   ]);
   if (rollLength) {
     v.rollLength = pFloat(rollLength);
