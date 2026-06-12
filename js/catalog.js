@@ -476,12 +476,21 @@ const Catalog = {
     }
 
     grid.innerHTML = filtered.map(p => {
-      const prices = p.variants.map(v => v.priceEur);
-      const minPrice = Math.min(...prices);
-      const maxPrice = Math.max(...prices);
-      const priceText = prices.length > 1
-        ? `от ${formatPrice(minPrice, p.unit === 'м').eur} до ${formatPrice(maxPrice, p.unit === 'м').eur}`
-        : `${formatPrice(minPrice, p.unit === 'м').eur}`;
+      const prices = (p.variants || []).map(v => parseFloat(v.priceEur) || 0);
+      const positivePrices = prices.filter(pr => pr > 0);
+      
+      let priceText = "";
+      if (positivePrices.length === 0) {
+        priceText = "По запитване";
+      } else if (positivePrices.length === 1) {
+        priceText = `${formatPrice(positivePrices[0], p.unit === 'м').eur}`;
+      } else {
+        const minPrice = Math.min(...positivePrices);
+        const maxPrice = Math.max(...positivePrices);
+        priceText = minPrice === maxPrice
+          ? `${formatPrice(minPrice, p.unit === 'м').eur}`
+          : `от ${formatPrice(minPrice, p.unit === 'м').eur} до ${formatPrice(maxPrice, p.unit === 'м').eur}`;
+      }
 
       return `
         <div class="product-card card" onclick="Catalog.openProductDetails('${p.id}')">

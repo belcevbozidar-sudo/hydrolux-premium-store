@@ -83,7 +83,9 @@ const App = {
     }
 
     grid.innerHTML = featured.map(p => {
-      const minPrice = p.variants && p.variants.length > 0 ? Math.min(...p.variants.map(v => v.priceEur)) : 0;
+      const prices = (p.variants || []).map(v => parseFloat(v.priceEur) || 0);
+      const positivePrices = prices.filter(pr => pr > 0);
+      const minPrice = positivePrices.length > 0 ? Math.min(...positivePrices) : 0;
       const isTopSale = p.id === "pu-spiral-hose";
       const badgeText = isTopSale ? "Топ продажба" : "В наличност";
       const badgeClass = isTopSale ? "badge-orange" : "badge-green";
@@ -140,7 +142,9 @@ const App = {
       if (specialProducts.length > 0) {
         specialSection.style.display = "block";
         specialGrid.innerHTML = specialProducts.map(p => {
-          const minPrice = p.variants && p.variants.length > 0 ? Math.min(...p.variants.map(v => v.priceEur)) : 0;
+          const prices = (p.variants || []).map(v => parseFloat(v.priceEur) || 0);
+          const positivePrices = prices.filter(pr => pr > 0);
+          const minPrice = positivePrices.length > 0 ? Math.min(...positivePrices) : 0;
           const badgeText = p.specialOfferLabel || this.getSpecialOfferLabel(p);
           const isFav = wishlist.includes(p.id);
 
