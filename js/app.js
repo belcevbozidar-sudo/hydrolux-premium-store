@@ -446,11 +446,7 @@ const App = {
               const minPrice = Math.min(...prices);
               const coverImg = p.images[0] || "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop";
               
-              // Find if a specific variant code matched
-              const matchedVar = p.variants.find(v => v.code.toLowerCase().includes(query));
-              const subText = matchedVar 
-                ? `Код размер: ${matchedVar.code} (${matchedVar.inch})` 
-                : `Код продукт: ${p.code} | Марка: ${p.brand}`;
+              const subText = `Код: ${p.code}${p.brand ? ` | Марка: ${p.brand}` : ""}`;
 
               return `
                 <div class="search-suggestion-item" onclick="App.handleProductSuggestionClick('${p.id}')">
