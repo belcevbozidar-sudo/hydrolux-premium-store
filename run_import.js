@@ -892,10 +892,7 @@ for (let row of tables.product) {
   // Clean description HTML slightly
   let cleanDesc = descObj.desc || "";
   cleanDesc = cleanDesc.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&amp;/g, '&');
-  let textDesc = cleanDesc.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
-  if (textDesc.length > 250) {
-    textDesc = textDesc.substring(0, 247) + "...";
-  }
+  const finalDescription = cleanDesc.trim();
 
   // Parse variants
   const optValues = productOptionValuesMap.get(id) || [];
@@ -975,7 +972,7 @@ for (let row of tables.product) {
       { key: "Марка", value: brand }
     ],
     tags: tags,
-    description: textDesc || descObj.name,
+    description: finalDescription || descObj.name,
     specs: [],
     images: images,
     variants: variants
