@@ -1690,7 +1690,7 @@ const Admin = {
         if (key === 'code' || key === 'inch') {
           v[key] = val;
         } else {
-          v[key] = isNaN(parseFloat(val)) || val === '' ? val : parseFloat(val);
+          v[key] = (isNaN(val) || val === '') ? val : parseFloat(val);
         }
       });
       if (hasValue) {

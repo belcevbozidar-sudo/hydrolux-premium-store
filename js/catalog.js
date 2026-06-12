@@ -592,7 +592,7 @@ const Catalog = {
         { key: "sleeveWidthDb", label: "Широчина на ръкава (мм)", check: (v) => v.sleeveWidthDb && v.sleeveWidthDb !== "" },
         { key: "bend", label: "Радиус на огъване (мм)", check: (v) => parseFloat(v.bend) > 0 },
         { key: "weight", label: "Тегло (кг/м)", check: (v) => parseFloat(v.weight) > 0 },
-        { key: "rollLength", label: "Дължина на ролката (м)", check: (v) => parseFloat(v.rollLength) > 0 },
+        { key: "rollLength", label: "Дължина на ролката (м)", check: (v) => v.rollLength !== undefined && v.rollLength !== null && String(v.rollLength).trim() !== "" && String(v.rollLength).trim() !== "0" },
         { key: "priceEur", label: "Цена" }
       ]).filter(c => !c.check || product.variants.some(v => c.check(v)));
 
