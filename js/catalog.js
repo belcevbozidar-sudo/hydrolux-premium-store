@@ -8,6 +8,7 @@ const Catalog = {
   filterSize: "",
   filterPressure: "",
   filterTemp: "",
+  sortBy: "default",
 
   expandedCategories: {},
 
@@ -54,6 +55,11 @@ const Catalog = {
       App.navigate("catalog");
     }
     this.renderSidebar();
+    this.applyFiltersAndRender();
+  },
+
+  changeSort(val) {
+    this.sortBy = val;
     this.applyFiltersAndRender();
   },
 
@@ -273,6 +279,10 @@ const Catalog = {
     this.filterPressure = "";
     this.filterTemp = "";
     this.filterWishlist = false;
+    this.sortBy = "default";
+    
+    const select = document.getElementById("catalog-sort-select");
+    if (select) select.value = "default";
     
     const searchInput = document.getElementById("search-input-blue");
     if (searchInput) searchInput.value = "";
@@ -288,8 +298,14 @@ const Catalog = {
     // Set grid class back to products grid by default
     grid.className = "products-grid full-width";
 
+    const sortContainer = document.getElementById("catalog-sort-container");
+    const countContainer = document.getElementById("catalog-count-container");
+
     // If no category and no other filter/search is active, render category card grid
     if (!this.filterWishlist && !this.activeCategory && !this.searchQuery && !this.filterBrand && !this.filterSize && !this.filterPressure && !this.filterTemp) {
+      if (sortContainer) sortContainer.style.display = "none";
+      if (countContainer) countContainer.style.marginLeft = "auto";
+
       const titleEl = document.getElementById("catalog-active-title");
       const countEl = document.getElementById("catalog-count");
       if (titleEl) titleEl.textContent = "Всички категории";
@@ -392,6 +408,31 @@ const Catalog = {
 
       return true;
     });
+
+    if (sortContainer) {
+      sortContainer.style.display = "flex";
+      sortContainer.style.marginLeft = "auto";
+    }
+    if (countContainer) countContainer.style.marginLeft = "10px";
+
+    // Apply sorting
+    if (this.sortBy === "best_sellers") {
+      filtered.sort((a, b) => (b.views || 0) - (a.views || 0));
+    } else if (this.sortBy === "price_asc") {
+      filtered.sort((a, b) => {
+        const minA = a.variants && a.variants.length > 0 ? Math.min(...a.variants.map(v => parseFloat(v.priceEur) || 0)) : 0;
+        const minB = b.variants && b.variants.length > 0 ? Math.min(...b.variants.map(v => parseFloat(v.priceEur) || 0)) : 0;
+        return minA - minB;
+      });
+    } else if (this.sortBy === "price_desc") {
+      filtered.sort((a, b) => {
+        const minA = a.variants && a.variants.length > 0 ? Math.min(...a.variants.map(v => parseFloat(v.priceEur) || 0)) : 0;
+        const minB = b.variants && b.variants.length > 0 ? Math.min(...b.variants.map(v => parseFloat(v.priceEur) || 0)) : 0;
+        return minB - minA;
+      });
+    } else if (this.sortBy === "name_asc") {
+      filtered.sort((a, b) => a.name.localeCompare(b.name, "bg"));
+    }
 
     // Update active filters title
     const titleEl = document.getElementById("catalog-active-title");

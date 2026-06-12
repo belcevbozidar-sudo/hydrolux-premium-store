@@ -1,6 +1,25 @@
 // Hydrolux Premium Store - Admin Dashboard Module (Full Real-Time CRUD + Drag-and-Drop)
 const Admin = {
   activeTab: "products", // "products" or "categories"
+  predefinedCols: [
+    { key: "code", label: "Код на размер" },
+    { key: "innerDb", label: "Вътр. ø (мм)" },
+    { key: "inch", label: "Инч" },
+    { key: "outerDb", label: "Външ. ø (мм)" },
+    { key: "rangeDb", label: "Диапазон (мм)" },
+    { key: "wallDb", label: "Дебелина на стената (мм)" },
+    { key: "pressure", label: "Работно налягане (Bar)" },
+    { key: "burstDb", label: "Налягане на разкъсване (Bar)" },
+    { key: "vacuumDb", label: "Вакуум" },
+    { key: "spacingDb", label: "Разстояние между зъбите (мм)" },
+    { key: "hexDb", label: "HEX размер (мм)" },
+    { key: "braidsDb", label: "Брой вложки" },
+    { key: "sleeveWidthDb", label: "Широчина на ръкава (мм)" },
+    { key: "bend", label: "Радиус огъване (мм)" },
+    { key: "weight", label: "Тегло кг/м" },
+    { key: "rollLength", label: "Дълж. ролка (м)" },
+    { key: "priceEur", label: "Цена EUR (€)" }
+  ],
   filterCategory: "", // Current category filter in products list
   productSearchQuery: "", // Search query in products list
   editingCategory: null, // Category currently being edited
@@ -1081,7 +1100,7 @@ const Admin = {
       });
     }
 
-    let productRows = products.map(p => {
+    let productRows = products.map((p, idxFiltered) => {
       const minPrice = p.variants && p.variants.length > 0 ? Math.min(...p.variants.map(v => v.priceEur)) : 0;
       const productCats = p.categories || (p.category ? [p.category] : []);
       const productSubs = p.subcategories || (p.subcategory ? [p.subcategory] : []);
@@ -1130,6 +1149,14 @@ const Admin = {
           <td data-label="Вариации">
             <span class="admin-badge admin-badge-success">${p.variants ? p.variants.length : 0} размери</span>
           </td>
+          <td data-label="Подредба" style="text-align: center;">
+            ${this.filterCategory ? `
+              <div style="display: flex; gap: 4px; justify-content: center; align-items: center;">
+                <button type="button" class="btn btn-secondary btn-icon small" onclick="Admin.moveProduct('${p.id}', 'up')" title="Нагоре" ${idxFiltered === 0 ? 'disabled' : ''} style="width: 28px; height: 28px; padding: 0; font-size: 0.75rem;">▲</button>
+                <button type="button" class="btn btn-secondary btn-icon small" onclick="Admin.moveProduct('${p.id}', 'down')" title="Надолу" ${idxFiltered === products.length - 1 ? 'disabled' : ''} style="width: 28px; height: 28px; padding: 0; font-size: 0.75rem;">▼</button>
+              </div>
+            ` : `<span class="text-muted font-xs" style="font-style: italic;">Изберете кат.</span>`}
+          </td>
           <td data-label="Действия">
             <div class="admin-actions-cell">
               <button class="btn-admin-action btn-admin-edit" onclick="Admin.startEditProduct('${p.id}')">✏️ Редактирай</button>
@@ -1141,7 +1168,7 @@ const Admin = {
     }).join("");
 
     if (products.length === 0) {
-      productRows = `<tr><td colspan="5" class="text-center text-muted" style="padding: 30px; color: #94a3b8;">Няма добавени продукти в тази категория или търсене.</td></tr>`;
+      productRows = `<tr><td colspan="6" class="text-center text-muted" style="padding: 30px; color: #94a3b8;">Няма добавени продукти в тази категория или търсене.</td></tr>`;
     }
 
     // Generate categories options for product creation
@@ -1344,6 +1371,7 @@ const Admin = {
               <th>Категория</th>
               <th>Цена EUR</th>
               <th>Вариации</th>
+              <th>Подредба</th>
               <th>Действия</th>
             </tr>
           </thead>
@@ -1387,7 +1415,7 @@ const Admin = {
       });
     }
     
-    let productRows = products.map(p => {
+    let productRows = products.map((p, idxFiltered) => {
       const minPrice = p.variants && p.variants.length > 0 ? Math.min(...p.variants.map(v => v.priceEur)) : 0;
       const productCats = p.categories || (p.category ? [p.category] : []);
       const productSubs = p.subcategories || (p.subcategory ? [p.subcategory] : []);
@@ -1436,6 +1464,14 @@ const Admin = {
           <td data-label="Вариации">
             <span class="admin-badge admin-badge-success">${p.variants ? p.variants.length : 0} размери</span>
           </td>
+          <td data-label="Подредба" style="text-align: center;">
+            ${catId ? `
+              <div style="display: flex; gap: 4px; justify-content: center; align-items: center;">
+                <button type="button" class="btn btn-secondary btn-icon small" onclick="Admin.moveProduct('${p.id}', 'up')" title="Нагоре" ${idxFiltered === 0 ? 'disabled' : ''} style="width: 28px; height: 28px; padding: 0; font-size: 0.75rem;">▲</button>
+                <button type="button" class="btn btn-secondary btn-icon small" onclick="Admin.moveProduct('${p.id}', 'down')" title="Надолу" ${idxFiltered === products.length - 1 ? 'disabled' : ''} style="width: 28px; height: 28px; padding: 0; font-size: 0.75rem;">▼</button>
+              </div>
+            ` : `<span class="text-muted font-xs" style="font-style: italic;">Изберете кат.</span>`}
+          </td>
           <td data-label="Действия">
             <div class="admin-actions-cell">
               <button class="btn-admin-action btn-admin-edit" type="button" onclick="Admin.startEditProduct('${p.id}')">✏️ Редактирай</button>
@@ -1447,7 +1483,7 @@ const Admin = {
     }).join("");
 
     if (products.length === 0) {
-      productRows = `<tr><td colspan="5" class="text-center text-muted" style="padding: 30px; color: #94a3b8;">Няма намерени продукти.</td></tr>`;
+      productRows = `<tr><td colspan="6" class="text-center text-muted" style="padding: 30px; color: #94a3b8;">Няма намерени продукти.</td></tr>`;
     }
     
     tbody.innerHTML = productRows;
@@ -1517,17 +1553,38 @@ const Admin = {
 
     // Load saved templates for selection
     this.loadTemplates();
-    const headersHTML = this.currentColumns.map(c => `
-      <th style="padding: 8px; min-width: 110px; position: relative; text-align: center;">
-        <div style="display: flex; flex-direction: column; gap: 4px; align-items: center;">
-          <input type="text" class="form-control text-center" value="${c.label}" 
-                 onchange="Admin.renameColumn('${c.key}', this.value)" 
-                 style="font-size: 0.75rem; font-weight: 800; padding: 4px; border: 1.5px dashed var(--primary); background: #f8fafc; border-radius: 4px;">
-          <button type="button" class="btn-icon-danger" onclick="Admin.deleteColumn('${c.key}')" 
-                  style="width: 20px; height: 20px; font-size: 0.7rem; border-radius: 4px; margin-top: 2px;" title="Изтрий колоната">✕</button>
-        </div>
-      </th>
-    `).join("");
+    const headersHTML = this.currentColumns.map((c, idx) => {
+      const isPredefined = this.predefinedCols.some(opt => opt.key === c.key);
+      return `
+        <th style="padding: 8px; min-width: 120px; position: relative; text-align: center; vertical-align: top; background: #f8fafc; border: 1px solid var(--border-light);">
+          <div style="display: flex; flex-direction: column; gap: 4px; align-items: center;">
+            <!-- Column Reordering Buttons -->
+            <div style="display: flex; gap: 6px; margin-bottom: 2px;">
+              <button type="button" class="btn btn-secondary btn-icon" onclick="Admin.moveColumnLeft('${c.key}')" style="width: 20px; height: 20px; font-size: 0.65rem; padding: 0;" title="Премести наляво" ${idx === 0 ? 'disabled' : ''}>◀</button>
+              <button type="button" class="btn btn-secondary btn-icon" onclick="Admin.moveColumnRight('${c.key}')" style="width: 20px; height: 20px; font-size: 0.65rem; padding: 0;" title="Премести надясно" ${idx === this.currentColumns.length - 1 ? 'disabled' : ''}>▶</button>
+            </div>
+            
+            <!-- Predefined Columns Select Dropdown -->
+            <select class="form-control" onchange="Admin.changeColumnHeader('${c.key}', this.value)" style="font-size: 0.75rem; font-weight: 800; padding: 4px; border: 1px solid var(--primary); border-radius: 4px; width: 100%; cursor: pointer; text-align-last: center; height: 28px;">
+              ${this.predefinedCols.map(opt => `<option value="${opt.key}" ${c.key === opt.key ? 'selected' : ''}>${opt.label}</option>`).join("")}
+              <option value="custom" ${!isPredefined ? 'selected' : ''}>Друго...</option>
+            </select>
+
+            <!-- Custom Label Input (only shown if not predefined) -->
+            ${!isPredefined ? `
+              <input type="text" class="form-control text-center" value="${c.label}" 
+                     onchange="Admin.renameColumnCustom('${c.key}', this.value)" 
+                     style="font-size: 0.72rem; padding: 3px 6px; border: 1px dashed var(--primary); background: white; border-radius: 4px; width: 100%; margin-top: 2px;"
+                     placeholder="Въведете име">
+            ` : ''}
+
+            <!-- Delete Column Button -->
+            <button type="button" class="btn-admin-action btn-admin-danger" onclick="Admin.deleteColumn('${c.key}')" 
+                    style="font-size: 0.65rem; padding: 2px 6px; height: 20px; line-height: 14px; margin-top: 4px; border-radius: 4px;" title="Изтрий колоната">Изтрий</button>
+          </div>
+        </th>
+      `;
+    }).join("");
 
     const rowsHTML = activeVariants.map((v, rIdx) => `
       <tr class="admin-variant-tr">
@@ -1710,6 +1767,79 @@ const Admin = {
     this.refreshVariantsTable(activeVariants);
   },
 
+  moveColumnLeft(key) {
+    const activeVariants = this.collectVariantsFromDOM();
+    const idx = this.currentColumns.findIndex(c => c.key === key);
+    if (idx > 0) {
+      const temp = this.currentColumns[idx];
+      this.currentColumns[idx] = this.currentColumns[idx - 1];
+      this.currentColumns[idx - 1] = temp;
+      this.refreshVariantsTable(activeVariants);
+    }
+  },
+
+  moveColumnRight(key) {
+    const activeVariants = this.collectVariantsFromDOM();
+    const idx = this.currentColumns.findIndex(c => c.key === key);
+    if (idx !== -1 && idx < this.currentColumns.length - 1) {
+      const temp = this.currentColumns[idx];
+      this.currentColumns[idx] = this.currentColumns[idx + 1];
+      this.currentColumns[idx + 1] = temp;
+      this.refreshVariantsTable(activeVariants);
+    }
+  },
+
+  changeColumnHeader(oldKey, newKey) {
+    const activeVariants = this.collectVariantsFromDOM();
+    if (!this.currentColumns) return;
+
+    const col = this.currentColumns.find(c => c.key === oldKey);
+    if (!col) return;
+
+    if (newKey === "custom") {
+      const customKey = "col_" + Date.now();
+      col.key = customKey;
+      col.label = "Нова колона";
+      if (activeVariants) {
+        activeVariants.forEach(v => {
+          v[customKey] = v[oldKey] !== undefined ? v[oldKey] : "";
+          delete v[oldKey];
+        });
+      }
+      this.refreshVariantsTable(activeVariants);
+      return;
+    }
+
+    if (this.currentColumns.some(c => c.key === newKey && c.key !== oldKey)) {
+      alert("Тази колона вече съществува в таблицата!");
+      this.refreshVariantsTable(activeVariants);
+      return;
+    }
+
+    const predefinedOpt = this.predefinedCols.find(opt => opt.key === newKey);
+    if (predefinedOpt) {
+      col.key = newKey;
+      col.label = predefinedOpt.label;
+      if (activeVariants) {
+        activeVariants.forEach(v => {
+          v[newKey] = v[oldKey] !== undefined ? v[oldKey] : "";
+          delete v[oldKey];
+        });
+      }
+      this.refreshVariantsTable(activeVariants);
+    }
+  },
+
+  renameColumnCustom(key, newLabel) {
+    if (!this.currentColumns) return;
+    const col = this.currentColumns.find(c => c.key === key);
+    if (col) {
+      col.label = newLabel.trim();
+    }
+    const activeVariants = this.collectVariantsFromDOM();
+    this.refreshVariantsTable(activeVariants);
+  },
+
   deleteColumn(key) {
     if (confirm("Сигурни ли сте, че искате да изтриете тази колона? Данните в нея ще бъдат премахнати.")) {
       const activeVariants = this.collectVariantsFromDOM();
@@ -1724,19 +1854,16 @@ const Admin = {
   },
 
   addColumn() {
-    const label = prompt("Въведете име на новата колона (напр. Работна температура):");
-    if (label && label.trim()) {
-      const key = "col_" + Date.now();
-      const activeVariants = this.collectVariantsFromDOM();
-      if (activeVariants) {
-        activeVariants.forEach(v => {
-          v[key] = "";
-        });
-      }
-      if (!this.currentColumns) this.currentColumns = [];
-      this.currentColumns.push({ key, label: label.trim() });
-      this.refreshVariantsTable(activeVariants);
+    const key = "col_" + Date.now();
+    const activeVariants = this.collectVariantsFromDOM();
+    if (activeVariants) {
+      activeVariants.forEach(v => {
+        v[key] = "";
+      });
     }
+    if (!this.currentColumns) this.currentColumns = [];
+    this.currentColumns.push({ key, label: "Нова колона" });
+    this.refreshVariantsTable(activeVariants);
   },
 
   addNewVariantRow() {
@@ -2263,6 +2390,54 @@ const Admin = {
       CONFIG.deleteProduct(productId);
       this.propagateStateChanges();
       this.render();
+    }
+  },
+
+  moveProduct(prodId, direction) {
+    const catId = this.filterCategory;
+    if (!catId) {
+      alert("Моля, филтрирайте продуктите по категория първо, за да можете да ги подреждате!");
+      return;
+    }
+
+    const filtered = CONFIG.products.filter(p => {
+      const productCats = p.categories || (p.category ? [p.category] : []);
+      return productCats.includes(catId);
+    });
+
+    const idxFiltered = filtered.findIndex(p => p.id === prodId);
+    if (idxFiltered === -1) return;
+
+    if (direction === 'up' && idxFiltered > 0) {
+      const targetProd = filtered[idxFiltered];
+      const prevProd = filtered[idxFiltered - 1];
+      const targetIdx = CONFIG.products.findIndex(p => p.id === targetProd.id);
+      const prevIdx = CONFIG.products.findIndex(p => p.id === prevProd.id);
+
+      if (targetIdx !== -1 && prevIdx !== -1) {
+        const temp = CONFIG.products[targetIdx];
+        CONFIG.products[targetIdx] = CONFIG.products[prevIdx];
+        CONFIG.products[prevIdx] = temp;
+        
+        CONFIG.saveState();
+        this.propagateStateChanges();
+        this.filterProductsList();
+      }
+    } else if (direction === 'down' && idxFiltered < filtered.length - 1) {
+      const targetProd = filtered[idxFiltered];
+      const nextProd = filtered[idxFiltered + 1];
+      const targetIdx = CONFIG.products.findIndex(p => p.id === targetProd.id);
+      const nextIdx = CONFIG.products.findIndex(p => p.id === nextProd.id);
+
+      if (targetIdx !== -1 && nextIdx !== -1) {
+        const temp = CONFIG.products[targetIdx];
+        CONFIG.products[targetIdx] = CONFIG.products[nextIdx];
+        CONFIG.products[nextIdx] = temp;
+        
+        CONFIG.saveState();
+        this.propagateStateChanges();
+        this.filterProductsList();
+      }
     }
   },
 
