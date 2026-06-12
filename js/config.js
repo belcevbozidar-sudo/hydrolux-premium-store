@@ -116777,7 +116777,7 @@ function filterOldItems(items) {
   return items.filter(item => {
     if (!item || !item.id) return false;
     const s = String(item.id);
-    const isOld = !/^\d+$/.test(s) && !s.startsWith("custom-");
+    const isOld = !/^\d+$/.test(s) && !s.startsWith("custom-") && !s.startsWith("prod-");
     return !isOld;
   });
 }
