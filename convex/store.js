@@ -266,3 +266,46 @@ export const updateOrderStatus = mutation({
     return { ok: true };
   },
 });
+
+export const recordHeartbeat = mutation({
+  args: { sessionId: v.string() },
+  handler: async (ctx, args) => {
+    const now = Date.now();
+    const existing = await ctx.db
+      .query("visitors")
+      .withIndex("by_session_id", q => q.eq("sessionId", args.sessionId))
+      .unique();
+
+    if (existing) {
+      await ctx.db.patch(existing._id, { lastActive: now });
+    } else {
+      await ctx.db.insert("visitors", { sessionId: args.sessionId, lastActive: now });
+    }
+
+    // Periodically prune old entries (older than 3 minutes)
+    const threeMinutesAgo = now - 3 * 60 * 1000;
+    const oldEntries = await ctx.db
+      .query("visitors")
+      .withIndex("by_last_active", q => q.lt("lastActive", threeMinutesAgo))
+      .collect();
+    for (const doc of oldEntries) {
+      await ctx.db.delete(doc._id);
+    }
+
+    return { ok: true };
+  },
+});
+
+export const getActiveVisitors = query({
+  args: {},
+  handler: async (ctx) => {
+    const now = Date.now();
+    const activeThreshold = now - 40 * 1000; // 40 seconds ago (users send heartbeat every 20 seconds)
+    const activeDocs = await ctx.db
+      .query("visitors")
+      .withIndex("by_last_active", q => q.gte("lastActive", activeThreshold))
+      .collect();
+    
+    return activeDocs.length;
+  },
+});

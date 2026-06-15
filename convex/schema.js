@@ -40,4 +40,10 @@ export default defineSchema({
     avatarUrl: v.optional(v.string()),
     createdAt: v.number(),
   }).index("by_email", ["email"]),
+
+  visitors: defineTable({
+    sessionId: v.string(),
+    lastActive: v.number(),
+  }).index("by_session_id", ["sessionId"])
+    .index("by_last_active", ["lastActive"]),
 });

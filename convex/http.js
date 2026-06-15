@@ -118,6 +118,8 @@ http.route({ path: "/api/auth/orders", method: "OPTIONS", handler: optionsHandle
 http.route({ path: "/api/admin/orders", method: "OPTIONS", handler: optionsHandler });
 http.route({ path: "/api/admin/order/status", method: "OPTIONS", handler: optionsHandler });
 http.route({ path: "/api/chatbot", method: "OPTIONS", handler: optionsHandler });
+http.route({ path: "/api/heartbeat", method: "OPTIONS", handler: optionsHandler });
+http.route({ path: "/api/visitors/active", method: "OPTIONS", handler: optionsHandler });
 
 // POST /api/auth/register
 http.route({
@@ -259,6 +261,40 @@ http.route({
         catalog: body.catalog,
       });
       return jsonResponse(result);
+    } catch (e) {
+      return jsonResponse({ ok: false, error: e.message }, { status: 500 });
+    }
+  }),
+});
+
+// POST /api/heartbeat
+http.route({
+  path: "/api/heartbeat",
+  method: "POST",
+  handler: httpAction(async (ctx, request) => {
+    try {
+      const body = await request.json();
+      if (!body.sessionId) {
+        return jsonResponse({ ok: false, error: "Missing sessionId" }, { status: 400 });
+      }
+      const result = await ctx.runMutation(api.store.recordHeartbeat, {
+        sessionId: body.sessionId,
+      });
+      return jsonResponse(result);
+    } catch (e) {
+      return jsonResponse({ ok: false, error: e.message }, { status: 500 });
+    }
+  }),
+});
+
+// GET /api/visitors/active
+http.route({
+  path: "/api/visitors/active",
+  method: "GET",
+  handler: httpAction(async (ctx) => {
+    try {
+      const count = await ctx.runQuery(api.store.getActiveVisitors, {});
+      return jsonResponse({ ok: true, count });
     } catch (e) {
       return jsonResponse({ ok: false, error: e.message }, { status: 500 });
     }

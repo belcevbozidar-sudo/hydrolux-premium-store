@@ -69,6 +69,11 @@
       padding: 24px 20px 60px;
       overflow-x: hidden;
     }
+    @keyframes pulse {
+      0% { opacity: 0.4; }
+      50% { opacity: 1; }
+      100% { opacity: 0.4; }
+    }
   </style>
 </head>
 <body>
@@ -82,6 +87,10 @@
           <span>Хидролукс Груп</span>
         </a>
         <span class="admin-header-badge">🛠️ ADMIN ПАНЕЛ</span>
+        <span class="admin-header-badge" id="live-visitors-badge" style="background-color: #22c55e; border: 1px solid #16a34a; color: white; display: none; align-items: center; gap: 6px; font-weight: 700; margin-left: 10px;">
+          <span style="width: 8px; height: 8px; background-color: white; border-radius: 50%; display: inline-block; animation: pulse 1.5s infinite;"></span>
+          <span id="live-visitors-count">0</span> на живо
+        </span>
       </div>
       <a href="../" class="admin-back-link">← Към магазина</a>
     </div>

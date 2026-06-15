@@ -25,6 +25,7 @@ const Admin = {
   editingCategory: null, // Category currently being edited
   editingProduct: null, // Product currently being edited
   uploadedImages: [], // Temporary Base64 strings or existing URLs of uploaded files
+  uploadedPdf: null, // Temporary Base64 string of uploaded technical spec PDF
   isProcessingImages: false,
   templatesPanelOpen: false,
   savedRange: null,
@@ -47,6 +48,7 @@ const Admin = {
     });
 
     this.startOrderPolling();
+    this.startLiveVisitorsTracker();
   },
 
   injectStyles() {
@@ -1287,6 +1289,18 @@ const Admin = {
             <input type="text" id="prod-tags" class="form-control" value="${isEditing ? this.editingProduct.tags.join(", ") : ''}" placeholder="гумен маркуч, маркуч за въздух, компресор">
           </div>
 
+          <!-- PDF UPLOAD FIELD -->
+          <div class="form-group" style="background-color: #f0fdf4; padding: 15px; border-radius: 8px; border: 1.5px dashed #16a34a; margin-top: 15px; margin-bottom: 20px;">
+            <label style="font-weight: 800; color: #16a34a; display: block; margin-bottom: 5px;">📄 Техническа спецификация (PDF файл)</label>
+            <input type="file" id="prod-pdf-upload" class="form-control" accept="application/pdf" style="padding: 6px; border: 1px solid var(--border-light); font-weight: bold; background-color: white;">
+            <div id="prod-pdf-status" class="font-xs text-muted" style="margin-top: 8px;">
+              ${this.uploadedPdf ? `
+                <span style="color: #16a34a; font-weight: bold;">Прикачен файл: PDF документът е зареден</span>
+                <button type="button" class="btn btn-secondary btn-small" onclick="Admin.removePdf()" style="margin-left: 10px; padding: 2px 8px; font-size: 0.7rem; height: auto;">Изтрий PDF</button>
+              ` : '<span class="text-muted">Няма прикачен PDF файл.</span>'}
+            </div>
+          </div>
+
           <!-- SPECIAL OFFER SETTINGS -->
           <div class="form-group" style="background-color: #fffbeb; padding: 12px 15px; border-radius: 8px; border: 1px solid #fef3c7; margin-top: 15px; margin-bottom: 20px;">
             <div style="display: flex; align-items: center; gap: 10px;">
@@ -1915,6 +1929,41 @@ const Admin = {
       });
     }
 
+    // Register PDF input listener
+    const pdfInput = document.getElementById("prod-pdf-upload");
+    if (pdfInput) {
+      pdfInput.addEventListener("change", (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        if (file.type !== "application/pdf") {
+          alert("Моля, изберете валиден PDF файл.");
+          pdfInput.value = "";
+          return;
+        }
+
+        // Limit size to 10 MB
+        const maxSize = 10 * 1024 * 1024;
+        if (file.size > maxSize) {
+          alert("Избраният файл е твърде голям. Моля изберете PDF файл, по-малък от 10 MB.");
+          pdfInput.value = "";
+          return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = (event) => {
+          Admin.uploadedPdf = event.target.result;
+          Admin.updatePdfStatus(file.name);
+        };
+        reader.onerror = (err) => {
+          console.error("PDF read failed", err);
+          alert("Не успяхме да заредим PDF файла. Моля опитайте отново.");
+          pdfInput.value = "";
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+
     // Populate Category + Subcategory + Sub-subcategory selectors
     const categoryCheckboxes = document.querySelectorAll('input[name="prod-categories"]');
     const subcategoriesContainer = document.getElementById("prod-subcategories-checkboxes");
@@ -1962,6 +2011,27 @@ const Admin = {
       editor.addEventListener("keyup", () => Admin.saveSelection());
       editor.addEventListener("blur", () => Admin.saveSelection());
     }
+  },
+
+  updatePdfStatus(fileName) {
+    const statusDiv = document.getElementById("prod-pdf-status");
+    if (statusDiv) {
+      if (this.uploadedPdf) {
+        statusDiv.innerHTML = `
+          <span style="color: #16a34a; font-weight: bold;">Прикачен файл: ${this.escapeHtml(fileName || "PDF документ")}</span>
+          <button type="button" class="btn btn-secondary btn-small" onclick="Admin.removePdf()" style="margin-left: 10px; padding: 2px 8px; font-size: 0.7rem; height: auto;">Изтрий PDF</button>
+        `;
+      } else {
+        statusDiv.innerHTML = `<span class="text-muted">Няма прикачен PDF файл.</span>`;
+      }
+    }
+  },
+
+  removePdf() {
+    this.uploadedPdf = null;
+    const fileInput = document.getElementById("prod-pdf-upload");
+    if (fileInput) fileInput.value = "";
+    this.updatePdfStatus();
   },
 
   compressImageFile(file) {
@@ -2172,6 +2242,7 @@ const Admin = {
     if (prod) {
       this.editingProduct = prod;
       this.uploadedImages = [...prod.images]; // Load existing images
+      this.uploadedPdf = prod.pdf || null; // Load existing PDF technical spec
       this.currentColumns = prod.columns ? [...prod.columns] : null; // Load product columns
       this.tempVariants = prod.variants ? prod.variants.map(v => ({ ...v })) : null;
       this.render();
@@ -2183,6 +2254,7 @@ const Admin = {
   cancelProductEdit() {
     this.editingProduct = null;
     this.uploadedImages = [];
+    this.uploadedPdf = null;
     this.currentColumns = null; // Clear columns
     this.render();
   },
@@ -2314,6 +2386,7 @@ const Admin = {
             target.specialOfferText = specialOfferText;
             target.specialOfferLabel = isSpecial ? this.getSpecialOfferLabel(specialOfferType, specialOfferText) : "";
             target.images = images;
+            target.pdf = this.uploadedPdf || null;
             target.specs = specs;
             target.columns = this.currentColumns; // Save columns schema
             target.variants = variants;
@@ -2322,6 +2395,7 @@ const Admin = {
         if (!saved) return;
         this.editingProduct = null;
         this.uploadedImages = [];
+        this.uploadedPdf = null;
         this.currentColumns = null;
         alert("Продуктът е успешно редактиран и обновен на сайта!");
       } else {
@@ -2364,6 +2438,7 @@ const Admin = {
           description,
           specs,
           images,
+          pdf: this.uploadedPdf || null,
           columns: this.currentColumns, // Save columns schema
           variants
         };
@@ -2373,6 +2448,7 @@ const Admin = {
         });
         if (!saved) return;
         this.uploadedImages = [];
+        this.uploadedPdf = null;
         this.currentColumns = null;
         alert("Продуктът е успешно добавен!");
       }
@@ -4216,6 +4292,45 @@ const Admin = {
         this.checkForNewOrders();
       }
     }, 4000); // Check every 4 seconds for instant real-time notifications
+  },
+
+  startLiveVisitorsTracker() {
+    if (this.visitorsInterval) {
+      clearInterval(this.visitorsInterval);
+    }
+
+    let sessionId = sessionStorage.getItem("hydrolux_session_id");
+    if (!sessionId) {
+      sessionId = "sess_" + Date.now() + "_" + Math.random().toString(36).substring(2);
+      sessionStorage.setItem("hydrolux_session_id", sessionId);
+    }
+
+    const updateCount = async () => {
+      try {
+        // Send heartbeat for admin session
+        await fetch(`${HydroluxBackend.httpUrl}/api/heartbeat`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ sessionId }),
+        }).catch(err => console.warn("Failed to send admin heartbeat:", err));
+
+        // Get active count
+        const res = await HydroluxBackend.request("/api/visitors/active");
+        if (res && res.ok) {
+          const badge = document.getElementById("live-visitors-badge");
+          const countSpan = document.getElementById("live-visitors-count");
+          if (badge && countSpan) {
+            countSpan.textContent = res.count || 0;
+            badge.style.display = "inline-flex";
+          }
+        }
+      } catch (err) {
+        console.warn("Failed to fetch active visitors:", err);
+      }
+    };
+
+    updateCount();
+    this.visitorsInterval = setInterval(updateCount, 15000);
   },
 
   async checkForNewOrders() {

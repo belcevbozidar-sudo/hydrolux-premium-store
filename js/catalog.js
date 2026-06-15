@@ -10,6 +10,37 @@ const Catalog = {
   filterTemp: "",
   sortBy: "default",
 
+  openProductPdf(prodId) {
+    const product = CONFIG.products.find(p => p.id === prodId);
+    if (!product || !product.pdf) return;
+
+    try {
+      const base64Parts = product.pdf.split(",");
+      const contentType = base64Parts[0].split(":")[1].split(";")[0];
+      const base64Data = base64Parts[1];
+
+      const byteCharacters = atob(base64Data);
+      const byteArrays = [];
+
+      for (let offset = 0; offset < byteCharacters.length; offset += 512) {
+        const slice = byteCharacters.slice(offset, offset + 512);
+        const byteNumbers = new Array(slice.length);
+        for (let i = 0; i < slice.length; i++) {
+          byteNumbers[i] = slice.charCodeAt(i);
+        }
+        const byteArray = new Uint8Array(byteNumbers);
+        byteArrays.push(byteArray);
+      }
+
+      const blob = new Blob(byteArrays, { type: contentType });
+      const blobUrl = URL.createObjectURL(blob);
+      window.open(blobUrl, "_blank");
+    } catch (err) {
+      console.error("Error opening PDF:", err);
+      alert("Не успяхме да отворим PDF файла на това устройство.");
+    }
+  },
+
   expandedCategories: {},
 
   toggleTreeExpand(catId) {
@@ -576,7 +607,25 @@ const Catalog = {
     stockEl.textContent = product.inStock ? "В наличност" : "По запитване";
 
     // Inject Description
-    document.getElementById("prod-desc-text").innerHTML = product.description.replace(/\n\n/g, "<br><br>");
+    let descHtml = product.description.replace(/\n\n/g, "<br><br>");
+    if (product.pdf) {
+      descHtml += `
+        <div class="pdf-datasheet-container" style="margin-top: 25px; padding: 15px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap;">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <span style="font-size: 24px; line-height: 1;">📄</span>
+            <div style="text-align: left;">
+              <div style="font-weight: 700; color: #1e293b; font-size: 0.9rem;">Техническа спецификация (PDF)</div>
+              <div style="color: #64748b; font-size: 0.75rem;">Прегледайте пълните характеристики и технически детайли</div>
+            </div>
+          </div>
+          <button onclick="Catalog.openProductPdf('${product.id}')" class="btn btn-accent" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 0.85rem; padding: 10px 18px; border-radius: 6px; cursor: pointer; text-transform: uppercase; border: none; background-color: #16a34a; color: white; transition: background-color 0.2s, transform 0.1s; outline: none;" onmouseover="this.style.backgroundColor='#15803d'; this.style.transform='scale(1.02)';" onmouseout="this.style.backgroundColor='#16a34a'; this.style.transform='scale(1)';" onmousedown="this.style.transform='scale(0.98)';">
+            <span>Преглед на PDF</span>
+            <span style="font-size: 1rem; line-height: 1;">👁️</span>
+          </button>
+        </div>
+      `;
+    }
+    document.getElementById("prod-desc-text").innerHTML = descHtml;
 
     // Inject Specs List
     const specsContainer = document.getElementById("prod-specs-list");

@@ -31,6 +31,28 @@ const App = {
         console.error("Error waiting for server config load:", err);
       });
     }
+    this.startHeartbeat();
+  },
+
+  startHeartbeat() {
+    if (typeof HydroluxBackend === "undefined") return;
+
+    let sessionId = sessionStorage.getItem("hydrolux_session_id");
+    if (!sessionId) {
+      sessionId = "sess_" + Date.now() + "_" + Math.random().toString(36).substring(2);
+      sessionStorage.setItem("hydrolux_session_id", sessionId);
+    }
+
+    const sendHeartbeat = () => {
+      fetch(`${HydroluxBackend.httpUrl}/api/heartbeat`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ sessionId }),
+      }).catch(err => console.warn("Failed to send heartbeat:", err));
+    };
+
+    sendHeartbeat();
+    setInterval(sendHeartbeat, 20000);
   },
 
   renderAllUI() {
