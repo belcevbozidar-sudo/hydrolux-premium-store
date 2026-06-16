@@ -73,6 +73,72 @@ http.route({
   }),
 });
 
+// --- Product archive endpoints (append-only; no delete endpoint exists) ---
+http.route({
+  path: "/api/product-archive",
+  method: "OPTIONS",
+  handler: optionsHandler,
+});
+
+http.route({
+  path: "/api/product-archive",
+  method: "GET",
+  handler: httpAction(async ctx => {
+    try {
+      const products = await ctx.runQuery(api.store.listArchivedProducts, {});
+      return jsonResponse({ ok: true, products });
+    } catch (e) {
+      return jsonResponse({ ok: false, error: e.message }, { status: 500 });
+    }
+  }),
+});
+
+http.route({
+  path: "/api/product-archive",
+  method: "POST",
+  handler: httpAction(async (ctx, request) => {
+    try {
+      const body = await request.json();
+      if (!body.productId || !body.data) {
+        return jsonResponse({ ok: false, error: "Липсва productId или data" }, { status: 400 });
+      }
+      const result = await ctx.runMutation(api.store.archiveProduct, {
+        productId: String(body.productId),
+        data: body.data,
+        reason: body.reason,
+      });
+      return jsonResponse(result);
+    } catch (e) {
+      return jsonResponse({ ok: false, error: e.message }, { status: 500 });
+    }
+  }),
+});
+
+http.route({
+  path: "/api/product-archive/restore",
+  method: "OPTIONS",
+  handler: optionsHandler,
+});
+
+http.route({
+  path: "/api/product-archive/restore",
+  method: "POST",
+  handler: httpAction(async (ctx, request) => {
+    try {
+      const body = await request.json();
+      if (!body.productId) {
+        return jsonResponse({ ok: false, error: "Липсва productId" }, { status: 400 });
+      }
+      const result = await ctx.runMutation(api.store.markArchivedProductRestored, {
+        productId: String(body.productId),
+      });
+      return jsonResponse(result);
+    } catch (e) {
+      return jsonResponse({ ok: false, error: e.message }, { status: 500 });
+    }
+  }),
+});
+
 http.route({
   path: "/api/cart",
   method: "OPTIONS",

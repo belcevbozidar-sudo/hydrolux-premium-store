@@ -102,6 +102,27 @@ const HydroluxBackend = {
     });
   },
 
+  // Archives a product snapshot before deletion. Append-only on the server.
+  async archiveProduct(product, reason = "deleted") {
+    if (!product || !product.id) return { ok: false, error: "no product" };
+    return await this.request("/api/product-archive", {
+      method: "POST",
+      body: { productId: String(product.id), data: product, reason },
+    });
+  },
+
+  async getArchivedProducts() {
+    const result = await this.request("/api/product-archive", { method: "GET" });
+    return (result && result.products) || [];
+  },
+
+  async markArchivedProductRestored(productId) {
+    return await this.request("/api/product-archive/restore", {
+      method: "POST",
+      body: { productId: String(productId) },
+    });
+  },
+
   getCartId() {
     const key = `${this.storagePrefix}cart_id`;
     let cartId = localStorage.getItem(key);

@@ -1018,6 +1018,9 @@ const Admin = {
             <li class="admin-menu-item ${this.activeTab === 'crimping' ? 'active' : ''}" onclick="Admin.switchTab('crimping')">
               ⚙️ Кримпване
             </li>
+            <li class="admin-menu-item ${this.activeTab === 'archive' ? 'active' : ''}" onclick="Admin.switchTab('archive')">
+              🗄️ Архив (изтрити)
+            </li>
           </ul>
         </aside>
 
@@ -1039,6 +1042,9 @@ const Admin = {
     if (this.activeTab === "orders") {
       this.loadOrders();
     }
+    if (this.activeTab === "archive") {
+      this.loadArchive();
+    }
   },
 
   renderActiveWorkspace() {
@@ -1051,9 +1057,115 @@ const Admin = {
         return this.renderOrdersWorkspace();
       case "crimping":
         return this.renderCrimpingWorkspace();
+      case "archive":
+        return this.renderArchiveWorkspace();
       default:
         return "Няма намерен работен панел.";
     }
+  },
+
+  // ==========================================================================
+  // ARCHIVE WORKSPACE (recovery of deleted products)
+  // ==========================================================================
+  renderArchiveWorkspace() {
+    return `
+      <div class="admin-workspace-header">
+        <h2 style="margin: 0 0 6px;">🗄️ Архив на изтрити продукти</h2>
+        <p class="text-muted font-xs" style="margin: 0 0 18px; max-width: 720px;">
+          Тук се пазят всички продукти, изтрити от панела. Архивът се съхранява в
+          Convex и не може да бъде изтрит от сайта или панела — само ръчно от
+          Convex таблото. Натиснете „Възстанови", за да върнете продукт обратно на сайта.
+        </p>
+      </div>
+      <div id="admin-archive-list">
+        <p class="text-muted">Зареждане на архива…</p>
+      </div>
+    `;
+  },
+
+  async loadArchive() {
+    const container = document.getElementById("admin-archive-list");
+    if (!container) return;
+    if (typeof HydroluxBackend === "undefined") {
+      container.innerHTML = `<p class="text-muted">Архивът не е наличен (няма връзка с Convex).</p>`;
+      return;
+    }
+    try {
+      const archived = await HydroluxBackend.getArchivedProducts();
+      this.archivedProducts = archived;
+
+      if (!archived.length) {
+        container.innerHTML = `<p class="text-muted">Все още няма изтрити продукти в архива.</p>`;
+        return;
+      }
+
+      const fmtDate = (ts) => {
+        try { return new Date(ts).toLocaleString("bg-BG"); } catch { return ""; }
+      };
+
+      const rows = archived.map(row => {
+        const p = row.data || {};
+        const img = (p.images && p.images[0]) ? p.images[0] : "assets/logo.webp";
+        const safeImg = String(img).replace(/\s+/g, "%20");
+        const stillLive = CONFIG.products.some(cp => cp.id === p.id);
+        const restoredBadge = row.restoredAt
+          ? `<span style="color:#16a34a; font-size:0.7rem; font-weight:700;">възстановен на ${fmtDate(row.restoredAt)}</span>`
+          : "";
+        return `
+          <tr class="admin-table-row">
+            <td><img src="${safeImg}" onerror="this.src='assets/logo.webp'" alt="" style="width:48px;height:48px;object-fit:cover;border-radius:6px;border:1px solid #e2e8f0;"></td>
+            <td>
+              <strong>${p.name || "(без име)"}</strong><br>
+              <span class="text-muted font-xs">Код: ${p.code || "—"} | Марка: ${p.brand || "—"}</span><br>
+              <span class="text-muted font-xs">id: ${p.id || "—"}</span><br>
+              <span class="text-muted font-xs">изтрит на ${fmtDate(row.archivedAt)}</span> ${restoredBadge}
+            </td>
+            <td>
+              ${stillLive
+                ? `<span class="text-muted font-xs">вече е на сайта</span>`
+                : `<button class="btn-admin-action" style="background:#16a34a;color:#fff;" onclick="Admin.restoreArchivedProduct('${p.id}')">↩ Възстанови</button>`}
+            </td>
+          </tr>`;
+      }).join("");
+
+      container.innerHTML = `
+        <table class="admin-table">
+          <thead>
+            <tr><th>Снимка</th><th>Продукт</th><th>Действие</th></tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>`;
+    } catch (err) {
+      console.error("Грешка при зареждане на архива", err);
+      container.innerHTML = `<p class="text-muted">Грешка при зареждане на архива.</p>`;
+    }
+  },
+
+  async restoreArchivedProduct(productId) {
+    const row = (this.archivedProducts || []).find(r => (r.data && r.data.id) === productId);
+    if (!row || !row.data) {
+      alert("Не е намерен архивен запис за този продукт.");
+      return;
+    }
+    if (CONFIG.products.some(p => p.id === productId)) {
+      alert("Този продукт вече съществува на сайта.");
+      this.loadArchive();
+      return;
+    }
+    const saved = await this.persistProductChanges(() => {
+      CONFIG.products.push(row.data);
+    });
+    if (!saved) return;
+
+    try {
+      await HydroluxBackend.markArchivedProductRestored(productId);
+    } catch (err) {
+      console.warn("Не можа да се отбележи като възстановен", err);
+    }
+
+    this.propagateStateChanges();
+    alert("Продуктът е възстановен и отново е на сайта!");
+    this.loadArchive();
   },
 
   // ==========================================================================
@@ -2465,12 +2577,31 @@ const Admin = {
     }
   },
 
-  deleteProduct(productId) {
-    if (confirm("Наистина ли искате да изтриете този продукт?")) {
-      CONFIG.deleteProduct(productId);
-      this.propagateStateChanges();
-      this.render();
+  async deleteProduct(productId) {
+    if (!confirm("Наистина ли искате да изтриете този продукт?")) return;
+
+    const product = CONFIG.products.find(p => p.id === productId);
+
+    // Archive the product in Convex BEFORE removing it, so it can always be
+    // recovered. If the archive fails, abort the deletion to avoid data loss.
+    if (product && typeof HydroluxBackend !== "undefined") {
+      try {
+        const res = await HydroluxBackend.archiveProduct(product, "deleted");
+        if (!res || res.ok === false) throw new Error(res && res.error);
+      } catch (err) {
+        console.error("Неуспешно архивиране на продукта", err);
+        const proceed = confirm(
+          "Продуктът не можа да бъде архивиран в Convex (няма връзка?).\n" +
+          "Ако продължите, изтриването НЯМА да може да се възстанови.\n\n" +
+          "Натиснете OK само ако сте сигурни, че искате да изтриете без архив."
+        );
+        if (!proceed) return;
+      }
     }
+
+    CONFIG.deleteProduct(productId);
+    this.propagateStateChanges();
+    this.render();
   },
 
   moveProduct(prodId, direction) {

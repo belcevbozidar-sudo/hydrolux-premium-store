@@ -8,6 +8,20 @@ export default defineSchema({
     updatedAt: v.number(),
   }).index("by_key", ["key"]),
 
+  // Append-only archive of products. Whenever a product is deleted from the
+  // admin panel it is snapshotted here BEFORE it disappears from the live site.
+  // There is intentionally NO delete mutation for this table anywhere in the
+  // codebase, so neither the admin panel nor the site can ever wipe it — the
+  // only way to remove rows is manually from the Convex dashboard by the owner.
+  productArchive: defineTable({
+    productId: v.string(),
+    data: v.any(),            // full product object snapshot
+    archivedAt: v.number(),
+    reason: v.optional(v.string()),
+    restoredAt: v.optional(v.number()), // set when the product is recovered
+  }).index("by_product_id", ["productId"])
+    .index("by_archived_at", ["archivedAt"]),
+
   carts: defineTable({
     cartId: v.string(),
     items: v.any(),

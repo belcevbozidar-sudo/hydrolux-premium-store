@@ -81,6 +81,66 @@ export const setState = mutation({
   },
 });
 
+// --- Product archive (append-only safety net) -----------------------------
+// Snapshots a product before it is deleted from the live catalog. There is
+// deliberately no mutation that deletes from productArchive, so the archive
+// can never be wiped from the admin panel or the public site.
+export const archiveProduct = mutation({
+  args: {
+    productId: v.string(),
+    data: v.any(),
+    reason: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    const archivedAt = Date.now();
+    await ctx.db.insert("productArchive", {
+      productId: args.productId,
+      data: args.data,
+      archivedAt,
+      reason: args.reason || "deleted",
+    });
+    return { ok: true, archivedAt };
+  },
+});
+
+// Returns the archived products, most recent first. Used by the admin recovery
+// view. Keeps only the latest snapshot per productId for display, but the full
+// history remains stored in the table.
+export const listArchivedProducts = query({
+  args: {},
+  handler: async ctx => {
+    const all = await ctx.db
+      .query("productArchive")
+      .withIndex("by_archived_at")
+      .order("desc")
+      .collect();
+
+    const latestByProduct = new Map();
+    for (const row of all) {
+      if (!latestByProduct.has(row.productId)) {
+        latestByProduct.set(row.productId, row);
+      }
+    }
+    return Array.from(latestByProduct.values());
+  },
+});
+
+// Marks an archived product as restored (does not delete it — kept for history).
+export const markArchivedProductRestored = mutation({
+  args: { productId: v.string() },
+  handler: async (ctx, args) => {
+    const rows = await ctx.db
+      .query("productArchive")
+      .withIndex("by_product_id", q => q.eq("productId", args.productId))
+      .collect();
+    const restoredAt = Date.now();
+    for (const row of rows) {
+      await ctx.db.patch(row._id, { restoredAt });
+    }
+    return { ok: true, restoredAt, count: rows.length };
+  },
+});
+
 export const saveCart = mutation({
   args: {
     cartId: v.string(),
