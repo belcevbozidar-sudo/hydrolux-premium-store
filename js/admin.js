@@ -2400,7 +2400,10 @@ const Admin = {
         alert("Продуктът е успешно редактиран и обновен на сайта!");
       } else {
         // CREATE MODE
-        const id = name.toLowerCase()
+        // NOTE: ids must start with "prod-" / "custom-" or be all-digits,
+        // otherwise filterOldItems() in config.js treats them as legacy items
+        // and strips them on load (they would vanish from the public site).
+        const slug = name.toLowerCase()
           .replace(/[^а-яa-z0-9]+/g, "-")
           .replace(/(^-|-$)/g, "")
           .replace(/[а-я]/g, m => {
@@ -2409,6 +2412,7 @@ const Admin = {
             const idx = cyr.indexOf(m);
             return idx > -1 ? lat[idx] : m;
           });
+        const id = `prod-${slug}`;
 
         if (CONFIG.products.some(p => p.id === id)) {
           alert("Продукт с това име вече съществува!");
