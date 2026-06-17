@@ -30,6 +30,7 @@ const Admin = {
   isProcessingPdfs: false,
   templatesPanelOpen: false,
   savedRange: null,
+  searchTimeout: null,
 
   init() {
     this.loadTemplates();
@@ -1509,6 +1510,15 @@ const Admin = {
   },
 
   filterProductsList() {
+    if (this.searchTimeout) {
+      clearTimeout(this.searchTimeout);
+    }
+    this.searchTimeout = setTimeout(() => {
+      this.filterProductsListDebounced();
+    }, 150);
+  },
+
+  filterProductsListDebounced() {
     const catId = document.getElementById("prod-filter-category") ? document.getElementById("prod-filter-category").value : this.filterCategory;
     const query = document.getElementById("prod-search-input") ? document.getElementById("prod-search-input").value.toLowerCase().trim() : "";
     

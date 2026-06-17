@@ -28,29 +28,29 @@ const HydroluxBackend = {
     const compressedStream = stream.pipeThrough(new CompressionStream("gzip"));
     const response = new Response(compressedStream);
     const buffer = await response.arrayBuffer();
-    let binary = "";
-    const bytes = new Uint8Array(buffer);
-    const len = bytes.byteLength;
-    for (let i = 0; i < len; i++) {
-      binary += String.fromCharCode(bytes[i]);
-    }
-    return btoa(binary);
+    const blob = new Blob([buffer], { type: "application/octet-stream" });
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => {
+        const dataUrl = reader.result;
+        const base64 = dataUrl.split(",")[1];
+        resolve(base64);
+      };
+      reader.onerror = () => reject(reader.error);
+      reader.readAsDataURL(blob);
+    });
   },
 
   async decompressString(base64) {
     if (typeof DecompressionStream === "undefined") {
       throw new Error("DecompressionStream is not supported in this browser.");
     }
-    const binaryString = atob(base64);
-    const len = binaryString.length;
-    const bytes = new Uint8Array(len);
-    for (let i = 0; i < len; i++) {
-      bytes[i] = binaryString.charCodeAt(i);
-    }
-    const stream = new Blob([bytes.buffer]).stream();
+    const responseData = await fetch(`data:application/octet-stream;base64,${base64}`);
+    const buffer = await responseData.arrayBuffer();
+    const stream = new Blob([buffer]).stream();
     const decompressedStream = stream.pipeThrough(new DecompressionStream("gzip"));
-    const response = new Response(decompressedStream);
-    return await response.text();
+    const responseText = new Response(decompressedStream);
+    return await responseText.text();
   },
 
   async getState() {

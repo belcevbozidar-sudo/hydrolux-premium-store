@@ -9,6 +9,8 @@ const Catalog = {
   filterPressure: "",
   filterTemp: "",
   sortBy: "default",
+  productsLimit: 24,
+  searchTimeout: null,
 
   escapeHtml(value) {
     return String(value ?? "")
@@ -353,10 +355,18 @@ const Catalog = {
     App.navigate("catalog");
   },
 
-  applyFiltersAndRender() {
+  applyFiltersAndRender(isLoadMore = false) {
+    if (!isLoadMore) {
+      this.productsLimit = 24;
+    }
     const products = CONFIG.products;
     const grid = document.getElementById("products-grid");
     if (!grid) return;
+
+    const loadMoreContainer = document.getElementById("catalog-load-more-container");
+    if (loadMoreContainer) {
+      loadMoreContainer.style.display = "none";
+    }
 
     // Set grid class back to products grid by default
     grid.className = "products-grid full-width";
@@ -538,7 +548,9 @@ const Catalog = {
       return;
     }
 
-    grid.innerHTML = filtered.map(p => {
+    const productsToRender = filtered.slice(0, this.productsLimit);
+
+    grid.innerHTML = productsToRender.map(p => {
       const prices = (p.variants || []).map(v => parseFloat(v.priceEur) || 0);
       const positivePrices = prices.filter(pr => pr > 0);
       
@@ -580,6 +592,14 @@ const Catalog = {
         </div>
       `;
     }).join("");
+
+    if (loadMoreContainer) {
+      if (filtered.length > this.productsLimit) {
+        loadMoreContainer.style.display = "flex";
+      } else {
+        loadMoreContainer.style.display = "none";
+      }
+    }
   },
 
   openProductDetails(productId, shouldNavigate = true) {
@@ -907,6 +927,24 @@ const Catalog = {
     document.getElementById("search-input-blue").value = tag;
     App.navigate("catalog");
     this.applyFiltersAndRender();
+  },
+
+  handleSearchInput(val) {
+    if (this.searchTimeout) {
+      clearTimeout(this.searchTimeout);
+    }
+    this.searchTimeout = setTimeout(() => {
+      this.searchQuery = val;
+      if (typeof App !== "undefined" && App.currentView !== "catalog") {
+        App.navigate("catalog");
+      }
+      this.applyFiltersAndRender();
+    }, 150);
+  },
+
+  loadMore() {
+    this.productsLimit += 24;
+    this.applyFiltersAndRender(true);
   },
 
   // Modal Inquiry Form (Задай въпрос)
