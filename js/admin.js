@@ -25,7 +25,7 @@ const Admin = {
   editingCategory: null, // Category currently being edited
   editingProduct: null, // Product currently being edited
   uploadedImages: [], // Temporary Base64 strings or existing URLs of uploaded files
-  uploadedPdf: null, // Temporary Base64 string of uploaded technical spec PDF
+  uploadedPdfs: [], // Array of { name, data } for uploaded technical spec PDFs
   isProcessingImages: false,
   templatesPanelOpen: false,
   savedRange: null,
@@ -1403,13 +1403,15 @@ const Admin = {
 
           <!-- PDF UPLOAD FIELD -->
           <div class="form-group" style="background-color: #f0fdf4; padding: 15px; border-radius: 8px; border: 1.5px dashed #16a34a; margin-top: 15px; margin-bottom: 20px;">
-            <label style="font-weight: 800; color: #16a34a; display: block; margin-bottom: 5px;">📄 Техническа спецификация (PDF файл)</label>
-            <input type="file" id="prod-pdf-upload" class="form-control" accept="application/pdf" style="padding: 6px; border: 1px solid var(--border-light); font-weight: bold; background-color: white;">
-            <div id="prod-pdf-status" class="font-xs text-muted" style="margin-top: 8px;">
-              ${this.uploadedPdf ? `
-                <span style="color: #16a34a; font-weight: bold;">Прикачен файл: PDF документът е зареден</span>
-                <button type="button" class="btn btn-secondary btn-small" onclick="Admin.removePdf()" style="margin-left: 10px; padding: 2px 8px; font-size: 0.7rem; height: auto;">Изтрий PDF</button>
-              ` : '<span class="text-muted">Няма прикачен PDF файл.</span>'}
+            <label style="font-weight: 800; color: #16a34a; display: block; margin-bottom: 5px;">📄 Технически спецификации (PDF файлове)</label>
+            <input type="file" id="prod-pdf-upload" class="form-control" accept="application/pdf" multiple style="padding: 6px; border: 1px solid var(--border-light); font-weight: bold; background-color: white;">
+            <div id="prod-pdfs-list-container" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+              ${this.uploadedPdfs && this.uploadedPdfs.length > 0 ? this.uploadedPdfs.map((pdf, idx) => `
+                <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 12px; background: white; border: 1px solid #cbd5e1; border-radius: 6px;">
+                  <span style="color: #16a34a; font-weight: bold; font-size: 0.85rem; display: flex; align-items: center; gap: 6px;">📄 ${this.escapeHtml(pdf.name)}</span>
+                  <button type="button" class="btn btn-secondary btn-small" onclick="Admin.removeUploadedPdf(${idx})" style="padding: 2px 8px; font-size: 0.7rem; height: auto; margin: 0; background-color: #ef4444; color: white; border: none;">Изтрий</button>
+                </div>
+              `).join("") : '<span class="text-muted font-xs">Няма прикачени PDF файлове.</span>'}
             </div>
           </div>
 
@@ -2044,35 +2046,40 @@ const Admin = {
     // Register PDF input listener
     const pdfInput = document.getElementById("prod-pdf-upload");
     if (pdfInput) {
-      pdfInput.addEventListener("change", (e) => {
-        const file = e.target.files[0];
-        if (!file) return;
+      pdfInput.addEventListener("change", async (e) => {
+        const files = Array.from(e.target.files);
+        if (files.length === 0) return;
 
-        if (file.type !== "application/pdf") {
-          alert("Моля, изберете валиден PDF файл.");
-          pdfInput.value = "";
-          return;
-        }
-
-        // Limit size to 10 MB
+        // Limit size to 10 MB per file
         const maxSize = 10 * 1024 * 1024;
-        if (file.size > maxSize) {
-          alert("Избраният файл е твърде голям. Моля изберете PDF файл, по-малък от 10 MB.");
-          pdfInput.value = "";
-          return;
+
+        for (const file of files) {
+          if (file.type !== "application/pdf") {
+            alert(`Файлът "${file.name}" не е валиден PDF документ.`);
+            continue;
+          }
+          if (file.size > maxSize) {
+            alert(`Файлът "${file.name}" е твърде голям (над 10 MB).`);
+            continue;
+          }
+
+          try {
+            const fileData = await new Promise((resolve, reject) => {
+              const reader = new FileReader();
+              reader.onload = (event) => resolve(event.target.result);
+              reader.onerror = (err) => reject(err);
+              reader.readAsDataURL(file);
+            });
+            if (!Admin.uploadedPdfs) Admin.uploadedPdfs = [];
+            Admin.uploadedPdfs.push({ name: file.name, data: fileData });
+          } catch (err) {
+            console.error("PDF read failed", err);
+            alert(`Не успяхме да заредим файла "${file.name}".`);
+          }
         }
 
-        const reader = new FileReader();
-        reader.onload = (event) => {
-          Admin.uploadedPdf = event.target.result;
-          Admin.updatePdfStatus(file.name);
-        };
-        reader.onerror = (err) => {
-          console.error("PDF read failed", err);
-          alert("Не успяхме да заредим PDF файла. Моля опитайте отново.");
-          pdfInput.value = "";
-        };
-        reader.readAsDataURL(file);
+        pdfInput.value = "";
+        Admin.render();
       });
     }
 
@@ -2125,25 +2132,11 @@ const Admin = {
     }
   },
 
-  updatePdfStatus(fileName) {
-    const statusDiv = document.getElementById("prod-pdf-status");
-    if (statusDiv) {
-      if (this.uploadedPdf) {
-        statusDiv.innerHTML = `
-          <span style="color: #16a34a; font-weight: bold;">Прикачен файл: ${this.escapeHtml(fileName || "PDF документ")}</span>
-          <button type="button" class="btn btn-secondary btn-small" onclick="Admin.removePdf()" style="margin-left: 10px; padding: 2px 8px; font-size: 0.7rem; height: auto;">Изтрий PDF</button>
-        `;
-      } else {
-        statusDiv.innerHTML = `<span class="text-muted">Няма прикачен PDF файл.</span>`;
-      }
+  removeUploadedPdf(idx) {
+    if (this.uploadedPdfs && this.uploadedPdfs[idx]) {
+      this.uploadedPdfs.splice(idx, 1);
+      this.render();
     }
-  },
-
-  removePdf() {
-    this.uploadedPdf = null;
-    const fileInput = document.getElementById("prod-pdf-upload");
-    if (fileInput) fileInput.value = "";
-    this.updatePdfStatus();
   },
 
   compressImageFile(file) {
@@ -2354,7 +2347,10 @@ const Admin = {
     if (prod) {
       this.editingProduct = prod;
       this.uploadedImages = [...prod.images]; // Load existing images
-      this.uploadedPdf = prod.pdf || null; // Load existing PDF technical spec
+      this.uploadedPdfs = prod.pdfs ? prod.pdfs.map(p => ({ ...p })) : [];
+      if (prod.pdf) {
+        this.uploadedPdfs.push({ name: "Техническа спецификация (PDF)", data: prod.pdf });
+      }
       this.currentColumns = prod.columns ? [...prod.columns] : null; // Load product columns
       this.tempVariants = prod.variants ? prod.variants.map(v => ({ ...v })) : null;
       this.render();
@@ -2366,7 +2362,7 @@ const Admin = {
   cancelProductEdit() {
     this.editingProduct = null;
     this.uploadedImages = [];
-    this.uploadedPdf = null;
+    this.uploadedPdfs = [];
     this.currentColumns = null; // Clear columns
     this.render();
   },
@@ -2498,7 +2494,8 @@ const Admin = {
             target.specialOfferText = specialOfferText;
             target.specialOfferLabel = isSpecial ? this.getSpecialOfferLabel(specialOfferType, specialOfferText) : "";
             target.images = images;
-            target.pdf = this.uploadedPdf || null;
+            target.pdfs = this.uploadedPdfs || [];
+            target.pdf = null;
             target.specs = specs;
             target.columns = this.currentColumns; // Save columns schema
             target.variants = variants;
@@ -2507,7 +2504,7 @@ const Admin = {
         if (!saved) return;
         this.editingProduct = null;
         this.uploadedImages = [];
-        this.uploadedPdf = null;
+        this.uploadedPdfs = [];
         this.currentColumns = null;
         alert("Продуктът е успешно редактиран и обновен на сайта!");
       } else {
@@ -2554,7 +2551,7 @@ const Admin = {
           description,
           specs,
           images,
-          pdf: this.uploadedPdf || null,
+          pdfs: this.uploadedPdfs || [],
           columns: this.currentColumns, // Save columns schema
           variants
         };
@@ -2564,7 +2561,7 @@ const Admin = {
         });
         if (!saved) return;
         this.uploadedImages = [];
-        this.uploadedPdf = null;
+        this.uploadedPdfs = [];
         this.currentColumns = null;
         alert("Продуктът е успешно добавен!");
       }
