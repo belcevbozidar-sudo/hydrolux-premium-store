@@ -82,7 +82,8 @@ const App = {
       "pu-spiral-hose",
       "quick-coupling-isoa"
     ];
-    let featured = popularProductIds.map(id => CONFIG.products.find(p => p.id === id)).filter(Boolean);
+    const sourceProducts = CONFIG.products && CONFIG.products.length > 0 ? CONFIG.products : (CONFIG.featuredProducts || []);
+    let featured = popularProductIds.map(id => sourceProducts.find(p => p.id === id)).filter(Boolean);
 
     if (featured.length === 0) {
       const targets = [
@@ -92,16 +93,16 @@ const App = {
         { key: "бърза връзка", fallbackCode: "ISOA" }
       ];
       featured = targets.map(t => {
-        let found = CONFIG.products.find(p => p.code && p.code.toUpperCase().includes(t.fallbackCode));
+        let found = sourceProducts.find(p => p.code && p.code.toUpperCase().includes(t.fallbackCode));
         if (!found) {
-          found = CONFIG.products.find(p => p.name && p.name.toLowerCase().includes(t.key.toLowerCase()));
+          found = sourceProducts.find(p => p.name && p.name.toLowerCase().includes(t.key.toLowerCase()));
         }
         return found;
       }).filter(Boolean);
     }
 
     if (featured.length === 0) {
-      featured = CONFIG.products.slice(0, 4);
+      featured = sourceProducts.slice(0, 4);
     }
 
     grid.innerHTML = featured.map(p => {
@@ -532,6 +533,13 @@ const App = {
     // Separate params if any, e.g. product-detail/semperit-plw-20
     const parts = hash.split("/");
     const mainView = parts[0];
+
+    // Trigger full catalog load immediately if entering catalog or product pages
+    if (["catalog", "product-detail", "wishlist"].includes(mainView)) {
+      if (typeof CONFIG !== "undefined" && typeof CONFIG.loadCatalog === "function") {
+        CONFIG.loadCatalog();
+      }
+    }
     const viewParam = parts[1];
     
     // Hide all views

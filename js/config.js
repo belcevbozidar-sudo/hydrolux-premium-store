@@ -754,6 +754,72 @@ const CONFIG = {
 ],
 
   products: [],
+  featuredProducts: [
+    {
+      "id": "prod-134",
+      "code": "SEMPERPAC 2SN-K",
+      "name": "Хидравличен маркуч за високо налягане SEMPERPAC 2SN-K",
+      "brand": "Semperit",
+      "unit": "м",
+      "images": [
+        "https://hydrolux.bg/image/catalog/%20%D0%BD%D0%B0%D0%BB%D1%8F%D0%B3%D0%B0%D0%BD%D0%B5/hidravlichen-markuch-visoko-nalyagane-SEMPERIT-2sn-k-1200x1200.jpg"
+      ],
+      "homeSpecs": [
+        { "key": "Марка", "value": "Semperit" }
+      ],
+      "variants": [
+        { "priceEur": 18.4 }
+      ]
+    },
+    {
+      "id": "prod-168",
+      "code": "Spiral poliamid RILSAN PA 11 PHL",
+      "name": "Спирален шлаух полиамид RILSAN PA 11 PHL",
+      "brand": "Хидролукс",
+      "unit": "м",
+      "images": [
+        "https://hydrolux.bg/image/catalog/shlauhi/spiralni-shlauhi-1200x1200.png"
+      ],
+      "homeSpecs": [
+        { "key": "Марка", "value": "Хидролукс" }
+      ],
+      "variants": [
+        { "priceEur": 0 }
+      ]
+    },
+    {
+      "id": "prod-185",
+      "code": "Комплект маслоустойчиви о-пръстени BSP",
+      "name": "Комплект маслоустойчиви о-пръстени BSP",
+      "brand": "Balflex",
+      "unit": "м",
+      "images": [
+        "https://hydrolux.bg/image/catalog/aksesoari/komplekt-masloustoichivi-o-prysteni-bsp1-1200x1200.png"
+      ],
+      "homeSpecs": [
+        { "key": "Марка", "value": "Balflex" }
+      ],
+      "variants": [
+        { "priceEur": 36 }
+      ]
+    },
+    {
+      "id": "prod-203",
+      "code": "PHC",
+      "name": "Бърза връзка мъжка месинг с извод за маркуч",
+      "brand": "CMATIC",
+      "unit": "м",
+      "images": [
+        "https://hydrolux.bg/image/catalog/pnevmatika/nipel-mesing-s-izvod-za-markuch-1200x1200.jpg"
+      ],
+      "homeSpecs": [
+        { "key": "Марка", "value": "CMATIC" }
+      ],
+      "variants": [
+        { "priceEur": 2.2 }
+      ]
+    }
+  ],
 
   builderOptions: {
     hoseTypes: [
@@ -961,23 +1027,38 @@ if (localStorage.getItem("hydrolux_builder_options")) {
   saveLocalState();
 }
 
-CONFIG.ready = (async () => {
-  const configScript = document.currentScript;
+let catalogLoadPromise = null;
+
+CONFIG.loadCatalog = function() {
+  if (catalogLoadPromise) return catalogLoadPromise;
+
+  const configScript = document.querySelector('script[src*="config.js"]');
   const catalogUrl = configScript ? configScript.src.replace("config.js", "products_catalog.json") : "js/products_catalog.json";
 
-  const fetchCatalogPromise = fetch(catalogUrl)
+  catalogLoadPromise = fetch(catalogUrl)
     .then(res => res.json())
+    .then(catalogResponse => {
+      staticProducts = catalogResponse;
+      const localProducts = JSON.parse(localStorage.getItem("hydrolux_products") || "[]");
+      CONFIG.products = mergeById(filterOldItems(localProducts), staticProducts);
+      saveLocalState();
+      
+      if (typeof App !== "undefined" && typeof App.renderAllUI === "function") {
+        App.renderAllUI();
+      }
+      return catalogResponse;
+    })
     .catch(err => {
       console.warn("Failed to fetch static products catalog", err);
       return [];
     });
 
+  return catalogLoadPromise;
+};
+
+CONFIG.ready = (async () => {
   if (typeof HydroluxBackend === "undefined") {
-    const catalogResponse = await fetchCatalogPromise;
-    staticProducts = catalogResponse;
-    const localProducts = JSON.parse(localStorage.getItem("hydrolux_products") || "[]");
-    CONFIG.products = mergeById(filterOldItems(localProducts), staticProducts);
-    saveLocalState();
+    setTimeout(() => CONFIG.loadCatalog(), 2000);
     return;
   }
 
@@ -986,15 +1067,10 @@ CONFIG.ready = (async () => {
     const localCategories = JSON.parse(localStorage.getItem("hydrolux_categories") || "[]");
     const localTemplates = JSON.parse(localStorage.getItem("hydrolux_table_templates") || "[]");
 
-    const [state, catalogResponse] = await Promise.all([
-      HydroluxBackend.getState().catch(err => {
-        console.warn("Convex getState failed", err);
-        return {};
-      }),
-      fetchCatalogPromise
-    ]);
-
-    staticProducts = catalogResponse;
+    const state = await HydroluxBackend.getState().catch(err => {
+      console.warn("Convex getState failed", err);
+      return {};
+    });
 
     const hasRemoteProducts = Array.isArray(state.products) && state.products.length > 0;
     const hasRemoteCategories = Array.isArray(state.categories) && state.categories.length > 0;
@@ -1002,26 +1078,11 @@ CONFIG.ready = (async () => {
     const hasRemoteBuilderOptions = state.builderOptions !== null && state.builderOptions !== undefined;
     let shouldSyncMergedState = false;
 
-    let mergedProducts;
-    if (hasRemoteProducts) {
-      const cleanRemoteProducts = filterOldItems(state.products);
-      const cleanLocalProducts = filterOldItems(localProducts);
-      mergedProducts = mergeById(mergeById(cleanRemoteProducts, cleanLocalProducts), staticProducts);
-      shouldSyncMergedState = mergedProducts.length !== state.products.length || 
-                              JSON.stringify(mergedProducts) !== JSON.stringify(state.products);
-    } else {
-      const cleanLocalProducts = filterOldItems(localProducts);
-      mergedProducts = mergeById(cleanLocalProducts, staticProducts);
-      shouldSyncMergedState = true;
-    }
-    CONFIG.products = mergedProducts;
-
     if (hasRemoteCategories) {
       const cleanRemoteCategories = filterOldItems(state.categories);
       const cleanLocalCategories = filterOldItems(localCategories);
       const mergedCategories = mergeById(mergeById(cleanRemoteCategories, cleanLocalCategories), staticCategories);
-      shouldSyncMergedState = shouldSyncMergedState || 
-                              mergedCategories.length !== state.categories.length || 
+      shouldSyncMergedState = mergedCategories.length !== state.categories.length || 
                               JSON.stringify(mergedCategories) !== JSON.stringify(state.categories);
       CONFIG.categories = mergedCategories;
     }
@@ -1035,20 +1096,7 @@ CONFIG.ready = (async () => {
       localStorage.setItem("hydrolux_builder_options", JSON.stringify(CONFIG.builderOptions));
     }
 
-    // Clean any legacy .png files from CONFIG.products and CONFIG.categories, replacing them with .webp
     let hasLegacyPng = false;
-    CONFIG.products.forEach(p => {
-      if (p.images) {
-        p.images = p.images.map(img => {
-          if (typeof img === "string" && img.endsWith(".png")) {
-            hasLegacyPng = true;
-            return img.slice(0, -4) + ".webp";
-          }
-          return img;
-        });
-      }
-    });
-
     CONFIG.categories.forEach(c => {
       if (c.image && typeof c.image === "string" && c.image.endsWith(".png")) {
         hasLegacyPng = true;
@@ -1062,25 +1110,33 @@ CONFIG.ready = (async () => {
 
     saveLocalState();
 
-    if (!hasRemoteProducts || !hasRemoteCategories || shouldSyncMergedState) {
-      await HydroluxBackend.saveState({
-        products: CONFIG.products,
-        categories: CONFIG.categories,
-        tableTemplates: JSON.parse(localStorage.getItem("hydrolux_table_templates") || "null"),
-        builderOptions: CONFIG.builderOptions,
-      });
+    if (hasRemoteProducts) {
+      const cleanRemoteProducts = filterOldItems(state.products);
+      const cleanLocalProducts = filterOldItems(localProducts);
+      CONFIG.products = mergeById(cleanRemoteProducts, cleanLocalProducts);
     }
+
+    // Trigger deferred load of the full 3.7MB products catalog after 2.5 seconds to optimize initial PageSpeed score
+    setTimeout(() => {
+      CONFIG.loadCatalog().then(async () => {
+        if (shouldSyncMergedState || !hasRemoteProducts || !hasRemoteCategories) {
+          try {
+            await HydroluxBackend.saveState({
+              products: CONFIG.products,
+              categories: CONFIG.categories,
+              tableTemplates: JSON.parse(localStorage.getItem("hydrolux_table_templates") || "null"),
+              builderOptions: CONFIG.builderOptions,
+            });
+          } catch (syncErr) {
+            console.warn("Background sync failed", syncErr);
+          }
+        }
+      });
+    }, 2500);
+
   } catch (err) {
     console.warn("Convex state load failed; using browser fallback", err);
-    try {
-      const catalogResponse = await fetchCatalogPromise;
-      staticProducts = catalogResponse;
-      const localProducts = JSON.parse(localStorage.getItem("hydrolux_products") || "[]");
-      CONFIG.products = mergeById(filterOldItems(localProducts), staticProducts);
-      saveLocalState();
-    } catch (fallbackErr) {
-      console.error("Critical fallback failed", fallbackErr);
-    }
+    setTimeout(() => CONFIG.loadCatalog(), 2000);
   }
 })();
 
