@@ -133,6 +133,24 @@ const HydroluxBackend = {
     return cartId;
   },
 
+  // Uploads a technical-specification PDF into Convex file storage and returns
+  // { ok, storageId, url }. The URL is permanent and can be opened directly.
+  async uploadPdf(file) {
+    const response = await fetch(`${this.httpUrl}/api/pdf-upload`, {
+      method: "POST",
+      headers: {
+        "Content-Type": file.type || "application/pdf",
+      },
+      body: file,
+    });
+
+    if (!response.ok) {
+      throw new Error(`PDF upload failed: ${response.status}`);
+    }
+
+    return await response.json();
+  },
+
   async saveCart(items) {
     return await this.request("/api/cart", {
       method: "POST",

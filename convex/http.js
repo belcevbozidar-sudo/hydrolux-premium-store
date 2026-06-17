@@ -73,6 +73,35 @@ http.route({
   }),
 });
 
+// --- PDF file upload -------------------------------------------------------
+// Stores a technical-specification PDF in Convex file storage and returns a
+// permanent serving URL. PDFs are intentionally NOT embedded as base64 inside
+// the products document — that document has a ~1 MB size limit and would burst
+// as soon as more than a tiny PDF is added, silently dropping the upload.
+http.route({
+  path: "/api/pdf-upload",
+  method: "OPTIONS",
+  handler: optionsHandler,
+});
+
+http.route({
+  path: "/api/pdf-upload",
+  method: "POST",
+  handler: httpAction(async (ctx, request) => {
+    try {
+      const blob = await request.blob();
+      if (!blob || blob.size === 0) {
+        return jsonResponse({ ok: false, error: "Празен файл" }, { status: 400 });
+      }
+      const storageId = await ctx.storage.store(blob);
+      const url = await ctx.storage.getUrl(storageId);
+      return jsonResponse({ ok: true, storageId, url });
+    } catch (e) {
+      return jsonResponse({ ok: false, error: e.message }, { status: 500 });
+    }
+  }),
+});
+
 // --- Product archive endpoints (append-only; no delete endpoint exists) ---
 http.route({
   path: "/api/product-archive",

@@ -27,13 +27,23 @@ const Catalog = {
     const product = CONFIG.products.find(p => p.id === prodId);
     if (!product) return;
 
-    let pdfData = null;
+    let pdfEntry = null;
     if (product.pdfs && product.pdfs[idx]) {
-      pdfData = product.pdfs[idx].data;
+      pdfEntry = product.pdfs[idx];
     } else if (idx === 0 && product.pdf) {
-      pdfData = product.pdf;
+      pdfEntry = { data: product.pdf };
     }
 
+    if (!pdfEntry) return;
+
+    // New PDFs are stored in Convex file storage and opened directly by URL.
+    if (pdfEntry.url) {
+      window.open(pdfEntry.url, "_blank");
+      return;
+    }
+
+    // Legacy fallback: older PDFs were embedded as base64 data URLs.
+    const pdfData = pdfEntry.data;
     if (!pdfData) return;
 
     try {
@@ -639,22 +649,13 @@ const Catalog = {
     }
 
     if (pdfsToRender.length > 0) {
-      descHtml += `<div class="pdf-datasheets-wrapper" style="margin-top: 25px; display: flex; flex-direction: column; gap: 12px;">`;
+      descHtml += `<div class="pdf-datasheets-wrapper" style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px;">`;
       pdfsToRender.forEach((pdf, idx) => {
         descHtml += `
-          <div class="pdf-datasheet-container" style="padding: 15px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap;">
-            <div style="display: flex; align-items: center; gap: 12px; max-width: 70%;">
-              <span style="font-size: 24px; line-height: 1;">📄</span>
-              <div style="text-align: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
-                <div style="font-weight: 700; color: #1e293b; font-size: 0.9rem; overflow: hidden; text-overflow: ellipsis;" title="${this.escapeHtml(pdf.name)}">${this.escapeHtml(pdf.name)}</div>
-                <div style="color: #64748b; font-size: 0.75rem;">Прегледайте техническите характеристики</div>
-              </div>
-            </div>
-            <button onclick="Catalog.openProductPdfData('${product.id}', ${idx})" class="btn btn-accent" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 0.85rem; padding: 10px 18px; border-radius: 6px; cursor: pointer; text-transform: uppercase; border: none; background-color: #16a34a; color: white; transition: background-color 0.2s, transform 0.1s; outline: none;" onmouseover="this.style.backgroundColor='#15803d'; this.style.transform='scale(1.02)';" onmouseout="this.style.backgroundColor='#16a34a'; this.style.transform='scale(1)';" onmousedown="this.style.transform='scale(0.98)';">
-              <span>Преглед на PDF</span>
-              <span style="font-size: 1rem; line-height: 1;">👁️</span>
-            </button>
-          </div>
+          <button onclick="Catalog.openProductPdfData('${product.id}', ${idx})" class="pdf-datasheet-link" title="${this.escapeHtml(pdf.name)}" style="display: inline-flex; align-items: center; gap: 6px; max-width: 100%; padding: 5px 12px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; cursor: pointer; font-size: 0.8rem; font-weight: 600; color: #16a34a; transition: background-color 0.15s, border-color 0.15s;" onmouseover="this.style.backgroundColor='#f0fdf4'; this.style.borderColor='#16a34a';" onmouseout="this.style.backgroundColor='#f8fafc'; this.style.borderColor='#e2e8f0';">
+            <span style="font-size: 0.95rem; line-height: 1;">📄</span>
+            <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${this.escapeHtml(pdf.name)}</span>
+          </button>
         `;
       });
       descHtml += `</div>`;

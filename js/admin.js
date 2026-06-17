@@ -25,8 +25,9 @@ const Admin = {
   editingCategory: null, // Category currently being edited
   editingProduct: null, // Product currently being edited
   uploadedImages: [], // Temporary Base64 strings or existing URLs of uploaded files
-  uploadedPdfs: [], // Array of { name, data } for uploaded technical spec PDFs
+  uploadedPdfs: [], // Array of { name, url, storageId } (new) or { name, data } (legacy base64) for technical spec PDFs
   isProcessingImages: false,
+  isProcessingPdfs: false,
   templatesPanelOpen: false,
   savedRange: null,
 
@@ -49,6 +50,7 @@ const Admin = {
 
     this.startOrderPolling();
     this.startLiveVisitorsTracker();
+    this.migrateLegacyPdfs();
   },
 
   injectStyles() {
@@ -1406,12 +1408,7 @@ const Admin = {
             <label style="font-weight: 800; color: #16a34a; display: block; margin-bottom: 5px;">📄 Технически спецификации (PDF файлове)</label>
             <input type="file" id="prod-pdf-upload" class="form-control" accept="application/pdf" multiple style="padding: 6px; border: 1px solid var(--border-light); font-weight: bold; background-color: white;">
             <div id="prod-pdfs-list-container" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
-              ${this.uploadedPdfs && this.uploadedPdfs.length > 0 ? this.uploadedPdfs.map((pdf, idx) => `
-                <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 12px; background: white; border: 1px solid #cbd5e1; border-radius: 6px;">
-                  <span style="color: #16a34a; font-weight: bold; font-size: 0.85rem; display: flex; align-items: center; gap: 6px;">📄 ${this.escapeHtml(pdf.name)}</span>
-                  <button type="button" class="btn btn-secondary btn-small" onclick="Admin.removeUploadedPdf(${idx})" style="padding: 2px 8px; font-size: 0.7rem; height: auto; margin: 0; background-color: #ef4444; color: white; border: none;">Изтрий</button>
-                </div>
-              `).join("") : '<span class="text-muted font-xs">Няма прикачени PDF файлове.</span>'}
+              ${this.renderPdfListItems()}
             </div>
           </div>
 
@@ -2053,6 +2050,8 @@ const Admin = {
         // Limit size to 10 MB per file
         const maxSize = 10 * 1024 * 1024;
 
+        // Pre-validate before showing the uploading state.
+        const validFiles = [];
         for (const file of files) {
           if (file.type !== "application/pdf") {
             alert(`Файлът "${file.name}" не е валиден PDF документ.`);
@@ -2062,24 +2061,38 @@ const Admin = {
             alert(`Файлът "${file.name}" е твърде голям (над 10 MB).`);
             continue;
           }
+          validFiles.push(file);
+        }
 
+        if (validFiles.length === 0) {
+          pdfInput.value = "";
+          return;
+        }
+
+        // PDFs are uploaded to Convex file storage (not embedded as base64 in
+        // the products document, which has a ~1 MB limit). We keep only a light
+        // reference { name, url, storageId } on the product.
+        Admin.isProcessingPdfs = true;
+        Admin.renderPdfList();
+
+        for (const file of validFiles) {
           try {
-            const fileData = await new Promise((resolve, reject) => {
-              const reader = new FileReader();
-              reader.onload = (event) => resolve(event.target.result);
-              reader.onerror = (err) => reject(err);
-              reader.readAsDataURL(file);
-            });
+            const result = await HydroluxBackend.uploadPdf(file);
+            if (!result || !result.ok || !result.url) {
+              throw new Error("Сървърът не върна валиден линк към файла.");
+            }
             if (!Admin.uploadedPdfs) Admin.uploadedPdfs = [];
-            Admin.uploadedPdfs.push({ name: file.name, data: fileData });
+            Admin.uploadedPdfs.push({ name: file.name, url: result.url, storageId: result.storageId });
+            Admin.renderPdfList();
           } catch (err) {
-            console.error("PDF read failed", err);
-            alert(`Не успяхме да заредим файла "${file.name}".`);
+            console.error("PDF upload failed", err);
+            alert(`Не успяхме да качим файла "${file.name}". Моля проверете интернет връзката и опитайте отново.`);
           }
         }
 
+        Admin.isProcessingPdfs = false;
         pdfInput.value = "";
-        Admin.render();
+        Admin.renderPdfList();
       });
     }
 
@@ -2132,10 +2145,35 @@ const Admin = {
     }
   },
 
+  // Inner HTML for the attached-PDFs list. Kept separate so we can re-render
+  // just this container (not the whole form) and avoid wiping unsaved inputs.
+  renderPdfListItems() {
+    const items = (this.uploadedPdfs && this.uploadedPdfs.length > 0)
+      ? this.uploadedPdfs.map((pdf, idx) => `
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 12px; background: white; border: 1px solid #cbd5e1; border-radius: 6px;">
+            <span style="color: #16a34a; font-weight: bold; font-size: 0.85rem; display: flex; align-items: center; gap: 6px;">📄 ${this.escapeHtml(pdf.name)}</span>
+            <button type="button" class="btn btn-secondary btn-small" onclick="Admin.removeUploadedPdf(${idx})" style="padding: 2px 8px; font-size: 0.7rem; height: auto; margin: 0; background-color: #ef4444; color: white; border: none;">Изтрий</button>
+          </div>
+        `).join("")
+      : '<span class="text-muted font-xs">Няма прикачени PDF файлове.</span>';
+    const uploading = this.isProcessingPdfs
+      ? '<span style="color: #16a34a; font-weight: bold; font-size: 0.85rem;">⏳ Качване на PDF файл(ове)...</span>'
+      : '';
+    return items + uploading;
+  },
+
+  // Re-renders only the PDF list container, preserving the rest of the form.
+  renderPdfList() {
+    const container = document.getElementById("prod-pdfs-list-container");
+    if (container) {
+      container.innerHTML = this.renderPdfListItems();
+    }
+  },
+
   removeUploadedPdf(idx) {
     if (this.uploadedPdfs && this.uploadedPdfs[idx]) {
       this.uploadedPdfs.splice(idx, 1);
-      this.render();
+      this.renderPdfList();
     }
   },
 
@@ -2342,7 +2380,7 @@ const Admin = {
     });
   },
 
-  startEditProduct(prodId) {
+  async startEditProduct(prodId) {
     const prod = CONFIG.products.find(p => p.id === prodId);
     if (prod) {
       this.editingProduct = prod;
@@ -2356,6 +2394,35 @@ const Admin = {
       this.render();
       this.tempVariants = null;
       window.scrollTo({ top: 150, behavior: "smooth" });
+
+      // Automatically migrate any legacy base64 PDF in the background for this product if present
+      const legacyPdfs = this.uploadedPdfs.filter(pdf => pdf && pdf.data && typeof pdf.data === "string" && pdf.data.startsWith("data:application/pdf"));
+      if (legacyPdfs.length > 0) {
+        this.isProcessingPdfs = true;
+        this.renderPdfList();
+
+        for (const pdf of legacyPdfs) {
+          try {
+            console.log(`Uploading legacy PDF "${pdf.name}" to Convex storage during edit...`);
+            const blob = this.base64ToBlob(pdf.data);
+            if (blob) {
+              const file = new File([blob], pdf.name || "specification.pdf", { type: "application/pdf" });
+              const result = await HydroluxBackend.uploadPdf(file);
+              if (result && result.ok && result.url) {
+                pdf.url = result.url;
+                pdf.storageId = result.storageId;
+                delete pdf.data;
+                console.log(`Successfully migrated PDF during edit: "${pdf.name}"`);
+              }
+            }
+          } catch (e) {
+            console.error("Failed to upload legacy PDF during edit", e);
+          }
+        }
+
+        this.isProcessingPdfs = false;
+        this.renderPdfList();
+      }
     }
   },
 
@@ -2397,6 +2464,11 @@ const Admin = {
 
       if (this.isProcessingImages) {
         alert("Моля изчакайте снимките да се обработят и опитайте отново.");
+        return;
+      }
+
+      if (this.isProcessingPdfs) {
+        alert("Моля изчакайте PDF файловете да се качат и опитайте отново.");
         return;
       }
 
@@ -4619,6 +4691,105 @@ const Admin = {
 
     if (this.activeTab === "orders") {
       this.loadOrders();
+    }
+  },
+
+  base64ToBlob(base64Data, contentType = "application/pdf") {
+    try {
+      const parts = base64Data.split(",");
+      const dataStr = parts.length > 1 ? parts[1] : parts[0];
+      const byteCharacters = atob(dataStr);
+      const byteArrays = [];
+      const sliceSize = 512;
+      for (let offset = 0; offset < byteCharacters.length; offset += sliceSize) {
+        const slice = byteCharacters.slice(offset, offset + sliceSize);
+        const byteNumbers = new Array(slice.length);
+        for (let i = 0; i < slice.length; i++) {
+          byteNumbers[i] = slice.charCodeAt(i);
+        }
+        const byteArray = new Uint8Array(byteNumbers);
+        byteArrays.push(byteArray);
+      }
+      return new Blob(byteArrays, { type: contentType });
+    } catch (e) {
+      console.error("Error converting base64 to blob:", e);
+      return null;
+    }
+  },
+
+  async migrateLegacyPdfs() {
+    if (typeof HydroluxBackend === "undefined" || !CONFIG.products) return;
+
+    let migratedAny = false;
+    console.log("Checking for legacy base64 PDFs to migrate...");
+
+    for (const prod of CONFIG.products) {
+      // 1. Migrate legacy prod.pdf field
+      if (prod.pdf && typeof prod.pdf === "string" && prod.pdf.startsWith("data:application/pdf")) {
+        console.log(`Migrating legacy pdf field for product "${prod.name}"...`);
+        try {
+          const blob = this.base64ToBlob(prod.pdf);
+          if (blob) {
+            const fileName = prod.name ? `${prod.name.replace(/[^a-zA-Z0-9]/g, "_")}.pdf` : "specification.pdf";
+            const file = new File([blob], fileName, { type: "application/pdf" });
+            const result = await HydroluxBackend.uploadPdf(file);
+            if (result && result.ok && result.url) {
+              if (!prod.pdfs) prod.pdfs = [];
+              prod.pdfs.push({
+                name: "Техническа спецификация (PDF)",
+                url: result.url,
+                storageId: result.storageId
+              });
+              prod.pdf = null;
+              migratedAny = true;
+              console.log(`Successfully migrated pdf field for "${prod.name}".`);
+            }
+          }
+        } catch (e) {
+          console.error(`Error migrating pdf field for product "${prod.name}":`, e);
+        }
+      }
+
+      // 2. Migrate legacy items inside prod.pdfs array
+      if (prod.pdfs && Array.isArray(prod.pdfs)) {
+        for (let i = 0; i < prod.pdfs.length; i++) {
+          const pdfItem = prod.pdfs[i];
+          if (pdfItem && pdfItem.data && typeof pdfItem.data === "string" && pdfItem.data.startsWith("data:application/pdf")) {
+            console.log(`Migrating legacy pdf inside pdfs array for product "${prod.name}" (item name: "${pdfItem.name}")...`);
+            try {
+              const blob = this.base64ToBlob(pdfItem.data);
+              if (blob) {
+                const fileName = pdfItem.name || "specification.pdf";
+                const file = new File([blob], fileName, { type: "application/pdf" });
+                const result = await HydroluxBackend.uploadPdf(file);
+                if (result && result.ok && result.url) {
+                  pdfItem.url = result.url;
+                  pdfItem.storageId = result.storageId;
+                  delete pdfItem.data;
+                  migratedAny = true;
+                  console.log(`Successfully migrated pdf item "${pdfItem.name}" for "${prod.name}".`);
+                }
+              }
+            } catch (e) {
+              console.error(`Error migrating pdf item for product "${prod.name}":`, e);
+            }
+          }
+        }
+      }
+    }
+
+    if (migratedAny) {
+      console.log("Saving migrated product state to Convex...");
+      try {
+        await CONFIG.saveState();
+        this.propagateStateChanges();
+        this.render();
+        console.log("Migration state saved successfully!");
+      } catch (e) {
+        console.error("Failed to save migrated product state to Convex:", e);
+      }
+    } else {
+      console.log("No legacy base64 PDFs found. Database is clean.");
     }
   }
 };
