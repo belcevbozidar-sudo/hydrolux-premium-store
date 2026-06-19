@@ -51,8 +51,23 @@ const App = {
       }).catch(err => console.warn("Failed to send heartbeat:", err));
     };
 
-    sendHeartbeat();
-    setInterval(sendHeartbeat, 20000);
+    // Defer the first heartbeat until the page is idle so this analytics call
+    // doesn't compete with rendering / the LCP image during initial load.
+    const startBeating = () => {
+      sendHeartbeat();
+      setInterval(sendHeartbeat, 20000);
+    };
+    if (document.readyState === "complete") {
+      startBeating();
+    } else {
+      window.addEventListener("load", () => {
+        if ("requestIdleCallback" in window) {
+          requestIdleCallback(startBeating, { timeout: 3000 });
+        } else {
+          setTimeout(startBeating, 1500);
+        }
+      }, { once: true });
+    }
   },
 
   renderAllUI() {
@@ -334,14 +349,21 @@ const App = {
       return "assets/logo.webp";
     };
 
-    carousel.innerHTML = CONFIG.categories.map(c => {
+    carousel.innerHTML = CONFIG.categories.map((c, i) => {
       const imageSrc = getCatImg(c);
       const cleanImageSrc = imageSrc.replace(/\s+/g, '%20');
+
+      // The first few carousel cards are above the fold, so load them eagerly
+      // (the first with high priority) — they're the LCP candidate. Lazy-loading
+      // them would deprioritize the largest visible image and delay LCP.
+      const eager = i < 4;
+      const loadingAttr = eager ? 'loading="eager"' : 'loading="lazy"';
+      const priorityAttr = i === 0 ? ' fetchpriority="high"' : '';
 
       return `
         <div class="category-card-6" onclick="Catalog.selectCategory('${c.id}')">
           <div class="category-card-6-img-wrapper">
-            <img src="${cleanImageSrc}" alt="Категория: ${c.name} - Хидролукс Груп" onerror="this.onerror=null; this.src='assets/logo.webp'" width="300" height="345" loading="lazy">
+            <img src="${cleanImageSrc}" alt="Категория: ${c.name} - Хидролукс Груп" onerror="this.onerror=null; this.src='assets/logo.webp'" width="300" height="345" ${loadingAttr}${priorityAttr} decoding="async">
           </div>
           <div class="category-card-6-body">
             <h3 class="category-card-6-title">${c.name}</h3>
@@ -526,6 +548,26 @@ const App = {
     window.location.hash = `#${viewId}`;
   },
 
+  // Lazily injects a script once and resolves when it has loaded. Used to keep
+  // heavy, rarely-used bundles (admin panel, hose builder) out of the critical
+  // path for normal customers — they only download when that view is opened.
+  ensureScript(src) {
+    if (!this._loadedScripts) this._loadedScripts = {};
+    if (this._loadedScripts[src]) return this._loadedScripts[src];
+    const promise = new Promise((resolve, reject) => {
+      const el = document.createElement("script");
+      el.src = src;
+      el.onload = () => resolve();
+      el.onerror = () => {
+        delete this._loadedScripts[src];
+        reject(new Error(`Failed to load ${src}`));
+      };
+      document.body.appendChild(el);
+    });
+    this._loadedScripts[src] = promise;
+    return promise;
+  },
+
   route() {
     let hash = window.location.hash.substring(1);
     if (!hash) hash = "home";
@@ -574,7 +616,9 @@ const App = {
 
       // Run view-specific inits and update SEO metadata
       if (mainView === "builder") {
-        HoseBuilder.render();
+        this.ensureScript("js/components/builder.js")
+          .then(() => HoseBuilder.render())
+          .catch(err => console.error("Failed to load builder:", err));
         this.updateSEO(
           "Интерактивен конфигуратор на маркучи | Хидролукс Груп",
           "Конфигурирайте и поръчайте маркучи за високо налягане по индивидуален размер. Лесен избор на накрайници и спирали с изчисляване на цена в реално време.",
@@ -591,7 +635,9 @@ const App = {
           "description": "Сглобете и конфигурирайте собствен маркуч по индивидуални размери с бързи калкулации на цената."
         });
       } else if (mainView === "admin") {
-        Admin.init();
+        this.ensureScript("js/admin.js")
+          .then(() => Admin.init())
+          .catch(err => console.error("Failed to load admin panel:", err));
         this.updateSEO("Административен панел | Хидролукс Груп", "Административен панел на Хидролукс Груп.", "#admin");
         this.updateSchema(null);
       } else if (mainView === "checkout") {

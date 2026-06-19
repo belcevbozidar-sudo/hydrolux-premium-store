@@ -33,6 +33,7 @@ const Admin = {
   searchTimeout: null,
 
   init() {
+    this.resetProductFormState();
     this.loadTemplates();
     this.injectStyles();
     this.render();
@@ -52,6 +53,25 @@ const Admin = {
     this.startOrderPolling();
     this.startLiveVisitorsTracker();
     this.migrateLegacyPdfs();
+  },
+
+  resetProductFormState() {
+    this.editingProduct = null;
+    this.editingCategory = null;
+    this.uploadedImages = [];
+    this.uploadedPdfs = [];
+    this.currentColumns = null;
+    this.tempVariants = null;
+    this.isProcessingImages = false;
+    this.isProcessingPdfs = false;
+    const form = document.getElementById("admin-add-product-form");
+    if (form) {
+      try {
+        form.reset();
+      } catch (e) {
+        console.error("Form reset error:", e);
+      }
+    }
   },
 
   injectStyles() {
@@ -994,59 +1014,63 @@ const Admin = {
 
   switchTab(tabId) {
     this.activeTab = tabId;
-    this.editingProduct = null; // Cancel editing product when switching
-    this.editingCategory = null; // Cancel editing category
+    this.resetProductFormState();
     this.render();
   },
 
   render() {
-    const container = document.getElementById("admin-view-content");
-    if (!container) return;
+    this.isFullRender = true;
+    try {
+      const container = document.getElementById("admin-view-content");
+      if (!container) return;
 
-    container.innerHTML = `
-      <div class="admin-container">
-        <!-- Sidebar Navigation -->
-        <aside class="admin-sidebar">
-          <h3>🛠️ Панел Хидролукс</h3>
-          <ul class="admin-menu-list">
-            <li class="admin-menu-item ${this.activeTab === 'products' ? 'active' : ''}" onclick="Admin.switchTab('products')">
-              📦 Продукти
-            </li>
-            <li class="admin-menu-item ${this.activeTab === 'categories' ? 'active' : ''}" onclick="Admin.switchTab('categories')">
-              📁 Категории
-            </li>
-            <li class="admin-menu-item ${this.activeTab === 'orders' ? 'active' : ''}" onclick="Admin.switchTab('orders')">
-              📋 Поръчки
-            </li>
-            <li class="admin-menu-item ${this.activeTab === 'crimping' ? 'active' : ''}" onclick="Admin.switchTab('crimping')">
-              ⚙️ Кримпване
-            </li>
-            <li class="admin-menu-item ${this.activeTab === 'archive' ? 'active' : ''}" onclick="Admin.switchTab('archive')">
-              🗄️ Архив (изтрити)
-            </li>
-          </ul>
-        </aside>
+      container.innerHTML = `
+        <div class="admin-container">
+          <!-- Sidebar Navigation -->
+          <aside class="admin-sidebar">
+            <h3>🛠️ Панел Хидролукс</h3>
+            <ul class="admin-menu-list">
+              <li class="admin-menu-item ${this.activeTab === 'products' ? 'active' : ''}" onclick="Admin.switchTab('products')">
+                📦 Продукти
+              </li>
+              <li class="admin-menu-item ${this.activeTab === 'categories' ? 'active' : ''}" onclick="Admin.switchTab('categories')">
+                📁 Категории
+              </li>
+              <li class="admin-menu-item ${this.activeTab === 'orders' ? 'active' : ''}" onclick="Admin.switchTab('orders')">
+                📋 Поръчки
+              </li>
+              <li class="admin-menu-item ${this.activeTab === 'crimping' ? 'active' : ''}" onclick="Admin.switchTab('crimping')">
+                ⚙️ Кримпване
+              </li>
+              <li class="admin-menu-item ${this.activeTab === 'archive' ? 'active' : ''}" onclick="Admin.switchTab('archive')">
+                🗄️ Архив (изтрити)
+              </li>
+            </ul>
+          </aside>
 
-        <!-- Main Workspace -->
-        <main class="admin-content" id="admin-workspace">
-          ${this.renderActiveWorkspace()}
-        </main>
-      </div>
-    `;
+          <!-- Main Workspace -->
+          <main class="admin-content" id="admin-workspace">
+            ${this.renderActiveWorkspace()}
+          </main>
+        </div>
+      `;
 
-    // Initialize custom interactive handlers (like spec lists or images preview)
-    if (this.activeTab === "products") {
-      this.initProductFormHandlers();
-    }
-    if (this.activeTab === "categories") {
-      this.renderSubcategoriesList();
-      this.setupCategoriesDragAndDrop();
-    }
-    if (this.activeTab === "orders") {
-      this.loadOrders();
-    }
-    if (this.activeTab === "archive") {
-      this.loadArchive();
+      // Initialize custom interactive handlers (like spec lists or images preview)
+      if (this.activeTab === "products") {
+        this.initProductFormHandlers();
+      }
+      if (this.activeTab === "categories") {
+        this.renderSubcategoriesList();
+        this.setupCategoriesDragAndDrop();
+      }
+      if (this.activeTab === "orders") {
+        this.loadOrders();
+      }
+      if (this.activeTab === "archive") {
+        this.loadArchive();
+      }
+    } finally {
+      this.isFullRender = false;
     }
   },
 
@@ -1316,7 +1340,7 @@ const Admin = {
       <!-- Add or Edit Product Form Card -->
       <div class="admin-form-card">
         <h4>${isEditing ? `✏️ Редактиране на продукт: "${this.editingProduct.name}"` : '➕ Добавяне на нов продукт'}</h4>
-        <form id="admin-add-product-form" onsubmit="Admin.handleProductSubmit(event)">
+        <form id="admin-add-product-form" onsubmit="Admin.handleProductSubmit(event)" autocomplete="off">
           
           <!-- IMAGE UPLOAD FIELD AT THE VERY TOP (Without static help text) -->
           <div class="form-group" style="background-color: var(--primary-light); padding: 15px; border-radius: 8px; border: 1.5px dashed var(--primary); margin-bottom: 20px;">
@@ -1677,7 +1701,14 @@ const Admin = {
       }
     }
 
-    let activeVariants = this.tempVariants || this.collectVariantsFromDOM() || (isEditing ? this.editingProduct.variants : []);
+    let activeVariants = [];
+    if (this.tempVariants) {
+      activeVariants = this.tempVariants;
+    } else if (this.isFullRender) {
+      activeVariants = isEditing ? this.editingProduct.variants : [];
+    } else {
+      activeVariants = this.collectVariantsFromDOM() || (isEditing ? this.editingProduct.variants : []);
+    }
     if (!Array.isArray(activeVariants) || activeVariants.length === 0) {
       const newRow = {};
       this.currentColumns.forEach(c => {
@@ -2160,9 +2191,15 @@ const Admin = {
   renderPdfListItems() {
     const items = (this.uploadedPdfs && this.uploadedPdfs.length > 0)
       ? this.uploadedPdfs.map((pdf, idx) => `
-          <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 12px; background: white; border: 1px solid #cbd5e1; border-radius: 6px;">
-            <span style="color: #16a34a; font-weight: bold; font-size: 0.85rem; display: flex; align-items: center; gap: 6px;">📄 ${this.escapeHtml(pdf.name)}</span>
-            <button type="button" class="btn btn-secondary btn-small" onclick="Admin.removeUploadedPdf(${idx})" style="padding: 2px 8px; font-size: 0.7rem; height: auto; margin: 0; background-color: #ef4444; color: white; border: none;">Изтрий</button>
+          <div style="display: flex; flex-direction: column; gap: 6px; padding: 10px; background: white; border: 1px solid #cbd5e1; border-radius: 6px; margin-bottom: 6px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px;">
+              <span style="color: #16a34a; font-weight: bold; font-size: 0.85rem; display: flex; align-items: center; gap: 6px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 280px;" title="${this.escapeHtml(pdf.name)}">📄 ${this.escapeHtml(pdf.name)}</span>
+              <button type="button" class="btn btn-secondary btn-small" onclick="Admin.removeUploadedPdf(${idx})" style="padding: 2px 8px; font-size: 0.7rem; height: auto; margin: 0; background-color: #ef4444; color: white; border: none; border-radius: 4px; cursor: pointer;">Изтрий</button>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 0.75rem; font-weight: bold; color: #16a34a; white-space: nowrap;">Име за показване:</span>
+              <input type="text" class="form-control" value="${this.escapeAttr(pdf.displayName || '')}" placeholder="напр. Инструкция за монтаж" oninput="Admin.updatePdfDisplayName(${idx}, this.value)" style="height: 28px; padding: 4px 8px; font-size: 0.75rem; border: 1px solid #cbd5e1; border-radius: 4px; flex: 1;">
+            </div>
           </div>
         `).join("")
       : '<span class="text-muted font-xs">Няма прикачени PDF файлове.</span>';
@@ -2184,6 +2221,12 @@ const Admin = {
     if (this.uploadedPdfs && this.uploadedPdfs[idx]) {
       this.uploadedPdfs.splice(idx, 1);
       this.renderPdfList();
+    }
+  },
+
+  updatePdfDisplayName(idx, val) {
+    if (this.uploadedPdfs && this.uploadedPdfs[idx]) {
+      this.uploadedPdfs[idx].displayName = val;
     }
   },
 
@@ -2437,10 +2480,7 @@ const Admin = {
   },
 
   cancelProductEdit() {
-    this.editingProduct = null;
-    this.uploadedImages = [];
-    this.uploadedPdfs = [];
-    this.currentColumns = null; // Clear columns
+    this.resetProductFormState();
     this.render();
   },
 
@@ -2584,10 +2624,7 @@ const Admin = {
           }
         });
         if (!saved) return;
-        this.editingProduct = null;
-        this.uploadedImages = [];
-        this.uploadedPdfs = [];
-        this.currentColumns = null;
+        this.resetProductFormState();
         alert("Продуктът е успешно редактиран и обновен на сайта!");
       } else {
         // CREATE MODE
@@ -2642,9 +2679,7 @@ const Admin = {
           CONFIG.products.push(newProduct);
         });
         if (!saved) return;
-        this.uploadedImages = [];
-        this.uploadedPdfs = [];
-        this.currentColumns = null;
+        this.resetProductFormState();
         alert("Продуктът е успешно добавен!");
       }
 
@@ -2678,6 +2713,9 @@ const Admin = {
       }
     }
 
+    if (this.editingProduct && this.editingProduct.id === productId) {
+      this.resetProductFormState();
+    }
     CONFIG.deleteProduct(productId);
     this.propagateStateChanges();
     this.render();

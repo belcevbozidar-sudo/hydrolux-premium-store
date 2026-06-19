@@ -1062,6 +1062,26 @@ CONFIG.ready = (async () => {
     return;
   }
 
+  // The home/landing page renders entirely from the built-in seed catalog
+  // (categories + featured), so the heavy server revalidation — downloading the
+  // compressed product state and decompressing/parsing ~1.9 MB of JSON — does
+  // not need to run during the initial paint. Holding it until the page has
+  // loaded and the main thread is idle keeps it from slowing down LCP.
+  await new Promise(resolve => {
+    const runWhenIdle = () => {
+      if ("requestIdleCallback" in window) {
+        requestIdleCallback(resolve, { timeout: 2000 });
+      } else {
+        setTimeout(resolve, 800);
+      }
+    };
+    if (document.readyState === "complete") {
+      runWhenIdle();
+    } else {
+      window.addEventListener("load", runWhenIdle, { once: true });
+    }
+  });
+
   try {
     const localProducts = JSON.parse(localStorage.getItem("hydrolux_products") || "[]");
     const localCategories = JSON.parse(localStorage.getItem("hydrolux_categories") || "[]");
