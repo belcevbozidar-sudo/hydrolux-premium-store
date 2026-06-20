@@ -2871,12 +2871,28 @@ const Admin = {
     if (this.editingProduct && this.editingProduct.id === productId) {
       this.resetProductFormState();
     }
-    CONFIG.deleteProduct(productId);
+
+    const previousProducts = JSON.stringify(CONFIG.products);
+    const previousDeletedProducts = JSON.stringify([...CONFIG.deletedProductIds]);
+
+    try {
+      await CONFIG.deleteProduct(productId);
+      Admin.notify("Продуктът е изтрит успешно!");
+    } catch (err) {
+      CONFIG.products = JSON.parse(previousProducts);
+      CONFIG.deletedProductIds = new Set(JSON.parse(previousDeletedProducts));
+      localStorage.setItem("hydrolux_products", previousProducts);
+      localStorage.setItem("hydrolux_deleted_product_ids", previousDeletedProducts);
+      console.error("Failed to delete product", err);
+      Admin.notify("Неуспешно изтриване: " + err.message);
+      return;
+    }
+
     this.propagateStateChanges();
     this.render();
   },
 
-  moveProduct(prodId, direction) {
+  async moveProduct(prodId, direction) {
     const catId = this.filterCategory;
     if (!catId) {
       Admin.notify("Моля, филтрирайте продуктите по категория първо, за да можете да ги подреждате!");
@@ -2891,34 +2907,37 @@ const Admin = {
     const idxFiltered = filtered.findIndex(p => p.id === prodId);
     if (idxFiltered === -1) return;
 
+    let targetIdx = -1;
+    let otherIdx = -1;
+
     if (direction === 'up' && idxFiltered > 0) {
       const targetProd = filtered[idxFiltered];
       const prevProd = filtered[idxFiltered - 1];
-      const targetIdx = CONFIG.products.findIndex(p => p.id === targetProd.id);
-      const prevIdx = CONFIG.products.findIndex(p => p.id === prevProd.id);
-
-      if (targetIdx !== -1 && prevIdx !== -1) {
-        const temp = CONFIG.products[targetIdx];
-        CONFIG.products[targetIdx] = CONFIG.products[prevIdx];
-        CONFIG.products[prevIdx] = temp;
-        
-        CONFIG.saveState();
-        this.propagateStateChanges();
-        this.filterProductsList();
-      }
+      targetIdx = CONFIG.products.findIndex(p => p.id === targetProd.id);
+      otherIdx = CONFIG.products.findIndex(p => p.id === prevProd.id);
     } else if (direction === 'down' && idxFiltered < filtered.length - 1) {
       const targetProd = filtered[idxFiltered];
       const nextProd = filtered[idxFiltered + 1];
-      const targetIdx = CONFIG.products.findIndex(p => p.id === targetProd.id);
-      const nextIdx = CONFIG.products.findIndex(p => p.id === nextProd.id);
+      targetIdx = CONFIG.products.findIndex(p => p.id === targetProd.id);
+      otherIdx = CONFIG.products.findIndex(p => p.id === nextProd.id);
+    }
 
-      if (targetIdx !== -1 && nextIdx !== -1) {
-        const temp = CONFIG.products[targetIdx];
-        CONFIG.products[targetIdx] = CONFIG.products[nextIdx];
-        CONFIG.products[nextIdx] = temp;
-        
-        CONFIG.saveState();
+    if (targetIdx !== -1 && otherIdx !== -1) {
+      const previousProducts = JSON.stringify(CONFIG.products);
+      
+      const temp = CONFIG.products[targetIdx];
+      CONFIG.products[targetIdx] = CONFIG.products[otherIdx];
+      CONFIG.products[otherIdx] = temp;
+
+      try {
+        await CONFIG.saveState();
         this.propagateStateChanges();
+        this.filterProductsList();
+      } catch (err) {
+        CONFIG.products = JSON.parse(previousProducts);
+        localStorage.setItem("hydrolux_products", previousProducts);
+        console.error("Failed to save product reordering", err);
+        Admin.notify("Грешка при пренареждане: " + err.message);
         this.filterProductsList();
       }
     }
@@ -3065,6 +3084,7 @@ const Admin = {
 
     if (this.editingCategory) {
       // EDIT MODE
+      const previousCategories = JSON.stringify(CONFIG.categories);
       const target = CONFIG.categories.find(c => c.id === this.editingCategory.id);
       if (target) {
         target.name = name;
@@ -3072,10 +3092,18 @@ const Admin = {
         target.image = image;
         target.subcategories = this.tempSubcategories || [];
       }
-      CONFIG.saveState();
-      this.editingCategory = null;
-      this.tempSubcategories = [];
-      Admin.notify("Категорията е успешно актуализирана!");
+      try {
+        await CONFIG.saveState();
+        this.editingCategory = null;
+        this.tempSubcategories = [];
+        Admin.notify("Категорията е успешно актуализирана!");
+      } catch (err) {
+        CONFIG.categories = JSON.parse(previousCategories);
+        localStorage.setItem("hydrolux_categories", previousCategories);
+        console.error("Failed to save category changes", err);
+        Admin.notify("Категорията не беше записана: " + err.message);
+        return;
+      }
     } else {
       // CREATE MODE
       // NOTE: the id MUST start with "custom-" (or be all-digits) — otherwise
@@ -3105,9 +3133,17 @@ const Admin = {
         subcategories: this.tempSubcategories || []
       };
 
-      CONFIG.addCategory(newCategory);
-      this.tempSubcategories = [];
-      Admin.notify("Категорията е успешно създадена!");
+      try {
+        await CONFIG.addCategory(newCategory);
+        this.tempSubcategories = [];
+        Admin.notify("Категорията е успешно създадена!");
+      } catch (err) {
+        CONFIG.categories = CONFIG.categories.filter(c => c.id !== newCategory.id);
+        localStorage.setItem("hydrolux_categories", JSON.stringify(CONFIG.categories));
+        console.error("Failed to add category", err);
+        Admin.notify("Категорията не беше създадена: " + err.message);
+        return;
+      }
     }
 
     this.propagateStateChanges();
@@ -3121,7 +3157,23 @@ const Admin = {
       if (typeof CONFIG !== "undefined" && typeof CONFIG.loadCatalog === "function") {
         try { await CONFIG.loadCatalog(); } catch (e) { console.warn("Catalog not loaded before category delete", e); }
       }
-      CONFIG.deleteCategory(categoryId);
+
+      const previousCategories = JSON.stringify(CONFIG.categories);
+      const previousDeletedCategories = JSON.stringify([...CONFIG.deletedCategoryIds]);
+
+      try {
+        await CONFIG.deleteCategory(categoryId);
+        Admin.notify("Категорията е изтрита успешно!");
+      } catch (err) {
+        CONFIG.categories = JSON.parse(previousCategories);
+        CONFIG.deletedCategoryIds = new Set(JSON.parse(previousDeletedCategories));
+        localStorage.setItem("hydrolux_categories", previousCategories);
+        localStorage.setItem("hydrolux_deleted_category_ids", previousDeletedCategories);
+        console.error("Failed to delete category", err);
+        Admin.notify("Неуспешно изтриване: " + err.message);
+        return;
+      }
+
       this.propagateStateChanges();
       this.render();
     }
@@ -3198,12 +3250,20 @@ const Admin = {
     }
   },
 
-  saveTemplates() {
+  async saveTemplates() {
+    const previousTemplates = localStorage.getItem("hydrolux_table_templates");
     localStorage.setItem("hydrolux_table_templates", JSON.stringify(this.savedTemplates));
     if (typeof HydroluxBackend !== "undefined") {
-      HydroluxBackend.saveStateValue("tableTemplates", this.savedTemplates).catch(err => {
-        console.warn("Convex template sync failed", err);
-      });
+      try {
+        await HydroluxBackend.saveStateValue("tableTemplates", this.savedTemplates);
+      } catch (err) {
+        if (previousTemplates !== null) {
+          localStorage.setItem("hydrolux_table_templates", previousTemplates);
+          this.savedTemplates = JSON.parse(previousTemplates);
+        }
+        console.error("Convex template sync failed", err);
+        Admin.notify("Шаблоните не бяха записани в Convex: " + err.message);
+      }
     }
   },
 

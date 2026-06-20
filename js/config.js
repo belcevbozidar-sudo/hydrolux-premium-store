@@ -1092,6 +1092,10 @@ if (localStorage.getItem("hydrolux_builder_options")) {
 // `await CONFIG.loadCatalog()` guards across the admin still work — they now
 // wait for the initial Convex sync to finish, which guarantees the full
 // product list is in memory before any save.
+CONFIG.isStateLoadedFromServer = false;
+CONFIG.productsUpdatedAt = null;
+CONFIG.categoriesUpdatedAt = null;
+
 CONFIG.loadCatalog = function() {
   return CONFIG.ready || Promise.resolve();
 };
@@ -1126,24 +1130,35 @@ CONFIG.ready = (async () => {
     const localCategories = JSON.parse(localStorage.getItem("hydrolux_categories") || "[]");
     const localTemplates = JSON.parse(localStorage.getItem("hydrolux_table_templates") || "[]");
 
-    const state = await HydroluxBackend.getState().catch(err => {
+    let isLoaded = false;
+    const state = await HydroluxBackend.getState().then(res => {
+      isLoaded = true;
+      return res;
+    }).catch(err => {
       console.warn("Convex getState failed", err);
-      return {};
+      return null;
     });
 
-    // Fold the database's tombstones into the local ones so deletions made on
-    // any device are honoured everywhere.
-    if (Array.isArray(state.deletedProductIds)) {
-      state.deletedProductIds.forEach(id => CONFIG.deletedProductIds.add(String(id)));
-    }
-    if (Array.isArray(state.deletedCategoryIds)) {
-      state.deletedCategoryIds.forEach(id => CONFIG.deletedCategoryIds.add(String(id)));
+    CONFIG.isStateLoadedFromServer = isLoaded;
+
+    if (isLoaded && state) {
+      CONFIG.productsUpdatedAt = state.productsUpdatedAt || null;
+      CONFIG.categoriesUpdatedAt = state.categoriesUpdatedAt || null;
+
+      // Fold the database's tombstones into the local ones so deletions made on
+      // any device are honoured everywhere.
+      if (Array.isArray(state.deletedProductIds)) {
+        state.deletedProductIds.forEach(id => CONFIG.deletedProductIds.add(String(id)));
+      }
+      if (Array.isArray(state.deletedCategoryIds)) {
+        state.deletedCategoryIds.forEach(id => CONFIG.deletedCategoryIds.add(String(id)));
+      }
     }
 
-    const hasRemoteProducts = Array.isArray(state.products) && state.products.length > 0;
-    const hasRemoteCategories = Array.isArray(state.categories) && state.categories.length > 0;
-    const hasRemoteTemplates = Array.isArray(state.tableTemplates);
-    const hasRemoteBuilderOptions = state.builderOptions !== null && state.builderOptions !== undefined;
+    const hasRemoteProducts = state && Array.isArray(state.products) && state.products.length > 0;
+    const hasRemoteCategories = state && Array.isArray(state.categories) && state.categories.length > 0;
+    const hasRemoteTemplates = state && Array.isArray(state.tableTemplates);
+    const hasRemoteBuilderOptions = state && state.builderOptions !== null && state.builderOptions !== undefined;
     let shouldSyncMergedState = false;
 
     if (hasRemoteCategories) {
@@ -1197,9 +1212,9 @@ CONFIG.ready = (async () => {
     // brand-new Convex instance), write the in-memory baseline so subsequent
     // loads on any device have something to fetch. After that, the database
     // is the only source of truth and every write is an explicit admin save.
-    if (!hasRemoteProducts || !hasRemoteCategories) {
+    if (CONFIG.isStateLoadedFromServer && (!hasRemoteProducts || !hasRemoteCategories)) {
       try {
-        await HydroluxBackend.saveState({
+        const seedResult = await HydroluxBackend.saveState({
           products: CONFIG.products,
           categories: CONFIG.categories,
           tableTemplates: JSON.parse(localStorage.getItem("hydrolux_table_templates") || "null"),
@@ -1207,6 +1222,10 @@ CONFIG.ready = (async () => {
           deletedProductIds: [...CONFIG.deletedProductIds],
           deletedCategoryIds: [...CONFIG.deletedCategoryIds],
         });
+        if (seedResult && seedResult.ok && seedResult.updatedAt) {
+          CONFIG.productsUpdatedAt = seedResult.updatedAt;
+          CONFIG.categoriesUpdatedAt = seedResult.updatedAt;
+        }
       } catch (syncErr) {
         console.warn("Initial seed sync failed", syncErr);
       }
@@ -1224,6 +1243,10 @@ CONFIG.ready = (async () => {
 
 // Global API to save state
 CONFIG.saveState = async function() {
+  if (CONFIG.isStateLoadedFromServer === false) {
+    throw new Error("Базата данни не е заредена успешно. Моля, презаредете страницата преди да правите промени.");
+  }
+
   // DEFENSE IN DEPTH: every caller (admin edit, delete, reorder, drag-drop,
   // template save, ...) eventually funnels through this function. We MUST have
   // the full product catalog in memory before serialising it back to Convex —
@@ -1248,37 +1271,44 @@ CONFIG.saveState = async function() {
     builderOptions: CONFIG.builderOptions,
     deletedProductIds: [...CONFIG.deletedProductIds],
     deletedCategoryIds: [...CONFIG.deletedCategoryIds],
+    lastProductsUpdatedAt: CONFIG.productsUpdatedAt || undefined,
+    lastCategoriesUpdatedAt: CONFIG.categoriesUpdatedAt || undefined,
   };
 
   if (typeof HydroluxBackend === "undefined") {
     return { ok: true, localOnly: true };
   }
 
-  return HydroluxBackend.saveState(values);
+  const result = await HydroluxBackend.saveState(values);
+  if (result && result.ok && result.updatedAt) {
+    CONFIG.productsUpdatedAt = result.updatedAt;
+    CONFIG.categoriesUpdatedAt = result.updatedAt;
+  }
+  return result;
 };
 
 CONFIG.addProduct = function(p) {
   if (p && p.id) CONFIG.deletedProductIds.delete(String(p.id));
   CONFIG.products.push(p);
-  CONFIG.saveState();
+  return CONFIG.saveState();
 };
 
 CONFIG.deleteProduct = function(productId) {
   CONFIG.products = CONFIG.products.filter(p => p.id !== productId);
   CONFIG.deletedProductIds.add(String(productId));
-  CONFIG.saveState();
+  return CONFIG.saveState();
 };
 
 CONFIG.addCategory = function(c) {
   if (c && c.id) CONFIG.deletedCategoryIds.delete(String(c.id));
   CONFIG.categories.push(c);
-  CONFIG.saveState();
+  return CONFIG.saveState();
 };
 
 CONFIG.deleteCategory = function(categoryId) {
   CONFIG.categories = CONFIG.categories.filter(c => c.id !== categoryId);
   CONFIG.deletedCategoryIds.add(String(categoryId));
-  CONFIG.saveState();
+  return CONFIG.saveState();
 };
 
 CONFIG.resetToDefaults = function() {

@@ -70,8 +70,25 @@ export const setState = mutation({
     builderOptions: v.optional(v.any()),
     deletedProductIds: v.optional(v.any()),
     deletedCategoryIds: v.optional(v.any()),
+    lastProductsUpdatedAt: v.optional(v.number()),
+    lastCategoriesUpdatedAt: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
+    // Concurrency Checks (Optimistic Concurrency Control)
+    if (args.lastProductsUpdatedAt !== undefined && args.products !== undefined) {
+      const existing = await getStateDoc(ctx, "products");
+      if (existing && existing.updatedAt > args.lastProductsUpdatedAt) {
+        throw new Error("Конфликт при запис: Каталогът с продукти е бил обновен от друг администратор. Моля, презаредете страницата.");
+      }
+    }
+
+    if (args.lastCategoriesUpdatedAt !== undefined && args.categories !== undefined) {
+      const existing = await getStateDoc(ctx, "categories");
+      if (existing && existing.updatedAt > args.lastCategoriesUpdatedAt) {
+        throw new Error("Конфликт при запис: Категориите са били обновени от друг администратор. Моля, презаредете страницата.");
+      }
+    }
+
     const updatedAt = Date.now();
 
     for (const key of STATE_KEYS) {
