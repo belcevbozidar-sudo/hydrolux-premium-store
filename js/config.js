@@ -874,9 +874,21 @@ function formatPrice(price, isPerMeter = false) {
     bgnRaw: bgnPrice
   };
 }function saveLocalState() {
-  localStorage.setItem("hydrolux_products", JSON.stringify(CONFIG.products));
-  localStorage.setItem("hydrolux_categories", JSON.stringify(CONFIG.categories));
-  localStorage.setItem("hydrolux_builder_options", JSON.stringify(CONFIG.builderOptions));
+  // Wrapped so a localStorage failure (e.g. quota exceeded) can never block the
+  // authoritative save to the Convex database that follows it.
+  try {
+    localStorage.setItem("hydrolux_products", JSON.stringify(CONFIG.products));
+    localStorage.setItem("hydrolux_categories", JSON.stringify(CONFIG.categories));
+    localStorage.setItem("hydrolux_builder_options", JSON.stringify(CONFIG.builderOptions));
+    if (CONFIG.deletedProductIds) {
+      localStorage.setItem("hydrolux_deleted_product_ids", JSON.stringify([...CONFIG.deletedProductIds]));
+    }
+    if (CONFIG.deletedCategoryIds) {
+      localStorage.setItem("hydrolux_deleted_category_ids", JSON.stringify([...CONFIG.deletedCategoryIds]));
+    }
+  } catch (e) {
+    console.warn("saveLocalState: could not write to localStorage (quota?)", e);
+  }
 }
 
 function mergeById(remoteItems, localItems) {
@@ -903,6 +915,41 @@ function filterOldItems(items) {
   });
 }
 
+// --- Deletion tombstones -----------------------------------------------------
+// Products and categories live in THREE places: the static seed catalog
+// (products_catalog.json / the CONFIG seed), the Convex database, and the
+// browser's localStorage cache. Deleting an item removes it from the database
+// and the cache, but NOT from the static seed — so on the next load the seed
+// was merged back on top and the deleted item reappeared. Tombstones record the
+// ids that were deleted on purpose so the merge can suppress them permanently.
+function parseIdSet(raw) {
+  try {
+    const arr = JSON.parse(raw || "[]");
+    return new Set(Array.isArray(arr) ? arr.map(String) : []);
+  } catch (e) {
+    return new Set();
+  }
+}
+
+CONFIG.deletedProductIds = parseIdSet(localStorage.getItem("hydrolux_deleted_product_ids"));
+CONFIG.deletedCategoryIds = parseIdSet(localStorage.getItem("hydrolux_deleted_category_ids"));
+
+// Removes tombstoned items from a list.
+function applyTombstones(items, deletedSet) {
+  if (!Array.isArray(items)) return [];
+  if (!deletedSet || deletedSet.size === 0) return items;
+  return items.filter(it => it && it.id && !deletedSet.has(String(it.id)));
+}
+
+// If an id was re-added (it is present again in the authoritative edited/remote
+// list), it is no longer deleted — drop it from the tombstone set. IMPORTANT:
+// only reconcile against edited/remote data, never against the static seed,
+// otherwise the seed would immediately "un-delete" everything.
+function reconcileTombstones(deletedSet, editedItems) {
+  if (!deletedSet || !Array.isArray(editedItems)) return;
+  editedItems.forEach(it => { if (it && it.id) deletedSet.delete(String(it.id)); });
+}
+
 // Clear localStorage products/categories if they contain old unsplash urls, png image extensions, or old category IDs
 const hasOldUnsplashOrPng = localStorage.getItem("hydrolux_products") && 
     (localStorage.getItem("hydrolux_products").includes("unsplash.com") || localStorage.getItem("hydrolux_products").includes(".png"));
@@ -915,14 +962,17 @@ if (hasOldUnsplashOrPng || hasOldCategoryIds) {
   localStorage.removeItem("hydrolux_builder_options");
 }
 
-// Load dynamic state if present in localStorage to support admin dashboard updates in real-time
-let staticProducts = [];
+// Load dynamic state if present in localStorage to support admin dashboard updates in real-time.
+// staticCategories holds the original CONFIG seed (~17 categories) so that on a fresh device,
+// the home page can render category cards instantly while the database call resolves.
+// There is no longer a static products list — products come exclusively from Convex.
 const staticCategories = [...CONFIG.categories];
 
 if (localStorage.getItem("hydrolux_products")) {
   try {
-    const local = JSON.parse(localStorage.getItem("hydrolux_products"));
-    CONFIG.products = mergeById(filterOldItems(local), staticProducts);
+    const local = filterOldItems(JSON.parse(localStorage.getItem("hydrolux_products")));
+    reconcileTombstones(CONFIG.deletedProductIds, local);
+    CONFIG.products = applyTombstones(local, CONFIG.deletedProductIds);
   } catch (e) {
     console.error("Error parsing products from localStorage", e);
   }
@@ -932,8 +982,9 @@ if (localStorage.getItem("hydrolux_products")) {
 
 if (localStorage.getItem("hydrolux_categories")) {
   try {
-    const local = JSON.parse(localStorage.getItem("hydrolux_categories"));
-    CONFIG.categories = mergeById(filterOldItems(local), staticCategories);
+    const local = filterOldItems(JSON.parse(localStorage.getItem("hydrolux_categories")));
+    reconcileTombstones(CONFIG.deletedCategoryIds, local);
+    CONFIG.categories = applyTombstones(mergeById(local, staticCategories), CONFIG.deletedCategoryIds);
   } catch (e) {
     console.error("Error parsing categories from localStorage", e);
   }
@@ -1027,38 +1078,26 @@ if (localStorage.getItem("hydrolux_builder_options")) {
   saveLocalState();
 }
 
-let catalogLoadPromise = null;
-
+// SINGLE SOURCE OF TRUTH: the Convex database. The site used to also ship a
+// 3.7MB products_catalog.json file with the original imported catalog, and
+// merge it into memory on every page load. That created an entire class of
+// bugs — every edit had to "fight" the static file to survive a reload,
+// imported products behaved differently from manually-added ones, and a
+// race between the deferred static fetch and a fresh database write could
+// silently revert edits. The static catalog has been removed: every product
+// (imported or manually added) lives only in Convex, edits apply cleanly,
+// and there is nothing to overwrite them.
+//
+// loadCatalog is kept as a thin alias for CONFIG.ready so that the many
+// `await CONFIG.loadCatalog()` guards across the admin still work — they now
+// wait for the initial Convex sync to finish, which guarantees the full
+// product list is in memory before any save.
 CONFIG.loadCatalog = function() {
-  if (catalogLoadPromise) return catalogLoadPromise;
-
-  const configScript = document.querySelector('script[src*="config.js"]');
-  const catalogUrl = configScript ? configScript.src.replace("config.js", "products_catalog.json") : "js/products_catalog.json";
-
-  catalogLoadPromise = fetch(catalogUrl)
-    .then(res => res.json())
-    .then(catalogResponse => {
-      staticProducts = catalogResponse;
-      const localProducts = JSON.parse(localStorage.getItem("hydrolux_products") || "[]");
-      CONFIG.products = mergeById(filterOldItems(localProducts), staticProducts);
-      saveLocalState();
-      
-      if (typeof App !== "undefined" && typeof App.renderAllUI === "function") {
-        App.renderAllUI();
-      }
-      return catalogResponse;
-    })
-    .catch(err => {
-      console.warn("Failed to fetch static products catalog", err);
-      return [];
-    });
-
-  return catalogLoadPromise;
+  return CONFIG.ready || Promise.resolve();
 };
 
 CONFIG.ready = (async () => {
   if (typeof HydroluxBackend === "undefined") {
-    setTimeout(() => CONFIG.loadCatalog(), 2000);
     return;
   }
 
@@ -1092,6 +1131,15 @@ CONFIG.ready = (async () => {
       return {};
     });
 
+    // Fold the database's tombstones into the local ones so deletions made on
+    // any device are honoured everywhere.
+    if (Array.isArray(state.deletedProductIds)) {
+      state.deletedProductIds.forEach(id => CONFIG.deletedProductIds.add(String(id)));
+    }
+    if (Array.isArray(state.deletedCategoryIds)) {
+      state.deletedCategoryIds.forEach(id => CONFIG.deletedCategoryIds.add(String(id)));
+    }
+
     const hasRemoteProducts = Array.isArray(state.products) && state.products.length > 0;
     const hasRemoteCategories = Array.isArray(state.categories) && state.categories.length > 0;
     const hasRemoteTemplates = Array.isArray(state.tableTemplates);
@@ -1101,8 +1149,12 @@ CONFIG.ready = (async () => {
     if (hasRemoteCategories) {
       const cleanRemoteCategories = filterOldItems(state.categories);
       const cleanLocalCategories = filterOldItems(localCategories);
-      const mergedCategories = mergeById(mergeById(cleanRemoteCategories, cleanLocalCategories), staticCategories);
-      shouldSyncMergedState = mergedCategories.length !== state.categories.length || 
+      // Reconcile against edited (remote+local) data only, then merge the static
+      // seed on top, then strip tombstoned categories so deletions stick.
+      const editedCategories = mergeById(cleanRemoteCategories, cleanLocalCategories);
+      reconcileTombstones(CONFIG.deletedCategoryIds, editedCategories);
+      const mergedCategories = applyTombstones(mergeById(editedCategories, staticCategories), CONFIG.deletedCategoryIds);
+      shouldSyncMergedState = mergedCategories.length !== state.categories.length ||
                               JSON.stringify(mergedCategories) !== JSON.stringify(state.categories);
       CONFIG.categories = mergedCategories;
     }
@@ -1131,69 +1183,101 @@ CONFIG.ready = (async () => {
     saveLocalState();
 
     if (hasRemoteProducts) {
+      // The database is the source of truth — local cache only fills gaps for
+      // items the server doesn't know about (rare, e.g. half-saved drafts).
       const cleanRemoteProducts = filterOldItems(state.products);
       const cleanLocalProducts = filterOldItems(localProducts);
-      CONFIG.products = mergeById(cleanRemoteProducts, cleanLocalProducts);
+      const editedProducts = mergeById(cleanRemoteProducts, cleanLocalProducts);
+      reconcileTombstones(CONFIG.deletedProductIds, editedProducts);
+      CONFIG.products = applyTombstones(editedProducts, CONFIG.deletedProductIds);
+      saveLocalState();
     }
 
-    // Trigger deferred load of the full 3.7MB products catalog after 2.5 seconds to optimize initial PageSpeed score
-    setTimeout(() => {
-      CONFIG.loadCatalog().then(async () => {
-        if (shouldSyncMergedState || !hasRemoteProducts || !hasRemoteCategories) {
-          try {
-            await HydroluxBackend.saveState({
-              products: CONFIG.products,
-              categories: CONFIG.categories,
-              tableTemplates: JSON.parse(localStorage.getItem("hydrolux_table_templates") || "null"),
-              builderOptions: CONFIG.builderOptions,
-            });
-          } catch (syncErr) {
-            console.warn("Background sync failed", syncErr);
-          }
-        }
-      });
-    }, 2500);
+    // ONE-TIME SEED: if the database is empty (first ever load against a
+    // brand-new Convex instance), write the in-memory baseline so subsequent
+    // loads on any device have something to fetch. After that, the database
+    // is the only source of truth and every write is an explicit admin save.
+    if (!hasRemoteProducts || !hasRemoteCategories) {
+      try {
+        await HydroluxBackend.saveState({
+          products: CONFIG.products,
+          categories: CONFIG.categories,
+          tableTemplates: JSON.parse(localStorage.getItem("hydrolux_table_templates") || "null"),
+          builderOptions: CONFIG.builderOptions,
+          deletedProductIds: [...CONFIG.deletedProductIds],
+          deletedCategoryIds: [...CONFIG.deletedCategoryIds],
+        });
+      } catch (syncErr) {
+        console.warn("Initial seed sync failed", syncErr);
+      }
+    }
+
+    // Render with the freshly-loaded database state.
+    if (typeof App !== "undefined" && typeof App.renderAllUI === "function") {
+      App.renderAllUI();
+    }
 
   } catch (err) {
-    console.warn("Convex state load failed; using browser fallback", err);
-    setTimeout(() => CONFIG.loadCatalog(), 2000);
+    console.warn("Convex state load failed; using local cache only", err);
   }
 })();
 
 // Global API to save state
-CONFIG.saveState = function() {
+CONFIG.saveState = async function() {
+  // DEFENSE IN DEPTH: every caller (admin edit, delete, reorder, drag-drop,
+  // template save, ...) eventually funnels through this function. We MUST have
+  // the full product catalog in memory before serialising it back to Convex —
+  // otherwise a save triggered while the lazy 3.7MB catalog is still loading
+  // would persist a partial product list and wipe the rest of the store.
+  // Guarding here protects all call sites, even the ones that forgot to await
+  // loadCatalog themselves.
+  if (typeof CONFIG.loadCatalog === "function") {
+    try { await CONFIG.loadCatalog(); } catch (e) { /* keep saving anyway */ }
+  }
+
+  // An id that is present again must not stay tombstoned (handles re-adding a
+  // product/category that was previously deleted).
+  reconcileTombstones(CONFIG.deletedProductIds, CONFIG.products);
+  reconcileTombstones(CONFIG.deletedCategoryIds, CONFIG.categories);
+
   saveLocalState();
   const values = {
     products: CONFIG.products,
     categories: CONFIG.categories,
     tableTemplates: JSON.parse(localStorage.getItem("hydrolux_table_templates") || "null"),
     builderOptions: CONFIG.builderOptions,
+    deletedProductIds: [...CONFIG.deletedProductIds],
+    deletedCategoryIds: [...CONFIG.deletedCategoryIds],
   };
 
   if (typeof HydroluxBackend === "undefined") {
-    return Promise.resolve({ ok: true, localOnly: true });
+    return { ok: true, localOnly: true };
   }
 
   return HydroluxBackend.saveState(values);
 };
 
 CONFIG.addProduct = function(p) {
+  if (p && p.id) CONFIG.deletedProductIds.delete(String(p.id));
   CONFIG.products.push(p);
   CONFIG.saveState();
 };
 
 CONFIG.deleteProduct = function(productId) {
   CONFIG.products = CONFIG.products.filter(p => p.id !== productId);
+  CONFIG.deletedProductIds.add(String(productId));
   CONFIG.saveState();
 };
 
 CONFIG.addCategory = function(c) {
+  if (c && c.id) CONFIG.deletedCategoryIds.delete(String(c.id));
   CONFIG.categories.push(c);
   CONFIG.saveState();
 };
 
 CONFIG.deleteCategory = function(categoryId) {
   CONFIG.categories = CONFIG.categories.filter(c => c.id !== categoryId);
+  CONFIG.deletedCategoryIds.add(String(categoryId));
   CONFIG.saveState();
 };
 
@@ -1201,6 +1285,10 @@ CONFIG.resetToDefaults = function() {
   localStorage.removeItem("hydrolux_products");
   localStorage.removeItem("hydrolux_categories");
   localStorage.removeItem("hydrolux_builder_options");
+  localStorage.removeItem("hydrolux_deleted_product_ids");
+  localStorage.removeItem("hydrolux_deleted_category_ids");
+  CONFIG.deletedProductIds = new Set();
+  CONFIG.deletedCategoryIds = new Set();
   window.location.reload();
 };
 

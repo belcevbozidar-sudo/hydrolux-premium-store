@@ -1,7 +1,17 @@
 import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
 
-const STATE_KEYS = ["products", "categories", "tableTemplates", "builderOptions"];
+const STATE_KEYS = [
+  "products",
+  "categories",
+  "tableTemplates",
+  "builderOptions",
+  // Tombstones: ids of products/categories the admin deleted on purpose. They
+  // are applied during the client-side merge so deleted items that still live
+  // in the static seed catalog are never resurrected.
+  "deletedProductIds",
+  "deletedCategoryIds",
+];
 
 async function getStateDoc(ctx, key) {
   return await ctx.db
@@ -58,6 +68,8 @@ export const setState = mutation({
     categories: v.optional(v.any()),
     tableTemplates: v.optional(v.any()),
     builderOptions: v.optional(v.any()),
+    deletedProductIds: v.optional(v.any()),
+    deletedCategoryIds: v.optional(v.any()),
   },
   handler: async (ctx, args) => {
     const updatedAt = Date.now();

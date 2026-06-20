@@ -38,6 +38,14 @@ const Admin = {
     this.injectStyles();
     this.render();
 
+    // The admin must work on the COMPLETE catalog, not a partial in-memory set,
+    // so kick off the full catalog load immediately and re-render once it lands.
+    if (typeof CONFIG !== "undefined" && typeof CONFIG.loadCatalog === "function") {
+      CONFIG.loadCatalog().then(() => {
+        try { Admin.render(); } catch (e) { /* view may have changed */ }
+      }).catch(() => {});
+    }
+
     // Register global selection tracker
     document.addEventListener("selectionchange", () => {
       const sel = window.getSelection();
@@ -958,8 +966,122 @@ const Admin = {
         border: 1.5px dashed var(--accent) !important;
         background-color: #f8fafc !important;
       }
+
+      /* Styled in-app notifications (replace native alert/confirm) */
+      .admin-toast {
+        position: fixed; top: 24px; left: 50%;
+        transform: translateX(-50%) translateY(-24px);
+        z-index: 2147483000; display: flex; align-items: center; gap: 10px;
+        padding: 14px 22px; border-radius: 12px; color: #fff;
+        font-weight: 700; font-size: 0.95rem; line-height: 1.35;
+        box-shadow: 0 14px 36px rgba(0,0,0,0.28); max-width: 92vw;
+        opacity: 0; transition: opacity .28s ease, transform .28s ease;
+      }
+      .admin-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+      .admin-toast-icon {
+        flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%;
+        background: rgba(255,255,255,0.25); display: inline-flex;
+        align-items: center; justify-content: center; font-size: 0.85rem;
+      }
+      .admin-confirm-overlay {
+        position: fixed; inset: 0; z-index: 2147483001;
+        background: rgba(6, 28, 54, 0.55); backdrop-filter: blur(2px);
+        display: flex; align-items: center; justify-content: center; padding: 20px;
+        opacity: 0; transition: opacity .2s ease;
+      }
+      .admin-confirm-overlay.show { opacity: 1; }
+      .admin-confirm-box {
+        background: #fff; border-radius: 16px; padding: 26px 24px 20px;
+        max-width: 420px; width: 100%; box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+        transform: scale(.94); transition: transform .2s ease; text-align: center;
+      }
+      .admin-confirm-overlay.show .admin-confirm-box { transform: scale(1); }
+      .admin-confirm-msg {
+        font-size: 1rem; font-weight: 600; color: #1e293b;
+        line-height: 1.5; margin-bottom: 22px;
+      }
+      .admin-confirm-actions { display: flex; gap: 12px; justify-content: center; }
+      .admin-confirm-actions button {
+        flex: 1; max-width: 170px; padding: 12px 16px; border-radius: 10px;
+        font-weight: 700; font-size: 0.92rem; cursor: pointer; border: none;
+        transition: filter .15s ease, transform .1s ease;
+      }
+      .admin-confirm-actions button:active { transform: scale(.97); }
+      .admin-confirm-cancel { background: #e2e8f0; color: #334155; }
+      .admin-confirm-cancel:hover { filter: brightness(0.96); }
+      .admin-confirm-ok { background: #2563eb; color: #fff; }
+      .admin-confirm-ok.danger { background: #ef4444; }
+      .admin-confirm-ok:hover { filter: brightness(1.07); }
     `;
     document.head.appendChild(style);
+  },
+
+  // Styled toast notification — replaces the browser-native Admin.notify() so success
+  // and validation messages match the site design instead of looking like a
+  // system dialog. Type is auto-detected from the message when not given.
+  notify(message, type) {
+    const text = String(message == null ? "" : message);
+    if (!type) {
+      if (/успешно|обнов|добав|създад|редактир|запис|готов|възстанов|премахнат|изтрит/i.test(text)) type = "success";
+      else if (/моля|грешка|невалид|твърде|не успя|не беше|съществува|изберете|въведете|добавете|липсва|неуспешн/i.test(text)) type = "error";
+      else type = "info";
+    }
+    const styles = {
+      success: { bg: "#16a34a", icon: "✓" },
+      error:   { bg: "#ef4444", icon: "!" },
+      warning: { bg: "#f59e0b", icon: "!" },
+      info:    { bg: "#2563eb", icon: "i" },
+    };
+    const s = styles[type] || styles.info;
+    const toast = document.createElement("div");
+    toast.className = "admin-toast";
+    toast.style.backgroundColor = s.bg;
+    toast.innerHTML = `<span class="admin-toast-icon">${s.icon}</span><span>${this.escapeHtml(text).replace(/\n/g, "<br>")}</span>`;
+    document.body.appendChild(toast);
+    requestAnimationFrame(() => toast.classList.add("show"));
+    const ttl = type === "error" ? 4500 : 3200;
+    setTimeout(() => {
+      toast.classList.remove("show");
+      setTimeout(() => toast.remove(), 350);
+    }, ttl);
+  },
+
+  // Styled confirmation dialog — replaces the browser-native confirm().
+  // Returns a Promise that resolves to true (confirmed) or false (cancelled).
+  confirmDialog(message, options = {}) {
+    const { confirmText = "Да", cancelText = "Отказ", danger = true } = options;
+    return new Promise(resolve => {
+      const overlay = document.createElement("div");
+      overlay.className = "admin-confirm-overlay";
+      overlay.innerHTML = `
+        <div class="admin-confirm-box" role="dialog" aria-modal="true">
+          <div class="admin-confirm-msg">${this.escapeHtml(String(message)).replace(/\n/g, "<br>")}</div>
+          <div class="admin-confirm-actions">
+            <button type="button" class="admin-confirm-cancel">${this.escapeHtml(cancelText)}</button>
+            <button type="button" class="admin-confirm-ok ${danger ? "danger" : ""}">${this.escapeHtml(confirmText)}</button>
+          </div>
+        </div>`;
+      document.body.appendChild(overlay);
+      requestAnimationFrame(() => overlay.classList.add("show"));
+
+      let settled = false;
+      const close = (val) => {
+        if (settled) return;
+        settled = true;
+        overlay.classList.remove("show");
+        setTimeout(() => overlay.remove(), 220);
+        document.removeEventListener("keydown", onKey);
+        resolve(val);
+      };
+      const onKey = (e) => {
+        if (e.key === "Escape") close(false);
+        else if (e.key === "Enter") close(true);
+      };
+      overlay.querySelector(".admin-confirm-cancel").addEventListener("click", () => close(false));
+      overlay.querySelector(".admin-confirm-ok").addEventListener("click", () => close(true));
+      overlay.addEventListener("click", (e) => { if (e.target === overlay) close(false); });
+      document.addEventListener("keydown", onKey);
+    });
   },
 
   saveSelection() {
@@ -1171,11 +1293,11 @@ const Admin = {
   async restoreArchivedProduct(productId) {
     const row = (this.archivedProducts || []).find(r => (r.data && r.data.id) === productId);
     if (!row || !row.data) {
-      alert("Не е намерен архивен запис за този продукт.");
+      Admin.notify("Не е намерен архивен запис за този продукт.");
       return;
     }
     if (CONFIG.products.some(p => p.id === productId)) {
-      alert("Този продукт вече съществува на сайта.");
+      Admin.notify("Този продукт вече съществува на сайта.");
       this.loadArchive();
       return;
     }
@@ -1191,7 +1313,7 @@ const Admin = {
     }
 
     this.propagateStateChanges();
-    alert("Продуктът е възстановен и отново е на сайта!");
+    Admin.notify("Продуктът е възстановен и отново е на сайта!");
     this.loadArchive();
   },
 
@@ -1977,7 +2099,7 @@ const Admin = {
     }
 
     if (this.currentColumns.some(c => c.key === newKey && c.key !== oldKey)) {
-      alert("Тази колона вече съществува в таблицата!");
+      Admin.notify("Тази колона вече съществува в таблицата!");
       this.refreshVariantsTable(activeVariants);
       return;
     }
@@ -2006,8 +2128,8 @@ const Admin = {
     this.refreshVariantsTable(activeVariants);
   },
 
-  deleteColumn(key) {
-    if (confirm("Сигурни ли сте, че искате да изтриете тази колона? Данните в нея ще бъдат премахнати.")) {
+  async deleteColumn(key) {
+    if (await this.confirmDialog("Сигурни ли сте, че искате да изтриете тази колона? Данните в нея ще бъдат премахнати.")) {
       const activeVariants = this.collectVariantsFromDOM();
       if (activeVariants) {
         activeVariants.forEach(v => {
@@ -2072,7 +2194,7 @@ const Admin = {
           Admin.updateImageUploadStatus("Снимките са готови за запис.");
         } catch (err) {
           console.error("Image upload failed", err);
-          alert("Не успяхме да обработим снимките. Моля опитайте с по-малки JPG/PNG файлове.");
+          Admin.notify("Не успяхме да обработим снимките. Моля опитайте с по-малки JPG/PNG файлове.");
         } finally {
           Admin.isProcessingImages = false;
           Admin.updateProductSubmitState();
@@ -2095,11 +2217,11 @@ const Admin = {
         const validFiles = [];
         for (const file of files) {
           if (file.type !== "application/pdf") {
-            alert(`Файлът "${file.name}" не е валиден PDF документ.`);
+            Admin.notify(`Файлът "${file.name}" не е валиден PDF документ.`);
             continue;
           }
           if (file.size > maxSize) {
-            alert(`Файлът "${file.name}" е твърде голям (над 10 MB).`);
+            Admin.notify(`Файлът "${file.name}" е твърде голям (над 10 MB).`);
             continue;
           }
           validFiles.push(file);
@@ -2127,7 +2249,7 @@ const Admin = {
             Admin.renderPdfList();
           } catch (err) {
             console.error("PDF upload failed", err);
-            alert(`Не успяхме да качим файла "${file.name}". Моля проверете интернет връзката и опитайте отново.`);
+            Admin.notify(`Не успяхме да качим файла "${file.name}". Моля проверете интернет връзката и опитайте отново.`);
           }
         }
 
@@ -2485,6 +2607,16 @@ const Admin = {
   },
 
   async persistProductChanges(changeFn) {
+    // Make sure the FULL product catalog is loaded before saving, otherwise we
+    // could persist a partial product list to Convex and wipe other products.
+    if (typeof CONFIG !== "undefined" && typeof CONFIG.loadCatalog === "function") {
+      try {
+        await CONFIG.loadCatalog();
+      } catch (e) {
+        console.warn("Catalog not fully loaded before save", e);
+      }
+    }
+
     const previousProducts = JSON.stringify(CONFIG.products);
     const previousCategories = JSON.stringify(CONFIG.categories);
 
@@ -2503,7 +2635,7 @@ const Admin = {
       }
 
       console.error("Could not save product changes", err);
-      alert("Продуктът не беше записан в Convex. Моля проверете интернет връзката и опитайте отново.");
+      Admin.notify("Продуктът не беше записан в Convex. Моля проверете интернет връзката и опитайте отново.");
       return false;
     }
   },
@@ -2513,12 +2645,12 @@ const Admin = {
       event.preventDefault();
 
       if (this.isProcessingImages) {
-        alert("Моля изчакайте снимките да се обработят и опитайте отново.");
+        Admin.notify("Моля изчакайте снимките да се обработят и опитайте отново.");
         return;
       }
 
       if (this.isProcessingPdfs) {
-        alert("Моля изчакайте PDF файловете да се качат и опитайте отново.");
+        Admin.notify("Моля изчакайте PDF файловете да се качат и опитайте отново.");
         return;
       }
 
@@ -2547,9 +2679,9 @@ const Admin = {
       }
 
       // JS-based validation for required core fields (replaces silent HTML5 blocks)
-      if (!name) { alert("Моля въведете Име на продукта!"); document.getElementById("prod-name")?.focus(); return; }
-      if (!code) { alert("Моля въведете Код / Артикулен номер!"); document.getElementById("prod-code")?.focus(); return; }
-      if (categories.length === 0) { alert("Моля изберете поне една Категория!"); return; }
+      if (!name) { Admin.notify("Моля въведете Име на продукта!"); document.getElementById("prod-name")?.focus(); return; }
+      if (!code) { Admin.notify("Моля въведете Код / Артикулен номер!"); document.getElementById("prod-code")?.focus(); return; }
+      if (categories.length === 0) { Admin.notify("Моля изберете поне една Категория!"); return; }
       const editor = document.getElementById("prod-description-editor");
       const description = editor ? (editor.innerHTML || "").trim() : "";
       const tagsInput = document.getElementById("prod-tags")?.value || "";
@@ -2560,7 +2692,7 @@ const Admin = {
         : "";
 
       if (isSpecial && specialOfferType === "other" && !specialOfferText) {
-        alert("Моля въведете текст за специалното предложение!");
+        Admin.notify("Моля въведете текст за специалното предложение!");
         document.getElementById("prod-special-text")?.focus();
         return;
       }
@@ -2571,7 +2703,7 @@ const Admin = {
       const images = this.uploadedImages.filter(img => img !== null && img !== "");
 
       if (images.length === 0) {
-        alert("Моля качете поне една снимка от устройството!");
+        Admin.notify("Моля качете поне една снимка от устройството!");
         return;
       }
 
@@ -2591,15 +2723,17 @@ const Admin = {
       const variants = this.collectVariantsFromDOM();
 
       if (!variants || variants.length === 0) {
-        alert("Моля добавете поне един размер в таблицата!");
+        Admin.notify("Моля добавете поне един размер в таблицата!");
         return;
       }
 
       if (this.editingProduct) {
         // EDIT MODE
+        let editAppliedSuccessfully = false;
         const saved = await this.persistProductChanges(() => {
           const target = CONFIG.products.find(p => p.id === this.editingProduct.id);
           if (target) {
+            editAppliedSuccessfully = true;
             target.name = name;
             target.code = code;
             target.category = category;
@@ -2624,8 +2758,18 @@ const Admin = {
           }
         });
         if (!saved) return;
+        if (!editAppliedSuccessfully) {
+          // The product to edit was no longer in CONFIG.products — without
+          // this guard the form would silently show "успешно" while none of the
+          // edits were actually applied. Tell the user the truth and re-render
+          // so they can find the product again.
+          Admin.notify("Продуктът, който редактирате, вече не съществува в каталога. Презаредете страницата и опитайте отново.");
+          this.resetProductFormState();
+          this.render();
+          return;
+        }
         this.resetProductFormState();
-        alert("Продуктът е успешно редактиран и обновен на сайта!");
+        Admin.notify("Продуктът е успешно редактиран и обновен на сайта!");
       } else {
         // CREATE MODE
         // NOTE: ids must start with "prod-" / "custom-" or be all-digits,
@@ -2643,7 +2787,7 @@ const Admin = {
         const id = `prod-${slug}`;
 
         if (CONFIG.products.some(p => p.id === id)) {
-          alert("Продукт с това име вече съществува!");
+          Admin.notify("Продукт с това име вече съществува!");
           return;
         }
 
@@ -2680,19 +2824,29 @@ const Admin = {
         });
         if (!saved) return;
         this.resetProductFormState();
-        alert("Продуктът е успешно добавен!");
+        Admin.notify("Продуктът е успешно добавен!");
       }
 
       this.propagateStateChanges();
       this.render();
     } catch (error) {
       console.error("Error submitting product:", error);
-      alert("Възникна грешка при запазване: " + error.message);
+      Admin.notify("Възникна грешка при запазване: " + error.message);
     }
   },
 
   async deleteProduct(productId) {
-    if (!confirm("Наистина ли искате да изтриете този продукт?")) return;
+    if (!(await this.confirmDialog("Наистина ли искате да изтриете този продукт?"))) return;
+
+    // Ensure the full catalog is loaded so the post-delete save writes the
+    // complete product list (minus this one) back to the database.
+    if (typeof CONFIG !== "undefined" && typeof CONFIG.loadCatalog === "function") {
+      try {
+        await CONFIG.loadCatalog();
+      } catch (e) {
+        console.warn("Catalog not fully loaded before delete", e);
+      }
+    }
 
     const product = CONFIG.products.find(p => p.id === productId);
 
@@ -2704,10 +2858,11 @@ const Admin = {
         if (!res || res.ok === false) throw new Error(res && res.error);
       } catch (err) {
         console.error("Неуспешно архивиране на продукта", err);
-        const proceed = confirm(
+        const proceed = await this.confirmDialog(
           "Продуктът не можа да бъде архивиран в Convex (няма връзка?).\n" +
           "Ако продължите, изтриването НЯМА да може да се възстанови.\n\n" +
-          "Натиснете OK само ако сте сигурни, че искате да изтриете без архив."
+          "Сигурни ли сте, че искате да изтриете без архив?",
+          { confirmText: "Изтрий без архив", cancelText: "Отказ" }
         );
         if (!proceed) return;
       }
@@ -2724,7 +2879,7 @@ const Admin = {
   moveProduct(prodId, direction) {
     const catId = this.filterCategory;
     if (!catId) {
-      alert("Моля, филтрирайте продуктите по категория първо, за да можете да ги подреждате!");
+      Admin.notify("Моля, филтрирайте продуктите по категория първо, за да можете да ги подреждате!");
       return;
     }
 
@@ -2895,8 +3050,14 @@ const Admin = {
     this.render();
   },
 
-  handleCategorySubmit(event) {
+  async handleCategorySubmit(event) {
     event.preventDefault();
+
+    // saveState() also writes the product list, so ensure the full catalog is
+    // loaded before persisting category changes.
+    if (typeof CONFIG !== "undefined" && typeof CONFIG.loadCatalog === "function") {
+      try { await CONFIG.loadCatalog(); } catch (e) { console.warn("Catalog not loaded before category save", e); }
+    }
 
     const name = document.getElementById("cat-name").value.trim();
     const icon = document.getElementById("cat-icon").value.trim() || "📦";
@@ -2914,10 +3075,13 @@ const Admin = {
       CONFIG.saveState();
       this.editingCategory = null;
       this.tempSubcategories = [];
-      alert("Категорията е успешно актуализирана!");
+      Admin.notify("Категорията е успешно актуализирана!");
     } else {
       // CREATE MODE
-      const id = name.toLowerCase()
+      // NOTE: the id MUST start with "custom-" (or be all-digits) — otherwise
+      // filterOldItems() treats it as a legacy item and strips it on the next
+      // load, making the new category silently disappear.
+      const slug = name.toLowerCase()
         .replace(/[^а-яa-z0-9]+/g, "-")
         .replace(/(^-|-$)/g, "")
         .replace(/[а-я]/g, m => {
@@ -2926,9 +3090,10 @@ const Admin = {
           const idx = cyr.indexOf(m);
           return idx > -1 ? lat[idx] : m;
         });
+      const id = `custom-${slug}`;
 
       if (CONFIG.categories.some(c => c.id === id)) {
-        alert("Категория с това име вече съществува!");
+        Admin.notify("Категория с това име вече съществува!");
         return;
       }
 
@@ -2942,15 +3107,20 @@ const Admin = {
 
       CONFIG.addCategory(newCategory);
       this.tempSubcategories = [];
-      alert("Категорията е успешно създадена!");
+      Admin.notify("Категорията е успешно създадена!");
     }
 
     this.propagateStateChanges();
     this.render();
   },
 
-  deleteCategory(categoryId) {
-    if (confirm("Наистина ли искате да изтриете тази категория? Всички продукти в нея няма да имат свързана категория.")) {
+  async deleteCategory(categoryId) {
+    if (await this.confirmDialog("Наистина ли искате да изтриете тази категория? Всички продукти в нея няма да имат свързана категория.")) {
+      // saveState() also persists the product list, so make sure the full
+      // catalog is loaded first to avoid writing a partial product set.
+      if (typeof CONFIG !== "undefined" && typeof CONFIG.loadCatalog === "function") {
+        try { await CONFIG.loadCatalog(); } catch (e) { console.warn("Catalog not loaded before category delete", e); }
+      }
       CONFIG.deleteCategory(categoryId);
       this.propagateStateChanges();
       this.render();
@@ -3043,12 +3213,12 @@ const Admin = {
 
   saveTemplate(name) {
     if (!name || !name.trim()) {
-      alert("Моля въведете име на шаблона!");
+      Admin.notify("Моля въведете име на шаблона!");
       return;
     }
     this.loadTemplates();
     if (!this.currentColumns || this.currentColumns.length === 0) {
-      alert("Няма колони за запазване!");
+      Admin.notify("Няма колони за запазване!");
       return;
     }
     const id = "tpl_" + Date.now();
@@ -3059,14 +3229,14 @@ const Admin = {
     });
     this.saveTemplates();
     this.templatesPanelOpen = true;
-    alert(`Шаблонът "${name}" е запазен успешно!`);
+    Admin.notify(`Шаблонът "${name}" е запазен успешно!`);
     this.refreshVariantsTable();
   },
 
   renameTemplate(id, name) {
     const nextName = name ? name.trim() : "";
     if (!nextName) {
-      alert("Моля въведете име на шаблона!");
+      Admin.notify("Моля въведете име на шаблона!");
       return;
     }
 
@@ -3077,13 +3247,13 @@ const Admin = {
     tpl.name = nextName;
     this.saveTemplates();
     this.templatesPanelOpen = true;
-    alert("Името на шаблона е обновено!");
+    Admin.notify("Името на шаблона е обновено!");
     this.refreshVariantsTable();
   },
 
   updateTemplateFromCurrentColumns(id) {
     if (!this.currentColumns || this.currentColumns.length === 0) {
-      alert("Няма колони за обновяване на шаблона!");
+      Admin.notify("Няма колони за обновяване на шаблона!");
       return;
     }
 
@@ -3094,16 +3264,16 @@ const Admin = {
     tpl.columns = this.cloneColumns(this.currentColumns);
     this.saveTemplates();
     this.templatesPanelOpen = true;
-    alert(`Шаблонът "${tpl.name}" е обновен с текущите колони!`);
+    Admin.notify(`Шаблонът "${tpl.name}" е обновен с текущите колони!`);
     this.refreshVariantsTable();
   },
 
-  deleteTemplate(id) {
+  async deleteTemplate(id) {
     this.loadTemplates();
     const tpl = this.savedTemplates.find(t => t.id === id);
     if (!tpl) return;
 
-    if (!confirm(`Сигурни ли сте, че искате да изтриете шаблона "${tpl.name}"?`)) {
+    if (!(await this.confirmDialog(`Сигурни ли сте, че искате да изтриете шаблона "${tpl.name}"?`))) {
       return;
     }
 
@@ -4096,7 +4266,7 @@ const Admin = {
       }
     } catch (err) {
       console.error(err);
-      alert(`Грешка при актуализиране на статуса: ${err.message}`);
+      Admin.notify(`Грешка при актуализиране на статуса: ${err.message}`);
     }
   },
 
@@ -4523,7 +4693,7 @@ const Admin = {
       this.render();
     } catch (err) {
       console.error(err);
-      alert("Възникна грешка при запазване: " + err.message);
+      Admin.notify("Възникна грешка при запазване: " + err.message);
     }
   },
 

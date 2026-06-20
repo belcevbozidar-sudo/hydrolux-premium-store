@@ -49,6 +49,9 @@ http.route({
       products: body.products,
       categories: body.categories,
       tableTemplates: body.tableTemplates,
+      builderOptions: body.builderOptions,
+      deletedProductIds: body.deletedProductIds,
+      deletedCategoryIds: body.deletedCategoryIds,
     });
     return jsonResponse(result);
   }),
