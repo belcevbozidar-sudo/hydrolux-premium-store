@@ -42,7 +42,11 @@ const Admin = {
     // so kick off the full catalog load immediately and re-render once it lands.
     if (typeof CONFIG !== "undefined" && typeof CONFIG.loadCatalog === "function") {
       CONFIG.loadCatalog().then(() => {
-        try { Admin.render(); } catch (e) { /* view may have changed */ }
+        try { 
+          Admin.render(); 
+          Admin.migrateLegacyPdfs();
+          Admin.migrateLegacyImages();
+        } catch (e) { /* view may have changed */ }
       }).catch(() => {});
     }
 
@@ -60,7 +64,6 @@ const Admin = {
 
     this.startOrderPolling();
     this.startLiveVisitorsTracker();
-    this.migrateLegacyPdfs();
   },
 
   resetProductFormState() {
@@ -2185,16 +2188,32 @@ const Admin = {
         if (files.length === 0) return;
 
         Admin.isProcessingImages = true;
-        Admin.updateImageUploadStatus(`Обработват се ${files.length} снимки...`);
+        Admin.updateImageUploadStatus(`Обработват се и се качват ${files.length} снимки...`);
 
         try {
           const processedImages = await Promise.all(files.map(file => Admin.compressImageFile(file)));
-          Admin.uploadedImages.push(...processedImages.filter(Boolean));
+          
+          let uploadCount = 0;
+          for (let i = 0; i < processedImages.length; i++) {
+            const dataUrl = processedImages[i];
+            if (!dataUrl) continue;
+
+            const blob = Admin.base64ToBlob(dataUrl, "image/webp");
+            if (blob) {
+              const fileObj = new File([blob], `image_${Date.now()}_${i}.webp`, { type: "image/webp" });
+              const res = await HydroluxBackend.uploadPdf(fileObj);
+              if (res && res.ok && res.url) {
+                Admin.uploadedImages.push(res.url);
+                uploadCount++;
+              }
+            }
+          }
+          
           Admin.renderImagePreviews();
-          Admin.updateImageUploadStatus("Снимките са готови за запис.");
+          Admin.updateImageUploadStatus(`Успешно качени ${uploadCount} снимки.`);
         } catch (err) {
           console.error("Image upload failed", err);
-          Admin.notify("Не успяхме да обработим снимките. Моля опитайте с по-малки JPG/PNG файлове.");
+          Admin.notify("Не успяхме да качим снимките. Моля опитайте с по-малки JPG/PNG файлове.");
         } finally {
           Admin.isProcessingImages = false;
           Admin.updateProductSubmitState();
@@ -2641,19 +2660,27 @@ const Admin = {
   },
 
   async handleProductSubmit(event) {
+    event.preventDefault();
+
+    if (this.isProcessingImages) {
+      Admin.notify("Моля изчакайте снимките да се обработят и опитайте отново.");
+      return;
+    }
+
+    if (this.isProcessingPdfs) {
+      Admin.notify("Моля изчакайте PDF файловете да се качат и опитайте отново.");
+      return;
+    }
+
+    const submitBtn = document.getElementById("admin-product-submit-btn");
+    let originalBtnHtml = "";
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      originalBtnHtml = submitBtn.innerHTML;
+      submitBtn.innerHTML = "⏳ Записване... Моля, изчакайте.";
+    }
+
     try {
-      event.preventDefault();
-
-      if (this.isProcessingImages) {
-        Admin.notify("Моля изчакайте снимките да се обработят и опитайте отново.");
-        return;
-      }
-
-      if (this.isProcessingPdfs) {
-        Admin.notify("Моля изчакайте PDF файловете да се качат и опитайте отново.");
-        return;
-      }
-
       const name = (document.getElementById("prod-name")?.value || "").trim();
       const code = (document.getElementById("prod-code")?.value || "").trim();
       
@@ -2832,6 +2859,11 @@ const Admin = {
     } catch (error) {
       console.error("Error submitting product:", error);
       Admin.notify("Възникна грешка при запазване: " + error.message);
+    } finally {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnHtml;
+      }
     }
   },
 
@@ -3078,76 +3110,94 @@ const Admin = {
       try { await CONFIG.loadCatalog(); } catch (e) { console.warn("Catalog not loaded before category save", e); }
     }
 
-    const name = document.getElementById("cat-name").value.trim();
-    const icon = document.getElementById("cat-icon").value.trim() || "📦";
-    const image = document.getElementById("cat-image").value.trim();
-
-    if (this.editingCategory) {
-      // EDIT MODE
-      const previousCategories = JSON.stringify(CONFIG.categories);
-      const target = CONFIG.categories.find(c => c.id === this.editingCategory.id);
-      if (target) {
-        target.name = name;
-        target.icon = icon;
-        target.image = image;
-        target.subcategories = this.tempSubcategories || [];
-      }
-      try {
-        await CONFIG.saveState();
-        this.editingCategory = null;
-        this.tempSubcategories = [];
-        Admin.notify("Категорията е успешно актуализирана!");
-      } catch (err) {
-        CONFIG.categories = JSON.parse(previousCategories);
-        localStorage.setItem("hydrolux_categories", previousCategories);
-        console.error("Failed to save category changes", err);
-        Admin.notify("Категорията не беше записана: " + err.message);
-        return;
-      }
-    } else {
-      // CREATE MODE
-      // NOTE: the id MUST start with "custom-" (or be all-digits) — otherwise
-      // filterOldItems() treats it as a legacy item and strips it on the next
-      // load, making the new category silently disappear.
-      const slug = name.toLowerCase()
-        .replace(/[^а-яa-z0-9]+/g, "-")
-        .replace(/(^-|-$)/g, "")
-        .replace(/[а-я]/g, m => {
-          const cyr = "абвгдежзийклмнопрстуфхцчшщъьюя";
-          const lat = ["a","b","v","g","d","e","zh","z","i","y","k","l","m","n","o","p","r","s","t","u","f","h","ts","ch","sh","sht","a","y","yu","ya"];
-          const idx = cyr.indexOf(m);
-          return idx > -1 ? lat[idx] : m;
-        });
-      const id = `custom-${slug}`;
-
-      if (CONFIG.categories.some(c => c.id === id)) {
-        Admin.notify("Категория с това име вече съществува!");
-        return;
-      }
-
-      const newCategory = {
-        id,
-        name,
-        icon,
-        image,
-        subcategories: this.tempSubcategories || []
-      };
-
-      try {
-        await CONFIG.addCategory(newCategory);
-        this.tempSubcategories = [];
-        Admin.notify("Категорията е успешно създадена!");
-      } catch (err) {
-        CONFIG.categories = CONFIG.categories.filter(c => c.id !== newCategory.id);
-        localStorage.setItem("hydrolux_categories", JSON.stringify(CONFIG.categories));
-        console.error("Failed to add category", err);
-        Admin.notify("Категорията не беше създадена: " + err.message);
-        return;
-      }
+    const submitBtn = event.target.querySelector('button[type="submit"]');
+    let originalBtnHtml = "";
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      originalBtnHtml = submitBtn.innerHTML;
+      submitBtn.innerHTML = "⏳ Записване...";
     }
 
-    this.propagateStateChanges();
-    this.render();
+    try {
+      const name = document.getElementById("cat-name").value.trim();
+      const icon = document.getElementById("cat-icon").value.trim() || "📦";
+      const image = document.getElementById("cat-image").value.trim();
+
+      if (this.editingCategory) {
+        // EDIT MODE
+        const previousCategories = JSON.stringify(CONFIG.categories);
+        const target = CONFIG.categories.find(c => c.id === this.editingCategory.id);
+        if (target) {
+          target.name = name;
+          target.icon = icon;
+          target.image = image;
+          target.subcategories = this.tempSubcategories || [];
+        }
+        try {
+          await CONFIG.saveState();
+          this.editingCategory = null;
+          this.tempSubcategories = [];
+          Admin.notify("Категорията е успешно актуализирана!");
+        } catch (err) {
+          CONFIG.categories = JSON.parse(previousCategories);
+          localStorage.setItem("hydrolux_categories", previousCategories);
+          console.error("Failed to save category changes", err);
+          Admin.notify("Категорията не беше записана: " + err.message);
+          return;
+        }
+      } else {
+        // CREATE MODE
+        // NOTE: the id MUST start with "custom-" (or be all-digits) — otherwise
+        // filterOldItems() treats it as a legacy item and strips it on the next
+        // load, making the new category silently disappear.
+        const slug = name.toLowerCase()
+          .replace(/[^а-яa-z0-9]+/g, "-")
+          .replace(/(^-|-$)/g, "")
+          .replace(/[а-я]/g, m => {
+            const cyr = "абвгдежзийклмнопрстуфхцчшщъьюя";
+            const lat = ["a","b","v","g","d","e","zh","z","i","y","k","l","m","n","o","p","r","s","t","u","f","h","ts","ch","sh","sht","a","y","yu","ya"];
+            const idx = cyr.indexOf(m);
+            return idx > -1 ? lat[idx] : m;
+          });
+        const id = `custom-${slug}`;
+
+        if (CONFIG.categories.some(c => c.id === id)) {
+          Admin.notify("Категория с това име вече съществува!");
+          return;
+        }
+
+        const newCategory = {
+          id,
+          name,
+          icon,
+          image,
+          subcategories: this.tempSubcategories || []
+        };
+
+        try {
+          await CONFIG.addCategory(newCategory);
+          this.tempSubcategories = [];
+          Admin.notify("Категорията е успешно създадена!");
+        } catch (err) {
+          CONFIG.categories = CONFIG.categories.filter(c => c.id !== newCategory.id);
+          localStorage.setItem("hydrolux_categories", JSON.stringify(CONFIG.categories));
+          console.error("Failed to add category", err);
+          Admin.notify("Категорията не беше създадена: " + err.message);
+          return;
+        }
+      }
+
+      this.propagateStateChanges();
+      this.render();
+    } catch (err) {
+      console.error("Category submit error", err);
+      Admin.notify("Грешка при запис на категорията: " + err.message);
+    } finally {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnHtml;
+      }
+    }
   },
 
   async deleteCategory(categoryId) {
@@ -3179,24 +3229,47 @@ const Admin = {
     }
   },
 
-  handleCategoryFileSelect(event) {
+  async handleCategoryFileSelect(event) {
     const file = event.target.files[0];
     if (!file) return;
     
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      const base64Url = e.target.result;
-      document.getElementById("cat-image").value = base64Url;
-      
-      const preview = document.getElementById("cat-image-preview");
-      preview.src = base64Url;
-      preview.style.display = "block";
-      
-      if (typeof Cart !== 'undefined' && typeof Cart.showToast === 'function') {
-        Cart.showToast("Снимката е заредена успешно от устройството!");
+    if (typeof Cart !== 'undefined' && typeof Cart.showToast === 'function') {
+      Cart.showToast("Обработване и качване на снимката...");
+    }
+
+    try {
+      const compressedDataUrl = await this.compressImageFile(file);
+      if (!compressedDataUrl) return;
+
+      const mimeMatch = compressedDataUrl.match(/^data:([^;]+);/);
+      const mimeType = mimeMatch ? mimeMatch[1] : "image/webp";
+      const extension = mimeType.split("/")[1] || "webp";
+
+      const blob = this.base64ToBlob(compressedDataUrl, mimeType);
+      if (blob) {
+        const fileObj = new File([blob], `cat_${Date.now()}.${extension}`, { type: mimeType });
+        const res = await HydroluxBackend.uploadPdf(fileObj);
+        if (res && res.ok && res.url) {
+          const catImageInput = document.getElementById("cat-image");
+          if (catImageInput) catImageInput.value = res.url;
+
+          const preview = document.getElementById("cat-image-preview");
+          if (preview) {
+            preview.src = res.url;
+            preview.style.display = "block";
+          }
+
+          if (typeof Cart !== 'undefined' && typeof Cart.showToast === 'function') {
+            Cart.showToast("Снимката е качена успешно!");
+          }
+        } else {
+          throw new Error("Неуспешно качване на сървъра.");
+        }
       }
-    };
-    reader.readAsDataURL(file);
+    } catch (err) {
+      console.error("Category image upload failed", err);
+      Admin.notify("Не успяхме да качим снимката на категорията. Моля опитайте отново.");
+    }
   },
 
 
@@ -5068,6 +5141,87 @@ const Admin = {
       }
     } else {
       console.log("No legacy base64 PDFs found. Database is clean.");
+    }
+  },
+
+  async migrateLegacyImages() {
+    if (typeof HydroluxBackend === "undefined" || !CONFIG.products) return;
+
+    let migratedAny = false;
+    console.log("Checking for legacy base64 images to migrate...");
+
+    // 1. Migrate product images
+    for (const prod of CONFIG.products) {
+      if (prod.images && Array.isArray(prod.images)) {
+        for (let i = 0; i < prod.images.length; i++) {
+          const img = prod.images[i];
+          if (img && typeof img === "string" && img.startsWith("data:image/")) {
+            console.log(`Migrating legacy base64 image for product "${prod.name}" (index: ${i})...`);
+            try {
+              // Extract MIME type from data URL
+              const mimeMatch = img.match(/^data:([^;]+);/);
+              const mimeType = mimeMatch ? mimeMatch[1] : "image/webp";
+              const extension = mimeType.split("/")[1] || "webp";
+              
+              const blob = this.base64ToBlob(img, mimeType);
+              if (blob) {
+                const fileName = `img_${prod.id}_${i}.${extension}`;
+                const file = new File([blob], fileName, { type: mimeType });
+                const result = await HydroluxBackend.uploadPdf(file); // reuse generic file uploader
+                if (result && result.ok && result.url) {
+                  prod.images[i] = result.url;
+                  migratedAny = true;
+                  console.log(`Successfully migrated image ${i} for "${prod.name}".`);
+                }
+              }
+            } catch (e) {
+              console.error(`Error migrating image ${i} for product "${prod.name}":`, e);
+            }
+          }
+        }
+      }
+    }
+
+    // 2. Migrate category images
+    if (CONFIG.categories && Array.isArray(CONFIG.categories)) {
+      for (const cat of CONFIG.categories) {
+        if (cat.image && typeof cat.image === "string" && cat.image.startsWith("data:image/")) {
+          console.log(`Migrating legacy base64 image for category "${cat.name}"...`);
+          try {
+            const mimeMatch = cat.image.match(/^data:([^;]+);/);
+            const mimeType = mimeMatch ? mimeMatch[1] : "image/webp";
+            const extension = mimeType.split("/")[1] || "webp";
+
+            const blob = this.base64ToBlob(cat.image, mimeType);
+            if (blob) {
+              const fileName = `cat_${cat.id}.${extension}`;
+              const file = new File([blob], fileName, { type: mimeType });
+              const result = await HydroluxBackend.uploadPdf(file);
+              if (result && result.ok && result.url) {
+                cat.image = result.url;
+                migratedAny = true;
+                console.log(`Successfully migrated image for category "${cat.name}".`);
+              }
+            }
+          } catch (e) {
+            console.error(`Error migrating image for category "${cat.name}":`, e);
+          }
+        }
+      }
+    }
+
+    if (migratedAny) {
+      console.log("Saving migrated images state to Convex...");
+      try {
+        await CONFIG.saveState();
+        this.propagateStateChanges();
+        this.render();
+        console.log("Image migration state saved successfully!");
+      } catch (e) {
+        console.error("Failed to save migrated images state to Convex:", e);
+      }
+    } else {
+      console.log("No legacy base64 images found. Database is clean.");
     }
   }
 };
